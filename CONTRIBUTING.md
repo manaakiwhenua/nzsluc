@@ -46,7 +46,7 @@ We use [GitHub flow][github-flow] to manage changes: <br>
         the pull request will update automatically.
 
 
-[contact]: mailto:
+[contact]: mailto:lawr@landcareresearch.co.nz
 
 [dc-site]: http://datacarpentry.org/
 [github]: http://github.com
