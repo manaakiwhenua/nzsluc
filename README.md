@@ -15,27 +15,27 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 <!-- Informative -->
 ## Principles
 
-- To support the production of **nationally consistent** data on land use
-- To suppot classification systems that classify land at the **parcel level or beyond**. <!-- More explicit scale? Raster/DGGS resolution? Landscape objects? -->
-- To facilitate the production of **consistent land use information** in New Zealand, such as from regional government agencies.
-- To facilitate the use of land use data at national, regional and local scales.
-- To incorporate land management practices when needed to distinguish between land uses.
-- To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
+1. To support the production of **nationally consistent** data on land use
+2. To suppot classification systems that classify land at the **parcel level or beyond**. <!-- More explicit scale? Raster/DGGS resolution? Landscape objects? -->
+3. To facilitate the production of **consistent land use information** in New Zealand, such as from regional government agencies.
+4. To facilitate the use of land use data at national, regional and local scales.
+5. To incorporate land management practices when needed to distinguish between land uses.
+6. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
     - It is particularly important that **iwi/Māori partners** are involved throughout.
 <!-- - To achieve national understanding before releasing the data adhering to a proposed classification system. -->
-- To support the development and implementation of **more than one classification system** under this framework _and_ to ensure that they are broadly compatible. <!-- Compatible = weasly? -->
-- To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
-- To adhere to specifications for land use classfications including:
+7. To support the development and implementation of **more than one classification system** under this framework _and_ to ensure that they are broadly compatible. <!-- Compatible = weasly? -->
+8. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
+9. To adhere to specifications for land use classfications including:
     - To attribute of the prime land use
     - To facilitate attribution of secondary or mixed uses
     - To record source information (i.e. provenance: geographic scale, date, and confidence)
     - To be able to record commodities from a set of standard codes (e.g. DataLinker, Stats NZ)
     - To be able to record management practices from a set of standard codes (to be determined)
     <!-- - Tenure -->
-- To aspire to ensure overall attribute accuracy of greater than 80 per cent.
-- To carefully develop these principles, proceedures, definitions and classification systems themselves over time, with concern for backwards compatibility.
-- To require allowing multiple land uses to be represented
-- To require allowing land use classification systems to be multidimensional (ref. Rutledge) <!-- Semantic? -->
+10. To aspire to ensure overall attribute accuracy of greater than 80 per cent.
+11. To carefully develop these principles, proceedures, definitions and classification systems themselves over time, with concern for backwards compatibility.
+12. To require allowing multiple land uses to be represented
+13. To require allowing land use classification systems to be multidimensional (ref. Rutledge) <!-- Semantic? -->
 <!-- - To allow the incorportation of multiple dimensions of land use -->
 <!-- - To require that participating land use classifications are multidimensional in operation -->
 <!-- - Dimensions
