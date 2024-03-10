@@ -15,7 +15,7 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 <!-- Informative -->
 ## Principles
 
-- To support the production of **nationally consistent** data on land use
+- To support the production of **nationally consistent** model for classifying land use based on common characteristics supported by data
 - To suppot classification systems that classify land at the **parcel level or beyond**. <!-- More explicit scale? Raster/DGGS resolution? Landscape objects? -->
 - To facilitate the production of **consistent land use information** in New Zealand, such as from regional government agencies.
 - To facilitate the use of land use data at national, regional and local scales.
