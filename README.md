@@ -17,13 +17,13 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 
 1. To support the production of **nationally consistent** data on land use
 1. To support classifications systems that work at a variety of geogaphic scales.
-1. To facilitate the production of **consistent land use information** in New Zealand, such as from regional government agencies.
+1. To facilitate the production of **consistent land use information** in New Zealand, such as from national, regional, or local government agencies; CRIs; industry; etc.  <!-- data or information here? -->
 1. To facilitate the use of land use data at national, regional and local scales.
 1. To incorporate land management practices when needed to distinguish between land uses.
 1. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
     - It is particularly important that **iwi/Māori partners** are involved throughout.
 <!-- - To achieve national understanding before releasing the data adhering to a proposed classification system. -->
-1. To support the development and implementation of **more than one classification system** under this framework _and_ to ensure that they are broadly compatible. <!-- Compatible = weasly? -->
+1. To support the development and implementation of **more than one classification system** under this framework; to achieve consistency in classification where the purpose for classifying land use is the same.
 1. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
 1. To adhere to specifications for land use classfications including:
     - To attribute of the prime land use
@@ -53,10 +53,17 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 <!-- Mutlidimensional? What dimensions? -->
 <!-- Proceedure for reporting land use change? -->
 - Recommended that published data is independently validated, and quality is described using a standard such as xyz
-- One or more established metadata standards shall be used when publishing data
 <!-- LUML? -->
 <!-- Compatibility with other classification systems in components, e.g. PAN-NZ, ANZLIC for industrial categories, Dairy NZ classes, etc.? -->
 <!-- What is the extent? Marine? What is "land"? EEZ, etc. -->
+
+### Metadata
+
+One or more established metadata standards shall be used when publishing land use data.
+
+- The Dublin Core (DCMI)
+- DCAT-2 (Data Catalog Vocabulary)
+- ISO 19115 (geospatial metadata standard)
 
 ### Validation
 
@@ -71,7 +78,7 @@ Recommended procedure (based on ALUM):
 5. Determine if the map meets the required level of accuracy. If the _lower bound_ of the confidence interval for total accuracy is greater than this level (**80%**), then the map meets the framework specification. If any of the upper bounds of the user's or producer's accuracies is less than 50%, then the map may also be considered to have failed the specification, however there may be some scope for judgement in certain classes due to unavoidable confusion between similar classes. If validation fails, perform a re-classification focussed on addressing the worst-performing classes, and repeat the validation proceedure for all clases.
 6. Report the accuracy, including the error matrix and a map of sample sites.
 
-
+It is recommended that validation results are made available, conforming to the ISO 19157-1:2023 (Geographic information — Data quality) standard.
 
 ## Definitions / Key Concepts
 
@@ -96,6 +103,20 @@ Lorem ipsum
 The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, or if the parcel is very large. Additionally, whether sub-parcel classification is appropriate may depend on the geographic scale of available input data. Mapping sub-parcel areas is therefore left to operator discretion.
 
 Regardless, property parcel identification, and boundaries, should be present in output land use data.
+
+## Data specifications
+
+### Data format and spatial referencing
+
+Vector data format: [GeoPackage](https://www.geopackage.org/) v1.4.0 or later and/or [GeoParquet](https://geoparquet.org/) v1.0.0 or later.
+
+Raster data (or other formats) may be produced for user convenience, but no particular format is specified. Vector data is mandatory.
+
+Coordinate system: any [current official projection](https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections) may be used:
+
+- New Zealand Transverse Mercator 2000 (NZTM2000).
+- NZGD meridional circuits (e.g. for regional extracts) or offshore island projections.
+- New Zealand Continental Shelf Lambert Conformal 2000 (NZCS2000).
 
 ---
 
