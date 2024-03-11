@@ -16,26 +16,26 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 ## Principles
 
 1. To support the production of **nationally consistent** data on land use
-2. To suppot classification systems that classify land at the **parcel level or beyond**. <!-- More explicit scale? Raster/DGGS resolution? Landscape objects? -->
-3. To facilitate the production of **consistent land use information** in New Zealand, such as from national, regional, or local government agencies; CRIs; industry; etc.  <!-- data or information here? -->
-4. To facilitate the use of land use data at national, regional and local scales.
-5. To incorporate land management practices when needed to distinguish between land uses.
-6. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
+1. To support classifications systems that work at a variety of geogaphic scales.
+1. To facilitate the production of **consistent land use information** in New Zealand, such as from national, regional, or local government agencies; CRIs; industry; etc.  <!-- data or information here? -->
+1. To facilitate the use of land use data at national, regional and local scales.
+1. To incorporate land management practices when needed to distinguish between land uses.
+1. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
     - It is particularly important that **iwi/Māori partners** are involved throughout.
 <!-- - To achieve national understanding before releasing the data adhering to a proposed classification system. -->
-7. To support the development and implementation of **more than one classification system** under this framework; to achieve consistency in classification where the purpose for classifying land use is the same.
-8. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
-9. To adhere to specifications for land use classfications including:
+1. To support the development and implementation of **more than one classification system** under this framework; to achieve consistency in classification where the purpose for classifying land use is the same.
+1. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
+1. To adhere to specifications for land use classfications including:
     - To attribute of the prime land use
     - To facilitate attribution of secondary or mixed uses
     - To record source information (i.e. provenance: geographic scale, date, and confidence)
     - To be able to record commodities from a set of standard codes (e.g. DataLinker, Stats NZ)
     - To be able to record management practices from a set of standard codes (to be determined)
     <!-- - Tenure -->
-10. To aspire to ensure **overall attribute accuracy of greater than 80 per cent**.
-11. To carefully develop these principles, proceedures, definitions and classification systems themselves over time, with concern for backwards compatibility.
-12. To require allowing multiple land uses to be represented
-13. To require allowing land use classification systems to be multidimensional (ref. Rutledge) <!-- Semantic? -->
+1. To aspire to ensure **overall attribute accuracy of greater than 80 per cent**.
+1. To carefully develop these principles, proceedures, definitions and classification systems themselves over time, with concern for backwards compatibility.
+1. To require allowing multiple land uses to be represented
+1. To require allowing land use classification systems to be multidimensional (ref. Rutledge) <!-- Semantic? -->
 <!-- - To allow the incorportation of multiple dimensions of land use -->
 <!-- - To require that participating land use classifications are multidimensional in operation -->
 <!-- - Dimensions
@@ -97,6 +97,12 @@ It is recommended that validation results are made available, conforming to the 
 Lorem ipsum
 <!-- All spatial data/metadata will adhere to OGC/ISO standards -->
 <!-- Hierarchical classification like so... -->
+
+## Geographic scale
+
+The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, or if the parcel is very large. Additionally, whether sub-parcel classification is appropriate may depend on the geographic scale of available input data. Mapping sub-parcel areas is therefore left to operator discretion.
+
+Regardless, property parcel identification, and boundaries, should be present in output land use data.
 
 ## Data specifications
 
