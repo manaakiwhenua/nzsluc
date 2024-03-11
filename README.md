@@ -23,7 +23,7 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 6. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
     - It is particularly important that **iwi/Māori partners** are involved throughout.
 <!-- - To achieve national understanding before releasing the data adhering to a proposed classification system. -->
-7. To support the development and implementation of **more than one classification system** under this framework _and_ to ensure that they are broadly compatible. <!-- Compatible = weasly? -->
+7. To support the development and implementation of **more than one classification system** under this framework; to achieve consistency in classification where the purpose for classifying land use is the same.
 8. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
 9. To adhere to specifications for land use classfications including:
     - To attribute of the prime land use
