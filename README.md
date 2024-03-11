@@ -91,7 +91,7 @@ Lorem ipsum
 <!-- All spatial data/metadata will adhere to OGC/ISO standards -->
 <!-- Hierarchical classification like so... -->
 
---
+---
 
 ## Current land use mapping in New Zealand
 
