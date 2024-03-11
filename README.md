@@ -77,6 +77,20 @@ Lorem ipsum
 <!-- All spatial data/metadata will adhere to OGC/ISO standards -->
 <!-- Hierarchical classification like so... -->
 
+## Data specifications
+
+### Data format and spatial referencing
+
+Vector data format: [GeoPackage](https://www.geopackage.org/) v1.4.0 or later and/or [GeoParquet](https://geoparquet.org/) v1.0.0 or later.
+
+Raster data (or other formats) may be produced for user convenience, but no particular format is specified. Vector data is mandatory.
+
+Coordinate system: any [current official projection](https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections) may be used:
+
+- New Zealand Transverse Mercator 2000 (NZTM2000).
+- NZGD meridional circuits (e.g. for regional extracts) or offshore island projections.
+- New Zealand Continental Shelf Lambert Conformal 2000 (NZCS2000).
+
 --
 
 ## Current land use mapping in New Zealand
