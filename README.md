@@ -4,9 +4,15 @@
 
 [![manaakiwhenua-standards](https://github.com/manaakiwhenua/nzsluc/workflows/manaakiwhenua-standards/badge.svg)](https://github.com/manaakiwhenua/manaakiwhenua-standards)
 
-<!-- TODO some sort of foreword; why we are making this -->
+Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. 
 
-Land use information is needed to respond to New Zealand's environmental, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, and greenfield development.
+Various attempts have been made to develop a system of land use classification for New Zealand, but few have been widely adopted.
+
+We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which one or more "land use **classification systems**" may be developed.
+
+The land use classification _framework_ should consider over-arching purposes, roles, principles, and procedures for land use classification _systems_. It should be narrowly prescriptive, and allow scope for multiple classification systems to co-exist—provided they adhere to the framework principles and follow framework procedures.
+
+A land use classification _system_ may then be developed within the framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all interested parties; the intention is for multiple such systems to be developed. 
 
 # The New Zealand Standard Land Use Classification Framework
 
@@ -85,7 +91,7 @@ Recommended procedure (based on ALUM):
 ---
 
 <!-- Normative -->
-# The New Zealand Standard Land Use Classification Systems
+# The New Zealand Standard Land Use Classification System
 
 Lorem ipsum
 <!-- All spatial data/metadata will adhere to OGC/ISO standards -->
