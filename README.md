@@ -53,10 +53,17 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 <!-- Mutlidimensional? What dimensions? -->
 <!-- Proceedure for reporting land use change? -->
 - Recommended that published data is independently validated, and quality is described using a standard such as xyz
-- One or more established metadata standards shall be used when publishing data
 <!-- LUML? -->
 <!-- Compatibility with other classification systems in components, e.g. PAN-NZ, ANZLIC for industrial categories, Dairy NZ classes, etc.? -->
 <!-- What is the extent? Marine? What is "land"? EEZ, etc. -->
+
+### Metadata
+
+One or more established metadata standards shall be used when publishing land use data.
+
+- The Dublin Core (DCMI)
+- DCAT-2 (Data Catalog Vocabulary)
+- ISO 19115 (geospatial metadata standard)
 
 ### Validation
 
@@ -71,7 +78,7 @@ Recommended procedure (based on ALUM):
 5. Determine if the map meets the required level of accuracy. If the _lower bound_ of the confidence interval for total accuracy is greater than this level (**80%**), then the map meets the framework specification. If any of the upper bounds of the user's or producer's accuracies is less than 50%, then the map may also be considered to have failed the specification, however there may be some scope for judgement in certain classes due to unavoidable confusion between similar classes. If validation fails, perform a re-classification focussed on addressing the worst-performing classes, and repeat the validation proceedure for all clases.
 6. Report the accuracy, including the error matrix and a map of sample sites.
 
-
+It is recommended that validation results are made available, conforming to the ISO 19157-1:2023 (Geographic information — Data quality) standard.
 
 ## Definitions / Key Concepts
 
