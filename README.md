@@ -18,58 +18,42 @@ A land use classification _system_ may then be developed within the framework. I
 
 The NZSLUC Framework presents principles, procedures and definitions for designing compliant land use classification systems. 
 
-<!-- Informative -->
-## Principles
+## Principles <!-- Informative -->
 
-1. To support the production of **nationally consistent** data on land use
-1. To support classifications systems that work at a variety of geogaphic scales.
-1. To facilitate the production of **consistent land use information** in New Zealand, such as from national, regional, or local government agencies; CRIs; industry; etc.  <!-- data or information here? -->
-1. To facilitate the use of land use data at national, regional and local scales.
-1. To incorporate land management practices when needed to distinguish between land uses.
-1. To **propose** NZSLUC classifications that are intended to be revised in a series of reviews with partners and stakeholders
-    - It is particularly important that **iwi/Māori partners** are involved throughout.
-<!-- - To achieve national understanding before releasing the data adhering to a proposed classification system. -->
-1. To support the development and implementation of **more than one classification system** under this framework; to achieve consistency in classification where the purpose for classifying land use is the same.
-1. To balance **reliability, practicality, and cost effectiveness** in the production of land use data artefacts.
-1. To adhere to specifications for land use classfications including:
-    - To attribute of the prime land use
-    - To facilitate attribution of secondary or mixed uses
-    - To record source information (i.e. provenance: geographic scale, date, and confidence)
-    - To be able to record commodities from a set of standard codes (e.g. DataLinker, Stats NZ)
-    - To be able to record management practices from a set of standard codes (to be determined)
-    <!-- - Tenure -->
-1. To aspire to ensure **overall attribute accuracy of greater than 80 per cent**.
-1. To carefully develop these principles, proceedures, definitions and classification systems themselves over time, with concern for backwards compatibility.
-1. To require allowing multiple land uses to be represented
-1. To require allowing land use classification systems to be multidimensional (ref. Rutledge) <!-- Semantic? -->
-<!-- - To allow the incorportation of multiple dimensions of land use -->
-<!-- - To require that participating land use classifications are multidimensional in operation -->
-<!-- - Dimensions
+1. To support the production of nationally consistent data on land use
+    - through careful selection of these principles
+    - through careful specification of required procedures
+1. To continually revise these principles, and any derived classification systems
+    - with partners and stakeholders, especially iwi/Māori partners
+    - with concern for backwards compatibility and the recording of change over time
+1. To balance **reliability, practicality, and cost effectiveness** when determining procedures.
+1. To support classifications systems that work at a variety of geographic scales.
+1. To encourage multidimensional conceptualisations of land use, with particular regard for the following dimensions:
     - Commodities
     - Management practices
-    - Tenure -->
-
-<!-- Principles for reuse -->
-<!-- Principles for contribution -->
-<!-- Principles for systematic classification -->
-<!-- Principles for publishing data artefacts -->
+    - Tenure
 
 ## Procedures 
 
-<!-- Mutlidimensional? What dimensions? -->
-<!-- Proceedure for reporting land use change? -->
-- Recommended that published data is independently validated, and quality is described using a standard such as xyz
-<!-- LUML? -->
-<!-- Compatibility with other classification systems in components, e.g. PAN-NZ, ANZLIC for industrial categories, Dairy NZ classes, etc.? -->
-<!-- What is the extent? Marine? What is "land"? EEZ, etc. -->
+The brief list of procedures for land use classification systems under this framework is below. Following subsections add detail.
 
-### Metadata
+1. Published data shall be independently validated, and quality described using a standard. Overall attribute accuracy of 80% shall be adopted as a minimum standard.
+2. Changes made to land use classification systems shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been release, the contents of that version must not be modified; modifications must be released as a new version.
+    - Major version for backwards incompatible functionality.
+        - Major version 0 is reserved for initial development and tolerance for change is higher than for other major versions.
+    - Minor version for new or modified functionality in a backwardly compatible manner.
+    - Patch version for backwardly compatible fixes and minor adjustments.
+3. Land use datasets shall be maintained on data repositories, and published with standardised metadata.
+4. Geographic scales and entities are to be considered stable.
+5. The publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these procedures. This standard is likely to affect the appropriate procedures for land use classification systems.
+6. Compatibility with existing New Zealand classification systems shall be considered. Compatibility with international classification systems may also be relevant.
+7. Classification systems shall individually determine the definition of "land" with reference to their stated purpose.
+8. Classification systems shall ensure that mixed or secondary uses may be attributed to land.
+9. Source information (i.e. provenance, geographic scale, date, operator, and confidence) shall be recorded.
+<!-- Classification systems shall use vocabularies that are available (normatively) as RDF, accessible via SPARQL 1.1 endpoints. -->
+<!-- Some procedure for contributing to this framework itself  -->
+<!-- Some Ppocedure regarding the standardisation of regional input data? -->
 
-One or more established metadata standards shall be used when publishing land use data.
-
-- The Dublin Core (DCMI)
-- DCAT-2 (Data Catalog Vocabulary)
-- ISO 19115 (geospatial metadata standard)
 
 ### Validation
 
@@ -86,6 +70,58 @@ Recommended procedure (based on ALUM):
 
 It is recommended that validation results are made available, conforming to the ISO 19157-1:2023 (Geographic information — Data quality) standard.
 
+### Semanntic versioning
+
+### Publication and metadata
+
+Published land use data shall be made available on public data repositories. Exceptions to this may be made for land use classifications with information considered sensitive by those supplying data or interpretative information. However, making data available on a data repositories with privacy controls is still recommended.
+
+One or more established metadata standards shall be used when publishing land use data (whether public or private):
+
+- The Dublin Core (DCMI)
+- DCAT-2 (Data Catalog Vocabulary)
+- ISO 19115 (geospatial metadata standard)
+
+### Stability of geographic scale
+
+Geographic units and geographic scales form an intrinsic part of the specification of a land use classification system, and changes to these are to be considered _major_ version changes to a classification system. The reason for this is that stability in the geographic frame of reference is critical to support analysis of land use change over time.
+
+### ISO 19144-3
+
+### Compatibility with existing land use classification systems
+
+Compatibility with existing New Zealand classification systems (PAN-NZ for conservation land; ANZLIC for industrial categories; Dairy NZ classes; etc.) shall be considered in the design of classification systems. It shall take the form of published concordances where such associations are possible.
+
+It may also take the form of using an existing classification system within a wider land use classification system; for instance, using PAN-NZ as a classification sub-system for classifying land that is statutorily protected.
+
+This concept extends beyond land use narrowly considered, and extends to land use management practices and lists of commodities. For example, we encourage application of the [New Zealand Farm Data Standards](https://www.datalinker.org) glossaries. 
+
+### Definition of land
+
+Classification systems shall individually determine the definition of "land".
+
+In particular, to what extent it includes marine and terrestrial water bodies.
+
+This is also relevant for land use classification systems to declare their appropriate extent of application. For example, whether a land use classification system should be applied to New Zealand's offshore islands, marine areas (out to the EEZ), the entire continental shelf, etc. There is no consensus that a definition of "land" can exclude uses such as aquaculture, marine conservation areas, fishing areas, mining permits, shipping lanes, etc., particularly in the notable absence of "sea use maps".
+
+This also allows for classification systems that are developed for particular application to the _rohe pōtae_ of iwi but may be inappropriate elsewhere.
+
+### Mixed and secondary uses
+
+Some classification systems are intended only to capture "primary" land use for geographic entities, typically defined in economic terms. Some classification systems allow for the encoding of multiple uses, but in such a way that information about the primary land use is lost. (For example, the _ratings valuation rules_, LINZ S30300, allow for "multiple use" classes without the ability to encode the component uses.)
+
+Data schemas for land sue classification systems produced under this framework shall be designed in such a way that multiple uses can be recorded, without loss of information. This may be as a primary/secondary distinction, an enumeration, or some other form of attribution; but it must be possible in some fashion. 
+
+### Source information
+
+The value of land use data is enhanced when information is available regarding provenance. This relates to the epistemological foundation of land use data: how it is that we know the land use. Within the data schema of a classification system, it must be possible to record provenance information, including (but not limited to) if applicable:
+    - the geographic scale of any input data
+    - the publication or (preferably) feature-level creation date of any input data features
+    - the operator (who is performing the classification; or who has decided on the appropriateness of a particular class label for a feature)
+    - a quantitative (e.g. probabilistic) or qualitative (e.g. operator confidence) measurement of confidence in the applied class
+
+---
+
 ## Definitions / Key Concepts
 
 | Concept | Description | Reference(s) |
@@ -101,7 +137,11 @@ It is recommended that validation results are made available, conforming to the 
 
 # Land Use Classification Systems
 
-- [The New Zealand Standard Land Use Classification System](classification-systems/nzslucs.md)
+This is a list of land use classification systems that are (being) developed under this classification framework. 
+
+| Name | Link | Intended purpose |
+|------|------|------|
+| TBD  | [🔗](classification-systems/nzslucs.md) | General environmental change, especially for freshwater monitoring and greenfield development |
 
 
 # References

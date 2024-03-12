@@ -6,7 +6,9 @@ Developed by: Manaaki Whenua – Landcare Research
 
 ## Overview
 
-The NZSLUCS is intended for the purpose of environmental monitoring, especially fresh water. 
+The NZSLUCS is intended for the purpose of environmental monitoring, especially fresh water. Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices.
+
+Land management practices are incorporated when needed to distinguish between land uses.
 
 ## Geographic scale
 
