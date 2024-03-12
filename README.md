@@ -14,7 +14,7 @@ The **land use classification _framework_** should consider over-arching purpose
 
 A **land use classification _system_** may then be developed within this framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all interested parties; the intention is for multiple such systems to be developed. This allows for land use classification systems to be developed for a variety of purposes and with different properties.
 
-For example, it may or may be appropriate for any given system to be hierarchical in structure; however we consider that in order to be robust, all instantiations of a land use classification system should undergo systematic validation. Therefore it is a land use classification system concern as to whether to adopt a hierarchical classification schemata; but it is a land use classification framework concern to both specify a proceedure for the validation of classified land use data.
+For example, it may or may not be appropriate for any given system to be hierarchical in structure; however we consider that in order to be robust, all instantiations of a land use classification system should undergo systematic validation. Therefore it is a land use classification system concern as to whether to adopt a hierarchical classification schemata; but it is a land use classification framework concern to both require and specify a proceedure for the validation of classified land use data.
 
 # The New Zealand Standard Land Use Classification Framework
 
