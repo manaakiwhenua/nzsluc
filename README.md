@@ -38,18 +38,18 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
 The brief list of procedures for land use classification systems under this framework is below. Following subsections add detail.
 
 1. Published data shall be independently validated, and quality described using a standard. Overall attribute accuracy of 80% shall be adopted as a minimum standard.
-2. Changes made to land use classification systems shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been release, the contents of that version must not be modified; modifications must be released as a new version.
+1. Changes made to land use classification systems shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been release, the contents of that version must not be modified; modifications must be released as a new version.
     - Major version for backwards incompatible functionality.
         - Major version 0 is reserved for initial development and tolerance for change is higher than for other major versions.
     - Minor version for new or modified functionality in a backwardly compatible manner.
     - Patch version for backwardly compatible fixes and minor adjustments.
-3. Land use datasets shall be maintained on data repositories, and published with standardised metadata.
-4. Geographic scales and entities are to be considered stable.
-5. The publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these procedures. This standard is likely to affect the appropriate procedures for land use classification systems.
-6. Compatibility with existing New Zealand classification systems shall be considered. Compatibility with international classification systems may also be relevant.
-7. Classification systems shall individually determine the definition of "land" with reference to their stated purpose.
-8. Classification systems shall ensure that mixed or secondary uses may be attributed to land.
-9. Source information (i.e. provenance, geographic scale, date, operator, and confidence) shall be recorded.
+1. Land use datasets shall be maintained on data repositories, and published with standardised metadata.
+1. Geographic scales and entities are to be considered stable.
+1. The publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these procedures. This standard is likely to affect the appropriate procedures for land use classification systems.
+1. Compatibility with existing New Zealand classification systems shall be considered. Compatibility with international classification systems may also be relevant.
+1. Classification systems shall individually determine the definition of "land" with reference to their stated purpose.
+1. Classification systems shall ensure that mixed or secondary uses may be attributed to land.
+1. Source information (i.e. provenance, geographic scale, date, operator, and confidence) shall be recorded.
 <!-- Classification systems shall use vocabularies that are available (normatively) as RDF, accessible via SPARQL 1.1 endpoints. -->
 <!-- Some procedure for contributing to this framework itself  -->
 <!-- Some Ppocedure regarding the standardisation of regional input data? -->
