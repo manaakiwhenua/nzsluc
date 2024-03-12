@@ -103,13 +103,8 @@ It is recommended that validation results are made available, conforming to the 
 
 - [The New Zealand Standard Land Use Classification System](classification-systems/nzslucs.md)
 
----
 
-## Current land use mapping in New Zealand
-
-<!-- TODO refer to a separate Markdown summary, or report section -->
-
-## References
+# References
 <a id="1">[1]</a>
 Denham, R. (2005).
 Accuracy assessment for land use mapping.
