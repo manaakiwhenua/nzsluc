@@ -8,15 +8,17 @@ Standardised land use information is needed to respond to New Zealand's environm
 
 Various attempts have been made to develop a system of land use classification for New Zealand, but few have been widely adopted.
 
-We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which one or more "land use **classification systems**" may be developed.
+We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of the specification of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which one or more "land use **classification systems**" may be developed.
 
-The land use classification _framework_ should consider over-arching purposes, roles, principles, and procedures for land use classification _systems_. It should be narrowly prescriptive, and allow scope for multiple classification systems to co-exist—provided they adhere to the framework principles and follow framework procedures.
+The **land use classification _framework_** should consider over-arching purposes, roles, principles, and procedures for land use classification _systems_. It should be narrowly prescriptive, and allow scope for multiple classification systems to co-exist—provided they adhere to the framework principles and follow framework procedures.
 
-A land use classification _system_ may then be developed within the framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all interested parties; the intention is for multiple such systems to be developed. 
+A **land use classification _system_** may then be developed within this framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all interested parties; the intention is for multiple such systems to be developed. This allows for land use classification systems to be developed for a variety of purposes and with different properties.
+
+For example, it may or may be appropriate for any given system to be hierarchical in structure; however we consider that in order to be robust, all instantiations of a land use classification system should undergo systematic validation. Therefore it is a land use classification system concern as to whether to adopt a hierarchical classification schemata; but it is a land use classification framework concern to both specify a proceedure for the validation of classified land use data.
 
 # The New Zealand Standard Land Use Classification Framework
 
-The NZSLUC Framework presents principles, procedures and definitions for designing compliant land use classification systems. 
+The NZSLUC Framework presents principles, procedures and definitions for designing land use classification systems. Classification systems that adhere to this framework are considered to be _compliant_ with the classification framework.
 
 ## Principles <!-- Informative -->
 
@@ -33,23 +35,23 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
     - Management practices
     - Tenure
 
-## Procedures 
+## Procedures <!-- Normative -->
 
 The brief list of procedures for land use classification systems under this framework is below. Following subsections add detail.
 
-1. Published data shall be independently validated, and quality described using a standard. Overall attribute accuracy of 80% shall be adopted as a minimum standard.
-1. Changes made to land use classification systems shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been release, the contents of that version must not be modified; modifications must be released as a new version.
+1. **Validation** Published data shall be independently validated, and quality described using a standard. Overall attribute accuracy of 80% shall be adopted as a minimum standard.
+1. **Semantic versioning** Changes made to land use classification systems shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been release, the contents of that version must not be modified; modifications must be released as a new version.
     - Major version for backwards incompatible functionality.
         - Major version 0 is reserved for initial development and tolerance for change is higher than for other major versions.
     - Minor version for new or modified functionality in a backwardly compatible manner.
     - Patch version for backwardly compatible fixes and minor adjustments.
-1. Land use datasets shall be maintained on data repositories, and published with standardised metadata.
-1. Geographic scales and entities are to be considered stable.
-1. The publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these procedures. This standard is likely to affect the appropriate procedures for land use classification systems.
-1. Compatibility with existing New Zealand classification systems shall be considered. Compatibility with international classification systems may also be relevant.
-1. Classification systems shall individually determine the definition of "land" with reference to their stated purpose.
-1. Classification systems shall ensure that mixed or secondary uses may be attributed to land.
-1. Source information (i.e. provenance, geographic scale, date, operator, and confidence) shall be recorded.
+1. **Publication and metadata** Land use datasets shall be maintained on data repositories, and published with standardised metadata.
+1. **Stability of geographic scale** Geographic scales and entities are to be considered stable.
+1. **The effect of ISO 19144-3** The publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these procedures. This standard is likely to affect the appropriate procedures for land use classification systems.
+1. **Compatibility with existing land use classification systems** Compatibility with existing New Zealand classification systems shall be considered. Compatibility with international classification systems may also be relevant.
+1. **Definition of land** Classification systems shall individually determine the definition of "land" with reference to their stated purpose.
+1. **Mixed and secondary uses** Classification systems shall ensure that mixed or secondary uses may be attributed to land.
+1. **Provenance** Source information (i.e. provenance, geographic scale, date, operator, and confidence) shall be recorded.
 <!-- Classification systems shall use vocabularies that are available (normatively) as RDF, accessible via SPARQL 1.1 endpoints. -->
 <!-- Some procedure for contributing to this framework itself  -->
 <!-- Some Ppocedure regarding the standardisation of regional input data? -->
@@ -70,7 +72,7 @@ Recommended procedure (based on ALUM):
 
 It is recommended that validation results are made available, conforming to the ISO 19157-1:2023 (Geographic information — Data quality) standard.
 
-### Semanntic versioning
+### Semantic versioning
 
 ### Publication and metadata
 
@@ -86,7 +88,7 @@ One or more established metadata standards shall be used when publishing land us
 
 Geographic units and geographic scales form an intrinsic part of the specification of a land use classification system, and changes to these are to be considered _major_ version changes to a classification system. The reason for this is that stability in the geographic frame of reference is critical to support analysis of land use change over time.
 
-### ISO 19144-3
+### The effect of ISO 19144-3
 
 ### Compatibility with existing land use classification systems
 
@@ -110,9 +112,9 @@ This also allows for classification systems that are developed for particular ap
 
 Some classification systems are intended only to capture "primary" land use for geographic entities, typically defined in economic terms. Some classification systems allow for the encoding of multiple uses, but in such a way that information about the primary land use is lost. (For example, the _ratings valuation rules_, LINZ S30300, allow for "multiple use" classes without the ability to encode the component uses.)
 
-Data schemas for land sue classification systems produced under this framework shall be designed in such a way that multiple uses can be recorded, without loss of information. This may be as a primary/secondary distinction, an enumeration, or some other form of attribution; but it must be possible in some fashion. 
+Data schemas for land use classification systems produced under this framework shall be designed in such a way that multiple uses can be recorded, without loss of information. This may be as a primary/secondary distinction, an enumeration, or some other form of attribution; but it must be possible in some fashion. 
 
-### Source information
+### Provenance
 
 The value of land use data is enhanced when information is available regarding provenance. This relates to the epistemological foundation of land use data: how it is that we know the land use. Within the data schema of a classification system, it must be possible to record provenance information, including (but not limited to) if applicable:
     - the geographic scale of any input data
