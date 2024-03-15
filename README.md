@@ -16,6 +16,9 @@ A **land use classification _system_** may then be developed within this framewo
 
 For example, it may or may not be appropriate for any given system to be hierarchical in structure; however we consider that in order to be robust, all instantiations of a land use classification system should undergo systematic validation. Therefore it is a land use classification system concern as to whether to adopt a hierarchical classification schemata; but it is a land use classification framework concern to both require and specify a proceedure for the validation of classified land use data.
 
+![a worked example](figs/Framework-Classification-01.png)
+Fig N. Overview figure.
+
 # The New Zealand Standard Land Use Classification Framework
 
 The NZSLUC Framework presents principles, procedures and definitions for designing land use classification systems. Classification systems that adhere to this framework are considered to be _compliant_ with the classification framework.
@@ -145,6 +148,9 @@ This is a list of land use classification systems that are (being) developed und
 |------|------|------|
 | TBD  | [🔗](classification-systems/nzslucs.md) | General environmental change, especially for freshwater monitoring and greenfield development |
 
+
+![a worked example](figs/Framework-Classification-02.png)
+Fig N. a worked example...
 
 # References
 <a id="1">[1]</a>
