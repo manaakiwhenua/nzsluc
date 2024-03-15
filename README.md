@@ -6,9 +6,15 @@
 
 Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. 
 
-Various attempts have been made to develop a system of land use classification for New Zealand, but few have been widely adopted.
+A litany of land use classifications, and systems, have been developed for New Zealand with few, if any, having been broadly adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
 
-We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of the specification of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which one or more "land use **classification systems**" may be developed.
+We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same the meaning across any instantiated output.  This document is an initial draft of such a framework. 
+
+~~We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of the specification of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which _any_ "land use **classification systems**" may be developed.~~
+
+A land use classification _framework_ should include principles appropriate for any land use classification system (or output---i.e. a map) while remaining flexible enough to facilitate all relevant use-cases illustrating the requirement of a specific need or value (e.g. a _type_ of land use).  This may include hierarchies for generalization as well as other types of relational information such as lineage, parts, terminological variation,....
+This is important as it will facilitate 1 to 1, 1 to many, many to 1, and many to many relationships as they are appropriate, even if the only that can be captured is that there is a relation between two entities despite no current understanding as to how the entites may be related --- e.g `skos:related`.
+
 
 The **land use classification _framework_** should consider over-arching purposes, roles, principles, and procedures for land use classification _systems_. It should be narrowly prescriptive, and allow scope for multiple classification systems to co-exist—provided they adhere to the framework principles and follow framework procedures.
 
