@@ -10,39 +10,47 @@ A litany of land use classifications, and systems, have been developed for New Z
 
 We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same meaning across any instantiated output.  This document is an initial draft of such a framework. 
 
-~~We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of the specification of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which _any_ "land use **classification systems**" may be developed.~~
-
 A land use classification _framework_ should include principles appropriate for any land use classification system (or output---i.e. a map) while remaining flexible enough to facilitate all relevant use-cases illustrating the requirement of a specific need or value (e.g. a _type_ of land use).  This may include hierarchies for generalization as well as other types of relational information such as lineage, parts, terminological variation,....
-This is important as it will facilitate 1 to 1, 1 to many, many to 1, and many to many relationships as they are appropriate, even if the only that can be captured is that there is a relation between two entities despite no current understanding as to how the entites may be related --- e.g `skos:related`.
+This is important as it will facilitate 1 to 1, 1 to many, many to 1, and many to many relationships as they are appropriate, even if all that can be captured is that there _is a_ relation between two entities despite not fully understanding how the entites may be related --- e.g `skos:related`.
 
+The **land use classification _framework_** should consider over-arching principles and purposes~~, roles, principles, and procedures~~ for any land use classification _system_. It should not be overly prescriptive, allowing for multiple classification systems to co-exist—provided they adhere to the framework principles.
 
-The **land use classification _framework_** should consider over-arching purposes, roles, principles, and procedures for land use classification _systems_. It should be narrowly prescriptive, and allow scope for multiple classification systems to co-exist—provided they adhere to the framework principles and follow framework procedures.
+**Land use classification _systems_** should be developed within this framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all data or use cases. The intention is for multiple systems to be developed for a variety of purposes using a variety of properties, potentially only available at specific, and limited, spatial or temporal scales.
 
-A **land use classification _system_** may then be developed within this framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all interested parties; the intention is for multiple such systems to be developed. This allows for land use classification systems to be developed for a variety of purposes and with different properties.
-
-For example, it may or may not be appropriate for any given system to be hierarchical in structure; however we consider that in order to be robust, all instantiations of a land use classification system should undergo systematic validation. Therefore it is a land use classification system concern as to whether to adopt a hierarchical classification schemata; but it is a land use classification framework concern to both require and specify a proceedure for the validation of classified land use data.
-
-![a worked example](figs/Framework-Classification-01.png)
-Fig N. Overview figure.
+For example, it may or may not be appropriate for any given system to incorporate a hierarchical structure, either as a generalization or genealogy (e.g. lineage). While this particular notion may specific to a land use classification system, the land use classification framework should allow for either, or both.  
 
 # The New Zealand Standard Land Use Classification Framework
 
 The NZSLUC Framework presents principles, procedures and definitions for designing land use classification systems. Classification systems that adhere to this framework are considered to be _compliant_ with the classification framework.
 
 ## Principles <!-- Informative -->
+1. #### Prioritize Data
+1. #### Specificity
+    each classification is designed for an intended spatiotemporal geographic unit  
+1. #### Hierarchies are encouraged where appropriate
+    1. generalization hierarchy (aggregation/disaggregation) 
+    1. genealogical hierarcy (lineage) 
+1. #### Primary use, ancillary use, and system variablity
+1. #### This classification framework is fallible
+    The classification framework shall be modified (improved?) at regular intervals based on comments and requests of any/all stakeholders (e.g. a development cycle)
 
-1. To support the production of nationally consistent data on land use
-    - through careful selection of these principles
-    - through careful specification of required procedures
-1. To continually revise these principles, and any derived classification systems
-    - with partners and stakeholders, especially iwi/Māori partners
-    - with concern for backwards compatibility and the recording of change over time
-1. To balance **reliability, practicality, and cost effectiveness** when determining procedures.
+
+_____________________________________________________________________________________
 1. To support classifications systems that work at a variety of geographic scales.
 1. To encourage multidimensional conceptualisations of land use, with particular regard for the following dimensions:
     - Commodities
     - Management practices
     - Tenure
+
+1. To continually revise these principles, and any derived classification systems
+    - with partners and stakeholders, especially iwi/Māori partners
+    - with concern for backwards compatibility and the recording of change over time
+
+
+1. To support the production of nationally consistent data on land use
+    - through careful selection of these principles
+    - through careful specification of required procedures
+1. To balance **reliability, practicality, and cost effectiveness** when determining procedures.
 
 ## Procedures <!-- Normative -->
 
@@ -65,6 +73,8 @@ The brief list of procedures for land use classification systems under this fram
 <!-- Some procedure for contributing to this framework itself  -->
 <!-- Some Ppocedure regarding the standardisation of regional input data? -->
 
+![a worked example](figs/Framework-Classification-01.png)
+Fig N. Overview figure.
 
 ### Validation
 
