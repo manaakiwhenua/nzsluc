@@ -8,7 +8,7 @@ Standardised land use information is needed to respond to New Zealand's environm
 
 A litany of land use classifications, and systems, have been developed for New Zealand with few, if any, having been broadly adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
 
-We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same the meaning across any instantiated output.  This document is an initial draft of such a framework. 
+We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same meaning across any instantiated output.  This document is an initial draft of such a framework. 
 
 ~~We propose that one reason why these systems have not been adopted is that they have primarily been narrowly focussed on land use classification systems in terms of the specification of a hierarchy of classes. Whereas we believe it is important to first consider a "land use **classification framework**" under which _any_ "land use **classification systems**" may be developed.~~
 
