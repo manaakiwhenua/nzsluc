@@ -4,7 +4,10 @@
 
 [![manaakiwhenua-standards](https://github.com/manaakiwhenua/nzsluc/workflows/manaakiwhenua-standards/badge.svg)](https://github.com/manaakiwhenua/manaakiwhenua-standards)
 
-Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. 
+<!-- taken directly from contract; first para -->
+New Zealand currently lacks a comprehensive **, cohesive** land use information system. There is a lack of consistent definition or approach to mapping land use at the national and regional levels. Understanding land use consistently across New Zealand and over time would enable us to better understand the impacts of land use on ecosystem services, support the modelling of the impacts of climate change, and help profile natural disaster risks among other benefits.
+
+<!-- Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. -->
 
 A litany of land use classifications, and systems, have been developed for New Zealand with few, if any, having been broadly adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
 
