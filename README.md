@@ -9,7 +9,7 @@ New Zealand currently lacks a comprehensive **, cohesive** land use information 
 
 <!-- Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. -->
 
-A litany of land use classifications, and systems, have been developed for New Zealand with few, if any, having been broadly adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
+A litany of land use classifications have been developed for New Zealand, primarily drawing on the same (or very similar) public and commercial data. Few, if any, having been more widely adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
 
 We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same meaning across any instantiated output.  This document is an initial draft of such a framework. 
 
@@ -129,6 +129,14 @@ In particular, to what extent it includes marine and terrestrial water bodies.
 This is also relevant for land use classification systems to declare their appropriate extent of application. For example, whether a land use classification system should be applied to New Zealand's offshore islands, marine areas (out to the EEZ), the entire continental shelf, etc. There is no consensus that a definition of "land" can exclude uses such as aquaculture, marine conservation areas, fishing areas, mining permits, shipping lanes, etc., particularly in the notable absence of "sea use maps".
 
 This also allows for classification systems that are developed for particular application to the _rohe pōtae_ of iwi but may be inappropriate elsewhere.
+
+<!-- copied directly from Cavanagh and Whitehead 2023 -->
+‘Land use’, ‘land cover’ and ‘land management’ are often used interchangeably in discussions about land use. This erroneous use seems to largely stem from a lack of awareness of the distinct meaning of each of these terms.  The following definitions, which have been drawn from the [Australian Department of Agriculture, Water and the Environment](https://www.awe.gov.au/abares/aclump/definitions), help to make explicit the differences. 
+- Land use means the purpose to which the land is committed, including the production of goods (such as crops, timber, and manufactures) and services (such as defence, recreation, biodiversity, and natural resources protection)
+- Land management practice means the approach taken to achieve a land-use outcome – the 'how' of land use (e.g., cultivation practices such as minimum tillage, direct drilling, and choices around stocking rate density). 
+- Land cover refers to the physical surface of the earth, including various combinations of vegetation types, natural bare surfaces (e.g., exposed rock or gravel, permanent snow and ice, etc.), and water bodies as well as anthropogenic elements, such as agriculture, transport infrastructure and built environments. Land-cover classes can usually be distinguished by characteristic patterns using remote sensing. 
+- Land-use classification provides general information on land cover, and the types of human activity involved in land management.  
+<!-- end copy -->
 
 ### Mixed and secondary uses
 
