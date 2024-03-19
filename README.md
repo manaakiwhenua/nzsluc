@@ -23,18 +23,19 @@ Principles are intended to guide practitioners in how they use, re-use or design
 ## Principles <!-- Informative -->
 
 1. #### Prioritise atomic data (i.e. decomposition of multidimensional attributes, e.g. tenure)
-1. #### Specificity
-    each classification is designed for an explicit spatiotemporal geographic unit
+    - Break down information being collected into individual (atomic) attributes.
+    - Collect primary data in place of secondary categorical data, where feasible.
+1. #### Be specific about purpose
+    - Each classification is designed for an explicit spatiotemporal geographic unit.
 1. #### Hierarchies are encouraged where appropriate
-    1. generalization hierarchy (aggregation/disaggregation) 
-    1. genealogical hierarcy (lineage) 
-1. #### Primary use, ancillary use, and system variablity
+    - This will allow for both generalisation hierarchies (aggregation/disaggregation) and genealogical hierarchies (lineage). 
 1. #### This classification framework is intended to be improved over time
     - The classification framework shall be reviewed based on comments and requests of stakeholders.
     - In particular, the publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these principles and best practices.
-1. #### Classification systems encourages reproducible and transparent methodologies 
-1. #### Classification systems should (where possible) separate conceptual ideas from land use, e.g. land tenure, commodities, management practices, etc.
+1. #### Prioritise reproducible and transparent methodologies 
+    - User confidence increases when methodologies can be verified independently.
 1. #### Classification systems shall accomodate multiple (e.g. co-located, secondary) land-uses
+    - Differentiate between secondary land use (same place, same time) with intra-period land use variation (same place, different time)-- e.g., rotational grazing, summer housing, etc.
 
 ## Best practices <!-- Normative -->
 
