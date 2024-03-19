@@ -115,7 +115,7 @@ This is also relevant for land use classification systems to declare their appro
 
 This also allows for classification systems that are developed for particular application to the _rohe pōtae_ of iwi but may be inappropriate elsewhere.
 ___________________________________________________________________
-<!-- ~~copied directly~~ modified from from Cavanagh and Whitehead 2023 -->
+<!-- copied and modified from from Cavanagh and Whitehead 2023 -->
 ‘Land use’, ‘land cover’ and ‘land management’ are often used interchangeably in discussions about land use. This erroneous use seems to largely stem from a lack of awareness of the distinct meaning of each of these terms.  The following definitions, which have been drawn from the [Australian Department of Agriculture, Water and the Environment](https://www.awe.gov.au/abares/aclump/definitions), help to make explicit the differences. 
 - Land cover refers to the physical surface of the earth. This may include vegetation types, naturally bare surfaces (e.g., exposed rock, permanent snow and ice, etc.), and water bodies. This may also include anthropogenic elements, such as transport infrastructure, built environments or agriculture. Land cover can usually be determined by observable patterns via remote sensing, aerial imagery, etc. 
 - Land use means the purpose to which the land is committed. This may include:
