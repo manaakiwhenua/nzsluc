@@ -38,6 +38,7 @@ The NZSLUC Framework presents principles, procedures and definitions for designi
     The classification framework shall be modified (improved?) at regular intervals based on comments and requests of any/all stakeholders (e.g. a development cycle)
 
 
+any classification _system_ should have openly available documentation describing methodology (reproducible, transparent) 
 _____________________________________________________________________________________
 1. To support classifications systems that work at a variety of geographic scales.
 1. To encourage multidimensional conceptualisations of land use, with particular regard for the following dimensions:
@@ -100,10 +101,9 @@ It is recommended that validation results are made available, conforming to the 
 
 Published land use data shall be made available on public data repositories. Exceptions to this may be made for land use classifications with information considered sensitive by those supplying data or interpretative information. However, making data available on a data repositories with privacy controls is still recommended.
 
-One or more established metadata standards shall be used when publishing land use data (whether public or private):
-
+One or more established metadata standards shall be used when publishing land use data (whether public or private). Non exhaustive list of examples include:
 - The Dublin Core (DCMI)
-- DCAT-2 (Data Catalog Vocabulary)
+- DCAT-2 (Data Catalog Vocabulary, version 2)
 - ISO 19115 (geospatial metadata standard)
 
 ### Stability of geographic scale
@@ -129,13 +129,17 @@ In particular, to what extent it includes marine and terrestrial water bodies.
 This is also relevant for land use classification systems to declare their appropriate extent of application. For example, whether a land use classification system should be applied to New Zealand's offshore islands, marine areas (out to the EEZ), the entire continental shelf, etc. There is no consensus that a definition of "land" can exclude uses such as aquaculture, marine conservation areas, fishing areas, mining permits, shipping lanes, etc., particularly in the notable absence of "sea use maps".
 
 This also allows for classification systems that are developed for particular application to the _rohe pōtae_ of iwi but may be inappropriate elsewhere.
-
-<!-- copied directly from Cavanagh and Whitehead 2023 -->
+___________________________________________________________________
+<!-- ~~copied directly~~ modified from from Cavanagh and Whitehead 2023 -->
 ‘Land use’, ‘land cover’ and ‘land management’ are often used interchangeably in discussions about land use. This erroneous use seems to largely stem from a lack of awareness of the distinct meaning of each of these terms.  The following definitions, which have been drawn from the [Australian Department of Agriculture, Water and the Environment](https://www.awe.gov.au/abares/aclump/definitions), help to make explicit the differences. 
-- Land use means the purpose to which the land is committed, including the production of goods (such as crops, timber, and manufactures) and services (such as defence, recreation, biodiversity, and natural resources protection)
-- Land management practice means the approach taken to achieve a land-use outcome – the 'how' of land use (e.g., cultivation practices such as minimum tillage, direct drilling, and choices around stocking rate density). 
-- Land cover refers to the physical surface of the earth, including various combinations of vegetation types, natural bare surfaces (e.g., exposed rock or gravel, permanent snow and ice, etc.), and water bodies as well as anthropogenic elements, such as agriculture, transport infrastructure and built environments. Land-cover classes can usually be distinguished by characteristic patterns using remote sensing. 
-- Land-use classification provides general information on land cover, and the types of human activity involved in land management.  
+- Land cover refers to the physical surface of the earth. This may include vegetation types, naturally bare surfaces (e.g., exposed rock, permanent snow and ice, etc.), and water bodies. This may also include anthropogenic elements, such as transport infrastructure, built environments or agriculture. Land cover can usually be determined by observable patterns via remote sensing, aerial imagery, etc. 
+- Land use means the purpose to which the land is committed. This may include:
+    1. the production of goods---e.g. crops (agronomy?), timber, manufacturing...
+    1. services---e.g. defence, recreation, biodiversity, natural resources protection...
+    1. place of spiritual connection
+    1. sacred
+- Land management practice refers to the approach taken to achieve a land use---e.g. cultivation practices, stocking rate density, etc.). 
+- Land use classification may provide general information on land cover, and the types of human activity involved in land management.  
 <!-- end copy -->
 
 ### Mixed and secondary uses
