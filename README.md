@@ -4,59 +4,44 @@
 
 [![manaakiwhenua-standards](https://github.com/manaakiwhenua/nzsluc/workflows/manaakiwhenua-standards/badge.svg)](https://github.com/manaakiwhenua/manaakiwhenua-standards)
 
-<!-- taken directly from contract; first para -->
-New Zealand currently lacks a comprehensive **, cohesive** land use information system. There is a lack of consistent definition or approach to mapping land use at the national and regional levels. Understanding land use consistently across New Zealand and over time would enable us to better understand the impacts of land use on ecosystem services, support the modelling of the impacts of climate change, and help profile natural disaster risks among other benefits.
+New Zealand currently lacks a comprehensive and cohesive land use information system. There is a lack of consistent definition or approach to mapping land use. Consistent land use information for New Zealand (over space and time) would improve the understanding of the impacts of land use on ecosystem services, support the modelling of the impacts of climate change, and help profile natural disaster risks, among other benefits.
 
-<!-- Standardised land use information is needed to respond to New Zealand's environmental, cultural, social and economic challenges, including water quality, soil erosion, natural disaster planning and response, greenfield development, and more holistic concerns. -->
+Many land use classifications have been developed for New Zealand, primarily drawing on the same (or very similar) public and commercial data. Few, if any, having been re-used. One of the common reasons for this outcome is that systems tend to narrowly focus and use data that is tightly coupled to one specific application.
 
-A litany of land use classifications have been developed for New Zealand, primarily drawing on the same (or very similar) public and commercial data. Few, if any, having been more widely adopted. One of the primary reasons for this outcome being each system is quite narrowly focused and uses data tightly coupled to that specific classification and/or application, without consideration of a broader perspective or context.
+We propose that any New Zealand land use classification system adheres to common principles in a common framework.  This document is an initial draft of such a framework.
 
-We propose any New Zealand land use classification adhere to common principles, or a common framework, such that the objects being considered in the classification carry the same meaning across any instantiated output.  This document is an initial draft of such a framework. 
+We propose a **land use classification _framework_** that includes principles and procedures appropriate for any land use classification system (and associated output, i.e. geospatial information and maps). This must allow for multiple land use classifications systems, each with its own intended use cases, potentially across multiple value systems. This may (or may not) include hierarchies for generalisation as well as other types of relational information such as lineage, parts, terminological variation. Multiple hierarchies are important as they will facilitate 1 to 1, 1 to many, many to 1, and many to many relationships as appropriate; even if all that can be captured is that there _is a_ relation between two classes despite not fully understanding how the classes may be related. <!--  --- e.g `skos:related`. -->
 
-A land use classification _framework_ should include principles appropriate for any land use classification system (or output---i.e. a map) while remaining flexible enough to facilitate all relevant use-cases illustrating the requirement of a specific need or value (e.g. a _type_ of land use).  This may include hierarchies for generalization as well as other types of relational information such as lineage, parts, terminological variation,....
-This is important as it will facilitate 1 to 1, 1 to many, many to 1, and many to many relationships as they are appropriate, even if all that can be captured is that there _is a_ relation between two entities despite not fully understanding how the entites may be related --- e.g `skos:related`.
-
-The **land use classification _framework_** should consider over-arching principles and purposes~~, roles, principles, and procedures~~ for any land use classification _system_. It should not be overly prescriptive, allowing for multiple classification systems to co-exist—provided they adhere to the framework principles.
-
-**Land use classification _systems_** should be developed within this framework. It is at this level that a more concrete system of classes may be created. It is unlikely that one classification _system_ will be appropriate for all data or use cases. The intention is for multiple systems to be developed for a variety of purposes using a variety of properties, potentially only available at specific, and limited, spatial or temporal scales.
-
-For example, it may or may not be appropriate for any given system to incorporate a hierarchical structure, either as a generalization or genealogy (e.g. lineage). While this particular notion may specific to a land use classification system, the land use classification framework should allow for either, or both.  
+We propose that **land use classification _systems_** are developed within this framework. It is at the _system_ level that a more concrete set of classes may be designed. It is unlikely that one classification _system_ will be appropriate for all data or use cases. This allows for the development of multiple systems using a variety of properties, potentially only available at specific spatial or temporal scales, limited extents, or specific purposes (including confidentiality).
 
 # The New Zealand Standard Land Use Classification Framework
 
-The NZSLUC Framework presents principles, procedures and definitions for designing land use classification systems. Classification systems that adhere to this framework are considered to be _compliant_ with the classification framework.
+The NZSLUC Framework presents principlesa and procedures for designing land use classification systems.
 
 ## Principles <!-- Informative -->
+
 1. #### Prioritize Data
 1. #### Specificity
-    each classification is designed for an intended spatiotemporal geographic unit  
+    each classification is designed for an explicit spatiotemporal geographic unit
 1. #### Hierarchies are encouraged where appropriate
     1. generalization hierarchy (aggregation/disaggregation) 
     1. genealogical hierarcy (lineage) 
 1. #### Primary use, ancillary use, and system variablity
-1. #### This classification framework is fallible
-    The classification framework shall be modified (improved?) at regular intervals based on comments and requests of any/all stakeholders (e.g. a development cycle)
+1. #### This classification framework is intended to be improved over time
+    The classification framework shall be reviewed based on comments and requests of stakeholders.
+1. #### Classification systems encourages reproducible and transparent methodologies 
+1. #### Classification systems should 
 
-
-any classification _system_ should have openly available documentation describing methodology (reproducible, transparent) 
 _____________________________________________________________________________________
-1. To support classifications systems that work at a variety of geographic scales.
 1. To encourage multidimensional conceptualisations of land use, with particular regard for the following dimensions:
     - Commodities
     - Management practices
     - Tenure
 
-1. To continually revise these principles, and any derived classification systems
-    - with partners and stakeholders, especially iwi/Māori partners
-    - with concern for backwards compatibility and the recording of change over time
-
-
-1. To support the production of nationally consistent data on land use
-    - through careful selection of these principles
-    - through careful specification of required procedures
-1. To balance **reliability, practicality, and cost effectiveness** when determining procedures.
 
 ## Procedures <!-- Normative -->
+
+<!-- 1. To balance **reliability, practicality, and cost effectiveness** when determining procedures. -->
 
 The brief list of procedures for land use classification systems under this framework is below. Following subsections add detail.
 
@@ -156,14 +141,29 @@ The value of land use data is enhanced when information is available regarding p
     - the operator (who is performing the classification; or who has decided on the appropriateness of a particular class label for a feature)
     - a quantitative (e.g. probabilistic) or qualitative (e.g. operator confidence) measurement of confidence in the applied class
 
+## Matrix framework
+
+Following [[2]](#2)
+
+| Dimension used in classification| Individual or group information - extended family (Whānau) or individual (highly sensitive or personal information) | Māori databases such as the iwi or hapū tribal level (secured protection of information) | Regional and district databases, such as local government (conditions and criteria required for storing confidential information) | National level, central government (national databases, public domain access) |
+|:---|:---|:---|:---|:---|
+| Flora and Funga | Plant uses, plant varieties, medicinal plants, plants for weaving etc. | Local information on vegetation types | Regional or district data on vegetation and land use | National or regional data on vegetation (land cover) |
+| Fauna | Special fauna, such as special foods, cultural arvest, fishing grounds, etc. | Local information on fauna | Regional or district data on fauna | National or regional data on fauna |
+| Land, soil | Special landmarks, land features, traditional knowledge on soils and cultivation, muds/dyes for weaving, etc. | Tribal information on land features, landforms, soils, etc. | Regional or district data on landforms, soils, etc. | National or regional data on landfrosm, soils etc. |
+| Water | Detailed or confidential information on water | Tribal information on water | Regional or district data on water | National or regional data on water |
+| Air | Detailed or confidential information on air | Tribal information on air | Regional or district data on air | National or regional data on air |
+| Special places | Detailed or confidential information on special places, cultural and historic sites | Tribal information on special places, cultural and historic sites (such as archaelogical sites) | Regional and district information on special places, cultural and historic sites | Limited information on special places, cultural sites |
+| Sacred sites | Detailed or confidential information on sacred sites (e.g. burial grounds) | Tribal information on sacred sites | Regional and district information on some sacred sites (generalised information) | (Little or no information at this scale) |
+| Metaphyiscal | Detailed or confidentail metaphysical information (such as spiritual, cosmological) | Tribal information on metaphysical information | (No information at this scale) | (Little or no information at this scale) |
+
 ---
 
 ## Definitions / Key Concepts
 
 | Concept | Description | Reference(s) |
 |---------|:-----------:|-------------:|
-| Land use | The purpose to which land is committed. | ... |
-| Tenure | The form of an interest in land. | ... |
+| Land use | The purpose to which land is committed by people. This includes the production of goods and services, as well as more `passive' uses such as conservation, scenery, and rehabilitation. | ... |
+| Tenure | The form of an interest in land. Refers too types of property (land) ownership, including freehold, leashold, unit title, cross lease, etc. and also relates to the questions of who owns land (Crown, iwi, private) | ... |
 | Commodity | A product. | ... |
 | Management practice | A practice. | ... |
 
@@ -188,3 +188,8 @@ Fig N. a worked example...
 Denham, R. (2005).
 Accuracy assessment for land use mapping.
 Queensland Department of Natural Resources and Mines, Brisbane, and the Bureau of Rural Sciences, Canberra.
+
+<a id="2">[2]</a>
+Harmsworth, G. (1999).
+Indigenous values and GIS: a method and a framework.
+Business Alert 14.1 (1999): 10-15.
