@@ -20,6 +20,7 @@ The NZLUMT is intended for the purpose of environmental modelling monitoring, es
 
 It balances simplicity of use with with flexibility and extensibility.
 
+
 ## Hierarchical Classification System
 
 1. **Conservation and natural environments**
@@ -27,6 +28,8 @@ It balances simplicity of use with with flexibility and extensibility.
     This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses, but nature conservation is a central consideration. Some land may be unused as a result of a deliberate decision of government or landowner, or due to circumstance.
 
     Where a classification is made on the basis of information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.
+
+    <details><summary>Expand</summary>
 
     1. **Nature conservation**
 
@@ -130,12 +133,15 @@ It balances simplicity of use with with flexibility and extensibility.
 
         3. **Rehabilitation** Land under rehabilitation that has been restored to a near natural state. Land that is degraded or undergoing rehabilitation but still substantially modified should be mapped under 3.6.2, 3.6.3, 4.6.2, 4.6.3 or 5.8.4.
 
+    </details>
 
 2. Production from agriculture and plantations
 
     **NOTE**: ALUM distinguishes dryland and irrigated agriculture and plantations. NZLUMT does not make this distinction (noting that irrigation can be listed as a management practice) and essentially folds ALUM classes 3 and 4 into one class.
 
     This class includes land that is used principally for primary production. Native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure, land should have irrigation listed as a management practice even if irrigation water has not been applied in the current growing season.
+    
+    <details><summary>Expand</summary>
 
     1. **Plantation forests**
 
@@ -172,7 +178,11 @@ It balances simplicity of use with with flexibility and extensibility.
         1. Degraded land
         2. Abandoned land
 
+    </details>
+
 3. **Intensive Uses**
+
+    <details><summary>Expand</summary>
 
     1.
     2.
@@ -182,9 +192,12 @@ It balances simplicity of use with with flexibility and extensibility.
         2. Lifestyle without agriculture
         3. Lifestyle with agriculture
 
+    </details>
 
 4. **Water**
 
+    <details><summary>Expand</summary>
+    </details>
 
 ## Geographic scale
 
