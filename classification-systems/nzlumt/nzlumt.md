@@ -32,9 +32,11 @@ In other terms, the perfect is the enemy of the good. Implementations of this cl
 Describing _how_ a classification is known is an important classification framework principle ("Priorite reproducible and transparent methodologies").
 
 1. Through the recording of loose provenance information as part of the data schema (`source_data`, `source_data_doi`, `source_date`, and `source_scale`). This is not especially rigorous and is intended for rapid end-user information.
-2. As an  
+<!-- TODO 2. As a more rigourous but optional addition, describing classification logic using semantic techniques -->
 
 ## Hierarchical Classification System
+
+![NZLUMT hierarchical classification system as a table](./NZLUMT.svg)
 
 1. **Conservation and natural environments**
 
