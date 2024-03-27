@@ -116,10 +116,10 @@ Describing _how_ a classification is known is an important classification framew
             - Māori Reservation (various purposes related to Marae, Pā Sites, Papakāinga, Urupā, Wāhi Tapu, etc.)
         - River Boards Act 1908
             - River Bed
-        - Reservees Act 1977
+        - Reserves Act 1977
             - Road Reserve
 
-    3. **Production from relatively natural environments**
+    3. **Sustainable use from relatively natural environments**
 
         This class includes land that is subject to relatively low levels of intervention. The land may not be used more intensively because of its limited capability. The structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly. Where the native vegetation structure is, for example, open woodland or grassland, the land may be grazed.
 
@@ -338,54 +338,6 @@ Describing _how_ a classification is known is an important classification framew
 
     </details>
 
-4. **Water**
-
-    Water features are regarded as essential to the NZLUMT Classification because of their importance for natural resources management, agricultural production and as points of reference in the landscape. At the secondary level, the classification identifies water features, both natural and artificial. Tertiary classes relate water features to intensity of use and conservation status.
-
-    Because water is a land cover rather than a land use, water classes may not be mutually exclusive with other land use classes at particular levels in the classification. Generally, water classes should take precedence so that, for example, a lake in a conservation reserve will be classed as 4.1, ‘Lake’ or 4.1.1, ‘Lake—conservation’, rather than as 1.1, ‘Nature conservation’.
-    
-    <details><summary>Expand</summary>
-
-    1. Lake
-
-        1. Conservation
-        2. Production
-        3. Intensive use
-        4. Saline
-
-    2. Reservoir/dam
-
-        1. Reservoir
-        2. Intensive use
-        3. Evaporation basin
-
-    3. River
-
-        1. Conservation
-        2. Production
-        3. Intensive use
-
-    4. Channel/aqueduct
-
-        1. Supply channel/aqueduct
-        2. Drainage channel/aqueduct
-        3. Stormwater
-
-    5. Marsh/wetland
-
-        1. Conservation
-        2. Production
-        3. Intensive use
-        4. Saline
-
-    6. Estuary/coastal waters
-
-        1. Conservation
-        2. Production
-        3. Intensive use
-
-    </details>
-
 ## Tenure
 
 Information relating to land tenure should be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. This information is included because it directly participates in the intended use of the land use classification system, though it is auxiliary.
@@ -454,6 +406,27 @@ A non-exhaustive list of land status types organised along a gradient from Crown
     1. Individuals
     1. Iwi
 
+## Water
+
+Water is a land cover, rather than a land use. (If it is considered "land" at all.) Certain land uses can only occur on water (e.g. aquaculture); some can occur on either land or water (e.g. oil and gas wells); some only on land (e.g. pastoral farming)—but pieces of such land may include water, e.g. dams, ponds, and lakes.
+
+ALUM classifies water as a primary class, but notes that this presents some difficulty. NZLUMT specifies instead that water is to be recorded as a distinct attribute that can be applied to a geographic unit.
+
+Very often water doesn't occupy the entire geographic unit (i.e. parcel); it should still be discriminated accurately as a sub-parcel-scale feature. The exception is if it is very small, in which case it can be ignored rather than attributed to the entire parcel.
+
+The "water" field can take one of the following values:
+    - `lake`
+    - `reservoir`
+    - `dam`
+    - `evaporation basin`
+    - `river`
+    - `channel`
+    - `aqueduct`
+    - `wetland`
+    - `estuary`
+    - `intertidal` <!-- supralittoral, eulittoral -->
+    - `marine` <!-- sublittoral -->
+
 ## General issues
 
 ### Geographic scale
@@ -477,11 +450,12 @@ The intended geographic unit of this classification system is the property parce
 | lu_code_ancillary | string | `2.2.0, 3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
 | commod | string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
 | commod_ancillary | string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
-| manage | string | irrigation spray, organic | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
+| manage | string | `irrigation spray, organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
 | manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
 | land_estate | string | `freehold` | Estate type |
 | land_status | string | TBD | Land status type (public-private continuum) |
-| confidence | integer | 3 | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
+| water | string | `lake` | Water type (null for land) |
+| confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
 | luc_date | date | `2024-05-26` | Date of (primary) land use code |
 | source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only ony should be specified. |
 | source_data_doi | uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for the source data |
