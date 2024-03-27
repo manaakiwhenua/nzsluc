@@ -29,6 +29,11 @@ It balances simplicity of use with with flexibility and extensibility.
 
 In other terms, the perfect is the enemy of the good. Implementations of this classification system should accept and record available yet partial information. For example, where it is clear that there is a plantation forest, but the intended _use_ of the timber (i.e. a commodity such as `pulp` or `sawlogs`) is _not_ apparent, the land use should still be attributed to an appropriate plantation forestry class, but the commodity value left as a null value. Record what is known, even where there are known information gaps.
 
+Describing _how_ a classification is known is an important classification framework principle ("Priorite reproducible and transparent methodologies").
+
+1. Through the recording of loose provenance information as part of the data schema (`source_data`, `source_data_doi`, `source_date`, and `source_scale`). This is not especially rigorous and is intended for rapid end-user information.
+2. As an  
+
 ## Hierarchical Classification System
 
 1. **Conservation and natural environments**
@@ -339,6 +344,8 @@ In other terms, the perfect is the enemy of the good. Implementations of this cl
 
     Because water is a land cover rather than a land use, water classes may not be mutually exclusive with other land use classes at particular levels in the classification. Generally, water classes should take precedence so that, for example, a lake in a conservation reserve will be classed as 4.1, ‘Lake’ or 4.1.1, ‘Lake—conservation’, rather than as 1.1, ‘Nature conservation’.
     
+    <details><summary>Expand</summary>
+
     1. Lake
 
         1. Conservation
@@ -377,7 +384,6 @@ In other terms, the perfect is the enemy of the good. Implementations of this cl
         2. Production
         3. Intensive use
 
-    <details><summary>Expand</summary>
     </details>
 
 ## Tenure
