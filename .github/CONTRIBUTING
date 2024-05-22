@@ -1,0 +1,8 @@
+This classification framework and these classification systems are meant to be collaborative and arrived at by consensus.
+
+If you want to propose a change, please consider etiqutte:
+
+- Be polite
+- Keep changes as simple as possible
+- Make substantial changes, but scope them to precise parts. It is better to have two pull requests for two different ideas, than one pull request for two ideas, even if they are related.
+- Ideas for changes can be discussed before making a pull request, but a pull request may come first and could help frme the discussion.
