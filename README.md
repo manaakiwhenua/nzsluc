@@ -1,5 +1,7 @@
 # NZSLUC
 
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
 **THIS IS AN UNPUBLISHED AND UNREVIEWED DRAFT**
 
 [![manaakiwhenua-standards](https://github.com/manaakiwhenua/nzsluc/workflows/manaakiwhenua-standards/badge.svg)](https://github.com/manaakiwhenua/manaakiwhenua-standards)
@@ -18,15 +20,24 @@ We propose that **land use classification _systems_** are developed within this 
 
 The NZSLUC Framework presents principles and best practices for designing land use classification systems.
 
-Principles are intended to guide practitioners in how they use, re-use or design classification systems.  
+Principles are intended to guide practitioners in how they use, re-use or design classification systems.
+
+> **Kua raranga tahi tatou he whāriki, mātauranga mō āpōpō.**
+> 
+> _Together we weave the mat / In terms of [mātauranga](https://maoridictionary.co.nz/word/3830) / For future generations._
+
+This [whakataukī](https://maoridictionary.co.nz/word/9903) envisions a mat weaving analogy which in this context brings to mind the reliance on multiple independent sources of input data, information, and knowledge from different people and organisations, with the ultimate aim of creating a shared understanding of land use as spatial information. A land use map can be used by and for future generations to answer the enduring questions they will have about land.
 
 ## Principles <!-- Informative -->
 
 1. #### Prioritise atomic data (i.e. decomposition of multidimensional attributes, e.g. tenure)
-    - Break down information being collected into individual (atomic) attributes.
+    - Break down information being collected into individual (atomic, primitive, indivisible) attributes.
     - Collect primary data in place of secondary categorical data, where feasible.
 1. #### Be specific about purpose
     - Each classification is designed for an explicit spatiotemporal geographic unit.
+    - Atomic geographic units, such as DGGS zones, should be preferred over pre-existing geographic units such as proepty boundaries.
+1. #### Classification systems should be extensible
+    - Ensure flexibility for land use classification systems which support indigenous data sovereignty protocols (see [Te Mana Raraunga – Māori Data Sovereignty Network)](https://www.temanararaunga.maori.nz/)).
 1. #### Hierarchies are encouraged where appropriate
     - This will allow for both generalisation hierarchies (aggregation/disaggregation) and genealogical hierarchies (lineage). 
 1. #### This classification framework is intended to be improved over time
@@ -36,6 +47,7 @@ Principles are intended to guide practitioners in how they use, re-use or design
     - User confidence increases when methodologies can be verified independently.
 1. #### Classification systems shall accomodate multiple (e.g. co-located, secondary) land-uses
     - Differentiate between secondary land use (same place, same time) with intra-period land use variation (same place, different time)-- e.g., rotational grazing, summer housing, etc.
+
 
 ## Best practices <!-- Normative -->
 
@@ -47,6 +59,7 @@ The list of best practices for land use classification systems under this framew
 
 <!-- 1. Data product specification, e.g. ISO 19131:2022 -->
 1. **Purpose** Land use classification systems shall describe their intended use-cases.
+1. **Extensibility** Ensure flexibility for land use classification systems to interact with Māori attribute layers that maintain indigenous data sovereignty.
 1. **Description of data quality** The quality of published land use data shall be described using a standard, e.g. ISO 19157-1:2023.
 1. **Semantic versioning** Changes made to land use classification systems (including geographic unit or scale) shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been released, the contents of that version must not be modified; modifications must be released as a new version.
 1. **Metadata** land use datasets and classiication schema should be published using established metadata standards.
@@ -55,10 +68,21 @@ The list of best practices for land use classification systems under this framew
 1. **Primary land use** A justification should be given for the choice of primary land uses (e.g. land area, economic value, duration).
 1. **Provenance** Source information (i.e. geographic scale, time/date, operator, and confidence) shall be recorded.
 
+
 <!-- ![a worked example](figs/Framework-Classification-01.png)
 Fig N. Overview figure. -->
 
 ### Purpose
+
+Different land use maps are made for different intended purposes, because of the necessity of making decisions about how information is organised that constrain its appliciblity. It is a best practice to explicitly state the purpose for which land use classification systems are designed. This purpose will inform other decisions. When deciding on this purpose, consider what questions are likely to be answered if land use information is systematically organised according to the classification system. A 2013 Stats NZ report[^2] provides a useful framing for these questions as "enduring", i.e. questions that don't really change over time, but the way we answer them (under a type of system or architecture) does.
+
+A choice of geographic unit that make extension and re-organisation of land use information difficult (such as property parcels) can be made for _pragmatic_ reasons, but should be justified. Possible justifications include: alignment with existing tools or published data, computational feasibility, the expected absense of finer-scale input data, restrictions on the use of required input data, or privacy. Where possible, a specification to use grids without pre-defined boundaries (such as [DGGS zones](https://docs.ogc.org/as/20-040r3/20-040r3.html), or raster grids) should be preferred.
+
+### Extensibility
+
+It should always be possible to "extend" or "widen" a classification system with more properties/attributes that can be determined by other users, such that information can be re-organised, re-presented, and corrected according to local priorities, to be owned by hapū and iwi without an expectation that this will be visible "upstream". 
+
+Allowing both a class hierarchy and the annotation of multiple attributes is intended to enable the representation of whakapapa and whanaungatanga (the origins, interdependencies, and interconnections) within a land use classification system; and to represent the multiplicity of uses any area of land can simultaneously be associated with, that may go beyond the original intended purpose of a land use classification system.
 
 ### Data quality
 
@@ -108,6 +132,8 @@ The value of land use data is enhanced when information is available regarding p
     - the operator (who is performing the classification; or who has decided on the appropriateness of a particular class label for a feature)
     - a quantitative (e.g. probabilistic) or qualitative (e.g. operator confidence) measurement of confidence in the applied class
 
+
+
 ---
 
 ## Contribution
@@ -156,13 +182,24 @@ This is a list of land use classification systems that are (being) developed und
 <!-- ![a worked example](figs/Framework-Classification-02.png)
 Fig N. a worked example... -->
 
-# References
-<a id="1">[1]</a>
-Denham, R. (2005).
-Accuracy assessment for land use mapping.
-Queensland Department of Natural Resources and Mines, Brisbane, and the Bureau of Rural Sciences, Canberra.
+## References
+
+[^1] Denham, R. (2005). Accuracy assessment for land use mapping. Queensland Department of Natural Resources and Mines, Brisbane, and the Bureau of Rural Sciences, Canberra.
+
+[^2]: Statistics New Zealand, Ministry for the Environment, Department of Conservation (2013). Environment domain plan 2013: Initiatives to address our environmental information needs. Available from www.stats.govt.nz
 
 <!-- <a id="2">[2]</a>
 Harmsworth, G. (1999).
 Indigenous values and GIS: a method and a framework.
 Business Alert 14.1 (1999): 10-15. -->
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
