@@ -25,8 +25,9 @@ Principles are intended to guide practitioners in how they use, re-use or design
 1. #### Prioritise atomic data (i.e. decomposition of multidimensional attributes, e.g. tenure)
     - Break down information being collected into individual (atomic) attributes.
     - Collect primary data in place of secondary categorical data, where feasible.
-1. #### Be specific about purpose
+1. #### Be specific about purpose and scope
     - Each classification is designed for an explicit spatiotemporal geographic unit.
+    - A classification system does not have to be comprehensive, and may consider some land use types "out of scope", according to the purpose.
 1. #### Hierarchies are encouraged where appropriate
     - This will allow for both generalisation hierarchies (aggregation/disaggregation) and genealogical hierarchies (lineage). 
 1. #### This classification framework is intended to be improved over time
@@ -47,6 +48,7 @@ The list of best practices for land use classification systems under this framew
 
 <!-- 1. Data product specification, e.g. ISO 19131:2022 -->
 1. **Purpose** Land use classification systems shall describe their intended use-cases.
+1. **Scope** Land use classification systems shall describe their intended scope.
 1. **Description of data quality** The quality of published land use data shall be described using a standard, e.g. ISO 19157-1:2023.
 1. **Semantic versioning** Changes made to land use classification systems (including geographic unit or scale) shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been released, the contents of that version must not be modified; modifications must be released as a new version.
 1. **Metadata** land use datasets and classiication schema should be published using established metadata standards.
@@ -59,6 +61,10 @@ The list of best practices for land use classification systems under this framew
 Fig N. Overview figure. -->
 
 ### Purpose
+
+### Scope
+
+Land use classification systems _may_ only consider a few land use types, and consider others as being "out of scope". For example, a classification of protected land may choose to classify all other land as "non-protected" without attempting any form of further classification, according to the purpose of that classification system.
 
 ### Data quality
 
