@@ -33,9 +33,10 @@ This [whakataukī](https://maoridictionary.co.nz/word/9903) envisions a mat weav
 1. #### Prioritise atomic data (i.e. decomposition of multidimensional attributes, e.g. tenure)
     - Break down information being collected into individual (atomic, primitive, indivisible) attributes.
     - Collect primary data in place of secondary categorical data, where feasible.
-1. #### Be specific about purpose
+1. #### Be specific about purpose and scope
     - Each classification is designed for an explicit spatiotemporal geographic unit.
     - Atomic geographic units, such as DGGS zones, should be preferred over pre-existing geographic units such as proepty boundaries.
+    - A classification system does not have to be comprehensive, and may consider some land use types "out of scope", according to the purpose.
 1. #### Classification systems should be extensible
     - Ensure flexibility for land use classification systems which support indigenous data sovereignty protocols (see [Te Mana Raraunga – Māori Data Sovereignty Network)](https://www.temanararaunga.maori.nz/)).
 1. #### Hierarchies are encouraged where appropriate
@@ -59,6 +60,7 @@ The list of best practices for land use classification systems under this framew
 
 <!-- 1. Data product specification, e.g. ISO 19131:2022 -->
 1. **Purpose** Land use classification systems shall describe their intended use-cases.
+1. **Scope** Land use classification systems shall describe their intended scope.
 1. **Extensibility** Ensure flexibility for land use classification systems to interact with Māori attribute layers that maintain indigenous data sovereignty.
 1. **Description of data quality** The quality of published land use data shall be described using a standard, e.g. ISO 19157-1:2023.
 1. **Semantic versioning** Changes made to land use classification systems (including geographic unit or scale) shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been released, the contents of that version must not be modified; modifications must be released as a new version.
@@ -77,6 +79,10 @@ Fig N. Overview figure. -->
 Different land use maps are made for different intended purposes, because of the necessity of making decisions about how information is organised that constrain its appliciblity. It is a best practice to explicitly state the purpose for which land use classification systems are designed. This purpose will inform other decisions. When deciding on this purpose, consider what questions are likely to be answered if land use information is systematically organised according to the classification system. A 2013 Stats NZ report[^2] provides a useful framing for these questions as "enduring", i.e. questions that don't really change over time, but the way we answer them (under a type of system or architecture) does.
 
 A choice of geographic unit that make extension and re-organisation of land use information difficult (such as property parcels) can be made for _pragmatic_ reasons, but should be justified. Possible justifications include: alignment with existing tools or published data, computational feasibility, the expected absense of finer-scale input data, restrictions on the use of required input data, or privacy. Where possible, a specification to use grids without pre-defined boundaries (such as [DGGS zones](https://docs.ogc.org/as/20-040r3/20-040r3.html), or raster grids) should be preferred.
+
+### Scope
+
+Land use classification systems _may_ only consider a few land use types, and consider others as being "out of scope". For example, a classification of protected land may choose to classify all other land as "non-protected" without attempting any form of further classification, according to the purpose of that classification system.
 
 ### Extensibility
 
