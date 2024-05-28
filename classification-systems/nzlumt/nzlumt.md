@@ -25,7 +25,7 @@ Developed by: Manaaki Whenua – Landcare Research
 
 NZLUMT is an adaptation of the Australian Land Use and Management (ALUM) Classification (version 8) for application in New Zealand. Where direct overlap is considered appropriate, it is retained. If there is some degree of incompleteness in the specification, ALUM practice and guidance can be assumed to be applicable. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM.
 
-The NZLUMT is intended for the purpose of land use change modelling and environmental monitoring (especially for fresh water management). Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices. Land tenure is also a compulsory attribute as it relates to the potential for changes to land use and land use management practices (i.e. tenure may constrain possibile changes).
+The NZLUMT is intended for the purpose of land use change modelling and environmental monitoring. Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices. Land tenure is also a compulsory attribute as it relates to the potential for changes to land use and land use management practices (i.e. tenure may constrain possibile changes).
 
 <!-- TODO explicitly form some enduring questions that can be answered using this classification system -->
 
