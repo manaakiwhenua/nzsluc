@@ -47,7 +47,7 @@ This [whakataukī](https://maoridictionary.co.nz/word/9903) envisions a mat weav
 1. #### Prioritise reproducible and transparent methodologies 
     - User confidence increases when methodologies can be verified independently.
 1. #### Classification systems shall accommodate multiple (e.g. co-located, secondary) land-uses
-    - Differentiate between secondary land use (same place, same time) with intra-period land use variation (same place, different time)-- e.g., rotational grazing, summer housing, etc.
+    - Differentiate between secondary land use (same place, same time) with intra-period land use variation (same place, different time). E.g., rotational grazing, summer housing, etc.
 
 
 ## Best practices <!-- Normative -->
