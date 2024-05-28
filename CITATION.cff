@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this repository, please cite it using these metadata
+title: Aotearoa New Zealand Standard Land Use Classification (NZSLUC)
+type: software
+url: https://github.com/manaakiwhenua/nzsluc
+authors:
+      - family-names: Law
+        given-names: Richard
+        affiliation: "Manaaki Whenua -- Landcare Research"
+        orcid: TBD
+      - family-names: Whitehead
+        given-names: Brandon
+        orcid: https://orcid.org/0000-0002-0337-8610
+        affiliation: "Manaaki Whenua -- Landcare Research"
+        #affiliation: https://ror.org/02p9cyn66
+      - family-names: Ardo
+        given-names: James
+        orcid: TBD
+        affiliation: "Manaaki Whenua -- Landcare Research"
+license: CC BY 4.0
+version: 1.0
+date-released: '2024-06-30'
+#doi: will be populated on release
