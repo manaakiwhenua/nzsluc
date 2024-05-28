@@ -1,7 +1,7 @@
 # New Zealand Land Use Management and Tenure (NZLUMT) Classification System 
 
 Status: Draft
-Version: 0.1
+Version: 0.2
 Developed by: Manaaki Whenua – Landcare Research
 
 > Kotahi te aho ka whati, ki te kāpuia e kore e whati.
@@ -46,7 +46,7 @@ Describing _how_ a classification is known is an important classification framew
 
 ![NZLUMT hierarchical classification system as a table](./NZLUMT.svg)
 
-1. **Conservation and natural environments**
+1. **Conservation and minimal use of natural environments**
 
     This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses, but nature conservation is a central consideration. Some land may be unused as a result of a deliberate decision of government or landowner, or due to circumstance.
 
@@ -54,9 +54,10 @@ Describing _how_ a classification is known is an important classification framew
 
     <details><summary>Expand</summary>
 
-    1. **Nature conservation**
+    1. **Biodiversity protection**
 
-        Tertiary classes 1.1.1–1.1.3 are based on the classification for areas legally protected for biodiversity, as proposedby Bellingham (2016, Tables 15-6, 15-7) <!-- TODO file:///home/lawr/Downloads/bellingham-etal_2016_standardised-terrestrial-biodiversity-indicators-for-use-by-regional-councils.pdf Table 15-7 -->
+        Tertiary classes 1.1.1–1.1.5 are based on the classification for areas legally protected for biodiversity, as proposedby Bellingham (2016, Tables 15-6, 15-7) <!-- TODO file:///home/lawr/Downloads/bellingham-etal_2016_standardised-terrestrial-biodiversity-indicators-for-use-by-regional-councils.pdf Table 15-7 -->
+
 
         1. **High degree of biodiversity protection** (Bellingham Rank 5); protection is the main purpose or is ranked equally with a limited number of other compatible purposes. Examples:
         - National Parks Act 1980
@@ -72,6 +73,7 @@ Describing _how_ a classification is known is an important classification framew
             - Water Conservation Order
         - Wildlife Act 1953
             - Wildlife Sanctuary
+
         1. **Moderately high degree of biodiversity protection** (Bellingham Rank 4); protection is a main purpose but is shared with other, less compatible purposes (i.e. recreation). Examples:
         - Conservation Act 1987
             - Amenity Areas
@@ -89,6 +91,7 @@ Describing _how_ a classification is known is an important classification framew
             - QEII Open Space Covenant
         - Wildlife Act 1953
             - Wildlife Refuge
+
         1. **Moderate degree of biodiversity protection** (Bellingham Rank 3); protection is a desired purpose but subject to capability with a different main purpose or may be less comprehensive (i.e. only some aspects of biodiversity protection are targeted). Examples:
         - Conservation Act 1987
             - Ecological Area
@@ -101,10 +104,6 @@ Describing _how_ a classification is known is an important classification framew
             - Māori Reservation (Conservation or Conservation of Native Bush)
         - Wilidlife Act 1953
             - Wildlife Management Reserve
-
-    2. **Managed resource protection**
-
-        Tertiary classes 1.2.1–1.2.2 are based on the classification for areas legally protected for biodiversity, as proposedby Bellingham (2016).
 
         1. **Moderately low degree of biodiversity protection** (Bellingham Rank 2); some biodiversity protection is achieved but it of secondary importance. Examples:
         - Resource Management Act 1991
@@ -129,41 +128,56 @@ Describing _how_ a classification is known is an important classification framew
         - Reserves Act 1977
             - Road Reserve
 
-    3. **Sustainable use from relatively natural environments**
+    2. **Cultural and natural heritage**
+
+        1. Indigenous cultural heritage
+        1. Cultural heritage
+        1. Natural heritage
+
+    3. **Minimal use from relatively natural environments**
 
         This class includes land that is subject to relatively low levels of intervention. The land may not be used more intensively because of its limited capability. The structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly. Where the native vegetation structure is, for example, open woodland or grassland, the land may be grazed.
 
         Where native grasses have been deliberately and extensively replaced with other species, the use should be treated under class 3.
 
-        1. **Production native forests**
+        1. **Surface water supply**
+        1. **Ground water**
+        1. **Grazing native vegetation**
 
-        Commercial production from non-plantation native forests and related activities on public and private land. Environmental and indirect production uses associated with retained native forest (e.g. prevention of land degradation, windbreaks, shade and shelter) are included in classes 1.1 or 1.2.
+        1. **Production from indigenous vegetation**
+
+        Commercial production from non-plantation native forests and related activities on public and private land. Environmental and indirect production uses associated with retained native forest (e.g. prevention of land degradation, windbreaks, shade and shelter) are not included in this class.
 
         This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fence posts, and mānuka/kānuka honey).
 
-        1. **Mahinga kai**
+        1. **Customary use**
 
-        Food gathering practices from natural environments. This is often an ancillary use; this class should only be assigned to the `lu_code` if the collection of food is indeed the prime use of land (but it may often be listed as an ancillary use). If food gathering is done commercially, _and_ if the environment is considerably altered as a result of the practice, it should be classified under class 2.
+        Land with relativdely natural land cover, used for customary purposes. Includes food gathering practices from natural environments. This is often an ancillary use; this class should only be assigned to the `lu_code` if the customary practice is indeed the prime use of land (but it may often be listed as an ancillary use). If the use is done commercially, _and_ if the environment is considerably altered as a result of the practice, it should be classified under class 2.
+
+        1. **Defence land**
+
+        Natural areas allocated to field training, weapons testing and other field defence uses, predominantly in rural areas.
+
+        1. **Environmental & infrastructure protection**
+        1. **Carbon forest**
 
         <!-- TODO discuss "foraging" of natural environments as a potential use, e.g. seafood gathering, manuka honey, truffle, possibly hunting -->
 
-    4. **Other minimal use**
+    4. **Unused land and land in transiiton**
 
         Areas of land that are largely unused (in the context of prime use) but may have ancillary uses. This may be a deliberate decision by the land manager or the result of other circumstances. The land may be available for use but remain unused for various reasons.
 
-        1. **Defence land** Natural areas allocated to field training, weapons testing and other field defence uses, predominantly in rural areas.
+        1. **Unused land** Land under native cover with no apparent prime use or where land use is indeterminate. Natural areas of transport corridors may fit under this class, along with unusable land such as cliffs, rock faces, boulders and tors, provided there are relatively low levels of disturbance. Where there is significant disturbance to the land (e.g. clearing) the area should be assigned to a different land use.
 
-        2. **Residual native cover** Land under native cover, mainly unused (no prime use) or used for non-production or environmental purposes (e.g. to conserve native vegetation and wildlife, or for natural resources protection). This class is only appropriate where there is no applicable prime use or where land use is indeterminate. For example livestock may occasionally graze, but where grazing is the intended prime use of the land, it should be classed under 2.1.0 or 3.2.1. Corridors and roadside areas may fit under this class, along with unusable land such as cliffs, rock faces, boulders and tors, provided there are relatively low levels of disturbance. Where there has been significant disturbance to the land (e.g. clearing) the area should be assigned to a non-conservation land use.
-
-        3. **Rehabilitation** Land under rehabilitation that has been restored to a near natural state. Land that is degraded or undergoing rehabilitation but still substantially modified should be mapped under 3.6.2, 3.6.3, 4.6.2, 4.6.3 or 5.8.4.
+        1. **Land undergoing rehabilitation** Land undergoing rehabilitation that has been restored to a near natural state. Land that is degraded or undergoing rehabilitation but still substantially modified should be mapped under class 2 or 3.
 
     </details>
 
-2. **Production from agriculture and plantations**
+2. **Production agriculture and plantations**
 
-    This class includes land that is used principally for primary production. Native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure, land should have irrigation listed as a management practice even if irrigation water has not been applied in the current growing season.
+    This class includes land that is used principally for primary production. Native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the apre, lanplication of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure, it should have irrigation listed as a management practice even if irrigation water has not been applied in the current growing season.
 
-    Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticulture class (rather than using land in transition). Record the fallow or ploughed status in the management field.
+    Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticulture class (rather than using land in transition). Record the fallow or ploughed status in the management field.
    
     <details><summary>Expand</summary>
 
@@ -171,10 +185,11 @@ Describing _how_ a classification is known is an important classification framew
 
         Land on which plantations of trees or shrubs (native or exotic species) have been established for production, or environmental and resource protection purposes. This includes farm forestry. Where planted trees are grown in conjunction with pasture, fodder or crop production, class allocation should be made on the basis of prime use.
 
-        1. **Hardwood plantation forestry**
-        2. **Softwood plantation forestry**
-        3. **Other forest plantation**
-        4. **Environmental forest plantation**
+        1. **Exotic plantation forestry**
+        1. **Indigenous plantation forestry**
+        1. **Other production uses**
+        1. **Environmental & infrastructure protection** In contrast to class 1.3.7, this relates to _planted_ forests, rather than retained areas of natural forest.
+        1. Permanent carbon forest
 
     2. **Grazing modified pastures**
 
@@ -186,165 +201,166 @@ Describing _how_ a classification is known is an important classification framew
 
         If livestock or pasture type is known, record this in the commodity field.
 
-        Some management practices relate to particular commodities. For example, `dairy cattle` (commodity) can be included alongside (`wintering off`) to describe a dairy farm system which practices wintering off. These practices should be recorded if known. Other relevant management practices in this case are:
+        Some management practices relate to particular commodities. For example, `dairy cattle` (commodity) can be included alongside (`wintering off`) to describe a dairy farm system which practices wintering off (i.e. spring-autumn milking). These practices should be recorded if known; but it is acceptable to classify land under this class if management practices are indeterminate.
+        <!-- Other relevant management practices in this case are: -->
 
-        - `wintering off`
-        - `feed pad`
+        <!-- - `wintering off` -->
+        <!-- - `feed pad`
         - `stand-off pad`
         - `herd home`
         - `composting barn`
-        - `sacrifice paddock`
+        - `sacrifice paddock` -->
 
-        1. **Native/exotic pasture mosaic**
-        2. **Wood fooder plants**
-        3. **Pasture legumes**
-        4. **Pastre legume/grass mixtures**
-        5. **Sown grasses**
+        1. **Dairy**
+        1. **Intensive dry stock**
+        1. **Extensive dry stock**
 
-    3. **Cropping**
+    3. **Short-rotation and seasonal cropping**
 
-        Land that is under cropping. Land under cropping at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under pasture. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded as a management practice. If the rotation sequence is known record this as a comment.
+        <!-- Land that is under cropping. Land under cropping at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under pasture. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded as a management practice. If the rotation sequence is known record this as a comment. -->
 
-        Cropping can vary markedly over relatively short distances in response to changes in the nature of the land and the preferences of the land manager. It may also change over time in response to market conditions. Production of fodder, such as lucerne hay, is considered cropping as there is no harvesting by stock. Strip cropping—where multiple commodities are cropped simultaneously—can be assigned to the secondary class 3.3 with multiple commodities recorded using the commodity field, and cropping strip in the management field.
+        <!-- Cropping can vary markedly over relatively short distances in response to changes in the nature of the land and the preferences of the land manager. It may also change over time in response to market conditions. Production of fodder, such as lucerne hay, is considered cropping as there is no harvesting by stock. Strip cropping—where multiple commodities are cropped simultaneously—can be assigned to the secondary class 3.3 with multiple commodities recorded using the commodity field, and cropping strip in the management field. -->
 
         If the type of crop type is known, record this in the commodity field using the commodity list.
 
-        1. **Cereals**
-        1. **Beverage and spice crops**
-        1. **Hay and silage**
-        1. **Oilseeds**
-        1. **Pulses**
+        1. **Arable cropping**
+        1. **Arable and mixed livestock cropping**
+        1. **Short-rotation horticulture**
+        1. **Seasonal flowers and bulbs, and turf-farming**
 
     4. **Perennial horticulture**
 
         Crop plants living for _more than two years_ that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If the crop type is known use the commodity list to record this. Management practices such as irrigation, or netting to protect crops from hail or birds can be recorded as management practices.
 
-        1. **Tree fruits**
-        2. **Tree nuts**
-        3. **Vine fruits**
-        4. **Shrub berries and fruits**
-        5. **Perennial flowers and bulbs**
-        6. **Perennial vegetables and herbs**
+        1. **Tree crops** Includes tree fruits and nuts.
+        1. **Vine fruits**
+        1. **Other perennial horticulture** Including shrub berries, shrub fruits, flowers, bulbs, vegetables and herbs.
 
-    5. **Seasonal horticulture**
+    5. **Intensive horticulture**
 
-        Crop plants living for _less than two years_ that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If the crop type is known the commodity list should be used to record this. If irrigation infrastructure is present, record it as a management practice.
+        Intensive forms of plant production (seasonal or perennial) often with special purpose improvements used for horticultural production. If crop type is known, record this in the commodity field. If crop type is known, record this in the commodity field.
 
-        1. Seasonal fruits
-        2. Seasonal flowers and bulbs
-        3. Seasonal vegetables and herbs
-        4. Turf farming
+        1. Production nurseries
+        1. Glasshouses/shadehouses
 
-    6. **Land in transition**
-
-        Areas where the land use is unknown and cannot reasonably be inferred from the surrounding land use. This class should be used sparingly. If possible, fallow or ploughed land should be allocated to a relevant pasture, cropping or horticulture class as this is the primary use. Land must previously have been used for agriculture or plantations.
-
-        1. Degraded land
-        2. Abandoned land
-
-    </details>
-
-3. **Intensive Uses**
-
-    This class includes land uses that involve high levels of interference with natural processes, generally in association with closer settlement. The level of intervention may be high enough to completely remodel the natural landscape—the vegetation, surface and groundwater systems, and the land surface. If crop and/or animal type is known, record this in the commodity field.
-
-    <details><summary>Expand</summary>
-
-    1. **Intensive horticulture**
-        
-        Intensive forms of plant production often with special purpose improvements used for horticultural production. If crop type is known, record this in the commodity field.
-
-        1. **Production nurseries**
-        2. **Shadehouses**
-        3. **Glasshouses**
-        4. **Glasshouses—hydroponic**
-        5. **Abandoned intensive horticulture**
-
-    2. **Intensive animal production**
+    6. **Intensive animal production**
 
         Intensive forms of animal production (excludes associated grazing or pastures), livestock production facilities or animal-holding yards. If the animal type is known, record this in the commodity field. The management field can be used to record practices such as free range or milking system.
 
-        1. **Dairy sheds and yards**
-        2. **Feedlots**
-        3. **Poultry farms**
-        4. **Piggeries**
-        5. **Aquaculture**
-        6. **Horse studs**
-        7. **Saleyards/stockyards**
-        8. **Abandoned intensive animal production**
+        1. **Animal containment** Includes dairy sheds, saleyards and stockyards
+        1. **Poultry farms**
+        1. **Piggeries**
+        1. **Horse studs**
+        1. **Aquaculture**
+    
+    7. Water and wastewater
 
-    3. **Manufacturing and industrial**
+        1. Stock water
+        1. Effluent pond
+        1. Water treatment - land application 
+        1. Water treatment - wetland 
+        1. Irrigation reservoirs and canals
+    
+    8. **Land in transition**
 
-        Factories, workshops, foundries, construction sites and so on. In the urban setting, manufacturing and industrial areas should be mapped to this secondary code. In the rural or agricultural setting, the following tertiary classes may be used if desired.
+        Transitional, marginal areas where the land use is intdeterminate, or unknown and cannot reasonably be inferred from the surrounding land use. If possible, fallow or ploughed land should be allocated to a relevant pasture, cropping or horticulture class as this is the primary use. Land should previously have been used for agriculture or plantations to be classied under this secondary class.
 
-        1. **General purpose factory**
-        2. **Food processing factory**
-        3. **Major industrial complex**
-        4. **Bulk grain storage**
-        5. **Abattoirs**
-        6. **Oil refinery**
-        7. **Sawmill**
-        8. **Abandoned manufactuing and industrial**
+        1. Unused degraded land
+        1. No defined use
+        1. Land undergoing rehabilitation
+        1. Abandoned land
 
-    4. **Residential and farm infrastructure**
+    </details>
+
+3. **Built environment**
+
+    This class includes land uses that involve high levels of interference with natural processes, generally in association with closer settlement. The level of intervention may be high enough to completely remodel the natural landscape—the vegetation, surface and groundwater systems, and the land surface.
+
+    <details><summary>Expand</summary>
+
+
+    1. **Residential**
+
+        1. **High-density residential**
+        1. **Medium-density residential**
+        1. **Low-density residential**
+        1. **Rural residential**
+
+    1. **Public recreation and services**
 
         Land with houses and or other residential infrastructure with or without associated agricultural activity. This class includes urban and remote communities, farm buildings and other farm infrastructure larger than the minimum mapping scale, and land in transition to residential from other land uses. This class also includes holiday shacks.
 
-        1. **Urban residential**
-        2. **Lifestyle without agriculture**
-        3. **Lifestyle with agriculture**
-        4. **Farm buildings/infrastructure**
+        1. **Outdoor recreation**
+        1. **Indoor recreation**
+        1. **Community services**
     
-    5. **Services**
+    1. **Commercial**
 
-        Land allocated to providing commercial or public services, resulting in substantial interference to the natural environment. Where services are provided on land that retains natural cover, apply an appropriate classification under class 1.
+        Land allocated to providing commercial services, resulting in substantial interference to the natural environment.
 
-        1. **Commercial services**
-        2. **Public services**
-        3. **Recreation and culture**
-        4. **Defence facilities—urban**
-        5. **Research facilities**
+        1. **Retail**
+        1. **Office**
+        1. **Hospitality**
+        1. **Entertainment**
+        1. **Healthcare**
+        1. **Transportation & warehousing**
     
-    6. **Utilities**
+    1. **Manufacturing and industrial**
+
+        1. **General purpose factory**
+        1. **Food processing factory**
+        1. **Major industrial complex**
+        1. **Sawmill**
+        1. **Farm buildings/infrastructure**
+        1. **Abattoirs**
+    
+    1. **Utilities**
 
         Land allocated to providing electricity, gas, or water.
 
         1. **Fuel powered electricity generation**
-        2. **Hydro electricity generation**
-        3. **Wind electricity generation**
-        4. **Solar electricity generation**
-        5. **Electricity substations and transmission**
-        6. **Gas treatment, storage and transmission**
-        7. **Water extraction and transmission**
+        1. **Hydro electricity generation**
+        1. **Wind electricity generation**
+        1. **Solar electricity generation**
+        1. **Electricity substations and transmission**
+        1. **Gas treatment, storage and transmission**
+        1. **Water extraction and transmission**
 
-    7. **Transport and communication**
+    1. **Transport and communication**
 
         Land allocated to infrastructure used for transportation of goods or people, or navigation and communication equipment.
 
         1. **Airports/aerodromes**
-        2. **Roads**
-        3. **Railways**
-        4. **Ports and water transport**
-        5. **Navigation and communication**
+        1. **Roads**
+        1. **Railways**
+        1. **Ports and water transport**
+        1. **Navigation and communication**
 
-    8. **Mining**
+    1. **Mining**
 
         Mining and extractive industries (excluding salt extraction from evaporation basins). Record the type of mining if known, from the commodity field.
 
         1. **Mines**
-        2. **Quarries**
-        3. **Tailings**
-        4. **Extractive industry not in use**
+        1. **Quarries**
+        1. **Tailings**
+        1. **Evaporation basins**
+        1. **Extractive industry not in use**
 
-    9. **Waste treatment and disposal**
+    1. **Waste treatment and disposal**
 
         Waste material and disposal facilities associated with industrial, urban and agricultural activities.
 
-        1. **Effluent pond**
-        2. **Landfill**
-        3. **Solid garbge**
-        4. **Incinerators**
-        5. **Sewage/sewerage**
+        1. **Landfills**
+        1. **Transfer stations and recyling facilities**
+        1. **Municipal wastewater**
+        1. **Wastewater treatment - land application**
+        1. **Stormwater management**
+
+    1. **Vacant and transitioning land**
+
+        1. **Vacant land**
+        1. **Greenfield development**
+        1. **Brownfield development**
 
     </details>
 
