@@ -51,7 +51,7 @@ The list of best practices for land use classification systems under this framew
 1. **Scope** Land use classification systems shall describe their intended scope.
 1. **Description of data quality** The quality of published land use data shall be described using a standard, e.g. ISO 19157-1:2023.
 1. **Semantic versioning** Changes made to land use classification systems (including geographic unit or scale) shall be communicated to users using semantic versioning of the form `major.minor.patch`, e.g. v0.2.4. Once a version has been released, the contents of that version must not be modified; modifications must be released as a new version.
-1. **Metadata** land use datasets and classiication schema should be published using established metadata standards.
+1. **Metadata** Land use datasets and classification schema should be published using established metadata standards.
 1. **Compatibility and re-use** Compatibility with existing New Zealand classification systems shall be preferred. Compatibility with international classification systems may also be relevant.
 1. **Definition of land** Classification systems shall individually determine the definition of "land" with reference to their stated purpose, e.g. whether it is inclusive of marine features.
 1. **Primary land use** A justification should be given for the choice of primary land uses (e.g. land area, economic value, duration).
@@ -104,15 +104,15 @@ This also allows for classification systems that are developed for particular ap
 
 Some classification systems are intended only to capture "primary" land use for geographic entities, typically defined in economic terms. Some classification systems allow for the encoding of multiple uses, but in such a way that information about the primary land use is lost. (For example, the _ratings valuation rules_, LINZ S30300, allow for "multiple use" classes without the ability to encode the component uses.)
 
-Data schemas for land use classification systems produced under this framework shall be designed in such a way that multiple uses can be recorded, without loss of information. This may be as a primary/secondary distinction, an enumeration, or some other form of attribution; but it must be possible in some fashion.
+In contrast, data schemas for land use classification systems produced under this framework shall be designed in such a way that multiple uses can be recorded, without loss of information. This may be as a primary/secondary distinction, an enumeration, or some other form of attribution; but it must be possible in some fashion.
 
 ### Provenance
 
 The value of land use data is enhanced when information is available regarding provenance. This relates to the epistemological foundation of land use data: how it is that we know the land use. Within the data schema of a classification system, it must be possible to record provenance information, including (but not limited to) if applicable:
-    - the geographic scale of any input data
-    - the publication or (preferably) feature-level creation date of any input data features
-    - the operator (who is performing the classification; or who has decided on the appropriateness of a particular class label for a feature)
-    - a quantitative (e.g. probabilistic) or qualitative (e.g. operator confidence) measurement of confidence in the applied class
+    - The geographic scale of any input data
+    - The publication or (preferably) feature-level creation date of any input data features
+    - The operator (who is performing the classification; or who has decided on the appropriateness of a particular class label for a feature)
+    - A quantitative measurement (e.g. probabilistic) or qualitative statement (e.g. operator confidence) of confidence in the applied class
 
 ---
 
