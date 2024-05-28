@@ -38,7 +38,7 @@ This [whakataukī](https://maoridictionary.co.nz/word/9903) envisions a mat weav
     - Use of abstract geographic units, such as DGGS zones, should be preferred over pre-existing geographic units such as property boundaries.
     - A classification system does not have to be comprehensive, and will almost certainly consider some land use types "out of scope", according to the purpose.
 1. #### Classification systems should be extensible
-    - Ensure flexibility for land use classification systems which support indigenous data sovereignty protocols (see [Te Mana Raraunga – Māori Data Sovereignty Network)](https://www.temanararaunga.maori.nz/)).
+    - Ensure flexibility for land use classification systems which support indigenous data sovereignty protocols (see [Te Mana Raraunga – Māori Data Sovereignty Network](https://www.temanararaunga.maori.nz/)).
 1. #### Hierarchies are encouraged where appropriate, required and logically consistent
     - This will allow for both generalisation hierarchies (aggregation/disaggregation) and genealogical hierarchies (lineage). 
 1. #### This classification framework is intended to be improved over time
