@@ -35,7 +35,7 @@ Principles are intended to guide practitioners in how they use, re-use or design
     - In particular, the publication of the ISO 19144-3 standard (_Geographic information – Classification Systems – Part 3 Land Use Meta Language (LUML)_) shall cause a revision of these principles and best practices.
 1. #### Prioritise reproducible and transparent methodologies 
     - User confidence increases when methodologies can be verified independently.
-1. #### Classification systems shall accomodate multiple (e.g. co-located, secondary) land-uses
+1. #### Classification systems shall accommodate multiple (e.g. co-located, secondary) land-uses
     - Differentiate between secondary land use (same place, same time) with intra-period land use variation (same place, different time)-- e.g., rotational grazing, summer housing, etc.
 
 ## Best practices <!-- Normative -->
