@@ -183,7 +183,7 @@ This is a list of land use classification systems that are (being) developed und
 
 | Name | Link | Intended purpose |
 |------|------|------|
-| NZ Land Use Management and Tenure | [🔗](classification-systems/nzlumt) | General rural land use change monitoring, especially for freshwater monitoring and greenfield development |
+| NZ Land Use Management | [🔗](classification-systems/nzlum) | General rural land use change monitoring, especially for freshwater monitoring and greenfield development |
 
 <!-- ![a worked example](figs/Framework-Classification-02.png)
 Fig N. a worked example... -->

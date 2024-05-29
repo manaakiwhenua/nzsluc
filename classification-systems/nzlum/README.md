@@ -1,4 +1,4 @@
-# New Zealand Land Use Management and Tenure (NZLUMT) Classification System 
+# New Zealand Land Use Management (NZLUM) Classification System 
 
 Status: Draft
 Version: 0.2
@@ -23,9 +23,9 @@ Developed by: Manaaki Whenua – Landcare Research
 
 ## Overview
 
-NZLUMT is an adaptation of the Australian Land Use and Management (ALUM) Classification (version 8) for application in New Zealand. Where direct overlap is considered appropriate, it is retained. If there is some degree of incompleteness in the specification, ALUM practice and guidance can be assumed to be applicable. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM.
+NZ is an adaptation of the Australian Land Use and Management (ALUM) Classification (version 8) for application in New Zealand. Where direct overlap is considered appropriate, it is retained. If there is some degree of incompleteness in the specification, ALUM practice and guidance can be assumed to be applicable. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM.
 
-The NZLUMT is intended for the purpose of land use change modelling and environmental monitoring. Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices. Land tenure is also a compulsory attribute as it relates to the potential for changes to land use and land use management practices (i.e. tenure may constrain possibile changes).
+The NZLUM is intended for the purpose of land use change modelling and environmental monitoring. Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices. Land tenure is also a compulsory attribute as it relates to the potential for changes to land use and land use management practices (i.e. tenure may constrain possibile changes).
 
 <!-- TODO explicitly form some enduring questions that can be answered using this classification system -->
 
@@ -44,7 +44,7 @@ Describing _how_ a classification is known is an important classification framew
 
 ## Hierarchical Classification System
 
-![NZLUMT hierarchical classification system as a table](./NZLUMT.svg)
+![NZLUM hierarchical classification system as a table](./NZLUM.svg)
 
 1. **Conservation and minimal use of natural environments**
 
@@ -436,7 +436,7 @@ A non-exhaustive list of land status types organised along a gradient from Crown
 
 Water is a land cover, rather than a land use. (If it is considered "land" at all.) Certain land uses can only occur on water (e.g. aquaculture); some can occur on either land or water (e.g. oil and gas wells); some only on land (e.g. pastoral farming)—but pieces of such land may include water, e.g. dams, ponds, and lakes.
 
-ALUM classifies water as a primary class, but notes that this presents some difficulty. NZLUMT specifies instead that water is to be recorded as a distinct attribute that can be applied to a geographic unit.
+ALUM classifies water as a primary class, but notes that this presents some difficulty. NZLUM specifies instead that water is to be recorded as a distinct attribute that can be applied to a geographic unit.
 
 Very often water doesn't occupy the entire geographic unit (i.e. parcel); it should still be discriminated accurately as a sub-parcel-scale feature. The exception is if it is very small, in which case it can be ignored rather than attributed to the entire parcel.
 
@@ -470,17 +470,21 @@ The intended geographic unit of this classification system is the property parce
 <!-- TODO make example realistic, e.g. coherent class examples -->
 | attribute | type | example | notes |
 | --- | --- | --- | --- |
-| lu_coden | integer | `123` | Numerical land use code (primary use)|
-| lu_code | string | `1.2.3` | Land use code (primary use) |
-| lu_description | string | `Groundwater` | Land use class label (primary use) |
+| lu_code_1 | integer | `1` | Numerical land use code (primary use) at the primary level |
+| lu_code_2 | integer | `2` | Numerical land use code (primary use) at the secondary level |
+| lu_code_3 | integer | `3` | Numerical land use code (primary use) at the tertiary level |
+| lu_code | string | `1.2.3` | Complete land use code (primary use) |
+| lu_description | string | `Natural Heritage` | Land use class label (primary use) |
 | lu_code_ancillary | string | `2.2.0, 3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
 | commod | string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
 | commod_ancillary | string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
 | manage | string | `irrigation spray, organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
 | manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
 | land_estate | string | `freehold` | Estate type |
-| land_status | string | TBD | Land status type (public-private continuum) |
+| land_status | string | [TBD] | Land status type (public-private continuum) |
 | water | string | `lake` | Water type (null for land) |
+| permeability | string | `sealed` | Permeability type (sealed or unsealed) |
+| zone | string | `Large format retail zone` | District plan zone; terminology to be taken from the Zone Framework Standard (National Planning Standards, 2019) |
 | confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
 | luc_date | date | `2024-05-26` | Date of (primary) land use code |
 | source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only ony should be specified. |
