@@ -159,7 +159,7 @@ An overview of the class hierarchy is provided below, with further details of th
     <details><summary>Expand</summary>
 
     1. **Plantation forests**
-    
+
         This is land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes. This includes farm forestry and may consist of monocultures or mixed species. Specific additional attributes that could be captured are plantation age, rotation number, and species.
 
         1. **Exotic plantation forestry** – an area managed for pulpwood or saw-log production (exotic species).
@@ -201,7 +201,7 @@ An overview of the class hierarchy is provided below, with further details of th
         4. **Seasonal flowers and bulbs, and turf farming** – agricultural practices focused on the cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes. This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.
 
     4. **Perennial horticulture**
-    
+
         This class includes crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control. Management practices such as irrigation or netting to protect crops from hail or birds can be recorded as management practices. Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).
 
         1. **Tree crops** – includes long-term cultivated plants, typically trees or woody shrubs, grown for their fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years. Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known. Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.
@@ -304,7 +304,7 @@ An overview of the class hierarchy is provided below, with further details of th
 
 
     3. **Commercial**
-    
+
         This land-use type includes land in a built environment context that is used for private- sector economic activities, encompassing various sectors such as retail, office, hospitality, entertainment, healthcare, transportation, and warehousing. Central government offices when these are privately rented should be captured in this category, even if they are public-facing.
 
         1. **Retail** – areas used for the sale of goods and services directly to consumers, including shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.
@@ -320,7 +320,7 @@ An overview of the class hierarchy is provided below, with further details of th
         6. **Transportation & warehousing** – privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots. Excludes airports, ports, roads, and train stations which should be classified under class 3.6.0.
 
     4. **Manufacturing and industrial**
-    
+
         This land-use type includes land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.
 
         1. **General purpose factory** – an area used for manufacturing, assembly or repairs of various products. Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.
@@ -340,7 +340,7 @@ An overview of the class hierarchy is provided below, with further details of th
         6. **Abattoirs** – areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
 
     5. **Utilities**
-    
+
         This land-use type includes land allocated to providing electricity, gas, or water.
 
         1. **Fuel powered electricity generation** – includes facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.
@@ -358,7 +358,7 @@ An overview of the class hierarchy is provided below, with further details of th
         7. **Water extraction and transmission** – facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources such as rivers, lakes, or reservoirs to meet various human needs, including drinking-water supply, irrigation, and industrial use. Includes drinking-water reservoirs themselves
 
     6. **Transport and communication**
-    
+
         This land-use type includes land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment. Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
 
         1. **Airports/aerodromes** – locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers. Includes heliports.
@@ -399,8 +399,8 @@ An overview of the class hierarchy is provided below, with further details of th
 
         5. **Stormwater management** – infrastructure aimed at controlling and mitigating the impacts of stormwater runoff, including detention basins, drainage systems, retention ponds, and green infrastructure (rain gardens, wetlands), to prevent flooding, erosion, and pollution of water bodies.
 
-    9.**Vacant and transitioning land**
-    
+    9. **Vacant and transitioning land**
+
         This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
 
         1. **Vacant land** – includes derelict land and developed land that is idle.
