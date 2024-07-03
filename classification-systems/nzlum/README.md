@@ -1,4 +1,4 @@
-# New Zealand Land Use Management (NZLUM) Classification System 
+# New Zealand Land Use Management (NZLUM) classification system 
 
 Status: Draft
 Version: 0.2
@@ -21,348 +21,444 @@ Developed by: Manaaki Whenua – Landcare Research
 
 -->
 
-## Overview
+NZLUM is adapted from the Australian Land Use and Management (ALUM) classification (version 8) for application in New Zealand, taking into account common land-use classification usage in New Zealand for several different purposes, including SOE soil quality monitoring (see Cavanagh & Whitehead 2022, 2023)[^1][^2], the Waikato Integrated Scenario Explorer (Rutledge et al. 2016)[^3], Greater Wellington Regional Council whaitua (catchment) classifications (Cavanagh 2022), Land Use Database version 4 (LUDB4) (Price et al. 2010)[^4], the New Zealand Planning Standards (MfE 2019)[^5], and LINZ rating valuations rules (LINZ 2010) [^6].
 
-NZ is an adaptation of the Australian Land Use and Management (ALUM) Classification (version 8) for application in New Zealand. Where direct overlap is considered appropriate, it is retained. If there is some degree of incompleteness in the specification, ALUM practice and guidance can be assumed to be applicable. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM.
+The rationale for the adaptation of ALUM is that ALUM provides a useful data structure and platform for standardisation, which, simply put, avoids some reinvention of the wheel in this regard. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM. Where direct overlap of an ALUM class is considered appropriate, it has been retained. However, both particular classes and the arrangement of the class hierarchy are significantly different, and additional classes have been added to reflect what we consider to be relevant considerations for land-use information in New Zealand.
 
-The NZLUM is intended for the purpose of land use change modelling and environmental monitoring. Land use practices are of particular relevance to this classification system, as there is a need to understand social and economic capacity for changes to land management practices. Land tenure is also a compulsory attribute as it relates to the potential for changes to land use and land use management practices (i.e. tenure may constrain possibile changes).
+The two biggest changes from ALUM are the removal of consideration of irrigation as a demarcation between two primary classes of agriculture, and the removal of water as a primary class. We considered ALUM’s division and duplication of classes according to irrigation status to be redundant, given that irrigation (status and type) can be recorded as a management practice, and that retaining it would impede usability. We also modified the primary intensive-use class to separate intensive agricultural production from other intensive land uses and included these within the primary agricultural production class.
 
-<!-- TODO explicitly form some enduring questions that can be answered using this classification system -->
+The other major difference is the absence in NZLUM of a water primary class. We have done this not because we consider water unimportant or out of scope, but rather because we consider water to be a land cover, not a land use. We propose an attribute to capture the presence of water using a controlled vocabulary of terms for water features (such as `river`). In this way, end-users can control the inclusion or exclusion of water features.
 
-It balances simplicity of use with with flexibility and extensibility.
+Certain land uses can only occur on water (e.g. aquaculture and fisheries); some can occur on either land or water (e.g. oil and gas infrastructure), or at the interface of land and water (ports and wharves); and obviously many land uses can only occur on land (e.g. pastoral farming), but, even then, pieces of such land may include water (e.g. dams, ponds, and lakes), or affect water (irrigation water take consents, tailings, and pollution). ALUM classifies water as a primary class but admits that this presents some difficulty. One proposal for NZLUM is that water be recorded as a distinct attribute that can be applied to a geographical unit.
 
-> Stiving to better, oft we mar what's well
+Currently there is inconsistency in our proposal with respect to how water features should be captured; see, for instance the water features under class 2 (Production agriculture and plantations) and class 3 (Built environment). This inconsistency should be resolved before applying this draft classification system, because a final decision about the treatment of water will affect future organisational changes to the classification system. Water also has a special status for Māori, and engagement with iwi/Māori in the further development of this classification system is required. Here we do make the case that including water as a land cover attribute, rather than a class, does have merit.
 
-— Duke of Albany, _King Lear_ (Shakespeare, 1606)
+Following the pattern of ALUM attributes (for commodities and management practices), we propose that a water attribute should have an associated, controlled set of terms that could be applied to a geographical unit. An incomplete short list (using English language terminology) is:
 
-In other terms, the perfect is the enemy of the good. Implementations of this classification system should accept and record available yet partial information. For example, where it is clear that there is a plantation forest, but the intended _use_ of the timber (i.e. a commodity such as `pulp` or `sawlogs`) is _not_ apparent, the land use should still be attributed to an appropriate plantation forestry class, but the commodity value left as a null value. Record what is known, even where there are known information gaps.
+- `lake`
+- `reservoir`
+- `dam`
+- `evaporation basin`
+- `river`
+- `channel`
+- `aqueduct`
+- `wetland`
+- `estuary`
+- `intertidal`
+- `marine`
 
-Describing _how_ a classification is known is an important classification framework principle ("Priorite reproducible and transparent methodologies").
+Subtypes could be used to disambiguate where information allows. For example, just as the list of commodities allows for either `cattle` (i.e. unspecified) and `cattle dairy`, `cattle beef`, `cattle meat` to accommodate some additional information, one could imagine the use of `marine inshore`, `wetland stormwater`, and `wetland bog`. The parallel or exclusive use of te reo Māori terms could be helpful to create subtypes along dimensions that are important to Māori, and adds the potential for localism and flexibility on top of the classification system as it pertains to water. (Treating water as a primary class would not allow this to the same extent.)
 
-1. Through the recording of loose provenance information as part of the data schema (`source_data`, `source_data_doi`, `source_date`, and `source_scale`). This is not especially rigorous and is intended for rapid end-user information.
-<!-- TODO 2. As a more rigourous but optional addition, describing classification logic using semantic techniques -->
+Overall, this draft classification system is proposed as a ‘general purpose’ land-use classification in the context of grouping the nature of interaction of land-use activities with the use of soil and water resources relevant for land-use change modelling or environmental management. The development of the system will allow for some end-user reclassification of land use (e.g. on the basis of irrigated vs non-irrigated land to meet alternative purposes), although in other cases (e.g. for LUCAS LUM) and the specification of pre-1990 forest, or to better reflect te ao Māori values, additional classification systems would still more than likely be required.
 
-## Hierarchical Classification System
+The present classification system retains ALUM's practice of attempting to record additional information (e.g. land management practices) using defined terminology. The additional information – termed ‘attributes’ – is related to, but independent of, the land-use classes themselves.
+
+The collection of specific additional attributes is intended to allow for the reclassification of land use based on these attributes, which may be able to be determined at the time of mapping, or recorded after the fact. The number and type of attributes captured within this system needs to be agreed in order to recognise the value of the information, and the context of use within this classification, versus the use of an alternative classification. These attributes are optional, but they should be included where information permits.
+
+Potential attributes could include the following.
+
+- **Commodity**  (as in ALUM): captures information about crops and livestock that allows for further distinction within a land-use class and may be useful in the context of biosecurity, economic modelling, nutrient modelling, greenhouse gas estimation, site-selection, etc.
+- **Management practices** (as in ALUM): captures additional information not otherwise captured in the class hierarchy, such as irrigation, crop pasture rotations, free range stock, or wintering off of dairy stock. ALUM maintains a list of 44 management practices with agreed names (a controlled vocabulary, or enumeration – a set of named constants). This set of names was compiled from existing sources, such as the Australian Bureau of Statistics, Meat and Livestock Australia, Horticulture Innovation Australia, Grains Research and Development Corporation, and state and territory lists. We propose adopting this list but making minimal extensions where necessary (dairying wintering off practice is an obvious extension that we recommend). Management practices are expected to apply only to particular land-use codes, so they must be used in conjunction with these codes. Going beyond the ALUM practice, in the built environment this attribute could be used to include information such as building materials or floor levels.
+- **Tenure**: relates to the potential for changes to land use and land-use management practices (because tenure may constrain possible land-use changes). Information relating to land tenure could be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. Recognising that tenure is an extension of the considerations of ALUM (on which this classification system is based), it is important to note that Boffa Miskell Limited (2023) identified the need for land tenure status as a requirement for a land information system to address the needs of councils to monitor and implement freshwater regulations, and to map urban growth.
+- **Zoning**: such as that described in the 2019 New Zealand Planning Standards (e.g. rural zone, Māori purpose zone) will help to identify future land-use changes and can be matched with additional information such as land-cover information to confirm current use. Once again, the need for zoning information as a dimension of land information was identified in Boffa Miskell 2023; it is especially relevant for councils considering patterns of urban expansion and intensification.
+- **Land cover**: this is particularly relevant in the context of identifying crop rotations within various primary production classes. These would probably be framed as land cover at the time of mapping. There would need to be further decisions regarding the appropriate land-cover terminology, so this idea has not progressed beyond an initial proposal.
+- **Permeability**: whether land is considered ‘sealed’ or ‘unsealed’. This allows further delineation within classes, particularly in the built environment, which probably contains mixtures of sealed and unsealed land (e.g. in residential areas and road corridors).
+- **Water**: as discussed above.
+
+It is worth noting that all these attributes are categorial and not continuous variables. There may be a need to include additional continuous variables (such as farm stocking rates in stock units per hectare). However, these should be appropriately discretised or otherwise captured as ancillary information so that the total number of combinations of all attributes can be enumerated.
+
+Land is classified according to its primary use, based on the primary land management objective of the landowner or manager, and additional ancillary land uses can be captured separately. Some uses may only ever be ancillary, so the proposed classification system necessarily includes some such uses.
+
+An overview of the class hierarchy is provided below, with further details of the different classes following.
 
 ![NZLUM hierarchical classification system as a table](./NZLUM.svg)
 
 1. **Conservation and minimal use of natural environments**
 
-    This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses, but nature conservation is a central consideration. Some land may be unused as a result of a deliberate decision of government or landowner, or due to circumstance.
+    This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
 
-    Where a classification is made on the basis of information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.
+    Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.
+
+    Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.
 
     <details><summary>Expand</summary>
 
     1. **Biodiversity protection**
 
-        Tertiary classes 1.1.1–1.1.5 are based on the classification for areas legally protected for biodiversity, as proposedby Bellingham (2016, Tables 15-6, 15-7) <!-- TODO file:///home/lawr/Downloads/bellingham-etal_2016_standardised-terrestrial-biodiversity-indicators-for-use-by-regional-councils.pdf Table 15-7 -->
+        Nature conservation classes are based on the suggested classification scheme for the Protected Areas Network of New Zealand (PAN-NZ) in relation to biodiversity protection, following Bellingham 2016 and Planzer et al. 2024. Specifically, Tertiary classes 1.1.1–1.1.3 are based on the classification for areas legally protected for biodiversity (see Appendix A for more details).
 
-
-        1. **High degree of biodiversity protection** (Bellingham Rank 5); protection is the main purpose or is ranked equally with a limited number of other compatible purposes. Examples:
-        - National Parks Act 1980
-            - National Park
-        - Reserves Act 1977
-            - Nature Reserve
-            - Scientific Reserve
-        - Conservation Act 1987
-            - Sanctuary Area
-            - Wilderness Area
-            - Wildlife Management Area
-        - Resource Management Act 1991
-            - Water Conservation Order
-        - Wildlife Act 1953
-            - Wildlife Sanctuary
-
-        1. **Moderately high degree of biodiversity protection** (Bellingham Rank 4); protection is a main purpose but is shared with other, less compatible purposes (i.e. recreation). Examples:
-        - Conservation Act 1987
-            - Amenity Areas
-            - § 23 Watercourse Area
-        - Reserves Act 1977
-            - Conservation Covenant
-            - Protected Private Land
-            - Scenic Reserve
-        - Conservation Act 1987
-            - Conservation Park
-            - Ecological Area
-        - Te Ture Whenua Māori Act 1993
-            - Māori Reservation (Wetland or Scenic Reserve)
-        - Queen Elizabeth II National Trust Act 1977
-            - QEII Open Space Covenant
-        - Wildlife Act 1953
-            - Wildlife Refuge
-
-        1. **Moderate degree of biodiversity protection** (Bellingham Rank 3); protection is a desired purpose but subject to capability with a different main purpose or may be less comprehensive (i.e. only some aspects of biodiversity protection are targeted). Examples:
-        - Conservation Act 1987
-            - Ecological Area
-            - Stewardship Area
-        - Reserves Act 1977
-            - Government Purpose Reserve (Ecological or Wildlife)
-            - Ngā Whenua Rāhui Kawenata
-            - Local Purpose Reserve (Ecological)
-        - Te Ture Whenua Māori Act 1993
-            - Māori Reservation (Conservation or Conservation of Native Bush)
-        - Wilidlife Act 1953
-            - Wildlife Management Reserve
-
-        1. **Moderately low degree of biodiversity protection** (Bellingham Rank 2); some biodiversity protection is achieved but it of secondary importance. Examples:
-        - Resource Management Act 1991
-            - Esplanade Reserve or Strip
-            - Consent Notice (i.e. subdivisions granted subject to conditions to be complied with on a continuing basis by the subdividing land owner and subsequent owners)
-        - Reserves Act 1977
-            - Historic Reserve
-            - Local Purpose Reserve (Other – various)
-            - Recreation Reserve
-        - Te Ture Whenua Māori Act 1993
-            - Māori Reservation (various purposes related to Recreation, Camping, Water Supply, Meeting Places, Historic Significance, etc.)
-        - Conservation Act 1987
-            - Marginal Strip
-        - Local Government Act 2002
-            - Regional Parks
-
-        1. **Low degree of biodiversity protection** (Bellingham Rank 1); protection results indirectly and fortuitously as a result of other actvities. Examples:
-        - Te Ture Whenua Māori Act 1993
-            - Māori Reservation (various purposes related to Marae, Pā Sites, Papakāinga, Urupā, Wāhi Tapu, etc.)
-        - River Boards Act 1908
-            - River Bed
-        - Reserves Act 1977
-            - Road Reserve
+        1. **High degree of biodiversity protection**
+            (Bellingham Rank 5) – protection is the main purpose or is ranked equally with a limited number of other compatible purposes (e.g. national parks, nature reserves).
+        
+        2. **Moderately high degree of biodiversity protection**
+            (Bellingham Rank 4) – protection is a main purpose (e.g. conservation park, QEII open space covenant), but is shared with other less compatible purposes (e.g. recreation).
+        
+        3. **Moderate degree of biodiversity protection**
+            (Bellingham Rank 3) – protection is a desired purpose, but subject to capability with a different main purpose (e.g. stewardship land, wildlife management reserve), or may be less comprehensive (i.e. only some aspects of biodiversity protection are targeted)
+        
+        4. **Moderately low degree of biodiversity protection**
+            **(Bellingham Rank 2)** – some biodiversity protection is achieved, but it is of secondary importance
+        
+        5. Low degree of biodiversity protection
+            **(Bellingham Rank 1)** – protection results indirectly and fortuitously as a result of other activities (e.g. road reserve, riverbed)
 
     2. **Cultural and natural heritage**
 
-        1. Indigenous cultural heritage
-        1. Cultural heritage
-        1. Natural heritage
+        Conservation classes are for purposes other than biodiversity protection.
 
+        1. **Indigenous cultural heritage**
+            e.g. historical pā sites, New Zealand land wars sites, DOC Māori sites
+        
+        2. **Cultural heritage**
+            e.g. historical mining sites, selected DOC ‘iconic sites’ and Toru Whenua landmarks
+        
+        3. **Natural heritage**
+            protected areas for the conservation of specific natural features, and landscapes (e.g. Waitaki Whitestone Geopark, Banks Peninsula Geopark).
+    
     3. **Minimal use from relatively natural environments**
 
-        This class includes land that is subject to relatively low levels of intervention. The land may not be used more intensively because of its limited capability. The structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly. Where the native vegetation structure is, for example, open woodland or grassland, the land may be grazed.
+        This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land).
 
-        Where native grasses have been deliberately and extensively replaced with other species, the use should be treated under class 3.
+        Where native grasses have been deliberately and extensively replaced with other species, 
+        the land use should not be classified under class 1.
 
-        1. **Surface water supply**
-        1. **Ground water**
-        1. **Grazing native vegetation**
+        1. **Surface water supply** – an area managed as a catchment for water supply.
+        
+        2. **Ground water** – an area managed as an aquifer recharge zone.
+        
+        3. **Grazing native vegetation** – land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification. This captures high-country farming with domestic stock grazing on native vegetation where there has been limited or no deliberate attempt at pasture modification. Some change in species composition may have occurred. This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.
+        
+        4. **Production from indigenous vegetation** – commercial production from retained native forests and related activities on public and private land. This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).
+        
+        5. **Customary use** – natural environments associated with traditional and sustainable indigenous food-gathering practices (mahinga kai). This is often an anciliary use; this class should only be assigned if the collection of food or other customary use is indeed the prime use of land. (This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.)
+        
+        6. **Defence land** – natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas (e.g. Kaipara Air Weapons Range and the Waiouru Military Camp). Areas associated with buildings or more built environments on defence land are captured under an urban class.
+        
+        7. **Environmental & infrastructure protection** – land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, and shelter). This is not limited to indigenous vegetation. This class includes land with a primary purpose of flood management (e.g. stop banks, spillways). Land that has been planted for the purposes of environmental and infrastructure protection should be captured under 2.1.4. Planted environmental & infrastructure protection.
+        
+        8. **Carbon forest** – retained (non-planted) indigenous vegetation set aside for carbon credits.
+    
+    4. **Unused land and land in transition**
 
-        1. **Production from indigenous vegetation**
+        Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species.
 
-        Commercial production from non-plantation native forests and related activities on public and private land. Environmental and indirect production uses associated with retained native forest (e.g. prevention of land degradation, windbreaks, shade and shelter) are not included in this class.
+        Delineation between indigenous and exotic vegetation for the minimal use and unused\ land and land in transition classes can be made by reference to land-cover information.
 
-        This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fence posts, and mānuka/kānuka honey).
-
-        1. **Customary use**
-
-        Land with relativdely natural land cover, used for customary purposes. Includes food gathering practices from natural environments. This is often an ancillary use; this class should only be assigned to the `lu_code` if the customary practice is indeed the prime use of land (but it may often be listed as an ancillary use). If the use is done commercially, _and_ if the environment is considerably altered as a result of the practice, it should be classified under class 2.
-
-        1. **Defence land**
-
-        Natural areas allocated to field training, weapons testing and other field defence uses, predominantly in rural areas.
-
-        1. **Environmental & infrastructure protection**
-        1. **Carbon forest**
-
-        <!-- TODO discuss "foraging" of natural environments as a potential use, e.g. seafood gathering, manuka honey, truffle, possibly hunting -->
-
-    4. **Unused land and land in transiiton**
-
-        Areas of land that are largely unused (in the context of prime use) but may have ancillary uses. This may be a deliberate decision by the land manager or the result of other circumstances. The land may be available for use but remain unused for various reasons.
-
-        1. **Unused land** Land under native cover with no apparent prime use or where land use is indeterminate. Natural areas of transport corridors may fit under this class, along with unusable land such as cliffs, rock faces, boulders and tors, provided there are relatively low levels of disturbance. Where there is significant disturbance to the land (e.g. clearing) the area should be assigned to a different land use.
-
-        1. **Land undergoing rehabilitation** Land undergoing rehabilitation that has been restored to a near natural state. Land that is degraded or undergoing rehabilitation but still substantially modified should be mapped under class 2 or 3.
+        1. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
+        
+        2. **Land undergoing rehabilitation** – degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state. This includes riparian plantings.
 
     </details>
 
 2. **Production agriculture and plantations**
 
-    This class includes land that is used principally for primary production. Native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the apre, lanplication of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure, it should have irrigation listed as a management practice even if irrigation water has not been applied in the current growing season.
+    This class includes land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers or the dominance of volunteer species. The range of activities in this category includes plantation forests, pasture production for stock, cropping and fodder production, and a wide range of horticultural production. If there is evidence of irrigation infrastructure or water-take consents, land should have irrigation listed as a management practice, even if it appears that irrigation water has not been recently applied.
 
-    Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticulture class (rather than using land in transition). Record the fallow or ploughed status in the management field.
-   
+    Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.
+
     <details><summary>Expand</summary>
 
     1. **Plantation forests**
+    
+        This is land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes. This includes farm forestry and may consist of monocultures or mixed species. Specific additional attributes that could be captured are plantation age, rotation number, and species.
 
-        Land on which plantations of trees or shrubs (native or exotic species) have been established for production, or environmental and resource protection purposes. This includes farm forestry. Where planted trees are grown in conjunction with pasture, fodder or crop production, class allocation should be made on the basis of prime use.
-
-        1. **Exotic plantation forestry**
-        1. **Indigenous plantation forestry**
-        1. **Other production uses**
-        1. **Environmental & infrastructure protection** In contrast to class 1.3.7, this relates to _planted_ forests, rather than retained areas of natural forest.
-        1. Permanent carbon forest
-
-    2. **Grazing modified pastures**
-
-        <!-- TODO Management practices: dairy wintering on/off, dairy support blocks -->
+        1. **Exotic plantation forestry** – an area managed for pulpwood or saw-log production (exotic species).
         
-        Pasture and forage production, both annual and perennial, based on significant active modification or replacement of the initial vegetation.
+        2. **Indigenous plantation forestry** – an area managed for pulpwood or saw-log production (native species).
+        
+        3. **Other production uses** – an area managed for non-pulpwood production, including oil, wildflowers, honey (e.g. kānuka/mānuka plantations).
+        
+        4. **Planted environmental & infrastructure protection** – an area managed for environmental and indirect production uses (e.g. prevention of land 
+        
+        5. **Permanent carbon forest** – an area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming).
 
-        Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded in the management field. If the rotation sequence is known record this in the comments field. Effort should be made to distinguish a land use change from a rotation.
+    2. **Grazing modified pasture systems**
 
-        If livestock or pasture type is known, record this in the commodity field.
+        This class includes grazing pasture and/or forage, both annual and perennial, based on significant active modification or replacement of the natural vegetation. Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.
 
-        Some management practices relate to particular commodities. For example, `dairy cattle` (commodity) can be included alongside (`wintering off`) to describe a dairy farm system which practices wintering off (i.e. spring-autumn milking). These practices should be recorded if known; but it is acceptable to classify land under this class if management practices are indeterminate.
-        <!-- Other relevant management practices in this case are: -->
+        The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.
 
-        <!-- - `wintering off` -->
-        <!-- - `feed pad`
-        - `stand-off pad`
-        - `herd home`
-        - `composting barn`
-        - `sacrifice paddock` -->
+        Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.
 
-        1. **Dairy**
-        1. **Intensive dry stock**
-        1. **Extensive dry stock**
+        1. **Dairy** – the land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season. Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land. Where the land is permanently used for dry- stock grazing, it should be classified under dry-stock land use.
+        
+        2. **Intensive dry stock** – includes non-milking platform pasture where there is a high level of inputs from fertiliser, water requirements (i.e. may be irrigated), and high stocking rates. This is most likely to occur on flat/rolling terrain. Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non- lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding. Grazing of other stock, including deer, goats, and horses, should be captured under class ‘2.2.3 Extensive dry stock’.
+        
+        3. **Extensive dry stock** – as for class 2.2.2, but for grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates. This is more likely to take place on hill, hard-hill, or high-country terrain. Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef), and the commodity type appropriately recorded. Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation. Arable or winter forage crops are unlikely to be common rotations in this land-use category.
 
     3. **Short-rotation and seasonal cropping**
 
-        <!-- Land that is under cropping. Land under cropping at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under pasture. Land in a rotation system should be classified according to the prime use (if known) or the land use at the time of mapping, with rotation information recorded as a management practice. If the rotation sequence is known record this as a comment. -->
+        This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production. This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity. Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, is also included in this class.
 
-        <!-- Cropping can vary markedly over relatively short distances in response to changes in the nature of the land and the preferences of the land manager. It may also change over time in response to market conditions. Production of fodder, such as lucerne hay, is considered cropping as there is no harvesting by stock. Strip cropping—where multiple commodities are cropped simultaneously—can be assigned to the secondary class 3.3 with multiple commodities recorded using the commodity field, and cropping strip in the management field. -->
+        If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).
 
-        If the type of crop type is known, record this in the commodity field using the commodity list.
-
-        1. **Arable cropping**
-        1. **Arable and mixed livestock cropping**
-        1. **Short-rotation horticulture**
-        1. **Seasonal flowers and bulbs, and turf-farming**
+        1. **Arable cropping** – predominantly grain, seed, or fodder crops; over time it may include vegetable rotations. Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice if this is known). If the crop type(s) is (are) known, record it (them) in the commodity field using the commodity list.
+        
+        2. **Arable and mixed livestock cropping** – predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time. Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known). If the crop type(s) is (are) known, record it (them) in the commodity field using the commodity list.
+        
+        3. **Short-rotation horticulture** – crop plants living for _less than 2 years_ that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control. Predominantly rotations of vegetable crops or seasonal fruits grown for human consumption; may include livestock rotations, but this is considered less likely.
+        
+        4. **Seasonal flowers and bulbs, and turf farming** – agricultural practices focused on the cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes. This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.
 
     4. **Perennial horticulture**
+    
+        This class includes crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control. Management practices such as irrigation or netting to protect crops from hail or birds can be recorded as management practices. Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).
 
-        Crop plants living for _more than two years_ that are intensively cultivated, usually involving a relatively high degree of nutrient, weed and moisture control. If the crop type is known use the commodity list to record this. Management practices such as irrigation, or netting to protect crops from hail or birds can be recorded as management practices.
-
-        1. **Tree crops** Includes tree fruits and nuts.
-        1. **Vine fruits**
-        1. **Other perennial horticulture** Including shrub berries, shrub fruits, flowers, bulbs, vegetables and herbs.
+        1. **Tree crops** – includes long-term cultivated plants, typically trees or woody shrubs, grown for their fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years. Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known. Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.
+        
+        2. **Vine fruits** – includes fruit-bearing plants that grow on vines or trailing stems, often requiring support structures such as trellises or arbours. These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants.
+        
+        3. **Other perennial horticulture** – encompasses perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies).
 
     5. **Intensive horticulture**
 
-        Intensive forms of plant production (seasonal or perennial) often with special purpose improvements used for horticultural production. If crop type is known, record this in the commodity field. If crop type is known, record this in the commodity field.
+        This class includes intensive forms of plant production, often with special-purpose improvements used for horticultural production. If crop type is known, record this in the commodity field. Similarly, management practices such as hydroponic systems should be captured when known.
 
-        1. Production nurseries
-        1. Glasshouses/shadehouses
+        1. **Production nurseries** – specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes. These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes. Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.
+
+        2. **Glasshouses/shadehouses** – controlled-environment structures utilised within intensive horticulture for protected cultivation of plants, including both vegetable and floriculture production. Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.
 
     6. **Intensive animal production**
 
-        Intensive forms of animal production (excludes associated grazing or pastures), livestock production facilities or animal-holding yards. If the animal type is known, record this in the commodity field. The management field can be used to record practices such as free range or milking system.
+        This class covers intensive forms of non-pastoral animal production, livestock production facilities or animal-holding yards. The animal type can be recorded as a commodity. The management field can be used to record practices such as free range or organic. Further development of this category is likely to be required to ensure it is fit for purpose.
 
-        1. **Animal containment** Includes dairy sheds, saleyards and stockyards
-        1. **Poultry farms**
-        1. **Piggeries**
-        1. **Horse studs**
-        1. **Aquaculture**
-    
-    7. Water and wastewater
+        1. **Intensive animal containment** – facilities or systems designed to confine and manage animals, often including feed lots, pens, dairy sheds and yards, and herd homes where animals are raised intensively for meat production or other purposes.
 
-        1. Stock water
-        1. Effluent pond
-        1. Water treatment - land application 
-        1. Water treatment - wetland 
-        1. Irrigation reservoirs and canals
-    
+        2. **Poultry farms** – specialised facilities dedicated to the intensive production of domestic fowl, including chickens, turkeys, ducks, and geese, typically for meat or egg production.
+
+        3. **Piggeries** – facilities designed for the intensive rearing of pigs, where large numbers of pigs are housed and managed for meat production.
+
+        4. **Horse studs** – establishments focused on the breeding and raising of horses, typically specialising in selective breeding for desirable traits.
+
+        5. **Aquaculture** – the controlled cultivation of aquatic organisms, such as fish, molluscs, or algae in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.
+
+    7. **Water and wastewater**
+
+        This class captures built water features associated with agricultural use.
+
+        1. **Stock water** – reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock.
+
+        2. **Effluent pond** – effluent ponds typically associated with dairying.
+
+        3. **Water treatment – land application** – land used for effluent disposal, probably an ancillary use where some form of grazing is the primary use.
+
+        4. **Water treatment – wetland** – constructed or natural wetlands used to improve water quality prior to discharge.
+
+        5. **Irrigation reservoirs and canals** – land used for water storage, management or distribution intended for agricultural purposes; artificial or natural areas allocated for irrigation for agricultural purposes.
+
     8. **Land in transition**
 
-        Transitional, marginal areas where the land use is intdeterminate, or unknown and cannot reasonably be inferred from the surrounding land use. If possible, fallow or ploughed land should be allocated to a relevant pasture, cropping or horticulture class as this is the primary use. Land should previously have been used for agriculture or plantations to be classied under this secondary class.
+        As a subclass of ‘Production agriculture and plantations’, land categorised under this class must recently have been used for agriculture or plantations. In the case of greenfield development, where it is known that the land use is in transition to a built-environment category (e.g. due to a zoning change), classify the land under 3.9.0 ‘Vacant and transitioning land’, or a further subclass thereof.
 
-        1. Unused degraded land
-        1. No defined use
-        1. Land undergoing rehabilitation
-        1. Abandoned land
+        1. **Unused degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
+
+        2. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
+
+        3. **Land undergoing rehabilitation** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
+
+        4. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
 
     </details>
 
 3. **Built environment**
 
-    This class includes land uses that involve high levels of interference with natural processes, generally in association with closer settlement. The level of intervention may be high enough to completely remodel the natural landscape—the vegetation, surface and groundwater systems, and the land surface.
+    This class captures land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.
+    
+    However, land used for active recreational purposes and/or tourism (e.g. mountain bike parks) outside of urban areas and that are not captured in other land-use categories may be captured under the ‘Outdoor recreation’ category, which is a subclass of the built environment, though may still retain much natural character.
 
     <details><summary>Expand</summary>
 
-
     1. **Residential**
+        
+        This captures land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.
+        
+        The following subclasses are proposed. Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of these classes. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.
+        
+        The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’
 
-        1. **High-density residential**
-        1. **Medium-density residential**
-        1. **Low-density residential**
-        1. **Rural residential**
+        1. **High-density residential** – areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.
 
-    1. **Public recreation and services**
+        2. **Medium-density residential** – areas featuring a moderate concentration of housing units per unit of land area, typically in the form of townhouses, semi-detached, terraced, or low-rise apartment buildings, often situated in suburban or semi-urban settings in large cities, or central areas of provincial towns. Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.
 
-        Land with houses and or other residential infrastructure with or without associated agricultural activity. This class includes urban and remote communities, farm buildings and other farm infrastructure larger than the minimum mapping scale, and land in transition to residential from other land uses. This class also includes holiday shacks.
+        3. **Low-density residential** – residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.
+
+        4. **Rural residential** – residential properties with low-intensity (non-commercial) land management practices (e.g. hobby farms) on land in rural or peri-urban areas. Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.
+    
+    2. **Public recreation and services**
+
+        This land-use type includes land designated for recreational facilities and community amenities, serving the recreational needs and essential functions of the local population.
 
         1. **Outdoor recreation**
-        1. **Indoor recreation**
-        1. **Community services**
+        
+            Land areas dedicated to leisure activities conducted in natural or semi-natural settings, such as parks, trails, beaches, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves, sports grounds, tourist parks, mountain bike parks, etc. with a primary purpose of recreation and culture and typically with considerable unsealed vegetated areas.
+        
+            These often cater to activities such as tramping, cycling, picnicking, and wildlife observation.
+            
+            Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.
+            
+            The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify recreational areas that fall outside urban boundaries, such as mountain-bike parks.
+
+        2. **Indoor recreation** – facilities designed for recreational activities conducted within enclosed or semi-enclosed structures, including sports centres, gyms, fitness clubs, swimming pools, and indoor sports arenas.
+
+        3. **Community services** – land used for providing essential services and facilities to support the local community, including educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries, and other public amenities for community functioning and well-being
+
+
+    3. **Commercial**
     
-    1. **Commercial**
+        This land-use type includes land in a built environment context that is used for private- sector economic activities, encompassing various sectors such as retail, office, hospitality, entertainment, healthcare, transportation, and warehousing. Central government offices when these are privately rented should be captured in this category, even if they are public-facing.
 
-        Land allocated to providing commercial services, resulting in substantial interference to the natural environment.
+        1. **Retail** – areas used for the sale of goods and services directly to consumers, including shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.
 
-        1. **Retail**
-        1. **Office**
-        1. **Hospitality**
-        1. **Entertainment**
-        1. **Healthcare**
-        1. **Transportation & warehousing**
+        2. **Office** – land and buildings primarily used for administrative, professional, or managerial activities, including corporate offices, professional services, financial services (banks), government buildings, business parks, and coworking spaces.
+
+        3. **Hospitality** – land and buildings providing accommodation, food, and beverage services to the public, including hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, and nightclubs.
+
+        4. **Entertainment** – land areas and facilities offering leisure and recreational activities for public enjoyment, such as cinemas, theatres, amusement parks, casinos, and concert venues.
+
+        5. **Healthcare** – land dedicated to providing private medical services, including hospitals, speciality medical clinics, physiotherapists, medical offices, laboratories, and other healthcare facilities aimed at diagnosis, treatment, and prevention of illness or injury.
+
+        6. **Transportation & warehousing** – privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots. Excludes airports, ports, roads, and train stations which should be classified under class 3.6.0.
+
+    4. **Manufacturing and industrial**
     
-    1. **Manufacturing and industrial**
+        This land-use type includes land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.
 
-        1. **General purpose factory**
-        1. **Food processing factory**
-        1. **Major industrial complex**
-        1. **Sawmill**
-        1. **Farm buildings/infrastructure**
-        1. **Abattoirs**
+        1. **General purpose factory** – an area used for manufacturing, assembly or repairs of various products. Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.
+
+        2. **Food processing factory** – an area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included (e.g. cannery, milk production plant).
+
+        3. **Major industrial complex** – an area with large-scale industrial use and significant infrastructure (e.g. car plant, paper mill).
+
+        4. **Sawmill** – an area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.
+
+        5. **Farm buildings/infrastructure**
+        
+            An area with buildings, sheds and other infrastructure associated with farm enterprises, including barns, silos, storage sheds, and irrigation systems supporting agricultural operations.
+
+            If it is possible to discriminate a domestic area from a farm, the house and any adjoining non-productive (e.g. domestically landscaped) land should be classified as 3.1.4 Rural residential.
+
+        6. **Abattoirs** – areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
+
+    5. **Utilities**
     
-    1. **Utilities**
+        This land-use type includes land allocated to providing electricity, gas, or water.
 
-        Land allocated to providing electricity, gas, or water.
+        1. **Fuel powered electricity generation** – includes facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.
 
-        1. **Fuel powered electricity generation**
-        1. **Hydro electricity generation**
-        1. **Wind electricity generation**
-        1. **Solar electricity generation**
-        1. **Electricity substations and transmission**
-        1. **Gas treatment, storage and transmission**
-        1. **Water extraction and transmission**
+        2. **Hydroelectricity generation** – facilities that use the energy of flowing or falling water, typically through hydroelectric dams, converting hydraulic energy into electrical power. Includes dams and canals.
 
-    1. **Transport and communication**
+        3. **Wind electricity generation** – power generation from wind, including wind farms.
 
-        Land allocated to infrastructure used for transportation of goods or people, or navigation and communication equipment.
+        4. **Solar electricity generation** – facilities that harness sunlight using photovoltaic cells or solar thermal systems to convert solar radiation into electrical power.
 
-        1. **Airports/aerodromes**
-        1. **Roads**
-        1. **Railways**
-        1. **Ports and water transport**
-        1. **Navigation and communication**
+        5. **Electricity substations and transmission** – facilities and infrastructure associated with the distribution and transmission of electrical power from generation sources to end- users, including substations, transformers, and large, high-voltage transmission towers (pylons).
 
-    1. **Mining**
+        6. **Gas treatment, storage, and transmission** – facilities and infrastructure involved in the processing, storage, and transportation of natural gas, including gas treatment plants, storage facilities, and pipelines for transmission to consumers.
 
-        Mining and extractive industries (excluding salt extraction from evaporation basins). Record the type of mining if known, from the commodity field.
+        7. **Water extraction and transmission** – facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources such as rivers, lakes, or reservoirs to meet various human needs, including drinking-water supply, irrigation, and industrial use. Includes drinking-water reservoirs themselves
 
-        1. **Mines**
-        1. **Quarries**
-        1. **Tailings**
-        1. **Evaporation basins**
-        1. **Extractive industry not in use**
+    6. **Transport and communication**
+    
+        This land-use type includes land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment. Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
 
-    1. **Waste treatment and disposal**
+        1. **Airports/aerodromes** – locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers. Includes heliports.
 
-        Waste material and disposal facilities associated with industrial, urban and agricultural activities.
+        2. **Roads** – includes the full roading corridor (i.e. sealed road areas and unsealed roadside strips and roading corridors), with the permeability attribute recorded as appropriate (sealed/unsealed).
 
-        1. **Landfills**
-        1. **Transfer stations and recyling facilities**
-        1. **Municipal wastewater**
-        1. **Wastewater treatment - land application**
-        1. **Stormwater management**
+        3. **Railways** – permanent rail transport tracks and associated infrastructure, including stations and terminals. The full rail corridor (track and land alongside tracks required for safety clearance) should be classified under this class.
 
-    1. **Vacant and transitioning land**
+        4. **Ports and water transport** – harbour locations where ships dock to transfer people or cargo to or from land, such as ports, docks, and wharves. Includes both the terrestrial parts of ports and the marine areas (harbours, navigational channels) that are specifically designated and controlled for activities associated with the port. The water attribute can be used to differentiate the terrestrial and marine parts of the same facility.
 
-        1. **Vacant land**
-        1. **Greenfield development**
-        1. **Brownfield development**
+        5. **Navigation and communication** – includes radar stations, beacons, lighthouses, TV, and radio transmission towers, etc.
+
+    7. **Mining**
+
+        This land-use type includes mining and extractive industries (including salt extraction from evaporation basins). Record the type of mining, if known, in the commodity field.
+
+        1. **Mines** – land from which minerals, precious stones or coal is being extracted. Includes open-cut and deep-shaft mines.
+        
+        2. **Quarries** – land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted, for use in construction, infrastructure, and other industrial applications.
+        
+        3. **Tailings** – tailings dumps and dams for the storage or treatment of waste material left over after the extraction of desired minerals or metals from ore, often stored in containment facilities or tailings ponds. Also includes quarrying output.
+        
+        4. **Evaporation basins** – basins and associated facilities used for the evaporation of water from irrigation drainage or (predominantly) salt extraction.
+        
+        5. **Extractive industry not in use** – land undergoing rehabilitation after mining activities, and unmined land within a mining permit
+
+    8. **Waste treatment and disposal**
+
+        This land-use type includes land uses dedicated to managing and processing various types of waste materials, primarily associated with industrial and urban activities, including solid waste, wastewater, and stormwater, to mitigate environmental impacts and protect public health.
+
+        1. **Landfills** – designated areas for the disposal of solid waste, typically where waste materials are deposited, compacted, and covered with soil or other materials to reduce environmental contamination and control emissions. Landfill gas recovery systems (which generate electricity through the burning of methane in landfill gas) should still be classified as part of a landfill land use. Includes all class 1 to 5 landfills (e.g. landfills designed to receive inert construction materials are also included in this category).
+
+        2. **Transfer stations and recycling facilities** – facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites, aiming to minimise waste generation and promote resource recovery.
+
+        3. **Municipal wastewater** – wastewater generated from residential, commercial, and industrial activities within urban areas, requiring treatment to remove contaminants before discharge into water bodies or reuse for irrigation or other purposes. Includes municipal wastewater ponds and sewerage pipelines.
+
+        4. **Wastewater treatment** – land application – areas where treated municipal wastewater is applied onto land surfaces for beneficial reuse, such as irrigation of agricultural crops, recharging groundwater aquifers, or enhancing soil fertility, following appropriate treatment processes to ensure environmental safety. This is often likely to be an ancillary use.
+
+        5. **Stormwater management** – infrastructure aimed at controlling and mitigating the impacts of stormwater runoff, including detention basins, drainage systems, retention ponds, and green infrastructure (rain gardens, wetlands), to prevent flooding, erosion, and pollution of water bodies.
+
+    9.**Vacant and transitioning land**
+    
+        This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
+
+        1. **Vacant land** – includes derelict land and developed land that is idle.
+
+        2. **Greenfield development** – previously undeveloped or agricultural land zones for or undergoing new construction projects or urban expansion, typically involving the conversion of rural or natural areas into residential, commercial, industrial, or infrastructural uses.
+
+        3. **Brownfield development** – areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or economically under-utilised, with the aim of rehabilitating and repurposing these sites for new urban activities. May include residential areas undergoing infill development that increase housing density.
 
     </details>
+
+## Data structure
+
+This section specifies the proposed data structure for the attribution of land-use information. Each set of attributes applies to one geographical unit and can contain information about the primary and ancillary land uses, as well as attributes for disambiguation and end-user reclassification, recording provenance and any operator comments.
+
+| attribute | type | example | notes |
+| --- | --- | --- | --- |
+| lu_code_primary | integer | `1` | Numerical land use code (primary use) at the primary level |
+| lu_code_secondary | integer | `2` | Numerical land use code (primary use) at the secondary level |
+| lu_code_tertiary | integer | `3` | Numerical land use code (primary use) at the tertiary level |
+| lu_code | string | `1.2.3` | Complete land use code (primary use) |
+| lu_description | string | `Natural Heritage` | Land use class label (primary use) |
+| lu_code_ancillary | string | `2.2.0, 3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
+| commod | string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
+| commod_ancillary | string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
+| manage | string | `irrigation spray, organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
+| manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
+| land_estate | string | `freehold` | Estate type |
+| land_status | string | [TBD] | Land status type (public–private continuum; terminology to be determined) |
+| water | string | `lake` | Water type (`null` for non-water) |
+| zone | string | `Large format retail zone` | District plan zone; terminology to be taken from the Zone Framework Standard (National Planning Standards, 2019) |
+| permeability | string | `sealed` | Permeability type (`sealed` or `unsealed`) |
+| confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
+| luc_date | date | `2024-05-26` | Date of (primary) land use code |
+| source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only ony should be specified. |
+| source_data_doi | uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for the source data |
+| source_date | date | `2023-12-01` | Date of spatial featue (e.g. image date, ancillary photo date) in primary source data |
+| source_scale | string | `1:25000` | Geographical scale of primary source data, expressed as an implied ratio of 1:n, (e.g. 1:25,000). For raster data, the value should be the larger of cell height or width. |
+
+## References
+
+[^1]: Cavanagh J, Whitehead B 2022. Land-use classification for state of the environment soil quality monitoring and reporting. Manaaki Whenua – Landcare Research contract report LC4146. https://www.envirolink.govt.nz/assets/Envirolink/2222-GSDC170- Land-use-classification-for-state-of-the-environment-soil-quality-monitoring-and- reporting.pdf
+
+[^2]: Cavanagh J, Whitehead B 2023. Enabling flexibility and connectivity in land-use classification for state of the environment soil quality monitoring. Manaaki Whenua – Landcare Research contract report LC4309 for Land Monitoring Forum. https://www.envirolink.govt.nz/assets/Envirolink/R18-4-Enabling-flexibility-and- connectivity-in-land-use-classification-for-state-of-the-environment-soil-quality- monitoring.pdf
+
+[^3]: Rutledge D, Cameron M, Briggs C, Elliott S, Fenton T, Hurkens J, et al. 2016. WISE: Waikato Integrated Scenario Explorer. Technical Report #3506882. Waikato Regional Council
+
+[^4]: Price R, Rutledge D, Fraser M 2010. New Zealand Land Use Database. Envirolink Project LCRX0901 Draft Database Design Report
+
+[^5]: MfE (Ministry for the Environment) 2019. National planning standards. https://environment.govt.nz/publications/national-planning-standards/
+
+[^6]: LINZ (Land Information New Zealand) 2010. Rating valuations rules 2008: version date 1 October 2010 – LINZS30300. https://www.linz.govt.nz/resources/regulatory/rating- valuations-rules-2008-version-date-1-october-2010-linzs30300
+
+---
+
+## Hierarchical Classification System
+
+![NZLUM hierarchical classification system as a table](./NZLUM.svg)
+
 
 ## Tenure
 
@@ -381,7 +477,7 @@ Controlled vocabulary of types of tenure in New Zealand
 
 A non-exhaustive list of land status types organised along a gradient from Crown (public) to private.
 
-<!-- TODO controlled vocabulary to describe these by reference to some systematic grouping -->
+_To be determined_: a controlled vocabulary to describe these by reference to some systematic grouping and authoritative list of terms.
 
 1. Crown
     1. Department of Conservation
@@ -432,28 +528,6 @@ A non-exhaustive list of land status types organised along a gradient from Crown
     1. Individuals
     1. Iwi
 
-## Water
-
-Water is a land cover, rather than a land use. (If it is considered "land" at all.) Certain land uses can only occur on water (e.g. aquaculture); some can occur on either land or water (e.g. oil and gas wells); some only on land (e.g. pastoral farming)—but pieces of such land may include water, e.g. dams, ponds, and lakes.
-
-ALUM classifies water as a primary class, but notes that this presents some difficulty. NZLUM specifies instead that water is to be recorded as a distinct attribute that can be applied to a geographic unit.
-
-Very often water doesn't occupy the entire geographic unit (i.e. parcel); it should still be discriminated accurately as a sub-parcel-scale feature. The exception is if it is very small, in which case it can be ignored rather than attributed to the entire parcel.
-
-The "water" field can take one of the following values:
-    - `lake`
-    - `reservoir`
-    - `dam`
-    - `evaporation basin`
-    - `river`
-    - `channel`
-    - `aqueduct`
-    - `wetland`
-    - `estuary`
-    - `intertidal` <!-- supralittoral, eulittoral -->
-    - `marine` <!-- sublittoral -->
-
-## General issues
 
 ### Geographic scale
 
@@ -461,36 +535,7 @@ The intended geographic unit of this classification system is the property parce
 
 ### Temporality
 
-<!-- Interannual. A crop planted for a whole year is a commodity, but not neccessarily a land use e.g. if it's part of livestock farm system... primary economic purpose is the determining factor for landuse class -->
-
-## Data specifications
-
-### Data structure
-
-<!-- TODO make example realistic, e.g. coherent class examples -->
-| attribute | type | example | notes |
-| --- | --- | --- | --- |
-| lu_code_1 | integer | `1` | Numerical land use code (primary use) at the primary level |
-| lu_code_2 | integer | `2` | Numerical land use code (primary use) at the secondary level |
-| lu_code_3 | integer | `3` | Numerical land use code (primary use) at the tertiary level |
-| lu_code | string | `1.2.3` | Complete land use code (primary use) |
-| lu_description | string | `Natural Heritage` | Land use class label (primary use) |
-| lu_code_ancillary | string | `2.2.0, 3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
-| commod | string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
-| commod_ancillary | string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
-| manage | string | `irrigation spray, organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
-| manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
-| land_estate | string | `freehold` | Estate type |
-| land_status | string | [TBD] | Land status type (public-private continuum) |
-| water | string | `lake` | Water type (null for land) |
-| permeability | string | `sealed` | Permeability type (sealed or unsealed) |
-| zone | string | `Large format retail zone` | District plan zone; terminology to be taken from the Zone Framework Standard (National Planning Standards, 2019) |
-| confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
-| luc_date | date | `2024-05-26` | Date of (primary) land use code |
-| source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only ony should be specified. |
-| source_data_doi | uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for the source data |
-| source_date | date | `2023-12-01` | Date of spatial featue (e.g. image date, ancillary photo date) in primary source data |
-| source_scale | string | `1:25000` | Scale of primary source data
+Interannual. A crop planted for a whole year is a commodity, but not neccessarily a land use e.g. if it's part of livestock farm system. The primary economic purpose over an interannual period is the determining factor for the assignment of a land-use class. 
 
 ### Data format and spatial referencing
 
