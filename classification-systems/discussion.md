@@ -1,4 +1,4 @@
-## 9.2	Epistemological classification systems
+## Epistemological classification systems
 
 Classification schemes are incredibly important in describing how we understand our natural world. While always purposeful, they are often not systematic. Land use is inherently not any single thing. It is some combination of qualities at a particular scale (or resolution) which can be assembled to provide meaningful information. At present, our classification schemes are based on a small set of available data, most of which is not directly fit for purpose, along with a massive amount of expert knowledge in the form of interpretation, inference, rules, assumptions, and probabilities. This form of expert knowledge is largely implicit, which negatively affects the interoperability of the classification schemes.
 
@@ -15,4 +15,4 @@ The shortcoming of a top-down classification system is that it is an open-ended 
  
 
 Figure 3. The concept of 'horticulture' as represented in previous land use classifications.
-![CMap horticulture figure](../../figs/CLU_horticulture_v3_trim.svg)
+![CMap horticulture figure](../../figs/CLU_horticulture_v4_trim.svg)
