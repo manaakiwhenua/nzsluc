@@ -1,7 +1,7 @@
 # NZSLUC
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12659959.svg)](https://doi.org/10.5281/zenodo.12659959)
 [![manaakiwhenua-standards](https://github.com/manaakiwhenua/nzsluc/workflows/manaakiwhenua-standards/badge.svg)](https://github.com/manaakiwhenua/manaakiwhenua-standards)
 
 New Zealand currently lacks a comprehensive and cohesive land use information system. There is a lack of consistent definition or approach to mapping land use. Consistent land use information for New Zealand (over space and time) would improve the understanding of the implications of land use across social, cultural, economic and environmental domains.
