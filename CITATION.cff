@@ -11,13 +11,12 @@ authors:
       - family-names: "Whitehead"
         given-names: "Brandon"
         orcid: https://orcid.org/0000-0002-0337-8610
-        affiliation: "Manaaki Whenua -- Landcare Research"
         affiliation: "https://ror.org/02p9cyn66"
       - family-names: "Ardo"
         given-names: "James"
         orcid: "https://orcid.org/0009-0008-1201-9733"
         affiliation: "Manaaki Whenua -- Landcare Research"
-license: cc-by-4.0
+license: CC-BY-4.0
 version: 0.2.2
 date-released: 2024-06-30
 #doi: will be populated on release

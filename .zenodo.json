@@ -1,0 +1,25 @@
+{
+  "creators": [
+    {
+      "affiliation": "Manaaki Whenua -- Landcare Research",
+      "name": "Law, Richard",
+      "orcid": "0000-0002-7400-2530"
+    },
+    {
+      "affiliation": "https://ror.org/02p9cyn66",
+      "name": "Whitehead, Brandon",
+      "orcid": "0000-0002-0337-8610"
+    },
+    {
+      "affiliation": "Manaaki Whenua -- Landcare Research",
+      "name": "Ardo, James",
+      "orcid": "0009-0008-1201-9733"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  },
+  "publication_date": "2024-06-30",
+  "title": "Aotearoa New Zealand Standard Land Use Classification (NZSLUC)",
+  "version": "0.2.2"
+}
