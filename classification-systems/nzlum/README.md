@@ -455,11 +455,6 @@ This section specifies the proposed data structure for the attribution of land-u
 
 ---
 
-## Hierarchical Classification System
-
-![NZLUM hierarchical classification system as a table](./NZLUM.svg)
-
-
 ## Tenure
 
 Information relating to land tenure should be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. This information is included because it directly participates in the intended use of the land use classification system, though it is auxiliary.
