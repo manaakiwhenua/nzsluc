@@ -85,7 +85,7 @@ An overview of the class hierarchy is provided below, with further details of th
 
     1. **Biodiversity protection**
 
-        Nature conservation classes are based on the suggested classification scheme for the Protected Areas Network of New Zealand (PAN-NZ) in relation to biodiversity protection, following Bellingham 2016 and Planzer et al. 2024. Specifically, Tertiary classes 1.1.1–1.1.3 are based on the classification for areas legally protected for biodiversity (see Appendix A for more details).
+        Nature conservation classes are based on the suggested classification scheme for the Protected Areas Network of New Zealand (PAN-NZ) in relation to biodiversity protection, following Bellingham 2016[^7] and Planzer et al. 2024[^8]. Specifically, Tertiary classes 1.1.1–1.1.3 are based on the classification for areas legally protected for biodiversity (see Appendix A for more details).
 
         1. **High degree of biodiversity protection**
             (Bellingham Rank 5) – protection is the main purpose or is ranked equally with a limited number of other compatible purposes (e.g. national parks, nature reserves).
@@ -439,22 +439,6 @@ This section specifies the proposed data structure for the attribution of land-u
 | source_date | date | `2023-12-01` | Date of spatial featue (e.g. image date, ancillary photo date) in primary source data |
 | source_scale | string | `1:25000` | Geographical scale of primary source data, expressed as an implied ratio of 1:n, (e.g. 1:25,000). For raster data, the value should be the larger of cell height or width. |
 
-## References
-
-[^1]: Cavanagh J, Whitehead B 2022. Land-use classification for state of the environment soil quality monitoring and reporting. Manaaki Whenua – Landcare Research contract report LC4146. https://www.envirolink.govt.nz/assets/Envirolink/2222-GSDC170- Land-use-classification-for-state-of-the-environment-soil-quality-monitoring-and- reporting.pdf
-
-[^2]: Cavanagh J, Whitehead B 2023. Enabling flexibility and connectivity in land-use classification for state of the environment soil quality monitoring. Manaaki Whenua – Landcare Research contract report LC4309 for Land Monitoring Forum. https://www.envirolink.govt.nz/assets/Envirolink/R18-4-Enabling-flexibility-and- connectivity-in-land-use-classification-for-state-of-the-environment-soil-quality- monitoring.pdf
-
-[^3]: Rutledge D, Cameron M, Briggs C, Elliott S, Fenton T, Hurkens J, et al. 2016. WISE: Waikato Integrated Scenario Explorer. Technical Report #3506882. Waikato Regional Council
-
-[^4]: Price R, Rutledge D, Fraser M 2010. New Zealand Land Use Database. Envirolink Project LCRX0901 Draft Database Design Report
-
-[^5]: MfE (Ministry for the Environment) 2019. National planning standards. https://environment.govt.nz/publications/national-planning-standards/
-
-[^6]: LINZ (Land Information New Zealand) 2010. Rating valuations rules 2008: version date 1 October 2010 – LINZS30300. https://www.linz.govt.nz/resources/regulatory/rating- valuations-rules-2008-version-date-1-october-2010-linzs30300
-
----
-
 ## Tenure
 
 Information relating to land tenure should be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. This information is included because it directly participates in the intended use of the land use classification system, though it is auxiliary.
@@ -524,15 +508,15 @@ _To be determined_: a controlled vocabulary to describe these by reference to so
     1. Iwi
 
 
-### Geographic scale
+## Geographic scale
 
 The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, if the parcel is very large, and where source data scale permits such definition. Whether to map sub-parcel areas is therefore left to operator discretion, but the intended and minimum level of attribution is the property parcel, and therefore property parcel identifiers and geogaphic boundaries must be present in output land use data.
 
-### Temporality
+## Temporality
 
 Interannual. A crop planted for a whole year is a commodity, but not neccessarily a land use e.g. if it's part of livestock farm system. The primary economic purpose over an interannual period is the determining factor for the assignment of a land-use class. 
 
-### Data format and spatial referencing
+## Data format and spatial referencing
 
 Vector data format: [GeoPackage](https://www.geopackage.org/) v1.4.0 or later and/or [GeoParquet](https://geoparquet.org/) v1.0.0 or later.
 
@@ -544,6 +528,20 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 - NZGD meridional circuits (e.g. for regional extracts) or offshore island projections.
 - New Zealand Continental Shelf Lambert Conformal 2000 (NZCS2000).
 
-# References
+## References
 
-Bellingham PJ, Overton JMcC, Thomson FJ, MacLeod CJ, Holdaway RJ, Wiser SK, Brown M, Gormley AM, Collins D, Latham DM, Bishop C, Rutledge DT, Innes JG, Warburton B 2016 Standardised terrestrial biodiversity indicators for use by regional councils. Landcare Research Contract Report LC2109 prepared for Regional Councils' Biodiversity Monitoring Working Group, Auckland Council, Auckland, New Zealand.
+[^1]: Cavanagh J, Whitehead B 2022. Land-use classification for state of the environment soil quality monitoring and reporting. Manaaki Whenua – Landcare Research contract report LC4146. https://www.envirolink.govt.nz/assets/Envirolink/2222-GSDC170- Land-use-classification-for-state-of-the-environment-soil-quality-monitoring-and- reporting.pdf
+
+[^2]: Cavanagh J, Whitehead B 2023. Enabling flexibility and connectivity in land-use classification for state of the environment soil quality monitoring. Manaaki Whenua – Landcare Research contract report LC4309 for Land Monitoring Forum. https://www.envirolink.govt.nz/assets/Envirolink/R18-4-Enabling-flexibility-and- connectivity-in-land-use-classification-for-state-of-the-environment-soil-quality- monitoring.pdf
+
+[^3]: Rutledge D, Cameron M, Briggs C, Elliott S, Fenton T, Hurkens J, et al. 2016. WISE: Waikato Integrated Scenario Explorer. Technical Report #3506882. Waikato Regional Council
+
+[^4]: Price R, Rutledge D, Fraser M 2010. New Zealand Land Use Database. Envirolink Project LCRX0901 Draft Database Design Report
+
+[^5]: MfE (Ministry for the Environment) 2019. National planning standards. https://environment.govt.nz/publications/national-planning-standards/
+
+[^6]: LINZ (Land Information New Zealand) 2010. Rating valuations rules 2008: version date 1 October 2010 – LINZS30300. https://www.linz.govt.nz/resources/regulatory/rating- valuations-rules-2008-version-date-1-october-2010-linzs30300
+
+[^7]: Bellingham PJ, Overton JMcC, Thomson FJ, MacLeod CJ, Holdaway RJ, Wiser SK, Brown M, Gormley AM, Collins D, Latham DM, Bishop C, Rutledge DT, Innes JG, Warburton B 2016 Standardised terrestrial biodiversity indicators for use by regional councils. Landcare Research Contract Report LC2109 prepared for Regional Councils' Biodiversity Monitoring Working Group, Auckland Council, Auckland, New Zealand.
+
+[^8]: Planzer S, Bellis S, Gatiso T 2024. Protected Areas Network New Zealand methodology review and report. Phase II – stakeholder engagement. Manaaki Whenua – Landcare Research contract report LC4446. 
