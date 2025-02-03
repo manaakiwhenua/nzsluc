@@ -130,7 +130,7 @@ An overview of the class hierarchy is provided below, with further details of th
         
         4. **Production from indigenous vegetation** – commercial production from retained native forests and related activities on public and private land. This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).
         
-        5. **Customary use** – natural environments associated with traditional and sustainable indigenous food-gathering practices (mahinga kai). This is often an anciliary use; this class should only be assigned if the collection of food or other customary use is indeed the prime use of land. (This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.)
+        5. **Customary use** – natural environments associated with traditional and sustainable indigenous food-gathering practices (mahinga kai). This is often an ancilliary use; this class should only be assigned if the collection of food or other customary use is indeed the prime use of land. (This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.)
         
         6. **Defence land** – natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas (e.g. Kaipara Air Weapons Range and the Waiouru Military Camp). Areas associated with buildings or more built environments on defence land are captured under an urban class.
         
@@ -434,9 +434,9 @@ This section specifies the proposed data structure for the attribution of land-u
 | permeability | string | `sealed` | Permeability type (`sealed` or `unsealed`) |
 | confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
 | luc_date | date | `2024-05-26` | Date of (primary) land use code |
-| source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only ony should be specified. |
+| source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only one should be specified. |
 | source_data_doi | uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for the source data |
-| source_date | date | `2023-12-01` | Date of spatial featue (e.g. image date, ancillary photo date) in primary source data |
+| source_date | date | `2023-12-01` | Date of spatial feature (e.g. image date, ancillary photo date) in primary source data |
 | source_scale | string | `1:25000` | Geographical scale of primary source data, expressed as an implied ratio of 1:n, (e.g. 1:25,000). For raster data, the value should be the larger of cell height or width. |
 
 ## Tenure
@@ -510,11 +510,11 @@ _To be determined_: a controlled vocabulary to describe these by reference to so
 
 ## Geographic scale
 
-The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, if the parcel is very large, and where source data scale permits such definition. Whether to map sub-parcel areas is therefore left to operator discretion, but the intended and minimum level of attribution is the property parcel, and therefore property parcel identifiers and geogaphic boundaries must be present in output land use data.
+The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, if the parcel is very large, and where source data scale permits such definition. Whether to map sub-parcel areas is therefore left to operator discretion, but the intended and minimum level of attribution is the property parcel, and therefore property parcel identifiers and geographic boundaries must be present in output land use data.
 
 ## Temporality
 
-Interannual. A crop planted for a whole year is a commodity, but not neccessarily a land use e.g. if it's part of livestock farm system. The primary economic purpose over an interannual period is the determining factor for the assignment of a land-use class. 
+Interannual. A crop planted for a whole year is a commodity, but not necessarily a land use e.g. if it's part of livestock farm system. The primary economic purpose over an interannual period is the determining factor for the assignment of a land-use class. 
 
 ## Data format and spatial referencing
 
