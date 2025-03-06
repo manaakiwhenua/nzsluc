@@ -422,10 +422,10 @@ This section specifies the proposed data structure for the attribution of land-u
 | lu_code_tertiary | integer | `3` | Numerical land use code (primary use) at the tertiary level |
 | lu_code | string | `1.2.3` | Complete land use code (primary use) |
 | lu_description | string | `Natural Heritage` | Land use class label (primary use) |
-| lu_code_ancillary | string | `2.2.0, 3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
-| commod | string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
-| commod_ancillary | string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
-| manage | string | `irrigation spray, organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
+| lu_code_ancillary | (sorted set of) string | `2.2.0,3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
+| commod | (sorted set of) string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
+| commod_ancillary | )sorted set of )string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
+| manage | (sorted set of) string | `irrigation spray,organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
 | manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
 | land_estate | string | `freehold` | Estate type |
 | land_status | string | [TBD] | Land status type (public–private continuum; terminology to be determined) |
@@ -433,11 +433,11 @@ This section specifies the proposed data structure for the attribution of land-u
 | zone | string | `Large format retail zone` | District plan zone; terminology to be taken from the Zone Framework Standard (National Planning Standards, 2019) |
 | permeability | string | `sealed` | Permeability type (`sealed` or `unsealed`) |
 | confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
-| luc_date | date | `2024-05-26` | Date of (primary) land use code |
-| source_data | string | `Northland Regional Council` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; only one should be specified. |
-| source_data_doi | uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for the source data |
-| source_date | date | `2023-12-01` | Date of spatial feature (e.g. image date, ancillary photo date) in primary source data |
-| source_scale | string | `1:25000` | Geographical scale of primary source data, expressed as an implied ratio of 1:n, (e.g. 1:25,000). For raster data, the value should be the larger of cell height or width. |
+| luc_date | date | `2024-05-26` | Date of land use classification, "last modified" |
+| source_data | (sorted set of) string | `DVR,NRC,LCDB v5,field mapping` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; to a reasonable extent, all should be specified. |
+| source_data_doi | (set of) uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for source data |
+| source_date | string (date range) | `[2011-05-02,2025-01-03)` | Combined date range of spatial features (e.g. image date, ancillary photo date, last edited date) in primary source data, at feature (preferentially) or dataset level, using interval notation for inclusive and exclusive endpoints |
+| source_scale | string (integer interval) | `[10,60]` | Combined integer (interval)[https://en.wikipedia.org/wiki/Interval_(mathematics)] indicating the precision of source data, in the CRS units (metres) |
 
 ## Tenure
 
@@ -511,6 +511,18 @@ _To be determined_: a controlled vocabulary to describe these by reference to so
 ## Geographic scale
 
 The intended geographic unit of this classification system is the property parcel. However it may be appropriate to map sub-parcel geographic entities for particular classes, particularly if the boundary of natural features (forests, waterways) is pertinent, if the parcel is very large, and where source data scale permits such definition. Whether to map sub-parcel areas is therefore left to operator discretion, but the intended and minimum level of attribution is the property parcel, and therefore property parcel identifiers and geographic boundaries must be present in output land use data.
+
+## `source_scale`
+
+To indicate that one of the endpoints is to be excluded from the set, use a parenthesis and not a square bracket (the latter indicates inclusion). For example, if source data is precise between 0.02 and 0.75 metres, use the notation `(0,1)`, indicating precision at the sub-metre scale, between 0-1 m (but not including the endpoints). If vector data is no more precise than 60 m, use `[60,)` if there is no suitable upper-bound; or else determine an appropriate nominal upper-bound since (i.e. `[60,x]`, where x > 60) as it is unlikely that in reality there is no upper bound.
+
+Rules of thumb for converting nominal scales of input data to this notation:
+
+- Raster data pixel size: given the smaller of the pixel height or width (a) and the larger of the height or width (b): `[a,b]`. If a = b, this notation is still appropriate as `[a,a]` would be the singleton set `{a}`, whereas `(a,a)` is not correct notation as it is an empty set. Example: a raster with 30 metre pixels: `[30,30]`.
+- `1:50000` scale map data, as in LINZ topographic data for the 1:50,000 map series (no further information available about how data is produced): precision = (map scale denominator) / 1,000. For example, a 1:50,000 scale map has a positional precision of about 50 metres. Denote this as `[50,)`, (with an optional practical or QA-derived upper limit).
+- A map produced from raster data with 10 metre pixels, manually digitised at 1:25,000 scale. In this case the errors are explicit and cumulative. Precision = 10 + 25,000/1,000 = 35. Therefore record as `[35,)` (with an optional practical or QA-derived upper limit).
+
+If multiple input datasets are used together to come to a classification decision, the ranges should be merged. That is, compute the smallest range that includes all of the given ranges. (See the `range_merge` function in PostgreSQL). For example, the ranges `[1,2)` and `[3,4)` can be combined to form `[1,4)`.
 
 ## Temporality
 
