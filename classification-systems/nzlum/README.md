@@ -83,24 +83,30 @@ An overview of the class hierarchy is provided below, with further details of th
 
     <details><summary>Expand</summary>
 
-    1. **Biodiversity protection**
+    1. **Nature conservation**
 
-        Nature conservation classes are based on the suggested classification scheme for the Protected Areas Network of New Zealand (PAN-NZ) in relation to biodiversity protection, following Bellingham 2016[^7] and Planzer et al. 2024[^8]. Specifically, Tertiary classes 1.1.1–1.1.3 are based on the classification for areas legally protected for biodiversity (see Appendix A for more details).
+        Nature conservation classes are determined by the classification scheme adoted for the Protected Areas Network of New Zealand (PAN-NZ).
 
-        1. **High degree of biodiversity protection**
-            (Bellingham Rank 5) – protection is the main purpose or is ranked equally with a limited number of other compatible purposes (e.g. national parks, nature reserves).
+        1. **Strict nature reserve**
+            Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring. (IUCN 2008 Category Ia.)
         
-        2. **Moderately high degree of biodiversity protection**
-            (Bellingham Rank 4) – protection is a main purpose (e.g. conservation park, QEII open space covenant), but is shared with other less compatible purposes (e.g. recreation).
+        2. **Wilderness area**
+            Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition. (IUCN 2008 Category Ib.) 
         
-        3. **Moderate degree of biodiversity protection**
-            (Bellingham Rank 3) – protection is a desired purpose, but subject to capability with a different main purpose (e.g. stewardship land, wildlife management reserve), or may be less comprehensive (i.e. only some aspects of biodiversity protection are targeted)
+        3. **National park**
+            Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to: a) protect the ecological integrity of one or more ecosystems for the current and future generations; b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible. (IUCN 2008 Category II.)
         
-        4. **Moderately low degree of biodiversity protection**
-            **(Bellingham Rank 2)** – some biodiversity protection is achieved, but it is of secondary importance
+        4. **Natural feature protection**
+            Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance. (IUCN 2008 Category III).
         
-        5. Low degree of biodiversity protection
-            **(Bellingham Rank 1)** – protection results indirectly and fortuitously as a result of other activities (e.g. road reserve, riverbed)
+        5. **Habitat or species management area**
+            Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land. (IUCN 2008 Category IV.)
+        
+        6. **Protected landscape**
+            Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time had produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity. (IUCN 2008 Category V.)
+        
+        7. **Other conserved area**
+            Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover (if the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’).
 
     2. **Cultural and natural heritage**
 
