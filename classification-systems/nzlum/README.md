@@ -546,6 +546,34 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 - NZGD meridional circuits (e.g. for regional extracts) or offshore island projections.
 - New Zealand Continental Shelf Lambert Conformal 2000 (NZCS2000).
 
+
+## Suggested colour scheme (at the secondary scale)
+
+| Colour | Class Code | Category | Hex Code |
+|:--:|:--:|---|---|
+| <div style="width: 100px; height: 20px; background-color: #7F6DF2"></div> | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
+| <div style="width: 100px; height: 20px; background-color: #A88BE0"></div> | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
+| <div style="width: 100px; height: 20px; background-color: #CAB4D4"></div> | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
+| <div style="width: 100px; height: 20px; background-color: #D6C8DA"></div> | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
+| <div style="width: 100px; height: 20px; background-color: #37966F"></div> | 2.1.0 | **Plantation forests** | `#37966F` |
+| <div style="width: 100px; height: 20px; background-color: #A5D64B"></div> | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
+| <div style="width: 100px; height: 20px; background-color: #FFC857"></div> | 2.3.0 | **Short-rotation and seasonal cropping** | `#FFC857` |
+| <div style="width: 100px; height: 20px; background-color: #F88D49"></div> | 2.4.0 | **Perennial horticulture** | `#F88D49` |
+| <div style="width: 100px; height: 20px; background-color: #F97F51"></div> | 2.5.0 | **Intensive horticulture** | `#F97F51` |
+| <div style="width: 100px; height: 20px; background-color: #A66E4A"></div> | 2.6.0 | **Intensive animal production** | `#A66E4A` |
+| <div style="width: 100px; height: 20px; background-color: #4DA6FF"></div> | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
+| <div style="width: 100px; height: 20px; background-color: #BFD3C1"></div> | 2.8.0 | **Land in transition** | `#BFD3C1` |
+| <div style="width: 100px; height: 20px; background-color: #FF968A"></div> | 3.1.0 | **Residential** | `#FF968A` |
+| <div style="width: 100px; height: 20px; background-color: #FF7F7F"></div> | 3.2.0 | **Public recreation and services** | `#FF7F7F` |
+| <div style="width: 100px; height: 20px; background-color: #FF5E5B"></div> | 3.3.0 | **Commercial** | `#FF5E5B` |
+| <div style="width: 100px; height: 20px; background-color: #8C2F39"></div> | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
+| <div style="width: 100px; height: 20px; background-color: #D16B7F"></div> | 3.5.0 | **Utilities** | `#D16B7F` |
+| <div style="width: 100px; height: 20px; background-color: #B45558"></div> | 3.6.0 | **Transport and communication** | `#B45558` |
+| <div style="width: 100px; height: 20px; background-color: #5A5C6C"></div> | 3.7.0 | **Mining** | `#5A5C6C` |
+| <div style="width: 100px; height: 20px; background-color: #4A5568"></div> | 3.8.0 | **Waste treatment and disposal** | `#4A5568` |
+| <div style="width: 100px; height: 20px; background-color: #E5E5E5"></div> | 3.9.0 | **Vacant and transitioning land** | `#E5E5E5` |
+
+
 ## References
 
 [^1]: Cavanagh J, Whitehead B 2022. Land-use classification for state of the environment soil quality monitoring and reporting. Manaaki Whenua – Landcare Research contract report LC4146. https://www.envirolink.govt.nz/assets/Envirolink/2222-GSDC170- Land-use-classification-for-state-of-the-environment-soil-quality-monitoring-and- reporting.pdf
