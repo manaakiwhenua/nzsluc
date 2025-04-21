@@ -551,27 +551,27 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 
 | Colour | Class Code | Category | Hex Code |
 |:--:|:--:|---|---|
-| ![#7F6DF2](https://via.placeholder.com/15/7F6DF2/7F6DF2?text=+) | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
-| ![#A88BE0](https://via.placeholder.com/15/A88BE0/A88BE0?text=+) | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
-| ![#CAB4D4](https://via.placeholder.com/15/CAB4D4/CAB4D4?text=+) | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
-| ![#D6C8DA](https://via.placeholder.com/15/D6C8DA/D6C8DA?text=+) | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
-| ![#37966F](https://via.placeholder.com/15/37966F/37966F?text=+) | 2.1.0 | **Plantation forests** | `#37966F` |
-| ![#A5D64B](https://via.placeholder.com/15/A5D64B/A5D64B?text=+) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
-| ![#FFC857](https://via.placeholder.com/15/FFC857/FFC857?text=+) | 2.3.0 | **Short-rotation and seasonal cropping** | `#FFC857` |
-| ![#F88D49](https://via.placeholder.com/15/F88D49/F88D49?text=+) | 2.4.0 | **Perennial horticulture** | `#F88D49` |
-| ![#F97F51](https://via.placeholder.com/15/F97F51/F97F51?text=+) | 2.5.0 | **Intensive horticulture** | `#F97F51` |
-| ![#A66E4A](https://via.placeholder.com/15/A66E4A/A66E4A?text=+) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
-| ![#4DA6FF](https://via.placeholder.com/15/4DA6FF/4DA6FF?text=+) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
-| ![#BFD3C1](https://via.placeholder.com/15/BFD3C1/BFD3C1?text=+) | 2.8.0 | **Land in transition** | `#BFD3C1` |
-| ![#FF968A](https://via.placeholder.com/15/FF968A/FF968A?text=+) | 3.1.0 | **Residential** | `#FF968A` |
-| ![#FF7F7F](https://via.placeholder.com/15/FF7F7F/FF7F7F?text=+) | 3.2.0 | **Public recreation and services** | `#FF7F7F` |
-| ![#FF5E5B](https://via.placeholder.com/15/FF5E5B/FF5E5B?text=+) | 3.3.0 | **Commercial** | `#FF5E5B` |
-| ![#8C2F39](https://via.placeholder.com/15/8C2F39/8C2F39?text=+) | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
-| ![#D16B7F](https://via.placeholder.com/15/D16B7F/D16B7F?text=+) | 3.5.0 | **Utilities** | `#D16B7F` |
-| ![#B45558](https://via.placeholder.com/15/B45558/B45558?text=+) | 3.6.0 | **Transport and communication** | `#B45558` |
-| ![#5A5C6C](https://via.placeholder.com/15/5A5C6C/5A5C6C?text=+) | 3.7.0 | **Mining** | `#5A5C6C` |
-| ![#4A5568](https://via.placeholder.com/15/4A5568/4A5568?text=+) | 3.8.0 | **Waste treatment and disposal** | `#4A5568` |
-| ![#E5E5E5](https://via.placeholder.com/15/E5E5E5/E5E5E5?text=+) | 3.9.0 | **Vacant and transitioning land** | `#E5E5E5` |
+| ![#7F6DF2](https://via.placeholder.com/15/7F6DF2/000000.png?text=+) | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
+| ![#A88BE0](https://via.placeholder.com/15/A88BE0/000000.png?text=+) | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
+| ![#CAB4D4](https://via.placeholder.com/15/CAB4D4/000000.png?text=+) | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
+| ![#D6C8DA](https://via.placeholder.com/15/D6C8DA/000000.png?text=+) | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
+| ![#37966F](https://via.placeholder.com/15/37966F/000000.png?text=+) | 2.1.0 | **Plantation forests** | `#37966F` |
+| ![#A5D64B](https://via.placeholder.com/15/A5D64B/000000.png?text=+) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
+| ![#FFC857](https://via.placeholder.com/15/FFC857/000000.png?text=+) | 2.3.0 | **Short-rotation and seasonal cropping** | `#FFC857` |
+| ![#F88D49](https://via.placeholder.com/15/F88D49/000000.png?text=+) | 2.4.0 | **Perennial horticulture** | `#F88D49` |
+| ![#F97F51](https://via.placeholder.com/15/F97F51/000000.png?text=+) | 2.5.0 | **Intensive horticulture** | `#F97F51` |
+| ![#A66E4A](https://via.placeholder.com/15/A66E4A/000000.png?text=+) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
+| ![#4DA6FF](https://via.placeholder.com/15/4DA6FF/000000.png?text=+) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
+| ![#BFD3C1](https://via.placeholder.com/15/BFD3C1/000000.png?text=+) | 2.8.0 | **Land in transition** | `#BFD3C1` |
+| ![#FF968A](https://via.placeholder.com/15/FF968A/000000.png?text=+) | 3.1.0 | **Residential** | `#FF968A` |
+| ![#FF7F7F](https://via.placeholder.com/15/FF7F7F/000000.png?text=+) | 3.2.0 | **Public recreation and services** | `#FF7F7F` |
+| ![#FF5E5B](https://via.placeholder.com/15/FF5E5B/000000.png?text=+) | 3.3.0 | **Commercial** | `#FF5E5B` |
+| ![#8C2F39](https://via.placeholder.com/15/8C2F39/000000.png?text=+) | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
+| ![#D16B7F](https://via.placeholder.com/15/D16B7F/000000.png?text=+) | 3.5.0 | **Utilities** | `#D16B7F` |
+| ![#B45558](https://via.placeholder.com/15/B45558/000000.png?text=+) | 3.6.0 | **Transport and communication** | `#B45558` |
+| ![#5A5C6C](https://via.placeholder.com/15/5A5C6C/000000.png?text=+) | 3.7.0 | **Mining** | `#5A5C6C` |
+| ![#4A5568](https://via.placeholder.com/15/4A5568/000000.png?text=+) | 3.8.0 | **Waste treatment and disposal** | `#4A5568` |
+| ![#E5E5E5](https://via.placeholder.com/15/E5E5E5/000000.png?text=+) | 3.9.0 | **Vacant and transitioning land** | `#E5E5E5` |
 
 
 
