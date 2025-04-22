@@ -563,12 +563,12 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![A66E4A](https://place-hold.it/50x50/A66E4A/A66E4A.png&text=A66E4A) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
 | ![4DA6FF](https://place-hold.it/50x50/4DA6FF/4DA6FF.png&text=4DA6FF) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
 | ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Land in transition** | `#BFD3C1` |
-| ![FF9B8C](https://place-hold.it/50x50/FF9B8C/FF9B8C.png&text=FF9B8C) | 3.1.0 | **Residential** | `#FF9B8C` |
-| ![FF7F7F](https://place-hold.it/50x50/FF7F7F/FF7F7F.png&text=FF7F7F) | 3.2.0 | **Public recreation and services** | `#FF7F7F` |
-| ![FF5E5B](https://place-hold.it/50x50/FF5E5B/FF5E5B.png&text=FF5E5B) | 3.3.0 | **Commercial** | `#FF5E5B` |
+| ![FFBEBE](https://place-hold.it/50x50/FFBEBE/FFBEBE.png&text=FFBEBE) | 3.1.0 | **Residential** | `#FFBEBE` |
+| ![FF5500](https://place-hold.it/50x50/FF5500/FF5500.png&text=FF5500) | 3.2.0 | **Public recreation and services** | `#FF5500` |
+| ![FF0000](https://place-hold.it/50x50/FF0000/FF0000.png&text=FF0000) | 3.3.0 | **Commercial** | `#FF0000` |
 | ![8C2F39](https://place-hold.it/50x50/8C2F39/8C2F39.png&text=8C2F39) | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
 | ![D16B7F](https://place-hold.it/50x50/D16B7F/D16B7F.png&text=D16B7F) | 3.5.0 | **Utilities** | `#D16B7F` |
-| ![B45558](https://place-hold.it/50x50/B45558/B45558.png&text=B45558) | 3.6.0 | **Transport and communication** | `#B45558` |
+| ![A80084](https://place-hold.it/50x50/A80084/A80084.png&text=A80084) | 3.6.0 | **Transport and communication** | `#A80084` |
 | ![5A5C6C](https://place-hold.it/50x50/5A5C6C/5A5C6C.png&text=5A5C6C) | 3.7.0 | **Mining** | `#5A5C6C` |
 | ![4A5568](https://place-hold.it/50x50/4A5568/4A5568.png&text=4A5568) | 3.8.0 | **Waste treatment and disposal** | `#4A5568` |
 | ![E5E5E5](https://place-hold.it/50x50/E5E5E5/E5E5E5.png&text=E5E5E5) | 3.9.0 | **Vacant and transitioning land** | `#E5E5E5` |
