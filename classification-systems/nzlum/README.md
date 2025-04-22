@@ -557,13 +557,13 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
 | ![37966F](https://place-hold.it/50x50/37966F/37966F.png&text=37966F) | 2.1.0 | **Plantation forests** | `#37966F` |
 | ![A5D64B](https://place-hold.it/50x50/A5D64B/A5D64B.png&text=A5D64B) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
-| ![FFC857](https://place-hold.it/50x50/E7F281/E7F281.png&text=E7F281) | 2.3.0 | **Short-rotation and seasonal cropping** | `#E7F281` |
-| ![F88D49](https://place-hold.it/50x50/F88D49/F88D49.png&text=F88D49) | 2.4.0 | **Perennial horticulture** | `#F88D49` |
-| ![F97F51](https://place-hold.it/50x50/F97F51/F97F51.png&text=F97F51) | 2.5.0 | **Intensive horticulture** | `#F97F51` |
+| ![E7F281](https://place-hold.it/50x50/E7F281/E7F281.png&text=E7F281) | 2.3.0 | **Short-rotation and seasonal cropping** | `#E7F281` |
+| ![F8DB76](https://place-hold.it/50x50/F8DB76/F8DB76.png&text=F8DB76) | 2.4.0 | **Perennial horticulture** | `#F8DB76` |
+| ![EEC22D](https://place-hold.it/50x50/EEC22D/EEC22D.png&text=EEC22D) | 2.5.0 | **Intensive horticulture** | `#EEC22D` |
 | ![A66E4A](https://place-hold.it/50x50/A66E4A/A66E4A.png&text=A66E4A) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
 | ![4DA6FF](https://place-hold.it/50x50/4DA6FF/4DA6FF.png&text=4DA6FF) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
 | ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Land in transition** | `#BFD3C1` |
-| ![FF968A](https://place-hold.it/50x50/FF968A/FF968A.png&text=FF968A) | 3.1.0 | **Residential** | `#FF968A` |
+| ![FF9B8C](https://place-hold.it/50x50/FF9B8C/FF9B8C.png&text=FF9B8C) | 3.1.0 | **Residential** | `#FF9B8C` |
 | ![FF7F7F](https://place-hold.it/50x50/FF7F7F/FF7F7F.png&text=FF7F7F) | 3.2.0 | **Public recreation and services** | `#FF7F7F` |
 | ![FF5E5B](https://place-hold.it/50x50/FF5E5B/FF5E5B.png&text=FF5E5B) | 3.3.0 | **Commercial** | `#FF5E5B` |
 | ![8C2F39](https://place-hold.it/50x50/8C2F39/8C2F39.png&text=8C2F39) | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
