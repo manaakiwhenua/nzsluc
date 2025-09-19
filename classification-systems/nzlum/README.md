@@ -1,7 +1,7 @@
 # New Zealand Land Use Management (NZLUM) classification system 
 
 Status: Draft
-Version: 0.3 2025
+Version: 0.3
 Developed by: Manaaki Whenua – Landcare Research
 
 > Kotahi te aho ka whati, ki te kāpuia e kore e whati.
