@@ -46,7 +46,7 @@ The collection of specific additional attributes is intended to allow for the re
 
 Potential attributes could include the following.
 
-- **Commodity**  (as in ALUM): captures information about crops and livestock that allows for further distinction within a land-use class and may be useful in the context of biosecurity, economic modelling, nutrient modelling, greenhouse gas estimation, site-selection, etc.
+- **Commodities**  (as in ALUM): captures information about crops and livestock that allows for further distinction within a land-use class and may be useful in the context of biosecurity, economic modelling, nutrient modelling, greenhouse gas estimation, site-selection, etc.
 - **Management practices** (as in ALUM): captures additional information not otherwise captured in the class hierarchy, such as irrigation, crop pasture rotations, free range stock, or wintering off of dairy stock. ALUM maintains a list of 44 management practices with agreed names (a controlled vocabulary, or enumeration – a set of named constants). This set of names was compiled from existing sources, such as the Australian Bureau of Statistics, Meat and Livestock Australia, Horticulture Innovation Australia, Grains Research and Development Corporation, and state and territory lists. NZLUM adoptis this list but allows some extensions. Management practices are expected to apply only to particular land-use codes, so they must be used in conjunction with stated codes.
 - **Tenure**: relates to the potential for changes to land use and land-use management practices (because tenure may constrain possible land-use changes). Information relating to land tenure could be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. Recognising that tenure is an extension of the considerations of ALUM (on which this classification system is based), it is important to note that Boffa Miskell Limited (2023) identified the need for land tenure status as a requirement for a land information system to address the needs of councils to monitor and implement freshwater regulations, and to map urban growth.
 - **Zoning**: such as that described in the 2019 New Zealand Planning Standards (e.g. rural zone, Māori purpose zone) will help to identify future land-use changes and can be matched with additional information such as land-cover information to confirm current use. Once again, the need for zoning information as a dimension of land information was identified in Boffa Miskell 2023; it is especially relevant for councils considering patterns of urban expansion and intensification.
@@ -123,7 +123,7 @@ An overview of the class hierarchy is provided below, with further details of th
         
         3. **Grazing native vegetation** – land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification. This captures high-country farming with domestic stock grazing on native vegetation where there has been limited or no deliberate attempt at pasture modification. Some change in species composition may have occurred. This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.
         
-        4. **Production from indigenous vegetation** – commercial production from retained native forests and related activities on public and private land. This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).
+        4. **Production from indigenous vegetation** – commercial production from retained (non-plantation) native forests and related activities on public and private land. This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).
         
         5. **Customary use** – natural environments associated with traditional and sustainable indigenous food-gathering practices (mahinga kai). This is often an ancilliary use; this class should only be assigned if the collection of food or other customary use is indeed the prime use of land. (This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.)
         
@@ -155,18 +155,16 @@ An overview of the class hierarchy is provided below, with further details of th
 
     1. **Plantation forests**
 
-        This is land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes. This includes farm forestry and may consist of monocultures or mixed species. Specific additional attributes that could be captured are plantation age, rotation number, and species.
+        This is land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including for the purposes of claiming carbon credits with indigenous or exotic species under permanent carbon forestry. This includes farm forestry and may consist of monocultures or mixed species.
 
-        1. **Exotic plantation forestry** – an area managed for pulpwood or saw-log production (exotic species).
+        1. **Exotic plantation forestry** – an area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species). The specific commodity or commodities should be noted if known. Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
         
-        2. **Indigenous plantation forestry** – an area managed for pulpwood or saw-log production (native species).
+        2. **Indigenous plantation forestry** – an area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits  (native species). The specific commodity or commodities should be noted if known. Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
         
-        3. **Other production uses** – an area managed for non-pulpwood production, including oil, wildflowers, honey (e.g. kānuka/mānuka plantations).
+        3. **Other production uses** – an area managed for non-pulpwood production, including oil, wildflowers, honey (e.g. kānuka/mānuka plantations). The specific commodity or commodities should be noted if known.
         
-        4. **Planted environmental & infrastructure protection** – an area managed for environmental and indirect production uses (e.g. prevention of land 
+        4. **Planted environmental & infrastructure protection** – an area managed for environmental and indirect production uses (e.g. prevention of land degradatiion, windbreaks, shade, and shelter).
         
-        5. **Permanent carbon forest** – an area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming).
-
     2. **Grazing modified pasture systems**
 
         This class includes grazing pasture and/or forage, both annual and perennial, based on significant active modification or replacement of the natural vegetation. Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.
@@ -435,11 +433,18 @@ This section specifies the proposed data structure for the attribution of land-u
 | source_date | string (date range) | `[2011-05-02,2025-01-03)` | Combined date range of spatial features (e.g. image date, ancillary photo date, last edited date) in primary source data, at feature (preferentially) or dataset level, using interval notation for inclusive and exclusive endpoints |
 | source_scale | string (integer interval) | `[10,60]` | Combined integer (interval)[https://en.wikipedia.org/wiki/Interval_(mathematics)] indicating the precision of source data, in the CRS units (metres) |
 
+## Commodities
+
+Accepted commodities are those accepted for [use in ALUM v8, Table 2](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification) and follow the same definitions. Present, accepted additions are presented below:
+
+| Commodity               	| Comments                                                                                                                                                                                                                                                                                                                                                                                                                                     	| NZLUM codes         	|
+|-------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------	|
+| carbon forest standard  	| Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible.                                                                                                                                                                                      	| 2.1.0, 2.1.1, 2.1.2 	|
+| carbon forest permanent 	| Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry. 	| 2.1.0, 2.1.1, 2.1.2 	|
+
 ## Management practices
 
-Accepted management practices are those accepted for [use in ALUM v8, Table 3](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification), with some additions presented below.
-
-Additions:
+Accepted management practices are those accepted for [use in ALUM v8, Table 3](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification) and follow the same definitions. Present, accepted additions are presented below:
 
 | Management         	| Comments                                                                                                                                                                                        	| NZLUM codes  	|
 |--------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|--------------	|
