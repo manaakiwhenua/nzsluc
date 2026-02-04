@@ -133,15 +133,15 @@ An overview of the class hierarchy is provided below, with further details of th
         
         8. **Carbon forest** – retained (non-planted) indigenous vegetation set aside for carbon credits.
     
-    4. **Unused land and land in transition**
+    4. **Unused and transitioning land**
 
         Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species.
 
         Delineation between indigenous and exotic vegetation for the minimal use and unused\ land and land in transition classes can be made by reference to land-cover information.
-
-        1. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
         
-        2. **Land undergoing rehabilitation** – degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state. This includes riparian plantings.
+        1. **Rehabilitating land** – degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state. This includes riparian plantings.
+
+        2. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
 
     </details>
 
@@ -241,17 +241,17 @@ An overview of the class hierarchy is provided below, with further details of th
 
         5. **Irrigation reservoirs and canals** – land used for water storage, management or distribution intended for agricultural purposes; artificial or natural areas allocated for irrigation for agricultural purposes.
 
-    8. **Land in transition**
+    8. **Vacant and transitioning land**
 
         As a subclass of ‘Production agriculture and plantations’, land categorised under this class must recently have been used for agriculture or plantations. In the case of greenfield development, where it is known that the land use is in transition to a built-environment category (e.g. due to a zoning change), classify the land under 3.9.0 ‘Vacant and transitioning land’, or a further subclass thereof.
 
-        1. **Unused degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
+        1. **Rehabilitating land** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
 
-        2. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
+        3. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
 
-        3. **Land undergoing rehabilitation** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
+        2. **Degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
 
-        4. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
+        4. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
 
     </details>
 
@@ -398,11 +398,11 @@ An overview of the class hierarchy is provided below, with further details of th
 
         This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
 
-        1. **Vacant land** – includes derelict land and developed land that is idle.
+        1. **Brownfield development** – areas of active redevelopment of previously developed (often industrial or commercial) land that may be abandoned, contaminated, or economically under-utilised, with the aim of rehabilitating and repurposing these sites for new urban activities. May include residential areas undergoing infill development that increase housing density.
 
         2. **Greenfield development** – previously undeveloped or agricultural land zones for or undergoing new construction projects or urban expansion, typically involving the conversion of rural or natural areas into residential, commercial, industrial, or infrastructural uses.
 
-        3. **Brownfield development** – areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or economically under-utilised, with the aim of rehabilitating and repurposing these sites for new urban activities. May include residential areas undergoing infill development that increase housing density.
+        4. **Idle and derelict land** – developed land that is vacant, idle or derelict.
 
     </details>
 
