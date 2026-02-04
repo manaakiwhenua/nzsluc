@@ -47,7 +47,7 @@ The collection of specific additional attributes is intended to allow for the re
 Potential attributes could include the following.
 
 - **Commodity**  (as in ALUM): captures information about crops and livestock that allows for further distinction within a land-use class and may be useful in the context of biosecurity, economic modelling, nutrient modelling, greenhouse gas estimation, site-selection, etc.
-- **Management practices** (as in ALUM): captures additional information not otherwise captured in the class hierarchy, such as irrigation, crop pasture rotations, free range stock, or wintering off of dairy stock. ALUM maintains a list of 44 management practices with agreed names (a controlled vocabulary, or enumeration – a set of named constants). This set of names was compiled from existing sources, such as the Australian Bureau of Statistics, Meat and Livestock Australia, Horticulture Innovation Australia, Grains Research and Development Corporation, and state and territory lists. We propose adopting this list but making minimal extensions where necessary (dairying wintering off practice is an obvious extension that we recommend). Management practices are expected to apply only to particular land-use codes, so they must be used in conjunction with these codes. Going beyond the ALUM practice, in the built environment this attribute could be used to include information such as building materials or floor levels.
+- **Management practices** (as in ALUM): captures additional information not otherwise captured in the class hierarchy, such as irrigation, crop pasture rotations, free range stock, or wintering off of dairy stock. ALUM maintains a list of 44 management practices with agreed names (a controlled vocabulary, or enumeration – a set of named constants). This set of names was compiled from existing sources, such as the Australian Bureau of Statistics, Meat and Livestock Australia, Horticulture Innovation Australia, Grains Research and Development Corporation, and state and territory lists. NZLUM adoptis this list but allows some extensions. Management practices are expected to apply only to particular land-use codes, so they must be used in conjunction with stated codes.
 - **Tenure**: relates to the potential for changes to land use and land-use management practices (because tenure may constrain possible land-use changes). Information relating to land tenure could be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. Recognising that tenure is an extension of the considerations of ALUM (on which this classification system is based), it is important to note that Boffa Miskell Limited (2023) identified the need for land tenure status as a requirement for a land information system to address the needs of councils to monitor and implement freshwater regulations, and to map urban growth.
 - **Zoning**: such as that described in the 2019 New Zealand Planning Standards (e.g. rural zone, Māori purpose zone) will help to identify future land-use changes and can be matched with additional information such as land-cover information to confirm current use. Once again, the need for zoning information as a dimension of land information was identified in Boffa Miskell 2023; it is especially relevant for councils considering patterns of urban expansion and intensification.
 - **Land cover**: this is particularly relevant in the context of identifying crop rotations within various primary production classes. These would probably be framed as land cover at the time of mapping. There would need to be further decisions regarding the appropriate land-cover terminology, so this idea has not progressed beyond an initial proposal.
@@ -419,7 +419,7 @@ This section specifies the proposed data structure for the attribution of land-u
 | lu_description | string | `Natural Heritage` | Land use class label (primary use) |
 | lu_code_ancillary | (sorted set of) string | `2.2.0,3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
 | commod | (sorted set of) string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |
-| commod_ancillary | )sorted set of )string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
+| commod_ancillary | (sorted set of) string | `pulpwood` | Commodity type(s) relating to the ancillary land use code(s) |
 | manage | (sorted set of) string | `irrigation spray,organic` | Management practices; multiple practices are to be specified with comma separation with optional whitespace characters |
 | manage_ancillary | string | `free standing` | Management practices relating to the ancillary use code(s)
 | land_estate | string | `freehold` | Estate type |
@@ -434,6 +434,20 @@ This section specifies the proposed data structure for the attribution of land-u
 | source_data_doi | (set of) uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for source data |
 | source_date | string (date range) | `[2011-05-02,2025-01-03)` | Combined date range of spatial features (e.g. image date, ancillary photo date, last edited date) in primary source data, at feature (preferentially) or dataset level, using interval notation for inclusive and exclusive endpoints |
 | source_scale | string (integer interval) | `[10,60]` | Combined integer (interval)[https://en.wikipedia.org/wiki/Interval_(mathematics)] indicating the precision of source data, in the CRS units (metres) |
+
+## Management practices
+
+Accepted management practices are those accepted for [use in ALUM v8, Table 3](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification), with some additions presented below.
+
+Additions:
+
+| Management         	| Comments                                                                                                                                                                                        	| NZLUM codes  	|
+|--------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|--------------	|
+| hunting            	| Hunting is known to occur.                                                                                                                                                                      	| 1.0.0, 2.0.0 	|
+| hunting open       	| Relating to hunting on public conservation land; open hunting areas are hunting areas that require an open area hunting permit.                                                                 	| 1.0.0        	|
+| hunting restricted 	| Relating to hunting on public conservation land; restricted hunting areas are huting areas that require specific permits except the open area hunting permit, e.g. a small game hunting permit. 	| 1.0.0        	|
+| hunting prohibited 	| Relating to hunting on public conservation land; areas where hunting is prohibited.                                                                                                             	| 1.0.0        	|
+
 
 ## Tenure
 
