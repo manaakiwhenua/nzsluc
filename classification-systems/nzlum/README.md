@@ -133,15 +133,15 @@ An overview of the class hierarchy is provided below, with further details of th
         
         8. **Carbon forest** – retained (non-planted) indigenous vegetation set aside for carbon credits.
     
-    4. **Unused land and land in transition**
+    4. **Unused and transitioning land**
 
         Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species.
 
         Delineation between indigenous and exotic vegetation for the minimal use and unused\ land and land in transition classes can be made by reference to land-cover information.
-
-        1. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
         
-        2. **Land undergoing rehabilitation** – degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state. This includes riparian plantings.
+        1. **Rehabilitating land** – degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state. This includes riparian plantings.
+
+        2. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
 
     </details>
 
@@ -239,17 +239,17 @@ An overview of the class hierarchy is provided below, with further details of th
 
         5. **Irrigation reservoirs and canals** – land used for water storage, management or distribution intended for agricultural purposes; artificial or natural areas allocated for irrigation for agricultural purposes.
 
-    8. **Land in transition**
+    8. **Vacant and transitioning land**
 
         As a subclass of ‘Production agriculture and plantations’, land categorised under this class must recently have been used for agriculture or plantations. In the case of greenfield development, where it is known that the land use is in transition to a built-environment category (e.g. due to a zoning change), classify the land under 3.9.0 ‘Vacant and transitioning land’, or a further subclass thereof.
 
-        1. **Unused degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
+        1. **Rehabilitating land** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
 
-        2. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
+        2. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
 
-        3. **Land undergoing rehabilitation** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
+        3. **Degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
 
-        4. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
+        4. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
 
     </details>
 
@@ -396,11 +396,11 @@ An overview of the class hierarchy is provided below, with further details of th
 
         This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
 
-        1. **Vacant land** – includes derelict land and developed land that is idle.
+        1. **Brownfield development** – areas of active redevelopment of previously developed (often industrial or commercial) land that may be abandoned, contaminated, or economically under-utilised, with the aim of rehabilitating and repurposing these sites for new urban activities. May include residential areas undergoing infill development that increase housing density.
 
         2. **Greenfield development** – previously undeveloped or agricultural land zones for or undergoing new construction projects or urban expansion, typically involving the conversion of rural or natural areas into residential, commercial, industrial, or infrastructural uses.
 
-        3. **Brownfield development** – areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or economically under-utilised, with the aim of rehabilitating and repurposing these sites for new urban activities. May include residential areas undergoing infill development that increase housing density.
+        3. **Idle and derelict land** – developed land that is vacant, idle or derelict.
 
     </details>
 
@@ -565,7 +565,7 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![7F6DF2](https://place-hold.it/50x50/7F6DF2/7F6DF2.png&text=7F6DF2) | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
 | ![A88BE0](https://place-hold.it/50x50/A88BE0/A88BE0.png&text=A88BE0) | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
 | ![CAB4D4](https://place-hold.it/50x50/CAB4D4/CAB4D4.png&text=CAB4D4) | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
-| ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
+| ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused and transitioning land** | `#D6C8DA` |
 | ![37966F](https://place-hold.it/50x50/37966F/37966F.png&text=37966F) | 2.1.0 | **Plantation forests** | `#37966F` |
 | ![A5D64B](https://place-hold.it/50x50/A5D64B/A5D64B.png&text=A5D64B) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
 | ![E7F281](https://place-hold.it/50x50/E7F281/E7F281.png&text=E7F281) | 2.3.0 | **Short-rotation and seasonal cropping** | `#E7F281` |
@@ -573,7 +573,7 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![EEC22D](https://place-hold.it/50x50/EEC22D/EEC22D.png&text=EEC22D) | 2.5.0 | **Intensive horticulture** | `#EEC22D` |
 | ![A66E4A](https://place-hold.it/50x50/A66E4A/A66E4A.png&text=A66E4A) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
 | ![4DA6FF](https://place-hold.it/50x50/4DA6FF/4DA6FF.png&text=4DA6FF) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
-| ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Land in transition** | `#BFD3C1` |
+| ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Vacant and transitioning land** | `#BFD3C1` |
 | ![FFBEBE](https://place-hold.it/50x50/FFBEBE/FFBEBE.png&text=FFBEBE) | 3.1.0 | **Residential** | `#FFBEBE` |
 | ![FF5500](https://place-hold.it/50x50/FF5500/FF5500.png&text=FF5500) | 3.2.0 | **Public recreation and services** | `#FF5500` |
 | ![FF0000](https://place-hold.it/50x50/FF0000/FF0000.png&text=FF0000) | 3.3.0 | **Commercial** | `#FF0000` |
