@@ -10,17 +10,6 @@ Developed by: Manaaki Whenua – Landcare Research
 > 
 > — Kīngi Tāwhiao
 
-<!-- ## TODO
-
-- [ ] Temporality
-- [ ] 1.1 and 1.2 model according to Bellingham 2016 and IUCN, as an equivalent to ALUM's CAPAD
-- [ ] Hunting, open and restricted https://www.doc.govt.nz/map/index.html (management practice on conservation land?) e.g. `hunting`, `hunting open`, `hunting restricted`, `hunting prohibited` (restricted doesn't mean prohibited).
-- [ ] Permanent forests under the ETS, https://www.mpi.govt.nz/forestry/funding-tree-planting-research/closed-funding-programmes/permanent-forest-sink-initiative/  3.1.4. Environmental Forest Plantation
-- [ ] Carefuly review class definitions for application to New Zealand
-- [ ] Add a note on tenure review process for crown leasehold land in the South Island
-
--->
-
 NZLUM is adapted from the Australian Land Use and Management (ALUM) classification (version 8) for application in New Zealand, taking into account common land-use classification usage in New Zealand for several different purposes, including SOE soil quality monitoring (see Cavanagh & Whitehead 2022, 2023)[^1][^2], the Waikato Integrated Scenario Explorer (Rutledge et al. 2016)[^3], Greater Wellington Regional Council whaitua (catchment) classifications (Cavanagh 2022), Land Use Database version 4 (LUDB4) (Price et al. 2010)[^4], the New Zealand Planning Standards (MfE 2019)[^5], and LINZ rating valuations rules (LINZ 2010) [^6].
 
 The rationale for the adaptation of ALUM is that ALUM provides a useful data structure and platform for standardisation, which, simply put, avoids some reinvention of the wheel in this regard. ALUM is licensed under a [Creative Commons Attribution 3.0 Australia Licence](https://creativecommons.org/licenses/by/3.0/au), which explicitly permits adaptation of ALUM. Where direct overlap of an ALUM class is considered appropriate, it has been retained. However, both particular classes and the arrangement of the class hierarchy are significantly different, and additional classes have been added to reflect what we consider to be relevant considerations for land-use information in New Zealand.
@@ -77,7 +66,7 @@ An overview of the class hierarchy is provided below, with further details of th
 
     This class includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
 
-    Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.
+    **Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.**
 
     Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.
 
@@ -440,6 +429,7 @@ This section specifies the proposed data structure for the attribution of land-u
 | permeability | string | `sealed` | Permeability type (`sealed` or `unsealed`) |
 | confidence | integer | `3` | Confidence 1-4, a qualitative assessment relating to the overall operator confidence in the assigned classification |
 | luc_date | date | `2024-05-26` | Date of land use classification, "last modified" |
+| comment | string | `Pūkaha National Wildlife Centre | Optional, arbitrary comment that may provide additional contextual information, name/s, note/s, etc. For classifications rlelated to legal protection, the relevant information (e.g. the Act) should be recorded within this field, but it may not be the only content. UTF-8 character encoding. |
 | source_data | (sorted set of) string | `DVR,NRC,LCDB v5,field mapping` | Primary source data (e.g. field mapping, local knowledge, ancillary dataset, air photo, imagery). Often, multiple sources of information are combined to come to a conclusion; to a reasonable extent, all should be specified. |
 | source_data_doi | (set of) uri | `doi:10.26060/W5B4-WK93` | Optional (i.e. when available) DOI or HTTP URI for source data |
 | source_date | string (date range) | `[2011-05-02,2025-01-03)` | Combined date range of spatial features (e.g. image date, ancillary photo date, last edited date) in primary source data, at feature (preferentially) or dataset level, using interval notation for inclusive and exclusive endpoints |
@@ -448,6 +438,8 @@ This section specifies the proposed data structure for the attribution of land-u
 ## Tenure
 
 Information relating to land tenure should be captured in two attributes: `land_estate` and `land_status`. How land is owned, and by whom, is an important consideration for how land may be used or managed. This information is included because it directly participates in the intended use of the land use classification system, though it is auxiliary.
+
+Please see: [LINZ: Tenure review](https://www.linz.govt.nz/our-work/crown-property-management/pastoral-land/tenure-review)
 
 ### `land_estate`
 
