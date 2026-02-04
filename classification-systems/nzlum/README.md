@@ -247,9 +247,9 @@ An overview of the class hierarchy is provided below, with further details of th
 
         1. **Rehabilitating land** – land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
 
-        3. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
+        2. **Abandoned land** – land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
 
-        2. **Degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
+        3. **Degraded land** – unused land that is degraded through erosion or flood events that is not being rehabilitated. Can include contaminated land.
 
         4. **No defined use** – land cleared of vegetation and where the current proposed land use is unknown.
 
@@ -402,7 +402,7 @@ An overview of the class hierarchy is provided below, with further details of th
 
         2. **Greenfield development** – previously undeveloped or agricultural land zones for or undergoing new construction projects or urban expansion, typically involving the conversion of rural or natural areas into residential, commercial, industrial, or infrastructural uses.
 
-        4. **Idle and derelict land** – developed land that is vacant, idle or derelict.
+        3. **Idle and derelict land** – developed land that is vacant, idle or derelict.
 
     </details>
 
@@ -560,7 +560,7 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![7F6DF2](https://place-hold.it/50x50/7F6DF2/7F6DF2.png&text=7F6DF2) | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
 | ![A88BE0](https://place-hold.it/50x50/A88BE0/A88BE0.png&text=A88BE0) | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
 | ![CAB4D4](https://place-hold.it/50x50/CAB4D4/CAB4D4.png&text=CAB4D4) | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
-| ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused land and land in transition** | `#D6C8DA` |
+| ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused and transitioning land** | `#D6C8DA` |
 | ![37966F](https://place-hold.it/50x50/37966F/37966F.png&text=37966F) | 2.1.0 | **Plantation forests** | `#37966F` |
 | ![A5D64B](https://place-hold.it/50x50/A5D64B/A5D64B.png&text=A5D64B) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
 | ![E7F281](https://place-hold.it/50x50/E7F281/E7F281.png&text=E7F281) | 2.3.0 | **Short-rotation and seasonal cropping** | `#E7F281` |
@@ -568,7 +568,7 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 | ![EEC22D](https://place-hold.it/50x50/EEC22D/EEC22D.png&text=EEC22D) | 2.5.0 | **Intensive horticulture** | `#EEC22D` |
 | ![A66E4A](https://place-hold.it/50x50/A66E4A/A66E4A.png&text=A66E4A) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
 | ![4DA6FF](https://place-hold.it/50x50/4DA6FF/4DA6FF.png&text=4DA6FF) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
-| ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Land in transition** | `#BFD3C1` |
+| ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Vacant and transitioning land** | `#BFD3C1` |
 | ![FFBEBE](https://place-hold.it/50x50/FFBEBE/FFBEBE.png&text=FFBEBE) | 3.1.0 | **Residential** | `#FFBEBE` |
 | ![FF5500](https://place-hold.it/50x50/FF5500/FF5500.png&text=FF5500) | 3.2.0 | **Public recreation and services** | `#FF5500` |
 | ![FF0000](https://place-hold.it/50x50/FF0000/FF0000.png&text=FF0000) | 3.3.0 | **Commercial** | `#FF0000` |
