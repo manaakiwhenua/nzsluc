@@ -97,19 +97,28 @@ def main():
         if defi:
             lines.append(f"{ind}  {md_escape(defi)}")
 
-        # scopeNote -> NOTE callout
         scope_notes = get_lang_all(g, concept, SKOS.scopeNote)
-        for sn in scope_notes:
+        for i, sn in enumerate(scope_notes):
             sn = md_escape(sn)
             lines.append(f"{ind}  > [!NOTE]")
             lines.append(f"{ind}  > {sn}")
+            # blank line between multiple NOTE blocks
+            if i != len(scope_notes) - 1:
+                lines.append(f"{ind}  ")
 
-        # usageNote -> TIP callout
         usage_notes = get_lang_all(g, concept, SKOS.usageNote)
-        for un in usage_notes:
+
+        # blank line between NOTE section and TIP section
+        if scope_notes and usage_notes:
+            lines.append(f"{ind}  ")
+
+        for j, un in enumerate(usage_notes):
             un = md_escape(un)
             lines.append(f"{ind}  > [!TIP]")
             lines.append(f"{ind}  > {un}")
+            if j != len(usage_notes) - 1:
+                lines.append(f"{ind}  ")
+
 
         # blank line between items at same depth improves readability in GitHub
         lines.append("")

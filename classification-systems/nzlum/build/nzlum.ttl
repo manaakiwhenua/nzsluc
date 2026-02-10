@@ -156,7 +156,7 @@ luc:other_conserved_area
         skos:notation    "1.1.7";
         skos:prefLabel   "Other conserved area"@en;
         skos:definition  "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."@en;
-        skos:scopeNote   "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’)" .
+        skos:scopeNote   "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’" .
 
 luc:cultural_natural_heritage
         a                skos:Concept;

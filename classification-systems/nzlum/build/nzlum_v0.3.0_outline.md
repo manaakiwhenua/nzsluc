@@ -4,6 +4,7 @@
   Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
   > [!NOTE]
   > Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.
+  
   > [!TIP]
   > Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.
 
@@ -37,7 +38,7 @@
     - **1.1.7 Other conserved area**
       Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .
       > [!NOTE]
-      > If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’)
+      > If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’
 
   - **1.2.0 Cultural and natural heritage**
     Conservation classes are for purposes other than biodiversity protecton.
@@ -74,6 +75,7 @@
       Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai).
       > [!NOTE]
       > This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.
+      
       > [!TIP]
       > This is often an ancillary use; assign only if customary use is the prime use of the land.
 
@@ -86,6 +88,7 @@
       Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways).
       > [!NOTE]
       > This is not limited to indigenous vegetation.
+      
       > [!NOTE]
       > Land planted for environmental and infrastructure protection should be captured under 2.1.4.
 
@@ -107,6 +110,7 @@
   Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.
   > [!NOTE]
   > If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.
+  
   > [!TIP]
   > Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.
 
@@ -119,6 +123,7 @@
       An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
+      
       > [!TIP]
       > Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
 
@@ -126,6 +131,7 @@
       An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species).
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
+      
       > [!TIP]
       > Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
 
@@ -141,8 +147,10 @@
     Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.
     > [!NOTE]
     > Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.
+    
     > [!NOTE]
     > Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.
+    
     > [!TIP]
     > The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.
 
@@ -150,6 +158,7 @@
       Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.
       > [!NOTE]
       > Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.
+      
       > [!NOTE]
       > Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.
 
@@ -162,10 +171,13 @@
       Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.
       > [!NOTE]
       > Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)
+      
       > [!NOTE]
       > Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation.
+      
       > [!NOTE]
       > Arable or winter forage crops are unlikely to be common rotations in this land-use category
+      
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
 
@@ -173,8 +185,10 @@
     This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.
     > [!NOTE]
     > This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.
+    
     > [!NOTE]
     > Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.
+    
     > [!TIP]
     > If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).
 
@@ -187,6 +201,7 @@
       Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time..
       > [!NOTE]
       > Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known).
+      
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
 
@@ -194,6 +209,7 @@
       Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption.
       > [!NOTE]
       > May include livestock rotations, but this is considered less likely
+      
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
 
@@ -206,6 +222,7 @@
     Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.
     > [!TIP]
     > Management practices such as irrigation or netting can be recorded as management practices.
+    
     > [!TIP]
     > Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).
 
@@ -213,6 +230,7 @@
       Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.
       > [!TIP]
       > Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.
+      
       > [!TIP]
       > Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.
 
@@ -226,6 +244,7 @@
     Intensive forms of plant production, often with special-purpose improvements used for horticultural production.
     > [!TIP]
     > Record management practices such as hydroponic systems, irrigation, and netting, if known.
+    
     > [!TIP]
     > The specific commodity or commodities should be noted if known.
 
@@ -233,6 +252,7 @@
       Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).
       > [!NOTE]
       > These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.
+      
       > [!NOTE]
       > Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.
 
@@ -245,6 +265,7 @@
     Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.
     > [!TIP]
     > Record animal types as commodities, if known.
+    
     > [!TIP]
     > The management field can be used to record practices such as free range or organic.
 
@@ -311,6 +332,7 @@
     Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.
     > [!NOTE]
     > The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’
+    
     > [!TIP]
     > Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.
 
@@ -471,6 +493,7 @@
       Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.
       > [!NOTE]
       > Landfill gas recovery systems are classified as part of a landfill land use.
+      
       > [!NOTE]
       > Includes all class 1 to 5 landfills (e.g. landfills designed to receive inert construction materials are also included in this category)
 
