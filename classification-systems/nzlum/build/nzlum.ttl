@@ -1,0 +1,1301 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lus: <https://example.org/landuse/scheme/>
+PREFIX luc: <https://example.org/landuse/concept/>
+PREFIX lu_status: <https://example.org/landuse/status/>
+PREFIX lu_proverb: <https://example.org/landuse/doc/proverb/>
+PREFIX lu_person: <https://example.org/landuse/doc/person/>
+
+lu_status:draft  a  rdfs:Resource;
+        rdfs:label  "Draft"@en .
+
+lu_status:published  a  rdfs:Resource;
+        rdfs:label  "Published"@en .
+
+lu_proverb:kotahi_te_aho
+        a                dct:BibliographicResource;
+        dct:creator      lu_person:kingi_tawhiao;
+        dct:description  "Kotahi te aho ka whati, ki te kāpuia e kore e whati."@mi;
+        dct:description  "One strand of flax is easy to break, but many strands together will stand strong."@en .
+
+lu_person:kingi_tawhiao
+        a          foaf:Person;
+        foaf:name  "Kīngi Tāwhiao"@mi;
+        foaf:name  "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"@mi .
+
+lus:nzlum  dct:relation  lu_proverb:kotahi_te_aho;
+        a               skos:ConceptScheme;
+        dct:title       "New Zealand Land Use and Management classification system"@en;
+        dct:hasVersion  lus:nzlum0.3.0;
+        dct:hasVersion  lus:nzlum0.4.0 .
+
+lus:nzlum0.3.0  a           skos:ConceptScheme;
+        dct:issued          "2025-06-30"^^xsd:date;
+        owl:versionInfo     "0.3.0";
+        dct:isVersionOf     lus:nzlum;
+        adms:status         lu_status:draft;
+        skos:hasTopConcept  luc:conservation;
+        skos:hasTopConcept  luc:production_agriculture_plantations;
+        skos:hasTopConcept  luc:built_environment .
+
+lus:nzlum0.4.0  a           skos:ConceptScheme;
+        dct:issued          "2026-02-13"^^xsd:date;
+        owl:versionInfo     "0.4.0";
+        dct:isVersionOf     lus:nzlum;
+        adms:status         lu_status:published;
+        skos:hasTopConcept  luc:conservation;
+        skos:hasTopConcept  luc:production_agriculture_plantations;
+        skos:hasTopConcept  luc:built_environment .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE   <https://example.org/landuse/>
+PREFIX lu: <https://example.org/landuse/>
+PREFIX lus: <https://example.org/landuse/scheme/>
+PREFIX luc: <https://example.org/landuse/concept/>
+
+luc:conservation  a        skos:Concept;
+        skos:inScheme      lus:nzlum0.3.0;
+        skos:inScheme      lus:nzlum0.4.0;
+        skos:topConceptOf  lus:nzlum0.3.0;
+        skos:topConceptOf  lus:nzlum0.4.0;
+        skos:notation      "1.0.0";
+        skos:prefLabel     "Conservation and Minimal Use"@en;
+        skos:definition    "Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en;
+        skos:scopeNote     "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en;
+        skos:usageNote     "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en;
+        skos:narrower      luc:nature_cons;
+        skos:narrower      luc:cultural_natural_heritage;
+        skos:narrower      luc:minimal_use_relatively_natural;
+        skos:narrower      luc:unused_land_transition .
+
+luc:nature_cons  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:conservation;
+        skos:notation    "1.1.0";
+        skos:prefLabel   "Nature conservation"@en;
+        skos:definition  "Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ)."@en;
+        skos:narrower    luc:strict_nature_res;
+        skos:narrower    luc:wilderness;
+        skos:narrower    luc:national_park;
+        skos:narrower    luc:natural_feature_protection;
+        skos:narrower    luc:habitat_or_species_management;
+        skos:narrower    luc:protected_landscape;
+        skos:narrower    luc:other_conserved_area .
+
+luc:strict_nature_res
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.1";
+        skos:prefLabel   "Strict nature reserve"@en;
+        skos:definition  "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve."@en .
+
+luc:wilderness  a        skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.2";
+        skos:prefLabel   "Wilderness area"@en;
+        skos:definition  "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area."@en .
+
+luc:national_park  a     skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.3";
+        skos:prefLabel   "National Park"@en;
+        skos:definition  "Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:\n\n  a) protect the ecological integrity of one or more ecosystems for the current and future generations;\n\n  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and\n\n  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ib: national park."@en .
+
+luc:natural_feature_protection
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.4";
+        skos:prefLabel   "Natural feature protection"@en;
+        skos:definition  "Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature."@en .
+
+luc:habitat_or_species_management
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.5";
+        skos:prefLabel   "Habitat or species management area"@en;
+        skos:definition  "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area."@en .
+
+luc:protected_landscape
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.6";
+        skos:prefLabel   "Protected landscape"@en;
+        skos:definition  "Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity."@en;
+        dct:source       "IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape."@en .
+
+luc:other_conserved_area
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:nature_cons;
+        skos:notation    "1.1.7";
+        skos:prefLabel   "Other conserved area"@en;
+        skos:definition  "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."@en;
+        skos:scopeNote   "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’)" .
+
+luc:cultural_natural_heritage
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:conservation;
+        skos:notation    "1.2.0";
+        skos:prefLabel   "Cultural and natural heritage"@en;
+        skos:definition  "Conservation classes are for purposes other than biodiversity protecton."@en;
+        skos:narrower    luc:indigenous_cultural_heritage;
+        skos:narrower    luc:cultural_heritage;
+        skos:narrower    luc:natural_heritage .
+
+luc:indigenous_cultural_heritage
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:cultural_natural_heritage;
+        skos:notation    "1.2.1";
+        skos:prefLabel   "Indigenous cultural heritage"@en;
+        skos:definition  "Indigenous cultural heritage sites and areas (e.g. historical pā sites, New Zealand land wars sites, and other indigenous heritage sites)."@en .
+
+luc:cultural_heritage
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:cultural_natural_heritage;
+        skos:notation    "1.2.2";
+        skos:prefLabel   "Cultural heritage"@en;
+        skos:definition  "Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks)."@en .
+
+luc:natural_heritage  a  skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:cultural_natural_heritage;
+        skos:notation    "1.2.3";
+        skos:prefLabel   "Natural heritage"@en;
+        skos:definition  "Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks)."@en .
+
+luc:minimal_use_relatively_natural
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:conservation;
+        skos:notation    "1.3.0";
+        skos:prefLabel   "Minimal use from relatively natural environments"@en;
+        skos:definition  "This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land)."@en;
+        skos:scopeNote   "Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1."@en;
+        skos:narrower    luc:surface_water_supply;
+        skos:narrower    luc:ground_water;
+        skos:narrower    luc:grazing_native_vegetation;
+        skos:narrower    luc:production_from_indigenous_vegetation;
+        skos:narrower    luc:customary_use;
+        skos:narrower    luc:defence_land_natural_areas;
+        skos:narrower    luc:environmental_infrastructure_protection;
+        skos:narrower    luc:carbon_forest_retained .
+
+luc:surface_water_supply
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.1";
+        skos:prefLabel   "Surface water supply"@en;
+        skos:definition  "An area managed as a catchment for water supply."@en .
+
+luc:ground_water  a      skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.2";
+        skos:prefLabel   "Ground water"@en;
+        skos:definition  "An area managed as an aquifer recharge zone."@en .
+
+luc:grazing_native_vegetation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.3";
+        skos:prefLabel   "Grazing native vegetation"@en;
+        skos:definition  "Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred."@en;
+        skos:usageNote   "This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context."@en .
+
+luc:production_from_indigenous_vegetation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.4";
+        skos:prefLabel   "Production from indigenous vegetation"@en;
+        skos:definition  "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."@en .
+
+luc:customary_use  a     skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.5";
+        skos:prefLabel   "Customary use"@en;
+        skos:definition  "Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai)."@en;
+        skos:usageNote   "This is often an ancillary use; assign only if customary use is the prime use of the land."@en;
+        skos:scopeNote   "This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use."@en .
+
+luc:defence_land_natural_areas
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.6";
+        skos:prefLabel   "Defence land"@en;
+        skos:definition  "Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas."@en;
+        skos:scopeNote   "Areas associated with buildings or more built environments on defence land are captured under an urban class."@en;
+        skos:example     "Kaipara Air Weapons Range"@en;
+        skos:example     "Waiouru Military Camp"@en .
+
+luc:environmental_infrastructure_protection
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.7";
+        skos:prefLabel   "Environmental & infrastructure protection"@en;
+        skos:definition  "Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways)."@en;
+        skos:scopeNote   "This is not limited to indigenous vegetation."@en;
+        skos:scopeNote   "Land planted for environmental and infrastructure protection should be captured under 2.1.4."@en .
+
+luc:carbon_forest_retained
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:minimal_use_relatively_natural;
+        skos:notation    "1.3.8";
+        skos:prefLabel   "Carbon forest"@en;
+        skos:definition  "Retained (non-planted) indigenous vegetation set aside for carbon credits."@en .
+
+luc:unused_land_transition
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:conservation;
+        skos:notation    "1.4.0";
+        skos:prefLabel   "Unused land and land in transition"@en;
+        skos:definition  "Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species."@en;
+        skos:usageNote   "Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information."@en;
+        skos:narrower    luc:unused_land;
+        skos:narrower    luc:land_undergoing_rehabilitation_natural .
+
+luc:unused_land  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:unused_land_transition;
+        skos:notation    "1.4.1";
+        skos:prefLabel   "Unused land"@en;
+        skos:definition  "Land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en .
+
+luc:land_undergoing_rehabilitation_natural
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:unused_land_transition;
+        skos:notation    "1.4.2";
+        skos:prefLabel   "Land undergoing rehabilitation"@en;
+        skos:definition  "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."@en .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE   <https://example.org/landuse/>
+PREFIX lu: <https://example.org/landuse/>
+PREFIX lus: <https://example.org/landuse/scheme/>
+PREFIX luc: <https://example.org/landuse/concept/>
+
+luc:production_agriculture_plantations
+        a                  skos:Concept;
+        skos:inScheme      lus:nzlum0.3.0;
+        skos:inScheme      lus:nzlum0.4.0;
+        skos:topConceptOf  lus:nzlum0.3.0;
+        skos:topConceptOf  lus:nzlum0.4.0;
+        skos:notation      "2.0.0";
+        skos:prefLabel     "Production agriculture and plantations"@en;
+        skos:definition    "Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production."@en;
+        skos:scopeNote     "If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied."@en;
+        skos:usageNote     "Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field."@en;
+        skos:narrower      luc:plantation_forests;
+        skos:narrower      luc:grazing_modified_pasture_systems;
+        skos:narrower      luc:short_rotation_seasonal_cropping;
+        skos:narrower      luc:perennial_horticulture;
+        skos:narrower      luc:intensive_horticulture;
+        skos:narrower      luc:intensive_animal_production;
+        skos:narrower      luc:water_wastewater_agriculture;
+        skos:narrower      luc:land_in_transition_agriculture .
+
+luc:plantation_forests
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.1.0";
+        skos:prefLabel   "Plantation forests"@en;
+        skos:definition  "Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry."@en;
+        skos:scopeNote   "This includes farm forestry and may consist of monocultures or mixed species."@en;
+        skos:narrower    luc:exotic_plantation_forestry;
+        skos:narrower    luc:indigenous_plantation_forestry;
+        skos:narrower    luc:other_production_plantations;
+        skos:narrower    luc:planted_environmental_infrastructure_protection .
+
+luc:exotic_plantation_forestry
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:plantation_forests;
+        skos:notation    "2.1.1";
+        skos:prefLabel   "Exotic plantation forestry"@en;
+        skos:definition  "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species)."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en;
+        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en .
+
+luc:indigenous_plantation_forestry
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:plantation_forests;
+        skos:notation    "2.1.2";
+        skos:prefLabel   "Indigenous plantation forestry"@en;
+        skos:definition  "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en;
+        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en .
+
+luc:other_production_plantations
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:plantation_forests;
+        skos:notation    "2.1.3";
+        skos:prefLabel   "Other production uses"@en;
+        skos:definition  "An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:planted_environmental_infrastructure_protection
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:plantation_forests;
+        skos:notation    "2.1.4";
+        skos:prefLabel   "Planted environmental & infrastructure protection"@en;
+        skos:definition  "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."@en .
+
+luc:grazing_modified_pasture_systems
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.2.0";
+        skos:prefLabel   "Grazing modified pasture systems"@en;
+        skos:definition  "Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation."@en;
+        skos:scopeNote   "Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping."@en;
+        skos:usageNote   "The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known."@en;
+        skos:scopeNote   "Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use."@en;
+        skos:narrower    luc:dairy;
+        skos:narrower    luc:intensive_dry_stock;
+        skos:narrower    luc:extensive_dry_stock .
+
+luc:dairy  a             skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:grazing_modified_pasture_systems;
+        skos:notation    "2.2.1";
+        skos:prefLabel   "Dairy"@en;
+        skos:definition  "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."@en;
+        skos:scopeNote   "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."@en;
+        skos:scopeNote   "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."@en .
+
+luc:intensive_dry_stock
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:grazing_modified_pasture_systems;
+        skos:notation    "2.2.2";
+        skos:prefLabel   "Intensive dry stock"@en;
+        skos:definition  "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en;
+        skos:scopeNote   "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding. Grazing of other stock, including deer, goats, and horses, should be captured under class ‘2.2.3 Extensive dry stock’"@en .
+
+luc:extensive_dry_stock
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:grazing_modified_pasture_systems;
+        skos:notation    "2.2.3";
+        skos:prefLabel   "Extensive dry stock"@en;
+        skos:definition  "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."@en;
+        skos:scopeNote   "Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)"@en;
+        skos:scopeNote   "Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation."@en;
+        skos:scopeNote   "Arable or winter forage crops are unlikely to be common rotations in this land-use category"@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:short_rotation_seasonal_cropping
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.3.0";
+        skos:prefLabel   "Short-rotation and seasonal cropping"@en;
+        skos:definition  "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en;
+        skos:scopeNote   "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."@en;
+        skos:scopeNote   "Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class."@en;
+        skos:usageNote   "If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary)."@en;
+        skos:narrower    luc:arable_cropping;
+        skos:narrower    luc:arable_mixed_livestock_cropping;
+        skos:narrower    luc:short_rotation_horticulture;
+        skos:narrower    luc:seasonal_flowers_bulbs_turf .
+
+luc:arable_cropping  a   skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:short_rotation_seasonal_cropping;
+        skos:notation    "2.3.1";
+        skos:prefLabel   "Arable cropping"@en;
+        skos:definition  "Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:arable_mixed_livestock_cropping
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:short_rotation_seasonal_cropping;
+        skos:notation    "2.3.2";
+        skos:prefLabel   "Arable and mixed livestock cropping"@en;
+        skos:definition  "Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time.."@en;
+        skos:scopeNote   "Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known)."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:short_rotation_horticulture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:short_rotation_seasonal_cropping;
+        skos:notation    "2.3.3";
+        skos:prefLabel   "Short-rotation horticulture"@en;
+        skos:definition  "Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption."@en;
+        skos:scopeNote   "May include livestock rotations, but this is considered less likely"@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:seasonal_flowers_bulbs_turf
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:short_rotation_seasonal_cropping;
+        skos:notation    "2.3.4";
+        skos:prefLabel   "Seasonal flowers and bulbs, and turf farming"@en;
+        skos:definition  "Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes."@en;
+        skos:scopeNote   "This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas."@en .
+
+luc:perennial_horticulture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.4.0";
+        skos:prefLabel   "Perennial horticulture"@en;
+        skos:definition  "Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control."@en;
+        skos:usageNote   "Management practices such as irrigation or netting can be recorded as management practices."@en;
+        skos:usageNote   "Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes)."@en;
+        skos:narrower    luc:tree_crops;
+        skos:narrower    luc:vine_fruits;
+        skos:narrower    luc:other_perennial_horticulture .
+
+luc:tree_crops  a        skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:perennial_horticulture;
+        skos:notation    "2.4.1";
+        skos:prefLabel   "Tree crops"@en;
+        skos:definition  "Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years."@en;
+        skos:usageNote   "Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known."@en;
+        skos:usageNote   "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."@en .
+
+luc:vine_fruits  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:perennial_horticulture;
+        skos:notation    "2.4.2";
+        skos:prefLabel   "Vine fruits"@en;
+        skos:definition  "Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants."@en .
+
+luc:other_perennial_horticulture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:perennial_horticulture;
+        skos:notation    "2.4.3";
+        skos:prefLabel   "Other perennial horticulture"@en;
+        skos:definition  "Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies)."@en .
+
+luc:intensive_horticulture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.5.0";
+        skos:prefLabel   "Intensive horticulture"@en;
+        skos:definition  "Intensive forms of plant production, often with special-purpose improvements used for horticultural production."@en;
+        skos:narrower    luc:production_nurseries;
+        skos:narrower    luc:glasshouses_shadehouses;
+        skos:usageNote   "Record management practices such as hydroponic systems, irrigation, and netting, if known."@en;
+        skos:usageNote   "The specific commodity or commodities should be noted if known."@en .
+
+luc:production_nurseries
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_horticulture;
+        skos:notation    "2.5.1";
+        skos:prefLabel   "Production nurseries"@en;
+        skos:definition  "Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover)."@en;
+        skos:scopeNote   "These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes."@en;
+        skos:scopeNote   "Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality."@en .
+
+luc:glasshouses_shadehouses
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_horticulture;
+        skos:notation    "2.5.2";
+        skos:prefLabel   "Glasshouses/shadehouses"@en;
+        skos:definition  "Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production."@en;
+        skos:scopeNote   "Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants."@en .
+
+luc:intensive_animal_production
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.6.0";
+        skos:prefLabel   "Intensive animal production"@en;
+        skos:definition  "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en;
+        skos:usageNote   "Record animal types as commodities, if known."@en;
+        skos:usageNote   "The management field can be used to record practices such as free range or organic."@en;
+        skos:narrower    luc:intensive_animal_containment;
+        skos:narrower    luc:poultry_farms;
+        skos:narrower    luc:piggeries;
+        skos:narrower    luc:horse_studs;
+        skos:narrower    luc:aquaculture .
+
+luc:intensive_animal_containment
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_animal_production;
+        skos:notation    "2.6.1";
+        skos:prefLabel   "Intensive animal containment"@en;
+        skos:definition  "Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes."@en .
+
+luc:poultry_farms  a     skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_animal_production;
+        skos:notation    "2.6.2";
+        skos:prefLabel   "Poultry farms"@en;
+        skos:definition  "Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production."@en .
+
+luc:piggeries  a         skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_animal_production;
+        skos:notation    "2.6.3";
+        skos:prefLabel   "Piggeries"@en;
+        skos:definition  "Facilities designed for the intensive rearing of pigs."@en .
+
+luc:horse_studs  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_animal_production;
+        skos:notation    "2.6.4";
+        skos:prefLabel   "Horse studs"@en;
+        skos:definition  "Establishments focused on the breeding and raising of horses."@en .
+
+luc:aquaculture  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:intensive_animal_production;
+        skos:notation    "2.6.5";
+        skos:prefLabel   "Aquaculture"@en;
+        skos:definition  "Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc."@en .
+
+luc:water_wastewater_agriculture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.7.0";
+        skos:prefLabel   "Water and wastewater"@en;
+        skos:definition  "Built water features associated with agricultural use."@en;
+        skos:narrower    luc:stock_water;
+        skos:narrower    luc:effluent_pond;
+        skos:narrower    luc:water_treatment_land_application;
+        skos:narrower    luc:water_treatment_wetland;
+        skos:narrower    luc:irrigation_reservoirs_canals .
+
+luc:stock_water  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:water_wastewater_agriculture;
+        skos:notation    "2.7.1";
+        skos:prefLabel   "Stock water"@en;
+        skos:definition  "Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock."@en .
+
+luc:effluent_pond  a     skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:water_wastewater_agriculture;
+        skos:notation    "2.7.2";
+        skos:prefLabel   "Effluent pond"@en;
+        skos:definition  "Effluent ponds typically associated with dairying."@en .
+
+luc:water_treatment_land_application
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:water_wastewater_agriculture;
+        skos:notation    "2.7.3";
+        skos:prefLabel   "Water treatment – land application"@en;
+        skos:definition  "Land used for effluent disposal"@en;
+        skos:scopeNote   "probably an ancillary use where some form of grazing is the primary use."@en .
+
+luc:water_treatment_wetland
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:water_wastewater_agriculture;
+        skos:notation    "2.7.4";
+        skos:prefLabel   "Water treatment – wetland"@en;
+        skos:definition  "Constructed or natural wetlands used to improve water quality prior to discharge."@en .
+
+luc:irrigation_reservoirs_canals
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:water_wastewater_agriculture;
+        skos:notation    "2.7.5";
+        skos:prefLabel   "Irrigation reservoirs and canals"@en;
+        skos:definition  "Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes."@en .
+
+luc:land_in_transition_agriculture
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:production_agriculture_plantations;
+        skos:notation    "2.8.0";
+        skos:prefLabel   "Land in transition"@en;
+        skos:definition  "As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations."@en;
+        skos:scopeNote   "In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0."@en;
+        skos:narrower    luc:unused_degraded_land_ag;
+        skos:narrower    luc:no_defined_use_ag;
+        skos:narrower    luc:land_undergoing_rehabilitation_ag;
+        skos:narrower    luc:abandoned_land_ag .
+
+luc:unused_degraded_land_ag
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:land_in_transition_agriculture;
+        skos:notation    "2.8.1";
+        skos:prefLabel   "Unused degraded land"@en;
+        skos:definition  "Unused land that is degraded through erosion or flood events that is not being rehabilitated."@en;
+        skos:usageNote   "Can include contaminated land."@en .
+
+luc:no_defined_use_ag
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:land_in_transition_agriculture;
+        skos:notation    "2.8.2";
+        skos:prefLabel   "No defined use"@en;
+        skos:definition  "Land cleared of vegetation where the current proposed land use is unknown."@en .
+
+luc:land_undergoing_rehabilitation_ag
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:land_in_transition_agriculture;
+        skos:notation    "2.8.3";
+        skos:prefLabel   "Land undergoing rehabilitation"@en;
+        skos:definition  "Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered."@en .
+
+luc:abandoned_land_ag
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:land_in_transition_agriculture;
+        skos:notation    "2.8.4";
+        skos:prefLabel   "Abandoned land"@en;
+        skos:definition  "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."@en .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE   <https://example.org/landuse/>
+PREFIX lu: <https://example.org/landuse/>
+PREFIX lus: <https://example.org/landuse/scheme/>
+PREFIX luc: <https://example.org/landuse/concept/>
+
+luc:built_environment
+        a                  skos:Concept;
+        skos:inScheme      lus:nzlum0.3.0;
+        skos:inScheme      lus:nzlum0.4.0;
+        skos:topConceptOf  lus:nzlum0.3.0;
+        skos:topConceptOf  lus:nzlum0.4.0;
+        skos:notation      "3.0.0";
+        skos:prefLabel     "Built environment"@en;
+        skos:definition    "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."@en;
+        skos:scopeNote     "Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character."@en;
+        skos:narrower      luc:residential;
+        skos:narrower      luc:public_recreation_services;
+        skos:narrower      luc:commercial;
+        skos:narrower      luc:manufacturing_industrial;
+        skos:narrower      luc:utilities;
+        skos:narrower      luc:transport_communication;
+        skos:narrower      luc:mining;
+        skos:narrower      luc:waste_treatment_disposal;
+        skos:narrower      luc:vacant_transitioning_land_urban .
+
+luc:residential  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.1.0";
+        skos:prefLabel   "Residential"@en;
+        skos:definition  "Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities."@en;
+        skos:usageNote   "Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification."@en;
+        skos:scopeNote   "The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’"@en;
+        skos:narrower    luc:high_density_residential;
+        skos:narrower    luc:medium_density_residential;
+        skos:narrower    luc:low_density_residential;
+        skos:narrower    luc:rural_residential .
+
+luc:high_density_residential
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:residential;
+        skos:notation    "3.1.1";
+        skos:prefLabel   "High-density residential"@en;
+        skos:definition  "Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density."@en .
+
+luc:medium_density_residential
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:residential;
+        skos:notation    "3.1.2";
+        skos:prefLabel   "Medium-density residential"@en;
+        skos:definition  "Areas featuring a moderate concentration of housing units per unit of land area (e.g. townhouses, terraced housing, low-rise apartments), often in suburban or semi-urban settings."@en;
+        skos:scopeNote   "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered." .
+
+luc:low_density_residential
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:residential;
+        skos:notation    "3.1.3";
+        skos:prefLabel   "Low-density residential"@en;
+        skos:definition  "Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density."@en .
+
+luc:rural_residential
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:residential;
+        skos:notation    "3.1.4";
+        skos:prefLabel   "Rural residential"@en;
+        skos:definition  "Residential properties with low-intensity (non-commercial) land management practices (e.g. hobby farms) on land in rural or peri-urban areas."@en;
+        skos:scopeNote   "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard." .
+
+luc:public_recreation_services
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.2.0";
+        skos:prefLabel   "Public recreation and services"@en;
+        skos:definition  "Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population."@en;
+        skos:narrower    luc:outdoor_recreation;
+        skos:narrower    luc:indoor_recreation;
+        skos:narrower    luc:community_services .
+
+luc:outdoor_recreation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:public_recreation_services;
+        skos:notation    "3.2.1";
+        skos:prefLabel   "Outdoor recreation"@en;
+        skos:definition  "Land areas dedicated to leisure activities conducted in natural or semi-natural settings (e.g. parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves), typically with considerable unsealed vegetated areas."@en;
+        skos:scopeNote   "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."@en;
+        skos:scopeNote   "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks." .
+
+luc:indoor_recreation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:public_recreation_services;
+        skos:notation    "3.2.2";
+        skos:prefLabel   "Indoor recreation"@en;
+        skos:definition  "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures (e.g. sports centres, gyms, swimming pools, indoor arenas)."@en .
+
+luc:community_services
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:public_recreation_services;
+        skos:notation    "3.2.3";
+        skos:prefLabel   "Community services"@en;
+        skos:definition  "Land used for providing essential services and facilities to support the local community (e.g. educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries)."@en .
+
+luc:commercial  a        skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.3.0";
+        skos:prefLabel   "Commercial"@en;
+        skos:definition  "Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing."@en;
+        skos:usageNote   "Central government offices when these are privately rented should be captured in this category, even if they are public-facing."@en;
+        skos:narrower    luc:retail;
+        skos:narrower    luc:office;
+        skos:narrower    luc:hospitality;
+        skos:narrower    luc:entertainment;
+        skos:narrower    luc:healthcare;
+        skos:narrower    luc:transportation_warehousing_commercial .
+
+luc:retail  a            skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.1";
+        skos:prefLabel   "Retail"@en;
+        skos:definition  "Areas used for the sale of goods and services directly to consumers (e.g. shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.)."@en .
+
+luc:office  a            skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.2";
+        skos:prefLabel   "Office"@en;
+        skos:definition  "Land and buildings primarily used for administrative, professional, or managerial activities (e.g. corporate offices, professional services, banks, government buildings, business parks, coworking spaces)."@en .
+
+luc:hospitality  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.3";
+        skos:prefLabel   "Hospitality"@en;
+        skos:definition  "Land and buildings providing accommodation, food, and beverage services to the public (e.g. hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs)."@en .
+
+luc:entertainment  a     skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.4";
+        skos:prefLabel   "Entertainment"@en;
+        skos:definition  "Land areas and facilities offering leisure and recreational activities for public enjoyment (e.g. cinemas, theatres, amusement parks, casinos, concert venues)."@en .
+
+luc:healthcare  a        skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.5";
+        skos:prefLabel   "Healthcare"@en;
+        skos:definition  "Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury (e.g. hospitals, specialist clinics, physiotherapists, medical offices, laboratories)."@en .
+
+luc:transportation_warehousing_commercial
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:commercial;
+        skos:notation    "3.3.6";
+        skos:prefLabel   "Transportation & warehousing"@en;
+        skos:definition  "Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots."@en;
+        skos:scopeNote   " Excludes airports, ports, roads, and train stations (captured under 3.6.0)"@en .
+
+luc:manufacturing_industrial
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.4.0";
+        skos:prefLabel   "Manufacturing and industrial"@en;
+        skos:definition  "Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes."@en;
+        skos:narrower    luc:general_purpose_factory;
+        skos:narrower    luc:food_processing_factory;
+        skos:narrower    luc:major_industrial_complex;
+        skos:narrower    luc:sawmill;
+        skos:narrower    luc:farm_buildings_infrastructure;
+        skos:narrower    luc:abattoirs .
+
+luc:general_purpose_factory
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.1";
+        skos:prefLabel   "General purpose factory"@en;
+        skos:definition  "An area used for manufacturing, assembly, or repairs of various products."@en;
+        skos:scopeNote   "Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries."@en .
+
+luc:food_processing_factory
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.2";
+        skos:prefLabel   "Food processing factory"@en;
+        skos:definition  "An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included (e.g. cannery, milk production plant)."@en .
+
+luc:major_industrial_complex
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.3";
+        skos:prefLabel   "Major industrial complex"@en;
+        skos:definition  "An area with large-scale industrial use and significant infrastructure (e.g. car plant, paper mill)."@en .
+
+luc:sawmill  a           skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.4";
+        skos:prefLabel   "Sawmill"@en;
+        skos:definition  "An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products."@en .
+
+luc:farm_buildings_infrastructure
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.5";
+        skos:prefLabel   "Farm buildings/infrastructure"@en;
+        skos:definition  "An area with buildings, sheds, and other infrastructure associated with farm enterprises (e.g. barns, silos, storage sheds, and irrigation systems) supporting agricultural operations."@en;
+        skos:scopeNote   "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."@en .
+
+luc:abattoirs  a         skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:manufacturing_industrial;
+        skos:notation    "3.4.6";
+        skos:prefLabel   "Abattoirs"@en;
+        skos:definition  "Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market."@en .
+
+luc:utilities  a         skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.5.0";
+        skos:prefLabel   "Utilities"@en;
+        skos:definition  "Land allocated to providing electricity, gas, or water."@en;
+        skos:narrower    luc:fuel_powered_electricity_generation;
+        skos:narrower    luc:hydroelectricity_generation;
+        skos:narrower    luc:wind_electricity_generation;
+        skos:narrower    luc:solar_electricity_generation;
+        skos:narrower    luc:electricity_substations_transmission;
+        skos:narrower    luc:gas_treatment_storage_transmission;
+        skos:narrower    luc:water_extraction_transmission .
+
+luc:fuel_powered_electricity_generation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.1";
+        skos:prefLabel   "Fuel powered electricity generation"@en;
+        skos:definition  "Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas."@en .
+
+luc:hydroelectricity_generation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.2";
+        skos:prefLabel   "Hydroelectricity generation"@en;
+        skos:definition  "Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity."@en;
+        skos:scopeNote   "Includes canals and other water conveyance infrastructure associated with hydroelectricity generation."@en .
+
+luc:wind_electricity_generation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.3";
+        skos:prefLabel   "Wind electricity generation"@en;
+        skos:definition  "Power generation from wind, including wind farms."@en .
+
+luc:solar_electricity_generation
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.4";
+        skos:prefLabel   "Solar electricity generation"@en;
+        skos:definition  "Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity."@en .
+
+luc:electricity_substations_transmission
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.5";
+        skos:prefLabel   "Electricity substations and transmission"@en;
+        skos:definition  "Facilities and infrastructure associated with distribution and transmission of electrical power (e.g. substations, transformers, high-voltage transmission towers)."@en .
+
+luc:gas_treatment_storage_transmission
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.6";
+        skos:prefLabel   "Gas treatment, storage, and transmission"@en;
+        skos:definition  "Facilities and infrastructure for processing, storage, and transport of natural gas (e.g. treatment plants, storage facilities, pipelines)."@en .
+
+luc:water_extraction_transmission
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.7";
+        skos:prefLabel   "Water extraction and transmission"@en;
+        skos:definition  "Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs."@en;
+        skos:scopeNote   "Includes drinking water reservoirs."@en .
+
+luc:transport_communication
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.6.0";
+        skos:prefLabel   "Transport and communication"@en;
+        skos:definition  "Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment."@en;
+        skos:usageNote   "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en;
+        skos:narrower    luc:airports_aerodromes;
+        skos:narrower    luc:roads;
+        skos:narrower    luc:railways;
+        skos:narrower    luc:ports_water_transport;
+        skos:narrower    luc:navigation_communication .
+
+luc:airports_aerodromes
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:transport_communication;
+        skos:notation    "3.6.1";
+        skos:prefLabel   "Airports/aerodromes"@en;
+        skos:definition  "Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports)."@en .
+
+luc:roads  a             skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:transport_communication;
+        skos:notation    "3.6.2";
+        skos:prefLabel   "Roads"@en;
+        skos:definition  "The full roading corridor, including sealed road areas and unsealed roadside strips."@en .
+
+luc:railways  a          skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:transport_communication;
+        skos:notation    "3.6.3";
+        skos:prefLabel   "Railways"@en;
+        skos:definition  "Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance."@en .
+
+luc:ports_water_transport
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:transport_communication;
+        skos:notation    "3.6.4";
+        skos:prefLabel   "Ports and water transport"@en;
+        skos:definition  "Harbour locations where ships dock to transfer people or cargo (e.g. ports, docks, wharves), including terrestrial parts and designated marine areas (harbours, navigational channels) that are specifically designated and controlled for activities associated with the port."@en;
+        skos:usageNote   "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."@en .
+
+luc:navigation_communication
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:transport_communication;
+        skos:notation    "3.6.5";
+        skos:prefLabel   "Navigation and communication"@en;
+        skos:definition  "Navigation and communication infrastructure (e.g. radar stations, beacons, lighthouses, TV and radio transmission towers)."@en .
+
+luc:mining  a            skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.7.0";
+        skos:prefLabel   "Mining"@en;
+        skos:definition  "Mining and extractive industries (including salt extraction from evaporation basins)."@en;
+        skos:usageNote   "Record the specific type of mining activitiy in the commodity attribute, if known."@en;
+        skos:narrower    luc:mines;
+        skos:narrower    luc:quarries;
+        skos:narrower    luc:tailings;
+        skos:narrower    luc:evaporation_basins;
+        skos:narrower    luc:extractive_industry_not_in_use .
+
+luc:mines  a             skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:mining;
+        skos:notation    "3.7.1";
+        skos:prefLabel   "Mines"@en;
+        skos:definition  "Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines."@en .
+
+luc:quarries  a          skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:mining;
+        skos:notation    "3.7.2";
+        skos:prefLabel   "Quarries"@en;
+        skos:definition  "Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted."@en .
+
+luc:tailings  a          skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:mining;
+        skos:notation    "3.7.3";
+        skos:prefLabel   "Tailings"@en;
+        skos:definition  "Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output)."@en .
+
+luc:evaporation_basins
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:mining;
+        skos:notation    "3.7.4";
+        skos:prefLabel   "Evaporation basins"@en;
+        skos:definition  "Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction."@en .
+
+luc:extractive_industry_not_in_use
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:mining;
+        skos:notation    "3.7.5";
+        skos:prefLabel   "Extractive industry not in use"@en;
+        skos:definition  "Land undergoing rehabilitation after mining activities, and unmined land within a mining permit."@en .
+
+luc:waste_treatment_disposal
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.8.0";
+        skos:prefLabel   "Waste treatment and disposal"@en;
+        skos:definition  "Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health."@en;
+        skos:narrower    luc:landfills;
+        skos:narrower    luc:transfer_stations_recycling;
+        skos:narrower    luc:municipal_wastewater;
+        skos:narrower    luc:wastewater_treatment_land_application;
+        skos:narrower    luc:stormwater_management .
+
+luc:landfills  a         skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:waste_treatment_disposal;
+        skos:notation    "3.8.1";
+        skos:prefLabel   "Landfills"@en;
+        skos:definition  "Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions."@en;
+        skos:scopeNote   "Landfill gas recovery systems are classified as part of a landfill land use."@en;
+        skos:scopeNote   "Includes all class 1 to 5 landfills (e.g. landfills designed to receive inert construction materials are also included in this category)"@en .
+
+luc:transfer_stations_recycling
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:waste_treatment_disposal;
+        skos:notation    "3.8.2";
+        skos:prefLabel   "Transfer stations and recycling facilities"@en;
+        skos:definition  "Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites."@en .
+
+luc:municipal_wastewater
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:waste_treatment_disposal;
+        skos:notation    "3.8.3";
+        skos:prefLabel   "Municipal wastewater"@en;
+        skos:definition  "Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines."@en .
+
+luc:wastewater_treatment_land_application
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:waste_treatment_disposal;
+        skos:notation    "3.8.4";
+        skos:prefLabel   "Wastewater treatment – land application"@en;
+        skos:definition  "Areas where treated municipal wastewater is applied onto land for beneficial reuse (e.g. irrigation, groundwater recharge, soil fertility enhancement), following appropriate treatment processes to ensure environmental safety."@en;
+        skos:usageNote   " This is often likely to be an ancillary use."@en .
+
+luc:stormwater_management
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:waste_treatment_disposal;
+        skos:notation    "3.8.5";
+        skos:prefLabel   "Stormwater management"@en;
+        skos:definition  "Infrastructure aimed at controlling and mitigating stormwater runoff (e.g. detention basins, drainage systems, retention ponds, rain gardens, wetlands) to prevent flooding, erosion, and pollution."@en .
+
+luc:vacant_transitioning_land_urban
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:built_environment;
+        skos:notation    "3.9.0";
+        skos:prefLabel   "Vacant and transitioning land"@en;
+        skos:definition  "Areas that are currently unused or undergoing transition from one land use to another, with a clear transition towards or within built-environment land uses."@en;
+        skos:narrower    luc:vacant_land;
+        skos:narrower    luc:greenfield_development;
+        skos:narrower    luc:brownfield_development .
+
+luc:vacant_land  a       skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:vacant_transitioning_land_urban;
+        skos:notation    "3.9.1";
+        skos:prefLabel   "Vacant land"@en;
+        skos:definition  "Derelict land and developed land that is idle."@en .
+
+luc:greenfield_development
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:vacant_transitioning_land_urban;
+        skos:notation    "3.9.2";
+        skos:prefLabel   "Greenfield development"@en;
+        skos:definition  "Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses."@en .
+
+luc:brownfield_development
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:vacant_transitioning_land_urban;
+        skos:notation    "3.9.3";
+        skos:prefLabel   "Brownfield development"@en;
+        skos:definition  "Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities."@en;
+        skos:scopeNote   "May include residential areas undergoing infill development that increase housing density."@en .

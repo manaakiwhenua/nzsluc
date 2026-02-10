@@ -1,5 +1,19 @@
 # New Zealand Land Use Management (NZLUM) classification system 
 
+> [!IMPORTANT]  
+> This repository contains a SKOS concept scheme for the NZLUM land-use classification (`nzlum.ttl`) and a SHACL shapes file (`shapes.ttl`) used to validate required fields and hierarchy consistency.
+>
+> Future vesions of this classification will be maintained as a versioned SKOS concept schema. Human-oriented lists of classes with definitions will be generated from this.
+
+>[!NOTE]
+> This will be controlled with GNU Make:
+> ```bash
+> make build/nzlum.ttl
+> make shacl
+> make tables-all
+> make outline-all
+> ```
+
 Status: Draft
 Version: 0.3
 Developed by: Manaaki Whenua – Landcare Research
@@ -121,7 +135,7 @@ An overview of the class hierarchy is provided below, with further details of th
         
         2. **Ground water** – an area managed as an aquifer recharge zone.
         
-        3. **Grazing native vegetation** – land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification. This captures high-country farming with domestic stock grazing on native vegetation where there has been limited or no deliberate attempt at pasture modification. Some change in species composition may have occurred. This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.
+        3. **Grazing native vegetation** – land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification. This captures high-country farming with domestic stock grazing on native vegetation where there has been limited or no deliberate attempt at pasture modification. Some change in species composition may have occurred. 
         
         4. **Production from indigenous vegetation** – commercial production from retained (non-plantation) native forests and related activities on public and private land. This class includes wood production forestry on native timber without clearfelling, and other native forest production (non-sawlog or non-pulpwood production, including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).
         
@@ -137,7 +151,7 @@ An overview of the class hierarchy is provided below, with further details of th
 
         Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species.
 
-        Delineation between indigenous and exotic vegetation for the minimal use and unused\ land and land in transition classes can be made by reference to land-cover information.
+        Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information.
 
         1. **Unused land** – includes land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
         
