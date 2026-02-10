@@ -1,0 +1,402 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@base <https://example.org/landuse/> .
+@prefix lu: <https://example.org/landuse/> .
+@prefix lus: <https://example.org/landuse/scheme/> .
+@prefix luc: <https://example.org/landuse/concept/> .
+
+luc:production_agriculture_plantations a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:topConceptOf lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:notation "2.0.0" ;
+  skos:prefLabel "Production agriculture and plantations"@en ;
+  skos:definition "Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production."@en ;
+  skos:scopeNote "If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied."@en ;
+  skos:usageNote "Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field."@en ;
+  skos:narrower
+    luc:plantation_forests,
+    luc:grazing_modified_pasture_systems,
+    luc:short_rotation_seasonal_cropping,
+    luc:perennial_horticulture,
+    luc:intensive_horticulture,
+    luc:intensive_animal_production,
+    luc:water_wastewater_agriculture,
+    luc:land_in_transition_agriculture ;
+.
+
+luc:plantation_forests a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.1.0" ;
+  skos:prefLabel "Plantation forests"@en ;
+  skos:definition "Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry."@en ;
+  skos:scopeNote "This includes farm forestry and may consist of monocultures or mixed species."@en ;
+  skos:narrower
+    luc:exotic_plantation_forestry,
+    luc:indigenous_plantation_forestry,
+    luc:other_production_plantations,
+    luc:planted_environmental_infrastructure_protection ;
+.
+
+luc:exotic_plantation_forestry a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:plantation_forests ;
+  skos:notation "2.1.1" ;
+  skos:prefLabel "Exotic plantation forestry"@en ;
+  skos:definition "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species)."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+  skos:usageNote "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en ;
+.
+
+luc:indigenous_plantation_forestry a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:plantation_forests ;
+  skos:notation "2.1.2" ;
+  skos:prefLabel "Indigenous plantation forestry"@en ;
+  skos:definition "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+  skos:usageNote "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en ;
+.
+
+luc:other_production_plantations a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:plantation_forests ;
+  skos:notation "2.1.3" ;
+  skos:prefLabel "Other production uses"@en ;
+  skos:definition "An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+
+.
+
+luc:planted_environmental_infrastructure_protection a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:plantation_forests ;
+  skos:notation "2.1.4" ;
+  skos:prefLabel "Planted environmental & infrastructure protection"@en ;
+  skos:definition "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."@en ;
+.
+
+luc:grazing_modified_pasture_systems a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.2.0" ;
+  skos:prefLabel "Grazing modified pasture systems"@en ;
+  skos:definition "Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation."@en ;
+  skos:scopeNote "Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping."@en ;
+  skos:usageNote "The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known."@en ;
+  skos:scopeNote "Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use."@en ;
+  skos:narrower luc:dairy, luc:intensive_dry_stock, luc:extensive_dry_stock ;
+.
+
+luc:dairy a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:grazing_modified_pasture_systems ;
+  skos:notation "2.2.1" ;
+  skos:prefLabel "Dairy"@en ;
+  skos:definition "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."@en ;
+  skos:scopeNote "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."@en ;
+  skos:scopeNote "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."@en ;
+.
+
+luc:intensive_dry_stock a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:grazing_modified_pasture_systems ;
+  skos:notation "2.2.2" ;
+  skos:prefLabel "Intensive dry stock"@en ;
+  skos:definition "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en ;
+  skos:scopeNote "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding. Grazing of other stock, including deer, goats, and horses, should be captured under class ‘2.2.3 Extensive dry stock’"@en ;
+.
+
+luc:extensive_dry_stock a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:grazing_modified_pasture_systems ;
+  skos:notation "2.2.3" ;
+  skos:prefLabel "Extensive dry stock"@en ;
+  skos:definition "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."@en ;
+  skos:scopeNote "Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)"@en ;
+  skos:scopeNote "Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation."@en ;
+  skos:scopeNote "Arable or winter forage crops are unlikely to be common rotations in this land-use category"@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+.
+
+luc:short_rotation_seasonal_cropping a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.3.0" ;
+  skos:prefLabel "Short-rotation and seasonal cropping"@en ;
+  skos:definition "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en ;
+  skos:scopeNote "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."@en ;
+  skos:scopeNote "Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class."@en ;
+  skos:usageNote "If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary)."@en ;
+  skos:narrower
+    luc:arable_cropping,
+    luc:arable_mixed_livestock_cropping,
+    luc:short_rotation_horticulture,
+    luc:seasonal_flowers_bulbs_turf ;
+.
+
+luc:arable_cropping a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:short_rotation_seasonal_cropping ;
+  skos:notation "2.3.1" ;
+  skos:prefLabel "Arable cropping"@en ;
+  skos:definition "Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+.
+
+luc:arable_mixed_livestock_cropping a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:short_rotation_seasonal_cropping ;
+  skos:notation "2.3.2" ;
+  skos:prefLabel "Arable and mixed livestock cropping"@en ;
+  skos:definition "Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time.."@en ;
+  skos:scopeNote "Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known)."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+.
+
+luc:short_rotation_horticulture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:short_rotation_seasonal_cropping ;
+  skos:notation "2.3.3" ;
+  skos:prefLabel "Short-rotation horticulture"@en ;
+  skos:definition "Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption."@en ;
+  skos:scopeNote "May include livestock rotations, but this is considered less likely"@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+.
+
+luc:seasonal_flowers_bulbs_turf a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:short_rotation_seasonal_cropping ;
+  skos:notation "2.3.4" ;
+  skos:prefLabel "Seasonal flowers and bulbs, and turf farming"@en ;
+  skos:definition "Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes."@en ;
+  skos:scopeNote "This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas."@en ;
+.
+
+luc:perennial_horticulture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.4.0" ;
+  skos:prefLabel "Perennial horticulture"@en ;
+  skos:definition "Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control."@en ;
+  skos:usageNote "Management practices such as irrigation or netting can be recorded as management practices."@en ;
+  skos:usageNote "Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes)."@en ;
+  skos:narrower luc:tree_crops, luc:vine_fruits, luc:other_perennial_horticulture ;
+.
+
+luc:tree_crops a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:perennial_horticulture ;
+  skos:notation "2.4.1" ;
+  skos:prefLabel "Tree crops"@en ;
+  skos:definition "Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years."@en ;
+  skos:usageNote "Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known."@en ;
+  skos:usageNote "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."@en ;
+.
+
+luc:vine_fruits a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:perennial_horticulture ;
+  skos:notation "2.4.2" ;
+  skos:prefLabel "Vine fruits"@en ;
+  skos:definition "Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants."@en ;
+.
+
+luc:other_perennial_horticulture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:perennial_horticulture ;
+  skos:notation "2.4.3" ;
+  skos:prefLabel "Other perennial horticulture"@en ;
+  skos:definition "Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies)."@en ;
+.
+
+luc:intensive_horticulture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.5.0" ;
+  skos:prefLabel "Intensive horticulture"@en ;
+  skos:definition "Intensive forms of plant production, often with special-purpose improvements used for horticultural production."@en ;
+  skos:narrower luc:production_nurseries, luc:glasshouses_shadehouses ;
+  skos:usageNote "Record management practices such as hydroponic systems, irrigation, and netting, if known."@en ;
+  skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+.
+
+luc:production_nurseries a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_horticulture ;
+  skos:notation "2.5.1" ;
+  skos:prefLabel "Production nurseries"@en ;
+  skos:definition "Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover)."@en ;
+  skos:scopeNote "These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes."@en ;
+  skos:scopeNote "Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality."@en ;
+.
+
+luc:glasshouses_shadehouses a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_horticulture ;
+  skos:notation "2.5.2" ;
+  skos:prefLabel "Glasshouses/shadehouses"@en ;
+  skos:definition "Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production."@en ;
+  skos:scopeNote "Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants."@en ;
+.
+
+luc:intensive_animal_production a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.6.0" ;
+  skos:prefLabel "Intensive animal production"@en ;
+  skos:definition "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en ;
+  skos:usageNote "Record animal types as commodities, if known."@en ;
+  skos:usageNote "The management field can be used to record practices such as free range or organic."@en ;
+  skos:narrower
+    luc:intensive_animal_containment,
+    luc:poultry_farms,
+    luc:piggeries,
+    luc:horse_studs,
+    luc:aquaculture ;
+.
+
+luc:intensive_animal_containment a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_animal_production ;
+  skos:notation "2.6.1" ;
+  skos:prefLabel "Intensive animal containment"@en ;
+  skos:definition "Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes."@en ;
+.
+
+luc:poultry_farms a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_animal_production ;
+  skos:notation "2.6.2" ;
+  skos:prefLabel "Poultry farms"@en ;
+  skos:definition "Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production."@en ;
+.
+
+luc:piggeries a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_animal_production ;
+  skos:notation "2.6.3" ;
+  skos:prefLabel "Piggeries"@en ;
+  skos:definition "Facilities designed for the intensive rearing of pigs."@en ;
+.
+
+luc:horse_studs a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_animal_production ;
+  skos:notation "2.6.4" ;
+  skos:prefLabel "Horse studs"@en ;
+  skos:definition "Establishments focused on the breeding and raising of horses."@en ;
+.
+
+luc:aquaculture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:intensive_animal_production ;
+  skos:notation "2.6.5" ;
+  skos:prefLabel "Aquaculture"@en ;
+  skos:definition "Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc."@en ;
+.
+
+luc:water_wastewater_agriculture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.7.0" ;
+  skos:prefLabel "Water and wastewater"@en ;
+  skos:definition "Built water features associated with agricultural use."@en ;
+  skos:narrower
+    luc:stock_water,
+    luc:effluent_pond,
+    luc:water_treatment_land_application,
+    luc:water_treatment_wetland,
+    luc:irrigation_reservoirs_canals ;
+.
+
+luc:stock_water a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:water_wastewater_agriculture ;
+  skos:notation "2.7.1" ;
+  skos:prefLabel "Stock water"@en ;
+  skos:definition "Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock."@en ;
+.
+
+luc:effluent_pond a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:water_wastewater_agriculture ;
+  skos:notation "2.7.2" ;
+  skos:prefLabel "Effluent pond"@en ;
+  skos:definition "Effluent ponds typically associated with dairying."@en ;
+.
+
+luc:water_treatment_land_application a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:water_wastewater_agriculture ;
+  skos:notation "2.7.3" ;
+  skos:prefLabel "Water treatment – land application"@en ;
+  skos:definition "Land used for effluent disposal"@en ;
+  skos:scopeNote "probably an ancillary use where some form of grazing is the primary use."@en ;
+.
+
+luc:water_treatment_wetland a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:water_wastewater_agriculture ;
+  skos:notation "2.7.4" ;
+  skos:prefLabel "Water treatment – wetland"@en ;
+  skos:definition "Constructed or natural wetlands used to improve water quality prior to discharge."@en ;
+.
+
+luc:irrigation_reservoirs_canals a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:water_wastewater_agriculture ;
+  skos:notation "2.7.5" ;
+  skos:prefLabel "Irrigation reservoirs and canals"@en ;
+  skos:definition "Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes."@en ;
+.
+
+luc:land_in_transition_agriculture a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.8.0" ;
+  skos:prefLabel "Land in transition"@en ;
+  skos:definition "As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations."@en ;
+  skos:scopeNote "In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0."@en ;
+  skos:narrower
+    luc:unused_degraded_land_ag,
+    luc:no_defined_use_ag,
+    luc:land_undergoing_rehabilitation_ag,
+    luc:abandoned_land_ag ;
+.
+
+luc:unused_degraded_land_ag a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:land_in_transition_agriculture ;
+  skos:notation "2.8.1" ;
+  skos:prefLabel "Unused degraded land"@en ;
+  skos:definition "Unused land that is degraded through erosion or flood events that is not being rehabilitated."@en ;
+  skos:usageNote "Can include contaminated land."@en ;
+.
+
+luc:no_defined_use_ag a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:land_in_transition_agriculture ;
+  skos:notation "2.8.2" ;
+  skos:prefLabel "No defined use"@en ;
+  skos:definition "Land cleared of vegetation where the current proposed land use is unknown."@en ;
+.
+
+luc:land_undergoing_rehabilitation_ag a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:land_in_transition_agriculture ;
+  skos:notation "2.8.3" ;
+  skos:prefLabel "Land undergoing rehabilitation"@en ;
+  skos:definition "Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered."@en ;
+.
+
+luc:abandoned_land_ag a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:land_in_transition_agriculture ;
+  skos:notation "2.8.4" ;
+  skos:prefLabel "Abandoned land"@en ;
+  skos:definition "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."@en ;
+.

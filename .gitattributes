@@ -1,0 +1,5 @@
+# Treat RDF Turtle as a known language
+*.ttl linguist-detectable=Turtle
+
+# Treat SPARQL query files
+*.rq  linguist-detectable=SPARQL
