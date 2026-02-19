@@ -6,11 +6,11 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-@prefix lus: <https://example.org/landuse/scheme/> .
-@prefix luc: <https://example.org/landuse/concept/> .
-@prefix lu_status: <https://example.org/landuse/status/> .
-@prefix lu_proverb: <https://example.org/landuse/doc/proverb/> .
-@prefix lu_person:  <https://example.org/landuse/doc/person/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/> .
+@prefix lu_proverb: <https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/> .
+@prefix lu_person:  <https://nzlum.landcareresearch.co.nz/landuse/doc/person/> .
 
 lu_status:draft a rdfs:Resource ;
   rdfs:label "Draft"@en .

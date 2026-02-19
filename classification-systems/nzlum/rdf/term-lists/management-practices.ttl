@@ -1,7 +1,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct:  <http://purl.org/dc/terms/> .
-@prefix lus:  <https://example.org/landuse/scheme/> .
-@prefix mgmt:  <https://example.org/landuse/management_practice/> .
+@prefix lus:  <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt:  <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 lus:management_practices a skos:ConceptScheme ;

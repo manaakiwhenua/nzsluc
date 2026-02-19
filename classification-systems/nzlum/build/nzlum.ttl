@@ -5,11 +5,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX adms: <http://www.w3.org/ns/adms#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX lus: <https://example.org/landuse/scheme/>
-PREFIX luc: <https://example.org/landuse/concept/>
-PREFIX lu_status: <https://example.org/landuse/status/>
-PREFIX lu_proverb: <https://example.org/landuse/doc/proverb/>
-PREFIX lu_person: <https://example.org/landuse/doc/person/>
+PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
+PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
+PREFIX lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/>
+PREFIX lu_proverb: <https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/>
+PREFIX lu_person: <https://nzlum.landcareresearch.co.nz/landuse/doc/person/>
 
 lu_status:draft  a  rdfs:Resource;
         rdfs:label  "Draft"@en .
@@ -55,10 +55,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-BASE   <https://example.org/landuse/>
-PREFIX lu: <https://example.org/landuse/>
-PREFIX lus: <https://example.org/landuse/scheme/>
-PREFIX luc: <https://example.org/landuse/concept/>
+BASE   <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lu: <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
+PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
 
 luc:conservation  a        skos:Concept;
         skos:inScheme      lus:nzlum0.3.0;
@@ -325,10 +325,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-BASE   <https://example.org/landuse/>
-PREFIX lu: <https://example.org/landuse/>
-PREFIX lus: <https://example.org/landuse/scheme/>
-PREFIX luc: <https://example.org/landuse/concept/>
+BASE   <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lu: <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
+PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
 
 luc:production_agriculture_plantations
         a                  skos:Concept;
@@ -765,10 +765,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-BASE   <https://example.org/landuse/>
-PREFIX lu: <https://example.org/landuse/>
-PREFIX lus: <https://example.org/landuse/scheme/>
-PREFIX luc: <https://example.org/landuse/concept/>
+BASE   <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lu: <https://nzlum.landcareresearch.co.nz/landuse/>
+PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
+PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
 
 luc:built_environment
         a                  skos:Concept;

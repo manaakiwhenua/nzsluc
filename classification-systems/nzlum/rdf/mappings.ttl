@@ -3,7 +3,7 @@
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-@base <https://example.org/landuse/> .
-@prefix lu: <https://example.org/landuse/> .
-@prefix lus: <https://example.org/landuse/scheme/> .
-@prefix luc: <https://example.org/landuse/concept/> .
+@base <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .

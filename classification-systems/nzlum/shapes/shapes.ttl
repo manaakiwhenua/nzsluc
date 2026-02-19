@@ -4,7 +4,7 @@
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <https://example.org/landuse/shapes#> .
+@prefix : <https://nzlum.landcareresearch.co.nz/landuse/shapes#> .
 
 #################################################################
 # Concept Schemes

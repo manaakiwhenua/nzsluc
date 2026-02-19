@@ -1,4 +1,4 @@
-# NZLUM outline (https://example.org/landuse/scheme/nzlum0.3.0)
+# NZLUM outline (https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0)
 
 - **1.0.0 Conservation and Minimal Use**
   Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
