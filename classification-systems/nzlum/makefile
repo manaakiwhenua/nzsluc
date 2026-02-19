@@ -28,3 +28,12 @@ outline-all: $(BUILD)/nzlum.ttl
 	  ./scripts/export_outline.py $(BUILD)/nzlum.ttl $$scheme \
 	    $(BUILD)/nzlum_v$${ver}_outline.md ; \
 	done
+
+.PHONY: collections-all
+collections-all:
+	@echo "Generating commodities collection export..."; \
+	./scripts/export_collections.py rdf/term-lists/commodities.ttl lus:commodities \
+	  $(BUILD)/commodities.md $(BUILD)/commodities.xlsx ; \
+	echo "Generating management practices collection export..."; \
+	./scripts/export_collections.py rdf/term-lists/management-practices.ttl lus:management_practices \
+	  $(BUILD)/management_practices.md $(BUILD)/management_practices.xlsx

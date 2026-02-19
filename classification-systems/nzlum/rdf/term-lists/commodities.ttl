@@ -1,0 +1,1522 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix lus:  <https://example.org/landuse/scheme/> .
+@prefix com:  <https://example.org/landuse/commodity/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lus:commodities a skos:ConceptScheme ;
+  dct:title "NZLUM commodities"@en ;
+  dct:issued "2026-02-19"^^xsd:date .
+
+com:animals a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Animals"@en ;
+  skos:member
+    com:bees,
+    com:cats,
+    com:cattle,
+    com:cattle_dairy,
+    com:cattle_meat,
+    com:cattle_stud,
+    com:chickens,
+    com:chickens_eggs,
+    com:chickens_meat,
+    com:crocodiles,
+    com:crustaceans,
+    com:deer,
+    com:dogs,
+    com:ducks,
+    com:emus,
+    com:finfish,
+    com:geese,
+    com:goats,
+    com:goats_dairy,
+    com:goats_meat,
+    com:goats_stud,
+    com:goats_wool,
+    com:horses,
+    com:molluscs,
+    com:ostriches,
+    com:pigs,
+    com:sheep,
+    com:sheep_dairy,
+    com:sheep_meat,
+    com:sheep_stud,
+    com:sheep_wool,
+    com:turkeys .
+
+com:cereals a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Cereals"@en ;
+  skos:member
+    com:barley,
+    com:buckwheat,
+    com:canary_seed,
+    com:maize,
+    com:millet_and_pancium,
+    com:oats,
+    com:quinoa,
+    com:rice,
+    com:rye_cereal,
+    com:sorghum_grain,
+    com:triticale,
+    com:wheat .
+
+com:crop a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Crop"@en ;
+  skos:member
+    com:aloe_vera,
+    com:cocoa,
+    com:coffee,
+    com:cotton,
+    com:cotton_seed,
+    com:essential_oil_crops,
+    com:ginger,
+    com:hops,
+    com:horseradish,
+    com:jute,
+    com:oil_palms,
+    com:pepper,
+    com:pharmaceutical_and_cosmetic_plants,
+    com:poppies,
+    com:pyrethrum,
+    com:sugar_cane,
+    com:tea,
+    com:tobacco,
+    com:wasabi .
+
+com:flowers_and_bulbs a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Flowers and bulbs"@en ;
+  skos:member
+    com:australian_native_flowers,
+    com:bulbs,
+    com:calendula,
+    com:carnations,
+    com:chrysanthemums,
+    com:daffodils,
+    com:flowers_and_foliage,
+    com:gerberas,
+    com:lavender,
+    com:lilies,
+    com:orchids,
+    com:proteas,
+    com:roses,
+    com:tropical_flowers,
+    com:tulips .
+
+com:forest a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Forest"@en ;
+  skos:member
+    com:bamboo,
+    com:christmas_trees,
+    com:eucalyptus_oil,
+    com:oil_mallee,
+    com:pulp_wood,
+    com:sandalwood,
+    com:sawlogs,
+    com:tea_tree,
+    com:carbon_forest_standard,
+    com:carbon_forest_permanent .
+
+com:fruit a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Fruit"@en ;
+  skos:member
+    com:apples,
+    com:apricots,
+    com:avocados,
+    com:babacos,
+    com:bananas,
+    com:blackberries,
+    com:blackcurrants,
+    com:blueberries,
+    com:boysenberries,
+    com:carambolas,
+    com:cherries,
+    com:chokos,
+    com:coconut,
+    com:cranberries,
+    com:custard_apples,
+    com:dates,
+    com:dragon_fruit,
+    com:feijoa,
+    com:figs,
+    com:gooseberries,
+    com:grapefruit,
+    com:grapes,
+    com:grapes_dried,
+    com:grapes_table,
+    com:grapes_wine,
+    com:guavas,
+    com:jackfruit,
+    com:kiwifruit,
+    com:kumquat,
+    com:lemons,
+    com:limes,
+    com:loganberries,
+    com:longans,
+    com:loquats,
+    com:lychees,
+    com:mandarins,
+    com:mangoes,
+    com:mangosteen,
+    com:melons,
+    com:mulberries,
+    com:nashi_pears,
+    com:nectarines,
+    com:olives,
+    com:oranges,
+    com:passionfruit,
+    com:pawpaws,
+    com:peacharines,
+    com:peaches,
+    com:pears,
+    com:pepinos,
+    com:persimmons,
+    com:pineapples,
+    com:plums,
+    com:pomegranate,
+    com:quinces,
+    com:rambutans,
+    com:raspberries,
+    com:redcurrants,
+    com:rosella,
+    com:strawberries,
+    com:tamarillo,
+    com:tangelos,
+    com:watermelons .
+
+com:horticulture a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Horticulture"@en ;
+  skos:member com:turf .
+
+com:mines a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Mines"@en ;
+  skos:member
+    com:alumina,
+    com:aluminium,
+    com:bauxite,
+    com:coal,
+    com:coal_black,
+    com:coal_brown,
+    com:copper,
+    com:diamonds_rough,
+    com:gold,
+    com:iron_ore,
+    com:ironsand,
+    com:lead,
+    com:metal,
+    com:mineral_sands,
+    com:nickel,
+    com:rare_earths,
+    com:salt,
+    com:shingle,
+    com:silica_sand,
+    com:stone,
+    com:uranium,
+    com:zeolite,
+    com:zinc .
+
+com:nuts a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Nuts"@en ;
+  skos:member
+    com:almonds,
+    com:brazil_nuts,
+    com:cashews,
+    com:chestnuts,
+    com:hazelnuts,
+    com:macadamias,
+    com:pecan_nuts,
+    com:pinenuts,
+    com:pistachios,
+    com:walnuts .
+
+com:oilseeds a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Oilseeds"@en ;
+  skos:member
+    com:canola,
+    com:chia,
+    com:flaxseed,
+    com:mustard,
+    com:peanuts,
+    com:safflower,
+    com:sesame,
+    com:soybeans,
+    com:sunflower .
+
+com:pasture a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Pasture"@en ;
+  skos:member
+    com:clover,
+    com:lucerne,
+    com:plantain,
+    com:sorghum_forage,
+    com:turnips_forage,
+    com:yarrow .
+
+com:pulses a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Pulses"@en ;
+  skos:member
+    com:azuki_bean,
+    com:broad_beans,
+    com:chickpeas,
+    com:cowpea,
+    com:field_beans,
+    com:field_peas,
+    com:lentils,
+    com:lupins,
+    com:mung_beans,
+    com:navy_bean,
+    com:pigeon_pea,
+    com:vetches .
+
+com:vegetables_and_herbs a skos:Collection ;
+  skos:inScheme lus:commodities ;
+  skos:prefLabel "Vegetables and herbs"@en ;
+  skos:member
+    com:arrowroot,
+    com:artichokes,
+    com:asparagus,
+    com:beans,
+    com:beetroot,
+    com:bitter_melon,
+    com:broccoli,
+    com:brussels_sprouts,
+    com:burdock,
+    com:cabbages,
+    com:capsicums,
+    com:carrots,
+    com:cauliflowers,
+    com:celery,
+    com:chamomile,
+    com:chervil,
+    com:chicory,
+    com:chillies,
+    com:chinese_cabbages,
+    com:chives,
+    com:coriander,
+    com:cucumbers,
+    com:echinacea,
+    com:eggplants,
+    com:fennel,
+    com:french_beans,
+    com:garlic,
+    com:gherkins,
+    com:herbs,
+    com:kale,
+    com:kumara,
+    com:leeks,
+    com:lemongrass,
+    com:lettuces,
+    com:marjoram,
+    com:marrows_and_squashes,
+    com:mint,
+    com:mushrooms,
+    com:okra,
+    com:onions,
+    com:oregano,
+    com:parsley,
+    com:parsnips,
+    com:peas,
+    com:peppermint,
+    com:potatoes,
+    com:pumpkins,
+    com:radishes,
+    com:rhubarb,
+    com:rocket,
+    com:rosemary,
+    com:sage,
+    com:silverbeet_and_spinach,
+    com:snowpeas,
+    com:spring_onions_and_shallots,
+    com:sprouts,
+    com:sugar_beet,
+    com:swedes,
+    com:sweet_corn,
+    com:sweet_potatoes,
+    com:tarragon,
+    com:thyme,
+    com:tomatoes,
+    com:truffles,
+    com:turnips,
+    com:vegetable_seeds,
+    com:vegetables,
+    com:zucchini .
+
+com:bees a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bees" .
+
+com:cats a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cats" ;
+  skos:usageNote "Includes cat breeding, catteries, or areas used for quarantine of cats related to import or export."@en .
+
+com:cattle a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cattle" .
+
+com:cattle_dairy a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:broader com:cattle ;
+  skos:usageNote "Cattle for milk production."@en ;
+  skos:notation "cattle dairy" .
+
+com:cattle_meat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cattle meat" ;
+  skos:broader com:cattle ;
+  skos:usageNote "Cattle for meat (beef) production."@en .
+
+com:cattle_stud a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cattle stud" ;
+  skos:usageNote "Cattle raised for sale as breeding animals."@en .
+
+com:chickens a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chickens" ;
+  skos:usageNote "Poultry farms. Specify whether for eggs or meat where possible."@en .
+
+com:chickens_eggs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chickens eggs" ;
+  skos:broader com:chickens ;
+  skos:usageNote "Poultry farms. Production mainly for eggs."@en .
+
+com:chickens_meat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chickens meat" ;
+  skos:broader com:chickens ;
+  skos:usageNote "Poultry farms. Production mainly for meat."@en .
+
+com:crocodiles a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "crocodiles" ;
+  skos:usageNote "Aquaculture."@en .
+
+com:crustaceans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "crustaceans" ;
+  skos:usageNote "Aquaculture: prawns, freshwater crayfish, etc."@en .
+
+com:deer a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "deer" .
+
+com:dogs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "dogs" ;
+  skos:usageNote "Includes dog breeding, kennels, or areas used for quarantine of dogs related to import or export."@en .
+
+com:ducks a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "ducks" ;
+  skos:usageNote "Poultry farms."@en .
+
+com:emus a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "emus" ;
+  skos:usageNote "Poultry farms."@en .
+
+com:finfish a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "finfish" ;
+  skos:usageNote "Aquaculture: tuna, salmon, trout, freshwater species, etc."@en .
+
+com:geese a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "geese" ;
+  skos:usageNote "Poultry farms."@en .
+
+com:goats a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "goats" ;
+  skos:usageNote "Specify meat, dairy, stud, or wool where appropriate."@en .
+
+com:goats_dairy a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "goats dairy" ;
+  skos:broader com:goats ;
+  skos:usageNote "Goats for milk production."@en .
+
+com:goats_meat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "goats meat" ;
+  skos:broader com:goats ;
+  skos:usageNote "Goats for meat production."@en .
+
+com:goats_stud a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "goats stud" ;
+  skos:broader com:goats ;
+  skos:usageNote "Goats raised for sale as breeding animals."@en .
+
+com:goats_wool a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "goats wool" ;
+  skos:broader com:goats ;
+  skos:usageNote "Goats for fibre production."@en .
+
+com:horses a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "horses" ;
+  skos:usageNote "Includes horse studs and recreational uses."@en .
+
+com:molluscs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "molluscs" ;
+  skos:usageNote "Aquaculture: includes peal oysters, edible oysters, abalone, mussels."@en .
+
+com:ostriches a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "ostriches" ;
+  skos:usageNote "Poultry farming."@en .
+
+com:pigs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pigs" ;
+  skos:usageNote "Piggeries."@en .
+
+com:sheep a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sheep" ;
+  skos:usageNote "Specify meat, dairy, stud or wool where appropriate."@en .
+
+com:sheep_dairy a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sheep dairy" ;
+  skos:broader com:sheep ;
+  skos:usageNote "Sheep for milk production."@en .
+
+com:sheep_meat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sheep meat" ;
+  skos:broader com:sheep ;
+  skos:usageNote "Sheep for meat production."@en .
+
+com:sheep_stud a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sheep stud" ;
+  skos:broader com:sheep ;
+  skos:usageNote "Sheep raised for sale as breeding animals."@en .
+
+com:sheep_wool a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sheep wool" ;
+  skos:broader com:sheep ;
+  skos:usageNote "Sheep for fibre production."@en .
+
+com:turkeys a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "turkeys" ;
+  skos:usageNote "Poultry farms."@en .
+
+com:barley a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "barley" .
+
+com:buckwheat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "buckwheat" ;
+  skos:usageNote "Buckwheat is a pseudocereal related to rhubarb. As it is grown as a grain it is considered part of cereals."@en .
+
+com:canary_seed a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "canary_seed" .
+
+com:maize a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "maize" .
+
+com:millet_and_pancium a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "millet and pancium" .
+
+com:oats a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "oats" .
+
+com:quinoa a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "quinoa" ;
+  skos:usageNote "Quinoa is a pseudocereal related to beetroot, spinach and tumbleweeds. As it is grown as a grain it is considered part of cereals."@en .
+
+com:rice a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rice" .
+
+com:rye_cereal a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rye cereal" .
+
+com:sorghum_grain a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sorghum grain" ;
+  skos:usageNote "Sorghum grown for grain. Excludes forage sorghum."@en .
+
+com:triticale a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "triticale" .
+
+com:wheat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "wheat" .
+
+com:aloe_vera a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "aloe vera"@en .
+
+com:cocoa a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cocoa"@en .
+
+com:coffee a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coffee" .
+
+com:cotton a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cotton"@en .
+
+com:cotton_seed a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cotton seed"@en .
+
+com:essential_oil_crops a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "essential oil crops"@en .
+
+com:ginger a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "ginger"@en .
+
+com:hops a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "hops".
+
+com:horseradish a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "horseradish" .
+
+com:jute a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "jute" .
+
+com:oil_palms a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "oil palms" .
+
+com:pepper a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pepper" .
+
+com:pharmaceutical_and_cosmetic_plants a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pharmaceutical and cosmetic plants" .
+
+com:poppies a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation  "poppies " .
+
+com:pyrethrum a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pyrethrum" .
+
+com:sugar_cane a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sugar cane" .
+
+com:tea a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tea" .
+
+com:tobacco a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tobacco" .
+
+com:wasabi a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "wasabi" .
+
+
+com:australian_native_flowers a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "australian native flowers" .
+
+com:bulbs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bulbs" .
+
+com:calendula a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "calendula" .
+
+com:carnations a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "carnations" .
+
+com:chrysanthemums a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chrysanthemums" .
+
+com:daffodils a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "daffodils" .
+
+com:flowers_and_foliage a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "flowers and foliage" .
+
+com:gerberas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "gerberas" .
+
+com:lavender a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lavender" .
+
+com:lilies a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lilies" .
+
+com:orchids a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "orchids" .
+
+com:proteas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "proteas" .
+
+com:roses a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "roses" .
+
+com:tropical_flowers a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tropical flowers" .
+
+com:tulips a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tulips" .
+
+com:bamboo a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bamboo".
+
+com:christmas_trees a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "christmas trees".
+
+com:eucalyptus_oil a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "eucalyptus oil".
+
+com:oil_mallee a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "oil mallee".
+
+com:pulp_wood a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pulp wood".
+
+com:sandalwood a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sandalwood".
+
+com:sawlogs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sawlogs".
+
+com:tea_tree a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tea tree".
+
+com:carbon_forest_standard a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "carbon forest standard" ;
+  # related 2.1.0, 2.1.1, 2.1.2 # TODO
+  skos:definition "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."@en .
+
+com:carbon_forest_permanent a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "carbon forest permanent" ;
+  # related 2.1.0, 2.1.1, 2.1.2 # TODO
+  skos:definition "Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry."@en .
+
+com:apples a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "apples" .
+
+com:apricots a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "apricots" .
+
+com:avocados a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "avocados" .
+
+com:babacos a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "babacos" .
+
+com:bananas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bananas" .
+
+com:blackberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "blackberries" .
+
+com:blackcurrants a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "blackcurrants" .
+
+com:blueberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "blueberries" .
+
+com:boysenberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "boysenberries" .
+
+com:carambolas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "carambolas" .
+
+com:cherries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cherries" .
+
+com:chokos a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chokos" .
+
+com:coconut a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coconut" .
+
+com:cranberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cranberries" .
+
+com:custard_apples a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "custard apples" .
+
+com:dates a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "dates" .
+
+com:dragon_fruit a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "dragon fruit" .
+
+com:feijoa a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "feijoa" .
+
+com:figs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "figs" .
+
+com:gooseberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "gooseberries" .
+
+com:grapefruit a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "grapefruit" .
+
+com:grapes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "grapes" .
+
+com:grapes_dried a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "grapes dried" .
+
+com:grapes_table a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "grapes table" .
+
+com:grapes_wine a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "grapes wine" .
+
+com:guavas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "guavas" .
+
+com:jackfruit a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "jackfruit" .
+
+com:kiwifruit a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "kiwifruit" .
+
+com:kumquat a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "kumquat" .
+
+com:lemons a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lemons" .
+
+com:limes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "limes" .
+
+com:loganberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "loganberries" .
+
+com:longans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "longans" .
+
+com:loquats a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "loquats" .
+
+com:lychees a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lychees" .
+
+com:mandarins a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mandarins" .
+
+com:mangoes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mangoes" .
+
+com:mangosteen a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mangosteen" .
+
+com:melons a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "melons" .
+
+com:mulberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mulberries" .
+
+com:nectarines a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "nectarines" .
+
+com:olives a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "olives" .
+
+com:oranges a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "oranges" .
+
+com:passionfruit a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "passionfruit" .
+
+com:pawpaws a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pawpaws" .
+
+com:peacharines a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "peacharines" .
+
+com:peaches a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "peaches" .
+
+com:pears a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pears" .
+
+com:nashi_pears a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pears nashi" .
+
+com:pepinos a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pepinos" .
+
+com:persimmons a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "persimmons" .
+
+com:pineapples a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pineapples" .
+
+com:plums a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "plums" .
+
+com:pomegranate a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pomegranate" .
+
+com:quinces a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "quinces" .
+
+com:rambutans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rambutans" .
+
+com:raspberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "raspberries" .
+
+com:redcurrants a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "redcurrants" .
+
+com:rosella a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rosella" .
+
+com:strawberries a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "strawberries" .
+
+com:tamarillo a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tamarillo" .
+
+com:tangelos a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tangelos" .
+
+com:watermelons a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "watermelons" .
+
+com:turf a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "turf" .
+
+com:alumina a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "alumina" .
+
+com:aluminium a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "aluminium" .
+
+com:bauxite a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bauxite" .
+
+com:coal a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coal" .
+
+com:coal_black a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coal_black " .
+
+com:coal_brown a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coal_brown " .
+
+com:copper a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "copper" .
+
+com:diamonds_rough a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "diamonds_rough " .
+
+com:gold a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "gold" .
+
+com:iron_ore a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "iron_ore" .
+
+com:ironsand a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "ironsand" .
+
+com:lead a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lead" .
+
+com:metal a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "metal" .
+
+com:mineral_sands a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mineral_sands " .
+
+com:nickel a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "nickel" .
+
+com:rare_earths a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rare_earths " .
+
+com:salt a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "salt" .
+
+com:shingle a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "shingle" .
+
+com:silica_sand a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "silica_sand" .
+
+com:stone a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "stone" .
+
+com:uranium a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "uranium" .
+
+com:zeolite a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "zeolite" .
+
+com:zinc a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "zinc" .
+
+com:almonds a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "almonds" .
+
+com:brazil_nuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "brazil nuts" .
+
+com:cashews a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cashews" .
+
+com:chestnuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chestnuts" .
+
+com:hazelnuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "hazelnuts" .
+
+com:macadamias a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "macadamias" .
+
+com:pecan_nuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pecan nuts" .
+
+com:pinenuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pinenuts" .
+
+com:pistachios a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pistachios" .
+
+com:walnuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "walnuts" .
+
+com:canola a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "canola" .
+  
+com:chia a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chia" .
+  
+com:flaxseed a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "flaxseed" .
+  
+com:mustard a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mustard " .
+   
+com:peanuts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "peanuts" .
+  
+com:safflower a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "safflower" .
+  
+com:sesame a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sesame" .
+  
+com:soybeans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "soybeans" .
+  
+com:sunflower a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sunflower" .
+
+com:clover a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "clover" .
+
+com:lucerne a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lucerne" .
+
+com:plantain a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "plantain" .
+
+com:sorghum_forage a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sorghum forage" .
+
+com:turnips_forage a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "turnips forage" .
+
+com:yarrow a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "yarrow" .
+
+com:azuki_bean a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "azuki bean" .
+
+com:broad_beans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "broad beans" .
+
+com:chickpeas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chickpeas" .
+
+com:cowpea a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cowpea" .
+
+com:field_beans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "field beans" .
+
+com:field_peas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "field peas" .
+
+com:lentils a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lentils" .
+
+com:lupins a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lupins" .
+
+com:mung_bean a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mung bean" .
+
+com:navy_bean a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "navy bean" .
+
+com:pigeon_pea a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pigeon pea" .
+
+com:vetches a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "vetches" .
+
+com:arrowroot a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "arrowroot" .
+
+com:artichokes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "artichokes" .
+
+com:asparagus a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "asparagus" .
+
+com:beans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "beans" .
+
+com:beetroot a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "beetroot" .
+
+com:bitter_melon a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "bitter melon" .
+
+com:broccoli a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "broccoli" .
+
+com:brussels_sprouts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "brussels sprouts" .
+
+com:burdock a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "burdock" .
+
+com:cabbages a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cabbages" .
+
+com:capsicums a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "capsicums" .
+
+com:carrots a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "carrots" .
+
+com:cauliflowers a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cauliflowers" .
+
+com:celery a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "celery" .
+
+com:chamomile a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chamomile" .
+
+com:chervil a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chervil" .
+
+com:chicory a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chicory" .
+
+com:chillies a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chillies" .
+
+com:chinese_cabbages a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chinese cabbages" .
+
+com:chives a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "chives" .
+
+com:coriander a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "coriander" .
+
+com:cucumbers a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "cucumbers" .
+
+com:echinacea a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "echinacea" .
+
+com:eggplants a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "eggplants" .
+
+com:fennel a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "fennel" .
+
+com:french_beans a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "french beans" .
+
+com:garlic a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "garlic" .
+
+com:gherkins a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "gherkins" .
+
+com:herbs a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "herbs" .
+
+com:kale a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "kale" .
+
+com:kumara a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "kumara" .
+
+com:leeks a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "leeks" .
+
+com:lemongrass a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lemongrass" .
+
+com:lettuces a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "lettuces" .
+
+com:marjoram a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "marjoram" .
+
+com:marrows_and_squashes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "marrows and squashes" .
+
+com:mint a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mint" .
+
+com:mushrooms a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "mushrooms" .
+
+com:okra a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "okra" .
+
+com:onions a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "onions" .
+
+com:oregano a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "oregano" .
+
+com:parsley a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "parsley" .
+
+com:parsnips a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "parsnips" .
+
+com:peas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "peas" .
+
+com:peppermint a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "peppermint" .
+
+com:potatoes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "potatoes" .
+
+com:pumpkins a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "pumpkins" .
+
+com:radishes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "radishes" .
+
+com:rhubarb a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rhubarb" .
+
+com:rocket a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rocket" .
+
+com:rosemary a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "rosemary" .
+
+com:sage a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sage" .
+
+com:silverbeet_and_spinach a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "silverbeet and spinach" .
+
+com:snowpeas a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "snowpeas" .
+
+com:spring_onions_and_shallots a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "spring onions and shallots" .
+
+com:sprouts a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sprouts" .
+
+com:sugar_beet a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sugar beet" .
+
+com:swedes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "swedes" .
+
+com:sweet_corn a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sweet corn" .
+
+com:sweet_potatoes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "sweet potatoes" .
+
+com:tarragon a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tarragon" .
+
+com:thyme a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "thyme" .
+
+com:tomatoes a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "tomatoes" .
+
+com:truffles a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "truffles" .
+
+com:turnips a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "turnips" .
+
+com:vegetable_seeds a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "vegetable seeds" .
+
+com:vegetables a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "vegetables" .
+
+com:zucchini a skos:Concept ;
+  skos:inScheme lus:commodities ;
+  skos:notation "zucchini" .

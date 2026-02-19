@@ -100,24 +100,19 @@ This section specifies the proposed data structure for the attribution of land-u
 
 ## Commodities
 
-Accepted commodities are those accepted for [use in ALUM v8, Table 2](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification) and follow the same definitions. Present, accepted additions are presented below:
+Accepted commodities are similar to those accepted for [use in ALUM v8, Table 2](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification). The term list is available as:
 
-| Commodity               	| Comments                                                                                                                                                                                                                                                                                                                                                                                                                                     	| NZLUM codes         	|
-|-------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------	|
-| carbon forest standard  	| Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible.                                                                                                                                                                                      	| 2.1.0, 2.1.1, 2.1.2 	|
-| carbon forest permanent 	| Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry. 	| 2.1.0, 2.1.1, 2.1.2 	|
+- [Markdown table](build/commodities.md)
+- [Excel spreadsheet](build/commodities.xlsx)
+- [RDF (Turtle)](rdf/term-lists/commodities.ttl)
 
 ## Management practices
 
-Accepted management practices are those accepted for [use in ALUM v8, Table 3](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification) and follow the same definitions. Present, accepted additions are presented below:
+Accepted management practices are those accepted for [use in ALUM v8, Table 3](https://www.agriculture.gov.au/abares/aclump/land-use/alum-classification) The term list is available as:
 
-| Management         	| Comments                                                                                                                                                                                        	| NZLUM codes  	|
-|--------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|--------------	|
-| hunting            	| Hunting is known to occur.                                                                                                                                                                      	| 1.0.0, 2.0.0 	|
-| hunting open       	| Relating to hunting on public conservation land; open hunting areas are hunting areas that require an open area hunting permit.                                                                 	| 1.0.0        	|
-| hunting restricted 	| Relating to hunting on public conservation land; restricted hunting areas are huting areas that require specific permits except the open area hunting permit, e.g. a small game hunting permit. 	| 1.0.0        	|
-| hunting prohibited 	| Relating to hunting on public conservation land; areas where hunting is prohibited.                                                                                                             	| 1.0.0        	|
-
+- [Markdown table](build/management-practices.md)
+- [Excel spreadsheet](build/management-practices.xlsx)
+- [RDF (Turtle)](rdf/term-lists/management-practices.ttl)
 
 ## Tenure
 

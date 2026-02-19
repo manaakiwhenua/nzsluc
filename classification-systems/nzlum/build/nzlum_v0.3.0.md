@@ -24,6 +24,7 @@
 |  |  |  |  | 2.1.2 | Indigenous plantation forestry |
 |  |  |  |  | 2.1.3 | Other production uses |
 |  |  |  |  | 2.1.4 | Planted environmental & infrastructure protection |
+|  |  |  |  | 2.1.5 | Permanent carbon forest |
 |  |  | 2.2.0 | Grazing modified pasture systems | 2.2.1 | Dairy |
 |  |  |  |  | 2.2.2 | Intensive dry stock |
 |  |  |  |  | 2.2.3 | Extensive dry stock |

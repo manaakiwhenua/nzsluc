@@ -248,7 +248,8 @@ luc:production_from_indigenous_vegetation
         skos:broader     luc:minimal_use_relatively_natural;
         skos:notation    "1.3.4";
         skos:prefLabel   "Production from indigenous vegetation"@en;
-        skos:definition  "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."@en .
+        skos:definition  "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."@en;
+        skos:changeNote  "The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests."@en .
 
 luc:customary_use  a     skos:Concept;
         skos:inScheme    lus:nzlum0.3.0;
@@ -372,7 +373,8 @@ luc:exotic_plantation_forestry
         skos:prefLabel   "Exotic plantation forestry"@en;
         skos:definition  "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species)."@en;
         skos:usageNote   "The specific commodity or commodities should be noted if known."@en;
-        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en .
+        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en;
+        skos:changeNote  "Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0"@en .
 
 luc:indigenous_plantation_forestry
         a                skos:Concept;
@@ -383,7 +385,8 @@ luc:indigenous_plantation_forestry
         skos:prefLabel   "Indigenous plantation forestry"@en;
         skos:definition  "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."@en;
         skos:usageNote   "The specific commodity or commodities should be noted if known."@en;
-        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en .
+        skos:usageNote   "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en;
+        skos:changeNote  "Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0"@en .
 
 luc:other_production_plantations
         a                skos:Concept;
@@ -403,6 +406,15 @@ luc:planted_environmental_infrastructure_protection
         skos:notation    "2.1.4";
         skos:prefLabel   "Planted environmental & infrastructure protection"@en;
         skos:definition  "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."@en .
+
+luc:permanent_carbon_forest
+        a                skos:Concept;
+        skos:inScheme    lus:nzlum0.3.0;
+        skos:broader     luc:plantation_forests;
+        skos:notation    "2.1.5";
+        skos:prefLabel   "Permanent carbon forest"@en;
+        skos:definition  "An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming)."@en;
+        skos:changeNote  "Retired at NZLUM v0.3 and replaced with consideration of carbon sequestration and carbon credits in the definitions of exotic and indigenous plantation forestry."@en .
 
 luc:grazing_modified_pasture_systems
         a                skos:Concept;

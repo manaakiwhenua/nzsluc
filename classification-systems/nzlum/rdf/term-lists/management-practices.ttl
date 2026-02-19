@@ -1,0 +1,273 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix lus:  <https://example.org/landuse/scheme/> .
+@prefix mgmt:  <https://example.org/landuse/management_practice/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lus:management_practices a skos:ConceptScheme ;
+  dct:title "NZLUM management practices"@en ;
+  dct:issued "2026-02-19"^^xsd:date .
+
+mgmt:animal a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Animal"@en ;
+  skos:member
+    mgmt:barn_laid,
+    mgmt:caged,
+    mgmt:free_range,
+    mgmt:milking_hand,
+    mgmt:milking_herringbone,
+    mgmt:milking_rotary,
+    mgmt:milking_walk_through .
+
+mgmt:crop a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Crop"@en ;
+  skos:member
+    mgmt:contour_banks,
+    mgmt:controlled_traffic_farming,
+    mgmt:cropping_continuous,
+    mgmt:cropping_cover,
+    mgmt:cropping_multiple,
+    mgmt:cropping_opportunistic,
+    mgmt:cropping_rotational,
+    mgmt:cropping_row_alley,
+    mgmt:cropping_strip,
+    mgmt:fallow_chemical,
+    mgmt:fallow_mechanical,
+    mgmt:residues_baled,
+    mgmt:residues_burnt,
+    mgmt:residues_heavily_grazed,
+    mgmt:residues_incorporated,
+    mgmt:residues_intact,
+    mgmt:residues_mulched,
+    mgmt:tillage_conservation,
+    mgmt:tillage_conventional,
+    mgmt:biodynamic,
+    mgmt:crop_pasture_rotation,
+    mgmt:organic,
+    mgmt:pasture_cropping,
+    mgmt:precision_agriculture .
+
+mgmt:pasture a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Pasture"@en ;
+  skos:member
+    mgmt:biodynamic, 
+    mgmt:crop_pasture_rotation, 
+    mgmt:organic, 
+    mgmt:pasture_cropping, 
+    mgmt:precision_agriculture.
+
+mgmt:grazing a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Grazing"@en ;
+  skos:member
+    mgmt:grazing_rotational,
+    mgmt:grazing_set_stocking,
+    mgmt:grazing_tactical .
+
+mgmt:horticulture a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Horticulture"@en ;
+  skos:member
+    mgmt:free_standing,
+    mgmt:fully_protected,
+    mgmt:hedgerow,
+    mgmt:mulching_matting,
+    mgmt:open_growing,
+    mgmt:semi_protected,
+    mgmt:trellis_espalier .
+
+mgmt:irrigation a skos:Collection ;
+  skos:inScheme lus:management_practices ;
+  skos:prefLabel "Irrigation"@en ;
+  skos:member
+    mgmt:irrigation_drip,
+    mgmt:irrigation_spray,
+    mgmt:irrigation_surface .
+
+mgmt:barn_laid a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "barn laid" .
+
+mgmt:caged a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "caged" .
+
+mgmt:free_range a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "free range" .
+
+mgmt:milking_hand a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "milking hand" .
+
+mgmt:milking_herringbone a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "milking herringbone" .
+
+mgmt:milking_rotary a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "milking rotary" .
+
+mgmt:milking_walk_through a skos:Concept;
+  skos:inScheme lus:management_practices ;
+  skos:notation "milking walk through " .
+ 
+mgmt:contour_banks a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "contour banks" .
+
+mgmt:controlled_traffic_farming a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "controlled traffic farming" .
+
+mgmt:cropping_continuous a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping continuous" .
+
+mgmt:cropping_cover a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping cover" .
+
+mgmt:cropping_multiple a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping multiple" .
+
+mgmt:cropping_opportunistic a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping opportunistic" .
+
+mgmt:cropping_rotational a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping rotational" .
+
+mgmt:cropping_row_alley a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping row alley" .
+
+mgmt:cropping_strip a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "cropping strip" .
+
+mgmt:fallow_chemical a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "fallow chemical" .
+
+mgmt:fallow_mechanical a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "fallow mechanical" .
+
+mgmt:residues_baled a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues baled" .
+
+mgmt:residues_burnt a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues burnt" .
+
+mgmt:residues_heavily_grazed a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues heavily grazed" .
+
+mgmt:residues_incorporated a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues incorporated" .
+
+mgmt:residues_intact a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues intact" .
+
+mgmt:residues_mulched a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "residues mulched" .
+
+mgmt:tillage_conservation a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "tillage conservation" .
+
+mgmt:tillage_conventional a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "tillage conventional" .
+
+mgmt:biodynamic a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "biodynamic" .
+
+mgmt:crop_pasture_rotation a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "crop pasture rotation" .
+
+mgmt:organic a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "organic" .
+
+mgmt:pasture_cropping a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "pasture cropping" .
+
+mgmt:precision_agriculture a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "precision agriculture" .
+
+mgmt:grazing_rotational a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:definition "Moving livestock between paddocks in regular sequence to permit the recovery and growth of the pasture plants after grazing."@en ;
+  skos:scopeNote "Also cell grazing."@en ;
+  skos:usageNote "Stocking rates per paddock are higher than under set stocking."@en ;
+  skos:notation "grazing rotational" .
+
+mgmt:grazing_set_stocking a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "grazing set stocking" .
+
+mgmt:grazing_tactical a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "grazing tactical" .
+
+mgmt:free_standing a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "free standing" .
+
+mgmt:fully_protected a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "fully protected" .
+
+mgmt:hedgerow a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "hedgerow" .
+
+mgmt:mulching_matting a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "mulching/matting" .
+
+mgmt:open_growing a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "open growing" .
+
+mgmt:semi_protected a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "semi-protected" .
+
+mgmt:trellis_espalier a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:notation "trellis/espalier" .
+
+mgmt:irrigation_drip a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:definition "Irrigation system that applies water to the soil very slowly through tubes/tapes either above or below the soil surface."@en ;
+  skos:scopeNote "Also trickle irrigation."@en ;
+  skos:notation "irrigation drip" .
+
+mgmt:irrigation_spray a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:definition "Irrigation system that sprays water into the air allowing it to fall on the plants and soil much like natural rainfall."@en ;
+  skos:scopeNote "Sprinklers including set systems, permanent (solid set/fixed), continuous/travelling systems and micro-sprinklers."@en ;
+  skos:notation "irrigation spray" .
+
+mgmt:irrigation_surface a skos:Concept ;
+  skos:inScheme lus:management_practices ;
+  skos:definition "Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows."@en ;
+  skos:scopeNote "Also flood/furrow irrigation."@en ;
+  skos:notation "irrigation surface" .

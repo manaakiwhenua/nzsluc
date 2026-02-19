@@ -49,6 +49,7 @@ luc:exotic_plantation_forestry a skos:Concept ;
   skos:definition "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species)."@en ;
   skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
   skos:usageNote "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en ;
+  skos:changeNote "Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0"@en ;
 .
 
 luc:indigenous_plantation_forestry a skos:Concept ;
@@ -59,6 +60,7 @@ luc:indigenous_plantation_forestry a skos:Concept ;
   skos:definition "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."@en ;
   skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
   skos:usageNote "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en ;
+  skos:changeNote "Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0"@en ;
 .
 
 luc:other_production_plantations a skos:Concept ;
@@ -77,6 +79,15 @@ luc:planted_environmental_infrastructure_protection a skos:Concept ;
   skos:notation "2.1.4" ;
   skos:prefLabel "Planted environmental & infrastructure protection"@en ;
   skos:definition "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."@en ;
+.
+
+luc:permanent_carbon_forest a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0 ;
+  skos:broader luc:plantation_forests ;
+  skos:notation "2.1.5" ;
+  skos:prefLabel "Permanent carbon forest"@en ;
+  skos:definition "An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming)."@en ;
+  skos:changeNote "Retired at NZLUM v0.3 and replaced with consideration of carbon sequestration and carbon credits in the definitions of exotic and indigenous plantation forestry."@en ;
 .
 
 luc:grazing_modified_pasture_systems a skos:Concept ;

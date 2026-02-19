@@ -143,6 +143,9 @@
     - **2.1.4 Planted environmental & infrastructure protection**
       An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted.
 
+    - **2.1.5 Permanent carbon forest**
+      An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming).
+
   - **2.2.0 Grazing modified pasture systems**
     Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.
     > [!NOTE]

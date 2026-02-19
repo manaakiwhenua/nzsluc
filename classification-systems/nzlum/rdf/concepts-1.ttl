@@ -197,6 +197,7 @@ luc:production_from_indigenous_vegetation a skos:Concept ;
   skos:notation "1.3.4" ;
   skos:prefLabel "Production from indigenous vegetation"@en ;
   skos:definition "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."@en ;
+  skos:changeNote "The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests."@en ;
 .
 
 luc:customary_use a skos:Concept ;
