@@ -1,0 +1,51 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/> .
+@prefix lu_proverb: <https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/> .
+@prefix lu_person:  <https://nzlum.landcareresearch.co.nz/landuse/doc/person/> .
+
+lu_status:draft a rdfs:Resource ;
+  rdfs:label "Draft"@en .
+
+lu_status:published a rdfs:Resource ;
+  rdfs:label "Published"@en .
+
+lu_proverb:kotahi_te_aho a dct:BibliographicResource ;
+  dct:creator lu_person:kingi_tawhiao ;
+  dct:description "Kotahi te aho ka whati, ki te kāpuia e kore e whati."@mi ;
+  dct:description "One strand of flax is easy to break, but many strands together will stand strong."@en .
+
+lu_person:kingi_tawhiao a foaf:Person ;
+  foaf:name "Kīngi Tāwhiao"@mi ;
+  foaf:name "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"@mi .
+
+lus:nzlum dct:relation lu_proverb:kotahi_te_aho .
+
+lus:nzlum a skos:ConceptScheme ;
+  dct:title "New Zealand Land Use and Management classification system"@en ;
+  dct:hasVersion lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+.
+
+lus:nzlum0.3.0 a skos:ConceptScheme ;
+  dct:issued "2025-06-30"^^xsd:date ;
+  owl:versionInfo "0.3.0" ;
+  dct:isVersionOf lus:nzlum ;
+  adms:status lu_status:draft ;
+  skos:hasTopConcept luc:conservation, luc:production_agriculture_plantations, luc:built_environment ;
+.
+
+lus:nzlum0.4.0 a skos:ConceptScheme ;
+  dct:issued "2026-02-13"^^xsd:date ;
+  owl:versionInfo "0.4.0" ;
+  dct:isVersionOf lus:nzlum ;
+  adms:status lu_status:published ;
+  skos:hasTopConcept luc:conservation, luc:production_agriculture_plantations, luc:built_environment ;
+.

@@ -1,0 +1,161 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://nzlum.landcareresearch.co.nz/landuse/shapes#> .
+
+#################################################################
+# Concept Schemes
+#################################################################
+
+:SeriesConceptSchemeShape
+  a sh:NodeShape ;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:select """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX dct:  <http://purl.org/dc/terms/>
+      SELECT ?this WHERE {
+        ?this a skos:ConceptScheme .
+        FILTER NOT EXISTS { ?this dct:isVersionOf ?parent }
+      }
+    """ ;
+  ] ;
+
+  sh:property [
+    sh:path dct:title ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ;
+  ] ;
+
+  sh:property [
+    sh:path dct:hasVersion ;
+    sh:minCount 1 ;
+    sh:class skos:ConceptScheme ;
+  ] .
+
+:VersionConceptSchemeShape
+  a sh:NodeShape ;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:select """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX dct:  <http://purl.org/dc/terms/>
+      SELECT ?this WHERE {
+        ?this a skos:ConceptScheme ;
+              dct:isVersionOf ?parent .
+      }
+    """ ;
+  ] ;
+
+  sh:property [
+    sh:path dct:isVersionOf ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class skos:ConceptScheme ;
+  ] ;
+
+  sh:property [
+    sh:path dct:issued ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:date ;
+  ] ;
+
+  sh:property [
+    sh:path owl:versionInfo ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+
+  # Optional: require at least one top concept on each version
+  sh:property [
+    sh:path skos:hasTopConcept ;
+    sh:minCount 1 ;
+    sh:class skos:Concept ;
+  ] .
+
+#################################################################
+# Concepts
+#################################################################
+
+:ConceptShape
+  a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+
+  # Must belong to at least one scheme
+  sh:property [
+    sh:path skos:inScheme ;
+    sh:minCount 1 ;
+    sh:class skos:ConceptScheme ;
+  ] ;
+
+  # Notation (your code)
+  sh:property [
+    sh:path skos:notation ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    # adjust if you allow 1 or 1.2 etc.
+    sh:pattern "^\\d+\\.\\d+\\.\\d+$" ;
+    sh:message "skos:notation must be of the form X.X.X (e.g., 1.2.4)" ;
+  ] ;
+
+  # Preferred label in English
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ;
+    sh:languageIn ("en") ;
+    sh:uniqueLang true ;
+    sh:message "Concept must have exactly one skos:prefLabel@en" ;
+  ] ;
+
+  # Definition in English
+  sh:property [
+    sh:path skos:definition ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ;
+    sh:languageIn ("en") ;
+    # allow multiple defs in same language? if not, enforce uniqueLang like above
+    sh:message "Concept must have a skos:definition@en" ;
+  ] ;
+
+  # Broader should never point to itself
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "A concept must not be skos:broader of itself." ;
+    sh:select """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT $this WHERE {
+        $this skos:broader $this .
+      }
+    """ ;
+  ] ;
+
+  # A strict tree, enforce <= 1 broader
+  sh:property [
+    sh:path skos:broader ;
+    sh:maxCount 1 ;
+    sh:class skos:Concept ;
+    sh:message "Concept has more than one skos:broader; this violates a strict tree." ;
+  ] .
+
+# Cross-check broader/narrower reciprocity
+:BroaderNarrowerReciprocityShape
+  a sh:NodeShape ;
+  sh:targetSubjectsOf skos:narrower ;
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "If A skos:narrower B then B should have skos:broader A (reciprocity check)." ;
+    sh:select """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT $this ?child WHERE {
+        $this skos:narrower ?child .
+        FILTER NOT EXISTS { ?child skos:broader $this . }
+      }
+    """ ;
+  ] .

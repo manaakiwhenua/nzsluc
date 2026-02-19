@@ -1,0 +1,266 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@base <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+
+luc:conservation a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:topConceptOf lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:notation "1.0.0" ;
+  skos:prefLabel "Conservation and Minimal Use"@en ;
+  skos:definition "Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
+  skos:scopeNote "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en ;
+  skos:usageNote "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en ;
+  skos:narrower
+    luc:nature_cons,
+    luc:cultural_natural_heritage,
+    luc:minimal_use_relatively_natural,
+    luc:unused_land_transition ;
+.
+
+luc:nature_cons a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:conservation ;
+  skos:notation "1.1.0" ;
+  skos:prefLabel "Nature conservation"@en ;
+  skos:definition "Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ)."@en ;
+  skos:narrower
+    luc:strict_nature_res,
+    luc:wilderness,
+    luc:national_park,
+    luc:natural_feature_protection,
+    luc:habitat_or_species_management,
+    luc:protected_landscape,
+    luc:other_conserved_area ;
+.
+
+luc:strict_nature_res a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.1" ;
+  skos:prefLabel "Strict nature reserve"@en ;
+  skos:definition "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring."@en ;
+  # skos:exactMatch <PUT-IUCN-IRI-HERE> ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve."@en ;
+.
+
+luc:wilderness a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.2" ;
+  skos:prefLabel "Wilderness area"@en ;
+  skos:definition "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition."@en ;
+  # skos:exactMatch <PUT-IUCN-IRI-HERE> ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area."@en ;
+.
+
+luc:national_park a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.3" ;
+  skos:prefLabel "National Park"@en ;
+  skos:definition """Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
+
+  a) protect the ecological integrity of one or more ecosystems for the current and future generations;
+
+  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and
+
+  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."""@en ;
+  # skos:exactMatch <PUT-IUCN-IRI-HERE> ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category Ib: national park."@en ;
+.
+
+luc:natural_feature_protection a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.4" ;
+  skos:prefLabel "Natural feature protection"@en ;
+  skos:definition "Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance."@en ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature."@en ;
+.
+
+luc:habitat_or_species_management a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.5" ;
+  skos:prefLabel "Habitat or species management area"@en ;
+  skos:definition "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land."@en ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area."@en ;
+.
+
+luc:protected_landscape a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.6" ;
+  skos:prefLabel "Protected landscape"@en ;
+  skos:definition "Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity."@en ;
+  dct:source "IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape."@en ;
+.
+
+luc:other_conserved_area a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:nature_cons ;
+  skos:notation "1.1.7" ;
+  skos:prefLabel "Other conserved area"@en ;
+  skos:definition "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."@en ;
+  skos:scopeNote "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’"
+.
+
+luc:cultural_natural_heritage a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:conservation ;
+  skos:notation "1.2.0" ;
+  skos:prefLabel "Cultural and natural heritage"@en ;
+  skos:definition "Conservation classes are for purposes other than biodiversity protecton."@en ;
+  skos:narrower
+    luc:indigenous_cultural_heritage,
+    luc:cultural_heritage,
+    luc:natural_heritage ;
+.
+
+
+luc:indigenous_cultural_heritage a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:cultural_natural_heritage ;
+  skos:notation "1.2.1" ;
+  skos:prefLabel "Indigenous cultural heritage"@en ;
+  skos:definition "Indigenous cultural heritage sites and areas (e.g. historical pā sites, New Zealand land wars sites, and other indigenous heritage sites)."@en ;
+.
+
+luc:cultural_heritage a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:cultural_natural_heritage ;
+  skos:notation "1.2.2" ;
+  skos:prefLabel "Cultural heritage"@en ;
+  skos:definition "Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks)."@en ;
+.
+
+luc:natural_heritage a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:cultural_natural_heritage ;
+  skos:notation "1.2.3" ;
+  skos:prefLabel "Natural heritage"@en ;
+  skos:definition "Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks)."@en ;
+.
+
+luc:minimal_use_relatively_natural a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:conservation ;
+  skos:notation "1.3.0" ;
+  skos:prefLabel "Minimal use from relatively natural environments"@en ;
+  skos:definition "This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land)."@en ;
+  skos:scopeNote "Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1."@en ;
+  skos:narrower
+    luc:surface_water_supply,
+    luc:ground_water,
+    luc:grazing_native_vegetation,
+    luc:production_from_indigenous_vegetation,
+    luc:customary_use,
+    luc:defence_land_natural_areas,
+    luc:environmental_infrastructure_protection,
+    luc:carbon_forest_retained ;
+.
+
+luc:surface_water_supply a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.1" ;
+  skos:prefLabel "Surface water supply"@en ;
+  skos:definition "An area managed as a catchment for water supply."@en ;
+.
+
+luc:ground_water a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.2" ;
+  skos:prefLabel "Ground water"@en ;
+  skos:definition "An area managed as an aquifer recharge zone."@en ;
+.
+
+luc:grazing_native_vegetation a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.3" ;
+  skos:prefLabel "Grazing native vegetation"@en ;
+  skos:definition "Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred."@en ;
+  skos:usageNote "This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context."@en ;
+.
+
+luc:production_from_indigenous_vegetation a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.4" ;
+  skos:prefLabel "Production from indigenous vegetation"@en ;
+  skos:definition "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."@en ;
+  skos:changeNote "The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests."@en ;
+.
+
+luc:customary_use a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.5" ;
+  skos:prefLabel "Customary use"@en ;
+  skos:definition "Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai)."@en ;
+  skos:usageNote "This is often an ancillary use; assign only if customary use is the prime use of the land."@en ;
+  skos:scopeNote "This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use."@en ;
+.
+
+luc:defence_land_natural_areas a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.6" ;
+  skos:prefLabel "Defence land"@en ;
+  skos:definition "Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas."@en ;
+  skos:scopeNote "Areas associated with buildings or more built environments on defence land are captured under an urban class."@en ;
+  skos:example "Kaipara Air Weapons Range"@en ;
+  skos:example "Waiouru Military Camp"@en ;
+.
+
+luc:environmental_infrastructure_protection a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.7" ;
+  skos:prefLabel "Environmental & infrastructure protection"@en ;
+  skos:definition "Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways)."@en ;
+  skos:scopeNote "This is not limited to indigenous vegetation."@en;
+  skos:scopeNote "Land planted for environmental and infrastructure protection should be captured under 2.1.4."@en ;
+.
+
+luc:carbon_forest_retained a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:minimal_use_relatively_natural ;
+  skos:notation "1.3.8" ;
+  skos:prefLabel "Carbon forest"@en ;
+  skos:definition "Retained (non-planted) indigenous vegetation set aside for carbon credits."@en ;
+.
+
+luc:unused_land_transition a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:conservation ;
+  skos:notation "1.4.0" ;
+  skos:prefLabel "Unused land and land in transition"@en ;
+  skos:definition "Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species."@en ;
+  skos:usageNote "Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information."@en ;
+  skos:narrower luc:unused_land, luc:land_undergoing_rehabilitation_natural ;
+.
+
+luc:unused_land a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:unused_land_transition ;
+  skos:notation "1.4.1" ;
+  skos:prefLabel "Unused land"@en ;
+  skos:definition "Land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en ;
+.
+
+luc:land_undergoing_rehabilitation_natural a skos:Concept ;
+  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:broader luc:unused_land_transition ;
+  skos:notation "1.4.2" ;
+  skos:prefLabel "Land undergoing rehabilitation"@en ;
+  skos:definition "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."@en ;
+.

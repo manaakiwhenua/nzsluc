@@ -1,0 +1,7 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?parent ?child WHERE {
+  ?parent skos:narrower ?child .
+  FILTER NOT EXISTS { ?child skos:broader ?parent }
+}
+ORDER BY ?parent ?child
