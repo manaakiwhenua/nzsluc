@@ -722,7 +722,7 @@ luc:built_environment
         skos:narrower      luc:commercial;
         skos:narrower      luc:manufacturing_industrial;
         skos:narrower      luc:utilities;
-        skos:narrower      luc:transport_communication;
+        skos:narrower      luc:transport;
         skos:narrower      luc:mining;
         skos:narrower      luc:waste_treatment_disposal;
         skos:narrower      luc:vacant_transitioning_land_urban .
@@ -754,8 +754,9 @@ luc:medium_density_residential
         skos:broader     luc:residential;
         skos:notation    "3.1.2";
         skos:prefLabel   "Medium-density residential"@en;
-        skos:definition  "Areas featuring a moderate concentration of housing units per unit of land area (e.g. townhouses, terraced housing, low-rise apartments), often in suburban or semi-urban settings."@en;
-        skos:scopeNote   "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered." .
+        skos:definition  "Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings."@en;
+        skos:scopeNote   "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered."@en;
+        skos:example     "Townhouses, terraced housing, low-rise apartments."@en .
 
 luc:low_density_residential
         a                skos:Concept;
@@ -771,8 +772,9 @@ luc:rural_residential
         skos:broader     luc:residential;
         skos:notation    "3.1.4";
         skos:prefLabel   "Rural residential"@en;
-        skos:definition  "Residential properties with low-intensity (non-commercial) land management practices (e.g. hobby farms) on land in rural or peri-urban areas."@en;
-        skos:scopeNote   "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard." .
+        skos:definition  "Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas."@en;
+        skos:scopeNote   "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard."@en;
+        skos:example     "Hobby farms."@en .
 
 luc:public_recreation_services
         a                skos:Concept;
@@ -791,9 +793,10 @@ luc:outdoor_recreation
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.1";
         skos:prefLabel   "Outdoor recreation"@en;
-        skos:definition  "Land areas dedicated to leisure activities conducted in natural or semi-natural settings (e.g. parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves), typically with considerable unsealed vegetated areas."@en;
+        skos:definition  "Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas."@en;
         skos:scopeNote   "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."@en;
-        skos:scopeNote   "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks." .
+        skos:scopeNote   "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."@en;
+        skos:example     "Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves."@en .
 
 luc:indoor_recreation
         a                skos:Concept;
@@ -801,7 +804,8 @@ luc:indoor_recreation
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.2";
         skos:prefLabel   "Indoor recreation"@en;
-        skos:definition  "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures (e.g. sports centres, gyms, swimming pools, indoor arenas)."@en .
+        skos:definition  "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures."@en;
+        skos:example     "Sports centres, gyms, swimming pools, indoor arenas."@en .
 
 luc:community_services
         a                skos:Concept;
@@ -809,7 +813,8 @@ luc:community_services
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.3";
         skos:prefLabel   "Community services"@en;
-        skos:definition  "Land used for providing essential services and facilities to support the local community (e.g. educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries)."@en .
+        skos:definition  "Land used for providing essential services and facilities to support the local community."@en;
+        skos:example     "Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries."@en .
 
 luc:commercial  a        skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
@@ -830,35 +835,40 @@ luc:retail  a            skos:Concept;
         skos:broader     luc:commercial;
         skos:notation    "3.3.1";
         skos:prefLabel   "Retail"@en;
-        skos:definition  "Areas used for the sale of goods and services directly to consumers (e.g. shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.)."@en .
+        skos:definition  "Areas used for the sale of goods and services directly to consumers."@en;
+        skos:example     "Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets."@en .
 
 luc:office  a            skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:commercial;
         skos:notation    "3.3.2";
         skos:prefLabel   "Office"@en;
-        skos:definition  "Land and buildings primarily used for administrative, professional, or managerial activities (e.g. corporate offices, professional services, banks, government buildings, business parks, coworking spaces)."@en .
+        skos:definition  "Land and buildings primarily used for administrative, professional, or managerial activities."@en;
+        skos:example     "Corporate offices, professional services, banks, government buildings, business parks, coworking spaces."@en .
 
 luc:hospitality  a       skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:commercial;
         skos:notation    "3.3.3";
         skos:prefLabel   "Hospitality"@en;
-        skos:definition  "Land and buildings providing accommodation, food, and beverage services to the public (e.g. hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs)."@en .
+        skos:definition  "Land and buildings providing accommodation, food, and beverage services to the public."@en;
+        skos:example     "Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs."@en .
 
 luc:entertainment  a     skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:commercial;
         skos:notation    "3.3.4";
         skos:prefLabel   "Entertainment"@en;
-        skos:definition  "Land areas and facilities offering leisure and recreational activities for public enjoyment (e.g. cinemas, theatres, amusement parks, casinos, concert venues)."@en .
+        skos:definition  "Land areas and facilities offering leisure and recreational activities for public enjoyment."@en;
+        skos:example     "Cinemas, theatres, amusement parks, casinos, concert venues."@en .
 
 luc:healthcare  a        skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:commercial;
         skos:notation    "3.3.5";
         skos:prefLabel   "Healthcare"@en;
-        skos:definition  "Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury (e.g. hospitals, specialist clinics, physiotherapists, medical offices, laboratories)."@en .
+        skos:definition  "Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury."@en;
+        skos:example     "Hospitals, specialist clinics, physiotherapists, medical offices, laboratories"@en .
 
 luc:transportation_warehousing_commercial
         a                skos:Concept;
@@ -898,7 +908,8 @@ luc:food_processing_factory
         skos:broader     luc:manufacturing_industrial;
         skos:notation    "3.4.2";
         skos:prefLabel   "Food processing factory"@en;
-        skos:definition  "An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included (e.g. cannery, milk production plant)."@en .
+        skos:definition  "An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included."@en;
+        skos:example     "Cannery; milk production plant." .
 
 luc:major_industrial_complex
         a                skos:Concept;
@@ -906,7 +917,8 @@ luc:major_industrial_complex
         skos:broader     luc:manufacturing_industrial;
         skos:notation    "3.4.3";
         skos:prefLabel   "Major industrial complex"@en;
-        skos:definition  "An area with large-scale industrial use and significant infrastructure (e.g. car plant, paper mill)."@en .
+        skos:definition  "An area with large-scale industrial use and significant infrastructure ."@en;
+        skos:example     "Car plant, paper mill."@en .
 
 luc:sawmill  a           skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
@@ -921,8 +933,9 @@ luc:farm_buildings_infrastructure
         skos:broader     luc:manufacturing_industrial;
         skos:notation    "3.4.5";
         skos:prefLabel   "Farm buildings/infrastructure"@en;
-        skos:definition  "An area with buildings, sheds, and other infrastructure associated with farm enterprises (e.g. barns, silos, storage sheds, and irrigation systems) supporting agricultural operations."@en;
-        skos:scopeNote   "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."@en .
+        skos:definition  "An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations."@en;
+        skos:scopeNote   "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."@en;
+        skos:example     "Barns, silos, storage sheds, and irrigation systems."@en .
 
 luc:abattoirs  a         skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
@@ -943,7 +956,8 @@ luc:utilities  a         skos:Concept;
         skos:narrower    luc:solar_electricity_generation;
         skos:narrower    luc:electricity_substations_transmission;
         skos:narrower    luc:gas_treatment_storage_transmission;
-        skos:narrower    luc:water_extraction_transmission .
+        skos:narrower    luc:water_extraction_transmission;
+        skos:narrower    luc:navigation_communication .
 
 luc:fuel_powered_electricity_generation
         a                skos:Concept;
@@ -984,7 +998,8 @@ luc:electricity_substations_transmission
         skos:broader     luc:utilities;
         skos:notation    "3.5.5";
         skos:prefLabel   "Electricity substations and transmission"@en;
-        skos:definition  "Facilities and infrastructure associated with distribution and transmission of electrical power (e.g. substations, transformers, high-voltage transmission towers)."@en .
+        skos:definition  "Facilities and infrastructure associated with distribution and transmission of electrical power."@en;
+        skos:example     "Substations, transformers, high-voltage transmission towers."@en .
 
 luc:gas_treatment_storage_transmission
         a                skos:Concept;
@@ -992,7 +1007,8 @@ luc:gas_treatment_storage_transmission
         skos:broader     luc:utilities;
         skos:notation    "3.5.6";
         skos:prefLabel   "Gas treatment, storage, and transmission"@en;
-        skos:definition  "Facilities and infrastructure for processing, storage, and transport of natural gas (e.g. treatment plants, storage facilities, pipelines)."@en .
+        skos:definition  "Facilities and infrastructure for processing, storage, and transport of natural gas."@en;
+        skos:example     "Treatment plants, storage facilities, pipelines."@en .
 
 luc:water_extraction_transmission
         a                skos:Concept;
@@ -1003,38 +1019,46 @@ luc:water_extraction_transmission
         skos:definition  "Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs."@en;
         skos:scopeNote   "Includes drinking water reservoirs."@en .
 
-luc:transport_communication
+luc:navigation_communication
         a                skos:Concept;
+        skos:inScheme    lus:nzlum0.4.0;
+        skos:broader     luc:utilities;
+        skos:notation    "3.5.8";
+        skos:changeNote  "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."@en;
+        skos:prefLabel   "Navigation and communication"@en;
+        skos:definition  "Navigation and communication infrastructure."@en;
+        skos:example     "Radar stations, beacons, lighthouses, TV and radio transmission towers."@en .
+
+luc:transport  a         skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.6.0";
-        skos:prefLabel   "Transport and communication"@en;
-        skos:definition  "Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment."@en;
+        skos:prefLabel   "Transport"@en;
+        skos:definition  "Land allocated to infrastructure used for the transportation of goods or people."@en;
         skos:usageNote   "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en;
         skos:narrower    luc:airports_aerodromes;
         skos:narrower    luc:roads;
         skos:narrower    luc:railways;
-        skos:narrower    luc:ports_water_transport;
-        skos:narrower    luc:navigation_communication .
+        skos:narrower    luc:ports_water_transport .
 
 luc:airports_aerodromes
         a                skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:transport_communication;
+        skos:broader     luc:transport;
         skos:notation    "3.6.1";
         skos:prefLabel   "Airports/aerodromes"@en;
         skos:definition  "Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports)."@en .
 
 luc:roads  a             skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:transport_communication;
+        skos:broader     luc:transport;
         skos:notation    "3.6.2";
         skos:prefLabel   "Roads"@en;
         skos:definition  "The full roading corridor, including sealed road areas and unsealed roadside strips."@en .
 
 luc:railways  a          skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:transport_communication;
+        skos:broader     luc:transport;
         skos:notation    "3.6.3";
         skos:prefLabel   "Railways"@en;
         skos:definition  "Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance."@en .
@@ -1042,19 +1066,13 @@ luc:railways  a          skos:Concept;
 luc:ports_water_transport
         a                skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:transport_communication;
+        skos:broader     luc:transport;
         skos:notation    "3.6.4";
         skos:prefLabel   "Ports and water transport"@en;
-        skos:definition  "Harbour locations where ships dock to transfer people or cargo (e.g. ports, docks, wharves), including terrestrial parts and designated marine areas (harbours, navigational channels) that are specifically designated and controlled for activities associated with the port."@en;
-        skos:usageNote   "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."@en .
-
-luc:navigation_communication
-        a                skos:Concept;
-        skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:transport_communication;
-        skos:notation    "3.6.5";
-        skos:prefLabel   "Navigation and communication"@en;
-        skos:definition  "Navigation and communication infrastructure (e.g. radar stations, beacons, lighthouses, TV and radio transmission towers)."@en .
+        skos:definition  "Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port."@en;
+        skos:usageNote   "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."@en;
+        skos:example     "Ports, docks, and wharves."@en;
+        skos:example     "Harbours, navigational channels."@en .
 
 luc:mining  a            skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
@@ -1126,7 +1144,8 @@ luc:landfills  a         skos:Concept;
         skos:prefLabel   "Landfills"@en;
         skos:definition  "Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions."@en;
         skos:scopeNote   "Landfill gas recovery systems are classified as part of a landfill land use."@en;
-        skos:scopeNote   "Includes all class 1 to 5 landfills (e.g. landfills designed to receive inert construction materials are also included in this category)"@en .
+        skos:scopeNote   "Includes all class 1 to 5 landfills"@en;
+        skos:example     "Landfills designed to receive inert construction materials." .
 
 luc:transfer_stations_recycling
         a                skos:Concept;
@@ -1150,8 +1169,9 @@ luc:wastewater_treatment_land_application
         skos:broader     luc:waste_treatment_disposal;
         skos:notation    "3.8.4";
         skos:prefLabel   "Wastewater treatment – land application"@en;
-        skos:definition  "Areas where treated municipal wastewater is applied onto land for beneficial reuse (e.g. irrigation, groundwater recharge, soil fertility enhancement), following appropriate treatment processes to ensure environmental safety."@en;
-        skos:usageNote   " This is often likely to be an ancillary use."@en .
+        skos:definition  "Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety."@en;
+        skos:usageNote   " This is often likely to be an ancillary use."@en;
+        skos:exmaple     "Irrigation, groundwater recharge, soil fertility enhancement."@en .
 
 luc:stormwater_management
         a                skos:Concept;
@@ -1159,7 +1179,8 @@ luc:stormwater_management
         skos:broader     luc:waste_treatment_disposal;
         skos:notation    "3.8.5";
         skos:prefLabel   "Stormwater management"@en;
-        skos:definition  "Infrastructure aimed at controlling and mitigating stormwater runoff (e.g. detention basins, drainage systems, retention ponds, rain gardens, wetlands) to prevent flooding, erosion, and pollution."@en .
+        skos:definition  "Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution."@en;
+        skos:example     "Detention basins, drainage systems, retention ponds, rain gardens, wetlands."@en .
 
 luc:vacant_transitioning_land_urban
         a                skos:Concept;

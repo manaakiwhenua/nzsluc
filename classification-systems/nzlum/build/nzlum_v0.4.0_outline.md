@@ -366,31 +366,52 @@
       Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.
 
     - **3.1.2 Medium-density residential**
-      Areas featuring a moderate concentration of housing units per unit of land area (e.g. townhouses, terraced housing, low-rise apartments), often in suburban or semi-urban settings.
+      Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings.
       > [!NOTE]
       > Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.
+      
+      > [!TIP]
+      > **Example**
+      > Townhouses, terraced housing, low-rise apartments.
 
     - **3.1.3 Low-density residential**
       Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.
 
     - **3.1.4 Rural residential**
-      Residential properties with low-intensity (non-commercial) land management practices (e.g. hobby farms) on land in rural or peri-urban areas.
+      Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.
       > [!NOTE]
       > Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.
+      
+      > [!TIP]
+      > **Example**
+      > Hobby farms.
 
   - **3.2.0 Public recreation and services**
     Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.
 
     - **3.2.1 Outdoor recreation**
-      Land areas dedicated to leisure activities conducted in natural or semi-natural settings (e.g. parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves), typically with considerable unsealed vegetated areas.
+      Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas.
       > [!NOTE]
       > Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.
+      
+      > [!NOTE]
+      > The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks.
+      
+      > [!TIP]
+      > **Example**
+      > Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves.
 
     - **3.2.2 Indoor recreation**
-      Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures (e.g. sports centres, gyms, swimming pools, indoor arenas).
+      Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.
+      > [!TIP]
+      > **Example**
+      > Sports centres, gyms, swimming pools, indoor arenas.
 
     - **3.2.3 Community services**
-      Land used for providing essential services and facilities to support the local community (e.g. educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries).
+      Land used for providing essential services and facilities to support the local community.
+      > [!TIP]
+      > **Example**
+      > Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.
 
   - **3.3.0 Commercial**
     Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.
@@ -398,19 +419,34 @@
     > Central government offices when these are privately rented should be captured in this category, even if they are public-facing.
 
     - **3.3.1 Retail**
-      Areas used for the sale of goods and services directly to consumers (e.g. shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.).
+      Areas used for the sale of goods and services directly to consumers.
+      > [!TIP]
+      > **Example**
+      > Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.
 
     - **3.3.2 Office**
-      Land and buildings primarily used for administrative, professional, or managerial activities (e.g. corporate offices, professional services, banks, government buildings, business parks, coworking spaces).
+      Land and buildings primarily used for administrative, professional, or managerial activities.
+      > [!TIP]
+      > **Example**
+      > Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.
 
     - **3.3.3 Hospitality**
-      Land and buildings providing accommodation, food, and beverage services to the public (e.g. hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs).
+      Land and buildings providing accommodation, food, and beverage services to the public.
+      > [!TIP]
+      > **Example**
+      > Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.
 
     - **3.3.4 Entertainment**
-      Land areas and facilities offering leisure and recreational activities for public enjoyment (e.g. cinemas, theatres, amusement parks, casinos, concert venues).
+      Land areas and facilities offering leisure and recreational activities for public enjoyment.
+      > [!TIP]
+      > **Example**
+      > Cinemas, theatres, amusement parks, casinos, concert venues.
 
     - **3.3.5 Healthcare**
-      Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury (e.g. hospitals, specialist clinics, physiotherapists, medical offices, laboratories).
+      Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury.
+      > [!TIP]
+      > **Example**
+      > Hospitals, specialist clinics, physiotherapists, medical offices, laboratories
 
     - **3.3.6 Transportation & warehousing**
       Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.
@@ -426,18 +462,28 @@
       > Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.
 
     - **3.4.2 Food processing factory**
-      An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included (e.g. cannery, milk production plant).
+      An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included.
+      > [!TIP]
+      > **Example**
+      > Cannery; milk production plant.
 
     - **3.4.3 Major industrial complex**
-      An area with large-scale industrial use and significant infrastructure (e.g. car plant, paper mill).
+      An area with large-scale industrial use and significant infrastructure .
+      > [!TIP]
+      > **Example**
+      > Car plant, paper mill.
 
     - **3.4.4 Sawmill**
       An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.
 
     - **3.4.5 Farm buildings/infrastructure**
-      An area with buildings, sheds, and other infrastructure associated with farm enterprises (e.g. barns, silos, storage sheds, and irrigation systems) supporting agricultural operations.
+      An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations.
       > [!NOTE]
       > If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential.
+      
+      > [!TIP]
+      > **Example**
+      > Barns, silos, storage sheds, and irrigation systems.
 
     - **3.4.6 Abattoirs**
       Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
@@ -460,18 +506,30 @@
       Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity.
 
     - **3.5.5 Electricity substations and transmission**
-      Facilities and infrastructure associated with distribution and transmission of electrical power (e.g. substations, transformers, high-voltage transmission towers).
+      Facilities and infrastructure associated with distribution and transmission of electrical power.
+      > [!TIP]
+      > **Example**
+      > Substations, transformers, high-voltage transmission towers.
 
     - **3.5.6 Gas treatment, storage, and transmission**
-      Facilities and infrastructure for processing, storage, and transport of natural gas (e.g. treatment plants, storage facilities, pipelines).
+      Facilities and infrastructure for processing, storage, and transport of natural gas.
+      > [!TIP]
+      > **Example**
+      > Treatment plants, storage facilities, pipelines.
 
     - **3.5.7 Water extraction and transmission**
       Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs.
       > [!NOTE]
       > Includes drinking water reservoirs.
 
-  - **3.6.0 Transport and communication**
-    Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment.
+    - **3.5.8 Navigation and communication**
+      Navigation and communication infrastructure.
+      > [!TIP]
+      > **Example**
+      > Radar stations, beacons, lighthouses, TV and radio transmission towers.
+
+  - **3.6.0 Transport**
+    Land allocated to infrastructure used for the transportation of goods or people.
     > [!TIP]
     > Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
 
@@ -485,12 +543,17 @@
       Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.
 
     - **3.6.4 Ports and water transport**
-      Harbour locations where ships dock to transfer people or cargo (e.g. ports, docks, wharves), including terrestrial parts and designated marine areas (harbours, navigational channels) that are specifically designated and controlled for activities associated with the port.
+      Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port.
       > [!TIP]
       > The water attribute can be used to differentiate the terrestrial and marine parts of the same facility.
-
-    - **3.6.5 Navigation and communication**
-      Navigation and communication infrastructure (e.g. radar stations, beacons, lighthouses, TV and radio transmission towers).
+      
+      > [!TIP]
+      > **Example**
+      > Ports, docks, and wharves.
+      
+      > [!TIP]
+      > **Example**
+      > Harbours, navigational channels.
 
   - **3.7.0 Mining**
     Mining and extractive industries (including salt extraction from evaporation basins).
@@ -521,7 +584,11 @@
       > Landfill gas recovery systems are classified as part of a landfill land use.
       
       > [!NOTE]
-      > Includes all class 1 to 5 landfills (e.g. landfills designed to receive inert construction materials are also included in this category)
+      > Includes all class 1 to 5 landfills
+      
+      > [!TIP]
+      > **Example**
+      > Landfills designed to receive inert construction materials.
 
     - **3.8.2 Transfer stations and recycling facilities**
       Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites.
@@ -530,12 +597,15 @@
       Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines.
 
     - **3.8.4 Wastewater treatment – land application**
-      Areas where treated municipal wastewater is applied onto land for beneficial reuse (e.g. irrigation, groundwater recharge, soil fertility enhancement), following appropriate treatment processes to ensure environmental safety.
+      Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.
       > [!TIP]
       >  This is often likely to be an ancillary use.
 
     - **3.8.5 Stormwater management**
-      Infrastructure aimed at controlling and mitigating stormwater runoff (e.g. detention basins, drainage systems, retention ponds, rain gardens, wetlands) to prevent flooding, erosion, and pollution.
+      Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.
+      > [!TIP]
+      > **Example**
+      > Detention basins, drainage systems, retention ponds, rain gardens, wetlands.
 
   - **3.9.0 Vacant and transitioning land**
     This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
