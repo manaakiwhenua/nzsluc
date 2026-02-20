@@ -135,7 +135,10 @@ luc:short_rotation_seasonal_cropping a skos:Concept ;
   skos:definition "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en ;
   skos:scopeNote "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."@en ;
   skos:scopeNote "Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class."@en ;
+  skos:scopeNote "The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years."@en ;
   skos:usageNote "If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary)."@en ;
+  skos:changeNote "The explicit five year periodicity was added in v0.4.0."@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/65> ;
   skos:narrower
     luc:arable_cropping,
     luc:arable_mixed_livestock_cropping,
