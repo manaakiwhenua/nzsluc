@@ -1,51 +1,51 @@
 | Collection | Notation | Term |
 |---|---|---|
-| Animal | milking walk through  |  |
-|  | milking rotary |  |
-|  | milking hand |  |
+| Animal | barn laid |  |
 |  | caged |  |
 |  | free range |  |
-|  | barn laid |  |
+|  | milking hand |  |
 |  | milking herringbone |  |
-| Crop | tillage conservation |  |
-|  | cropping rotational |  |
-|  | residues mulched |  |
-|  | organic |  |
-|  | residues heavily grazed |  |
-|  | cropping multiple |  |
-|  | biodynamic |  |
-|  | cropping cover |  |
-|  | crop pasture rotation |  |
-|  | fallow chemical |  |
-|  | tillage conventional |  |
-|  | precision agriculture |  |
-|  | residues intact |  |
-|  | controlled traffic farming |  |
-|  | residues burnt |  |
-|  | cropping opportunistic |  |
+|  | milking rotary |  |
+|  | milking walk through  |  |
+| Crop | biodynamic |  |
 |  | contour banks |  |
-|  | fallow mechanical |  |
+|  | controlled traffic farming |  |
+|  | crop pasture rotation |  |
 |  | cropping continuous |  |
-|  | pasture cropping |  |
-|  | cropping strip |  |
-|  | residues incorporated |  |
+|  | cropping cover |  |
+|  | cropping multiple |  |
+|  | cropping opportunistic |  |
+|  | cropping rotational |  |
 |  | cropping row alley |  |
-|  | residues baled |  |
-| Grazing | grazing tactical |  |
-|  | grazing set stocking |  |
-|  | grazing rotational |  |
-| Horticulture | mulching/matting |  |
-|  | open growing |  |
-|  | hedgerow |  |
-|  | free standing |  |
-|  | fully protected |  |
-|  | trellis/espalier |  |
-|  | semi-protected |  |
-| Irrigation | irrigation surface |  |
-|  | irrigation spray |  |
-|  | irrigation drip |  |
-| Pasture | crop pasture rotation |  |
-|  | precision agriculture |  |
+|  | cropping strip |  |
+|  | fallow chemical |  |
+|  | fallow mechanical |  |
 |  | organic |  |
-|  | biodynamic |  |
 |  | pasture cropping |  |
+|  | precision agriculture |  |
+|  | residues baled |  |
+|  | residues burnt |  |
+|  | residues heavily grazed |  |
+|  | residues incorporated |  |
+|  | residues intact |  |
+|  | residues mulched |  |
+|  | tillage conservation |  |
+|  | tillage conventional |  |
+| Grazing | grazing rotational |  |
+|  | grazing set stocking |  |
+|  | grazing tactical |  |
+| Horticulture | free standing |  |
+|  | fully protected |  |
+|  | hedgerow |  |
+|  | mulching/matting |  |
+|  | open growing |  |
+|  | semi-protected |  |
+|  | trellis/espalier |  |
+| Irrigation | irrigation drip |  |
+|  | irrigation spray |  |
+|  | irrigation surface |  |
+| Pasture | biodynamic |  |
+|  | crop pasture rotation |  |
+|  | organic |  |
+|  | pasture cropping |  |
+|  | precision agriculture |  |
