@@ -391,8 +391,10 @@
       > Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.
       
       > [!TIP]
-      > **Example**
-      > Hobby farms.
+      > As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.
+      
+      > [!TIP]
+      > Properties in this size interval and without a dwelling could be in transition to residential.
 
   - **3.2.0 Public recreation and services**
     Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.

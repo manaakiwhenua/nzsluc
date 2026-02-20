@@ -774,14 +774,16 @@ luc:low_density_residential
         skos:definition  "Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density."@en .
 
 luc:rural_residential
-        a                skos:Concept;
-        skos:inScheme    lus:nzlum0.4.0;
-        skos:broader     luc:residential;
-        skos:notation    "3.1.4";
-        skos:prefLabel   "Rural residential"@en;
-        skos:definition  "Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas."@en;
-        skos:scopeNote   "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard."@en;
-        skos:example     "Hobby farms."@en .
+        a                    skos:Concept;
+        skos:inScheme        lus:nzlum0.4.0;
+        skos:broader         luc:residential;
+        skos:notation        "3.1.4";
+        skos:prefLabel       "Rural residential"@en;
+        skos:definition      "Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas."@en;
+        skos:scopeNote       "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard."@en;
+        skos:usageNote       "As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll."@en;
+        skos:usageNote       "Properties in this size interval and without a dwelling could be in transition to residential."@en;
+        skos:historicalNote  "In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use."@en .
 
 luc:public_recreation_services
         a                skos:Concept;
