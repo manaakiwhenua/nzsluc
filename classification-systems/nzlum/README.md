@@ -8,7 +8,7 @@
 >[!NOTE]
 > This will be controlled with GNU Make:
 > ```bash
-> make build/nzlum.ttl
+> make build/nzlum-{version}.ttl
 > make shacl
 > make tables-all
 > make outline-all
@@ -67,7 +67,7 @@ An overview of the class hierarchy is available:
 - As readable text: [nzlum_v0.4.0_outline.md](build/nzlum_v0.4.0_outline.md)
 - As a table in text: [nzlum_v0.4.0.md](build/nzlum_v0.4.0.md)
 - As a table in XLSX: [nzlum_v0.4.0.xlsx](build/nzlum_v0.4.0.xlsx)
-- As RDF: [nzlum.ttl](build/nzlum.ttl)
+- As RDF: [nzlum.ttl](build/nzlum-0.4.0.ttl)
 
 ## Data structure
 

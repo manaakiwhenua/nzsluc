@@ -9,8 +9,8 @@
 @prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
 
 luc:built_environment a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
-  skos:topConceptOf lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
+  skos:topConceptOf lus:nzlum0.4.0 ;
   skos:notation "3.0.0" ;
   skos:prefLabel "Built environment"@en ;
   skos:definition "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."@en ;
@@ -28,7 +28,7 @@ luc:built_environment a skos:Concept ;
 .
 
 luc:residential a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.1.0" ;
   skos:prefLabel "Residential"@en ;
@@ -43,7 +43,7 @@ luc:residential a skos:Concept ;
 .
 
 luc:high_density_residential a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:residential ;
   skos:notation "3.1.1" ;
   skos:prefLabel "High-density residential"@en ;
@@ -51,7 +51,7 @@ luc:high_density_residential a skos:Concept ;
 .
 
 luc:medium_density_residential a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:residential ;
   skos:notation "3.1.2" ;
   skos:prefLabel "Medium-density residential"@en ;
@@ -60,7 +60,7 @@ luc:medium_density_residential a skos:Concept ;
 .
 
 luc:low_density_residential a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:residential ;
   skos:notation "3.1.3" ;
   skos:prefLabel "Low-density residential"@en ;
@@ -68,7 +68,7 @@ luc:low_density_residential a skos:Concept ;
 .
 
 luc:rural_residential a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:residential ;
   skos:notation "3.1.4" ;
   skos:prefLabel "Rural residential"@en ;
@@ -77,7 +77,7 @@ luc:rural_residential a skos:Concept ;
 .
 
 luc:public_recreation_services a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.2.0" ;
   skos:prefLabel "Public recreation and services"@en ;
@@ -86,7 +86,7 @@ luc:public_recreation_services a skos:Concept ;
 .
 
 luc:outdoor_recreation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:public_recreation_services ;
   skos:notation "3.2.1" ;
   skos:prefLabel "Outdoor recreation"@en ;
@@ -96,7 +96,7 @@ luc:outdoor_recreation a skos:Concept ;
 .
 
 luc:indoor_recreation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:public_recreation_services ;
   skos:notation "3.2.2" ;
   skos:prefLabel "Indoor recreation"@en ;
@@ -104,7 +104,7 @@ luc:indoor_recreation a skos:Concept ;
 .
 
 luc:community_services a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:public_recreation_services ;
   skos:notation "3.2.3" ;
   skos:prefLabel "Community services"@en ;
@@ -112,7 +112,7 @@ luc:community_services a skos:Concept ;
 .
 
 luc:commercial a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.3.0" ;
   skos:prefLabel "Commercial"@en ;
@@ -128,7 +128,7 @@ luc:commercial a skos:Concept ;
 .
 
 luc:retail a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.1" ;
   skos:prefLabel "Retail"@en ;
@@ -136,7 +136,7 @@ luc:retail a skos:Concept ;
 .
 
 luc:office a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.2" ;
   skos:prefLabel "Office"@en ;
@@ -144,7 +144,7 @@ luc:office a skos:Concept ;
 .
 
 luc:hospitality a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.3" ;
   skos:prefLabel "Hospitality"@en ;
@@ -152,7 +152,7 @@ luc:hospitality a skos:Concept ;
 .
 
 luc:entertainment a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.4" ;
   skos:prefLabel "Entertainment"@en ;
@@ -160,7 +160,7 @@ luc:entertainment a skos:Concept ;
 .
 
 luc:healthcare a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.5" ;
   skos:prefLabel "Healthcare"@en ;
@@ -168,7 +168,7 @@ luc:healthcare a skos:Concept ;
 .
 
 luc:transportation_warehousing_commercial a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:commercial ;
   skos:notation "3.3.6" ;
   skos:prefLabel "Transportation & warehousing"@en ;
@@ -177,7 +177,7 @@ luc:transportation_warehousing_commercial a skos:Concept ;
 .
 
 luc:manufacturing_industrial a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.4.0" ;
   skos:prefLabel "Manufacturing and industrial"@en ;
@@ -192,7 +192,7 @@ luc:manufacturing_industrial a skos:Concept ;
 .
 
 luc:general_purpose_factory a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.1" ;
   skos:prefLabel "General purpose factory"@en ;
@@ -201,7 +201,7 @@ luc:general_purpose_factory a skos:Concept ;
 .
 
 luc:food_processing_factory a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.2" ;
   skos:prefLabel "Food processing factory"@en ;
@@ -209,7 +209,7 @@ luc:food_processing_factory a skos:Concept ;
 .
 
 luc:major_industrial_complex a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.3" ;
   skos:prefLabel "Major industrial complex"@en ;
@@ -217,7 +217,7 @@ luc:major_industrial_complex a skos:Concept ;
 .
 
 luc:sawmill a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.4" ;
   skos:prefLabel "Sawmill"@en ;
@@ -225,7 +225,7 @@ luc:sawmill a skos:Concept ;
 .
 
 luc:farm_buildings_infrastructure a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.5" ;
   skos:prefLabel "Farm buildings/infrastructure"@en ;
@@ -234,7 +234,7 @@ luc:farm_buildings_infrastructure a skos:Concept ;
 .
 
 luc:abattoirs a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:manufacturing_industrial ;
   skos:notation "3.4.6" ;
   skos:prefLabel "Abattoirs"@en ;
@@ -242,7 +242,7 @@ luc:abattoirs a skos:Concept ;
 .
 
 luc:utilities a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.5.0" ;
   skos:prefLabel "Utilities"@en ;
@@ -258,7 +258,7 @@ luc:utilities a skos:Concept ;
 .
 
 luc:fuel_powered_electricity_generation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.1" ;
   skos:prefLabel "Fuel powered electricity generation"@en ;
@@ -266,7 +266,7 @@ luc:fuel_powered_electricity_generation a skos:Concept ;
 .
 
 luc:hydroelectricity_generation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.2" ;
   skos:prefLabel "Hydroelectricity generation"@en ;
@@ -275,7 +275,7 @@ luc:hydroelectricity_generation a skos:Concept ;
 .
 
 luc:wind_electricity_generation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.3" ;
   skos:prefLabel "Wind electricity generation"@en ;
@@ -283,7 +283,7 @@ luc:wind_electricity_generation a skos:Concept ;
 .
 
 luc:solar_electricity_generation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.4" ;
   skos:prefLabel "Solar electricity generation"@en ;
@@ -291,7 +291,7 @@ luc:solar_electricity_generation a skos:Concept ;
 .
 
 luc:electricity_substations_transmission a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.5" ;
   skos:prefLabel "Electricity substations and transmission"@en ;
@@ -299,7 +299,7 @@ luc:electricity_substations_transmission a skos:Concept ;
 .
 
 luc:gas_treatment_storage_transmission a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.6" ;
   skos:prefLabel "Gas treatment, storage, and transmission"@en ;
@@ -307,7 +307,7 @@ luc:gas_treatment_storage_transmission a skos:Concept ;
 .
 
 luc:water_extraction_transmission a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.7" ;
   skos:prefLabel "Water extraction and transmission"@en ;
@@ -316,7 +316,7 @@ luc:water_extraction_transmission a skos:Concept ;
 .
 
 luc:transport_communication a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.6.0" ;
   skos:prefLabel "Transport and communication"@en ;
@@ -331,7 +331,7 @@ luc:transport_communication a skos:Concept ;
 .
 
 luc:airports_aerodromes a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:transport_communication ;
   skos:notation "3.6.1" ;
   skos:prefLabel "Airports/aerodromes"@en ;
@@ -339,7 +339,7 @@ luc:airports_aerodromes a skos:Concept ;
 .
 
 luc:roads a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:transport_communication ;
   skos:notation "3.6.2" ;
   skos:prefLabel "Roads"@en ;
@@ -347,7 +347,7 @@ luc:roads a skos:Concept ;
 .
 
 luc:railways a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:transport_communication ;
   skos:notation "3.6.3" ;
   skos:prefLabel "Railways"@en ;
@@ -355,7 +355,7 @@ luc:railways a skos:Concept ;
 .
 
 luc:ports_water_transport a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:transport_communication ;
   skos:notation "3.6.4" ;
   skos:prefLabel "Ports and water transport"@en ;
@@ -364,7 +364,7 @@ luc:ports_water_transport a skos:Concept ;
 .
 
 luc:navigation_communication a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:transport_communication ;
   skos:notation "3.6.5" ;
   skos:prefLabel "Navigation and communication"@en ;
@@ -372,7 +372,7 @@ luc:navigation_communication a skos:Concept ;
 .
 
 luc:mining a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.7.0" ;
   skos:prefLabel "Mining"@en ;
@@ -387,7 +387,7 @@ luc:mining a skos:Concept ;
 .
 
 luc:mines a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:mining ;
   skos:notation "3.7.1" ;
   skos:prefLabel "Mines"@en ;
@@ -395,7 +395,7 @@ luc:mines a skos:Concept ;
 .
 
 luc:quarries a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:mining ;
   skos:notation "3.7.2" ;
   skos:prefLabel "Quarries"@en ;
@@ -403,7 +403,7 @@ luc:quarries a skos:Concept ;
 .
 
 luc:tailings a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:mining ;
   skos:notation "3.7.3" ;
   skos:prefLabel "Tailings"@en ;
@@ -411,7 +411,7 @@ luc:tailings a skos:Concept ;
 .
 
 luc:evaporation_basins a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:mining ;
   skos:notation "3.7.4" ;
   skos:prefLabel "Evaporation basins"@en ;
@@ -419,7 +419,7 @@ luc:evaporation_basins a skos:Concept ;
 .
 
 luc:extractive_industry_not_in_use a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:mining ;
   skos:notation "3.7.5" ;
   skos:prefLabel "Extractive industry not in use"@en ;
@@ -427,7 +427,7 @@ luc:extractive_industry_not_in_use a skos:Concept ;
 .
 
 luc:waste_treatment_disposal a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.8.0" ;
   skos:prefLabel "Waste treatment and disposal"@en ;
@@ -441,7 +441,7 @@ luc:waste_treatment_disposal a skos:Concept ;
 .
 
 luc:landfills a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:waste_treatment_disposal ;
   skos:notation "3.8.1" ;
   skos:prefLabel "Landfills"@en ;
@@ -451,7 +451,7 @@ luc:landfills a skos:Concept ;
 .
 
 luc:transfer_stations_recycling a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:waste_treatment_disposal ;
   skos:notation "3.8.2" ;
   skos:prefLabel "Transfer stations and recycling facilities"@en ;
@@ -459,7 +459,7 @@ luc:transfer_stations_recycling a skos:Concept ;
 .
 
 luc:municipal_wastewater a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:waste_treatment_disposal ;
   skos:notation "3.8.3" ;
   skos:prefLabel "Municipal wastewater"@en ;
@@ -467,7 +467,7 @@ luc:municipal_wastewater a skos:Concept ;
 .
 
 luc:wastewater_treatment_land_application a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:waste_treatment_disposal ;
   skos:notation "3.8.4" ;
   skos:prefLabel "Wastewater treatment – land application"@en ;
@@ -476,7 +476,7 @@ luc:wastewater_treatment_land_application a skos:Concept ;
 .
 
 luc:stormwater_management a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:waste_treatment_disposal ;
   skos:notation "3.8.5" ;
   skos:prefLabel "Stormwater management"@en ;
@@ -484,35 +484,37 @@ luc:stormwater_management a skos:Concept ;
 .
 
 luc:vacant_transitioning_land_urban a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.9.0" ;
   skos:prefLabel "Vacant and transitioning land"@en ;
-  skos:definition "Areas that are currently unused or undergoing transition from one land use to another, with a clear transition towards or within built-environment land uses."@en ;
-  skos:narrower luc:vacant_land, luc:greenfield_development, luc:brownfield_development ;
+  skos:definition "This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment."@en ;
+  skos:narrower luc:brownfield_development, luc:greenfield_development, luc:vacant_land ;
 .
 
-luc:vacant_land a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+luc:brownfield_development a skos:Concept ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:vacant_transitioning_land_urban ;
   skos:notation "3.9.1" ;
-  skos:prefLabel "Vacant land"@en ;
-  skos:definition "Derelict land and developed land that is idle."@en ;
+  skos:prefLabel "Brownfield development"@en ;
+  skos:definition "Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities."@en ;
+  skos:scopeNote "May include residential areas undergoing infill development that increase housing density."@en ;
+  skos:changeNote "Notation changed from 3.9.3 to 3.9.1 at v0.4.0" ;
 .
 
 luc:greenfield_development a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:vacant_transitioning_land_urban ;
   skos:notation "3.9.2" ;
   skos:prefLabel "Greenfield development"@en ;
   skos:definition "Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses."@en ;
 .
 
-luc:brownfield_development a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+luc:vacant_land a skos:Concept ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:vacant_transitioning_land_urban ;
   skos:notation "3.9.3" ;
-  skos:prefLabel "Brownfield development"@en ;
-  skos:definition "Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities."@en ;
-  skos:scopeNote "May include residential areas undergoing infill development that increase housing density."@en ;
+  skos:prefLabel "Idle and derelict land"@en ;
+  skos:definition "Derelict land and developed land that is idle."@en ;
+  skos:changeNote "Notation changed from 3.9.1 to 3.9.3 at v0.4.0" ;
 .

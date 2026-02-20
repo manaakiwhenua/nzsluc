@@ -1,7 +1,7 @@
 # NZLUM outline (https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0)
 
 - **1.0.0 Conservation and Minimal Use**
-  Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
+  Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).
   > [!NOTE]
   > Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.
   
@@ -95,16 +95,24 @@
     - **1.3.8 Carbon forest**
       Retained (non-planted) indigenous vegetation set aside for carbon credits.
 
-  - **1.4.0 Unused land and land in transition**
-    Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species.
-    > [!TIP]
-    > Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information.
+  - **1.4.0 Unused and transitioning land**
+    Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.
+    > [!NOTE]
+    > Corridors and roadside areas may fit under this class.
+    
+    > [!NOTE]
+    > Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included.
+    
+    > [!NOTE]
+    > Does not per se include land undergoing natural succession in the context of changing plant species.
 
-    - **1.4.1 Unused land**
-      Land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
+    - **1.4.1 Rehabilitating land**
+      Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state.
+      > [!NOTE]
+      > This may include riparian plantings.
 
-    - **1.4.2 Land undergoing rehabilitation**
-      Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings).
+    - **1.4.2 Unused land**
+      Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
 
 - **2.0.0 Production agriculture and plantations**
   Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.
@@ -304,24 +312,24 @@
     - **2.7.5 Irrigation reservoirs and canals**
       Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes.
 
-  - **2.8.0 Land in transition**
+  - **2.8.0 Vacant and transitioning land**
     As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.
     > [!NOTE]
     > In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.
 
-    - **2.8.1 Unused degraded land**
+    - **2.8.1 Rehabilitating land**
+      Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
+
+    - **2.8.2 Abandoned land**
+      Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
+
+    - **2.8.3 Degraded land**
       Unused land that is degraded through erosion or flood events that is not being rehabilitated.
       > [!TIP]
       > Can include contaminated land.
 
-    - **2.8.2 No defined use**
+    - **2.8.4 No defined use**
       Land cleared of vegetation where the current proposed land use is unknown.
-
-    - **2.8.3 Land undergoing rehabilitation**
-      Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
-
-    - **2.8.4 Abandoned land**
-      Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
 
 - **3.0.0 Built environment**
   Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.
@@ -512,15 +520,15 @@
       Infrastructure aimed at controlling and mitigating stormwater runoff (e.g. detention basins, drainage systems, retention ponds, rain gardens, wetlands) to prevent flooding, erosion, and pollution.
 
   - **3.9.0 Vacant and transitioning land**
-    Areas that are currently unused or undergoing transition from one land use to another, with a clear transition towards or within built-environment land uses.
+    This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
 
-    - **3.9.1 Vacant land**
-      Derelict land and developed land that is idle.
+    - **3.9.1 Brownfield development**
+      Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities.
+      > [!NOTE]
+      > May include residential areas undergoing infill development that increase housing density.
 
     - **3.9.2 Greenfield development**
       Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses.
 
-    - **3.9.3 Brownfield development**
-      Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities.
-      > [!NOTE]
-      > May include residential areas undergoing infill development that increase housing density.
+    - **3.9.3 Idle and derelict land**
+      Derelict land and developed land that is idle.

@@ -1,282 +1,282 @@
 | Collection | Notation | Term |
 |---|---|---|
-| Animals | cattle |  |
+| Animals | sheep meat |  |
 |  | cattle dairy |  |
-|  | bees |  |
-|  | sheep meat |  |
-|  | molluscs |  |
-|  | cats |  |
-|  | goats dairy |  |
-|  | sheep |  |
-|  | chickens |  |
-|  | ostriches |  |
-|  | pigs |  |
-|  | dogs |  |
-|  | finfish |  |
-|  | crocodiles |  |
-|  | geese |  |
-|  | crustaceans |  |
-|  | turkeys |  |
-|  | sheep dairy |  |
 |  | sheep stud |  |
-|  | goats wool |  |
-|  | goats meat |  |
-|  | ducks |  |
-|  | goats |  |
-|  | cattle meat |  |
-|  | chickens meat |  |
-|  | cattle stud |  |
-|  | emus |  |
-|  | horses |  |
+|  | molluscs |  |
+|  | finfish |  |
+|  | bees |  |
 |  | deer |  |
-|  | chickens eggs |  |
+|  | cattle |  |
+|  | crustaceans |  |
+|  | sheep dairy |  |
+|  | ostriches |  |
+|  | cattle meat |  |
 |  | sheep wool |  |
+|  | turkeys |  |
+|  | chickens eggs |  |
 |  | goats stud |  |
-| Cereals | barley |  |
-|  | canary_seed |  |
-|  | rye cereal |  |
-|  | oats |  |
+|  | goats |  |
+|  | goats wool |  |
+|  | cats |  |
+|  | pigs |  |
+|  | sheep |  |
+|  | crocodiles |  |
+|  | horses |  |
+|  | cattle stud |  |
+|  | chickens meat |  |
+|  | dogs |  |
+|  | emus |  |
+|  | goats dairy |  |
+|  | geese |  |
+|  | chickens |  |
+|  | ducks |  |
+|  | goats meat |  |
+| Cereals | buckwheat |  |
+|  | rice |  |
 |  | triticale |  |
-|  | sorghum grain |  |
-|  | buckwheat |  |
-|  | quinoa |  |
+|  | oats |  |
 |  | millet and pancium |  |
+|  | barley |  |
+|  | quinoa |  |
+|  | sorghum grain |  |
 |  | wheat |  |
 |  | maize |  |
-|  | rice |  |
-| Crop | coffee |  |
-|  | oil palms |  |
+|  | canary_seed |  |
+|  | rye cereal |  |
+| Crop | essential oil crops |  |
+|  | tea |  |
 |  | jute |  |
-|  | horseradish |  |
-|  | pyrethrum |  |
-|  | aloe vera |  |
+|  | cocoa |  |
 |  | wasabi |  |
+|  | aloe vera |  |
+|  | hops |  |
+|  | sugar cane |  |
+|  | coffee |  |
+|  | poppies  |  |
 |  | tobacco |  |
+|  | horseradish |  |
+|  | cotton seed |  |
+|  | pyrethrum |  |
 |  | ginger |  |
+|  | pharmaceutical and cosmetic plants |  |
+|  | oil palms |  |
 |  | pepper |  |
 |  | cotton |  |
-|  | cotton seed |  |
-|  | cocoa |  |
-|  | poppies  |  |
-|  | sugar cane |  |
-|  | essential oil crops |  |
-|  | tea |  |
-|  | hops |  |
-|  | pharmaceutical and cosmetic plants |  |
 | Flowers and bulbs | bulbs |  |
-|  | flowers and foliage |  |
-|  | orchids |  |
-|  | calendula |  |
 |  | proteas |  |
-|  | chrysanthemums |  |
-|  | australian native flowers |  |
-|  | gerberas |  |
-|  | tulips |  |
+|  | carnations |  |
 |  | lavender |  |
+|  | lilies |  |
 |  | roses |  |
 |  | tropical flowers |  |
-|  | carnations |  |
-|  | lilies |  |
+|  | chrysanthemums |  |
+|  | calendula |  |
+|  | tulips |  |
 |  | daffodils |  |
-| Forest | carbon forest standard |  |
-|  | bamboo |  |
-|  | carbon forest permanent |  |
-|  | tea tree |  |
+|  | gerberas |  |
+|  | australian native flowers |  |
+|  | flowers and foliage |  |
+|  | orchids |  |
+| Forest | christmas trees |  |
 |  | sandalwood |  |
-|  | sawlogs |  |
-|  | christmas trees |  |
+|  | bamboo |  |
 |  | eucalyptus oil |  |
+|  | tea tree |  |
 |  | oil mallee |  |
 |  | pulp wood |  |
-| Fruit | mulberries |  |
-|  | boysenberries |  |
-|  | custard apples |  |
-|  | jackfruit |  |
-|  | oranges |  |
-|  | pawpaws |  |
-|  | dragon fruit |  |
-|  | lemons |  |
-|  | pears |  |
-|  | kiwifruit |  |
-|  | pepinos |  |
-|  | apricots |  |
+|  | sawlogs |  |
+|  | carbon forest permanent |  |
+|  | carbon forest standard |  |
+| Fruit | cranberries |  |
 |  | pineapples |  |
 |  | persimmons |  |
-|  | watermelons |  |
-|  | longans |  |
-|  | feijoa |  |
-|  | guavas |  |
-|  | lychees |  |
-|  | mangoes |  |
-|  | chokos |  |
 |  | blackcurrants |  |
-|  | melons |  |
-|  | coconut |  |
-|  | passionfruit |  |
-|  | pomegranate |  |
-|  | pears nashi |  |
-|  | blueberries |  |
-|  | tangelos |  |
-|  | gooseberries |  |
-|  | carambolas |  |
-|  | cranberries |  |
-|  | grapefruit |  |
-|  | peacharines |  |
-|  | raspberries |  |
-|  | loquats |  |
-|  | olives |  |
-|  | tamarillo |  |
-|  | rosella |  |
 |  | babacos |  |
-|  | figs |  |
-|  | grapes |  |
+|  | loquats |  |
+|  | boysenberries |  |
+|  | mulberries |  |
 |  | apples |  |
-|  | strawberries |  |
-|  | blackberries |  |
-|  | kumquat |  |
-|  | peaches |  |
-|  | dates |  |
-|  | nectarines |  |
-|  | cherries |  |
-|  | limes |  |
-|  | redcurrants |  |
 |  | mangosteen |  |
-|  | grapes dried |  |
-|  | quinces |  |
-|  | grapes table |  |
-|  | avocados |  |
-|  | grapes wine |  |
-|  | bananas |  |
-|  | loganberries |  |
+|  | peacharines |  |
+|  | coconut |  |
+|  | chokos |  |
+|  | lychees |  |
+|  | grapes |  |
+|  | apricots |  |
+|  | mangoes |  |
+|  | olives |  |
 |  | plums |  |
-|  | rambutans |  |
+|  | guavas |  |
+|  | grapes wine |  |
+|  | oranges |  |
+|  | pawpaws |  |
+|  | quinces |  |
 |  | mandarins |  |
+|  | redcurrants |  |
+|  | tangelos |  |
+|  | grapes table |  |
+|  | pomegranate |  |
+|  | passionfruit |  |
+|  | kiwifruit |  |
+|  | gooseberries |  |
+|  | peaches |  |
+|  | feijoa |  |
+|  | kumquat |  |
+|  | limes |  |
+|  | nectarines |  |
+|  | tamarillo |  |
+|  | bananas |  |
+|  | custard apples |  |
+|  | cherries |  |
+|  | loganberries |  |
+|  | pears nashi |  |
+|  | pears |  |
+|  | rosella |  |
+|  | carambolas |  |
+|  | lemons |  |
+|  | melons |  |
+|  | dates |  |
+|  | pepinos |  |
+|  | watermelons |  |
+|  | jackfruit |  |
+|  | blackberries |  |
+|  | longans |  |
+|  | raspberries |  |
+|  | blueberries |  |
+|  | dragon fruit |  |
+|  | grapefruit |  |
+|  | rambutans |  |
+|  | avocados |  |
+|  | strawberries |  |
+|  | grapes dried |  |
+|  | figs |  |
 | Horticulture | turf |  |
-| Mines | nickel |  |
-|  | coal_brown  |  |
-|  | stone |  |
-|  | aluminium |  |
-|  | diamonds_rough  |  |
-|  | shingle |  |
-|  | uranium |  |
-|  | gold |  |
-|  | copper |  |
-|  | rare_earths  |  |
+| Mines | aluminium |  |
 |  | salt |  |
-|  | alumina |  |
-|  | mineral_sands  |  |
-|  | ironsand |  |
-|  | silica_sand |  |
-|  | zinc |  |
+|  | stone |  |
+|  | copper |  |
 |  | coal |  |
-|  | metal |  |
-|  | bauxite |  |
-|  | zeolite |  |
-|  | lead |  |
-|  | iron_ore |  |
+|  | zinc |  |
 |  | coal_black  |  |
-| Nuts | pecan nuts |  |
-|  | chestnuts |  |
+|  | rare_earths  |  |
+|  | iron_ore |  |
+|  | lead |  |
+|  | zeolite |  |
+|  | coal_brown  |  |
+|  | uranium |  |
+|  | diamonds_rough  |  |
+|  | silica_sand |  |
+|  | bauxite |  |
+|  | gold |  |
+|  | alumina |  |
+|  | metal |  |
+|  | nickel |  |
+|  | shingle |  |
+|  | ironsand |  |
+|  | mineral_sands  |  |
+| Nuts | pinenuts |  |
+|  | pecan nuts |  |
 |  | walnuts |  |
-|  | macadamias |  |
-|  | hazelnuts |  |
-|  | pinenuts |  |
-|  | almonds |  |
 |  | cashews |  |
-|  | pistachios |  |
+|  | macadamias |  |
 |  | brazil nuts |  |
-| Oilseeds | sesame |  |
-|  | flaxseed |  |
-|  | sunflower |  |
-|  | canola |  |
-|  | safflower |  |
-|  | mustard  |  |
+|  | almonds |  |
+|  | pistachios |  |
+|  | hazelnuts |  |
+|  | chestnuts |  |
+| Oilseeds | canola |  |
 |  | soybeans |  |
+|  | mustard  |  |
+|  | sunflower |  |
 |  | chia |  |
+|  | safflower |  |
+|  | sesame |  |
 |  | peanuts |  |
+|  | flaxseed |  |
 | Pasture | yarrow |  |
 |  | sorghum forage |  |
-|  | lucerne |  |
-|  | clover |  |
 |  | turnips forage |  |
+|  | lucerne |  |
 |  | plantain |  |
-| Pulses | chickpeas |  |
-|  | lentils |  |
-|  | navy bean |  |
+|  | clover |  |
+| Pulses | navy bean |  |
+|  | azuki bean |  |
+|  | lupins |  |
 |  | vetches |  |
+|  | field beans |  |
+|  | lentils |  |
+|  |  |  |
 |  | broad beans |  |
+|  | chickpeas |  |
+|  | cowpea |  |
 |  | pigeon pea |  |
 |  | field peas |  |
-|  | cowpea |  |
-|  | field beans |  |
-|  | azuki bean |  |
-|  |  |  |
-|  | lupins |  |
-| Vegetables and herbs | sprouts |  |
-|  | chervil |  |
-|  | chinese cabbages |  |
-|  | chicory |  |
-|  | tomatoes |  |
-|  | peas |  |
-|  | peppermint |  |
-|  | burdock |  |
-|  | onions |  |
-|  | oregano |  |
-|  | swedes |  |
-|  | vegetables |  |
-|  | capsicums |  |
-|  | kale |  |
-|  | mushrooms |  |
-|  | beetroot |  |
-|  | potatoes |  |
-|  | truffles |  |
-|  | lettuces |  |
-|  | cauliflowers |  |
-|  | coriander |  |
-|  | lemongrass |  |
-|  | silverbeet and spinach |  |
-|  | brussels sprouts |  |
-|  | arrowroot |  |
-|  | rosemary |  |
-|  | gherkins |  |
-|  | kumara |  |
-|  | fennel |  |
-|  | snowpeas |  |
-|  | zucchini |  |
-|  | rocket |  |
-|  | celery |  |
-|  | parsnips |  |
-|  | marrows and squashes |  |
-|  | turnips |  |
-|  | marjoram |  |
-|  | garlic |  |
-|  | vegetable seeds |  |
-|  | chillies |  |
-|  | mint |  |
-|  | tarragon |  |
-|  | chamomile |  |
-|  | eggplants |  |
-|  | herbs |  |
-|  | sage |  |
-|  | radishes |  |
-|  | rhubarb |  |
-|  | cucumbers |  |
-|  | parsley |  |
-|  | pumpkins |  |
-|  | sugar beet |  |
-|  | cabbages |  |
-|  | leeks |  |
-|  | spring onions and shallots |  |
-|  | okra |  |
-|  | asparagus |  |
-|  | sweet potatoes |  |
-|  | beans |  |
-|  | artichokes |  |
-|  | bitter melon |  |
-|  | broccoli |  |
-|  | chives |  |
-|  | thyme |  |
+| Vegetables and herbs | eggplants |  |
 |  | carrots |  |
-|  | echinacea |  |
+|  | arrowroot |  |
+|  | pumpkins |  |
+|  | rocket |  |
+|  | burdock |  |
 |  | sweet corn |  |
+|  | radishes |  |
+|  | sage |  |
+|  | chicory |  |
+|  | rosemary |  |
+|  | marjoram |  |
+|  | parsnips |  |
+|  | chives |  |
+|  | okra |  |
+|  | artichokes |  |
+|  | broccoli |  |
+|  | cauliflowers |  |
+|  | cucumbers |  |
+|  | kale |  |
+|  | thyme |  |
+|  | celery |  |
+|  | onions |  |
+|  | turnips |  |
+|  | lettuces |  |
+|  | peas |  |
+|  | swedes |  |
+|  | cabbages |  |
+|  | kumara |  |
+|  | echinacea |  |
+|  | oregano |  |
+|  | sugar beet |  |
+|  | capsicums |  |
+|  | chillies |  |
+|  | truffles |  |
+|  | silverbeet and spinach |  |
 |  | french beans |  |
+|  | sweet potatoes |  |
+|  | tomatoes |  |
+|  | rhubarb |  |
+|  | vegetables |  |
+|  | snowpeas |  |
+|  | coriander |  |
+|  | tarragon |  |
+|  | zucchini |  |
+|  | herbs |  |
+|  | mushrooms |  |
+|  | gherkins |  |
+|  | marrows and squashes |  |
+|  | lemongrass |  |
+|  | potatoes |  |
+|  | spring onions and shallots |  |
+|  | leeks |  |
+|  | beetroot |  |
+|  | asparagus |  |
+|  | bitter melon |  |
+|  | garlic |  |
+|  | peppermint |  |
+|  | mint |  |
+|  | vegetable seeds |  |
+|  | sprouts |  |
+|  | parsley |  |
+|  | chamomile |  |
+|  | fennel |  |
+|  | beans |  |
+|  | chinese cabbages |  |
+|  | brussels sprouts |  |
+|  | chervil |  |

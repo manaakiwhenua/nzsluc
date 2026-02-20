@@ -9,22 +9,22 @@
 @prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
 
 luc:conservation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
-  skos:topConceptOf lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
+  skos:topConceptOf lus:nzlum0.4.0 ;
   skos:notation "1.0.0" ;
   skos:prefLabel "Conservation and Minimal Use"@en ;
-  skos:definition "Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
+  skos:definition "Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
   skos:scopeNote "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en ;
   skos:usageNote "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en ;
   skos:narrower
     luc:nature_cons,
     luc:cultural_natural_heritage,
     luc:minimal_use_relatively_natural,
-    luc:unused_land_transition ;
+    luc:unused_and_transitioning ;
 .
 
 luc:nature_cons a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:conservation ;
   skos:notation "1.1.0" ;
   skos:prefLabel "Nature conservation"@en ;
@@ -40,7 +40,7 @@ luc:nature_cons a skos:Concept ;
 .
 
 luc:strict_nature_res a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.1" ;
   skos:prefLabel "Strict nature reserve"@en ;
@@ -50,7 +50,7 @@ luc:strict_nature_res a skos:Concept ;
 .
 
 luc:wilderness a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.2" ;
   skos:prefLabel "Wilderness area"@en ;
@@ -60,7 +60,7 @@ luc:wilderness a skos:Concept ;
 .
 
 luc:national_park a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.3" ;
   skos:prefLabel "National Park"@en ;
@@ -76,7 +76,7 @@ luc:national_park a skos:Concept ;
 .
 
 luc:natural_feature_protection a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.4" ;
   skos:prefLabel "Natural feature protection"@en ;
@@ -85,7 +85,7 @@ luc:natural_feature_protection a skos:Concept ;
 .
 
 luc:habitat_or_species_management a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.5" ;
   skos:prefLabel "Habitat or species management area"@en ;
@@ -94,7 +94,7 @@ luc:habitat_or_species_management a skos:Concept ;
 .
 
 luc:protected_landscape a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.6" ;
   skos:prefLabel "Protected landscape"@en ;
@@ -103,7 +103,7 @@ luc:protected_landscape a skos:Concept ;
 .
 
 luc:other_conserved_area a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:nature_cons ;
   skos:notation "1.1.7" ;
   skos:prefLabel "Other conserved area"@en ;
@@ -112,7 +112,7 @@ luc:other_conserved_area a skos:Concept ;
 .
 
 luc:cultural_natural_heritage a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:conservation ;
   skos:notation "1.2.0" ;
   skos:prefLabel "Cultural and natural heritage"@en ;
@@ -125,7 +125,7 @@ luc:cultural_natural_heritage a skos:Concept ;
 
 
 luc:indigenous_cultural_heritage a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:cultural_natural_heritage ;
   skos:notation "1.2.1" ;
   skos:prefLabel "Indigenous cultural heritage"@en ;
@@ -133,7 +133,7 @@ luc:indigenous_cultural_heritage a skos:Concept ;
 .
 
 luc:cultural_heritage a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:cultural_natural_heritage ;
   skos:notation "1.2.2" ;
   skos:prefLabel "Cultural heritage"@en ;
@@ -141,7 +141,7 @@ luc:cultural_heritage a skos:Concept ;
 .
 
 luc:natural_heritage a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:cultural_natural_heritage ;
   skos:notation "1.2.3" ;
   skos:prefLabel "Natural heritage"@en ;
@@ -149,7 +149,7 @@ luc:natural_heritage a skos:Concept ;
 .
 
 luc:minimal_use_relatively_natural a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:conservation ;
   skos:notation "1.3.0" ;
   skos:prefLabel "Minimal use from relatively natural environments"@en ;
@@ -167,7 +167,7 @@ luc:minimal_use_relatively_natural a skos:Concept ;
 .
 
 luc:surface_water_supply a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.1" ;
   skos:prefLabel "Surface water supply"@en ;
@@ -175,7 +175,7 @@ luc:surface_water_supply a skos:Concept ;
 .
 
 luc:ground_water a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.2" ;
   skos:prefLabel "Ground water"@en ;
@@ -183,7 +183,7 @@ luc:ground_water a skos:Concept ;
 .
 
 luc:grazing_native_vegetation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.3" ;
   skos:prefLabel "Grazing native vegetation"@en ;
@@ -192,7 +192,7 @@ luc:grazing_native_vegetation a skos:Concept ;
 .
 
 luc:production_from_indigenous_vegetation a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.4" ;
   skos:prefLabel "Production from indigenous vegetation"@en ;
@@ -201,7 +201,7 @@ luc:production_from_indigenous_vegetation a skos:Concept ;
 .
 
 luc:customary_use a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.5" ;
   skos:prefLabel "Customary use"@en ;
@@ -211,7 +211,7 @@ luc:customary_use a skos:Concept ;
 .
 
 luc:defence_land_natural_areas a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.6" ;
   skos:prefLabel "Defence land"@en ;
@@ -222,7 +222,7 @@ luc:defence_land_natural_areas a skos:Concept ;
 .
 
 luc:environmental_infrastructure_protection a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.7" ;
   skos:prefLabel "Environmental & infrastructure protection"@en ;
@@ -232,35 +232,41 @@ luc:environmental_infrastructure_protection a skos:Concept ;
 .
 
 luc:carbon_forest_retained a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:minimal_use_relatively_natural ;
   skos:notation "1.3.8" ;
   skos:prefLabel "Carbon forest"@en ;
   skos:definition "Retained (non-planted) indigenous vegetation set aside for carbon credits."@en ;
 .
 
-luc:unused_land_transition a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
+luc:unused_and_transitioning a skos:Concept ;
+  skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:conservation ;
   skos:notation "1.4.0" ;
-  skos:prefLabel "Unused land and land in transition"@en ;
-  skos:definition "Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species."@en ;
-  skos:usageNote "Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information."@en ;
-  skos:narrower luc:unused_land, luc:land_undergoing_rehabilitation_natural ;
+  skos:prefLabel "Unused and transitioning land"@en ;
+  skos:definition "Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state."@en ;
+  skos:scopeNote "Corridors and roadside areas may fit under this class."@en ;
+  skos:scopeNote "Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included."@en ;
+  skos:scopeNote "Does not per se include land undergoing natural succession in the context of changing plant species."@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+  skos:narrower luc:rehabilitating_land, luc:unused_land ;
+.
+
+luc:rehabilitating_land a skos:Concept ;
+  skos:inScheme lus:nzlum0.4.0 ;
+  skos:broader luc:unused_and_transitioning ;
+  skos:notation "1.4.1" ;
+  skos:prefLabel "Rehabilitating land"@en ;
+  skos:definition "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state."@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+  skos:scopeNote "This may include riparian plantings."@en ;
 .
 
 luc:unused_land a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
-  skos:broader luc:unused_land_transition ;
-  skos:notation "1.4.1" ;
-  skos:prefLabel "Unused land"@en ;
-  skos:definition "Land that is unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en ;
-.
-
-luc:land_undergoing_rehabilitation_natural a skos:Concept ;
-  skos:inScheme lus:nzlum0.3.0, lus:nzlum0.4.0 ;
-  skos:broader luc:unused_land_transition ;
+  skos:inScheme lus:nzlum0.4.0 ;
+  skos:broader luc:unused_and_transitioning ;
   skos:notation "1.4.2" ;
-  skos:prefLabel "Land undergoing rehabilitation"@en ;
-  skos:definition "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."@en ;
+  skos:prefLabel "Unused land"@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+  skos:definition "Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en ;
 .

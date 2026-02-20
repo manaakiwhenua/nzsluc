@@ -18,8 +18,8 @@
 |  |  |  |  | 1.3.6 | Defence land |
 |  |  |  |  | 1.3.7 | Environmental & infrastructure protection |
 |  |  |  |  | 1.3.8 | Carbon forest |
-|  |  | 1.4.0 | Unused land and land in transition | 1.4.1 | Unused land |
-|  |  |  |  | 1.4.2 | Land undergoing rehabilitation |
+|  |  | 1.4.0 | Unused and transitioning land | 1.4.1 | Rehabilitating land |
+|  |  |  |  | 1.4.2 | Unused land |
 | 2.0.0 | Production agriculture and plantations | 2.1.0 | Plantation forests | 2.1.1 | Exotic plantation forestry |
 |  |  |  |  | 2.1.2 | Indigenous plantation forestry |
 |  |  |  |  | 2.1.3 | Other production uses |
@@ -46,10 +46,10 @@
 |  |  |  |  | 2.7.3 | Water treatment – land application |
 |  |  |  |  | 2.7.4 | Water treatment – wetland |
 |  |  |  |  | 2.7.5 | Irrigation reservoirs and canals |
-|  |  | 2.8.0 | Land in transition | 2.8.1 | Unused degraded land |
-|  |  |  |  | 2.8.2 | No defined use |
-|  |  |  |  | 2.8.3 | Land undergoing rehabilitation |
-|  |  |  |  | 2.8.4 | Abandoned land |
+|  |  | 2.8.0 | Vacant and transitioning land | 2.8.1 | Rehabilitating land |
+|  |  |  |  | 2.8.2 | Abandoned land |
+|  |  |  |  | 2.8.3 | Degraded land |
+|  |  |  |  | 2.8.4 | No defined use |
 | 3.0.0 | Built environment | 3.1.0 | Residential | 3.1.1 | High-density residential |
 |  |  |  |  | 3.1.2 | Medium-density residential |
 |  |  |  |  | 3.1.3 | Low-density residential |
@@ -91,6 +91,6 @@
 |  |  |  |  | 3.8.3 | Municipal wastewater |
 |  |  |  |  | 3.8.4 | Wastewater treatment – land application |
 |  |  |  |  | 3.8.5 | Stormwater management |
-|  |  | 3.9.0 | Vacant and transitioning land | 3.9.1 | Vacant land |
+|  |  | 3.9.0 | Vacant and transitioning land | 3.9.1 | Brownfield development |
 |  |  |  |  | 3.9.2 | Greenfield development |
-|  |  |  |  | 3.9.3 | Brownfield development |
+|  |  |  |  | 3.9.3 | Idle and derelict land |

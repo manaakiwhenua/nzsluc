@@ -120,7 +120,7 @@
     > This includes farm forestry and may consist of monocultures or mixed species.
 
     - **2.1.1 Exotic plantation forestry**
-      An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).
+      An area managed for pulpwood or saw-log production (exotic species).
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
       
@@ -128,7 +128,7 @@
       > Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
 
     - **2.1.2 Indigenous plantation forestry**
-      An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species).
+      An area managed for pulpwood or saw-log production (native species).
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
       
