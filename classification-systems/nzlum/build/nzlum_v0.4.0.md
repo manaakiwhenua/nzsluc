@@ -76,11 +76,11 @@
 |  |  |  |  | 3.5.5 | Electricity substations and transmission |
 |  |  |  |  | 3.5.6 | Gas treatment, storage, and transmission |
 |  |  |  |  | 3.5.7 | Water extraction and transmission |
-|  |  | 3.6.0 | Transport and communication | 3.6.1 | Airports/aerodromes |
+|  |  |  |  | 3.5.8 | Navigation and communication |
+|  |  | 3.6.0 | Transport | 3.6.1 | Airports/aerodromes |
 |  |  |  |  | 3.6.2 | Roads |
 |  |  |  |  | 3.6.3 | Railways |
 |  |  |  |  | 3.6.4 | Ports and water transport |
-|  |  |  |  | 3.6.5 | Navigation and communication |
 |  |  | 3.7.0 | Mining | 3.7.1 | Mines |
 |  |  |  |  | 3.7.2 | Quarries |
 |  |  |  |  | 3.7.3 | Tailings |
