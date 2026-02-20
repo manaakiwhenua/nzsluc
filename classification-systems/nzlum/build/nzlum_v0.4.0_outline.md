@@ -215,6 +215,9 @@
     > [!NOTE]
     > Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.
     
+    > [!NOTE]
+    > The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years.
+    
     > [!TIP]
     > If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).
 
