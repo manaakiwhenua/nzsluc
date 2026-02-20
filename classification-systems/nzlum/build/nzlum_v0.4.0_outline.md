@@ -188,7 +188,10 @@
     - **2.2.2 Intensive dry stock**
       Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain.
       > [!NOTE]
-      > Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding. Grazing of other stock, including deer, goats, and horses, should be captured under class ‘2.2.3 Extensive dry stock’
+      > Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding.
+      
+      > [!TIP]
+      > Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent.
 
     - **2.2.3 Extensive dry stock**
       Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.
@@ -303,6 +306,8 @@
 
     - **2.6.4 Horse studs**
       Establishments focused on the breeding and raising of horses.
+      > [!TIP]
+      > Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included.
 
     - **2.6.5 Aquaculture**
       Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.

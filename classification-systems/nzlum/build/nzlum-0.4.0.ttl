@@ -412,7 +412,10 @@ luc:intensive_dry_stock
         skos:notation    "2.2.2";
         skos:prefLabel   "Intensive dry stock"@en;
         skos:definition  "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en;
-        skos:scopeNote   "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding. Grazing of other stock, including deer, goats, and horses, should be captured under class ‘2.2.3 Extensive dry stock’"@en .
+        skos:scopeNote   "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding."@en;
+        skos:usageNote   "Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent."@en;
+        skos:changeNote  "A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive."@en;
+        skos:changeNote  <https://github.com/manaakiwhenua/nzsluc/issues/66> .
 
 luc:extensive_dry_stock
         a                skos:Concept;
@@ -588,7 +591,8 @@ luc:horse_studs  a       skos:Concept;
         skos:broader     luc:intensive_animal_production;
         skos:notation    "2.6.4";
         skos:prefLabel   "Horse studs"@en;
-        skos:definition  "Establishments focused on the breeding and raising of horses."@en .
+        skos:definition  "Establishments focused on the breeding and raising of horses."@en;
+        skos:usageNote   "Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included."@en .
 
 luc:aquaculture  a       skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
