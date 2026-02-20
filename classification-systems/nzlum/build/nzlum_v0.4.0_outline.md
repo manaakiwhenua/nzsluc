@@ -83,6 +83,14 @@
       Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas.
       > [!NOTE]
       > Areas associated with buildings or more built environments on defence land are captured under an urban class.
+      
+      > [!TIP]
+      > **Example**
+      > Kaipara Air Weapons Range
+      
+      > [!TIP]
+      > **Example**
+      > Waiouru Military Camp
 
     - **1.3.7 Environmental & infrastructure protection**
       Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways).
@@ -113,6 +121,13 @@
 
     - **1.4.2 Unused land**
       Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.
+      > [!TIP]
+      > **Example**
+      > A vacant farm, apparently undergoing natural succession.
+      
+      > [!TIP]
+      > **Example**
+      > CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use.
 
 - **2.0.0 Production agriculture and plantations**
   Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.
@@ -330,6 +345,9 @@
 
     - **2.8.4 No defined use**
       Land cleared of vegetation where the current proposed land use is unknown.
+      > [!TIP]
+      > **Example**
+      > Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown.
 
 - **3.0.0 Built environment**
   Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.

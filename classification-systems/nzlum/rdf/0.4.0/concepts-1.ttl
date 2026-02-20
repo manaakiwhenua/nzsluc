@@ -269,4 +269,6 @@ luc:unused_land a skos:Concept ;
   skos:prefLabel "Unused land"@en ;
   skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
   skos:definition "Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en ;
+  skos:example "A vacant farm, apparently undergoing natural succession."@en ;
+  skos:example "CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use."@en ;
 .
