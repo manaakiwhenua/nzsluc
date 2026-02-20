@@ -300,7 +300,9 @@ luc:unused_land  a       skos:Concept;
         skos:notation    "1.4.2";
         skos:prefLabel   "Unused land"@en;
         skos:changeNote  <https://github.com/manaakiwhenua/nzsluc/issues/36>;
-        skos:definition  "Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en .
+        skos:definition  "Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en;
+        skos:example     "A vacant farm, apparently undergoing natural succession."@en;
+        skos:example     "CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use."@en .
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -696,7 +698,8 @@ luc:no_defined_use_ag
         skos:notation    "2.8.4";
         skos:prefLabel   "No defined use"@en;
         skos:definition  "Land cleared of vegetation where the current proposed land use is unknown."@en;
-        skos:changeNote  "Changed notation at v0.4.0" .
+        skos:changeNote  "Changed notation at v0.4.0"@en;
+        skos:example     "Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown."@en .
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>

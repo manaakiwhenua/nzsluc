@@ -83,6 +83,14 @@
       Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas.
       > [!NOTE]
       > Areas associated with buildings or more built environments on defence land are captured under an urban class.
+      
+      > [!TIP]
+      > **Example**
+      > Kaipara Air Weapons Range
+      
+      > [!TIP]
+      > **Example**
+      > Waiouru Military Camp
 
     - **1.3.7 Environmental & infrastructure protection**
       Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways).

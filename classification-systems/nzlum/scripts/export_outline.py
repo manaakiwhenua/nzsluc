@@ -118,7 +118,19 @@ def main():
             lines.append(f"{ind}  > {un}")
             if j != len(usage_notes) - 1:
                 lines.append(f"{ind}  ")
+        
+        example_notes = get_lang_all(g, concept, SKOS.example)
 
+        if example_notes and (usage_notes or scope_notes):
+            lines.append(f"{ind}  ")
+        
+        for k, en in enumerate(example_notes):
+            en = md_escape(en)
+            lines.append(f"{ind}  > [!TIP]")
+            lines.append(f"{ind}  > **Example**")
+            lines.append(f"{ind}  > {en}")
+            if k != len(example_notes) - 1:
+                lines.append(f"{ind}  ")
 
         # blank line between items at same depth improves readability in GitHub
         lines.append("")
