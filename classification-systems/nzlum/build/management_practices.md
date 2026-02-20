@@ -1,51 +1,51 @@
 | Collection | Notation | Term |
 |---|---|---|
-| Animal | milking rotary |  |
+| Animal | barn laid |  |
 |  | caged |  |
-|  | barn laid |  |
 |  | free range |  |
-|  | milking walk through  |  |
-|  | milking herringbone |  |
 |  | milking hand |  |
-| Crop | crop pasture rotation |  |
-|  | cropping rotational |  |
-|  | cropping continuous |  |
-|  | cropping strip |  |
-|  | cropping multiple |  |
-|  | tillage conservation |  |
-|  | residues heavily grazed |  |
-|  | cropping row alley |  |
-|  | cropping cover |  |
+|  | milking herringbone |  |
+|  | milking rotary |  |
+|  | milking walk through  |  |
+| Crop | biodynamic |  |
 |  | contour banks |  |
-|  | precision agriculture |  |
-|  | fallow chemical |  |
-|  | residues incorporated |  |
-|  | residues burnt |  |
-|  | residues baled |  |
-|  | residues mulched |  |
-|  | tillage conventional |  |
-|  | residues intact |  |
-|  | organic |  |
 |  | controlled traffic farming |  |
-|  | biodynamic |  |
-|  | fallow mechanical |  |
+|  | crop pasture rotation |  |
+|  | cropping continuous |  |
+|  | cropping cover |  |
+|  | cropping multiple |  |
 |  | cropping opportunistic |  |
+|  | cropping rotational |  |
+|  | cropping row alley |  |
+|  | cropping strip |  |
+|  | fallow chemical |  |
+|  | fallow mechanical |  |
+|  | organic |  |
 |  | pasture cropping |  |
-| Grazing | grazing set stocking |  |
-|  | grazing rotational |  |
+|  | precision agriculture |  |
+|  | residues baled |  |
+|  | residues burnt |  |
+|  | residues heavily grazed |  |
+|  | residues incorporated |  |
+|  | residues intact |  |
+|  | residues mulched |  |
+|  | tillage conservation |  |
+|  | tillage conventional |  |
+| Grazing | grazing rotational |  |
+|  | grazing set stocking |  |
 |  | grazing tactical |  |
-| Horticulture | hedgerow |  |
+| Horticulture | free standing |  |
 |  | fully protected |  |
+|  | hedgerow |  |
+|  | mulching/matting |  |
 |  | open growing |  |
 |  | semi-protected |  |
-|  | mulching/matting |  |
-|  | free standing |  |
 |  | trellis/espalier |  |
-| Irrigation | irrigation surface |  |
-|  | irrigation drip |  |
+| Irrigation | irrigation drip |  |
 |  | irrigation spray |  |
-| Pasture | crop pasture rotation |  |
-|  | precision agriculture |  |
-|  | pasture cropping |  |
+|  | irrigation surface |  |
+| Pasture | biodynamic |  |
+|  | crop pasture rotation |  |
 |  | organic |  |
-|  | biodynamic |  |
+|  | pasture cropping |  |
+|  | precision agriculture |  |

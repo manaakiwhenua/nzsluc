@@ -77,8 +77,8 @@ def main():
     for coll in sorted_colls:
         coll_label = label(g, coll)
         members = get_collection_members(g, coll)
-        # Sort members alphabetically by label
-        sorted_members = sorted(members, key=lambda m: label(g, m).lower())
+        # Sort members alphabetically by notation
+        sorted_members = sorted(members, key=lambda m: notation(g, m).lower())
         
         for member in sorted_members:
             not_str = notation(g, member)
