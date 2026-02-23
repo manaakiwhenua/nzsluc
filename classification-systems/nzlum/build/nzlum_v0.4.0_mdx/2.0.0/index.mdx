@@ -1,0 +1,422 @@
+---
+title: Production agriculture and plantations
+description: Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.
+label: 2.0.0
+---
+
+import { Tabs, TabItem, LinkButton, Aside } from '@astrojs/starlight/components';
+
+Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.
+
+<Aside type="note" title="Scope note" icon="information">
+  If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.
+</Aside>
+
+## 2.1.0 Plantation forests
+
+Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry.
+
+<Aside type="note" title="Scope note" icon="information">
+  This includes farm forestry and may consist of monocultures or mixed species.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.1.1 Exotic plantation forestry">
+    An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.1.2 Indigenous plantation forestry">
+    An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species).
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.1.3 Other production uses">
+    An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations.
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.1.4 Planted environmental & infrastructure protection">
+    An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted.
+  </TabItem>
+
+</Tabs>
+
+## 2.2.0 Grazing modified pasture systems
+
+Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.
+
+<Aside type="note" title="Scope note" icon="information">
+  Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.2.1 Dairy">
+    Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.
+<Aside type="note" title="Scope note" icon="information">
+  Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.2.2 Intensive dry stock">
+    Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain.
+<Aside type="note" title="Scope note" icon="information">
+  Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/66
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.2.3 Extensive dry stock">
+    Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.
+<Aside type="note" title="Scope note" icon="information">
+  Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Arable or winter forage crops are unlikely to be common rotations in this land-use category
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 2.3.0 Short-rotation and seasonal cropping
+
+This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.
+
+<Aside type="note" title="Scope note" icon="information">
+  This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  The explicit five year periodicity was added in v0.4.0.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/65
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.3.1 Arable cropping">
+    Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.3.2 Arable and mixed livestock cropping">
+    Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time..
+<Aside type="note" title="Scope note" icon="information">
+  Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known).
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.3.3 Short-rotation horticulture">
+    Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption.
+<Aside type="note" title="Scope note" icon="information">
+  May include livestock rotations, but this is considered less likely
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.3.4 Seasonal flowers and bulbs, and turf farming">
+    Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes.
+<Aside type="note" title="Scope note" icon="information">
+  This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 2.4.0 Perennial horticulture
+
+Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Management practices such as irrigation or netting can be recorded as management practices.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.4.1 Tree crops">
+    Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.
+<Aside type="note" title="Usage note" icon="puzzle">
+  Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.4.2 Vine fruits">
+    Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants.
+  </TabItem>
+
+  <TabItem label="2.4.3 Other perennial horticulture">
+    Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies).
+  </TabItem>
+
+</Tabs>
+
+## 2.5.0 Intensive horticulture
+
+Intensive forms of plant production, often with special-purpose improvements used for horticultural production.
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Record management practices such as hydroponic systems, irrigation, and netting, if known.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The specific commodity or commodities should be noted if known.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.5.1 Production nurseries">
+    Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).
+<Aside type="note" title="Scope note" icon="information">
+  These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.5.2 Glasshouses/shadehouses">
+    Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production.
+<Aside type="note" title="Scope note" icon="information">
+  Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 2.6.0 Intensive animal production
+
+Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Record animal types as commodities, if known.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  The management field can be used to record practices such as free range or organic.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.6.1 Intensive animal containment">
+    Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes.
+  </TabItem>
+
+  <TabItem label="2.6.2 Poultry farms">
+    Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production.
+  </TabItem>
+
+  <TabItem label="2.6.3 Piggeries">
+    Facilities designed for the intensive rearing of pigs.
+  </TabItem>
+
+  <TabItem label="2.6.4 Horse studs">
+    Establishments focused on the breeding and raising of horses.
+<Aside type="note" title="Usage note" icon="puzzle">
+  Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.6.5 Aquaculture">
+    Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.
+  </TabItem>
+
+</Tabs>
+
+## 2.7.0 Water and wastewater
+
+Built water features associated with agricultural use.
+
+<Tabs>
+
+  <TabItem label="2.7.1 Stock water">
+    Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock.
+  </TabItem>
+
+  <TabItem label="2.7.2 Effluent pond">
+    Effluent ponds typically associated with dairying.
+  </TabItem>
+
+  <TabItem label="2.7.3 Water treatment – land application">
+    Land used for effluent disposal
+<Aside type="note" title="Scope note" icon="information">
+  probably an ancillary use where some form of grazing is the primary use.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.7.4 Water treatment – wetland">
+    Constructed or natural wetlands used to improve water quality prior to discharge.
+  </TabItem>
+
+  <TabItem label="2.7.5 Irrigation reservoirs and canals">
+    Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes.
+  </TabItem>
+
+</Tabs>
+
+## 2.8.0 Vacant and transitioning land
+
+As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.
+
+<Aside type="note" title="Scope note" icon="information">
+  In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/36
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Preferred label changed from 'Land in transition' at v0.4.0
+</Aside>
+
+<Tabs>
+
+  <TabItem label="2.8.1 Rehabilitating land">
+    Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.
+<Aside type="caution" title="Change note" icon="warning">
+  Changed notation at v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.8.2 Abandoned land">
+    Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.
+<Aside type="caution" title="Change note" icon="warning">
+  Changed notation at v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.8.3 Degraded land">
+    Unused land that is degraded through erosion or flood events that is not being rehabilitated.
+<Aside type="note" title="Usage note" icon="puzzle">
+  Can include contaminated land.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Changed notation at v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="2.8.4 No defined use">
+    Land cleared of vegetation where the current proposed land use is unknown.
+<Aside type="caution" title="Change note" icon="warning">
+  Changed notation at v0.4.0
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+

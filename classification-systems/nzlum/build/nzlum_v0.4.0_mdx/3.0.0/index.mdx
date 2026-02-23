@@ -1,0 +1,434 @@
+---
+title: Built environment
+description: Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.
+label: 3.0.0
+---
+
+import { Tabs, TabItem, LinkButton, Aside } from '@astrojs/starlight/components';
+
+Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.
+
+<Aside type="note" title="Scope note" icon="information">
+  Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.
+</Aside>
+
+## 3.1.0 Residential
+
+Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.
+
+<Aside type="note" title="Scope note" icon="information">
+  The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="3.1.1 High-density residential">
+    Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.
+  </TabItem>
+
+  <TabItem label="3.1.2 Medium-density residential">
+    Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings.
+<Aside type="note" title="Scope note" icon="information">
+  Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Townhouses, terraced housing, low-rise apartments.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.1.3 Low-density residential">
+    Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.
+  </TabItem>
+
+  <TabItem label="3.1.4 Rural residential">
+    Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.
+<Aside type="note" title="Scope note" icon="information">
+  Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.
+</Aside>
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Properties in this size interval and without a dwelling could be in transition to residential.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.2.0 Public recreation and services
+
+Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.
+
+<Tabs>
+
+  <TabItem label="3.2.1 Outdoor recreation">
+    Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas.
+<Aside type="note" title="Scope note" icon="information">
+  Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.2.2 Indoor recreation">
+    Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.
+<Aside type="note" title="Example" icon="open-book">
+  Sports centres, gyms, swimming pools, indoor arenas.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.2.3 Community services">
+    Land used for providing essential services and facilities to support the local community.
+<Aside type="note" title="Example" icon="open-book">
+  Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.3.0 Commercial
+
+Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Central government offices when these are privately rented should be captured in this category, even if they are public-facing.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="3.3.1 Retail">
+    Areas used for the sale of goods and services directly to consumers.
+<Aside type="note" title="Example" icon="open-book">
+  Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.3.2 Office">
+    Land and buildings primarily used for administrative, professional, or managerial activities.
+<Aside type="note" title="Example" icon="open-book">
+  Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.3.3 Hospitality">
+    Land and buildings providing accommodation, food, and beverage services to the public.
+<Aside type="note" title="Example" icon="open-book">
+  Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.3.4 Entertainment">
+    Land areas and facilities offering leisure and recreational activities for public enjoyment.
+<Aside type="note" title="Example" icon="open-book">
+  Cinemas, theatres, amusement parks, casinos, concert venues.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.3.5 Healthcare">
+    Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury.
+<Aside type="note" title="Example" icon="open-book">
+  Hospitals, specialist clinics, physiotherapists, medical offices, laboratories
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.3.6 Transportation & warehousing">
+    Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.
+<Aside type="note" title="Scope note" icon="information">
+   Excludes airports, ports, roads, and train stations (captured under 3.6.0)
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.4.0 Manufacturing and industrial
+
+Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.
+
+<Tabs>
+
+  <TabItem label="3.4.1 General purpose factory">
+    An area used for manufacturing, assembly, or repairs of various products.
+<Aside type="note" title="Scope note" icon="information">
+  Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.4.2 Food processing factory">
+    An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included.
+<Aside type="note" title="Example" icon="open-book">
+  Cannery; milk production plant.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.4.3 Major industrial complex">
+    An area with large-scale industrial use and significant infrastructure .
+<Aside type="note" title="Example" icon="open-book">
+  Car plant, paper mill.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.4.4 Sawmill">
+    An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.
+  </TabItem>
+
+  <TabItem label="3.4.5 Farm buildings/infrastructure">
+    An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations.
+<Aside type="note" title="Scope note" icon="information">
+  If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Barns, silos, storage sheds, and irrigation systems.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.4.6 Abattoirs">
+    Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
+  </TabItem>
+
+</Tabs>
+
+## 3.5.0 Utilities
+
+Land allocated to providing electricity, gas, or water.
+
+<Tabs>
+
+  <TabItem label="3.5.1 Fuel powered electricity generation">
+    Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.
+  </TabItem>
+
+  <TabItem label="3.5.2 Hydroelectricity generation">
+    Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity.
+<Aside type="note" title="Scope note" icon="information">
+  Includes canals and other water conveyance infrastructure associated with hydroelectricity generation.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.5.3 Wind electricity generation">
+    Power generation from wind, including wind farms.
+  </TabItem>
+
+  <TabItem label="3.5.4 Solar electricity generation">
+    Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity.
+  </TabItem>
+
+  <TabItem label="3.5.5 Electricity substations and transmission">
+    Facilities and infrastructure associated with distribution and transmission of electrical power.
+<Aside type="note" title="Example" icon="open-book">
+  Substations, transformers, high-voltage transmission towers.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.5.6 Gas treatment, storage, and transmission">
+    Facilities and infrastructure for processing, storage, and transport of natural gas.
+<Aside type="note" title="Example" icon="open-book">
+  Treatment plants, storage facilities, pipelines.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.5.7 Water extraction and transmission">
+    Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs.
+<Aside type="note" title="Scope note" icon="information">
+  Includes drinking water reservoirs.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.5.8 Navigation and communication">
+    Navigation and communication infrastructure.
+<Aside type="caution" title="Change note" icon="warning">
+  Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Radar stations, beacons, lighthouses, TV and radio transmission towers.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.6.0 Transport
+
+Land allocated to infrastructure used for the transportation of goods or people.
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="3.6.1 Airports/aerodromes">
+    Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports).
+  </TabItem>
+
+  <TabItem label="3.6.2 Roads">
+    The full roading corridor, including sealed road areas and unsealed roadside strips.
+  </TabItem>
+
+  <TabItem label="3.6.3 Railways">
+    Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.
+  </TabItem>
+
+  <TabItem label="3.6.4 Ports and water transport">
+    Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port.
+<Aside type="note" title="Usage note" icon="puzzle">
+  The water attribute can be used to differentiate the terrestrial and marine parts of the same facility.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Ports, docks, and wharves.
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Harbours, navigational channels.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.7.0 Mining
+
+Mining and extractive industries (including salt extraction from evaporation basins).
+
+<Aside type="note" title="Usage note" icon="puzzle">
+  Record the specific type of mining activitiy in the commodity attribute, if known.
+</Aside>
+
+<Tabs>
+
+  <TabItem label="3.7.1 Mines">
+    Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines.
+  </TabItem>
+
+  <TabItem label="3.7.2 Quarries">
+    Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted.
+  </TabItem>
+
+  <TabItem label="3.7.3 Tailings">
+    Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output).
+  </TabItem>
+
+  <TabItem label="3.7.4 Evaporation basins">
+    Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction.
+  </TabItem>
+
+  <TabItem label="3.7.5 Extractive industry not in use">
+    Land undergoing rehabilitation after mining activities, and unmined land within a mining permit.
+  </TabItem>
+
+</Tabs>
+
+## 3.8.0 Waste treatment and disposal
+
+Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.
+
+<Tabs>
+
+  <TabItem label="3.8.1 Landfills">
+    Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.
+<Aside type="note" title="Scope note" icon="information">
+  Landfill gas recovery systems are classified as part of a landfill land use.
+</Aside>
+
+<Aside type="note" title="Scope note" icon="information">
+  Includes all class 1 to 5 landfills
+</Aside>
+
+<Aside type="note" title="Example" icon="open-book">
+  Landfills designed to receive inert construction materials.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.8.2 Transfer stations and recycling facilities">
+    Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites.
+  </TabItem>
+
+  <TabItem label="3.8.3 Municipal wastewater">
+    Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines.
+  </TabItem>
+
+  <TabItem label="3.8.4 Wastewater treatment – land application">
+    Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.
+<Aside type="note" title="Usage note" icon="puzzle">
+   This is often likely to be an ancillary use.
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.8.5 Stormwater management">
+    Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.
+<Aside type="note" title="Example" icon="open-book">
+  Detention basins, drainage systems, retention ponds, rain gardens, wetlands.
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+
+## 3.9.0 Vacant and transitioning land
+
+This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
+
+<Tabs>
+
+  <TabItem label="3.9.1 Brownfield development">
+    Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities.
+<Aside type="note" title="Scope note" icon="information">
+  May include residential areas undergoing infill development that increase housing density.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Notation changed from 3.9.3 to 3.9.1 at v0.4.0
+</Aside>
+
+  </TabItem>
+
+  <TabItem label="3.9.2 Greenfield development">
+    Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses.
+  </TabItem>
+
+  <TabItem label="3.9.3 Idle and derelict land">
+    Derelict land and developed land that is idle.
+<Aside type="caution" title="Change note" icon="warning">
+  Notation changed from 3.9.1 to 3.9.3 at v0.4.0
+</Aside>
+
+  </TabItem>
+
+</Tabs>
+

@@ -8,6 +8,11 @@ $(BUILD)/nzlum-$(VERSION).ttl: $(DATA)
 	riot --validate $(DATA)
 	riot --output=turtle $(DATA) > $(BUILD)/nzlum-$(VERSION).ttl
 
+.PHONY: mdx-all
+mdx-all: $(BUILD)/nzlum-$(VERSION).ttl
+	./scripts/export_outline_mdx.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(BUILD)/nzlum_v$(VERSION)_mdx/ ;
+
 .PHONY: tables-all
 tables-all: $(BUILD)/nzlum-$(VERSION).ttl
 	./scripts/export_table.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \
