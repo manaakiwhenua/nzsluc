@@ -461,7 +461,7 @@
     - **3.3.6 Transportation & warehousing**
       Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.
       > [!NOTE]
-      >  Excludes airports, ports, roads, and train stations (captured under 3.6.0)
+      > Excludes airports, ports, roads, and train stations (captured under 3.6.0)
 
   - **3.4.0 Manufacturing and industrial**
     Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.
@@ -499,7 +499,7 @@
       Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
 
   - **3.5.0 Utilities**
-    Land allocated to providing electricity, gas, or water.
+    Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure.
 
     - **3.5.1 Fuel powered electricity generation**
       Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.
@@ -538,7 +538,7 @@
       > **Example**
       > Radar stations, beacons, lighthouses, TV and radio transmission towers.
 
-  - **3.6.0 Transport**
+  - **3.6.0 Transportation**
     Land allocated to infrastructure used for the transportation of goods or people.
     > [!TIP]
     > Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.

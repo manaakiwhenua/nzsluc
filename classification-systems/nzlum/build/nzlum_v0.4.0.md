@@ -77,7 +77,7 @@
 |  |  |  |  | 3.5.6 | Gas treatment, storage, and transmission |
 |  |  |  |  | 3.5.7 | Water extraction and transmission |
 |  |  |  |  | 3.5.8 | Navigation and communication |
-|  |  | 3.6.0 | Transport | 3.6.1 | Airports/aerodromes |
+|  |  | 3.6.0 | Transportation | 3.6.1 | Airports/aerodromes |
 |  |  |  |  | 3.6.2 | Roads |
 |  |  |  |  | 3.6.3 | Railways |
 |  |  |  |  | 3.6.4 | Ports and water transport |
