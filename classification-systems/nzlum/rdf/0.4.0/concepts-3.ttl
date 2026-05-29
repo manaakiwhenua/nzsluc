@@ -185,7 +185,7 @@ luc:transportation_warehousing_commercial a skos:Concept ;
   skos:notation "3.3.6" ;
   skos:prefLabel "Transportation & warehousing"@en ;
   skos:definition "Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots."@en ;
-  skos:scopeNote " Excludes airports, ports, roads, and train stations (captured under 3.6.0)"@en ;
+  skos:scopeNote "Excludes airports, ports, roads, and train stations (captured under 3.6.0)"@en ;
 .
 
 luc:manufacturing_industrial a skos:Concept ;
@@ -261,7 +261,9 @@ luc:utilities a skos:Concept ;
   skos:broader luc:built_environment ;
   skos:notation "3.5.0" ;
   skos:prefLabel "Utilities"@en ;
-  skos:definition "Land allocated to providing electricity, gas, or water."@en ;
+  skos:definition "Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure."@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69> ;
+  skos:changeNote "Class 3.5.0 redefined at v0.4.0 to include naviation and communciation infrastructure, which was formerly captured under class 3.6.0."@en ;
   skos:narrower
     luc:fuel_powered_electricity_generation,
     luc:hydroelectricity_generation,
@@ -337,6 +339,7 @@ luc:navigation_communication a skos:Concept ;
   skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:utilities ;
   skos:notation "3.5.8" ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69> ;
   skos:changeNote "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."@en ;
   skos:prefLabel "Navigation and communication"@en ;
   skos:definition "Navigation and communication infrastructure."@en ;
@@ -347,9 +350,11 @@ luc:transport a skos:Concept ;
   skos:inScheme lus:nzlum0.4.0 ;
   skos:broader luc:built_environment ;
   skos:notation "3.6.0" ;
-  skos:prefLabel "Transport"@en ;
+  skos:prefLabel "Transportation"@en ;
   skos:definition "Land allocated to infrastructure used for the transportation of goods or people."@en ;
   skos:usageNote "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en ;
+  skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69> ;
+  skos:changeNote "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."@en ;
   skos:narrower
     luc:airports_aerodromes,
     luc:roads,
