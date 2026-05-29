@@ -157,7 +157,7 @@ Land in a built environment context used for private-sector economic activities,
   <TabItem label="3.3.6 Transportation & warehousing">
     Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.
 <Aside type="note" title="Scope note" icon="information">
-   Excludes airports, ports, roads, and train stations (captured under 3.6.0)
+  Excludes airports, ports, roads, and train stations (captured under 3.6.0)
 </Aside>
 
   </TabItem>
@@ -218,7 +218,15 @@ Land uses dedicated to production, processing, and industrial activities, contri
 
 ## 3.5.0 Utilities
 
-Land allocated to providing electricity, gas, or water.
+Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure.
+
+<Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/69
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Class 3.5.0 redefined at v0.4.0 to include naviation and communciation infrastructure, which was formerly captured under class 3.6.0.
+</Aside>
 
 <Tabs>
 
@@ -269,6 +277,10 @@ Land allocated to providing electricity, gas, or water.
   <TabItem label="3.5.8 Navigation and communication">
     Navigation and communication infrastructure.
 <Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/69
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
   Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.
 </Aside>
 
@@ -280,12 +292,20 @@ Land allocated to providing electricity, gas, or water.
 
 </Tabs>
 
-## 3.6.0 Transport
+## 3.6.0 Transportation
 
 Land allocated to infrastructure used for the transportation of goods or people.
 
 <Aside type="note" title="Usage note" icon="puzzle">
   Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  https://github.com/manaakiwhenua/nzsluc/issues/69
+</Aside>
+
+<Aside type="caution" title="Change note" icon="warning">
+  Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'.
 </Aside>
 
 <Tabs>
