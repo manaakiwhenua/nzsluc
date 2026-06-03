@@ -24,7 +24,8 @@ luc:production_agriculture_plantations a skos:Concept ;
     luc:intensive_horticulture,
     luc:intensive_animal_production,
     luc:water_wastewater_agriculture,
-    luc:vacant_and_transitioning_land ;
+    luc:vacant_and_transitioning_land,
+    luc:smallholder_farm ;
 .
 
 luc:plantation_forests a skos:Concept ;
@@ -371,7 +372,7 @@ luc:vacant_and_transitioning_land a skos:Concept ;
   skos:definition "As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations."@en ;
   skos:scopeNote "In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0."@en ;
   skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
-  skos:changeNote "Preferred label changed from 'Land in transition' at v0.4.0" ;
+  skos:changeNote "Preferred label changed from 'Land in transition' at v0.4.0"@en ;
   skos:narrower
     luc:rehabilitating_land_ag,
     luc:abandoned_land_ag ,
@@ -394,7 +395,7 @@ luc:abandoned_land_ag a skos:Concept ;
   skos:notation "2.8.2" ;
   skos:prefLabel "Abandoned land"@en ;
   skos:definition "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."@en ;
-  skos:changeNote "Changed notation at v0.4.0" ;
+  skos:changeNote "Changed notation at v0.4.0"@en ;
 .
 
 luc:degraded_land_ag a skos:Concept ;
@@ -403,7 +404,7 @@ luc:degraded_land_ag a skos:Concept ;
   skos:notation "2.8.3" ;
   skos:prefLabel "Degraded land"@en ;
   skos:definition "Unused land that is degraded through erosion or flood events that is not being rehabilitated."@en ;
-  skos:changeNote "Changed notation at v0.4.0" ;
+  skos:changeNote "Changed notation at v0.4.0"@en ;
   skos:usageNote "Can include contaminated land."@en ;
 .
 
@@ -415,4 +416,17 @@ luc:no_defined_use_ag a skos:Concept ;
   skos:definition "Land cleared of vegetation where the current proposed land use is unknown."@en ;
   skos:changeNote "Changed notation at v0.4.0"@en ;
   skos:example "Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown."@en ;
+.
+
+luc:smallholder_farm a skos:Concept ;
+  skos:inScheme lus:nzlum0.4.0 ;
+  skos:broader luc:production_agriculture_plantations ;
+  skos:notation "2.9.0" ;
+  skos:prefLabel "Smallholder farm"@en ;
+  skos:definition "A rural property larger than a rural residential property (> 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation."@en ;
+  skos:scopeNote "Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management."@en ;
+  skos:scopeNote "Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land."@en ;
+  skos:usageNote "As a subclass of 2.0.0, commodities and management practices may still be recorded."
+  skos:usageNote "Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3."@en ;
+  skos:changeNote "Added at v0.4.0 to capture the gap between 3.1.4 Rural residential (0.4–2 ha) and commercial pastoral classes (2.2.0)."@en
 .
