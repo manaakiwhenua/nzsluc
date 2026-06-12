@@ -50,6 +50,7 @@
 |  |  |  |  | 2.8.2 | Abandoned land |
 |  |  |  |  | 2.8.3 | Degraded land |
 |  |  |  |  | 2.8.4 | No defined use |
+|  |  | 2.9.0 | Smallholder farm |  |  |
 | 3.0.0 | Built environment | 3.1.0 | Residential | 3.1.1 | High-density residential |
 |  |  |  |  | 3.1.2 | Medium-density residential |
 |  |  |  |  | 3.1.3 | Low-density residential |
