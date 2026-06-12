@@ -35,13 +35,13 @@ sparql --version
 Now you can validate:
 
 ```bash
-riot --validate nzlum.ttl
+riot --validate build/nzlum-{version}.ttl
 ```
 
 Run SPARQL directly over the TTL (no TDB):
 
 ```bash
-sparql --data nzlum.ttl --query validation/count.rq # Other sanity-checking queries avaialble as *.rq
+sparql --data build/nzlum-{version}.ttl --query validation/count.rq # Other sanity-checking queries avaialble as *.rq
 ```
 
 ### Constraints
@@ -52,7 +52,7 @@ SHACL is used as a validation rule-set to check the SKOS vocabulary is complete 
 - `shapes.ttl` is the SHACL shapes file (the constraints)
 
 ```bash
-shacl validate --shapes shapes.ttl --data nzlum.ttl
+shacl validate --shapes shapes/shapes.ttl --data build/nzlum-{version}.ttl
 ```
 
 This is in preference to the example queries in .validation/
