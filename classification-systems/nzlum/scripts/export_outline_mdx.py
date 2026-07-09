@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-import sys
+import base64
 import os
+import struct
+import sys
+import zlib
 from rdflib import Graph, Namespace, URIRef
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+LU = Namespace("https://nzlum.landcareresearch.co.nz/landuse/")
 
 def get_en(g, s, p):
     for o in g.objects(s, p):
@@ -21,6 +25,32 @@ def label(g, c):
 
 def definition(g, c):
     return get_en(g, c, SKOS.definition) or ""
+
+def colour(g, c):
+    n = next(g.objects(c, LU.colour), None)
+    return str(n) if n else None
+
+def colour_swatch_data_uri(hex_colour: str) -> str:
+    # A solid-colour 1x1 PNG, embedded inline so the swatch has no external
+    # dependency (mirrors the same helper in export_outline.py).
+    hexpart = hex_colour.lstrip("#")
+    r, gr, b = (int(hexpart[i:i + 2], 16) for i in (0, 2, 4))
+
+    def chunk(tag, data):
+        return (struct.pack(">I", len(data)) + tag + data +
+                struct.pack(">I", zlib.crc32(tag + data) & 0xffffffff))
+
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 2, 0, 0, 0)  # 1x1, 8-bit RGB
+    idat = zlib.compress(b"\x00" + bytes([r, gr, b]))  # filter byte + pixel
+    png = b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) + chunk(b"IDAT", idat) + chunk(b"IEND", b"")
+    return f"data:image/png;base64,{base64.b64encode(png).decode('ascii')}"
+
+def colour_swatch(g, c) -> str:
+    col = colour(g, c)
+    if not col:
+        return ""
+    uri = colour_swatch_data_uri(col)
+    return f' <img src="{uri}" width="14" height="14" alt="{col}" /> `{col}`'
 
 def get_top_concepts(g, scheme):
     return sorted(
@@ -66,6 +96,9 @@ def write_index_mdx(dir_path, top, g):
         f.write(f"---\ntitle: {top_label}\ndescription: {top_def}\nlabel: {top_not}\n---\n\n")
         f.write("import { Tabs, TabItem, LinkButton, Aside } from '@astrojs/starlight/components';\n\n")
         f.write(f"{top_def}\n\n")
+        top_swatch = colour_swatch(g, top)
+        if top_swatch:
+            f.write(f"**Colour:**{top_swatch}\n\n")
         render_all_notes(f, g, top)
         # Secondary classes
         for sec in get_narrower(g, top):
@@ -74,8 +107,10 @@ def write_index_mdx(dir_path, top, g):
             sec_def = definition(g, sec)
             f.write(f"## {sec_not} {sec_label}\n\n")
             f.write(f"{sec_def}\n\n")
+            sec_swatch = colour_swatch(g, sec)
+            if sec_swatch:
+                f.write(f"**Colour:**{sec_swatch}\n\n")
             render_all_notes(f, g, sec)
-            tertiaries = get_narrower(g, sec)
             tertiaries = get_narrower(g, sec)
             if tertiaries:
                 f.write("<Tabs>\n\n")
@@ -83,7 +118,10 @@ def write_index_mdx(dir_path, top, g):
                     tert_not = notation(g, tert)
                     tert_label = label(g, tert)
                     tert_def = definition(g, tert)
+                    tert_swatch = colour_swatch(g, tert)
                     f.write(f'  <TabItem label="{tert_not} {tert_label}">\n')
+                    if tert_swatch:
+                        f.write(f"    **Colour:**{tert_swatch}\n\n")
                     f.write(f"    {tert_def}\n")
                     render_all_notes(f, g, tert)
                     f.write("  </TabItem>\n\n")

@@ -1,0 +1,13 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX lu:   <https://nzlum.landcareresearch.co.nz/landuse/>
+
+SELECT ?colour ?c1 ?n1 ?c2 ?n2 WHERE {
+  ?c1 skos:notation ?n1 ;
+      lu:colour ?colour .
+  ?c2 skos:notation ?n2 ;
+      lu:colour ?colour .
+  FILTER (STR(?c1) < STR(?c2))
+  FILTER (!REGEX(?n1, "\\.0$"))
+  FILTER (!REGEX(?n2, "\\.0$"))
+}
+ORDER BY ?colour ?n1

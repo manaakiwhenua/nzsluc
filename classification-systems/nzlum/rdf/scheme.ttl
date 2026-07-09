@@ -6,6 +6,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+@prefix lu:  <https://nzlum.landcareresearch.co.nz/landuse/> .
 @prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
 @prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
 @prefix lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/> .
@@ -26,6 +27,13 @@ lu_proverb:kotahi_te_aho a dct:BibliographicResource ;
 lu_person:kingi_tawhiao a foaf:Person ;
   foaf:name "Kīngi Tāwhiao"@mi ;
   foaf:name "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"@mi .
+
+lu:colour a owl:DatatypeProperty ;
+  rdfs:label "colour"@en ;
+  rdfs:comment "Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. \"#7F6DF2\"). Optional; absence means no colour has been assigned."@en ;
+  rdfs:domain skos:Concept ;
+  rdfs:range xsd:string ;
+.
 
 lus:nzlum dct:relation lu_proverb:kotahi_te_aho .
 

@@ -10,10 +10,13 @@
 > ```bash
 > make build/nzlum-{version}.ttl
 > make shacl
+> make validate
 > make tables-all
 > make outline-all
 > make mdx-all
 > ```
+>
+> `make validate` runs the SPARQL sanity checks in `validation/*.rq` (e.g. concepts missing a `skos:notation` or `skos:prefLabel`, `skos:broader`/`skos:narrower` inconsistencies, and tertiary-level classes that share the same `lu:colour`) against the built vocabulary.
 
 NZLUM is adapted from the Australian Land Use and Management (ALUM) classification (version 8) for application in New Zealand, taking into account common land-use classification usage in New Zealand for several different purposes, including SOE soil quality monitoring (see Cavanagh & Whitehead 2022, 2023)[^1][^2], the Waikato Integrated Scenario Explorer (Rutledge et al. 2016)[^3], Greater Wellington Regional Council whaitua (catchment) classifications (Cavanagh 2022), Land Use Database version 4 (LUDB4) (Price et al. 2010)[^4], the New Zealand Planning Standards (MfE 2019)[^5], and LINZ rating valuations rules (LINZ 2010) [^6].
 

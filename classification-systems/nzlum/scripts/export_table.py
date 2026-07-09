@@ -8,6 +8,7 @@ from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+LU = Namespace("https://nzlum.landcareresearch.co.nz/landuse/")
 
 def get_en(g, s, p):
     for o in g.objects(s, p):
@@ -22,6 +23,10 @@ def notation(g, c):
 
 def label(g, c):
     return get_en(g, c, SKOS.prefLabel) or str(c)
+
+def colour(g, c):
+    n = next(g.objects(c, LU.colour), None)
+    return str(n) if n else ""
 
 def code_key(code: str):
     # numeric-aware sort for dotted numeric notations
@@ -74,51 +79,57 @@ def main():
         return code.split(".") if code else []
 
     # Traverse: top -> secondary -> tertiary (3-level expected)
-    rows = []  # each row: (p_code, p_label, s_code, s_label, t_code, t_label)
+    # each row: (p_code, p_label, p_colour, s_code, s_label, s_colour, t_code, t_label, t_colour)
+    # colour is looked up per level independently, since it may be assigned
+    # at the primary, secondary, and/or tertiary concept.
+    rows = []
     for top in tops:
-        top_code, top_label = notation(g, top), label(g, top)
+        top_code, top_label, top_colour = notation(g, top), label(g, top), colour(g, top)
 
         secs = children.get(top, [])
         if not secs:
             # allow a top with no children
-            rows.append((top_code, top_label, "", "", "", ""))
+            rows.append((top_code, top_label, top_colour, "", "", "", "", "", ""))
             continue
 
         for sec in secs:
-            sec_code, sec_label = notation(g, sec), label(g, sec)
+            sec_code, sec_label, sec_colour = notation(g, sec), label(g, sec), colour(g, sec)
 
             ters = children.get(sec, [])
             if not ters:
-                rows.append((top_code, top_label, sec_code, sec_label, "", ""))
+                rows.append((top_code, top_label, top_colour, sec_code, sec_label, sec_colour, "", "", ""))
                 continue
 
             for ter in ters:
-                ter_code, ter_label = notation(g, ter), label(g, ter)
-                rows.append((top_code, top_label, sec_code, sec_label, ter_code, ter_label))
+                ter_code, ter_label, ter_colour = notation(g, ter), label(g, ter), colour(g, ter)
+                rows.append((top_code, top_label, top_colour, sec_code, sec_label, sec_colour, ter_code, ter_label, ter_colour))
 
     # --- Markdown output (blank repeats to mimic merged cells) ---
     md_lines = []
-    md_lines.append("| Primary code | Primary class | Secondary code | Secondary class | Tertiary code | Tertiary class |")
-    md_lines.append("|---:|---|---:|---|---:|---|")
+    md_lines.append("| Primary code | Primary class | Primary colour | Secondary code | Secondary class | Secondary colour | Tertiary code | Tertiary class | Tertiary colour |")
+    md_lines.append("|---:|---|---|---:|---|---|---:|---|---|")
 
     prev_p = prev_s = None
-    for p_code, p_lab, s_code, s_lab, t_code, t_lab in rows:
+    for p_code, p_lab, p_col, s_code, s_lab, s_col, t_code, t_lab, t_col in rows:
         if (p_code, p_lab) == prev_p:
-            p_code_out, p_lab_out = "", ""
+            p_code_out, p_lab_out, p_col_out = "", "", ""
         else:
-            p_code_out, p_lab_out = p_code, p_lab
+            p_code_out, p_lab_out, p_col_out = p_code, p_lab, p_col
             prev_p = (p_code, p_lab)
             prev_s = None  # reset secondary when primary changes
 
         if s_code == "" and s_lab == "":
-            s_code_out, s_lab_out = "", ""
+            s_code_out, s_lab_out, s_col_out = "", "", ""
         elif (s_code, s_lab) == prev_s:
-            s_code_out, s_lab_out = "", ""
+            s_code_out, s_lab_out, s_col_out = "", "", ""
         else:
-            s_code_out, s_lab_out = s_code, s_lab
+            s_code_out, s_lab_out, s_col_out = s_code, s_lab, s_col
             prev_s = (s_code, s_lab)
 
-        md_lines.append(f"| {p_code_out} | {p_lab_out} | {s_code_out} | {s_lab_out} | {t_code} | {t_lab} |")
+        md_lines.append(
+            f"| {p_code_out} | {p_lab_out} | {p_col_out} | {s_code_out} | {s_lab_out} | {s_col_out} "
+            f"| {t_code} | {t_lab} | {t_col} |"
+        )
 
     with open(out_md, "w", encoding="utf-8") as f:
         f.write("\n".join(md_lines) + "\n")
@@ -128,7 +139,8 @@ def main():
     ws = wb.active
     ws.title = "NZLUM"
 
-    headers = ["Primary code", "Primary class", "Secondary code", "Secondary class", "Tertiary code", "Tertiary class"]
+    headers = ["Primary code", "Primary class", "Primary colour", "Secondary code", "Secondary class", "Secondary colour",
+               "Tertiary code", "Tertiary class", "Tertiary colour"]
     ws.append(headers)
 
     header_font = Font(bold=True)
@@ -146,6 +158,14 @@ def main():
 
     end_row = start_row + len(rows) - 1
 
+    # shade the colour columns with their own hex value
+    COLOUR_COLS = (3, 6, 9)
+    for r in range(start_row, end_row + 1):
+        for col_idx in COLOUR_COLS:
+            cell = ws.cell(row=r, column=col_idx)
+            if cell.value:
+                cell.fill = PatternFill("solid", fgColor="FF" + cell.value.lstrip("#"))
+
     # helper to merge vertical runs where values repeat
     def merge_runs(col_idx):
         r = start_row
@@ -159,22 +179,24 @@ def main():
                 ws.cell(row=r, column=col_idx).alignment = Alignment(vertical="top", wrap_text=True)
             r = r2 + 1
 
-    # Merge primary code/class columns (1,2)
+    # Merge primary code/class/colour columns (1,2,3)
     merge_runs(1)
     merge_runs(2)
-
-    # Merge secondary code/class, but only within identical primary groups.
-    # Easiest: merge runs on those columns as written (they repeat under same primary anyway)
     merge_runs(3)
+
+    # Merge secondary code/class/colour, but only within identical primary groups.
+    # Easiest: merge runs on those columns as written (they repeat under same primary anyway)
     merge_runs(4)
+    merge_runs(5)
+    merge_runs(6)
 
     # formatting
-    for row in ws.iter_rows(min_row=2, max_row=end_row, min_col=1, max_col=6):
+    for row in ws.iter_rows(min_row=2, max_row=end_row, min_col=1, max_col=9):
         for cell in row:
             cell.alignment = Alignment(vertical="top", wrap_text=True)
 
     # column widths (tweak)
-    widths = [12, 34, 14, 36, 14, 44]
+    widths = [12, 34, 10, 14, 36, 10, 14, 44, 10]
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
