@@ -50,7 +50,7 @@ def colour_swatch(g, c) -> str:
     if not col:
         return ""
     uri = colour_swatch_data_uri(col)
-    return f' <img src="{uri}" width="14" height="14" alt="{col}" /> `{col}`'
+    return f'<img src="{uri}" width="14" height="14" alt="{col}" style="display:inline-block;vertical-align:text-bottom" /> `{col}`'
 
 def get_top_concepts(g, scheme):
     return sorted(
@@ -98,7 +98,7 @@ def write_index_mdx(dir_path, top, g):
         f.write(f"{top_def}\n\n")
         top_swatch = colour_swatch(g, top)
         if top_swatch:
-            f.write(f"**Colour:**{top_swatch}\n\n")
+            f.write(f"{top_swatch}\n\n")
         render_all_notes(f, g, top)
         # Secondary classes
         for sec in get_narrower(g, top):
@@ -109,7 +109,7 @@ def write_index_mdx(dir_path, top, g):
             f.write(f"{sec_def}\n\n")
             sec_swatch = colour_swatch(g, sec)
             if sec_swatch:
-                f.write(f"**Colour:**{sec_swatch}\n\n")
+                f.write(f"{sec_swatch}\n\n")
             render_all_notes(f, g, sec)
             tertiaries = get_narrower(g, sec)
             if tertiaries:
@@ -121,7 +121,7 @@ def write_index_mdx(dir_path, top, g):
                     tert_swatch = colour_swatch(g, tert)
                     f.write(f'  <TabItem label="{tert_not} {tert_label}">\n')
                     if tert_swatch:
-                        f.write(f"    **Colour:**{tert_swatch}\n\n")
+                        f.write(f"    {tert_swatch}\n\n")
                     f.write(f"    {tert_def}\n")
                     render_all_notes(f, g, tert)
                     f.write("  </TabItem>\n\n")
