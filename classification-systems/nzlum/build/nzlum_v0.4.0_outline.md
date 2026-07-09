@@ -11,13 +11,13 @@
   - **1.1.0 Nature conservation**
     Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ).
 
-    - **1.1.1 Strict nature reserve**
+    - **1.1.1 Strict nature reserve** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOIs5oBAAIqATFTIX7nAAAAAElFTkSuQmCC" width="16" height="16" alt="#5E3A98"> `#5E3A98`
       Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring.
 
-    - **1.1.2 Wilderness area**
+    - **1.1.2 Wilderness area** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOwZ6gFAAE+AL0UfciuAAAAAElFTkSuQmCC" width="16" height="16" alt="#3F007D"> `#3F007D`
       Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition.
 
-    - **1.1.3 National Park**
+    - **1.1.3 National Park** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOoKdsGAAMaAany6oOLAAAAAElFTkSuQmCC" width="16" height="16" alt="#7C76B6"> `#7C76B6`
       Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
 
   a) protect the ecological integrity of one or more ecosystems for the current and future generations;
@@ -26,21 +26,21 @@
 
   c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.
 
-    - **1.1.4 Natural feature protection**
+    - **1.1.4 Natural feature protection** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNYPP80AAP2Ag7hYIg7AAAAAElFTkSuQmCC" width="16" height="16" alt="#A39FCB"> `#A39FCB`
       Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance.
 
-    - **1.1.5 Habitat or species management area**
+    - **1.1.5 Habitat or species management area** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGM4eeoxAATWAnc1FlANAAAAAElFTkSuQmCC" width="16" height="16" alt="#C9CAE3"> `#C9CAE3`
       Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land.
 
-    - **1.1.6 Protected landscape**
+    - **1.1.6 Protected landscape** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4+eITAAWBAsRCE4HsAAAAAElFTkSuQmCC" width="16" height="16" alt="#E9E8F2"> `#E9E8F2`
       Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.
 
-    - **1.1.7 Other conserved area**
+    - **1.1.7 Other conserved area** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP48/svAAXrAvUg5s1sAAAAAElFTkSuQmCC" width="16" height="16" alt="#FCFBFD"> `#FCFBFD`
       Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .
       > [!NOTE]
       > If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’
 
-  - **1.2.0 Cultural and natural heritage**
+  - **1.2.0 Cultural and natural heritage** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNYwCAJAAH9ALr0rdycAAAAAElFTkSuQmCC" width="16" height="16" alt="#A00019"> `#A00019`
     Conservation classes are for purposes other than biodiversity protecton.
 
     - **1.2.1 Indigenous cultural heritage**
@@ -52,7 +52,7 @@
     - **1.2.3 Natural heritage**
       Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks).
 
-  - **1.3.0 Minimal use from relatively natural environments**
+  - **1.3.0 Minimal use from relatively natural environments** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4f7wKAAUJAkGU1fHQAAAAAElFTkSuQmCC" width="16" height="16" alt="#FFC77A"> `#FFC77A`
     This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land).
     > [!NOTE]
     > Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1.
@@ -79,7 +79,7 @@
       > [!TIP]
       > This is often an ancillary use; assign only if customary use is the prime use of the land.
 
-    - **1.3.6 Defence land**
+    - **1.3.6 Defence land** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4P08cAARUAbVwdE2/AAAAAElFTkSuQmCC" width="16" height="16" alt="#FF9E17"> `#FF9E17`
       Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas.
       > [!NOTE]
       > Areas associated with buildings or more built environments on defence land are captured under an urban class.
@@ -103,7 +103,7 @@
     - **1.3.8 Carbon forest**
       Retained (non-planted) indigenous vegetation set aside for carbon credits.
 
-  - **1.4.0 Unused and transitioning land**
+  - **1.4.0 Unused and transitioning land** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGM4cWw+AASHAi6DqotyAAAAAElFTkSuQmCC" width="16" height="16" alt="#C8C69F"> `#C8C69F`
     Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.
     > [!NOTE]
     > Corridors and roadside areas may fit under this class.
@@ -137,7 +137,7 @@
   > [!TIP]
   > Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.
 
-  - **2.1.0 Plantation forests**
+  - **2.1.0 Plantation forests** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGMQUhQCAACOAEaQqbDWAAAAAElFTkSuQmCC" width="16" height="16" alt="#122112"> `#122112`
     Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry.
     > [!NOTE]
     > This includes farm forestry and may consist of monocultures or mixed species.
@@ -166,7 +166,7 @@
     - **2.1.4 Planted environmental & infrastructure protection**
       An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted.
 
-  - **2.2.0 Grazing modified pasture systems**
+  - **2.2.0 Grazing modified pasture systems** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGMwLTcFAAHGAOKT9n4cAAAAAElFTkSuQmCC" width="16" height="16" alt="#357735"> `#357735`
     Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.
     > [!NOTE]
     > Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.
@@ -177,7 +177,7 @@
     > [!TIP]
     > The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.
 
-    - **2.2.1 Dairy**
+    - **2.2.1 Dairy** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPoLTcFAALOATqxnAjMAAAAAElFTkSuQmCC" width="16" height="16" alt="#8D7735"> `#8D7735`
       Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.
       > [!NOTE]
       > Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.
@@ -185,7 +185,7 @@
       > [!NOTE]
       > Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.
 
-    - **2.2.2 Intensive dry stock**
+    - **2.2.2 Intensive dry stock** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGMwLTcFAAHGAOKT9n4cAAAAAElFTkSuQmCC" width="16" height="16" alt="#357735"> `#357735`
       Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain.
       > [!NOTE]
       > Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding.
@@ -193,7 +193,7 @@
       > [!TIP]
       > Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent.
 
-    - **2.2.3 Extensive dry stock**
+    - **2.2.3 Extensive dry stock** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNYvcgDAAORAZaSKzSmAAAAAElFTkSuQmCC" width="16" height="16" alt="#ABA248"> `#ABA248`
       Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.
       > [!NOTE]
       > Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)
@@ -207,7 +207,7 @@
       > [!TIP]
       > The specific commodity or commodities should be noted if known.
 
-  - **2.3.0 Short-rotation and seasonal cropping**
+  - **2.3.0 Short-rotation and seasonal cropping** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOorw8BAALTAVNencmQAAAAAElFTkSuQmCC" width="16" height="16" alt="#7F7F54"> `#7F7F54`
     This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.
     > [!NOTE]
     > This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.
@@ -247,7 +247,7 @@
       > [!NOTE]
       > This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.
 
-  - **2.4.0 Perennial horticulture**
+  - **2.4.0 Perennial horticulture** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNYsmIGAAPYAeVOWq1QAAAAAElFTkSuQmCC" width="16" height="16" alt="#A4A898"> `#A4A898`
     Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.
     > [!TIP]
     > Management practices such as irrigation or netting can be recorded as management practices.
@@ -269,7 +269,7 @@
     - **2.4.3 Other perennial horticulture**
       Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies).
 
-  - **2.5.0 Intensive horticulture**
+  - **2.5.0 Intensive horticulture** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPw8rEEAAGzANBOe+6yAAAAAElFTkSuQmCC" width="16" height="16" alt="#4A4C39"> `#4A4C39`
     Intensive forms of plant production, often with special-purpose improvements used for horticultural production.
     > [!TIP]
     > Record management practices such as hydroponic systems, irrigation, and netting, if known.
@@ -290,7 +290,7 @@
       > [!NOTE]
       > Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.
 
-  - **2.6.0 Intensive animal production**
+  - **2.6.0 Intensive animal production** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPYv3wGAAQnAf9axqpzAAAAAElFTkSuQmCC" width="16" height="16" alt="#BFA798"> `#BFA798`
     Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.
     > [!TIP]
     > Record animal types as commodities, if known.
@@ -315,7 +315,7 @@
     - **2.6.5 Aquaculture**
       Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.
 
-  - **2.7.0 Water and wastewater**
+  - **2.7.0 Water and wastewater** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOwDogGAAGwAOfy5bZsAAAAAElFTkSuQmCC" width="16" height="16" alt="#3B505B"> `#3B505B`
     Built water features associated with agricultural use.
 
     - **2.7.1 Stock water**
@@ -335,7 +335,7 @@
     - **2.7.5 Irrigation reservoirs and canals**
       Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes.
 
-  - **2.8.0 Vacant and transitioning land**
+  - **2.8.0 Vacant and transitioning land** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPYs/8hAASXAl14lRXKAAAAAElFTkSuQmCC" width="16" height="16" alt="#BCBFE1"> `#BCBFE1`
     As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.
     > [!NOTE]
     > In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.
@@ -357,7 +357,7 @@
       > **Example**
       > Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown.
 
-  - **2.9.0 Smallholder farm**
+  - **2.9.0 Smallholder farm** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4es0fAASuAgtR5jNCAAAAAElFTkSuQmCC" width="16" height="16" alt="#E5D64F"> `#E5D64F`
     A rural property larger than a rural residential property (> 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation.
     > [!NOTE]
     > Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management.
@@ -376,7 +376,7 @@
   > [!NOTE]
   > Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.
 
-  - **3.1.0 Residential**
+  - **3.1.0 Residential** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNojIsGAAKeATvL1KbNAAAAAElFTkSuQmCC" width="16" height="16" alt="#815E5B"> `#815E5B`
     Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.
     > [!NOTE]
     > The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’
@@ -384,10 +384,10 @@
     > [!TIP]
     > Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.
 
-    - **3.1.1 High-density residential**
+    - **3.1.1 High-density residential** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPwsbYEAAGXAMF5Otv8AAAAAElFTkSuQmCC" width="16" height="16" alt="#4C3B39"> `#4C3B39`
       Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.
 
-    - **3.1.2 Medium-density residential**
+    - **3.1.2 Medium-density residential** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNI8fMBAAIYAP/cWF4BAAAAAElFTkSuQmCC" width="16" height="16" alt="#644E4C"> `#644E4C`
       Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings.
       > [!NOTE]
       > Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.
@@ -396,10 +396,10 @@
       > **Example**
       > Townhouses, terraced housing, low-rise apartments.
 
-    - **3.1.3 Low-density residential**
+    - **3.1.3 Low-density residential** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNojIsGAAKeATvL1KbNAAAAAElFTkSuQmCC" width="16" height="16" alt="#815E5B"> `#815E5B`
       Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.
 
-    - **3.1.4 Rural residential**
+    - **3.1.4 Rural residential** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGNYUVUGAANmAZm4svoDAAAAAElFTkSuQmCC" width="16" height="16" alt="#A87A76"> `#A87A76`
       Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.
       > [!NOTE]
       > Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.
@@ -410,10 +410,10 @@
       > [!TIP]
       > Properties in this size interval and without a dwelling could be in transition to residential.
 
-  - **3.2.0 Public recreation and services**
+  - **3.2.0 Public recreation and services** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGM4OKMCAAPvAdK4oDXVAAAAAElFTkSuQmCC" width="16" height="16" alt="#C19878"> `#C19878`
     Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.
 
-    - **3.2.1 Outdoor recreation**
+    - **3.2.1 Outdoor recreation** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGM4OKMCAAPvAdK4oDXVAAAAAElFTkSuQmCC" width="16" height="16" alt="#C19878"> `#C19878`
       Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas.
       > [!NOTE]
       > Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.
@@ -425,19 +425,19 @@
       > **Example**
       > Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves.
 
-    - **3.2.2 Indoor recreation**
+    - **3.2.2 Indoor recreation** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGOY2lQMAAM6AYuf1+6JAAAAAElFTkSuQmCC" width="16" height="16" alt="#958273"> `#958273`
       Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.
       > [!TIP]
       > **Example**
       > Sports centres, gyms, swimming pools, indoor arenas.
 
-    - **3.2.3 Community services**
+    - **3.2.3 Community services** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4MDMJAAQ4AdzCcZ2TAAAAAElFTkSuQmCC" width="16" height="16" alt="#E09962"> `#E09962`
       Land used for providing essential services and facilities to support the local community.
       > [!TIP]
       > **Example**
       > Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.
 
-  - **3.3.0 Commercial**
+  - **3.3.0 Commercial** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGPYcegcAAR+AknmYtzhAAAAAElFTkSuQmCC" width="16" height="16" alt="#B8C2CE"> `#B8C2CE`
     Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.
     > [!TIP]
     > Central government offices when these are privately rented should be captured in this category, even if they are public-facing.
@@ -477,7 +477,7 @@
       > [!NOTE]
       > Excludes airports, ports, roads, and train stations (captured under 3.6.0)
 
-  - **3.4.0 Manufacturing and industrial**
+  - **3.4.0 Manufacturing and industrial** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGO4cOk+AAT3AoJ46sllAAAAAElFTkSuQmCC" width="16" height="16" alt="#D0D2DF"> `#D0D2DF`
     Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.
 
     - **3.4.1 General purpose factory**
@@ -512,7 +512,7 @@
     - **3.4.6 Abattoirs**
       Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.
 
-  - **3.5.0 Utilities**
+  - **3.5.0 Utilities** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4sfYXAAVAAqAMjPsGAAAAAElFTkSuQmCC" width="16" height="16" alt="#F8ADFA"> `#F8ADFA`
     Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure.
 
     - **3.5.1 Fuel powered electricity generation**
@@ -552,7 +552,7 @@
       > **Example**
       > Radar stations, beacons, lighthouses, TV and radio transmission towers.
 
-  - **3.6.0 Transportation**
+  - **3.6.0 Transportation** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGMoKq4DAAK+AWR3tcbMAAAAAElFTkSuQmCC" width="16" height="16" alt="#72737E"> `#72737E`
     Land allocated to infrastructure used for the transportation of goods or people.
     > [!TIP]
     > Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.
@@ -579,7 +579,7 @@
       > **Example**
       > Harbours, navigational channels.
 
-  - **3.7.0 Mining**
+  - **3.7.0 Mining** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4eG45AATqAlehOyMkAAAAAElFTkSuQmCC" width="16" height="16" alt="#E1CEA7"> `#E1CEA7`
     Mining and extractive industries (including salt extraction from evaporation basins).
     > [!TIP]
     > Record the specific type of mining activitiy in the commodity attribute, if known.
@@ -599,7 +599,7 @@
     - **3.7.5 Extractive industry not in use**
       Land undergoing rehabilitation after mining activities, and unmined land within a mining permit.
 
-  - **3.8.0 Waste treatment and disposal**
+  - **3.8.0 Waste treatment and disposal** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4XugBAAPjAaFwOBUhAAAAAElFTkSuQmCC" width="16" height="16" alt="#E77148"> `#E77148`
     Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.
 
     - **3.8.1 Landfills**
@@ -631,7 +631,7 @@
       > **Example**
       > Detention basins, drainage systems, retention ponds, rain gardens, wetlands.
 
-  - **3.9.0 Vacant and transitioning land**
+  - **3.9.0 Vacant and transitioning land** <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGO4Nns6AARTAgnQxYgYAAAAAElFTkSuQmCC" width="16" height="16" alt="#D69B97"> `#D69B97`
     This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.
 
     - **3.9.1 Brownfield development**

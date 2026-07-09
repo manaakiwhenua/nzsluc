@@ -2,9 +2,13 @@
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDF
 from collections import defaultdict
+import base64
+import struct
 import sys
+import zlib
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+LU = Namespace("https://nzlum.landcareresearch.co.nz/landuse/")
 
 def get_lang_pref(g, s, p, lang="en"):
     vals = list(g.objects(s, p))
@@ -28,6 +32,26 @@ def get_lang_all(g, s, p, lang="en"):
 def notation(g, c):
     n = next(g.objects(c, SKOS.notation), None)
     return str(n) if n else ""
+
+def colour(g, c):
+    n = next(g.objects(c, LU.colour), None)
+    return str(n) if n else None
+
+def colour_swatch_data_uri(hex_colour: str) -> str:
+    # A solid-colour 1x1 PNG, embedded inline so the swatch has no external
+    # dependency (GitHub strips data: URIs from markdown image syntax, but
+    # renders them fine in a raw <img> tag).
+    hexpart = hex_colour.lstrip("#")
+    r, gr, b = (int(hexpart[i:i + 2], 16) for i in (0, 2, 4))
+
+    def chunk(tag, data):
+        return (struct.pack(">I", len(data)) + tag + data +
+                struct.pack(">I", zlib.crc32(tag + data) & 0xffffffff))
+
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 2, 0, 0, 0)  # 1x1, 8-bit RGB
+    idat = zlib.compress(b"\x00" + bytes([r, gr, b]))  # filter byte + pixel
+    png = b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) + chunk(b"IDAT", idat) + chunk(b"IEND", b"")
+    return f"data:image/png;base64,{base64.b64encode(png).decode('ascii')}"
 
 def code_key(code: str):
     # numeric-aware key for dotted codes like 1.2.10
@@ -90,10 +114,15 @@ def main():
         code = notation(g, concept)
         lab = get_lang_pref(g, concept, SKOS.prefLabel) or str(concept)
         defi = get_lang_pref(g, concept, SKOS.definition) or ""
+        col = colour(g, concept)
 
         ind = "  " * depth  # indentation for nested list
         # Enumerated list item: use code as the visible "numbering"
-        lines.append(f"{ind}- **{code} {md_escape(lab)}**")
+        swatch = ""
+        if col:
+            uri = colour_swatch_data_uri(col)
+            swatch = f' <img src="{uri}" width="16" height="16" alt="{col}"> `{col}`'
+        lines.append(f"{ind}- **{code} {md_escape(lab)}**{swatch}")
         if defi:
             lines.append(f"{ind}  {md_escape(defi)}")
 

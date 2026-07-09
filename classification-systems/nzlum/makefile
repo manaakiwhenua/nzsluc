@@ -22,6 +22,13 @@ tables-all: $(BUILD)/nzlum-$(VERSION).ttl
 shacl: $(BUILD)/nzlum-$(VERSION).ttl
 	shacl validate --shapes shapes/shapes.ttl --data $(BUILD)/nzlum-$(VERSION).ttl
 
+.PHONY: validate
+validate: $(BUILD)/nzlum-$(VERSION).ttl
+	@for q in validation/*.rq; do \
+		echo "== $$q =="; \
+		sparql --data $(BUILD)/nzlum-$(VERSION).ttl --query $$q; \
+	done
+
 .PHONY: outline-all
 outline-all: $(BUILD)/nzlum-$(VERSION).ttl
 	./scripts/export_outline.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \

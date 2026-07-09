@@ -5,6 +5,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX adms: <http://www.w3.org/ns/adms#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lu: <https://nzlum.landcareresearch.co.nz/landuse/>
 PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
 PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
 PREFIX lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/>
@@ -27,6 +28,12 @@ lu_person:kingi_tawhiao
         a          foaf:Person;
         foaf:name  "Kīngi Tāwhiao"@mi;
         foaf:name  "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"@mi .
+
+lu:colour  a          owl:DatatypeProperty;
+        rdfs:label    "colour"@en;
+        rdfs:comment  "Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. \"#7F6DF2\"). Optional; absence means no colour has been assigned."@en;
+        rdfs:domain   skos:Concept;
+        rdfs:range    xsd:string .
 
 lus:nzlum  dct:relation  lu_proverb:kotahi_te_aho;
         a               skos:ConceptScheme;
@@ -92,6 +99,7 @@ luc:strict_nature_res
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.1";
+        lu:colour        "#5E3A98";
         skos:prefLabel   "Strict nature reserve"@en;
         skos:definition  "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve."@en .
@@ -100,6 +108,7 @@ luc:wilderness  a        skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.2";
+        lu:colour        "#3F007D";
         skos:prefLabel   "Wilderness area"@en;
         skos:definition  "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area."@en .
@@ -108,6 +117,7 @@ luc:national_park  a     skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.3";
+        lu:colour        "#7C76B6";
         skos:prefLabel   "National Park"@en;
         skos:definition  "Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:\n\n  a) protect the ecological integrity of one or more ecosystems for the current and future generations;\n\n  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and\n\n  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category Ib: national park."@en .
@@ -117,6 +127,7 @@ luc:natural_feature_protection
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.4";
+        lu:colour        "#A39FCB";
         skos:prefLabel   "Natural feature protection"@en;
         skos:definition  "Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature."@en .
@@ -126,6 +137,7 @@ luc:habitat_or_species_management
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.5";
+        lu:colour        "#C9CAE3";
         skos:prefLabel   "Habitat or species management area"@en;
         skos:definition  "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area."@en .
@@ -135,6 +147,7 @@ luc:protected_landscape
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.6";
+        lu:colour        "#E9E8F2";
         skos:prefLabel   "Protected landscape"@en;
         skos:definition  "Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity."@en;
         dct:source       "IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape."@en .
@@ -144,6 +157,7 @@ luc:other_conserved_area
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:nature_cons;
         skos:notation    "1.1.7";
+        lu:colour        "#FCFBFD";
         skos:prefLabel   "Other conserved area"@en;
         skos:definition  "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."@en;
         skos:scopeNote   "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’" .
@@ -153,6 +167,7 @@ luc:cultural_natural_heritage
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:conservation;
         skos:notation    "1.2.0";
+        lu:colour        "#A00019";
         skos:prefLabel   "Cultural and natural heritage"@en;
         skos:definition  "Conservation classes are for purposes other than biodiversity protecton."@en;
         skos:narrower    luc:indigenous_cultural_heritage;
@@ -187,6 +202,7 @@ luc:minimal_use_relatively_natural
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:conservation;
         skos:notation    "1.3.0";
+        lu:colour        "#FFC77A";
         skos:prefLabel   "Minimal use from relatively natural environments"@en;
         skos:definition  "This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land)."@en;
         skos:scopeNote   "Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1."@en;
@@ -246,6 +262,7 @@ luc:defence_land_natural_areas
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:minimal_use_relatively_natural;
         skos:notation    "1.3.6";
+        lu:colour        "#FF9E17";
         skos:prefLabel   "Defence land"@en;
         skos:definition  "Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas."@en;
         skos:scopeNote   "Areas associated with buildings or more built environments on defence land are captured under an urban class."@en;
@@ -275,6 +292,7 @@ luc:unused_and_transitioning
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:conservation;
         skos:notation    "1.4.0";
+        lu:colour        "#C8C69F";
         skos:prefLabel   "Unused and transitioning land"@en;
         skos:definition  "Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state."@en;
         skos:scopeNote   "Corridors and roadside areas may fit under this class."@en;
@@ -336,6 +354,7 @@ luc:plantation_forests
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.1.0";
+        lu:colour        "#122112";
         skos:prefLabel   "Plantation forests"@en;
         skos:definition  "Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry."@en;
         skos:scopeNote   "This includes farm forestry and may consist of monocultures or mixed species."@en;
@@ -388,6 +407,7 @@ luc:grazing_modified_pasture_systems
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.2.0";
+        lu:colour        "#357735";
         skos:prefLabel   "Grazing modified pasture systems"@en;
         skos:definition  "Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation."@en;
         skos:scopeNote   "Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping."@en;
@@ -401,6 +421,7 @@ luc:dairy  a             skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:grazing_modified_pasture_systems;
         skos:notation    "2.2.1";
+        lu:colour        "#8D7735";
         skos:prefLabel   "Dairy"@en;
         skos:definition  "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."@en;
         skos:scopeNote   "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."@en;
@@ -411,6 +432,7 @@ luc:intensive_dry_stock
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:grazing_modified_pasture_systems;
         skos:notation    "2.2.2";
+        lu:colour        "#357735";
         skos:prefLabel   "Intensive dry stock"@en;
         skos:definition  "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en;
         skos:scopeNote   "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding."@en;
@@ -423,6 +445,7 @@ luc:extensive_dry_stock
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:grazing_modified_pasture_systems;
         skos:notation    "2.2.3";
+        lu:colour        "#ABA248";
         skos:prefLabel   "Extensive dry stock"@en;
         skos:definition  "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."@en;
         skos:scopeNote   "Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)"@en;
@@ -435,6 +458,7 @@ luc:short_rotation_seasonal_cropping
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.3.0";
+        lu:colour        "#7F7F54";
         skos:prefLabel   "Short-rotation and seasonal cropping"@en;
         skos:definition  "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en;
         skos:scopeNote   "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."@en;
@@ -490,6 +514,7 @@ luc:perennial_horticulture
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.4.0";
+        lu:colour        "#A4A898";
         skos:prefLabel   "Perennial horticulture"@en;
         skos:definition  "Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control."@en;
         skos:usageNote   "Management practices such as irrigation or netting can be recorded as management practices."@en;
@@ -527,6 +552,7 @@ luc:intensive_horticulture
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.5.0";
+        lu:colour        "#4A4C39";
         skos:prefLabel   "Intensive horticulture"@en;
         skos:definition  "Intensive forms of plant production, often with special-purpose improvements used for horticultural production."@en;
         skos:narrower    luc:production_nurseries;
@@ -558,6 +584,7 @@ luc:intensive_animal_production
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.6.0";
+        lu:colour        "#BFA798";
         skos:prefLabel   "Intensive animal production"@en;
         skos:definition  "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en;
         skos:usageNote   "Record animal types as commodities, if known."@en;
@@ -610,6 +637,7 @@ luc:water_wastewater_agriculture
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.7.0";
+        lu:colour        "#3B505B";
         skos:prefLabel   "Water and wastewater"@en;
         skos:definition  "Built water features associated with agricultural use."@en;
         skos:narrower    luc:stock_water;
@@ -662,6 +690,7 @@ luc:vacant_and_transitioning_land
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.8.0";
+        lu:colour        "#BCBFE1";
         skos:prefLabel   "Vacant and transitioning land"@en;
         skos:definition  "As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations."@en;
         skos:scopeNote   "In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0."@en;
@@ -713,6 +742,7 @@ luc:smallholder_farm  a  skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:production_agriculture_plantations;
         skos:notation    "2.9.0";
+        lu:colour        "#E5D64F";
         skos:prefLabel   "Smallholder farm"@en;
         skos:definition  "A rural property larger than a rural residential property (> 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation."@en;
         skos:scopeNote   "Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management."@en;
@@ -751,6 +781,7 @@ luc:residential  a       skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.1.0";
+        lu:colour        "#815E5B";
         skos:prefLabel   "Residential"@en;
         skos:definition  "Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities."@en;
         skos:usageNote   "Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification."@en;
@@ -765,6 +796,7 @@ luc:high_density_residential
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:residential;
         skos:notation    "3.1.1";
+        lu:colour        "#4C3B39";
         skos:prefLabel   "High-density residential"@en;
         skos:definition  "Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density."@en .
 
@@ -773,6 +805,7 @@ luc:medium_density_residential
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:residential;
         skos:notation    "3.1.2";
+        lu:colour        "#644E4C";
         skos:prefLabel   "Medium-density residential"@en;
         skos:definition  "Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings."@en;
         skos:scopeNote   "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered."@en;
@@ -783,6 +816,7 @@ luc:low_density_residential
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:residential;
         skos:notation    "3.1.3";
+        lu:colour        "#815E5B";
         skos:prefLabel   "Low-density residential"@en;
         skos:definition  "Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density."@en .
 
@@ -791,6 +825,7 @@ luc:rural_residential
         skos:inScheme        lus:nzlum0.4.0;
         skos:broader         luc:residential;
         skos:notation        "3.1.4";
+        lu:colour            "#A87A76";
         skos:prefLabel       "Rural residential"@en;
         skos:definition      "Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas."@en;
         skos:scopeNote       "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard."@en;
@@ -803,6 +838,7 @@ luc:public_recreation_services
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.2.0";
+        lu:colour        "#C19878";
         skos:prefLabel   "Public recreation and services"@en;
         skos:definition  "Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population."@en;
         skos:narrower    luc:outdoor_recreation;
@@ -814,6 +850,7 @@ luc:outdoor_recreation
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.1";
+        lu:colour        "#C19878";
         skos:prefLabel   "Outdoor recreation"@en;
         skos:definition  "Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas."@en;
         skos:scopeNote   "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."@en;
@@ -825,6 +862,7 @@ luc:indoor_recreation
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.2";
+        lu:colour        "#958273";
         skos:prefLabel   "Indoor recreation"@en;
         skos:definition  "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures."@en;
         skos:example     "Sports centres, gyms, swimming pools, indoor arenas."@en .
@@ -834,6 +872,7 @@ luc:community_services
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:public_recreation_services;
         skos:notation    "3.2.3";
+        lu:colour        "#E09962";
         skos:prefLabel   "Community services"@en;
         skos:definition  "Land used for providing essential services and facilities to support the local community."@en;
         skos:example     "Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries."@en .
@@ -842,6 +881,7 @@ luc:commercial  a        skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.3.0";
+        lu:colour        "#B8C2CE";
         skos:prefLabel   "Commercial"@en;
         skos:definition  "Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing."@en;
         skos:usageNote   "Central government offices when these are privately rented should be captured in this category, even if they are public-facing."@en;
@@ -906,6 +946,7 @@ luc:manufacturing_industrial
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.4.0";
+        lu:colour        "#D0D2DF";
         skos:prefLabel   "Manufacturing and industrial"@en;
         skos:definition  "Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes."@en;
         skos:narrower    luc:general_purpose_factory;
@@ -970,6 +1011,7 @@ luc:utilities  a         skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.5.0";
+        lu:colour        "#F8ADFA";
         skos:prefLabel   "Utilities"@en;
         skos:definition  "Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure."@en;
         skos:changeNote  <https://github.com/manaakiwhenua/nzsluc/issues/69>;
@@ -1058,6 +1100,7 @@ luc:transport  a         skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.6.0";
+        lu:colour        "#72737E";
         skos:prefLabel   "Transportation"@en;
         skos:definition  "Land allocated to infrastructure used for the transportation of goods or people."@en;
         skos:usageNote   "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en;
@@ -1105,6 +1148,7 @@ luc:mining  a            skos:Concept;
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.7.0";
+        lu:colour        "#E1CEA7";
         skos:prefLabel   "Mining"@en;
         skos:definition  "Mining and extractive industries (including salt extraction from evaporation basins)."@en;
         skos:usageNote   "Record the specific type of mining activitiy in the commodity attribute, if known."@en;
@@ -1156,6 +1200,7 @@ luc:waste_treatment_disposal
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.8.0";
+        lu:colour        "#E77148";
         skos:prefLabel   "Waste treatment and disposal"@en;
         skos:definition  "Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health."@en;
         skos:narrower    luc:landfills;
@@ -1214,6 +1259,7 @@ luc:vacant_transitioning_land_urban
         skos:inScheme    lus:nzlum0.4.0;
         skos:broader     luc:built_environment;
         skos:notation    "3.9.0";
+        lu:colour        "#D69B97";
         skos:prefLabel   "Vacant and transitioning land"@en;
         skos:definition  "This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment."@en;
         skos:narrower    luc:brownfield_development;
