@@ -6,14 +6,18 @@
 > Future vesions of this classification will be maintained as a versioned SKOS concept schema. Human-oriented lists of classes with definitions will be generated from this. This is a work-in-progress, beginning with the class schema.
 
 >[!NOTE]
-> This will be controlled with GNU Make:
+> This will be controlled with GNU Make. Outputs for the version set by `VERSION` (default `0.4.0`) are written to `build/{version}/`:
 > ```bash
-> make build/nzlum-{version}.ttl
+> make build/{version}/nzlum-{version}.ttl
 > make shacl
 > make validate
 > make tables-all
 > make outline-all
 > make mdx-all
+> make html-all
+> make pdf-all
+> make all              # everything above, for VERSION
+> make all-versions      # everything above, for every version in VERSIONS
 > ```
 >
 > `make validate` runs the SPARQL sanity checks in `validation/*.rq` (e.g. concepts missing a `skos:notation` or `skos:prefLabel`, `skos:broader`/`skos:narrower` inconsistencies, and tertiary-level classes that share the same `lu:colour`) against the built vocabulary.
@@ -68,10 +72,12 @@ Land is classified according to its primary use, based on the primary land manag
 
 An overview of the class hierarchy is available:
 
-- As readable text: [nzlum_v0.4.0_outline.md](build/nzlum_v0.4.0_outline.md)
-- As a table in text: [nzlum_v0.4.0.md](build/nzlum_v0.4.0.md)
-- As a table in XLSX: [nzlum_v0.4.0.xlsx](build/nzlum_v0.4.0.xlsx)
-- As RDF: [nzlum.ttl](build/nzlum-0.4.0.ttl)
+- As readable text: [nzlum_v0.4.0_outline.md](build/0.4.0/nzlum_v0.4.0_outline.md)
+- As a table in text: [nzlum_v0.4.0.md](build/0.4.0/nzlum_v0.4.0.md)
+- As a table in XLSX: [nzlum_v0.4.0.xlsx](build/0.4.0/nzlum_v0.4.0.xlsx)
+- As a table with definitions, in HTML: [nzlum_v0.4.0.html](build/0.4.0/nzlum_v0.4.0.html)
+- As a table with definitions, in PDF: [nzlum_v0.4.0.pdf](build/0.4.0/nzlum_v0.4.0.pdf)
+- As RDF: [nzlum.ttl](build/0.4.0/nzlum-0.4.0.ttl)
 
 ## Data structure
 

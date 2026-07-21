@@ -1,38 +1,59 @@
 VERSION = 0.4.0
+VERSIONS = 0.3.0 0.4.0
 SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum$(VERSION)
 DATA = rdf/scheme.ttl rdf/$(VERSION)/concepts*.ttl
 BUILD = build
+OUT = $(BUILD)/$(VERSION)
 
-$(BUILD)/nzlum-$(VERSION).ttl: $(DATA)
-	mkdir -p $(BUILD)
+.PHONY: all
+all: mdx-all tables-all html-all pdf-all outline-all collections-all
+
+.PHONY: all-versions
+all-versions:
+	@for v in $(VERSIONS); do \
+		echo "== VERSION=$$v =="; \
+		$(MAKE) VERSION=$$v all; \
+	done
+
+$(OUT)/nzlum-$(VERSION).ttl: $(DATA)
+	mkdir -p $(OUT)
 	riot --validate $(DATA)
-	riot --output=turtle $(DATA) > $(BUILD)/nzlum-$(VERSION).ttl
+	riot --output=turtle $(DATA) > $(OUT)/nzlum-$(VERSION).ttl
 
 .PHONY: mdx-all
-mdx-all: $(BUILD)/nzlum-$(VERSION).ttl
-	./scripts/export_outline_mdx.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \
-	$(BUILD)/nzlum_v$(VERSION)_mdx/ ;
+mdx-all: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_outline_mdx.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(OUT)/nzlum_v$(VERSION)_mdx/ ;
 
 .PHONY: tables-all
-tables-all: $(BUILD)/nzlum-$(VERSION).ttl
-	./scripts/export_table.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \
-	$(BUILD)/nzlum_v$(VERSION).md $(BUILD)/nzlum_v$(VERSION).xlsx ;
+tables-all: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_table.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(OUT)/nzlum_v$(VERSION).md $(OUT)/nzlum_v$(VERSION).xlsx ;
+
+.PHONY: html-all
+html-all: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_html.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(OUT)/nzlum_v$(VERSION).html "NZLUM v$(VERSION)" ;
+
+.PHONY: pdf-all
+pdf-all: html-all
+	weasyprint $(OUT)/nzlum_v$(VERSION).html $(OUT)/nzlum_v$(VERSION).pdf ;
 
 .PHONY: shacl
-shacl: $(BUILD)/nzlum-$(VERSION).ttl
-	shacl validate --shapes shapes/shapes.ttl --data $(BUILD)/nzlum-$(VERSION).ttl
+shacl: $(OUT)/nzlum-$(VERSION).ttl
+	shacl validate --shapes shapes/shapes.ttl --data $(OUT)/nzlum-$(VERSION).ttl
 
 .PHONY: validate
-validate: $(BUILD)/nzlum-$(VERSION).ttl
+validate: $(OUT)/nzlum-$(VERSION).ttl
 	@for q in validation/*.rq; do \
 		echo "== $$q =="; \
-		sparql --data $(BUILD)/nzlum-$(VERSION).ttl --query $$q; \
+		sparql --data $(OUT)/nzlum-$(VERSION).ttl --query $$q; \
 	done
 
 .PHONY: outline-all
-outline-all: $(BUILD)/nzlum-$(VERSION).ttl
-	./scripts/export_outline.py $(BUILD)/nzlum-$(VERSION).ttl $(SCHEME) \
-	$(BUILD)/nzlum_v$(VERSION)_outline.md ;
+outline-all: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_outline.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(OUT)/nzlum_v$(VERSION)_outline.md ;
 
 .PHONY: collections-all
 collections-all:

@@ -515,7 +515,7 @@ luc:wastewater_treatment_land_application a skos:Concept ;
   skos:prefLabel "Wastewater treatment – land application"@en ;
   skos:definition "Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety."@en ;
   skos:usageNote " This is often likely to be an ancillary use."@en ;
-  skos:exmaple "Irrigation, groundwater recharge, soil fertility enhancement."@en ;
+  skos:example "Irrigation, groundwater recharge, soil fertility enhancement."@en ;
 .
 
 luc:stormwater_management a skos:Concept ;

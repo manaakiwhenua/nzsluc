@@ -5,6 +5,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX adms: <http://www.w3.org/ns/adms#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX doap: <http://usefulinc.com/ns/doap#>
 PREFIX lu: <https://nzlum.landcareresearch.co.nz/landuse/>
 PREFIX lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/>
 PREFIX luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/>
@@ -17,6 +18,9 @@ lu_status:draft  a  rdfs:Resource;
 
 lu_status:published  a  rdfs:Resource;
         rdfs:label  "Published"@en .
+
+lu_status:superseded  a  rdfs:Resource;
+        rdfs:label  "Superseded"@en .
 
 lu_proverb:kotahi_te_aho
         a                dct:BibliographicResource;
@@ -39,13 +43,20 @@ lus:nzlum  dct:relation  lu_proverb:kotahi_te_aho;
         a               skos:ConceptScheme;
         dct:title       "New Zealand Land Use and Management classification system"@en;
         dct:hasVersion  lus:nzlum0.3.0;
-        dct:hasVersion  lus:nzlum0.4.0 .
+        dct:hasVersion  lus:nzlum0.4.0;
+        foaf:homepage   <https://nzlum.landcareresearch.co.nz/> .
+
+_:b0    a            doap:GitRepository;
+        doap:browse  <https://github.com/manaakiwhenua/nzsluc> .
+
+lus:nzlum  doap:repository  _:b0 .
 
 lus:nzlum0.3.0  a           skos:ConceptScheme;
         dct:issued          "2025-06-30"^^xsd:date;
         owl:versionInfo     "0.3.0";
         dct:isVersionOf     lus:nzlum;
-        adms:status         lu_status:draft;
+        adms:status         lu_status:superseded;
+        dct:isReplacedBy    lus:nzlum0.4.0;
         skos:hasTopConcept  luc:conservation;
         skos:hasTopConcept  luc:production_agriculture_plantations;
         skos:hasTopConcept  luc:built_environment .
@@ -55,6 +66,7 @@ lus:nzlum0.4.0  a           skos:ConceptScheme;
         owl:versionInfo     "0.4.0";
         dct:isVersionOf     lus:nzlum;
         adms:status         lu_status:published;
+        dct:replaces        lus:nzlum0.3.0;
         skos:hasTopConcept  luc:conservation;
         skos:hasTopConcept  luc:production_agriculture_plantations;
         skos:hasTopConcept  luc:built_environment .
@@ -1243,7 +1255,7 @@ luc:wastewater_treatment_land_application
         skos:prefLabel   "Wastewater treatment – land application"@en;
         skos:definition  "Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety."@en;
         skos:usageNote   " This is often likely to be an ancillary use."@en;
-        skos:exmaple     "Irrigation, groundwater recharge, soil fertility enhancement."@en .
+        skos:example     "Irrigation, groundwater recharge, soil fertility enhancement."@en .
 
 luc:stormwater_management
         a                skos:Concept;

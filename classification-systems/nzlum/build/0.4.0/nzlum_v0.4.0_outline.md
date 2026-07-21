@@ -624,6 +624,10 @@
       Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.
       > [!TIP]
       >  This is often likely to be an ancillary use.
+      
+      > [!TIP]
+      > **Example**
+      > Irrigation, groundwater recharge, soil fertility enhancement.
 
     - **3.8.5 Stormwater management**
       Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.

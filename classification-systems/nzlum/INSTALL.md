@@ -35,13 +35,13 @@ sparql --version
 Now you can validate:
 
 ```bash
-riot --validate build/nzlum-{version}.ttl
+riot --validate build/{version}/nzlum-{version}.ttl
 ```
 
 Run SPARQL directly over the TTL (no TDB):
 
 ```bash
-sparql --data build/nzlum-{version}.ttl --query validation/count.rq # Other sanity-checking queries avaialble as *.rq
+sparql --data build/{version}/nzlum-{version}.ttl --query validation/count.rq # Other sanity-checking queries avaialble as *.rq
 ```
 
 ### Constraints
@@ -52,7 +52,7 @@ SHACL is used as a validation rule-set to check the SKOS vocabulary is complete 
 - `shapes.ttl` is the SHACL shapes file (the constraints)
 
 ```bash
-shacl validate --shapes shapes/shapes.ttl --data build/nzlum-{version}.ttl
+shacl validate --shapes shapes/shapes.ttl --data build/{version}/nzlum-{version}.ttl
 ```
 
 This is in preference to the example queries in .validation/
@@ -60,11 +60,25 @@ This is in preference to the example queries in .validation/
 ## Visualisation
 
 ```bash
-pip install openpyxl
+pip install openpyxl rdflib
 ```
 
 ```bash
 SCHEME=nzlum0.4.0 && python scripts/export-table.py nzlum.ttl https://example.org/landuse/scheme/$SCHEME $SCHEME.md $SCHEME.xlsx
+```
+
+### HTML and PDF
+
+`make html-all` generates a standalone HTML page (class table plus a definitions appendix) from the built TTL. `make pdf-all` renders that HTML to PDF using [WeasyPrint](https://doc.courtbouillon.org/weasyprint/), which is required for the PDF target only (not for HTML):
+
+```bash
+pip install weasyprint
+```
+
+WeasyPrint depends on Pango, cairo, and gdk-pixbuf being installed at the system level (already present on most desktop Linux installs). On Fedora:
+
+```bash
+sudo dnf install pango cairo gdk-pixbuf2
 ```
 
 
