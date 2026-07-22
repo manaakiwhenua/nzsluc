@@ -1,59 +1,59 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis styleCategories="Symbology" version="3.42.0">
   <renderer-v2 type="RuleRenderer" symbollevels="0" forceraster="0" referencescale="-1" enableorderby="0">
-    <rules key="{65d645d2-6bd0-4a0d-8f67-dc9e8a9860c1}">
-      <rule label="1.1.1 Strict nature reserve" symbol="lu0" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' AND &quot;water&quot; IS NULL" key="{bd85c29b-57dc-4980-8817-acf58c690d3b}" />
-      <rule label="1.1.2 Wilderness area" symbol="lu1" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' AND &quot;water&quot; IS NULL" key="{8b6598a3-792a-40b0-972c-019f2ee3c6d6}" />
-      <rule label="1.1.3 National Park" symbol="lu2" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' AND &quot;water&quot; IS NULL" key="{06c9f804-862c-427f-88d2-ce2332a3ee76}" />
-      <rule label="1.1.4 Natural feature protection" symbol="lu3" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' AND &quot;water&quot; IS NULL" key="{23947070-e9ad-44e2-8770-cb075f675923}" />
-      <rule label="1.1.5 Habitat or species management area" symbol="lu4" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' AND &quot;water&quot; IS NULL" key="{f3c84abe-498a-4dc4-8339-ca8a89247bf2}" />
-      <rule label="1.1.6 Protected landscape" symbol="lu5" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' AND &quot;water&quot; IS NULL" key="{66e62cd4-c710-4c38-b461-9059a35b1a50}" />
-      <rule label="1.1.7 Other conserved area" symbol="lu6" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' AND &quot;water&quot; IS NULL" key="{d6bef757-3bfe-49fe-ac45-47afc378de2f}" />
-      <rule label="1.2.0 Cultural and natural heritage" symbol="lu7" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' AND &quot;water&quot; IS NULL" key="{09a7b974-7680-42d0-85c9-9259974c424e}" />
-      <rule label="1.3.0 Minimal use from relatively natural environments" symbol="lu8" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' AND &quot;water&quot; IS NULL" key="{5cca0e9d-adc5-47c9-bcbb-828d917c0f28}" />
-      <rule label="1.3.6 Defence land" symbol="lu9" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' AND &quot;water&quot; IS NULL" key="{05a0cf73-5bc3-4fa1-b406-c4fa4c673a8b}" />
-      <rule label="1.4.0 Unused and transitioning land" symbol="lu10" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' AND &quot;water&quot; IS NULL" key="{7c6ab6f4-7756-4b51-97e1-e33f09043582}" />
-      <rule label="2.1.0 Plantation forests" symbol="lu11" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' AND &quot;water&quot; IS NULL" key="{2226b296-b723-45f2-9686-19df101d7aac}" />
-      <rule label="2.2.0 Grazing modified pasture systems" symbol="lu12" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' AND &quot;water&quot; IS NULL" key="{ed96d0d4-5ca4-4b33-9c46-1a95abceb07b}" />
-      <rule label="2.2.1 Dairy" symbol="lu13" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' AND &quot;water&quot; IS NULL" key="{ce383314-cccd-46a8-ac00-f25c4d5105d6}" />
-      <rule label="2.2.2 Intensive dry stock" symbol="lu14" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' AND &quot;water&quot; IS NULL" key="{4d5cc923-78c9-4186-a61a-622fab838090}" />
-      <rule label="2.2.3 Extensive dry stock" symbol="lu15" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' AND &quot;water&quot; IS NULL" key="{26ce67e0-9fee-4bf8-8a6d-fbbb147df3c1}" />
-      <rule label="2.3.0 Short-rotation and seasonal cropping" symbol="lu16" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' AND &quot;water&quot; IS NULL" key="{794e3cae-92a1-400b-b282-6c8cd720ae86}" />
-      <rule label="2.4.0 Perennial horticulture" symbol="lu17" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' AND &quot;water&quot; IS NULL" key="{a8ebd139-481e-4bfb-8e88-89b163365df8}" />
-      <rule label="2.5.0 Intensive horticulture" symbol="lu18" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' AND &quot;water&quot; IS NULL" key="{2bc6af62-e758-4ebe-82e6-29d66268a812}" />
-      <rule label="2.6.0 Intensive animal production" symbol="lu19" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' AND &quot;water&quot; IS NULL" key="{661a7ef4-8195-48ca-a9e3-3ef6e9e3acd3}" />
-      <rule label="2.7.0 Water and wastewater" symbol="lu20" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' AND &quot;water&quot; IS NULL" key="{9322c34d-ed69-41b8-bdfb-42f6a9b7479b}" />
-      <rule label="2.8.0 Vacant and transitioning land" symbol="lu21" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' AND &quot;water&quot; IS NULL" key="{2073dd4e-c49f-40a4-9659-1d1c1d6259a4}" />
-      <rule label="2.9.0 Smallholder farm" symbol="lu22" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' AND &quot;water&quot; IS NULL" key="{1c8f947c-d28e-452c-9bab-565ddb5f9b71}" />
-      <rule label="3.1.0 Residential" symbol="lu23" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' AND &quot;water&quot; IS NULL" key="{6632a4ea-d04a-4ab1-80ba-b96a15c9d5c6}" />
-      <rule label="3.1.1 High-density residential" symbol="lu24" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' AND &quot;water&quot; IS NULL" key="{330271b4-a60d-495b-8855-7376b88e094f}" />
-      <rule label="3.1.2 Medium-density residential" symbol="lu25" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' AND &quot;water&quot; IS NULL" key="{54e49588-10f5-41c5-9c55-27aed71ac427}" />
-      <rule label="3.1.3 Low-density residential" symbol="lu26" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' AND &quot;water&quot; IS NULL" key="{47c8587d-720b-4ee3-8299-ab107aa99052}" />
-      <rule label="3.1.4 Rural residential" symbol="lu27" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' AND &quot;water&quot; IS NULL" key="{f9f91661-eb0e-43ef-97ba-65c367d1f3de}" />
-      <rule label="3.2.0 Public recreation and services" symbol="lu28" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' AND &quot;water&quot; IS NULL" key="{6777c538-3257-4c45-8109-58dfb797e2e9}" />
-      <rule label="3.2.1 Outdoor recreation" symbol="lu29" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' AND &quot;water&quot; IS NULL" key="{777b1c76-7276-430d-bf82-7388779aa3e2}" />
-      <rule label="3.2.2 Indoor recreation" symbol="lu30" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' AND &quot;water&quot; IS NULL" key="{bf59daeb-5fac-47b5-8ae0-17d4af426ab5}" />
-      <rule label="3.2.3 Community services" symbol="lu31" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' AND &quot;water&quot; IS NULL" key="{58ba3edc-4f6f-4821-a1bd-e06df95923f3}" />
-      <rule label="3.3.0 Commercial" symbol="lu32" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' AND &quot;water&quot; IS NULL" key="{c0004368-38a6-482d-94bf-fd46b92b3357}" />
-      <rule label="3.4.0 Manufacturing and industrial" symbol="lu33" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' AND &quot;water&quot; IS NULL" key="{1036d023-f3af-4d12-b7bd-25c8e1523091}" />
-      <rule label="3.5.0 Utilities" symbol="lu34" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' AND &quot;water&quot; IS NULL" key="{f78f7ffa-7284-4e93-a21d-1f824cc4ca1e}" />
-      <rule label="3.6.0 Transportation" symbol="lu35" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' AND &quot;water&quot; IS NULL" key="{9e709e71-64fe-4cec-8773-56ec5dd0f403}" />
-      <rule label="3.7.0 Mining" symbol="lu36" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' AND &quot;water&quot; IS NULL" key="{382001fc-c2b8-455e-a81c-2d7622af26d0}" />
-      <rule label="3.8.0 Waste treatment and disposal" symbol="lu37" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' AND &quot;water&quot; IS NULL" key="{a6171f6a-ac35-456c-a7d1-1df68028b44b}" />
-      <rule label="3.9.0 Vacant and transitioning land" symbol="lu38" filter="&quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' AND &quot;water&quot; IS NULL" key="{a307ec7d-2668-40a8-93fc-39c63037be8e}" />
-      <rule label="drain" symbol="water0" filter="&quot;water&quot; = 'drain'" key="{2fe9afb8-0b35-4437-ad04-8cad038f79e1}" />
-      <rule label="ice" symbol="water1" filter="&quot;water&quot; = 'ice'" key="{b3a7f245-ddb0-479c-bb48-7575d3140a8c}" />
-      <rule label="lagoon" symbol="water2" filter="&quot;water&quot; = 'lagoon'" key="{b087d64e-1a96-4c27-b7cb-f3d4acba5a6b}" />
-      <rule label="lake" symbol="water3" filter="&quot;water&quot; LIKE 'lake%'" key="{97ef53e0-b598-4613-a37c-2a1afeb304f2}" />
-      <rule label="mangrove" symbol="water4" filter="&quot;water&quot; = 'mangrove'" key="{a19516a1-ffd7-4f8f-9bfa-3f72f44bcf09}" />
-      <rule label="marine" symbol="water5" filter="&quot;water&quot; = 'marine'" key="{e060291a-7923-46f3-9083-328ce74359a6}" />
-      <rule label="mud" symbol="water6" filter="&quot;water&quot; = 'mud'" key="{a24dc528-3f0d-4d52-8645-85432ddc4347}" />
-      <rule label="pond" symbol="water7" filter="&quot;water&quot; = 'pond'" key="{fe276cd6-e034-488f-8b22-f231e4d9496c}" />
-      <rule label="reef" symbol="water8" filter="&quot;water&quot; = 'reef'" key="{faaf411f-2fff-48e6-9089-7ba81623bb43}" />
-      <rule label="river" symbol="water9" filter="&quot;water&quot; = 'river'" key="{d9dc19ea-903f-428e-b56b-ddf20c6a856f}" />
-      <rule label="sand" symbol="water10" filter="&quot;water&quot; = 'sand'" key="{71abca83-784d-4d27-8e06-f9dc3085e2f4}" />
-      <rule label="swamp" symbol="water11" filter="&quot;water&quot; = 'swamp'" key="{c9cc0b99-6552-465b-b4fc-0be2eb087f6f}" />
-      <rule symbol="unclassified" filter="ELSE" key="{20c4c71c-be7b-4d3b-b829-227496f5f081}" />
+    <rules key="{f8bb3c72-c610-4f20-95f8-cfcd7737b5a6}">
+      <rule label="1.1.1 Strict nature reserve" symbol="lu0" filter="&quot;lu_code&quot; = '1.1.1' AND &quot;water&quot; IS NULL" key="{437bf7a4-dede-4aa2-b867-d4b1bfd5c229}" />
+      <rule label="1.1.2 Wilderness area" symbol="lu1" filter="&quot;lu_code&quot; = '1.1.2' AND &quot;water&quot; IS NULL" key="{4528b0e6-b73c-49fd-83fc-8efa8d742e7f}" />
+      <rule label="1.1.3 National Park" symbol="lu2" filter="&quot;lu_code&quot; = '1.1.3' AND &quot;water&quot; IS NULL" key="{ed28acbf-d604-4928-912f-e5f70122b45e}" />
+      <rule label="1.1.4 Natural feature protection" symbol="lu3" filter="&quot;lu_code&quot; = '1.1.4' AND &quot;water&quot; IS NULL" key="{168934f5-b7a3-435c-a9f5-b2b2ee54fb87}" />
+      <rule label="1.1.5 Habitat or species management area" symbol="lu4" filter="&quot;lu_code&quot; = '1.1.5' AND &quot;water&quot; IS NULL" key="{a4a28992-6c65-4c6f-8894-0ab598756fb0}" />
+      <rule label="1.1.6 Protected landscape" symbol="lu5" filter="&quot;lu_code&quot; = '1.1.6' AND &quot;water&quot; IS NULL" key="{e483ad7d-3f4b-4788-b710-2965f4ac7b06}" />
+      <rule label="1.1.7 Other conserved area" symbol="lu6" filter="&quot;lu_code&quot; = '1.1.7' AND &quot;water&quot; IS NULL" key="{97b7632b-5668-4779-a470-fc02168595b9}" />
+      <rule label="1.2.0 Cultural and natural heritage" symbol="lu7" filter="&quot;lu_code&quot; = '1.2.0' AND &quot;water&quot; IS NULL" key="{ee939953-3be8-425a-bffa-e44714720bae}" />
+      <rule label="1.3.0 Minimal use from relatively natural environments" symbol="lu8" filter="&quot;lu_code&quot; = '1.3.0' AND &quot;water&quot; IS NULL" key="{07e6104b-466b-47d7-96bd-6ddd87216811}" />
+      <rule label="1.3.6 Defence land" symbol="lu9" filter="&quot;lu_code&quot; = '1.3.6' AND &quot;water&quot; IS NULL" key="{3d9f6136-0713-492a-871c-d0c4f46cb74c}" />
+      <rule label="1.4.0 Unused and transitioning land" symbol="lu10" filter="&quot;lu_code&quot; = '1.4.0' AND &quot;water&quot; IS NULL" key="{1c72745c-a022-4d81-ad1e-13746b1b5bbe}" />
+      <rule label="2.1.0 Plantation forests" symbol="lu11" filter="&quot;lu_code&quot; = '2.1.0' AND &quot;water&quot; IS NULL" key="{a2f126ff-1b04-48d5-b4fa-d88dda43008b}" />
+      <rule label="2.2.0 Grazing modified pasture systems" symbol="lu12" filter="&quot;lu_code&quot; = '2.2.0' AND &quot;water&quot; IS NULL" key="{d403f7db-3d3d-413b-9afa-c0a70742cb1a}" />
+      <rule label="2.2.1 Dairy" symbol="lu13" filter="&quot;lu_code&quot; = '2.2.1' AND &quot;water&quot; IS NULL" key="{0ae1d8e0-c2b9-4eaa-970a-3e6de5088bab}" />
+      <rule label="2.2.2 Intensive dry stock" symbol="lu14" filter="&quot;lu_code&quot; = '2.2.2' AND &quot;water&quot; IS NULL" key="{0d93aea6-ee19-4b31-81ae-441fa2d1fa1e}" />
+      <rule label="2.2.3 Extensive dry stock" symbol="lu15" filter="&quot;lu_code&quot; = '2.2.3' AND &quot;water&quot; IS NULL" key="{355d6123-bbd9-4093-aeaa-b4e6b20e0f31}" />
+      <rule label="2.3.0 Short-rotation and seasonal cropping" symbol="lu16" filter="&quot;lu_code&quot; = '2.3.0' AND &quot;water&quot; IS NULL" key="{a607914e-76dd-42bb-b505-e71afb6da84f}" />
+      <rule label="2.4.0 Perennial horticulture" symbol="lu17" filter="&quot;lu_code&quot; = '2.4.0' AND &quot;water&quot; IS NULL" key="{bdf4a674-b93b-451b-8219-83cbf164ef05}" />
+      <rule label="2.5.0 Intensive horticulture" symbol="lu18" filter="&quot;lu_code&quot; = '2.5.0' AND &quot;water&quot; IS NULL" key="{928d1299-80b7-4dfb-a04f-9b58d55b9100}" />
+      <rule label="2.6.0 Intensive animal production" symbol="lu19" filter="&quot;lu_code&quot; = '2.6.0' AND &quot;water&quot; IS NULL" key="{94431670-6122-4604-9c48-caa57fb079c1}" />
+      <rule label="2.7.0 Water and wastewater" symbol="lu20" filter="&quot;lu_code&quot; = '2.7.0' AND &quot;water&quot; IS NULL" key="{62b70220-39de-43e4-b501-9e22206990f0}" />
+      <rule label="2.8.0 Vacant and transitioning land" symbol="lu21" filter="&quot;lu_code&quot; = '2.8.0' AND &quot;water&quot; IS NULL" key="{05e7ffba-da22-4eee-a8cb-8be5ec2061b1}" />
+      <rule label="2.9.0 Smallholder farm" symbol="lu22" filter="&quot;lu_code&quot; = '2.9.0' AND &quot;water&quot; IS NULL" key="{36cf449d-78bb-4fe1-822f-2d3851ced93c}" />
+      <rule label="3.1.0 Residential" symbol="lu23" filter="&quot;lu_code&quot; = '3.1.0' AND &quot;water&quot; IS NULL" key="{bf4352df-77d8-440a-bd72-ece93c5c1947}" />
+      <rule label="3.1.1 High-density residential" symbol="lu24" filter="&quot;lu_code&quot; = '3.1.1' AND &quot;water&quot; IS NULL" key="{fb9d2294-4d07-4c3b-94b5-e6fc4b4295af}" />
+      <rule label="3.1.2 Medium-density residential" symbol="lu25" filter="&quot;lu_code&quot; = '3.1.2' AND &quot;water&quot; IS NULL" key="{6bdc467c-065c-4736-be5a-927e0c6f3097}" />
+      <rule label="3.1.3 Low-density residential" symbol="lu26" filter="&quot;lu_code&quot; = '3.1.3' AND &quot;water&quot; IS NULL" key="{51d38b1e-20d7-48ae-afa2-1f27c368b8ab}" />
+      <rule label="3.1.4 Rural residential" symbol="lu27" filter="&quot;lu_code&quot; = '3.1.4' AND &quot;water&quot; IS NULL" key="{d983988b-42db-42d2-86b5-57266a26ce21}" />
+      <rule label="3.2.0 Public recreation and services" symbol="lu28" filter="&quot;lu_code&quot; = '3.2.0' AND &quot;water&quot; IS NULL" key="{507fc420-9255-4fd9-89f5-fb47734d1dda}" />
+      <rule label="3.2.1 Outdoor recreation" symbol="lu29" filter="&quot;lu_code&quot; = '3.2.1' AND &quot;water&quot; IS NULL" key="{78334e69-5dfc-4038-85bb-6daada35b3c7}" />
+      <rule label="3.2.2 Indoor recreation" symbol="lu30" filter="&quot;lu_code&quot; = '3.2.2' AND &quot;water&quot; IS NULL" key="{34ea27c5-855b-4691-ae57-0936e47c5f15}" />
+      <rule label="3.2.3 Community services" symbol="lu31" filter="&quot;lu_code&quot; = '3.2.3' AND &quot;water&quot; IS NULL" key="{ade3a02d-a59f-4002-a147-c422761c8a4c}" />
+      <rule label="3.3.0 Commercial" symbol="lu32" filter="&quot;lu_code&quot; = '3.3.0' AND &quot;water&quot; IS NULL" key="{cd834956-ddc3-4e8c-b846-4e94a83fce73}" />
+      <rule label="3.4.0 Manufacturing and industrial" symbol="lu33" filter="&quot;lu_code&quot; = '3.4.0' AND &quot;water&quot; IS NULL" key="{1186c90b-1e7d-474b-ba20-42666ae97966}" />
+      <rule label="3.5.0 Utilities" symbol="lu34" filter="&quot;lu_code&quot; = '3.5.0' AND &quot;water&quot; IS NULL" key="{a6b79b83-6b8d-45e5-8f3f-f2d8a96955b3}" />
+      <rule label="3.6.0 Transportation" symbol="lu35" filter="&quot;lu_code&quot; = '3.6.0' AND &quot;water&quot; IS NULL" key="{169d5c08-612b-4a42-bdd5-aec049ca7b89}" />
+      <rule label="3.7.0 Mining" symbol="lu36" filter="&quot;lu_code&quot; = '3.7.0' AND &quot;water&quot; IS NULL" key="{8e10316d-3617-4700-9ff7-71ba8e6cb239}" />
+      <rule label="3.8.0 Waste treatment and disposal" symbol="lu37" filter="&quot;lu_code&quot; = '3.8.0' AND &quot;water&quot; IS NULL" key="{6a440db7-df2c-4a4c-8999-5181f431ef11}" />
+      <rule label="3.9.0 Vacant and transitioning land" symbol="lu38" filter="&quot;lu_code&quot; = '3.9.0' AND &quot;water&quot; IS NULL" key="{ee64441b-0cb6-4afa-9aaf-f8ac68830b73}" />
+      <rule label="drain" symbol="water0" filter="&quot;water&quot; = 'drain'" key="{5e3d6ba3-4a91-4dfe-8e2b-00fee05cbe47}" />
+      <rule label="ice" symbol="water1" filter="&quot;water&quot; = 'ice'" key="{1f08c510-a679-43df-8341-a3c5e6837275}" />
+      <rule label="lagoon" symbol="water2" filter="&quot;water&quot; = 'lagoon'" key="{a43a9eb5-083f-4bee-9445-35648e3b716a}" />
+      <rule label="lake" symbol="water3" filter="&quot;water&quot; LIKE 'lake%'" key="{e49a9b26-3165-4685-8ca7-5f4ea631881d}" />
+      <rule label="mangrove" symbol="water4" filter="&quot;water&quot; = 'mangrove'" key="{f0ecd23b-94c2-481a-b07a-b1a37f0ef16e}" />
+      <rule label="marine" symbol="water5" filter="&quot;water&quot; = 'marine'" key="{6b1b92ab-2ead-4f74-aaf4-11d9c5908d70}" />
+      <rule label="mud" symbol="water6" filter="&quot;water&quot; = 'mud'" key="{8ed7f2fa-a219-4b7c-8db9-f48ab13c97b5}" />
+      <rule label="pond" symbol="water7" filter="&quot;water&quot; = 'pond'" key="{1668a919-01eb-45dd-b550-da7ae4b63b8c}" />
+      <rule label="reef" symbol="water8" filter="&quot;water&quot; = 'reef'" key="{19be89bc-c29f-4600-8665-369b80860dc4}" />
+      <rule label="river" symbol="water9" filter="&quot;water&quot; = 'river'" key="{0bb352a4-c442-4b25-8cd0-a51965b66a5f}" />
+      <rule label="sand" symbol="water10" filter="&quot;water&quot; = 'sand'" key="{9f72ba3c-f963-4476-b62c-93bab2cc667e}" />
+      <rule label="swamp" symbol="water11" filter="&quot;water&quot; = 'swamp'" key="{3bdf8db6-3beb-4fc2-89f8-da2ea27b19a0}" />
+      <rule symbol="unclassified" filter="ELSE" key="{f13b1d9c-7291-44a3-9291-bca1b41f08fa}" />
     </rules>
     <symbols>
       <symbol alpha="1" type="fill" name="lu0" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
@@ -64,7 +64,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4f16eb70-3b4f-46d4-bdfe-16b5826581f2}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4b24e134-2653-4ece-9683-cb506d94fac7}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="94,58,152,255,rgb:0.3686274509803922,0.22745098039215686,0.596078431372549,1" type="QString" name="color" />
@@ -95,7 +95,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{43577f43-bf57-4895-a5d0-ab2fc8ff903d}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{5f2a73f7-165e-46ed-b9bf-dbbebabc1ff0}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="63,0,125,255,rgb:0.24705882352941178,0.0,0.49019607843137253,1" type="QString" name="color" />
@@ -126,7 +126,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{d2fec15c-1975-4aeb-9627-da8fe9ed9441}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{3f349992-324f-4865-8fa7-120f655132cb}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="124,118,182,255,rgb:0.48627450980392156,0.4627450980392157,0.7137254901960784,1" type="QString" name="color" />
@@ -157,7 +157,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{c5a73d2f-ae30-4c74-b57f-6b6809e4aadd}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{636e59e7-0e4c-4c12-af9b-573ee04c6e18}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="163,159,203,255,rgb:0.6392156862745098,0.6235294117647059,0.796078431372549,1" type="QString" name="color" />
@@ -188,7 +188,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{66b5496c-ab42-4a0d-bd70-1d3370aa45db}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{dba4c0e2-7554-485b-ad7a-23eaa205fa3d}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="201,202,227,255,rgb:0.788235294117647,0.792156862745098,0.8901960784313725,1" type="QString" name="color" />
@@ -219,7 +219,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{0327ff1f-6905-472e-b7ad-4eb07f30b00f}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{8fff2118-2a8b-4ce2-a7c8-c280d2c04094}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="233,232,242,255,rgb:0.9137254901960784,0.9098039215686274,0.9490196078431372,1" type="QString" name="color" />
@@ -250,7 +250,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{5a7df511-ede8-4ced-b002-cbdbea16ff17}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{3e0e0557-f377-48bb-bc6a-9ee576459bbe}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="252,251,253,255,rgb:0.9882352941176471,0.984313725490196,0.9921568627450981,1" type="QString" name="color" />
@@ -281,7 +281,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4306adc8-6da6-49b6-88ca-e9e465709db2}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{43775e4b-8b5e-41df-92e3-119af08dcd93}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="160,0,25,255,rgb:0.6274509803921569,0.0,0.09803921568627451,1" type="QString" name="color" />
@@ -312,7 +312,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{12bb7f37-4288-4172-a618-cf09f8125eab}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{35b160f9-06a5-43e6-b224-0979a1b6c420}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="255,199,122,255,rgb:1.0,0.7803921568627451,0.47843137254901963,1" type="QString" name="color" />
@@ -343,7 +343,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{dd3dfd78-c0e3-455d-9851-013f1e23d06d}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7d349710-3515-482a-b039-06c78b203534}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="255,158,23,255,rgb:1.0,0.6196078431372549,0.09019607843137255,1" type="QString" name="color" />
@@ -374,7 +374,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{8c53c25c-4e50-4724-9627-7578d35d80c0}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2a84d817-a42c-4578-855e-385168ec665a}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="200,198,159,255,rgb:0.7843137254901961,0.7764705882352941,0.6235294117647059,1" type="QString" name="color" />
@@ -405,7 +405,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{b136e082-1bfe-436a-b1f7-e913b4430714}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{9acef37c-62c4-491f-a613-94fc9a21bce1}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="18,33,18,255,rgb:0.07058823529411765,0.12941176470588237,0.07058823529411765,1" type="QString" name="color" />
@@ -436,7 +436,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{d5492f26-ef97-4428-a0bc-dd20b6acb326}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{536aef1e-c288-4638-a1c9-abcb82071e83}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="53,119,53,255,rgb:0.20784313725490197,0.4666666666666667,0.20784313725490197,1" type="QString" name="color" />
@@ -467,7 +467,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4e9519a5-5d97-4aa2-8d76-2ef4983fd0b8}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2dcf08cc-9738-4e7c-bc56-d852b68dc5b8}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="141,119,53,255,rgb:0.5529411764705883,0.4666666666666667,0.20784313725490197,1" type="QString" name="color" />
@@ -498,7 +498,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{161ecf4e-e380-4d12-b90f-2294d1dd78f7}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{bdb92ca3-1364-44e5-ad38-bea2dca3c5aa}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="53,119,53,255,rgb:0.20784313725490197,0.4666666666666667,0.20784313725490197,1" type="QString" name="color" />
@@ -529,7 +529,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4bd3983f-5001-4de5-8797-50e793f74fc9}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{9a32a9d8-9bd6-4bc7-90f6-2f7a78c7c652}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="171,162,72,255,rgb:0.6705882352941176,0.6352941176470588,0.2823529411764706,1" type="QString" name="color" />
@@ -560,7 +560,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2f363cba-34e4-4526-ae99-09b8862d77f0}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{39f2fdda-b910-405d-bb61-850e14e152bf}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="127,127,84,255,rgb:0.4980392156862745,0.4980392156862745,0.32941176470588235,1" type="QString" name="color" />
@@ -591,7 +591,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{d6d23116-f72f-4f4f-9273-65136ada42eb}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{e1f6c48e-d329-4319-a614-013397a61d05}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="164,168,152,255,rgb:0.6431372549019608,0.6588235294117647,0.596078431372549,1" type="QString" name="color" />
@@ -622,7 +622,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{565194f2-e182-4381-a2a4-4705a0c5442f}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{542c1092-d26d-4e52-9127-78b2cf48a662}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="74,76,57,255,rgb:0.2901960784313726,0.2980392156862745,0.2235294117647059,1" type="QString" name="color" />
@@ -653,7 +653,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{00bc6826-6237-4655-853a-90812ea22412}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{5c8cf536-2178-4b28-af0b-9ec68819c6d1}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="191,167,152,255,rgb:0.7490196078431373,0.6549019607843137,0.596078431372549,1" type="QString" name="color" />
@@ -684,7 +684,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{41636e5b-e771-4219-8b20-f8a065e6b7aa}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{d8197d71-8c23-41b6-bf9a-3f8321e4874c}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="59,80,91,255,rgb:0.23137254901960785,0.3137254901960784,0.3568627450980392,1" type="QString" name="color" />
@@ -715,7 +715,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{d2736252-fb2a-4fa6-929a-5a2c80ca3df0}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{bb5e9751-937a-4cd6-bdbf-ae912e369b50}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="188,191,225,255,rgb:0.7372549019607844,0.7490196078431373,0.8823529411764706,1" type="QString" name="color" />
@@ -746,7 +746,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{971acc87-8d15-4168-807e-6bab4d986a64}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{db32e7b7-8459-4b5b-97f2-c58dcbba1e87}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="229,214,79,255,rgb:0.8980392156862745,0.8392156862745098,0.30980392156862746,1" type="QString" name="color" />
@@ -777,7 +777,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{59f3dbc9-6fc1-4ca5-95d3-fbe484e8e4c6}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{00fb94ce-307e-4ef4-aa92-96f3de7e9f82}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="129,94,91,255,rgb:0.5058823529411764,0.3686274509803922,0.3568627450980392,1" type="QString" name="color" />
@@ -808,7 +808,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{bc6bb1d7-f086-4708-a1fd-81c8100f5dce}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7312e8a2-de5f-487d-a9b7-bd697082b263}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="76,59,57,255,rgb:0.2980392156862745,0.23137254901960785,0.2235294117647059,1" type="QString" name="color" />
@@ -839,7 +839,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{93d40b02-fe85-42c8-86d3-33c63e423852}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{27204ea9-3f60-4efd-823c-39af241e8c95}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="100,78,76,255,rgb:0.39215686274509803,0.3058823529411765,0.2980392156862745,1" type="QString" name="color" />
@@ -870,7 +870,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{9c1573f7-4eaa-455d-9042-83cc54ee74fb}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7e135e40-e872-40ea-8cfb-2bb8a20ef932}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="129,94,91,255,rgb:0.5058823529411764,0.3686274509803922,0.3568627450980392,1" type="QString" name="color" />
@@ -901,7 +901,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{89b95a7e-b7c5-4bd9-9329-5650b955a76c}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{c0e87f54-5b2c-4dfe-8e8b-edf4b21849cf}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="168,122,118,255,rgb:0.6588235294117647,0.47843137254901963,0.4627450980392157,1" type="QString" name="color" />
@@ -932,7 +932,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{9c452f9f-abaa-4b4a-8117-08c69ecf98a4}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4696d21b-02bb-45f7-ab52-08f2cc224f58}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="193,152,120,255,rgb:0.7568627450980392,0.596078431372549,0.47058823529411764,1" type="QString" name="color" />
@@ -963,7 +963,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{4b77ae69-a2c3-4cb2-96a8-4eeb31d0a9f2}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{0b473ccc-f927-424f-9716-4b9dd75e0028}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="193,152,120,255,rgb:0.7568627450980392,0.596078431372549,0.47058823529411764,1" type="QString" name="color" />
@@ -994,7 +994,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{07d3028c-5e0e-4ce1-93dd-ee165c05a852}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{8ef3116b-ec79-4f16-b95b-9c583c9f75e1}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="149,130,115,255,rgb:0.5843137254901961,0.5098039215686274,0.45098039215686275,1" type="QString" name="color" />
@@ -1025,7 +1025,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{014e9fde-b411-4a01-b71c-dbe4436d4053}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{277c4516-b7a3-49b8-97f3-64fd019f9a5b}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="224,153,98,255,rgb:0.8784313725490196,0.6,0.3843137254901961,1" type="QString" name="color" />
@@ -1056,7 +1056,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{85cd84cb-d5bc-4343-be34-2173bcaba977}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{0a842afd-5552-4e83-8e0d-f625ffca9742}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="184,194,206,255,rgb:0.7215686274509804,0.7607843137254902,0.807843137254902,1" type="QString" name="color" />
@@ -1087,7 +1087,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{178b9727-4bd2-4cb0-8d2c-3cd63e483ccd}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{23894da1-8373-41dd-aac7-ab8ff8150f5e}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="208,210,223,255,rgb:0.8156862745098039,0.8235294117647058,0.8745098039215686,1" type="QString" name="color" />
@@ -1118,7 +1118,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{6af209fc-ab19-4ca6-a9d2-add3fb912053}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{dfd646d0-5dc5-44c6-b501-ddef2503a3cc}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="248,173,250,255,rgb:0.9725490196078431,0.6784313725490196,0.9803921568627451,1" type="QString" name="color" />
@@ -1149,7 +1149,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{f2962b65-0cfd-44fc-8a2f-a10a98e7f75c}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{b71f61e4-0b3b-499f-9e60-a25354cf770c}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="114,115,126,255,rgb:0.4470588235294118,0.45098039215686275,0.49411764705882355,1" type="QString" name="color" />
@@ -1180,7 +1180,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{aa8bbfff-0206-4b71-8dba-74c0b0568228}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{8e8fba66-9364-4bc5-816b-dd0db706410c}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="225,206,167,255,rgb:0.8823529411764706,0.807843137254902,0.6549019607843137,1" type="QString" name="color" />
@@ -1211,7 +1211,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{e7e62441-30f8-454a-93db-4dfd9e09affe}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{1a02b673-b792-4fef-8b48-da719d1a82a4}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="231,113,72,255,rgb:0.9058823529411765,0.44313725490196076,0.2823529411764706,1" type="QString" name="color" />
@@ -1242,7 +1242,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{39f11b66-eaeb-4bba-8d9c-51e63e15d1eb}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2e28a5e9-32bc-4931-971d-01fa33ab4da6}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="214,155,151,255,rgb:0.8392156862745098,0.6078431372549019,0.592156862745098,1" type="QString" name="color" />
@@ -1273,7 +1273,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2d82fdbb-141e-4b6e-972b-28b310b511e4}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{bd9994f7-71f6-48bd-8a94-434acd54078a}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -1295,7 +1295,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{c4483992-a501-4f8d-8ec6-8b7bc5ddf458}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{6b7848dc-85fa-4386-813e-dba8dc388d99}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1328,7 +1328,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{06175194-7020-48fa-93b5-0736aed447dc}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{33496168-4faf-4cb2-b93d-f1f01a0b6f43}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1364,7 +1364,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1383,7 +1383,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7ced0a62-4f81-4906-84b0-1721841ddff9}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{18b7552c-2af6-4d1b-8835-f3be1d70123b}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="237,245,255,255,rgb:0.9294117647058824,0.9607843137254902,1.0,1" type="QString" name="color" />
@@ -1405,7 +1405,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{de54086e-e463-4770-ad7b-d98fb6a9c690}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{d41d6aa7-d22c-41a4-b9ca-38a825e142bf}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1438,7 +1438,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{4c6f3d7d-5def-4f42-9b18-0dca2f89a889}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{cc9b2742-3cfb-403c-928f-72d57ac73a92}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1474,7 +1474,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1493,7 +1493,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2a1a7495-081c-49a3-876b-4239dabd2610}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{00f0d513-6200-411b-9a35-ea36c96b6792}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -1515,7 +1515,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{7eb1b266-664e-46f8-a2ad-73fe99528180}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{0ebb8588-0d25-4849-90a2-87af83cd7b60}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1548,7 +1548,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{13537db5-a9c9-4b1c-bcb8-912c6072aa8a}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{58b538e8-c497-469f-ac47-bf633537dbc0}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1584,7 +1584,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1603,7 +1603,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7e114c5a-5014-42a8-a9b8-60c4c81c394b}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{f7e54ed4-a2c4-481d-bad1-936757c6e679}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -1625,7 +1625,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{a02b0921-04a8-4e31-a9e2-63378df60d01}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{1409d599-c91b-45ba-ad23-8c2118509ea7}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1658,7 +1658,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{669cb578-796f-4115-bd43-52ff815813fc}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{32da0b44-9858-4e8c-9a89-30ded2c80d0d}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1694,7 +1694,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1713,7 +1713,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{43eee59b-3c16-46ca-8aa6-44e46ded1b4a}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{89d5d280-415d-4dad-8469-be3e408e5bfa}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="131,176,158,255,rgb:0.5137254901960784,0.6901960784313725,0.6196078431372549,1" type="QString" name="color" />
@@ -1735,7 +1735,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{06aa0e76-a6a5-44de-a84f-f477b7995a64}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{69c2dbb6-c961-4b65-8090-2d80f2a96185}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1768,7 +1768,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{81c18140-5cfb-422a-a076-d199e0bf16f1}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{58c3f678-a353-40fa-a677-9d49bad4ebb9}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1804,7 +1804,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1823,7 +1823,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{cc8a827d-bebd-4e96-bbf5-8a3829aab73c}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{e6052fc9-6a21-4740-9ec2-718e40ac7b24}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -1845,7 +1845,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{7d82d442-6227-4946-8ee4-d3ef735cc0a2}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{518d095d-9219-4c02-98fa-cf4c48e5ffd7}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1878,7 +1878,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{581eb029-80a4-483c-8c4d-8ff4e27bb9c7}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{6145c78c-c068-4030-b84b-701929a8513f}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -1914,7 +1914,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -1933,7 +1933,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{b8ba0a70-d0ea-4712-abd3-70cbaf4432fd}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{a4ac8c2d-555f-412b-b3fd-f79829355c41}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="217,196,158,255,rgb:0.8509803921568627,0.7686274509803922,0.6196078431372549,1" type="QString" name="color" />
@@ -1955,7 +1955,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{e259dac4-93f4-41f8-9d47-c9a28d7c80eb}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{811aad80-a960-42a6-bb3e-2cbe18305b02}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -1988,7 +1988,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{b8d2c25e-f5ae-4c5f-847c-b45bee69353e}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{b791defa-b922-4ee6-8302-e1c1ce540e07}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2024,7 +2024,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2043,7 +2043,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{5acc395e-94a9-4260-849a-7258fa49b4c4}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{2f32a5b3-2cbc-49c7-8924-fd83358efdca}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -2065,7 +2065,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{ffe18a5f-e209-4dfc-8669-af65abd1aac0}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{441f26a5-7be1-462a-a880-af2152a663b4}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -2098,7 +2098,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{cfc7b4d5-81bd-4552-b948-8260736d2e94}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{7835d80e-81d2-4b7d-b618-939aae25d4e1}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2134,7 +2134,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2153,7 +2153,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{49926edc-ebeb-4772-be91-b4a7a1f4dc4a}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{543c3d6d-a95d-4db1-bfd0-d475f4d5a03b}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="169,176,173,255,rgb:0.6627450980392157,0.6901960784313725,0.6784313725490196,1" type="QString" name="color" />
@@ -2175,7 +2175,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{36798d5f-05dd-4399-b8fe-ff47c2738fc6}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{ce4a4a65-ae45-4155-963c-bc9ae3be7fdf}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -2208,7 +2208,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{fceaf4b4-5326-4c92-9ec7-44818cf6de78}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{0f0040b9-8cfd-421e-98f2-82c4e5c90b6d}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2244,7 +2244,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2263,7 +2263,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{20517d35-0aff-46a5-84bd-5427e70c7ae3}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{7fa1c043-e98c-4de2-8f37-4532c55a7eab}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="195,223,255,255,rgb:0.7647058823529411,0.8745098039215686,1.0,1" type="QString" name="color" />
@@ -2285,7 +2285,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{accfcba6-3ca7-49fb-a471-03009e8b9248}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{f6ad5813-f89a-47dd-8458-7a84aaa642ad}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -2318,7 +2318,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{4d20bdc9-1ce9-44cb-9725-bad8906b6a01}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{5fcea2e0-7ad8-40b1-abbc-bdc1a6a99447}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2354,7 +2354,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2373,7 +2373,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{e685e758-8b0d-49e1-b678-668c284bf4b9}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{96cd516f-786a-4f86-a15e-8d9afa751340}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="255,250,186,255,rgb:1.0,0.9803921568627451,0.7294117647058823,1" type="QString" name="color" />
@@ -2395,7 +2395,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{08590218-f7e4-4112-8c54-6918caf96952}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{8292d4e2-d1c2-4c58-b6a6-1cdc7b1b1bff}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -2428,7 +2428,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{09b231a5-8488-46c2-8d18-7de5a86b467a}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{2aac0a96-a066-4358-ab3c-1e9d16d8bd5a}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2464,7 +2464,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2483,7 +2483,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{ac3f77b3-5fd2-48d8-b726-2fb393aefc31}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{6366de92-1e4a-4ddd-a58e-a2c5e12cc82c}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="131,176,158,255,rgb:0.5137254901960784,0.6901960784313725,0.6196078431372549,1" type="QString" name="color" />
@@ -2505,7 +2505,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{85f6b344-81a1-4918-b400-731111cb5060}">
+        <layer locked="0" pass="0" class="LinePatternFill" enabled="1" id="{120ac477-e68b-47b1-9896-20a66727a706}">
           <Option type="Map">
             <Option value="45" type="QString" name="angle" />
             <Option value="during_render" type="QString" name="clip_mode" />
@@ -2538,7 +2538,7 @@
                 <Option value="collection" type="QString" name="type" />
               </Option>
             </data_defined_properties>
-            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{13fb6aab-fedf-476a-af4c-69a20f5c08f4}">
+            <layer locked="0" pass="0" class="SimpleLine" enabled="1" id="{3d6622b5-8900-42fa-bbe4-879246e5a6fc}">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern" />
                 <Option value="square" type="QString" name="capstyle" />
@@ -2574,7 +2574,7 @@
                   <Option type="Map" name="properties">
                     <Option type="Map" name="outlineColor">
                       <Option value="true" type="bool" name="active" />
-                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.1 Strict nature reserve' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.2 Wilderness area' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.3 National Park' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.4 Natural feature protection' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.5 Habitat or species management area' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.6 Protected landscape' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.1.7 Other conserved area' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.2.0 Cultural and natural heritage' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.0 Minimal use from relatively natural environments' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.3.6 Defence land' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '1.4.0 Unused and transitioning land' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.1.0 Plantation forests' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.0 Grazing modified pasture systems' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.1 Dairy' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.2 Intensive dry stock' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.2.3 Extensive dry stock' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.3.0 Short-rotation and seasonal cropping' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.4.0 Perennial horticulture' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.5.0 Intensive horticulture' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.6.0 Intensive animal production' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.7.0 Water and wastewater' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.8.0 Vacant and transitioning land' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '2.9.0 Smallholder farm' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.0 Residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.1 High-density residential' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.2 Medium-density residential' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.3 Low-density residential' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.1.4 Rural residential' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.0 Public recreation and services' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.1 Outdoor recreation' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.2 Indoor recreation' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.2.3 Community services' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.3.0 Commercial' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.4.0 Manufacturing and industrial' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.5.0 Utilities' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.6.0 Transportation' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.7.0 Mining' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.8.0 Waste treatment and disposal' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; || ' ' || &quot;lu_description&quot; = '3.9.0 Vacant and transitioning land' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
+                      <Option value="CASE&#10;  WHEN &quot;lu_code&quot; = '1.1.1' THEN '#5E3A98'&#10;  WHEN &quot;lu_code&quot; = '1.1.2' THEN '#3F007D'&#10;  WHEN &quot;lu_code&quot; = '1.1.3' THEN '#7C76B6'&#10;  WHEN &quot;lu_code&quot; = '1.1.4' THEN '#A39FCB'&#10;  WHEN &quot;lu_code&quot; = '1.1.5' THEN '#C9CAE3'&#10;  WHEN &quot;lu_code&quot; = '1.1.6' THEN '#E9E8F2'&#10;  WHEN &quot;lu_code&quot; = '1.1.7' THEN '#FCFBFD'&#10;  WHEN &quot;lu_code&quot; = '1.2.0' THEN '#A00019'&#10;  WHEN &quot;lu_code&quot; = '1.3.0' THEN '#FFC77A'&#10;  WHEN &quot;lu_code&quot; = '1.3.6' THEN '#FF9E17'&#10;  WHEN &quot;lu_code&quot; = '1.4.0' THEN '#C8C69F'&#10;  WHEN &quot;lu_code&quot; = '2.1.0' THEN '#122112'&#10;  WHEN &quot;lu_code&quot; = '2.2.0' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.1' THEN '#8D7735'&#10;  WHEN &quot;lu_code&quot; = '2.2.2' THEN '#357735'&#10;  WHEN &quot;lu_code&quot; = '2.2.3' THEN '#ABA248'&#10;  WHEN &quot;lu_code&quot; = '2.3.0' THEN '#7F7F54'&#10;  WHEN &quot;lu_code&quot; = '2.4.0' THEN '#A4A898'&#10;  WHEN &quot;lu_code&quot; = '2.5.0' THEN '#4A4C39'&#10;  WHEN &quot;lu_code&quot; = '2.6.0' THEN '#BFA798'&#10;  WHEN &quot;lu_code&quot; = '2.7.0' THEN '#3B505B'&#10;  WHEN &quot;lu_code&quot; = '2.8.0' THEN '#BCBFE1'&#10;  WHEN &quot;lu_code&quot; = '2.9.0' THEN '#E5D64F'&#10;  WHEN &quot;lu_code&quot; = '3.1.0' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.1' THEN '#4C3B39'&#10;  WHEN &quot;lu_code&quot; = '3.1.2' THEN '#644E4C'&#10;  WHEN &quot;lu_code&quot; = '3.1.3' THEN '#815E5B'&#10;  WHEN &quot;lu_code&quot; = '3.1.4' THEN '#A87A76'&#10;  WHEN &quot;lu_code&quot; = '3.2.0' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.1' THEN '#C19878'&#10;  WHEN &quot;lu_code&quot; = '3.2.2' THEN '#958273'&#10;  WHEN &quot;lu_code&quot; = '3.2.3' THEN '#E09962'&#10;  WHEN &quot;lu_code&quot; = '3.3.0' THEN '#B8C2CE'&#10;  WHEN &quot;lu_code&quot; = '3.4.0' THEN '#D0D2DF'&#10;  WHEN &quot;lu_code&quot; = '3.5.0' THEN '#F8ADFA'&#10;  WHEN &quot;lu_code&quot; = '3.6.0' THEN '#72737E'&#10;  WHEN &quot;lu_code&quot; = '3.7.0' THEN '#E1CEA7'&#10;  WHEN &quot;lu_code&quot; = '3.8.0' THEN '#E77148'&#10;  WHEN &quot;lu_code&quot; = '3.9.0' THEN '#D69B97'&#10;  ELSE '#C8C8C8'&#10;END" type="QString" name="expression" />
                       <Option value="3" type="int" name="type" />
                     </Option>
                   </Option>
@@ -2593,7 +2593,7 @@
             <Option value="collection" type="QString" name="type" />
           </Option>
         </data_defined_properties>
-        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{3eaf3fef-a570-44b2-a257-0193b58ae317}">
+        <layer locked="0" pass="0" class="SimpleFill" enabled="1" id="{fc933154-a6fe-4820-b1dc-c9c5b79eb5f6}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale" />
             <Option value="200,200,200,255,rgb:0.7843137254901961,0.7843137254901961,0.7843137254901961,1" type="QString" name="color" />

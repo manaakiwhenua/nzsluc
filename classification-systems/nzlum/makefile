@@ -4,9 +4,11 @@ SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum$(VERSION)
 DATA = rdf/scheme.ttl rdf/$(VERSION)/concepts*.ttl
 BUILD = build
 OUT = $(BUILD)/$(VERSION)
+WATER = rdf/term-lists/water-features.ttl
+WATER_SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features
 
 .PHONY: all
-all: mdx-all tables-all html-all pdf-all outline-all collections-all
+all: mdx-all tables-all html-all pdf-all outline-all collections-all qgis-style cartocss-style sld-style
 
 .PHONY: all-versions
 all-versions:
@@ -54,6 +56,21 @@ validate: $(OUT)/nzlum-$(VERSION).ttl
 outline-all: $(OUT)/nzlum-$(VERSION).ttl
 	./scripts/export_outline.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
 	$(OUT)/nzlum_v$(VERSION)_outline.md ;
+
+.PHONY: qgis-style
+qgis-style: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_qgis_style.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(WATER) $(WATER_SCHEME) $(OUT)/nzlum_v$(VERSION).qml ;
+
+.PHONY: cartocss-style
+cartocss-style: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_cartocss_style.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	'#nzlum' $(OUT)/nzlum_v$(VERSION).mss ;
+
+.PHONY: sld-style
+sld-style: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_sld_style.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	nzlum $(OUT)/nzlum_v$(VERSION).sld ;
 
 .PHONY: collections-all
 collections-all:

@@ -2,10 +2,12 @@
 """Generate a QGIS .qml symbology file from lu:colour values in the TTL.
 
 Produces a rule-based renderer with one rule per classified concept
-(`"lu_code" || ' ' || "lu_description"`, solid fill), one rule per water
-feature value (`"water" = ...`, solid fill in the water colour with the
-land-use colour as a hatch overlay on top - looked up via a data-defined
-CASE expression rather than combinatorial rules), and a neutral catch-all.
+(matching `"lu_code"` directly; the rule's `label` still carries the
+canonical "notation label" text so the QGIS legend stays readable), one
+rule per water feature value (`"water" = ...`, solid fill in the water
+colour with the land-use colour as a hatch overlay on top - looked up via
+a data-defined CASE expression rather than combinatorial rules), and a
+neutral catch-all.
 Built from scratch (no template file) as a symbology-only style
 (styleCategories="Symbology"), so loading it in QGIS only replaces the
 renderer and leaves the target layer's other settings untouched.
@@ -25,8 +27,6 @@ DOCTYPE = "<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>\n"
 
 OUTLINE_COLOUR = "35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"
 UNCLASSIFIED_HEX = "#C8C8C8"
-
-CLASS_FIELD_EXPR = '"lu_code" || \' \' || "lu_description"'
 
 
 def get_en(g, s, p):
@@ -104,8 +104,7 @@ def load_water(ttl_path, scheme_iri):
 def land_colour_case_expression(classed):
     lines = ["CASE"]
     for n, lab, col in classed:
-        label_text = f"{n} {lab}".replace("'", "''")
-        lines.append(f"  WHEN {CLASS_FIELD_EXPR} = '{label_text}' THEN '{col}'")
+        lines.append(f"  WHEN \"lu_code\" = '{n}' THEN '{col}'")
     lines.append(f"  ELSE '{UNCLASSIFIED_HEX}'")
     lines.append("END")
     return "\n".join(lines)
@@ -277,7 +276,7 @@ def build_qml(classed, water):
     for idx, (n, lab, col) in enumerate(classed):
         symbol_name = f"lu{idx}"
         label_text = f"{n} {lab}"
-        filter_expr = f"{CLASS_FIELD_EXPR} = '{label_text}' AND \"water\" IS NULL"
+        filter_expr = f"\"lu_code\" = '{n}' AND \"water\" IS NULL"
         rules_root.append(make_rule(label_text, symbol_name, filter_expr))
         symbols_root.append(make_symbol(symbol_name, [make_simplefill_layer(rgba_value(col))]))
 

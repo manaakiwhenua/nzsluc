@@ -4,7 +4,6 @@ from rdflib.namespace import RDF, RDFS, OWL, DCTERMS, FOAF
 from collections import defaultdict
 import html as htmllib
 import sys
-from datetime import datetime, timezone
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 LU = Namespace("https://nzlum.landcareresearch.co.nz/landuse/")
@@ -381,7 +380,6 @@ def main():
         row_class = ' class="new-primary"' if not skip_primary[idx] else ""
         body_rows.append(f"<tr{row_class}>" + "".join(cells) + "</tr>")
 
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     meta = scheme_metadata(g, scheme)
     definitions_html = render_definitions(g, tops, children)
 
@@ -401,7 +399,6 @@ def main():
         s = meta["superseded_by"]
         meta_fields.append(("Superseded by", f'<a href="{esc(s["iri"])}">NZLUM v{esc(s["version"])}</a>'))
     meta_fields.append(("Scheme IRI", esc(scheme_iri)))
-    meta_fields.append(("Generated", esc(generated)))
     meta_fields_html = "".join(f'<div><dt>{esc(k)}</dt><dd>{v}</dd></div>' for k, v in meta_fields)
 
     relations_html = "".join(render_relation_block(descs, names) for descs, names in meta["relations"])
