@@ -72,6 +72,7 @@ Land is classified according to its primary use, based on the primary land manag
 
 An overview of the class hierarchy is available:
 
+- As a one-page summary table, in SVG: [nzlum_v0.4.0_summary.svg](build/0.4.0/nzlum_v0.4.0_summary.svg)
 - As readable text: [nzlum_v0.4.0_outline.md](build/0.4.0/nzlum_v0.4.0_outline.md)
 - As a table in text: [nzlum_v0.4.0.md](build/0.4.0/nzlum_v0.4.0.md)
 - As a table in XLSX: [nzlum_v0.4.0.xlsx](build/0.4.0/nzlum_v0.4.0.xlsx)

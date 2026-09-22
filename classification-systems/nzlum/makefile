@@ -8,7 +8,7 @@ WATER = rdf/term-lists/water-features.ttl
 WATER_SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features
 
 .PHONY: all
-all: mdx-all tables-all html-all pdf-all outline-all collections-all qgis-style cartocss-style sld-style
+all: mdx-all tables-all html-all pdf-all outline-all svg-summary collections-all qgis-style cartocss-style sld-style
 
 .PHONY: all-versions
 all-versions:
@@ -56,6 +56,11 @@ validate: $(OUT)/nzlum-$(VERSION).ttl
 outline-all: $(OUT)/nzlum-$(VERSION).ttl
 	./scripts/export_outline.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
 	$(OUT)/nzlum_v$(VERSION)_outline.md ;
+
+.PHONY: svg-summary
+svg-summary: $(OUT)/nzlum-$(VERSION).ttl
+	./scripts/export_svg_summary.py $(OUT)/nzlum-$(VERSION).ttl $(SCHEME) \
+	$(OUT)/nzlum_v$(VERSION)_summary.svg "NZLUM v$(VERSION)" ;
 
 .PHONY: qgis-style
 qgis-style: $(OUT)/nzlum-$(VERSION).ttl

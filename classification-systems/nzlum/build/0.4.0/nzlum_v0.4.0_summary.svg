@@ -1,0 +1,437 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="824" height="1069" viewBox="0 0 824 1069" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif">
+  <rect width="824" height="1069" fill="#FFFFFF"/>
+  <text x="12" y="26.0" font-size="14" font-weight="bold" fill="#000000">NZLUM v0.4.0</text>
+  <g>
+    <rect x="12.0" y="40.0" width="260" height="17.5" fill="#8C8C8C" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">1.0.0</text>
+    <text x="47.1" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">Conservation and Minimal Use</text>
+    <rect x="12.0" y="40.0" width="260" height="17.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="12.0" y="65.5" width="260" height="17.5" fill="#B8B8B8" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="77.1" font-size="9.5" font-weight="bold" fill="#000000">1.1.0</text>
+    <text x="47.1" y="77.1" font-size="9.5" font-weight="bold" fill="#000000">Nature conservation</text>
+    <rect x="12.0" y="83.0" width="260" height="17.5" fill="#5E3A98" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="94.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">1.1.1</text>
+    <text x="47.1" y="94.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">Strict nature reserve</text>
+    <rect x="12.0" y="100.5" width="260" height="17.5" fill="#3F007D" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="112.1" font-size="9.5" font-weight="normal" fill="#FFFFFF">1.1.2</text>
+    <text x="47.1" y="112.1" font-size="9.5" font-weight="normal" fill="#FFFFFF">Wilderness area</text>
+    <rect x="12.0" y="118.0" width="260" height="17.5" fill="#7C76B6" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="129.6" font-size="9.5" font-weight="normal" fill="#000000">1.1.3</text>
+    <text x="47.1" y="129.6" font-size="9.5" font-weight="normal" fill="#000000">National Park</text>
+    <rect x="12.0" y="135.5" width="260" height="17.5" fill="#A39FCB" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">1.1.4</text>
+    <text x="47.1" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">Natural feature protection</text>
+    <rect x="12.0" y="153.0" width="260" height="17.5" fill="#C9CAE3" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="164.6" font-size="9.5" font-weight="normal" fill="#000000">1.1.5</text>
+    <text x="47.1" y="164.6" font-size="9.5" font-weight="normal" fill="#000000">Habitat or species management area</text>
+    <rect x="12.0" y="170.5" width="260" height="17.5" fill="#E9E8F2" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="182.1" font-size="9.5" font-weight="normal" fill="#000000">1.1.6</text>
+    <text x="47.1" y="182.1" font-size="9.5" font-weight="normal" fill="#000000">Protected landscape</text>
+    <rect x="12.0" y="188.0" width="260" height="17.5" fill="#FCFBFD" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="199.6" font-size="9.5" font-weight="normal" fill="#000000">1.1.7</text>
+    <text x="47.1" y="199.6" font-size="9.5" font-weight="normal" fill="#000000">Other conserved area</text>
+    <rect x="12.0" y="65.5" width="260" height="140.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="12.0" y="213.5" width="260" height="17.5" fill="#A00019" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="225.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">1.2.0</text>
+    <text x="47.1" y="225.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">Cultural and natural heritage</text>
+    <rect x="12.0" y="231.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="242.6" font-size="9.5" font-weight="normal" fill="#000000">1.2.1</text>
+    <text x="47.1" y="242.6" font-size="9.5" font-weight="normal" fill="#000000">Indigenous cultural heritage</text>
+    <rect x="12.0" y="248.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="260.1" font-size="9.5" font-weight="normal" fill="#000000">1.2.2</text>
+    <text x="47.1" y="260.1" font-size="9.5" font-weight="normal" fill="#000000">Cultural heritage</text>
+    <rect x="12.0" y="266.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="277.6" font-size="9.5" font-weight="normal" fill="#000000">1.2.3</text>
+    <text x="47.1" y="277.6" font-size="9.5" font-weight="normal" fill="#000000">Natural heritage</text>
+    <rect x="12.0" y="213.5" width="260" height="70.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="12.0" y="291.5" width="260" height="29.0" fill="#FFC77A" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="303.1" font-size="9.5" font-weight="bold" fill="#000000">1.3.0</text>
+    <text x="47.1" y="303.1" font-size="9.5" font-weight="bold" fill="#000000">Minimal use from relatively natural</text>
+    <text x="47.1" y="314.6" font-size="9.5" font-weight="bold" fill="#000000">environments</text>
+    <rect x="12.0" y="320.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="332.1" font-size="9.5" font-weight="normal" fill="#000000">1.3.1</text>
+    <text x="47.1" y="332.1" font-size="9.5" font-weight="normal" fill="#000000">Surface water supply</text>
+    <rect x="12.0" y="338.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="349.6" font-size="9.5" font-weight="normal" fill="#000000">1.3.2</text>
+    <text x="47.1" y="349.6" font-size="9.5" font-weight="normal" fill="#000000">Ground water</text>
+    <rect x="12.0" y="355.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="367.1" font-size="9.5" font-weight="normal" fill="#000000">1.3.3</text>
+    <text x="47.1" y="367.1" font-size="9.5" font-weight="normal" fill="#000000">Grazing native vegetation</text>
+    <rect x="12.0" y="373.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="384.6" font-size="9.5" font-weight="normal" fill="#000000">1.3.4</text>
+    <text x="47.1" y="384.6" font-size="9.5" font-weight="normal" fill="#000000">Production from indigenous vegetation</text>
+    <rect x="12.0" y="390.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="402.1" font-size="9.5" font-weight="normal" fill="#000000">1.3.5</text>
+    <text x="47.1" y="402.1" font-size="9.5" font-weight="normal" fill="#000000">Customary use</text>
+    <rect x="12.0" y="408.0" width="260" height="17.5" fill="#FF9E17" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="419.6" font-size="9.5" font-weight="normal" fill="#000000">1.3.6</text>
+    <text x="47.1" y="419.6" font-size="9.5" font-weight="normal" fill="#000000">Defence land</text>
+    <rect x="12.0" y="425.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="437.1" font-size="9.5" font-weight="normal" fill="#000000">1.3.7</text>
+    <text x="47.1" y="437.1" font-size="9.5" font-weight="normal" fill="#000000">Environmental &amp; infrastructure protection</text>
+    <rect x="12.0" y="443.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="454.6" font-size="9.5" font-weight="normal" fill="#000000">1.3.8</text>
+    <text x="47.1" y="454.6" font-size="9.5" font-weight="normal" fill="#000000">Carbon forest</text>
+    <rect x="12.0" y="291.5" width="260" height="169.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="12.0" y="468.5" width="260" height="17.5" fill="#C8C69F" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="480.1" font-size="9.5" font-weight="bold" fill="#000000">1.4.0</text>
+    <text x="47.1" y="480.1" font-size="9.5" font-weight="bold" fill="#000000">Unused and transitioning land</text>
+    <rect x="12.0" y="486.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="497.6" font-size="9.5" font-weight="normal" fill="#000000">1.4.1</text>
+    <text x="47.1" y="497.6" font-size="9.5" font-weight="normal" fill="#000000">Rehabilitating land</text>
+    <rect x="12.0" y="503.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="18.0" y="515.1" font-size="9.5" font-weight="normal" fill="#000000">1.4.2</text>
+    <text x="47.1" y="515.1" font-size="9.5" font-weight="normal" fill="#000000">Unused land</text>
+    <rect x="12.0" y="468.5" width="260" height="52.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="40.0" width="260" height="17.5" fill="#8C8C8C" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">2.0.0</text>
+    <text x="317.1" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">Production agriculture and plantations</text>
+    <rect x="282.0" y="40.0" width="260" height="17.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="65.5" width="260" height="17.5" fill="#122112" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="77.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">2.1.0</text>
+    <text x="317.1" y="77.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">Plantation forests</text>
+    <rect x="282.0" y="83.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="94.6" font-size="9.5" font-weight="normal" fill="#000000">2.1.1</text>
+    <text x="317.1" y="94.6" font-size="9.5" font-weight="normal" fill="#000000">Exotic plantation forestry</text>
+    <rect x="282.0" y="100.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="112.1" font-size="9.5" font-weight="normal" fill="#000000">2.1.2</text>
+    <text x="317.1" y="112.1" font-size="9.5" font-weight="normal" fill="#000000">Indigenous plantation forestry</text>
+    <rect x="282.0" y="118.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="129.6" font-size="9.5" font-weight="normal" fill="#000000">2.1.3</text>
+    <text x="317.1" y="129.6" font-size="9.5" font-weight="normal" fill="#000000">Other production uses</text>
+    <rect x="282.0" y="135.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">2.1.4</text>
+    <text x="317.1" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">Planted environmental &amp; infrastructure protection</text>
+    <rect x="282.0" y="65.5" width="260" height="87.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="161.0" width="260" height="17.5" fill="#357735" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="172.6" font-size="9.5" font-weight="bold" fill="#FFFFFF">2.2.0</text>
+    <text x="317.1" y="172.6" font-size="9.5" font-weight="bold" fill="#FFFFFF">Grazing modified pasture systems</text>
+    <rect x="282.0" y="178.5" width="260" height="17.5" fill="#8D7735" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="190.1" font-size="9.5" font-weight="normal" fill="#000000">2.2.1</text>
+    <text x="317.1" y="190.1" font-size="9.5" font-weight="normal" fill="#000000">Dairy</text>
+    <rect x="282.0" y="196.0" width="260" height="17.5" fill="#357735" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="207.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">2.2.2</text>
+    <text x="317.1" y="207.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">Intensive dry stock</text>
+    <rect x="282.0" y="213.5" width="260" height="17.5" fill="#ABA248" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="225.1" font-size="9.5" font-weight="normal" fill="#000000">2.2.3</text>
+    <text x="317.1" y="225.1" font-size="9.5" font-weight="normal" fill="#000000">Extensive dry stock</text>
+    <rect x="282.0" y="161.0" width="260" height="70.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="239.0" width="260" height="17.5" fill="#7F7F54" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="250.6" font-size="9.5" font-weight="bold" fill="#000000">2.3.0</text>
+    <text x="317.1" y="250.6" font-size="9.5" font-weight="bold" fill="#000000">Short-rotation and seasonal cropping</text>
+    <rect x="282.0" y="256.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="268.1" font-size="9.5" font-weight="normal" fill="#000000">2.3.1</text>
+    <text x="317.1" y="268.1" font-size="9.5" font-weight="normal" fill="#000000">Arable cropping</text>
+    <rect x="282.0" y="274.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="285.6" font-size="9.5" font-weight="normal" fill="#000000">2.3.2</text>
+    <text x="317.1" y="285.6" font-size="9.5" font-weight="normal" fill="#000000">Arable and mixed livestock cropping</text>
+    <rect x="282.0" y="291.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="303.1" font-size="9.5" font-weight="normal" fill="#000000">2.3.3</text>
+    <text x="317.1" y="303.1" font-size="9.5" font-weight="normal" fill="#000000">Short-rotation horticulture</text>
+    <rect x="282.0" y="309.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="320.6" font-size="9.5" font-weight="normal" fill="#000000">2.3.4</text>
+    <text x="317.1" y="320.6" font-size="9.5" font-weight="normal" fill="#000000">Seasonal flowers and bulbs, and turf farming</text>
+    <rect x="282.0" y="239.0" width="260" height="87.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="334.5" width="260" height="17.5" fill="#A4A898" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="346.1" font-size="9.5" font-weight="bold" fill="#000000">2.4.0</text>
+    <text x="317.1" y="346.1" font-size="9.5" font-weight="bold" fill="#000000">Perennial horticulture</text>
+    <rect x="282.0" y="352.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="363.6" font-size="9.5" font-weight="normal" fill="#000000">2.4.1</text>
+    <text x="317.1" y="363.6" font-size="9.5" font-weight="normal" fill="#000000">Tree crops</text>
+    <rect x="282.0" y="369.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="381.1" font-size="9.5" font-weight="normal" fill="#000000">2.4.2</text>
+    <text x="317.1" y="381.1" font-size="9.5" font-weight="normal" fill="#000000">Vine fruits</text>
+    <rect x="282.0" y="387.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="398.6" font-size="9.5" font-weight="normal" fill="#000000">2.4.3</text>
+    <text x="317.1" y="398.6" font-size="9.5" font-weight="normal" fill="#000000">Other perennial horticulture</text>
+    <rect x="282.0" y="334.5" width="260" height="70.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="412.5" width="260" height="17.5" fill="#4A4C39" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="424.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">2.5.0</text>
+    <text x="317.1" y="424.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">Intensive horticulture</text>
+    <rect x="282.0" y="430.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="441.6" font-size="9.5" font-weight="normal" fill="#000000">2.5.1</text>
+    <text x="317.1" y="441.6" font-size="9.5" font-weight="normal" fill="#000000">Production nurseries</text>
+    <rect x="282.0" y="447.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="459.1" font-size="9.5" font-weight="normal" fill="#000000">2.5.2</text>
+    <text x="317.1" y="459.1" font-size="9.5" font-weight="normal" fill="#000000">Glasshouses/shadehouses</text>
+    <rect x="282.0" y="412.5" width="260" height="52.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="473.0" width="260" height="17.5" fill="#BFA798" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="484.6" font-size="9.5" font-weight="bold" fill="#000000">2.6.0</text>
+    <text x="317.1" y="484.6" font-size="9.5" font-weight="bold" fill="#000000">Intensive animal production</text>
+    <rect x="282.0" y="490.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="502.1" font-size="9.5" font-weight="normal" fill="#000000">2.6.1</text>
+    <text x="317.1" y="502.1" font-size="9.5" font-weight="normal" fill="#000000">Intensive animal containment</text>
+    <rect x="282.0" y="508.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="519.6" font-size="9.5" font-weight="normal" fill="#000000">2.6.2</text>
+    <text x="317.1" y="519.6" font-size="9.5" font-weight="normal" fill="#000000">Poultry farms</text>
+    <rect x="282.0" y="525.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="537.1" font-size="9.5" font-weight="normal" fill="#000000">2.6.3</text>
+    <text x="317.1" y="537.1" font-size="9.5" font-weight="normal" fill="#000000">Piggeries</text>
+    <rect x="282.0" y="543.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="554.6" font-size="9.5" font-weight="normal" fill="#000000">2.6.4</text>
+    <text x="317.1" y="554.6" font-size="9.5" font-weight="normal" fill="#000000">Horse studs</text>
+    <rect x="282.0" y="560.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="572.1" font-size="9.5" font-weight="normal" fill="#000000">2.6.5</text>
+    <text x="317.1" y="572.1" font-size="9.5" font-weight="normal" fill="#000000">Aquaculture</text>
+    <rect x="282.0" y="473.0" width="260" height="105.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="586.0" width="260" height="17.5" fill="#3B505B" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="597.6" font-size="9.5" font-weight="bold" fill="#FFFFFF">2.7.0</text>
+    <text x="317.1" y="597.6" font-size="9.5" font-weight="bold" fill="#FFFFFF">Water and wastewater</text>
+    <rect x="282.0" y="603.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="615.1" font-size="9.5" font-weight="normal" fill="#000000">2.7.1</text>
+    <text x="317.1" y="615.1" font-size="9.5" font-weight="normal" fill="#000000">Stock water</text>
+    <rect x="282.0" y="621.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="632.6" font-size="9.5" font-weight="normal" fill="#000000">2.7.2</text>
+    <text x="317.1" y="632.6" font-size="9.5" font-weight="normal" fill="#000000">Effluent pond</text>
+    <rect x="282.0" y="638.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="650.1" font-size="9.5" font-weight="normal" fill="#000000">2.7.3</text>
+    <text x="317.1" y="650.1" font-size="9.5" font-weight="normal" fill="#000000">Water treatment – land application</text>
+    <rect x="282.0" y="656.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="667.6" font-size="9.5" font-weight="normal" fill="#000000">2.7.4</text>
+    <text x="317.1" y="667.6" font-size="9.5" font-weight="normal" fill="#000000">Water treatment – wetland</text>
+    <rect x="282.0" y="673.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="685.1" font-size="9.5" font-weight="normal" fill="#000000">2.7.5</text>
+    <text x="317.1" y="685.1" font-size="9.5" font-weight="normal" fill="#000000">Irrigation reservoirs and canals</text>
+    <rect x="282.0" y="586.0" width="260" height="105.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="699.0" width="260" height="17.5" fill="#BCBFE1" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="710.6" font-size="9.5" font-weight="bold" fill="#000000">2.8.0</text>
+    <text x="317.1" y="710.6" font-size="9.5" font-weight="bold" fill="#000000">Vacant and transitioning land</text>
+    <rect x="282.0" y="716.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="728.1" font-size="9.5" font-weight="normal" fill="#000000">2.8.1</text>
+    <text x="317.1" y="728.1" font-size="9.5" font-weight="normal" fill="#000000">Rehabilitating land</text>
+    <rect x="282.0" y="734.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="745.6" font-size="9.5" font-weight="normal" fill="#000000">2.8.2</text>
+    <text x="317.1" y="745.6" font-size="9.5" font-weight="normal" fill="#000000">Abandoned land</text>
+    <rect x="282.0" y="751.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="763.1" font-size="9.5" font-weight="normal" fill="#000000">2.8.3</text>
+    <text x="317.1" y="763.1" font-size="9.5" font-weight="normal" fill="#000000">Degraded land</text>
+    <rect x="282.0" y="769.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="780.6" font-size="9.5" font-weight="normal" fill="#000000">2.8.4</text>
+    <text x="317.1" y="780.6" font-size="9.5" font-weight="normal" fill="#000000">No defined use</text>
+    <rect x="282.0" y="699.0" width="260" height="87.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="282.0" y="794.5" width="260" height="17.5" fill="#E5D64F" stroke="#000000" stroke-width="0.6"/>
+    <text x="288.0" y="806.1" font-size="9.5" font-weight="bold" fill="#000000">2.9.0</text>
+    <text x="317.1" y="806.1" font-size="9.5" font-weight="bold" fill="#000000">Smallholder farm</text>
+    <rect x="282.0" y="794.5" width="260" height="17.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="40.0" width="260" height="17.5" fill="#8C8C8C" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">3.0.0</text>
+    <text x="587.1" y="51.6" font-size="9.5" font-weight="bold" fill="#000000">Built environment</text>
+    <rect x="552.0" y="40.0" width="260" height="17.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="65.5" width="260" height="17.5" fill="#815E5B" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="77.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">3.1.0</text>
+    <text x="587.1" y="77.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">Residential</text>
+    <rect x="552.0" y="83.0" width="260" height="17.5" fill="#4C3B39" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="94.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">3.1.1</text>
+    <text x="587.1" y="94.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">High-density residential</text>
+    <rect x="552.0" y="100.5" width="260" height="17.5" fill="#644E4C" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="112.1" font-size="9.5" font-weight="normal" fill="#FFFFFF">3.1.2</text>
+    <text x="587.1" y="112.1" font-size="9.5" font-weight="normal" fill="#FFFFFF">Medium-density residential</text>
+    <rect x="552.0" y="118.0" width="260" height="17.5" fill="#815E5B" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="129.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">3.1.3</text>
+    <text x="587.1" y="129.6" font-size="9.5" font-weight="normal" fill="#FFFFFF">Low-density residential</text>
+    <rect x="552.0" y="135.5" width="260" height="17.5" fill="#A87A76" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">3.1.4</text>
+    <text x="587.1" y="147.1" font-size="9.5" font-weight="normal" fill="#000000">Rural residential</text>
+    <rect x="552.0" y="65.5" width="260" height="87.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="161.0" width="260" height="17.5" fill="#C19878" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="172.6" font-size="9.5" font-weight="bold" fill="#000000">3.2.0</text>
+    <text x="587.1" y="172.6" font-size="9.5" font-weight="bold" fill="#000000">Public recreation and services</text>
+    <rect x="552.0" y="178.5" width="260" height="17.5" fill="#C19878" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="190.1" font-size="9.5" font-weight="normal" fill="#000000">3.2.1</text>
+    <text x="587.1" y="190.1" font-size="9.5" font-weight="normal" fill="#000000">Outdoor recreation</text>
+    <rect x="552.0" y="196.0" width="260" height="17.5" fill="#958273" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="207.6" font-size="9.5" font-weight="normal" fill="#000000">3.2.2</text>
+    <text x="587.1" y="207.6" font-size="9.5" font-weight="normal" fill="#000000">Indoor recreation</text>
+    <rect x="552.0" y="213.5" width="260" height="17.5" fill="#E09962" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="225.1" font-size="9.5" font-weight="normal" fill="#000000">3.2.3</text>
+    <text x="587.1" y="225.1" font-size="9.5" font-weight="normal" fill="#000000">Community services</text>
+    <rect x="552.0" y="161.0" width="260" height="70.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="239.0" width="260" height="17.5" fill="#B8C2CE" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="250.6" font-size="9.5" font-weight="bold" fill="#000000">3.3.0</text>
+    <text x="587.1" y="250.6" font-size="9.5" font-weight="bold" fill="#000000">Commercial</text>
+    <rect x="552.0" y="256.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="268.1" font-size="9.5" font-weight="normal" fill="#000000">3.3.1</text>
+    <text x="587.1" y="268.1" font-size="9.5" font-weight="normal" fill="#000000">Retail</text>
+    <rect x="552.0" y="274.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="285.6" font-size="9.5" font-weight="normal" fill="#000000">3.3.2</text>
+    <text x="587.1" y="285.6" font-size="9.5" font-weight="normal" fill="#000000">Office</text>
+    <rect x="552.0" y="291.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="303.1" font-size="9.5" font-weight="normal" fill="#000000">3.3.3</text>
+    <text x="587.1" y="303.1" font-size="9.5" font-weight="normal" fill="#000000">Hospitality</text>
+    <rect x="552.0" y="309.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="320.6" font-size="9.5" font-weight="normal" fill="#000000">3.3.4</text>
+    <text x="587.1" y="320.6" font-size="9.5" font-weight="normal" fill="#000000">Entertainment</text>
+    <rect x="552.0" y="326.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="338.1" font-size="9.5" font-weight="normal" fill="#000000">3.3.5</text>
+    <text x="587.1" y="338.1" font-size="9.5" font-weight="normal" fill="#000000">Healthcare</text>
+    <rect x="552.0" y="344.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="355.6" font-size="9.5" font-weight="normal" fill="#000000">3.3.6</text>
+    <text x="587.1" y="355.6" font-size="9.5" font-weight="normal" fill="#000000">Transportation &amp; warehousing</text>
+    <rect x="552.0" y="239.0" width="260" height="122.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="369.5" width="260" height="17.5" fill="#D0D2DF" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="381.1" font-size="9.5" font-weight="bold" fill="#000000">3.4.0</text>
+    <text x="587.1" y="381.1" font-size="9.5" font-weight="bold" fill="#000000">Manufacturing and industrial</text>
+    <rect x="552.0" y="387.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="398.6" font-size="9.5" font-weight="normal" fill="#000000">3.4.1</text>
+    <text x="587.1" y="398.6" font-size="9.5" font-weight="normal" fill="#000000">General purpose factory</text>
+    <rect x="552.0" y="404.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="416.1" font-size="9.5" font-weight="normal" fill="#000000">3.4.2</text>
+    <text x="587.1" y="416.1" font-size="9.5" font-weight="normal" fill="#000000">Food processing factory</text>
+    <rect x="552.0" y="422.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="433.6" font-size="9.5" font-weight="normal" fill="#000000">3.4.3</text>
+    <text x="587.1" y="433.6" font-size="9.5" font-weight="normal" fill="#000000">Major industrial complex</text>
+    <rect x="552.0" y="439.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="451.1" font-size="9.5" font-weight="normal" fill="#000000">3.4.4</text>
+    <text x="587.1" y="451.1" font-size="9.5" font-weight="normal" fill="#000000">Sawmill</text>
+    <rect x="552.0" y="457.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="468.6" font-size="9.5" font-weight="normal" fill="#000000">3.4.5</text>
+    <text x="587.1" y="468.6" font-size="9.5" font-weight="normal" fill="#000000">Farm buildings/infrastructure</text>
+    <rect x="552.0" y="474.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="486.1" font-size="9.5" font-weight="normal" fill="#000000">3.4.6</text>
+    <text x="587.1" y="486.1" font-size="9.5" font-weight="normal" fill="#000000">Abattoirs</text>
+    <rect x="552.0" y="369.5" width="260" height="122.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="500.0" width="260" height="17.5" fill="#F8ADFA" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="511.6" font-size="9.5" font-weight="bold" fill="#000000">3.5.0</text>
+    <text x="587.1" y="511.6" font-size="9.5" font-weight="bold" fill="#000000">Utilities</text>
+    <rect x="552.0" y="517.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="529.1" font-size="9.5" font-weight="normal" fill="#000000">3.5.1</text>
+    <text x="587.1" y="529.1" font-size="9.5" font-weight="normal" fill="#000000">Fuel powered electricity generation</text>
+    <rect x="552.0" y="535.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="546.6" font-size="9.5" font-weight="normal" fill="#000000">3.5.2</text>
+    <text x="587.1" y="546.6" font-size="9.5" font-weight="normal" fill="#000000">Hydroelectricity generation</text>
+    <rect x="552.0" y="552.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="564.1" font-size="9.5" font-weight="normal" fill="#000000">3.5.3</text>
+    <text x="587.1" y="564.1" font-size="9.5" font-weight="normal" fill="#000000">Wind electricity generation</text>
+    <rect x="552.0" y="570.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="581.6" font-size="9.5" font-weight="normal" fill="#000000">3.5.4</text>
+    <text x="587.1" y="581.6" font-size="9.5" font-weight="normal" fill="#000000">Solar electricity generation</text>
+    <rect x="552.0" y="587.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="599.1" font-size="9.5" font-weight="normal" fill="#000000">3.5.5</text>
+    <text x="587.1" y="599.1" font-size="9.5" font-weight="normal" fill="#000000">Electricity substations and transmission</text>
+    <rect x="552.0" y="605.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="616.6" font-size="9.5" font-weight="normal" fill="#000000">3.5.6</text>
+    <text x="587.1" y="616.6" font-size="9.5" font-weight="normal" fill="#000000">Gas treatment, storage, and transmission</text>
+    <rect x="552.0" y="622.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="634.1" font-size="9.5" font-weight="normal" fill="#000000">3.5.7</text>
+    <text x="587.1" y="634.1" font-size="9.5" font-weight="normal" fill="#000000">Water extraction and transmission</text>
+    <rect x="552.0" y="640.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="651.6" font-size="9.5" font-weight="normal" fill="#000000">3.5.8</text>
+    <text x="587.1" y="651.6" font-size="9.5" font-weight="normal" fill="#000000">Navigation and communication</text>
+    <rect x="552.0" y="500.0" width="260" height="157.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="665.5" width="260" height="17.5" fill="#72737E" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="677.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">3.6.0</text>
+    <text x="587.1" y="677.1" font-size="9.5" font-weight="bold" fill="#FFFFFF">Transportation</text>
+    <rect x="552.0" y="683.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="694.6" font-size="9.5" font-weight="normal" fill="#000000">3.6.1</text>
+    <text x="587.1" y="694.6" font-size="9.5" font-weight="normal" fill="#000000">Airports/aerodromes</text>
+    <rect x="552.0" y="700.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="712.1" font-size="9.5" font-weight="normal" fill="#000000">3.6.2</text>
+    <text x="587.1" y="712.1" font-size="9.5" font-weight="normal" fill="#000000">Roads</text>
+    <rect x="552.0" y="718.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="729.6" font-size="9.5" font-weight="normal" fill="#000000">3.6.3</text>
+    <text x="587.1" y="729.6" font-size="9.5" font-weight="normal" fill="#000000">Railways</text>
+    <rect x="552.0" y="735.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="747.1" font-size="9.5" font-weight="normal" fill="#000000">3.6.4</text>
+    <text x="587.1" y="747.1" font-size="9.5" font-weight="normal" fill="#000000">Ports and water transport</text>
+    <rect x="552.0" y="665.5" width="260" height="87.5" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="761.0" width="260" height="17.5" fill="#E1CEA7" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="772.6" font-size="9.5" font-weight="bold" fill="#000000">3.7.0</text>
+    <text x="587.1" y="772.6" font-size="9.5" font-weight="bold" fill="#000000">Mining</text>
+    <rect x="552.0" y="778.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="790.1" font-size="9.5" font-weight="normal" fill="#000000">3.7.1</text>
+    <text x="587.1" y="790.1" font-size="9.5" font-weight="normal" fill="#000000">Mines</text>
+    <rect x="552.0" y="796.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="807.6" font-size="9.5" font-weight="normal" fill="#000000">3.7.2</text>
+    <text x="587.1" y="807.6" font-size="9.5" font-weight="normal" fill="#000000">Quarries</text>
+    <rect x="552.0" y="813.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="825.1" font-size="9.5" font-weight="normal" fill="#000000">3.7.3</text>
+    <text x="587.1" y="825.1" font-size="9.5" font-weight="normal" fill="#000000">Tailings</text>
+    <rect x="552.0" y="831.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="842.6" font-size="9.5" font-weight="normal" fill="#000000">3.7.4</text>
+    <text x="587.1" y="842.6" font-size="9.5" font-weight="normal" fill="#000000">Evaporation basins</text>
+    <rect x="552.0" y="848.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="860.1" font-size="9.5" font-weight="normal" fill="#000000">3.7.5</text>
+    <text x="587.1" y="860.1" font-size="9.5" font-weight="normal" fill="#000000">Extractive industry not in use</text>
+    <rect x="552.0" y="761.0" width="260" height="105.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="874.0" width="260" height="17.5" fill="#E77148" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="885.6" font-size="9.5" font-weight="bold" fill="#000000">3.8.0</text>
+    <text x="587.1" y="885.6" font-size="9.5" font-weight="bold" fill="#000000">Waste treatment and disposal</text>
+    <rect x="552.0" y="891.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="903.1" font-size="9.5" font-weight="normal" fill="#000000">3.8.1</text>
+    <text x="587.1" y="903.1" font-size="9.5" font-weight="normal" fill="#000000">Landfills</text>
+    <rect x="552.0" y="909.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="920.6" font-size="9.5" font-weight="normal" fill="#000000">3.8.2</text>
+    <text x="587.1" y="920.6" font-size="9.5" font-weight="normal" fill="#000000">Transfer stations and recycling facilities</text>
+    <rect x="552.0" y="926.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="938.1" font-size="9.5" font-weight="normal" fill="#000000">3.8.3</text>
+    <text x="587.1" y="938.1" font-size="9.5" font-weight="normal" fill="#000000">Municipal wastewater</text>
+    <rect x="552.0" y="944.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="955.6" font-size="9.5" font-weight="normal" fill="#000000">3.8.4</text>
+    <text x="587.1" y="955.6" font-size="9.5" font-weight="normal" fill="#000000">Wastewater treatment – land application</text>
+    <rect x="552.0" y="961.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="973.1" font-size="9.5" font-weight="normal" fill="#000000">3.8.5</text>
+    <text x="587.1" y="973.1" font-size="9.5" font-weight="normal" fill="#000000">Stormwater management</text>
+    <rect x="552.0" y="874.0" width="260" height="105.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+  <g>
+    <rect x="552.0" y="987.0" width="260" height="17.5" fill="#D69B97" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="998.6" font-size="9.5" font-weight="bold" fill="#000000">3.9.0</text>
+    <text x="587.1" y="998.6" font-size="9.5" font-weight="bold" fill="#000000">Vacant and transitioning land</text>
+    <rect x="552.0" y="1004.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="1016.1" font-size="9.5" font-weight="normal" fill="#000000">3.9.1</text>
+    <text x="587.1" y="1016.1" font-size="9.5" font-weight="normal" fill="#000000">Brownfield development</text>
+    <rect x="552.0" y="1022.0" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="1033.6" font-size="9.5" font-weight="normal" fill="#000000">3.9.2</text>
+    <text x="587.1" y="1033.6" font-size="9.5" font-weight="normal" fill="#000000">Greenfield development</text>
+    <rect x="552.0" y="1039.5" width="260" height="17.5" fill="#E0E0E0" stroke="#000000" stroke-width="0.6"/>
+    <text x="558.0" y="1051.1" font-size="9.5" font-weight="normal" fill="#000000">3.9.3</text>
+    <text x="587.1" y="1051.1" font-size="9.5" font-weight="normal" fill="#000000">Idle and derelict land</text>
+    <rect x="552.0" y="987.0" width="260" height="70.0" fill="none" stroke="#000000" stroke-width="1.4"/>
+  </g>
+</svg>
