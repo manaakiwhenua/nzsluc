@@ -1,0 +1,67 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:barley skos:notation "barley" .
+
+com:buckwheat skos:notation "buckwheat" .
+
+com:canary_seed skos:notation "canary_seed" .
+
+com:cereals.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:cereals.jsonld,
+        com:cereals.rdf,
+        com:cereals.ttl .
+
+com:cereals.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:cereals .
+
+com:cereals.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:cereals .
+
+com:cereals.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:cereals .
+
+com:maize skos:notation "maize" .
+
+com:millet_and_pancium skos:notation "millet and pancium" .
+
+com:oats skos:notation "oats" .
+
+com:quinoa skos:notation "quinoa" .
+
+com:rice skos:notation "rice" .
+
+com:rye_cereal skos:notation "rye cereal" .
+
+com:sorghum_grain skos:notation "sorghum grain" .
+
+com:triticale skos:notation "triticale" .
+
+com:wheat skos:notation "wheat" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:cereals a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:barley,
+        com:buckwheat,
+        com:canary_seed,
+        com:maize,
+        com:millet_and_pancium,
+        com:oats,
+        com:quinoa,
+        com:rice,
+        com:rye_cereal,
+        com:sorghum_grain,
+        com:triticale,
+        com:wheat ;
+    skos:prefLabel "Cereals"@en ;
+    foaf:isPrimaryTopicOf com:cereals.html .
+

@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:mines skos:member com:alumina ;
+    skos:prefLabel "Mines"@en .
+
+com:alumina.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:alumina.jsonld,
+        com:alumina.rdf,
+        com:alumina.ttl .
+
+com:alumina.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:alumina .
+
+com:alumina.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:alumina .
+
+com:alumina.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:alumina .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:alumina a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "alumina" ;
+    foaf:isPrimaryTopicOf com:alumina.html .
+

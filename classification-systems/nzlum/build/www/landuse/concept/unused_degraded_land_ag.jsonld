@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:unused_degraded_land_ag.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:unused_degraded_land_ag.ttl"
+        },
+        {
+          "@id": "luc:unused_degraded_land_ag.jsonld"
+        },
+        {
+          "@id": "luc:unused_degraded_land_ag.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:land_in_transition_agriculture",
+      "skos:notation": "2.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Land in transition"
+      }
+    },
+    {
+      "@id": "luc:unused_degraded_land_ag.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:unused_degraded_land_ag"
+      }
+    },
+    {
+      "@id": "luc:unused_degraded_land_ag.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:unused_degraded_land_ag"
+      }
+    },
+    {
+      "@id": "luc:unused_degraded_land_ag",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:unused_degraded_land_ag.html"
+      },
+      "owl:deprecated": true,
+      "skos:broader": {
+        "@id": "luc:land_in_transition_agriculture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Unused land that is degraded through erosion or flood events that is not being rehabilitated."
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.3.0"
+      },
+      "skos:notation": "2.8.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Unused degraded land"
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Can include contaminated land."
+      }
+    },
+    {
+      "@id": "luc:unused_degraded_land_ag.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:unused_degraded_land_ag"
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
+      }
+    },
+    {
+      "@id": "luc:farm_buildings_infrastructure.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:farm_buildings_infrastructure"
+      }
+    },
+    {
+      "@id": "luc:farm_buildings_infrastructure.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:farm_buildings_infrastructure"
+      }
+    },
+    {
+      "@id": "luc:farm_buildings_infrastructure.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:farm_buildings_infrastructure"
+      }
+    },
+    {
+      "@id": "luc:farm_buildings_infrastructure.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:farm_buildings_infrastructure.ttl"
+        },
+        {
+          "@id": "luc:farm_buildings_infrastructure.jsonld"
+        },
+        {
+          "@id": "luc:farm_buildings_infrastructure.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:farm_buildings_infrastructure",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:farm_buildings_infrastructure.html"
+      },
+      "skos:broader": {
+        "@id": "luc:manufacturing_industrial"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations."
+      },
+      "skos:example": {
+        "@language": "en",
+        "@value": "Barns, silos, storage sheds, and irrigation systems."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.4.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Farm buildings/infrastructure"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."
+      }
+    }
+  ]
+}

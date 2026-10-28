@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:chokos.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chokos.ttl"
+        },
+        {
+          "@id": "com:chokos.jsonld"
+        },
+        {
+          "@id": "com:chokos.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:chokos.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "com:chokos.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "com:chokos",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:chokos.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chokos"
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:chokos"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:chokos.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}

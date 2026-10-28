@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:nature_cons skos:notation "1.1.0" ;
+    skos:prefLabel "Nature conservation"@en .
+
+luc:strict_nature_res.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:strict_nature_res.jsonld,
+        luc:strict_nature_res.rdf,
+        luc:strict_nature_res.ttl .
+
+luc:strict_nature_res.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:strict_nature_res .
+
+luc:strict_nature_res.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:strict_nature_res .
+
+luc:strict_nature_res.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:strict_nature_res .
+
+luc:strict_nature_res a skos:Concept ;
+    dcterms:source "IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve."@en ;
+    skos:broader luc:nature_cons ;
+    skos:definition "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "1.1.1" ;
+    skos:prefLabel "Strict nature reserve"@en ;
+    foaf:isPrimaryTopicOf luc:strict_nature_res.html ;
+    lu:colour "#5E3A98" .
+

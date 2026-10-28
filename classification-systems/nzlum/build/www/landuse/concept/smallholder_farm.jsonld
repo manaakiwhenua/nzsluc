@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:smallholder_farm.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
+      }
+    },
+    {
+      "@id": "luc:smallholder_farm.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
+      }
+    },
+    {
+      "@id": "luc:smallholder_farm.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
+      }
+    },
+    {
+      "@id": "luc:smallholder_farm.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:smallholder_farm.ttl"
+        },
+        {
+          "@id": "luc:smallholder_farm.jsonld"
+        },
+        {
+          "@id": "luc:smallholder_farm.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:production_agriculture_plantations",
+      "skos:notation": "2.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production agriculture and plantations"
+      }
+    },
+    {
+      "@id": "luc:smallholder_farm",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:smallholder_farm.html"
+      },
+      "lu:colour": "#E5D64F",
+      "skos:broader": {
+        "@id": "luc:production_agriculture_plantations"
+      },
+      "skos:changeNote": {
+        "@language": "en",
+        "@value": "Added at v0.4.0 to capture the gap between 3.1.4 Rural residential (0.4–2 ha) and commercial pastoral classes (2.2.0)."
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A rural property larger than a rural residential property (> 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "2.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Smallholder farm"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management."
+        },
+        {
+          "@language": "en",
+          "@value": "Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land."
+        }
+      ],
+      "skos:usageNote": [
+        {
+          "@language": "en",
+          "@value": "Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3."
+        },
+        {
+          "@language": "en",
+          "@value": "As a subclass of 2.0.0, commodities and management practices may still be recorded."
+        }
+      ]
+    }
+  ]
+}

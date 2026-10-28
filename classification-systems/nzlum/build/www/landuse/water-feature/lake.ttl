@@ -1,0 +1,34 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wtr: <https://nzlum.landcareresearch.co.nz/landuse/water-feature/> .
+
+lus:water_features dcterms:title "NZLUM water features"@en .
+
+wtr:lake.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat wtr:lake.jsonld,
+        wtr:lake.rdf,
+        wtr:lake.ttl .
+
+wtr:lake.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic wtr:lake .
+
+wtr:lake.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic wtr:lake .
+
+wtr:lake.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic wtr:lake .
+
+wtr:lake a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "lake" ;
+    skos:usageNote "Matches any value prefixed with 'lake' (e.g. 'lake bed')."@en ;
+    foaf:isPrimaryTopicOf wtr:lake.html ;
+    lu:colour "#C3DFFF" .
+

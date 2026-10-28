@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:celery ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:celery.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:celery.jsonld,
+        com:celery.rdf,
+        com:celery.ttl .
+
+com:celery.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:celery .
+
+com:celery.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:celery .
+
+com:celery.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:celery .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:celery a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "celery" ;
+    foaf:isPrimaryTopicOf com:celery.html .
+

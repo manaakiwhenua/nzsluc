@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:thyme ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:thyme.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:thyme.jsonld,
+        com:thyme.rdf,
+        com:thyme.ttl .
+
+com:thyme.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:thyme .
+
+com:thyme.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:thyme .
+
+com:thyme.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:thyme .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:thyme a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "thyme" ;
+    foaf:isPrimaryTopicOf com:thyme.html .
+

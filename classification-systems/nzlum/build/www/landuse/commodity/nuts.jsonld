@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:nuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:nuts"
+      }
+    },
+    {
+      "@id": "com:nuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:nuts"
+      }
+    },
+    {
+      "@id": "com:chestnuts",
+      "skos:notation": "chestnuts"
+    },
+    {
+      "@id": "com:nuts.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:nuts"
+      }
+    },
+    {
+      "@id": "com:pistachios",
+      "skos:notation": "pistachios"
+    },
+    {
+      "@id": "com:nuts.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:nuts.ttl"
+        },
+        {
+          "@id": "com:nuts.jsonld"
+        },
+        {
+          "@id": "com:nuts.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:hazelnuts",
+      "skos:notation": "hazelnuts"
+    },
+    {
+      "@id": "com:walnuts",
+      "skos:notation": "walnuts"
+    },
+    {
+      "@id": "com:nuts",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:nuts.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:hazelnuts"
+        },
+        {
+          "@id": "com:macadamias"
+        },
+        {
+          "@id": "com:almonds"
+        },
+        {
+          "@id": "com:pinenuts"
+        },
+        {
+          "@id": "com:walnuts"
+        },
+        {
+          "@id": "com:cashews"
+        },
+        {
+          "@id": "com:brazil_nuts"
+        },
+        {
+          "@id": "com:pistachios"
+        },
+        {
+          "@id": "com:pecan_nuts"
+        },
+        {
+          "@id": "com:chestnuts"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
+      }
+    },
+    {
+      "@id": "com:cashews",
+      "skos:notation": "cashews"
+    },
+    {
+      "@id": "com:brazil_nuts",
+      "skos:notation": "brazil nuts"
+    },
+    {
+      "@id": "com:pinenuts",
+      "skos:notation": "pinenuts"
+    },
+    {
+      "@id": "com:pecan_nuts",
+      "skos:notation": "pecan nuts"
+    },
+    {
+      "@id": "com:almonds",
+      "skos:notation": "almonds"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:macadamias",
+      "skos:notation": "macadamias"
+    }
+  ]
+}

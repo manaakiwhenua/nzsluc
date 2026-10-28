@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:nuts skos:member com:chestnuts ;
+    skos:prefLabel "Nuts"@en .
+
+com:chestnuts.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:chestnuts.jsonld,
+        com:chestnuts.rdf,
+        com:chestnuts.ttl .
+
+com:chestnuts.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:chestnuts .
+
+com:chestnuts.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:chestnuts .
+
+com:chestnuts.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:chestnuts .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:chestnuts a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "chestnuts" ;
+    foaf:isPrimaryTopicOf com:chestnuts.html .
+

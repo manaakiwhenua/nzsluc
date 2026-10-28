@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wtr: <https://nzlum.landcareresearch.co.nz/landuse/water-feature/> .
+
+lus:water_features dcterms:title "NZLUM water features"@en .
+
+wtr:drain.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat wtr:drain.jsonld,
+        wtr:drain.rdf,
+        wtr:drain.ttl .
+
+wtr:drain.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic wtr:drain .
+
+wtr:drain.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic wtr:drain .
+
+wtr:drain.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic wtr:drain .
+
+wtr:drain a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "drain" ;
+    foaf:isPrimaryTopicOf wtr:drain.html ;
+    lu:colour "#C3DFFF" .
+

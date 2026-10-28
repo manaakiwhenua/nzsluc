@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:outdoor_recreation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:outdoor_recreation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:outdoor_recreation.ttl"
+        },
+        {
+          "@id": "luc:outdoor_recreation.jsonld"
+        },
+        {
+          "@id": "luc:outdoor_recreation.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:outdoor_recreation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
+      }
+    },
+    {
+      "@id": "luc:outdoor_recreation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:outdoor_recreation",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:outdoor_recreation.html"
+      },
+      "lu:colour": "#C19878",
+      "skos:broader": {
+        "@id": "luc:public_recreation_services"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas."
+      },
+      "skos:example": {
+        "@language": "en",
+        "@value": "Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.2.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Outdoor recreation"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."
+        },
+        {
+          "@language": "en",
+          "@value": "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."
+        }
+      ]
+    }
+  ]
+}

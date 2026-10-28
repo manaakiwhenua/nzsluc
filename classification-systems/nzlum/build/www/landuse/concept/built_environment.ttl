@@ -1,0 +1,74 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:built_environment.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:built_environment.jsonld,
+        luc:built_environment.rdf,
+        luc:built_environment.ttl .
+
+luc:built_environment.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:built_environment .
+
+luc:built_environment.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:built_environment .
+
+luc:built_environment.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:built_environment .
+
+luc:commercial skos:notation "3.3.0" ;
+    skos:prefLabel "Commercial"@en .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:mining skos:notation "3.7.0" ;
+    skos:prefLabel "Mining"@en .
+
+luc:public_recreation_services skos:notation "3.2.0" ;
+    skos:prefLabel "Public recreation and services"@en .
+
+luc:residential skos:notation "3.1.0" ;
+    skos:prefLabel "Residential"@en .
+
+luc:transport skos:notation "3.6.0" ;
+    skos:prefLabel "Transportation"@en .
+
+luc:utilities skos:notation "3.5.0" ;
+    skos:prefLabel "Utilities"@en .
+
+luc:vacant_transitioning_land_urban skos:notation "3.9.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:waste_treatment_disposal skos:notation "3.8.0" ;
+    skos:prefLabel "Waste treatment and disposal"@en .
+
+lus:nzlum0.3.0 skos:hasTopConcept luc:built_environment .
+
+lus:nzlum0.4.0 skos:hasTopConcept luc:built_environment .
+
+luc:built_environment a skos:Concept ;
+    skos:definition "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:commercial,
+        luc:manufacturing_industrial,
+        luc:mining,
+        luc:public_recreation_services,
+        luc:residential,
+        luc:transport,
+        luc:utilities,
+        luc:vacant_transitioning_land_urban,
+        luc:waste_treatment_disposal ;
+    skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en ;
+    skos:scopeNote "Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character."@en ;
+    skos:topConceptOf lus:nzlum0.4.0 ;
+    foaf:isPrimaryTopicOf luc:built_environment.html .
+

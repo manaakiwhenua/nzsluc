@@ -1,0 +1,40 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:dairy.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:dairy.jsonld,
+        luc:dairy.rdf,
+        luc:dairy.ttl .
+
+luc:dairy.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:dairy .
+
+luc:dairy.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:dairy .
+
+luc:dairy.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:dairy .
+
+luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
+    skos:prefLabel "Grazing modified pasture systems"@en .
+
+luc:dairy a skos:Concept ;
+    skos:broader luc:grazing_modified_pasture_systems ;
+    skos:definition "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.2.1" ;
+    skos:prefLabel "Dairy"@en ;
+    skos:scopeNote "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."@en,
+        "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."@en ;
+    foaf:isPrimaryTopicOf luc:dairy.html ;
+    lu:colour "#8D7735" .
+

@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu_person: <https://nzlum.landcareresearch.co.nz/landuse/doc/person/> .
+@prefix lu_proverb: <https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+
+lus:nzlum dcterms:relation lu_proverb:kotahi_te_aho ;
+    dcterms:title "New Zealand Land Use and Management classification system"@en .
+
+lu_person:kingi_tawhiao foaf:name "Kīngi Tāwhiao"@mi,
+        "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"@mi .
+
+lu_proverb:kotahi_te_aho.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat lu_proverb:kotahi_te_aho.jsonld,
+        lu_proverb:kotahi_te_aho.rdf,
+        lu_proverb:kotahi_te_aho.ttl .
+
+lu_proverb:kotahi_te_aho.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic lu_proverb:kotahi_te_aho .
+
+lu_proverb:kotahi_te_aho.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic lu_proverb:kotahi_te_aho .
+
+lu_proverb:kotahi_te_aho.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic lu_proverb:kotahi_te_aho .
+
+lu_proverb:kotahi_te_aho a dcterms:BibliographicResource ;
+    dcterms:creator lu_person:kingi_tawhiao ;
+    dcterms:description "One strand of flax is easy to break, but many strands together will stand strong."@en,
+        "Kotahi te aho ka whati, ki te kāpuia e kore e whati."@mi ;
+    foaf:isPrimaryTopicOf lu_proverb:kotahi_te_aho.html .
+

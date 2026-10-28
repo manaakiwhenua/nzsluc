@@ -1,0 +1,59 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:evaporation_basins skos:notation "3.7.4" ;
+    skos:prefLabel "Evaporation basins"@en .
+
+luc:extractive_industry_not_in_use skos:notation "3.7.5" ;
+    skos:prefLabel "Extractive industry not in use"@en .
+
+luc:mines skos:notation "3.7.1" ;
+    skos:prefLabel "Mines"@en .
+
+luc:mining.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:mining.jsonld,
+        luc:mining.rdf,
+        luc:mining.ttl .
+
+luc:mining.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:mining .
+
+luc:mining.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:mining .
+
+luc:mining.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:mining .
+
+luc:quarries skos:notation "3.7.2" ;
+    skos:prefLabel "Quarries"@en .
+
+luc:tailings skos:notation "3.7.3" ;
+    skos:prefLabel "Tailings"@en .
+
+luc:mining a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "Mining and extractive industries (including salt extraction from evaporation basins)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:evaporation_basins,
+        luc:extractive_industry_not_in_use,
+        luc:mines,
+        luc:quarries,
+        luc:tailings ;
+    skos:notation "3.7.0" ;
+    skos:prefLabel "Mining"@en ;
+    skos:usageNote "Record the specific type of mining activitiy in the commodity attribute, if known."@en ;
+    foaf:isPrimaryTopicOf luc:mining.html ;
+    lu:colour "#E1CEA7" .
+

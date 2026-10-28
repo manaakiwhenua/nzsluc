@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:forest",
+      "skos:member": {
+        "@id": "com:carbon_forest_permanent"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
+      }
+    },
+    {
+      "@id": "com:carbon_forest_permanent.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:carbon_forest_permanent"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:carbon_forest_permanent",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:carbon_forest_permanent.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry."
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carbon forest permanent"
+    },
+    {
+      "@id": "com:carbon_forest_permanent.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:carbon_forest_permanent"
+      }
+    },
+    {
+      "@id": "com:carbon_forest_permanent.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:carbon_forest_permanent"
+      }
+    },
+    {
+      "@id": "com:carbon_forest_permanent.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:carbon_forest_permanent.ttl"
+        },
+        {
+          "@id": "com:carbon_forest_permanent.jsonld"
+        },
+        {
+          "@id": "com:carbon_forest_permanent.rdf"
+        }
+      ]
+    }
+  ]
+}

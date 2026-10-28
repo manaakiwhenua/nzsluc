@@ -1,0 +1,41 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:outdoor_recreation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:outdoor_recreation.jsonld,
+        luc:outdoor_recreation.rdf,
+        luc:outdoor_recreation.ttl .
+
+luc:outdoor_recreation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:outdoor_recreation .
+
+luc:outdoor_recreation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:outdoor_recreation .
+
+luc:outdoor_recreation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:outdoor_recreation .
+
+luc:public_recreation_services skos:notation "3.2.0" ;
+    skos:prefLabel "Public recreation and services"@en .
+
+luc:outdoor_recreation a skos:Concept ;
+    skos:broader luc:public_recreation_services ;
+    skos:definition "Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas."@en ;
+    skos:example "Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.2.1" ;
+    skos:prefLabel "Outdoor recreation"@en ;
+    skos:scopeNote "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."@en,
+        "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."@en ;
+    foaf:isPrimaryTopicOf luc:outdoor_recreation.html ;
+    lu:colour "#C19878" .
+

@@ -1,0 +1,61 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:bamboo skos:notation "bamboo" .
+
+com:carbon_forest_permanent skos:notation "carbon forest permanent" .
+
+com:carbon_forest_standard skos:notation "carbon forest standard" .
+
+com:christmas_trees skos:notation "christmas trees" .
+
+com:eucalyptus_oil skos:notation "eucalyptus oil" .
+
+com:forest.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:forest.jsonld,
+        com:forest.rdf,
+        com:forest.ttl .
+
+com:forest.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:forest .
+
+com:forest.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:forest .
+
+com:forest.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:forest .
+
+com:oil_mallee skos:notation "oil mallee" .
+
+com:pulp_wood skos:notation "pulp wood" .
+
+com:sandalwood skos:notation "sandalwood" .
+
+com:sawlogs skos:notation "sawlogs" .
+
+com:tea_tree skos:notation "tea tree" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:forest a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:bamboo,
+        com:carbon_forest_permanent,
+        com:carbon_forest_standard,
+        com:christmas_trees,
+        com:eucalyptus_oil,
+        com:oil_mallee,
+        com:pulp_wood,
+        com:sandalwood,
+        com:sawlogs,
+        com:tea_tree ;
+    skos:prefLabel "Forest"@en ;
+    foaf:isPrimaryTopicOf com:forest.html .
+

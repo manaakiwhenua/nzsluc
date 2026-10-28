@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:rehabilitating_land.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:rehabilitating_land.jsonld,
+        luc:rehabilitating_land.rdf,
+        luc:rehabilitating_land.ttl .
+
+luc:rehabilitating_land.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:rehabilitating_land .
+
+luc:rehabilitating_land.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:rehabilitating_land .
+
+luc:rehabilitating_land.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:rehabilitating_land .
+
+luc:unused_and_transitioning skos:notation "1.4.0" ;
+    skos:prefLabel "Unused and transitioning land"@en .
+
+luc:rehabilitating_land a skos:Concept ;
+    skos:broader luc:unused_and_transitioning ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+    skos:definition "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state."@en ;
+    skos:inScheme lus:nzlum0.4.0 ;
+    skos:notation "1.4.1" ;
+    skos:prefLabel "Rehabilitating land"@en ;
+    skos:scopeNote "This may include riparian plantings."@en ;
+    foaf:isPrimaryTopicOf luc:rehabilitating_land.html .
+

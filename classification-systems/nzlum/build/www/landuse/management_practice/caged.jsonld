@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:caged.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:caged"
+      }
+    },
+    {
+      "@id": "mgmt:caged",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:caged.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "caged"
+    },
+    {
+      "@id": "mgmt:caged.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:caged.ttl"
+        },
+        {
+          "@id": "mgmt:caged.jsonld"
+        },
+        {
+          "@id": "mgmt:caged.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:caged.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:caged"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:animal",
+      "skos:member": {
+        "@id": "mgmt:caged"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animal"
+      }
+    },
+    {
+      "@id": "mgmt:caged.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:caged"
+      }
+    }
+  ]
+}

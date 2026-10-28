@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:perennial_horticulture skos:notation "2.4.0" ;
+    skos:prefLabel "Perennial horticulture"@en .
+
+luc:vine_fruits.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:vine_fruits.jsonld,
+        luc:vine_fruits.rdf,
+        luc:vine_fruits.ttl .
+
+luc:vine_fruits.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:vine_fruits .
+
+luc:vine_fruits.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:vine_fruits .
+
+luc:vine_fruits.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:vine_fruits .
+
+luc:vine_fruits a skos:Concept ;
+    skos:broader luc:perennial_horticulture ;
+    skos:definition "Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.4.2" ;
+    skos:prefLabel "Vine fruits"@en ;
+    foaf:isPrimaryTopicOf luc:vine_fruits.html .
+

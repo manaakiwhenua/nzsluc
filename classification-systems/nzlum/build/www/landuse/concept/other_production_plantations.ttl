@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:other_production_plantations.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:other_production_plantations.jsonld,
+        luc:other_production_plantations.rdf,
+        luc:other_production_plantations.ttl .
+
+luc:other_production_plantations.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:other_production_plantations .
+
+luc:other_production_plantations.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:other_production_plantations .
+
+luc:other_production_plantations.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:other_production_plantations .
+
+luc:plantation_forests skos:notation "2.1.0" ;
+    skos:prefLabel "Plantation forests"@en .
+
+luc:other_production_plantations a skos:Concept ;
+    skos:broader luc:plantation_forests ;
+    skos:definition "An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.1.3" ;
+    skos:prefLabel "Other production uses"@en ;
+    skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+    foaf:isPrimaryTopicOf luc:other_production_plantations.html .
+

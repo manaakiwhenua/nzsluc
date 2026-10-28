@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:conservation skos:notation "1.0.0" ;
+    skos:prefLabel "Conservation and Minimal Use"@en .
+
+luc:cultural_heritage skos:notation "1.2.2" ;
+    skos:prefLabel "Cultural heritage"@en .
+
+luc:cultural_natural_heritage.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:cultural_natural_heritage.jsonld,
+        luc:cultural_natural_heritage.rdf,
+        luc:cultural_natural_heritage.ttl .
+
+luc:cultural_natural_heritage.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:cultural_natural_heritage .
+
+luc:cultural_natural_heritage.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:cultural_natural_heritage .
+
+luc:cultural_natural_heritage.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:cultural_natural_heritage .
+
+luc:indigenous_cultural_heritage skos:notation "1.2.1" ;
+    skos:prefLabel "Indigenous cultural heritage"@en .
+
+luc:natural_heritage skos:notation "1.2.3" ;
+    skos:prefLabel "Natural heritage"@en .
+
+luc:cultural_natural_heritage a skos:Concept ;
+    skos:broader luc:conservation ;
+    skos:definition "Conservation classes are for purposes other than biodiversity protecton."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:cultural_heritage,
+        luc:indigenous_cultural_heritage,
+        luc:natural_heritage ;
+    skos:notation "1.2.0" ;
+    skos:prefLabel "Cultural and natural heritage"@en ;
+    foaf:isPrimaryTopicOf luc:cultural_natural_heritage.html ;
+    lu:colour "#A00019" .
+

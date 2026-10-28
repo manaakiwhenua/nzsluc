@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:grazing skos:member mgmt:grazing_rotational ;
+    skos:prefLabel "Grazing"@en .
+
+mgmt:grazing_rotational.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:grazing_rotational.jsonld,
+        mgmt:grazing_rotational.rdf,
+        mgmt:grazing_rotational.ttl .
+
+mgmt:grazing_rotational.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:grazing_rotational .
+
+mgmt:grazing_rotational.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:grazing_rotational .
+
+mgmt:grazing_rotational.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:grazing_rotational .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:grazing_rotational a skos:Concept ;
+    skos:definition "Moving livestock between paddocks in regular sequence to permit the recovery and growth of the pasture plants after grazing."@en ;
+    skos:inScheme lus:management_practices ;
+    skos:notation "grazing rotational" ;
+    skos:scopeNote "Also cell grazing."@en ;
+    skos:usageNote "Stocking rates per paddock are higher than under set stocking."@en ;
+    foaf:isPrimaryTopicOf mgmt:grazing_rotational.html .
+

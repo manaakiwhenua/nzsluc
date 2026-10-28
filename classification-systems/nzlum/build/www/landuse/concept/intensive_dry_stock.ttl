@@ -1,0 +1,42 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
+    skos:prefLabel "Grazing modified pasture systems"@en .
+
+luc:intensive_dry_stock.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:intensive_dry_stock.jsonld,
+        luc:intensive_dry_stock.rdf,
+        luc:intensive_dry_stock.ttl .
+
+luc:intensive_dry_stock.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:intensive_dry_stock .
+
+luc:intensive_dry_stock.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:intensive_dry_stock .
+
+luc:intensive_dry_stock.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:intensive_dry_stock .
+
+luc:intensive_dry_stock a skos:Concept ;
+    skos:broader luc:grazing_modified_pasture_systems ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/66>,
+        "A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive."@en ;
+    skos:definition "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.2.2" ;
+    skos:prefLabel "Intensive dry stock"@en ;
+    skos:scopeNote "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding."@en ;
+    skos:usageNote "Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent."@en ;
+    foaf:isPrimaryTopicOf luc:intensive_dry_stock.html ;
+    lu:colour "#357735" .
+

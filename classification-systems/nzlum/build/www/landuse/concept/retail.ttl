@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:commercial skos:notation "3.3.0" ;
+    skos:prefLabel "Commercial"@en .
+
+luc:retail.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:retail.jsonld,
+        luc:retail.rdf,
+        luc:retail.ttl .
+
+luc:retail.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:retail .
+
+luc:retail.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:retail .
+
+luc:retail.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:retail .
+
+luc:retail a skos:Concept ;
+    skos:broader luc:commercial ;
+    skos:definition "Areas used for the sale of goods and services directly to consumers."@en ;
+    skos:example "Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.3.1" ;
+    skos:prefLabel "Retail"@en ;
+    foaf:isPrimaryTopicOf luc:retail.html .
+

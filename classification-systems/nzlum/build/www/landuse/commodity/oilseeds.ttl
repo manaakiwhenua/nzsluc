@@ -1,0 +1,58 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:canola skos:notation "canola" .
+
+com:chia skos:notation "chia" .
+
+com:flaxseed skos:notation "flaxseed" .
+
+com:mustard skos:notation "mustard " .
+
+com:oilseeds.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:oilseeds.jsonld,
+        com:oilseeds.rdf,
+        com:oilseeds.ttl .
+
+com:oilseeds.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:oilseeds .
+
+com:oilseeds.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:oilseeds .
+
+com:oilseeds.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:oilseeds .
+
+com:peanuts skos:notation "peanuts" .
+
+com:safflower skos:notation "safflower" .
+
+com:sesame skos:notation "sesame" .
+
+com:soybeans skos:notation "soybeans" .
+
+com:sunflower skos:notation "sunflower" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:oilseeds a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:canola,
+        com:chia,
+        com:flaxseed,
+        com:mustard,
+        com:peanuts,
+        com:safflower,
+        com:sesame,
+        com:soybeans,
+        com:sunflower ;
+    skos:prefLabel "Oilseeds"@en ;
+    foaf:isPrimaryTopicOf com:oilseeds.html .
+

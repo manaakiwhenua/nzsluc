@@ -1,0 +1,40 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+luc:permanent_carbon_forest.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:permanent_carbon_forest.jsonld,
+        luc:permanent_carbon_forest.rdf,
+        luc:permanent_carbon_forest.ttl .
+
+luc:permanent_carbon_forest.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:permanent_carbon_forest .
+
+luc:permanent_carbon_forest.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:permanent_carbon_forest .
+
+luc:permanent_carbon_forest.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:permanent_carbon_forest .
+
+luc:plantation_forests skos:notation "2.1.0" ;
+    skos:prefLabel "Plantation forests"@en .
+
+luc:permanent_carbon_forest a skos:Concept ;
+    owl:deprecated true ;
+    skos:broader luc:plantation_forests ;
+    skos:changeNote "Retired at NZLUM v0.3 and replaced with consideration of carbon sequestration and carbon credits in the definitions of exotic and indigenous plantation forestry."@en ;
+    skos:definition "An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming)."@en ;
+    skos:historyNote "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:notation "2.1.5" ;
+    skos:prefLabel "Permanent carbon forest"@en ;
+    foaf:isPrimaryTopicOf luc:permanent_carbon_forest.html .
+

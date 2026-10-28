@@ -1,0 +1,60 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:aquaculture skos:notation "2.6.5" ;
+    skos:prefLabel "Aquaculture"@en .
+
+luc:horse_studs skos:notation "2.6.4" ;
+    skos:prefLabel "Horse studs"@en .
+
+luc:intensive_animal_containment skos:notation "2.6.1" ;
+    skos:prefLabel "Intensive animal containment"@en .
+
+luc:intensive_animal_production.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:intensive_animal_production.jsonld,
+        luc:intensive_animal_production.rdf,
+        luc:intensive_animal_production.ttl .
+
+luc:intensive_animal_production.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:intensive_animal_production .
+
+luc:intensive_animal_production.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:intensive_animal_production .
+
+luc:intensive_animal_production.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:intensive_animal_production .
+
+luc:piggeries skos:notation "2.6.3" ;
+    skos:prefLabel "Piggeries"@en .
+
+luc:poultry_farms skos:notation "2.6.2" ;
+    skos:prefLabel "Poultry farms"@en .
+
+luc:production_agriculture_plantations skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en .
+
+luc:intensive_animal_production a skos:Concept ;
+    skos:broader luc:production_agriculture_plantations ;
+    skos:definition "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:aquaculture,
+        luc:horse_studs,
+        luc:intensive_animal_containment,
+        luc:piggeries,
+        luc:poultry_farms ;
+    skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en ;
+    skos:usageNote "Record animal types as commodities, if known."@en,
+        "The management field can be used to record practices such as free range or organic."@en ;
+    foaf:isPrimaryTopicOf luc:intensive_animal_production.html ;
+    lu:colour "#BFA798" .
+

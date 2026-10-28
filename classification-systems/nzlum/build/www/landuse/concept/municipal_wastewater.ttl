@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:municipal_wastewater.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:municipal_wastewater.jsonld,
+        luc:municipal_wastewater.rdf,
+        luc:municipal_wastewater.ttl .
+
+luc:municipal_wastewater.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:municipal_wastewater .
+
+luc:municipal_wastewater.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:municipal_wastewater .
+
+luc:municipal_wastewater.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:municipal_wastewater .
+
+luc:waste_treatment_disposal skos:notation "3.8.0" ;
+    skos:prefLabel "Waste treatment and disposal"@en .
+
+luc:municipal_wastewater a skos:Concept ;
+    skos:broader luc:waste_treatment_disposal ;
+    skos:definition "Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.8.3" ;
+    skos:prefLabel "Municipal wastewater"@en ;
+    foaf:isPrimaryTopicOf luc:municipal_wastewater.html .
+

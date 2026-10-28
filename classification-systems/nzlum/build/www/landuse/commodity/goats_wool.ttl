@@ -1,0 +1,38 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:goats_wool ;
+    skos:prefLabel "Animals"@en .
+
+com:goats skos:notation "goats" .
+
+com:goats_wool.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:goats_wool.jsonld,
+        com:goats_wool.rdf,
+        com:goats_wool.ttl .
+
+com:goats_wool.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:goats_wool .
+
+com:goats_wool.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:goats_wool .
+
+com:goats_wool.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:goats_wool .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:goats_wool a skos:Concept ;
+    skos:broader com:goats ;
+    skos:inScheme lus:commodities ;
+    skos:notation "goats wool" ;
+    skos:usageNote "Goats for fibre production."@en ;
+    foaf:isPrimaryTopicOf com:goats_wool.html .
+

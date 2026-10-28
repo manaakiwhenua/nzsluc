@@ -1,0 +1,103 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:biodynamic skos:notation "biodynamic" .
+
+mgmt:contour_banks skos:notation "contour banks" .
+
+mgmt:controlled_traffic_farming skos:notation "controlled traffic farming" .
+
+mgmt:crop.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:crop.jsonld,
+        mgmt:crop.rdf,
+        mgmt:crop.ttl .
+
+mgmt:crop.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:crop .
+
+mgmt:crop.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:crop .
+
+mgmt:crop.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:crop .
+
+mgmt:crop_pasture_rotation skos:notation "crop pasture rotation" .
+
+mgmt:cropping_continuous skos:notation "cropping continuous" .
+
+mgmt:cropping_cover skos:notation "cropping cover" .
+
+mgmt:cropping_multiple skos:notation "cropping multiple" .
+
+mgmt:cropping_opportunistic skos:notation "cropping opportunistic" .
+
+mgmt:cropping_rotational skos:notation "cropping rotational" .
+
+mgmt:cropping_row_alley skos:notation "cropping row alley" .
+
+mgmt:cropping_strip skos:notation "cropping strip" .
+
+mgmt:fallow_chemical skos:notation "fallow chemical" .
+
+mgmt:fallow_mechanical skos:notation "fallow mechanical" .
+
+mgmt:organic skos:notation "organic" .
+
+mgmt:pasture_cropping skos:notation "pasture cropping" .
+
+mgmt:precision_agriculture skos:notation "precision agriculture" .
+
+mgmt:residues_baled skos:notation "residues baled" .
+
+mgmt:residues_burnt skos:notation "residues burnt" .
+
+mgmt:residues_heavily_grazed skos:notation "residues heavily grazed" .
+
+mgmt:residues_incorporated skos:notation "residues incorporated" .
+
+mgmt:residues_intact skos:notation "residues intact" .
+
+mgmt:residues_mulched skos:notation "residues mulched" .
+
+mgmt:tillage_conservation skos:notation "tillage conservation" .
+
+mgmt:tillage_conventional skos:notation "tillage conventional" .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:crop a skos:Collection ;
+    skos:inScheme lus:management_practices ;
+    skos:member mgmt:biodynamic,
+        mgmt:contour_banks,
+        mgmt:controlled_traffic_farming,
+        mgmt:crop_pasture_rotation,
+        mgmt:cropping_continuous,
+        mgmt:cropping_cover,
+        mgmt:cropping_multiple,
+        mgmt:cropping_opportunistic,
+        mgmt:cropping_rotational,
+        mgmt:cropping_row_alley,
+        mgmt:cropping_strip,
+        mgmt:fallow_chemical,
+        mgmt:fallow_mechanical,
+        mgmt:organic,
+        mgmt:pasture_cropping,
+        mgmt:precision_agriculture,
+        mgmt:residues_baled,
+        mgmt:residues_burnt,
+        mgmt:residues_heavily_grazed,
+        mgmt:residues_incorporated,
+        mgmt:residues_intact,
+        mgmt:residues_mulched,
+        mgmt:tillage_conservation,
+        mgmt:tillage_conventional ;
+    skos:prefLabel "Crop"@en ;
+    foaf:isPrimaryTopicOf mgmt:crop.html .
+

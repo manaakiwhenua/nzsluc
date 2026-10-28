@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:vacant_land.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_land"
+      }
+    },
+    {
+      "@id": "luc:vacant_land",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:vacant_land.html"
+      },
+      "skos:broader": {
+        "@id": "luc:vacant_transitioning_land_urban"
+      },
+      "skos:changeNote": "Notation changed from 3.9.1 to 3.9.3 at v0.4.0",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Derelict land and developed land that is idle."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.9.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Idle and derelict land"
+      }
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:vacant_land.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_land"
+      }
+    },
+    {
+      "@id": "luc:vacant_land.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_land"
+      }
+    },
+    {
+      "@id": "luc:vacant_land.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:vacant_land.ttl"
+        },
+        {
+          "@id": "luc:vacant_land.jsonld"
+        },
+        {
+          "@id": "luc:vacant_land.rdf"
+        }
+      ]
+    }
+  ]
+}

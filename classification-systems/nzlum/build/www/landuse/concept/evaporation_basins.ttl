@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:evaporation_basins.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:evaporation_basins.jsonld,
+        luc:evaporation_basins.rdf,
+        luc:evaporation_basins.ttl .
+
+luc:evaporation_basins.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:evaporation_basins .
+
+luc:evaporation_basins.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:evaporation_basins .
+
+luc:evaporation_basins.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:evaporation_basins .
+
+luc:mining skos:notation "3.7.0" ;
+    skos:prefLabel "Mining"@en .
+
+luc:evaporation_basins a skos:Concept ;
+    skos:broader luc:mining ;
+    skos:definition "Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.7.4" ;
+    skos:prefLabel "Evaporation basins"@en ;
+    foaf:isPrimaryTopicOf luc:evaporation_basins.html .
+

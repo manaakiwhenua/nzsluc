@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:other_perennial_horticulture skos:notation "2.4.3" ;
+    skos:prefLabel "Other perennial horticulture"@en .
+
+luc:perennial_horticulture.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:perennial_horticulture.jsonld,
+        luc:perennial_horticulture.rdf,
+        luc:perennial_horticulture.ttl .
+
+luc:perennial_horticulture.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:perennial_horticulture .
+
+luc:perennial_horticulture.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:perennial_horticulture .
+
+luc:perennial_horticulture.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:perennial_horticulture .
+
+luc:production_agriculture_plantations skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en .
+
+luc:tree_crops skos:notation "2.4.1" ;
+    skos:prefLabel "Tree crops"@en .
+
+luc:vine_fruits skos:notation "2.4.2" ;
+    skos:prefLabel "Vine fruits"@en .
+
+luc:perennial_horticulture a skos:Concept ;
+    skos:broader luc:production_agriculture_plantations ;
+    skos:definition "Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:other_perennial_horticulture,
+        luc:tree_crops,
+        luc:vine_fruits ;
+    skos:notation "2.4.0" ;
+    skos:prefLabel "Perennial horticulture"@en ;
+    skos:usageNote "Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes)."@en,
+        "Management practices such as irrigation or netting can be recorded as management practices."@en ;
+    foaf:isPrimaryTopicOf luc:perennial_horticulture.html ;
+    lu:colour "#A4A898" .
+

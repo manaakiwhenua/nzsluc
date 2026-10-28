@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:planted_environmental_infrastructure_protection"
+      }
+    },
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.ttl"
+        },
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.jsonld"
+        },
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:plantation_forests",
+      "skos:notation": "2.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Plantation forests"
+      }
+    },
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:planted_environmental_infrastructure_protection.html"
+      },
+      "skos:broader": {
+        "@id": "luc:plantation_forests"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.1.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Planted environmental & infrastructure protection"
+      }
+    },
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:planted_environmental_infrastructure_protection"
+      }
+    },
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:planted_environmental_infrastructure_protection"
+      }
+    }
+  ]
+}

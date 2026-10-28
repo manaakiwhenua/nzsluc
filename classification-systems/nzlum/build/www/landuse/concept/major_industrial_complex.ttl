@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:major_industrial_complex.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:major_industrial_complex.jsonld,
+        luc:major_industrial_complex.rdf,
+        luc:major_industrial_complex.ttl .
+
+luc:major_industrial_complex.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:major_industrial_complex .
+
+luc:major_industrial_complex.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:major_industrial_complex .
+
+luc:major_industrial_complex.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:major_industrial_complex .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:major_industrial_complex a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "An area with large-scale industrial use and significant infrastructure ."@en ;
+    skos:example "Car plant, paper mill."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.3" ;
+    skos:prefLabel "Major industrial complex"@en ;
+    foaf:isPrimaryTopicOf luc:major_industrial_complex.html .
+

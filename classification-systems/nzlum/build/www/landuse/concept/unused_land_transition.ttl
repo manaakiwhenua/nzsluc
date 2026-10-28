@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+luc:conservation skos:notation "1.0.0" ;
+    skos:prefLabel "Conservation and Minimal Use"@en .
+
+luc:land_undergoing_rehabilitation_natural skos:notation "1.4.2" ;
+    skos:prefLabel "Land undergoing rehabilitation"@en .
+
+luc:unused_land skos:notation "1.4.2" ;
+    skos:prefLabel "Unused land"@en .
+
+luc:unused_land_transition.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:unused_land_transition.jsonld,
+        luc:unused_land_transition.rdf,
+        luc:unused_land_transition.ttl .
+
+luc:unused_land_transition.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:unused_land_transition .
+
+luc:unused_land_transition.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:unused_land_transition .
+
+luc:unused_land_transition.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:unused_land_transition .
+
+luc:unused_land_transition a skos:Concept ;
+    owl:deprecated true ;
+    skos:broader luc:conservation ;
+    skos:definition "Corridors and roadside areas may fit under this class, along with unused land (in the sense of productive, conservation or urban use), such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance. It does not include land undergoing natural succession in the context of changing plant species."@en ;
+    skos:historyNote "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:narrower luc:land_undergoing_rehabilitation_natural,
+        luc:unused_land ;
+    skos:notation "1.4.0" ;
+    skos:prefLabel "Unused land and land in transition"@en ;
+    skos:usageNote "Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information."@en ;
+    foaf:isPrimaryTopicOf luc:unused_land_transition.html ;
+    lu:colour "#C8C69F" .
+

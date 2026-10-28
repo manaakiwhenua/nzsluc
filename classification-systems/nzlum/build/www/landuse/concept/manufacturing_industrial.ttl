@@ -1,0 +1,62 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:abattoirs skos:notation "3.4.6" ;
+    skos:prefLabel "Abattoirs"@en .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:farm_buildings_infrastructure skos:notation "3.4.5" ;
+    skos:prefLabel "Farm buildings/infrastructure"@en .
+
+luc:food_processing_factory skos:notation "3.4.2" ;
+    skos:prefLabel "Food processing factory"@en .
+
+luc:general_purpose_factory skos:notation "3.4.1" ;
+    skos:prefLabel "General purpose factory"@en .
+
+luc:major_industrial_complex skos:notation "3.4.3" ;
+    skos:prefLabel "Major industrial complex"@en .
+
+luc:manufacturing_industrial.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:manufacturing_industrial.jsonld,
+        luc:manufacturing_industrial.rdf,
+        luc:manufacturing_industrial.ttl .
+
+luc:manufacturing_industrial.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:manufacturing_industrial .
+
+luc:manufacturing_industrial.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:manufacturing_industrial .
+
+luc:manufacturing_industrial.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:manufacturing_industrial .
+
+luc:sawmill skos:notation "3.4.4" ;
+    skos:prefLabel "Sawmill"@en .
+
+luc:manufacturing_industrial a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:abattoirs,
+        luc:farm_buildings_infrastructure,
+        luc:food_processing_factory,
+        luc:general_purpose_factory,
+        luc:major_industrial_complex,
+        luc:sawmill ;
+    skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en ;
+    foaf:isPrimaryTopicOf luc:manufacturing_industrial.html ;
+    lu:colour "#D0D2DF" .
+

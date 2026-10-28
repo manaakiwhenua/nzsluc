@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/entertainment">
+    <skos:prefLabel xml:lang="en">Entertainment</skos:prefLabel>
+    <skos:notation>3.3.4</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial">
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail">
+        <skos:prefLabel xml:lang="en">Retail</skos:prefLabel>
+        <skos:notation>3.3.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office">
+        <skos:prefLabel xml:lang="en">Office</skos:prefLabel>
+        <skos:notation>3.3.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/healthcare">
+        <skos:prefLabel xml:lang="en">Healthcare</skos:prefLabel>
+        <skos:notation>3.3.5</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/hospitality">
+        <skos:prefLabel xml:lang="en">Hospitality</skos:prefLabel>
+        <skos:notation>3.3.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transportation_warehousing_commercial">
+        <skos:prefLabel xml:lang="en">Transportation &amp; warehousing</skos:prefLabel>
+        <skos:notation>3.3.6</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/entertainment"/>
+    <skos:definition xml:lang="en">Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.</skos:definition>
+    <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+        <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+        <skos:notation>3.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <lu:colour>#B8C2CE</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:usageNote xml:lang="en">Central government offices when these are privately rented should be captured in this category, even if they are public-facing.</skos:usageNote>
+    <skos:notation>3.3.0</skos:notation>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial.html"/>
+  </skos:Concept>
+</rdf:RDF>

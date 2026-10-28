@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:extensive_dry_stock.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:extensive_dry_stock"
+      }
+    },
+    {
+      "@id": "luc:extensive_dry_stock.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:extensive_dry_stock"
+      }
+    },
+    {
+      "@id": "luc:extensive_dry_stock.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:extensive_dry_stock"
+      }
+    },
+    {
+      "@id": "luc:extensive_dry_stock.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:extensive_dry_stock.ttl"
+        },
+        {
+          "@id": "luc:extensive_dry_stock.jsonld"
+        },
+        {
+          "@id": "luc:extensive_dry_stock.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:grazing_modified_pasture_systems",
+      "skos:notation": "2.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing modified pasture systems"
+      }
+    },
+    {
+      "@id": "luc:extensive_dry_stock",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:extensive_dry_stock.html"
+      },
+      "lu:colour": "#ABA248",
+      "skos:broader": {
+        "@id": "luc:grazing_modified_pasture_systems"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.2.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Extensive dry stock"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation."
+        },
+        {
+          "@language": "en",
+          "@value": "Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)"
+        },
+        {
+          "@language": "en",
+          "@value": "Arable or winter forage crops are unlikely to be common rotations in this land-use category"
+        }
+      ],
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "The specific commodity or commodities should be noted if known."
+      }
+    }
+  ]
+}

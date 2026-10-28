@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:crop skos:member com:pyrethrum ;
+    skos:prefLabel "Crop"@en .
+
+com:pyrethrum.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:pyrethrum.jsonld,
+        com:pyrethrum.rdf,
+        com:pyrethrum.ttl .
+
+com:pyrethrum.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:pyrethrum .
+
+com:pyrethrum.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:pyrethrum .
+
+com:pyrethrum.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:pyrethrum .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:pyrethrum a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "pyrethrum" ;
+    foaf:isPrimaryTopicOf com:pyrethrum.html .
+

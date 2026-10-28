@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:other_conserved_area.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_conserved_area"
+      }
+    },
+    {
+      "@id": "luc:other_conserved_area.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_conserved_area"
+      }
+    },
+    {
+      "@id": "luc:other_conserved_area.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:other_conserved_area.ttl"
+        },
+        {
+          "@id": "luc:other_conserved_area.jsonld"
+        },
+        {
+          "@id": "luc:other_conserved_area.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:other_conserved_area",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:other_conserved_area.html"
+      },
+      "lu:colour": "#FCFBFD",
+      "skos:broader": {
+        "@id": "luc:nature_cons"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.1.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other conserved area"
+      },
+      "skos:scopeNote": "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’"
+    },
+    {
+      "@id": "luc:other_conserved_area.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_conserved_area"
+      }
+    }
+  ]
+}

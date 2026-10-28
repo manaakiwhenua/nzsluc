@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:landfills.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:landfills.jsonld,
+        luc:landfills.rdf,
+        luc:landfills.ttl .
+
+luc:landfills.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:landfills .
+
+luc:landfills.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:landfills .
+
+luc:landfills.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:landfills .
+
+luc:waste_treatment_disposal skos:notation "3.8.0" ;
+    skos:prefLabel "Waste treatment and disposal"@en .
+
+luc:landfills a skos:Concept ;
+    skos:broader luc:waste_treatment_disposal ;
+    skos:definition "Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions."@en ;
+    skos:example "Landfills designed to receive inert construction materials." ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.8.1" ;
+    skos:prefLabel "Landfills"@en ;
+    skos:scopeNote "Includes all class 1 to 5 landfills"@en,
+        "Landfill gas recovery systems are classified as part of a landfill land use."@en ;
+    foaf:isPrimaryTopicOf luc:landfills.html .
+

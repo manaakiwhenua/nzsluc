@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure">
+    <skos:definition xml:lang="en">An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations.</skos:definition>
+    <skos:prefLabel xml:lang="en">Farm buildings/infrastructure</skos:prefLabel>
+    <skos:notation>3.4.5</skos:notation>
+    <skos:scopeNote xml:lang="en">If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential.</skos:scopeNote>
+    <skos:example xml:lang="en">Barns, silos, storage sheds, and irrigation systems.</skos:example>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
+        <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
+        <skos:notation>3.4.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+</rdf:RDF>

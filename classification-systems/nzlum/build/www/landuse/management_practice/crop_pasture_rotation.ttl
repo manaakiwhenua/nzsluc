@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:crop skos:member mgmt:crop_pasture_rotation ;
+    skos:prefLabel "Crop"@en .
+
+mgmt:pasture skos:member mgmt:crop_pasture_rotation ;
+    skos:prefLabel "Pasture"@en .
+
+mgmt:crop_pasture_rotation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:crop_pasture_rotation.jsonld,
+        mgmt:crop_pasture_rotation.rdf,
+        mgmt:crop_pasture_rotation.ttl .
+
+mgmt:crop_pasture_rotation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:crop_pasture_rotation .
+
+mgmt:crop_pasture_rotation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:crop_pasture_rotation .
+
+mgmt:crop_pasture_rotation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:crop_pasture_rotation .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:crop_pasture_rotation a skos:Concept ;
+    skos:inScheme lus:management_practices ;
+    skos:notation "crop pasture rotation" ;
+    foaf:isPrimaryTopicOf mgmt:crop_pasture_rotation.html .
+

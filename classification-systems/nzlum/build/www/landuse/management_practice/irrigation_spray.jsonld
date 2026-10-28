@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:irrigation_spray.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:irrigation_spray.ttl"
+        },
+        {
+          "@id": "mgmt:irrigation_spray.jsonld"
+        },
+        {
+          "@id": "mgmt:irrigation_spray.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:irrigation_spray.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_spray"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_spray",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:irrigation_spray.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Irrigation system that sprays water into the air allowing it to fall on the plants and soil much like natural rainfall."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "irrigation spray",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Sprinklers including set systems, permanent (solid set/fixed), continuous/travelling systems and micro-sprinklers."
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_spray.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_spray"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation",
+      "skos:member": {
+        "@id": "mgmt:irrigation_spray"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Irrigation"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_spray.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_spray"
+      }
+    }
+  ]
+}

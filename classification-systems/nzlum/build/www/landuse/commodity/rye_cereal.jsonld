@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:rye_cereal.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:rye_cereal"
+      }
+    },
+    {
+      "@id": "com:rye_cereal.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rye_cereal"
+      }
+    },
+    {
+      "@id": "com:cereals",
+      "skos:member": {
+        "@id": "com:rye_cereal"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
+      }
+    },
+    {
+      "@id": "com:rye_cereal.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:rye_cereal"
+      }
+    },
+    {
+      "@id": "com:rye_cereal.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:rye_cereal.ttl"
+        },
+        {
+          "@id": "com:rye_cereal.jsonld"
+        },
+        {
+          "@id": "com:rye_cereal.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:rye_cereal",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:rye_cereal.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rye cereal"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}

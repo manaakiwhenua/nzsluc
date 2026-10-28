@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:nuts skos:member com:pecan_nuts ;
+    skos:prefLabel "Nuts"@en .
+
+com:pecan_nuts.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:pecan_nuts.jsonld,
+        com:pecan_nuts.rdf,
+        com:pecan_nuts.ttl .
+
+com:pecan_nuts.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:pecan_nuts .
+
+com:pecan_nuts.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:pecan_nuts .
+
+com:pecan_nuts.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:pecan_nuts .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:pecan_nuts a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "pecan nuts" ;
+    foaf:isPrimaryTopicOf com:pecan_nuts.html .
+

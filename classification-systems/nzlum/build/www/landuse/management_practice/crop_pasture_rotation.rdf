@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop">
+    <skos:member>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation">
+        <skos:notation>crop pasture rotation</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation.html"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Crop</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture">
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation"/>
+    <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
+    <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>
+  </rdf:Description>
+</rdf:RDF>

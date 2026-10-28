@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:hydroelectricity_generation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:hydroelectricity_generation.jsonld,
+        luc:hydroelectricity_generation.rdf,
+        luc:hydroelectricity_generation.ttl .
+
+luc:hydroelectricity_generation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:hydroelectricity_generation .
+
+luc:hydroelectricity_generation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:hydroelectricity_generation .
+
+luc:hydroelectricity_generation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:hydroelectricity_generation .
+
+luc:utilities skos:notation "3.5.0" ;
+    skos:prefLabel "Utilities"@en .
+
+luc:hydroelectricity_generation a skos:Concept ;
+    skos:broader luc:utilities ;
+    skos:definition "Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.5.2" ;
+    skos:prefLabel "Hydroelectricity generation"@en ;
+    skos:scopeNote "Includes canals and other water conveyance infrastructure associated with hydroelectricity generation."@en ;
+    foaf:isPrimaryTopicOf luc:hydroelectricity_generation.html .
+

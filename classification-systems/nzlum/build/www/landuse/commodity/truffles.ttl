@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:truffles ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:truffles.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:truffles.jsonld,
+        com:truffles.rdf,
+        com:truffles.ttl .
+
+com:truffles.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:truffles .
+
+com:truffles.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:truffles .
+
+com:truffles.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:truffles .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:truffles a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "truffles" ;
+    foaf:isPrimaryTopicOf com:truffles.html .
+

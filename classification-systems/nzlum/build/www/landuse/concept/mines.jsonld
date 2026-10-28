@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:mines.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:mines"
+      }
+    },
+    {
+      "@id": "luc:mines.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:mines"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:mines",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:mines.html"
+      },
+      "skos:broader": {
+        "@id": "luc:mining"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.7.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "luc:mines.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:mines"
+      }
+    },
+    {
+      "@id": "luc:mines.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:mines.ttl"
+        },
+        {
+          "@id": "luc:mines.jsonld"
+        },
+        {
+          "@id": "luc:mines.rdf"
+        }
+      ]
+    }
+  ]
+}

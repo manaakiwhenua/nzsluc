@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:vegetable_seeds ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:vegetable_seeds.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:vegetable_seeds.jsonld,
+        com:vegetable_seeds.rdf,
+        com:vegetable_seeds.ttl .
+
+com:vegetable_seeds.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:vegetable_seeds .
+
+com:vegetable_seeds.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:vegetable_seeds .
+
+com:vegetable_seeds.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:vegetable_seeds .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:vegetable_seeds a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "vegetable seeds" ;
+    foaf:isPrimaryTopicOf com:vegetable_seeds.html .
+

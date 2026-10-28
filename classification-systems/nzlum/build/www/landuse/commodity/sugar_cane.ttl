@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:crop skos:member com:sugar_cane ;
+    skos:prefLabel "Crop"@en .
+
+com:sugar_cane.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:sugar_cane.jsonld,
+        com:sugar_cane.rdf,
+        com:sugar_cane.ttl .
+
+com:sugar_cane.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:sugar_cane .
+
+com:sugar_cane.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:sugar_cane .
+
+com:sugar_cane.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:sugar_cane .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:sugar_cane a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "sugar cane" ;
+    foaf:isPrimaryTopicOf com:sugar_cane.html .
+

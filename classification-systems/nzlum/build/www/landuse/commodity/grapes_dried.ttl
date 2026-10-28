@@ -1,0 +1,37 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:fruit skos:member com:grapes_dried ;
+    skos:prefLabel "Fruit"@en .
+
+com:grapes skos:notation "grapes" .
+
+com:grapes_dried.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:grapes_dried.jsonld,
+        com:grapes_dried.rdf,
+        com:grapes_dried.ttl .
+
+com:grapes_dried.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:grapes_dried .
+
+com:grapes_dried.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:grapes_dried .
+
+com:grapes_dried.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:grapes_dried .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:grapes_dried a skos:Concept ;
+    skos:broader com:grapes ;
+    skos:inScheme lus:commodities ;
+    skos:notation "grapes dried" ;
+    foaf:isPrimaryTopicOf com:grapes_dried.html .
+

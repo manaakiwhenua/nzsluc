@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:irrigation_reservoirs_canals.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:irrigation_reservoirs_canals"
+      }
+    },
+    {
+      "@id": "luc:irrigation_reservoirs_canals.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:irrigation_reservoirs_canals"
+      }
+    },
+    {
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water and wastewater"
+      }
+    },
+    {
+      "@id": "luc:irrigation_reservoirs_canals",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:irrigation_reservoirs_canals.html"
+      },
+      "skos:broader": {
+        "@id": "luc:water_wastewater_agriculture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.7.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Irrigation reservoirs and canals"
+      }
+    },
+    {
+      "@id": "luc:irrigation_reservoirs_canals.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:irrigation_reservoirs_canals"
+      }
+    },
+    {
+      "@id": "luc:irrigation_reservoirs_canals.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:irrigation_reservoirs_canals.ttl"
+        },
+        {
+          "@id": "luc:irrigation_reservoirs_canals.jsonld"
+        },
+        {
+          "@id": "luc:irrigation_reservoirs_canals.rdf"
+        }
+      ]
+    }
+  ]
+}

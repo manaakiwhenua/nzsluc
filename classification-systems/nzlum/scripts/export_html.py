@@ -218,7 +218,7 @@ def concept_notes(g, concept):
         "usage_notes": get_all_lang(g, concept, SKOS.usageNote),
         "examples": get_all_lang(g, concept, SKOS.example),
         "change_notes": get_change_notes(g, concept),
-        "historical_notes": get_all_lang(g, concept, SKOS.historicalNote),
+        "historical_notes": get_all_lang(g, concept, SKOS.historyNote),
         "sources": get_all_lang(g, concept, DCTERMS.source),
     }
 

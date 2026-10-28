@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:cereals skos:member com:buckwheat ;
+    skos:prefLabel "Cereals"@en .
+
+com:buckwheat.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:buckwheat.jsonld,
+        com:buckwheat.rdf,
+        com:buckwheat.ttl .
+
+com:buckwheat.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:buckwheat .
+
+com:buckwheat.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:buckwheat .
+
+com:buckwheat.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:buckwheat .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:buckwheat a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "buckwheat" ;
+    skos:usageNote "Buckwheat is a pseudocereal related to rhubarb. As it is grown as a grain it is considered part of cereals."@en ;
+    foaf:isPrimaryTopicOf com:buckwheat.html .
+

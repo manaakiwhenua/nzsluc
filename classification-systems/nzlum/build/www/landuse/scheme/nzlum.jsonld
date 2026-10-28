@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu_proverb": "https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "lus:nzlum",
+      "@type": "skos:ConceptScheme",
+      "dcterms:hasVersion": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "dcterms:relation": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "New Zealand Land Use and Management classification system"
+      },
+      "doap:repository": {
+        "@id": "_:n88814eaac34f4758a5123f8902819d4bb1"
+      },
+      "foaf:homepage": {
+        "@id": "https://nzlum.landcareresearch.co.nz/"
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lus:nzlum.html"
+      }
+    },
+    {
+      "@id": "_:n88814eaac34f4758a5123f8902819d4bb1",
+      "@type": "doap:GitRepository",
+      "doap:browse": {
+        "@id": "https://github.com/manaakiwhenua/nzsluc"
+      }
+    },
+    {
+      "@id": "lus:nzlum.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lus:nzlum"
+      }
+    },
+    {
+      "@id": "lus:nzlum.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lus:nzlum"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "dcterms:isVersionOf": {
+        "@id": "lus:nzlum"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.3.0",
+      "dcterms:isVersionOf": {
+        "@id": "lus:nzlum"
+      }
+    },
+    {
+      "@id": "lus:nzlum.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lus:nzlum.ttl"
+        },
+        {
+          "@id": "lus:nzlum.jsonld"
+        },
+        {
+          "@id": "lus:nzlum.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lus:nzlum.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lus:nzlum"
+      }
+    }
+  ]
+}

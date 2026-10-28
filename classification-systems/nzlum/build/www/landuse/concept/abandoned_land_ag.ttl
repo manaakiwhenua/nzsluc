@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:abandoned_land_ag.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:abandoned_land_ag.jsonld,
+        luc:abandoned_land_ag.rdf,
+        luc:abandoned_land_ag.ttl .
+
+luc:abandoned_land_ag.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:abandoned_land_ag .
+
+luc:abandoned_land_ag.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:abandoned_land_ag .
+
+luc:abandoned_land_ag.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:abandoned_land_ag .
+
+luc:vacant_and_transitioning_land skos:notation "2.8.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:abandoned_land_ag a skos:Concept ;
+    skos:broader luc:vacant_and_transitioning_land ;
+    skos:changeNote "Changed notation at v0.4.0"@en ;
+    skos:definition "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.8.2" ;
+    skos:prefLabel "Abandoned land"@en ;
+    foaf:isPrimaryTopicOf luc:abandoned_land_ag.html .
+

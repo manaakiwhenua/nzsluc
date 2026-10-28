@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:glasshouses_shadehouses.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:glasshouses_shadehouses.jsonld,
+        luc:glasshouses_shadehouses.rdf,
+        luc:glasshouses_shadehouses.ttl .
+
+luc:glasshouses_shadehouses.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:glasshouses_shadehouses .
+
+luc:glasshouses_shadehouses.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:glasshouses_shadehouses .
+
+luc:glasshouses_shadehouses.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:glasshouses_shadehouses .
+
+luc:intensive_horticulture skos:notation "2.5.0" ;
+    skos:prefLabel "Intensive horticulture"@en .
+
+luc:glasshouses_shadehouses a skos:Concept ;
+    skos:broader luc:intensive_horticulture ;
+    skos:definition "Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.5.2" ;
+    skos:prefLabel "Glasshouses/shadehouses"@en ;
+    skos:scopeNote "Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants."@en ;
+    foaf:isPrimaryTopicOf luc:glasshouses_shadehouses.html .
+

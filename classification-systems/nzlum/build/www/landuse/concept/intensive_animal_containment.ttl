@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:intensive_animal_containment.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:intensive_animal_containment.jsonld,
+        luc:intensive_animal_containment.rdf,
+        luc:intensive_animal_containment.ttl .
+
+luc:intensive_animal_containment.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:intensive_animal_containment .
+
+luc:intensive_animal_containment.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:intensive_animal_containment .
+
+luc:intensive_animal_containment.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:intensive_animal_containment .
+
+luc:intensive_animal_production skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en .
+
+luc:intensive_animal_containment a skos:Concept ;
+    skos:broader luc:intensive_animal_production ;
+    skos:definition "Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.6.1" ;
+    skos:prefLabel "Intensive animal containment"@en ;
+    foaf:isPrimaryTopicOf luc:intensive_animal_containment.html .
+

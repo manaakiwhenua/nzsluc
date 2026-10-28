@@ -1,0 +1,56 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:high_density_residential skos:notation "3.1.1" ;
+    skos:prefLabel "High-density residential"@en .
+
+luc:low_density_residential skos:notation "3.1.3" ;
+    skos:prefLabel "Low-density residential"@en .
+
+luc:medium_density_residential skos:notation "3.1.2" ;
+    skos:prefLabel "Medium-density residential"@en .
+
+luc:residential.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:residential.jsonld,
+        luc:residential.rdf,
+        luc:residential.ttl .
+
+luc:residential.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:residential .
+
+luc:residential.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:residential .
+
+luc:residential.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:residential .
+
+luc:rural_residential skos:notation "3.1.4" ;
+    skos:prefLabel "Rural residential"@en .
+
+luc:residential a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:high_density_residential,
+        luc:low_density_residential,
+        luc:medium_density_residential,
+        luc:rural_residential ;
+    skos:notation "3.1.0" ;
+    skos:prefLabel "Residential"@en ;
+    skos:scopeNote "The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’"@en ;
+    skos:usageNote "Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification."@en ;
+    foaf:isPrimaryTopicOf luc:residential.html ;
+    lu:colour "#815E5B" .
+

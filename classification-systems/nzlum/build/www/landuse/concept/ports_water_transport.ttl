@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:ports_water_transport.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:ports_water_transport.jsonld,
+        luc:ports_water_transport.rdf,
+        luc:ports_water_transport.ttl .
+
+luc:ports_water_transport.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:ports_water_transport .
+
+luc:ports_water_transport.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:ports_water_transport .
+
+luc:ports_water_transport.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:ports_water_transport .
+
+luc:transport skos:notation "3.6.0" ;
+    skos:prefLabel "Transportation"@en .
+
+luc:ports_water_transport a skos:Concept ;
+    skos:broader luc:transport ;
+    skos:definition "Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port."@en ;
+    skos:example "Harbours, navigational channels."@en,
+        "Ports, docks, and wharves."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.6.4" ;
+    skos:prefLabel "Ports and water transport"@en ;
+    skos:usageNote "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."@en ;
+    foaf:isPrimaryTopicOf luc:ports_water_transport.html .
+

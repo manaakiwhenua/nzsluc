@@ -1,0 +1,31 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lus:nzlum0.4.0 adms:status lu_status:published .
+
+lu_status:published.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat lu_status:published.jsonld,
+        lu_status:published.rdf,
+        lu_status:published.ttl .
+
+lu_status:published.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic lu_status:published .
+
+lu_status:published.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic lu_status:published .
+
+lu_status:published.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic lu_status:published .
+
+lu_status:published a rdfs:Resource ;
+    rdfs:label "Published"@en ;
+    foaf:isPrimaryTopicOf lu_status:published.html .
+

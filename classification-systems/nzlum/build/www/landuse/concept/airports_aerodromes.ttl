@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:airports_aerodromes.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:airports_aerodromes.jsonld,
+        luc:airports_aerodromes.rdf,
+        luc:airports_aerodromes.ttl .
+
+luc:airports_aerodromes.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:airports_aerodromes .
+
+luc:airports_aerodromes.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:airports_aerodromes .
+
+luc:airports_aerodromes.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:airports_aerodromes .
+
+luc:transport skos:notation "3.6.0" ;
+    skos:prefLabel "Transportation"@en .
+
+luc:airports_aerodromes a skos:Concept ;
+    skos:broader luc:transport ;
+    skos:definition "Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.6.1" ;
+    skos:prefLabel "Airports/aerodromes"@en ;
+    foaf:isPrimaryTopicOf luc:airports_aerodromes.html .
+

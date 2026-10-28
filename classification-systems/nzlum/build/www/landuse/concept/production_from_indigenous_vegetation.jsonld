@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:production_from_indigenous_vegetation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_from_indigenous_vegetation"
+      }
+    },
+    {
+      "@id": "luc:production_from_indigenous_vegetation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_from_indigenous_vegetation"
+      }
+    },
+    {
+      "@id": "luc:production_from_indigenous_vegetation",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:production_from_indigenous_vegetation.html"
+      },
+      "skos:broader": {
+        "@id": "luc:minimal_use_relatively_natural"
+      },
+      "skos:changeNote": {
+        "@language": "en",
+        "@value": "The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests."
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey)."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.3.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production from indigenous vegetation"
+      }
+    },
+    {
+      "@id": "luc:production_from_indigenous_vegetation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:production_from_indigenous_vegetation.ttl"
+        },
+        {
+          "@id": "luc:production_from_indigenous_vegetation.jsonld"
+        },
+        {
+          "@id": "luc:production_from_indigenous_vegetation.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:production_from_indigenous_vegetation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_from_indigenous_vegetation"
+      }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    }
+  ]
+}

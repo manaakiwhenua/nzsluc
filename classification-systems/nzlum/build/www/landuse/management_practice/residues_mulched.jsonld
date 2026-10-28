@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:residues_mulched",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:residues_mulched.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues mulched"
+    },
+    {
+      "@id": "mgmt:residues_mulched.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_mulched"
+      }
+    },
+    {
+      "@id": "mgmt:residues_mulched.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:residues_mulched.ttl"
+        },
+        {
+          "@id": "mgmt:residues_mulched.jsonld"
+        },
+        {
+          "@id": "mgmt:residues_mulched.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:residues_mulched.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_mulched"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:residues_mulched.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_mulched"
+      }
+    },
+    {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:residues_mulched"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    }
+  ]
+}

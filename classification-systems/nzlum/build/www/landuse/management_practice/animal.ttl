@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:animal.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:animal.jsonld,
+        mgmt:animal.rdf,
+        mgmt:animal.ttl .
+
+mgmt:animal.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:animal .
+
+mgmt:animal.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:animal .
+
+mgmt:animal.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:animal .
+
+mgmt:barn_laid skos:notation "barn laid" .
+
+mgmt:caged skos:notation "caged" .
+
+mgmt:free_range skos:notation "free range" .
+
+mgmt:milking_hand skos:notation "milking hand" .
+
+mgmt:milking_herringbone skos:notation "milking herringbone" .
+
+mgmt:milking_rotary skos:notation "milking rotary" .
+
+mgmt:milking_walk_through skos:notation "milking walk through " .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:animal a skos:Collection ;
+    skos:inScheme lus:management_practices ;
+    skos:member mgmt:barn_laid,
+        mgmt:caged,
+        mgmt:free_range,
+        mgmt:milking_hand,
+        mgmt:milking_herringbone,
+        mgmt:milking_rotary,
+        mgmt:milking_walk_through ;
+    skos:prefLabel "Animal"@en ;
+    foaf:isPrimaryTopicOf mgmt:animal.html .
+

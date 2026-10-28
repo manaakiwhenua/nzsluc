@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:indoor_recreation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:indoor_recreation.jsonld,
+        luc:indoor_recreation.rdf,
+        luc:indoor_recreation.ttl .
+
+luc:indoor_recreation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:indoor_recreation .
+
+luc:indoor_recreation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:indoor_recreation .
+
+luc:indoor_recreation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:indoor_recreation .
+
+luc:public_recreation_services skos:notation "3.2.0" ;
+    skos:prefLabel "Public recreation and services"@en .
+
+luc:indoor_recreation a skos:Concept ;
+    skos:broader luc:public_recreation_services ;
+    skos:definition "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures."@en ;
+    skos:example "Sports centres, gyms, swimming pools, indoor arenas."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.2.2" ;
+    skos:prefLabel "Indoor recreation"@en ;
+    foaf:isPrimaryTopicOf luc:indoor_recreation.html ;
+    lu:colour "#958273" .
+

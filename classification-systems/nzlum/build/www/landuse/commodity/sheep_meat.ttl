@@ -1,0 +1,38 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:sheep_meat ;
+    skos:prefLabel "Animals"@en .
+
+com:sheep skos:notation "sheep" .
+
+com:sheep_meat.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:sheep_meat.jsonld,
+        com:sheep_meat.rdf,
+        com:sheep_meat.ttl .
+
+com:sheep_meat.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:sheep_meat .
+
+com:sheep_meat.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:sheep_meat .
+
+com:sheep_meat.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:sheep_meat .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:sheep_meat a skos:Concept ;
+    skos:broader com:sheep ;
+    skos:inScheme lus:commodities ;
+    skos:notation "sheep meat" ;
+    skos:usageNote "Sheep for meat production."@en ;
+    foaf:isPrimaryTopicOf com:sheep_meat.html .
+

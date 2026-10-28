@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:chervil ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:chervil.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:chervil.jsonld,
+        com:chervil.rdf,
+        com:chervil.ttl .
+
+com:chervil.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:chervil .
+
+com:chervil.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:chervil .
+
+com:chervil.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:chervil .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:chervil a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "chervil" ;
+    foaf:isPrimaryTopicOf com:chervil.html .
+

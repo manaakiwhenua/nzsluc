@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>NZLUM management practices · NZLUM</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/landuse/nzlum-ld.css">
+<link rel="canonical" href="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
+<link rel="alternate" type="text/turtle" href="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices.ttl" title="Turtle">
+<link rel="alternate" type="application/ld+json" href="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices.jsonld" title="JSON-LD">
+<link rel="alternate" type="application/rdf+xml" href="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices.rdf" title="RDF/XML">
+<script type="application/ld+json">{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:cropping_strip",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping strip"
+    },
+    {
+      "@id": "mgmt:contour_banks",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "contour banks"
+    },
+    {
+      "@id": "mgmt:caged",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "caged"
+    },
+    {
+      "@id": "mgmt:cropping_row_alley",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping row alley"
+    },
+    {
+      "@id": "mgmt:grazing",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:grazing_rotational"
+        },
+        {
+          "@id": "mgmt:grazing_set_stocking"
+        },
+        {
+          "@id": "mgmt:grazing_tactical"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_rotational",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping rotational"
+    },
+    {
+      "@id": "lus:management_practices.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lus:management_practices.ttl"
+        },
+        {
+          "@id": "lus:management_practices.jsonld"
+        },
+        {
+          "@id": "lus:management_practices.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:irrigation_surface",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "irrigation surface",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Also flood/furrow irrigation."
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Moving livestock between paddocks in regular sequence to permit the recovery and growth of the pasture plants after grazing."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "grazing rotational",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Also cell grazing."
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Stocking rates per paddock are higher than under set stocking."
+      }
+    },
+    {
+      "@id": "mgmt:free_standing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "free standing"
+    },
+    {
+      "@id": "mgmt:residues_burnt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues burnt"
+    },
+    {
+      "@id": "mgmt:hedgerow",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "hedgerow"
+    },
+    {
+      "@id": "mgmt:crop_pasture_rotation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "crop pasture rotation"
+    },
+    {
+      "@id": "mgmt:grazing_set_stocking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "grazing set stocking"
+    },
+    {
+      "@id": "mgmt:biodynamic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "biodynamic"
+    },
+    {
+      "@id": "mgmt:tillage_conservation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "tillage conservation"
+    },
+    {
+      "@id": "mgmt:milking_hand",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking hand"
+    },
+    {
+      "@id": "mgmt:milking_herringbone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking herringbone"
+    },
+    {
+      "@id": "mgmt:trellis_espalier",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "trellis/espalier"
+    },
+    {
+      "@id": "mgmt:cropping_cover",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping cover"
+    },
+    {
+      "@id": "mgmt:animal",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:milking_hand"
+        },
+        {
+          "@id": "mgmt:milking_rotary"
+        },
+        {
+          "@id": "mgmt:free_range"
+        },
+        {
+          "@id": "mgmt:milking_herringbone"
+        },
+        {
+          "@id": "mgmt:caged"
+        },
+        {
+          "@id": "mgmt:barn_laid"
+        },
+        {
+          "@id": "mgmt:milking_walk_through"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animal"
+      }
+    },
+    {
+      "@id": "lus:management_practices.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lus:management_practices"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:irrigation_drip"
+        },
+        {
+          "@id": "mgmt:irrigation_spray"
+        },
+        {
+          "@id": "mgmt:irrigation_surface"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Irrigation"
+      }
+    },
+    {
+      "@id": "mgmt:residues_baled",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues baled"
+    },
+    {
+      "@id": "mgmt:mulching_matting",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "mulching/matting"
+    },
+    {
+      "@id": "mgmt:horticulture",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:hedgerow"
+        },
+        {
+          "@id": "mgmt:semi_protected"
+        },
+        {
+          "@id": "mgmt:mulching_matting"
+        },
+        {
+          "@id": "mgmt:free_standing"
+        },
+        {
+          "@id": "mgmt:open_growing"
+        },
+        {
+          "@id": "mgmt:fully_protected"
+        },
+        {
+          "@id": "mgmt:trellis_espalier"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
+      }
+    },
+    {
+      "@id": "mgmt:residues_mulched",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues mulched"
+    },
+    {
+      "@id": "mgmt:free_range",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "free range"
+    },
+    {
+      "@id": "mgmt:irrigation_drip",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Irrigation system that applies water to the soil very slowly through tubes/tapes either above or below the soil surface."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "irrigation drip",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Also trickle irrigation."
+      }
+    },
+    {
+      "@id": "mgmt:fallow_mechanical",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "fallow mechanical"
+    },
+    {
+      "@id": "lus:management_practices.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lus:management_practices"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_spray",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Irrigation system that sprays water into the air allowing it to fall on the plants and soil much like natural rainfall."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "irrigation spray",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Sprinklers including set systems, permanent (solid set/fixed), continuous/travelling systems and micro-sprinklers."
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "@type": "skos:ConceptScheme",
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-02-19"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lus:management_practices.html"
+      }
+    },
+    {
+      "@id": "mgmt:residues_intact",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues intact"
+    },
+    {
+      "@id": "mgmt:barn_laid",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "barn laid"
+    },
+    {
+      "@id": "mgmt:open_growing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "open growing"
+    },
+    {
+      "@id": "mgmt:milking_rotary",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking rotary"
+    },
+    {
+      "@id": "mgmt:semi_protected",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "semi-protected"
+    },
+    {
+      "@id": "mgmt:pasture_cropping",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "pasture cropping"
+    },
+    {
+      "@id": "mgmt:cropping_continuous",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping continuous"
+    },
+    {
+      "@id": "mgmt:cropping_multiple",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping multiple"
+    },
+    {
+      "@id": "mgmt:pasture",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:biodynamic"
+        },
+        {
+          "@id": "mgmt:organic"
+        },
+        {
+          "@id": "mgmt:crop_pasture_rotation"
+        },
+        {
+          "@id": "mgmt:precision_agriculture"
+        },
+        {
+          "@id": "mgmt:pasture_cropping"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
+      "@id": "mgmt:fallow_chemical",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "fallow chemical"
+    },
+    {
+      "@id": "mgmt:residues_heavily_grazed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues heavily grazed"
+    },
+    {
+      "@id": "mgmt:tillage_conventional",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "tillage conventional"
+    },
+    {
+      "@id": "mgmt:organic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "organic"
+    },
+    {
+      "@id": "mgmt:controlled_traffic_farming",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "controlled traffic farming"
+    },
+    {
+      "@id": "lus:management_practices.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lus:management_practices"
+      }
+    },
+    {
+      "@id": "mgmt:fully_protected",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "fully protected"
+    },
+    {
+      "@id": "mgmt:milking_walk_through",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking walk through "
+    },
+    {
+      "@id": "mgmt:crop",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:cropping_multiple"
+        },
+        {
+          "@id": "mgmt:residues_heavily_grazed"
+        },
+        {
+          "@id": "mgmt:cropping_continuous"
+        },
+        {
+          "@id": "mgmt:pasture_cropping"
+        },
+        {
+          "@id": "mgmt:residues_intact"
+        },
+        {
+          "@id": "mgmt:cropping_cover"
+        },
+        {
+          "@id": "mgmt:cropping_opportunistic"
+        },
+        {
+          "@id": "mgmt:fallow_mechanical"
+        },
+        {
+          "@id": "mgmt:residues_burnt"
+        },
+        {
+          "@id": "mgmt:residues_baled"
+        },
+        {
+          "@id": "mgmt:residues_mulched"
+        },
+        {
+          "@id": "mgmt:cropping_strip"
+        },
+        {
+          "@id": "mgmt:tillage_conventional"
+        },
+        {
+          "@id": "mgmt:biodynamic"
+        },
+        {
+          "@id": "mgmt:cropping_row_alley"
+        },
+        {
+          "@id": "mgmt:fallow_chemical"
+        },
+        {
+          "@id": "mgmt:tillage_conservation"
+        },
+        {
+          "@id": "mgmt:contour_banks"
+        },
+        {
+          "@id": "mgmt:controlled_traffic_farming"
+        },
+        {
+          "@id": "mgmt:cropping_rotational"
+        },
+        {
+          "@id": "mgmt:crop_pasture_rotation"
+        },
+        {
+          "@id": "mgmt:residues_incorporated"
+        },
+        {
+          "@id": "mgmt:organic"
+        },
+        {
+          "@id": "mgmt:precision_agriculture"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_opportunistic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping opportunistic"
+    },
+    {
+      "@id": "mgmt:grazing_tactical",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "grazing tactical"
+    },
+    {
+      "@id": "mgmt:precision_agriculture",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "precision agriculture"
+    },
+    {
+      "@id": "mgmt:residues_incorporated",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues incorporated"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-scheme)"><h1>NZLUM management practices</h1><div><span class="chip kind" style="--k:var(--c-scheme)">skos:ConceptScheme</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices</p></div><h2>About</h2><dl><dt>Issued</dt><dd>2026-02-19<span class="lang">xsd:date</span></dd></dl><h2>Collections</h2><ul class="plain"><li><a href="/landuse/management_practice/animal">Animal</a> (7)</li><li><a href="/landuse/management_practice/crop">Crop</a> (24)</li><li><a href="/landuse/management_practice/grazing">Grazing</a> (3)</li><li><a href="/landuse/management_practice/horticulture">Horticulture</a> (7)</li><li><a href="/landuse/management_practice/irrigation">Irrigation</a> (3)</li><li><a href="/landuse/management_practice/pasture">Pasture</a> (5)</li></ul><h2>Concepts (44)</h2><ul class="plain cols"><li><a href="/landuse/management_practice/barn_laid">barn laid</a></li><li><a href="/landuse/management_practice/biodynamic">biodynamic</a></li><li><a href="/landuse/management_practice/caged">caged</a></li><li><a href="/landuse/management_practice/contour_banks">contour banks</a></li><li><a href="/landuse/management_practice/controlled_traffic_farming">controlled traffic farming</a></li><li><a href="/landuse/management_practice/crop_pasture_rotation">crop pasture rotation</a></li><li><a href="/landuse/management_practice/cropping_continuous">cropping continuous</a></li><li><a href="/landuse/management_practice/cropping_cover">cropping cover</a></li><li><a href="/landuse/management_practice/cropping_multiple">cropping multiple</a></li><li><a href="/landuse/management_practice/cropping_opportunistic">cropping opportunistic</a></li><li><a href="/landuse/management_practice/cropping_rotational">cropping rotational</a></li><li><a href="/landuse/management_practice/cropping_row_alley">cropping row alley</a></li><li><a href="/landuse/management_practice/cropping_strip">cropping strip</a></li><li><a href="/landuse/management_practice/fallow_chemical">fallow chemical</a></li><li><a href="/landuse/management_practice/fallow_mechanical">fallow mechanical</a></li><li><a href="/landuse/management_practice/free_range">free range</a></li><li><a href="/landuse/management_practice/free_standing">free standing</a></li><li><a href="/landuse/management_practice/fully_protected">fully protected</a></li><li><a href="/landuse/management_practice/grazing_rotational">grazing rotational</a></li><li><a href="/landuse/management_practice/grazing_set_stocking">grazing set stocking</a></li><li><a href="/landuse/management_practice/grazing_tactical">grazing tactical</a></li><li><a href="/landuse/management_practice/hedgerow">hedgerow</a></li><li><a href="/landuse/management_practice/irrigation_drip">irrigation drip</a></li><li><a href="/landuse/management_practice/irrigation_spray">irrigation spray</a></li><li><a href="/landuse/management_practice/irrigation_surface">irrigation surface</a></li><li><a href="/landuse/management_practice/milking_hand">milking hand</a></li><li><a href="/landuse/management_practice/milking_herringbone">milking herringbone</a></li><li><a href="/landuse/management_practice/milking_rotary">milking rotary</a></li><li><a href="/landuse/management_practice/milking_walk_through">milking walk through </a></li><li><a href="/landuse/management_practice/mulching_matting">mulching/matting</a></li><li><a href="/landuse/management_practice/open_growing">open growing</a></li><li><a href="/landuse/management_practice/organic">organic</a></li><li><a href="/landuse/management_practice/pasture_cropping">pasture cropping</a></li><li><a href="/landuse/management_practice/precision_agriculture">precision agriculture</a></li><li><a href="/landuse/management_practice/residues_baled">residues baled</a></li><li><a href="/landuse/management_practice/residues_burnt">residues burnt</a></li><li><a href="/landuse/management_practice/residues_heavily_grazed">residues heavily grazed</a></li><li><a href="/landuse/management_practice/residues_incorporated">residues incorporated</a></li><li><a href="/landuse/management_practice/residues_intact">residues intact</a></li><li><a href="/landuse/management_practice/residues_mulched">residues mulched</a></li><li><a href="/landuse/management_practice/semi_protected">semi-protected</a></li><li><a href="/landuse/management_practice/tillage_conservation">tillage conservation</a></li><li><a href="/landuse/management_practice/tillage_conventional">tillage conventional</a></li><li><a href="/landuse/management_practice/trellis_espalier">trellis/espalier</a></li></ul><h2>Download</h2><p>The RDF documents for this scheme contain the <em>complete</em> vocabulary as published in this version, not just the scheme's own metadata.</p><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/scheme/management_practices.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/scheme/management_practices.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/scheme/management_practices.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+</body>
+</html>

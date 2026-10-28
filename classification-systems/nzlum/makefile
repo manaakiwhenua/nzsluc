@@ -6,6 +6,10 @@ BUILD = build
 OUT = $(BUILD)/$(VERSION)
 WATER = rdf/term-lists/water-features.ttl
 WATER_SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features
+TERM_LISTS = rdf/term-lists/commodities.ttl rdf/term-lists/management-practices.ttl $(WATER)
+SITE = https://nzlum.landcareresearch.co.nz
+BASE = $(SITE)/landuse/
+WWW = $(BUILD)/www
 
 .PHONY: all
 all: mdx-all tables-all html-all pdf-all outline-all svg-summary collections-all qgis-style cartocss-style sld-style
@@ -16,6 +20,21 @@ all-versions:
 		echo "== VERSION=$$v =="; \
 		$(MAKE) VERSION=$$v all; \
 	done
+	$(MAKE) www
+
+# Dereferenceable Linked Data documents for every URI in the namespace, for all
+# VERSIONS at once (concept URIs are unversioned). Copy $(WWW)/landuse into the
+# public/ folder of the nzlum-site repository to publish.
+.PHONY: www
+www:
+	@for v in $(VERSIONS); do \
+		$(MAKE) --no-print-directory VERSION=$$v $(BUILD)/$$v/nzlum-$$v.ttl; \
+	done
+	riot --validate $(TERM_LISTS)
+	rm -rf $(WWW)
+	./scripts/export_www.py $(WWW) --base $(BASE) --site $(SITE) \
+	  $(foreach v,$(VERSIONS),--version $(v)=$(BUILD)/$(v)/nzlum-$(v).ttl) \
+	  $(foreach t,$(TERM_LISTS),--term-list $(t))
 
 $(OUT)/nzlum-$(VERSION).ttl: $(DATA)
 	mkdir -p $(OUT)

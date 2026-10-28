@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:coriander ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:coriander.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:coriander.jsonld,
+        com:coriander.rdf,
+        com:coriander.ttl .
+
+com:coriander.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:coriander .
+
+com:coriander.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:coriander .
+
+com:coriander.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:coriander .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:coriander a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "coriander" ;
+    foaf:isPrimaryTopicOf com:coriander.html .
+

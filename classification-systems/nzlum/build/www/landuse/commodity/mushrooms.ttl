@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:mushrooms ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:mushrooms.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:mushrooms.jsonld,
+        com:mushrooms.rdf,
+        com:mushrooms.ttl .
+
+com:mushrooms.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:mushrooms .
+
+com:mushrooms.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:mushrooms .
+
+com:mushrooms.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:mushrooms .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:mushrooms a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "mushrooms" ;
+    foaf:isPrimaryTopicOf com:mushrooms.html .
+

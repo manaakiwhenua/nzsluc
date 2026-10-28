@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:fallow_chemical",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:fallow_chemical.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "fallow chemical"
+    },
+    {
+      "@id": "mgmt:fallow_chemical.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fallow_chemical"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:fallow_chemical.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:fallow_chemical.ttl"
+        },
+        {
+          "@id": "mgmt:fallow_chemical.jsonld"
+        },
+        {
+          "@id": "mgmt:fallow_chemical.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:fallow_chemical"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:fallow_chemical.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fallow_chemical"
+      }
+    },
+    {
+      "@id": "mgmt:fallow_chemical.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fallow_chemical"
+      }
+    }
+  ]
+}

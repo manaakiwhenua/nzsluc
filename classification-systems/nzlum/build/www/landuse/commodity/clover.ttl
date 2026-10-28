@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:pasture skos:member com:clover ;
+    skos:prefLabel "Pasture"@en .
+
+com:clover.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:clover.jsonld,
+        com:clover.rdf,
+        com:clover.ttl .
+
+com:clover.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:clover .
+
+com:clover.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:clover .
+
+com:clover.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:clover .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:clover a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "clover" ;
+    foaf:isPrimaryTopicOf com:clover.html .
+

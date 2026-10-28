@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:forest",
+      "skos:member": {
+        "@id": "com:pulp_wood"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
+      }
+    },
+    {
+      "@id": "com:pulp_wood.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pulp_wood"
+      }
+    },
+    {
+      "@id": "com:pulp_wood.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pulp_wood"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:pulp_wood",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:pulp_wood.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pulp wood"
+    },
+    {
+      "@id": "com:pulp_wood.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pulp_wood.ttl"
+        },
+        {
+          "@id": "com:pulp_wood.jsonld"
+        },
+        {
+          "@id": "com:pulp_wood.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:pulp_wood.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pulp_wood"
+      }
+    }
+  ]
+}

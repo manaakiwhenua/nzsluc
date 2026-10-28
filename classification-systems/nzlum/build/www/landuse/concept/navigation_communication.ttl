@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:navigation_communication.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:navigation_communication.jsonld,
+        luc:navigation_communication.rdf,
+        luc:navigation_communication.ttl .
+
+luc:navigation_communication.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:navigation_communication .
+
+luc:navigation_communication.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:navigation_communication .
+
+luc:navigation_communication.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:navigation_communication .
+
+luc:utilities skos:notation "3.5.0" ;
+    skos:prefLabel "Utilities"@en .
+
+luc:navigation_communication a skos:Concept ;
+    skos:broader luc:utilities ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69>,
+        "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."@en ;
+    skos:definition "Navigation and communication infrastructure."@en ;
+    skos:example "Radar stations, beacons, lighthouses, TV and radio transmission towers."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.5.8" ;
+    skos:prefLabel "Navigation and communication"@en ;
+    foaf:isPrimaryTopicOf luc:navigation_communication.html .
+

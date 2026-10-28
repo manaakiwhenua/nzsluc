@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:habitat_or_species_management.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:habitat_or_species_management.ttl"
+        },
+        {
+          "@id": "luc:habitat_or_species_management.jsonld"
+        },
+        {
+          "@id": "luc:habitat_or_species_management.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:habitat_or_species_management",
+      "@type": "skos:Concept",
+      "dcterms:source": {
+        "@language": "en",
+        "@value": "IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area."
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:habitat_or_species_management.html"
+      },
+      "lu:colour": "#C9CAE3",
+      "skos:broader": {
+        "@id": "luc:nature_cons"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.1.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Habitat or species management area"
+      }
+    },
+    {
+      "@id": "luc:habitat_or_species_management.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
+    },
+    {
+      "@id": "luc:habitat_or_species_management.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
+    },
+    {
+      "@id": "luc:habitat_or_species_management.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
+    }
+  ]
+}

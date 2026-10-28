@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:defence_land_natural_areas",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:defence_land_natural_areas.html"
+      },
+      "lu:colour": "#FF9E17",
+      "skos:broader": {
+        "@id": "luc:minimal_use_relatively_natural"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas."
+      },
+      "skos:example": [
+        {
+          "@language": "en",
+          "@value": "Waiouru Military Camp"
+        },
+        {
+          "@language": "en",
+          "@value": "Kaipara Air Weapons Range"
+        }
+      ],
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.3.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Defence land"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Areas associated with buildings or more built environments on defence land are captured under an urban class."
+      }
+    },
+    {
+      "@id": "luc:defence_land_natural_areas.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:defence_land_natural_areas"
+      }
+    },
+    {
+      "@id": "luc:defence_land_natural_areas.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:defence_land_natural_areas"
+      }
+    },
+    {
+      "@id": "luc:defence_land_natural_areas.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:defence_land_natural_areas.ttl"
+        },
+        {
+          "@id": "luc:defence_land_natural_areas.jsonld"
+        },
+        {
+          "@id": "luc:defence_land_natural_areas.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:defence_land_natural_areas.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:defence_land_natural_areas"
+      }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    }
+  ]
+}

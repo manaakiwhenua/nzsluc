@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:cereals skos:member com:triticale ;
+    skos:prefLabel "Cereals"@en .
+
+com:triticale.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:triticale.jsonld,
+        com:triticale.rdf,
+        com:triticale.ttl .
+
+com:triticale.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:triticale .
+
+com:triticale.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:triticale .
+
+com:triticale.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:triticale .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:triticale a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "triticale" ;
+    foaf:isPrimaryTopicOf com:triticale.html .
+

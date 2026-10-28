@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage">
+        <skos:definition xml:lang="en">Conservation classes are for purposes other than biodiversity protecton.</skos:definition>
+        <skos:prefLabel xml:lang="en">Cultural and natural heritage</skos:prefLabel>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_heritage"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_cultural_heritage"/>
+        <skos:notation>1.2.0</skos:notation>
+        <lu:colour>#A00019</lu:colour>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage.rdf"/>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_heritage">
+    <skos:prefLabel xml:lang="en">Cultural heritage</skos:prefLabel>
+    <skos:notation>1.2.2</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_cultural_heritage">
+    <skos:prefLabel xml:lang="en">Indigenous cultural heritage</skos:prefLabel>
+    <skos:notation>1.2.1</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage">
+    <skos:prefLabel xml:lang="en">Natural heritage</skos:prefLabel>
+    <skos:notation>1.2.3</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
+    <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
+    <skos:notation>1.0.0</skos:notation>
+  </rdf:Description>
+</rdf:RDF>

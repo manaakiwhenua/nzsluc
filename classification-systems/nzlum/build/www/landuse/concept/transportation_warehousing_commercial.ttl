@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:commercial skos:notation "3.3.0" ;
+    skos:prefLabel "Commercial"@en .
+
+luc:transportation_warehousing_commercial.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:transportation_warehousing_commercial.jsonld,
+        luc:transportation_warehousing_commercial.rdf,
+        luc:transportation_warehousing_commercial.ttl .
+
+luc:transportation_warehousing_commercial.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:transportation_warehousing_commercial .
+
+luc:transportation_warehousing_commercial.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:transportation_warehousing_commercial .
+
+luc:transportation_warehousing_commercial.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:transportation_warehousing_commercial .
+
+luc:transportation_warehousing_commercial a skos:Concept ;
+    skos:broader luc:commercial ;
+    skos:definition "Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.3.6" ;
+    skos:prefLabel "Transportation & warehousing"@en ;
+    skos:scopeNote "Excludes airports, ports, roads, and train stations (captured under 3.6.0)"@en ;
+    foaf:isPrimaryTopicOf luc:transportation_warehousing_commercial.html .
+

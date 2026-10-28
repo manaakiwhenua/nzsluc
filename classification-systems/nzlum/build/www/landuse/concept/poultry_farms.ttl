@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:intensive_animal_production skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en .
+
+luc:poultry_farms.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:poultry_farms.jsonld,
+        luc:poultry_farms.rdf,
+        luc:poultry_farms.ttl .
+
+luc:poultry_farms.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:poultry_farms .
+
+luc:poultry_farms.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:poultry_farms .
+
+luc:poultry_farms.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:poultry_farms .
+
+luc:poultry_farms a skos:Concept ;
+    skos:broader luc:intensive_animal_production ;
+    skos:definition "Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.6.2" ;
+    skos:prefLabel "Poultry farms"@en ;
+    foaf:isPrimaryTopicOf luc:poultry_farms.html .
+

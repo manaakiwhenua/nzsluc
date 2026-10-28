@@ -1,0 +1,220 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:apples skos:notation "apples" .
+
+com:apricots skos:notation "apricots" .
+
+com:avocados skos:notation "avocados" .
+
+com:babacos skos:notation "babacos" .
+
+com:bananas skos:notation "bananas" .
+
+com:blackberries skos:notation "blackberries" .
+
+com:blackcurrants skos:notation "blackcurrants" .
+
+com:blueberries skos:notation "blueberries" .
+
+com:boysenberries skos:notation "boysenberries" .
+
+com:carambolas skos:notation "carambolas" .
+
+com:cherries skos:notation "cherries" .
+
+com:chokos skos:notation "chokos" .
+
+com:coconut skos:notation "coconut" .
+
+com:cranberries skos:notation "cranberries" .
+
+com:custard_apples skos:notation "custard apples" .
+
+com:dates skos:notation "dates" .
+
+com:dragon_fruit skos:notation "dragon fruit" .
+
+com:feijoa skos:notation "feijoa" .
+
+com:figs skos:notation "figs" .
+
+com:fruit.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:fruit.jsonld,
+        com:fruit.rdf,
+        com:fruit.ttl .
+
+com:fruit.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:fruit .
+
+com:fruit.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:fruit .
+
+com:fruit.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:fruit .
+
+com:gooseberries skos:notation "gooseberries" .
+
+com:grapefruit skos:notation "grapefruit" .
+
+com:grapes skos:notation "grapes" .
+
+com:grapes_dried skos:notation "grapes dried" .
+
+com:grapes_table skos:notation "grapes table" .
+
+com:grapes_wine skos:notation "grapes wine" .
+
+com:guavas skos:notation "guavas" .
+
+com:jackfruit skos:notation "jackfruit" .
+
+com:kiwifruit skos:notation "kiwifruit" .
+
+com:kumquat skos:notation "kumquat" .
+
+com:lemons skos:notation "lemons" .
+
+com:limes skos:notation "limes" .
+
+com:loganberries skos:notation "loganberries" .
+
+com:longans skos:notation "longans" .
+
+com:loquats skos:notation "loquats" .
+
+com:lychees skos:notation "lychees" .
+
+com:mandarins skos:notation "mandarins" .
+
+com:mangoes skos:notation "mangoes" .
+
+com:mangosteen skos:notation "mangosteen" .
+
+com:melons skos:notation "melons" .
+
+com:mulberries skos:notation "mulberries" .
+
+com:nashi_pears skos:notation "pears nashi" .
+
+com:nectarines skos:notation "nectarines" .
+
+com:olives skos:notation "olives" .
+
+com:oranges skos:notation "oranges" .
+
+com:passionfruit skos:notation "passionfruit" .
+
+com:pawpaws skos:notation "pawpaws" .
+
+com:peacharines skos:notation "peacharines" .
+
+com:peaches skos:notation "peaches" .
+
+com:pears skos:notation "pears" .
+
+com:pepinos skos:notation "pepinos" .
+
+com:persimmons skos:notation "persimmons" .
+
+com:pineapples skos:notation "pineapples" .
+
+com:plums skos:notation "plums" .
+
+com:pomegranate skos:notation "pomegranate" .
+
+com:quinces skos:notation "quinces" .
+
+com:rambutans skos:notation "rambutans" .
+
+com:raspberries skos:notation "raspberries" .
+
+com:redcurrants skos:notation "redcurrants" .
+
+com:rosella skos:notation "rosella" .
+
+com:strawberries skos:notation "strawberries" .
+
+com:tamarillo skos:notation "tamarillo" .
+
+com:tangelos skos:notation "tangelos" .
+
+com:watermelons skos:notation "watermelons" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:fruit a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:apples,
+        com:apricots,
+        com:avocados,
+        com:babacos,
+        com:bananas,
+        com:blackberries,
+        com:blackcurrants,
+        com:blueberries,
+        com:boysenberries,
+        com:carambolas,
+        com:cherries,
+        com:chokos,
+        com:coconut,
+        com:cranberries,
+        com:custard_apples,
+        com:dates,
+        com:dragon_fruit,
+        com:feijoa,
+        com:figs,
+        com:gooseberries,
+        com:grapefruit,
+        com:grapes,
+        com:grapes_dried,
+        com:grapes_table,
+        com:grapes_wine,
+        com:guavas,
+        com:jackfruit,
+        com:kiwifruit,
+        com:kumquat,
+        com:lemons,
+        com:limes,
+        com:loganberries,
+        com:longans,
+        com:loquats,
+        com:lychees,
+        com:mandarins,
+        com:mangoes,
+        com:mangosteen,
+        com:melons,
+        com:mulberries,
+        com:nashi_pears,
+        com:nectarines,
+        com:olives,
+        com:oranges,
+        com:passionfruit,
+        com:pawpaws,
+        com:peacharines,
+        com:peaches,
+        com:pears,
+        com:pepinos,
+        com:persimmons,
+        com:pineapples,
+        com:plums,
+        com:pomegranate,
+        com:quinces,
+        com:rambutans,
+        com:raspberries,
+        com:redcurrants,
+        com:rosella,
+        com:strawberries,
+        com:tamarillo,
+        com:tangelos,
+        com:watermelons ;
+    skos:prefLabel "Fruit"@en ;
+    foaf:isPrimaryTopicOf com:fruit.html .
+

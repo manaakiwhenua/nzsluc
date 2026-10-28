@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:water_treatment_land_application.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:water_treatment_land_application.jsonld,
+        luc:water_treatment_land_application.rdf,
+        luc:water_treatment_land_application.ttl .
+
+luc:water_treatment_land_application.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:water_treatment_land_application .
+
+luc:water_treatment_land_application.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:water_treatment_land_application .
+
+luc:water_treatment_land_application.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:water_treatment_land_application .
+
+luc:water_wastewater_agriculture skos:notation "2.7.0" ;
+    skos:prefLabel "Water and wastewater"@en .
+
+luc:water_treatment_land_application a skos:Concept ;
+    skos:broader luc:water_wastewater_agriculture ;
+    skos:definition "Land used for effluent disposal"@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.7.3" ;
+    skos:prefLabel "Water treatment – land application"@en ;
+    skos:scopeNote "probably an ancillary use where some form of grazing is the primary use."@en ;
+    foaf:isPrimaryTopicOf luc:water_treatment_land_application.html .
+

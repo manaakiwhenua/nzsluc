@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:radishes ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:radishes.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:radishes.jsonld,
+        com:radishes.rdf,
+        com:radishes.ttl .
+
+com:radishes.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:radishes .
+
+com:radishes.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:radishes .
+
+com:radishes.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:radishes .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:radishes a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "radishes" ;
+    foaf:isPrimaryTopicOf com:radishes.html .
+

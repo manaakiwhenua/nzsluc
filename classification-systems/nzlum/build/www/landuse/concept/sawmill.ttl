@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:sawmill.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:sawmill.jsonld,
+        luc:sawmill.rdf,
+        luc:sawmill.ttl .
+
+luc:sawmill.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:sawmill .
+
+luc:sawmill.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:sawmill .
+
+luc:sawmill.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:sawmill .
+
+luc:sawmill a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.4" ;
+    skos:prefLabel "Sawmill"@en ;
+    foaf:isPrimaryTopicOf luc:sawmill.html .
+

@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:marrows_and_squashes ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:marrows_and_squashes.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:marrows_and_squashes.jsonld,
+        com:marrows_and_squashes.rdf,
+        com:marrows_and_squashes.ttl .
+
+com:marrows_and_squashes.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:marrows_and_squashes .
+
+com:marrows_and_squashes.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:marrows_and_squashes .
+
+com:marrows_and_squashes.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:marrows_and_squashes .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:marrows_and_squashes a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "marrows and squashes" ;
+    foaf:isPrimaryTopicOf com:marrows_and_squashes.html .
+

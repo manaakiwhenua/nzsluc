@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:pulses skos:member com:pigeon_pea ;
+    skos:prefLabel "Pulses"@en .
+
+com:pigeon_pea.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:pigeon_pea.jsonld,
+        com:pigeon_pea.rdf,
+        com:pigeon_pea.ttl .
+
+com:pigeon_pea.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:pigeon_pea .
+
+com:pigeon_pea.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:pigeon_pea .
+
+com:pigeon_pea.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:pigeon_pea .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:pigeon_pea a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "pigeon pea" ;
+    foaf:isPrimaryTopicOf com:pigeon_pea.html .
+

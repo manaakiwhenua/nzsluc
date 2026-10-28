@@ -1,0 +1,38 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:cattle_stud ;
+    skos:prefLabel "Animals"@en .
+
+com:cattle skos:notation "cattle" .
+
+com:cattle_stud.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:cattle_stud.jsonld,
+        com:cattle_stud.rdf,
+        com:cattle_stud.ttl .
+
+com:cattle_stud.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:cattle_stud .
+
+com:cattle_stud.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:cattle_stud .
+
+com:cattle_stud.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:cattle_stud .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:cattle_stud a skos:Concept ;
+    skos:broader com:cattle ;
+    skos:inScheme lus:commodities ;
+    skos:notation "cattle stud" ;
+    skos:usageNote "Cattle raised for sale as breeding animals."@en ;
+    foaf:isPrimaryTopicOf com:cattle_stud.html .
+

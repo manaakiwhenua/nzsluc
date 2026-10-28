@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:lentils.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:lentils"
+      }
+    },
+    {
+      "@id": "com:lentils.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:lentils"
+      }
+    },
+    {
+      "@id": "com:lentils.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:lentils"
+      }
+    },
+    {
+      "@id": "com:lentils.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lentils.ttl"
+        },
+        {
+          "@id": "com:lentils.jsonld"
+        },
+        {
+          "@id": "com:lentils.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:pulses",
+      "skos:member": {
+        "@id": "com:lentils"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pulses"
+      }
+    },
+    {
+      "@id": "com:lentils",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:lentils.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lentils"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}

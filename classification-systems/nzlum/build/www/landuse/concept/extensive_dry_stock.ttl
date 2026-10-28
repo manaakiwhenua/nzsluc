@@ -1,0 +1,42 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:extensive_dry_stock.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:extensive_dry_stock.jsonld,
+        luc:extensive_dry_stock.rdf,
+        luc:extensive_dry_stock.ttl .
+
+luc:extensive_dry_stock.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:extensive_dry_stock .
+
+luc:extensive_dry_stock.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:extensive_dry_stock .
+
+luc:extensive_dry_stock.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:extensive_dry_stock .
+
+luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
+    skos:prefLabel "Grazing modified pasture systems"@en .
+
+luc:extensive_dry_stock a skos:Concept ;
+    skos:broader luc:grazing_modified_pasture_systems ;
+    skos:definition "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.2.3" ;
+    skos:prefLabel "Extensive dry stock"@en ;
+    skos:scopeNote "Arable or winter forage crops are unlikely to be common rotations in this land-use category"@en,
+        "Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)"@en,
+        "Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation."@en ;
+    skos:usageNote "The specific commodity or commodities should be noted if known."@en ;
+    foaf:isPrimaryTopicOf luc:extensive_dry_stock.html ;
+    lu:colour "#ABA248" .
+

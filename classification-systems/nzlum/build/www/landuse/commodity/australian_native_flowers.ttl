@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:flowers_and_bulbs skos:member com:australian_native_flowers ;
+    skos:prefLabel "Flowers and bulbs"@en .
+
+com:australian_native_flowers.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:australian_native_flowers.jsonld,
+        com:australian_native_flowers.rdf,
+        com:australian_native_flowers.ttl .
+
+com:australian_native_flowers.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:australian_native_flowers .
+
+com:australian_native_flowers.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:australian_native_flowers .
+
+com:australian_native_flowers.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:australian_native_flowers .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:australian_native_flowers a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "australian native flowers" ;
+    foaf:isPrimaryTopicOf com:australian_native_flowers.html .
+

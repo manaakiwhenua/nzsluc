@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:forest skos:member com:carbon_forest_standard ;
+    skos:prefLabel "Forest"@en .
+
+com:carbon_forest_standard.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:carbon_forest_standard.jsonld,
+        com:carbon_forest_standard.rdf,
+        com:carbon_forest_standard.ttl .
+
+com:carbon_forest_standard.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:carbon_forest_standard .
+
+com:carbon_forest_standard.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:carbon_forest_standard .
+
+com:carbon_forest_standard.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:carbon_forest_standard .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:carbon_forest_standard a skos:Concept ;
+    skos:definition "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."@en ;
+    skos:inScheme lus:commodities ;
+    skos:notation "carbon forest standard" ;
+    foaf:isPrimaryTopicOf com:carbon_forest_standard.html .
+

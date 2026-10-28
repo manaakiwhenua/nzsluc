@@ -1,0 +1,92 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wtr: <https://nzlum.landcareresearch.co.nz/landuse/water-feature/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wtr:drain a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "drain" ;
+    lu:colour "#C3DFFF" .
+
+wtr:ice a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "ice" ;
+    lu:colour "#EDF5FF" .
+
+wtr:lagoon a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "lagoon" ;
+    lu:colour "#C3DFFF" .
+
+wtr:lake a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "lake" ;
+    skos:usageNote "Matches any value prefixed with 'lake' (e.g. 'lake bed')."@en ;
+    lu:colour "#C3DFFF" .
+
+wtr:mangrove a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "mangrove" ;
+    lu:colour "#83B09E" .
+
+wtr:marine a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "marine" ;
+    lu:colour "#C3DFFF" .
+
+wtr:mud a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "mud" ;
+    lu:colour "#D9C49E" .
+
+wtr:pond a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "pond" ;
+    lu:colour "#C3DFFF" .
+
+wtr:reef a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "reef" ;
+    lu:colour "#A9B0AD" .
+
+wtr:river a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "river" ;
+    lu:colour "#C3DFFF" .
+
+wtr:sand a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "sand" ;
+    lu:colour "#FFFABA" .
+
+wtr:swamp a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "swamp" ;
+    lu:colour "#83B09E" .
+
+lus:water_features.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat lus:water_features.jsonld,
+        lus:water_features.rdf,
+        lus:water_features.ttl .
+
+lus:water_features.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic lus:water_features .
+
+lus:water_features.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic lus:water_features .
+
+lus:water_features.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic lus:water_features .
+
+lus:water_features a skos:ConceptScheme ;
+    dcterms:issued "2026-07-09"^^xsd:date ;
+    dcterms:title "NZLUM water features"@en ;
+    foaf:isPrimaryTopicOf lus:water_features.html .
+

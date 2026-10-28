@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:nature_cons skos:notation "1.1.0" ;
+    skos:prefLabel "Nature conservation"@en .
+
+luc:other_conserved_area.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:other_conserved_area.jsonld,
+        luc:other_conserved_area.rdf,
+        luc:other_conserved_area.ttl .
+
+luc:other_conserved_area.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:other_conserved_area .
+
+luc:other_conserved_area.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:other_conserved_area .
+
+luc:other_conserved_area.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:other_conserved_area .
+
+luc:other_conserved_area a skos:Concept ;
+    skos:broader luc:nature_cons ;
+    skos:definition "Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover ."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "1.1.7" ;
+    skos:prefLabel "Other conserved area"@en ;
+    skos:scopeNote "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’" ;
+    foaf:isPrimaryTopicOf luc:other_conserved_area.html ;
+    lu:colour "#FCFBFD" .
+

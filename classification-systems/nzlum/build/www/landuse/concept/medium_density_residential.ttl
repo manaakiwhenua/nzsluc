@@ -1,0 +1,40 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:medium_density_residential.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:medium_density_residential.jsonld,
+        luc:medium_density_residential.rdf,
+        luc:medium_density_residential.ttl .
+
+luc:medium_density_residential.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:medium_density_residential .
+
+luc:medium_density_residential.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:medium_density_residential .
+
+luc:medium_density_residential.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:medium_density_residential .
+
+luc:residential skos:notation "3.1.0" ;
+    skos:prefLabel "Residential"@en .
+
+luc:medium_density_residential a skos:Concept ;
+    skos:broader luc:residential ;
+    skos:definition "Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings."@en ;
+    skos:example "Townhouses, terraced housing, low-rise apartments."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.1.2" ;
+    skos:prefLabel "Medium-density residential"@en ;
+    skos:scopeNote "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered."@en ;
+    foaf:isPrimaryTopicOf luc:medium_density_residential.html ;
+    lu:colour "#644E4C" .
+

@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:fruit skos:member com:chokos ;
+    skos:prefLabel "Fruit"@en .
+
+com:chokos.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:chokos.jsonld,
+        com:chokos.rdf,
+        com:chokos.ttl .
+
+com:chokos.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:chokos .
+
+com:chokos.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:chokos .
+
+com:chokos.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:chokos .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:chokos a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "chokos" ;
+    foaf:isPrimaryTopicOf com:chokos.html .
+

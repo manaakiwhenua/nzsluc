@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:cereals skos:member com:quinoa ;
+    skos:prefLabel "Cereals"@en .
+
+com:quinoa.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:quinoa.jsonld,
+        com:quinoa.rdf,
+        com:quinoa.ttl .
+
+com:quinoa.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:quinoa .
+
+com:quinoa.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:quinoa .
+
+com:quinoa.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:quinoa .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:quinoa a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "quinoa" ;
+    skos:usageNote "Quinoa is a pseudocereal related to beetroot, spinach and tumbleweeds. As it is grown as a grain it is considered part of cereals."@en ;
+    foaf:isPrimaryTopicOf com:quinoa.html .
+

@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:conservation",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:conservation.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "luc:unused_and_transitioning"
+        },
+        {
+          "@id": "luc:minimal_use_relatively_natural"
+        },
+        {
+          "@id": "luc:nature_cons"
+        },
+        {
+          "@id": "luc:cultural_natural_heritage"
+        }
+      ],
+      "skos:notation": "1.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Conservation and Minimal Use"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."
+      },
+      "skos:topConceptOf": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."
+      }
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:unused_and_transitioning",
+      "skos:notation": "1.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Unused and transitioning land"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "luc:conservation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "luc:conservation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "luc:cultural_natural_heritage",
+      "skos:notation": "1.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cultural and natural heritage"
+      }
+    },
+    {
+      "@id": "luc:conservation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.3.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "luc:conservation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:conservation.ttl"
+        },
+        {
+          "@id": "luc:conservation.jsonld"
+        },
+        {
+          "@id": "luc:conservation.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    }
+  ]
+}

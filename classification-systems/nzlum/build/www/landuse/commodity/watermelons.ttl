@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:fruit skos:member com:watermelons ;
+    skos:prefLabel "Fruit"@en .
+
+com:watermelons.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:watermelons.jsonld,
+        com:watermelons.rdf,
+        com:watermelons.ttl .
+
+com:watermelons.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:watermelons .
+
+com:watermelons.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:watermelons .
+
+com:watermelons.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:watermelons .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:watermelons a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "watermelons" ;
+    foaf:isPrimaryTopicOf com:watermelons.html .
+

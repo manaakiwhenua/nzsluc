@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:general_purpose_factory.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:general_purpose_factory.jsonld,
+        luc:general_purpose_factory.rdf,
+        luc:general_purpose_factory.ttl .
+
+luc:general_purpose_factory.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:general_purpose_factory .
+
+luc:general_purpose_factory.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:general_purpose_factory .
+
+luc:general_purpose_factory.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:general_purpose_factory .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:general_purpose_factory a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "An area used for manufacturing, assembly, or repairs of various products."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.1" ;
+    skos:prefLabel "General purpose factory"@en ;
+    skos:scopeNote "Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries."@en ;
+    foaf:isPrimaryTopicOf luc:general_purpose_factory.html .
+

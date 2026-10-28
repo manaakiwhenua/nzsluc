@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:effluent_pond skos:notation "2.7.2" ;
+    skos:prefLabel "Effluent pond"@en .
+
+luc:irrigation_reservoirs_canals skos:notation "2.7.5" ;
+    skos:prefLabel "Irrigation reservoirs and canals"@en .
+
+luc:production_agriculture_plantations skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en .
+
+luc:stock_water skos:notation "2.7.1" ;
+    skos:prefLabel "Stock water"@en .
+
+luc:water_treatment_land_application skos:notation "2.7.3" ;
+    skos:prefLabel "Water treatment – land application"@en .
+
+luc:water_treatment_wetland skos:notation "2.7.4" ;
+    skos:prefLabel "Water treatment – wetland"@en .
+
+luc:water_wastewater_agriculture.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:water_wastewater_agriculture.jsonld,
+        luc:water_wastewater_agriculture.rdf,
+        luc:water_wastewater_agriculture.ttl .
+
+luc:water_wastewater_agriculture.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:water_wastewater_agriculture .
+
+luc:water_wastewater_agriculture.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:water_wastewater_agriculture .
+
+luc:water_wastewater_agriculture.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:water_wastewater_agriculture .
+
+luc:water_wastewater_agriculture a skos:Concept ;
+    skos:broader luc:production_agriculture_plantations ;
+    skos:definition "Built water features associated with agricultural use."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:effluent_pond,
+        luc:irrigation_reservoirs_canals,
+        luc:stock_water,
+        luc:water_treatment_land_application,
+        luc:water_treatment_wetland ;
+    skos:notation "2.7.0" ;
+    skos:prefLabel "Water and wastewater"@en ;
+    foaf:isPrimaryTopicOf luc:water_wastewater_agriculture.html ;
+    lu:colour "#3B505B" .
+

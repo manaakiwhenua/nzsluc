@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:mines skos:member com:rare_earths ;
+    skos:prefLabel "Mines"@en .
+
+com:rare_earths.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:rare_earths.jsonld,
+        com:rare_earths.rdf,
+        com:rare_earths.ttl .
+
+com:rare_earths.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:rare_earths .
+
+com:rare_earths.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:rare_earths .
+
+com:rare_earths.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:rare_earths .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:rare_earths a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "rare_earths " ;
+    foaf:isPrimaryTopicOf com:rare_earths.html .
+

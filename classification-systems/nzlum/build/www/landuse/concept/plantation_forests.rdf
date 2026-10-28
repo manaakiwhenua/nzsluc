@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/planted_environmental_infrastructure_protection"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/other_production_plantations"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_plantation_forestry"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <lu:colour>#122112</lu:colour>
+        <skos:notation>2.1.0</skos:notation>
+        <skos:definition xml:lang="en">Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry.</skos:definition>
+        <skos:scopeNote xml:lang="en">This includes farm forestry and may consist of monocultures or mixed species.</skos:scopeNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+        <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry">
+    <skos:prefLabel xml:lang="en">Exotic plantation forestry</skos:prefLabel>
+    <skos:notation>2.1.1</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests.rdf"/>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+    <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+    <skos:notation>2.0.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_plantation_forestry">
+    <skos:prefLabel xml:lang="en">Indigenous plantation forestry</skos:prefLabel>
+    <skos:notation>2.1.2</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_production_plantations">
+    <skos:prefLabel xml:lang="en">Other production uses</skos:prefLabel>
+    <skos:notation>2.1.3</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/planted_environmental_infrastructure_protection">
+    <skos:prefLabel xml:lang="en">Planted environmental &amp; infrastructure protection</skos:prefLabel>
+    <skos:notation>2.1.4</skos:notation>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+luc:land_undergoing_rehabilitation_natural.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:land_undergoing_rehabilitation_natural.jsonld,
+        luc:land_undergoing_rehabilitation_natural.rdf,
+        luc:land_undergoing_rehabilitation_natural.ttl .
+
+luc:land_undergoing_rehabilitation_natural.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_natural .
+
+luc:land_undergoing_rehabilitation_natural.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_natural .
+
+luc:land_undergoing_rehabilitation_natural.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_natural .
+
+luc:unused_land_transition skos:notation "1.4.0" ;
+    skos:prefLabel "Unused land and land in transition"@en .
+
+luc:land_undergoing_rehabilitation_natural a skos:Concept ;
+    owl:deprecated true ;
+    skos:broader luc:unused_land_transition ;
+    skos:definition "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."@en ;
+    skos:historyNote "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:notation "1.4.2" ;
+    skos:prefLabel "Land undergoing rehabilitation"@en ;
+    foaf:isPrimaryTopicOf luc:land_undergoing_rehabilitation_natural.html .
+

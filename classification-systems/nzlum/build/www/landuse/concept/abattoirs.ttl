@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:abattoirs.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:abattoirs.jsonld,
+        luc:abattoirs.rdf,
+        luc:abattoirs.ttl .
+
+luc:abattoirs.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:abattoirs .
+
+luc:abattoirs.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:abattoirs .
+
+luc:abattoirs.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:abattoirs .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:abattoirs a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.6" ;
+    skos:prefLabel "Abattoirs"@en ;
+    foaf:isPrimaryTopicOf luc:abattoirs.html .
+

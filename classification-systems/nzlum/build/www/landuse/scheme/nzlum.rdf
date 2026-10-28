@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:doap="http://usefulinc.com/ns/doap#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <skos:ConceptScheme rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum">
+    <dcterms:title xml:lang="en">New Zealand Land Use and Management classification system</dcterms:title>
+    <foaf:homepage rdf:resource="https://nzlum.landcareresearch.co.nz/"/>
+    <doap:repository>
+      <doap:GitRepository rdf:nodeID="n88814eaac34f4758a5123f8902819d4bb1">
+        <doap:browse rdf:resource="https://github.com/manaakiwhenua/nzsluc"/>
+      </doap:GitRepository>
+    </doap:repository>
+    <dcterms:relation rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
+    <dcterms:hasVersion>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
+        <dcterms:isVersionOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+      </rdf:Description>
+    </dcterms:hasVersion>
+    <dcterms:hasVersion>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
+        <dcterms:isVersionOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+      </rdf:Description>
+    </dcterms:hasVersion>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:ConceptScheme>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+</rdf:RDF>

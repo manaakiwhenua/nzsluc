@@ -1,0 +1,76 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:australian_native_flowers skos:notation "australian native flowers" .
+
+com:bulbs skos:notation "bulbs" .
+
+com:calendula skos:notation "calendula" .
+
+com:carnations skos:notation "carnations" .
+
+com:chrysanthemums skos:notation "chrysanthemums" .
+
+com:daffodils skos:notation "daffodils" .
+
+com:flowers_and_bulbs.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:flowers_and_bulbs.jsonld,
+        com:flowers_and_bulbs.rdf,
+        com:flowers_and_bulbs.ttl .
+
+com:flowers_and_bulbs.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:flowers_and_bulbs .
+
+com:flowers_and_bulbs.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:flowers_and_bulbs .
+
+com:flowers_and_bulbs.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:flowers_and_bulbs .
+
+com:flowers_and_foliage skos:notation "flowers and foliage" .
+
+com:gerberas skos:notation "gerberas" .
+
+com:lavender skos:notation "lavender" .
+
+com:lilies skos:notation "lilies" .
+
+com:orchids skos:notation "orchids" .
+
+com:proteas skos:notation "proteas" .
+
+com:roses skos:notation "roses" .
+
+com:tropical_flowers skos:notation "tropical flowers" .
+
+com:tulips skos:notation "tulips" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:flowers_and_bulbs a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:australian_native_flowers,
+        com:bulbs,
+        com:calendula,
+        com:carnations,
+        com:chrysanthemums,
+        com:daffodils,
+        com:flowers_and_foliage,
+        com:gerberas,
+        com:lavender,
+        com:lilies,
+        com:orchids,
+        com:proteas,
+        com:roses,
+        com:tropical_flowers,
+        com:tulips ;
+    skos:prefLabel "Flowers and bulbs"@en ;
+    foaf:isPrimaryTopicOf com:flowers_and_bulbs.html .
+

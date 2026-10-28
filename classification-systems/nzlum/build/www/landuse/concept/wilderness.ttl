@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:nature_cons skos:notation "1.1.0" ;
+    skos:prefLabel "Nature conservation"@en .
+
+luc:wilderness.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:wilderness.jsonld,
+        luc:wilderness.rdf,
+        luc:wilderness.ttl .
+
+luc:wilderness.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:wilderness .
+
+luc:wilderness.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:wilderness .
+
+luc:wilderness.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:wilderness .
+
+luc:wilderness a skos:Concept ;
+    dcterms:source "IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area."@en ;
+    skos:broader luc:nature_cons ;
+    skos:definition "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "1.1.2" ;
+    skos:prefLabel "Wilderness area"@en ;
+    foaf:isPrimaryTopicOf luc:wilderness.html ;
+    lu:colour "#3F007D" .
+

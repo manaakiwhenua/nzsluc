@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:degraded_land_ag.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:degraded_land_ag.jsonld,
+        luc:degraded_land_ag.rdf,
+        luc:degraded_land_ag.ttl .
+
+luc:degraded_land_ag.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:degraded_land_ag .
+
+luc:degraded_land_ag.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:degraded_land_ag .
+
+luc:degraded_land_ag.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:degraded_land_ag .
+
+luc:vacant_and_transitioning_land skos:notation "2.8.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:degraded_land_ag a skos:Concept ;
+    skos:broader luc:vacant_and_transitioning_land ;
+    skos:changeNote "Changed notation at v0.4.0"@en ;
+    skos:definition "Unused land that is degraded through erosion or flood events that is not being rehabilitated."@en ;
+    skos:inScheme lus:nzlum0.4.0 ;
+    skos:notation "2.8.3" ;
+    skos:prefLabel "Degraded land"@en ;
+    skos:usageNote "Can include contaminated land."@en ;
+    foaf:isPrimaryTopicOf luc:degraded_land_ag.html .
+

@@ -1,0 +1,298 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:sheep_dairy",
+      "skos:notation": "sheep dairy"
+    },
+    {
+      "@id": "com:cats",
+      "skos:notation": "cats"
+    },
+    {
+      "@id": "com:goats_meat",
+      "skos:notation": "goats meat"
+    },
+    {
+      "@id": "com:crocodiles",
+      "skos:notation": "crocodiles"
+    },
+    {
+      "@id": "com:turkeys",
+      "skos:notation": "turkeys"
+    },
+    {
+      "@id": "com:deer",
+      "skos:notation": "deer"
+    },
+    {
+      "@id": "com:chickens_meat",
+      "skos:notation": "chickens meat"
+    },
+    {
+      "@id": "com:animals.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:animals.ttl"
+        },
+        {
+          "@id": "com:animals.jsonld"
+        },
+        {
+          "@id": "com:animals.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:ostriches",
+      "skos:notation": "ostriches"
+    },
+    {
+      "@id": "com:cattle_stud",
+      "skos:notation": "cattle stud"
+    },
+    {
+      "@id": "com:geese",
+      "skos:notation": "geese"
+    },
+    {
+      "@id": "com:animals",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:animals.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:horses"
+        },
+        {
+          "@id": "com:sheep_meat"
+        },
+        {
+          "@id": "com:goats"
+        },
+        {
+          "@id": "com:cats"
+        },
+        {
+          "@id": "com:goats_wool"
+        },
+        {
+          "@id": "com:chickens_meat"
+        },
+        {
+          "@id": "com:goats_meat"
+        },
+        {
+          "@id": "com:crustaceans"
+        },
+        {
+          "@id": "com:goats_dairy"
+        },
+        {
+          "@id": "com:cattle_stud"
+        },
+        {
+          "@id": "com:molluscs"
+        },
+        {
+          "@id": "com:pigs"
+        },
+        {
+          "@id": "com:dogs"
+        },
+        {
+          "@id": "com:geese"
+        },
+        {
+          "@id": "com:crocodiles"
+        },
+        {
+          "@id": "com:goats_stud"
+        },
+        {
+          "@id": "com:ostriches"
+        },
+        {
+          "@id": "com:cattle"
+        },
+        {
+          "@id": "com:sheep_wool"
+        },
+        {
+          "@id": "com:turkeys"
+        },
+        {
+          "@id": "com:sheep_stud"
+        },
+        {
+          "@id": "com:ducks"
+        },
+        {
+          "@id": "com:bees"
+        },
+        {
+          "@id": "com:cattle_meat"
+        },
+        {
+          "@id": "com:finfish"
+        },
+        {
+          "@id": "com:deer"
+        },
+        {
+          "@id": "com:emus"
+        },
+        {
+          "@id": "com:chickens"
+        },
+        {
+          "@id": "com:sheep"
+        },
+        {
+          "@id": "com:chickens_eggs"
+        },
+        {
+          "@id": "com:sheep_dairy"
+        },
+        {
+          "@id": "com:cattle_dairy"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:goats",
+      "skos:notation": "goats"
+    },
+    {
+      "@id": "com:cattle_meat",
+      "skos:notation": "cattle meat"
+    },
+    {
+      "@id": "com:sheep_stud",
+      "skos:notation": "sheep stud"
+    },
+    {
+      "@id": "com:pigs",
+      "skos:notation": "pigs"
+    },
+    {
+      "@id": "com:dogs",
+      "skos:notation": "dogs"
+    },
+    {
+      "@id": "com:goats_dairy",
+      "skos:notation": "goats dairy"
+    },
+    {
+      "@id": "com:animals.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:animals"
+      }
+    },
+    {
+      "@id": "com:chickens",
+      "skos:notation": "chickens"
+    },
+    {
+      "@id": "com:ducks",
+      "skos:notation": "ducks"
+    },
+    {
+      "@id": "com:emus",
+      "skos:notation": "emus"
+    },
+    {
+      "@id": "com:goats_wool",
+      "skos:notation": "goats wool"
+    },
+    {
+      "@id": "com:crustaceans",
+      "skos:notation": "crustaceans"
+    },
+    {
+      "@id": "com:molluscs",
+      "skos:notation": "molluscs"
+    },
+    {
+      "@id": "com:sheep_wool",
+      "skos:notation": "sheep wool"
+    },
+    {
+      "@id": "com:animals.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:animals"
+      }
+    },
+    {
+      "@id": "com:finfish",
+      "skos:notation": "finfish"
+    },
+    {
+      "@id": "com:cattle_dairy",
+      "skos:notation": "cattle dairy"
+    },
+    {
+      "@id": "com:chickens_eggs",
+      "skos:notation": "chickens eggs"
+    },
+    {
+      "@id": "com:horses",
+      "skos:notation": "horses"
+    },
+    {
+      "@id": "com:sheep",
+      "skos:notation": "sheep"
+    },
+    {
+      "@id": "com:bees",
+      "skos:notation": "bees"
+    },
+    {
+      "@id": "com:animals.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:animals"
+      }
+    },
+    {
+      "@id": "com:goats_stud",
+      "skos:notation": "goats stud"
+    },
+    {
+      "@id": "com:cattle",
+      "skos:notation": "cattle"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:sheep_meat",
+      "skos:notation": "sheep meat"
+    }
+  ]
+}

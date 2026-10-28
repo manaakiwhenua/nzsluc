@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:water_treatment_land_application.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_treatment_land_application"
+      }
+    },
+    {
+      "@id": "luc:water_treatment_land_application.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:water_treatment_land_application.ttl"
+        },
+        {
+          "@id": "luc:water_treatment_land_application.jsonld"
+        },
+        {
+          "@id": "luc:water_treatment_land_application.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water and wastewater"
+      }
+    },
+    {
+      "@id": "luc:water_treatment_land_application.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_treatment_land_application"
+      }
+    },
+    {
+      "@id": "luc:water_treatment_land_application.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_treatment_land_application"
+      }
+    },
+    {
+      "@id": "luc:water_treatment_land_application",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:water_treatment_land_application.html"
+      },
+      "skos:broader": {
+        "@id": "luc:water_wastewater_agriculture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land used for effluent disposal"
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.7.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water treatment – land application"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "probably an ancillary use where some form of grazing is the primary use."
+      }
+    }
+  ]
+}

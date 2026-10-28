@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
+      }
+    },
+    {
+      "@id": "luc:landfills",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:landfills.html"
+      },
+      "skos:broader": {
+        "@id": "luc:waste_treatment_disposal"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions."
+      },
+      "skos:example": "Landfills designed to receive inert construction materials.",
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.8.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Landfills"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Landfill gas recovery systems are classified as part of a landfill land use."
+        },
+        {
+          "@language": "en",
+          "@value": "Includes all class 1 to 5 landfills"
+        }
+      ]
+    },
+    {
+      "@id": "luc:landfills.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:landfills"
+      }
+    },
+    {
+      "@id": "luc:landfills.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:landfills"
+      }
+    },
+    {
+      "@id": "luc:landfills.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:landfills"
+      }
+    },
+    {
+      "@id": "luc:landfills.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:landfills.ttl"
+        },
+        {
+          "@id": "luc:landfills.jsonld"
+        },
+        {
+          "@id": "luc:landfills.rdf"
+        }
+      ]
+    }
+  ]
+}

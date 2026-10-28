@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:fruit skos:member com:jackfruit ;
+    skos:prefLabel "Fruit"@en .
+
+com:jackfruit.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:jackfruit.jsonld,
+        com:jackfruit.rdf,
+        com:jackfruit.ttl .
+
+com:jackfruit.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:jackfruit .
+
+com:jackfruit.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:jackfruit .
+
+com:jackfruit.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:jackfruit .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:jackfruit a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "jackfruit" ;
+    foaf:isPrimaryTopicOf com:jackfruit.html .
+

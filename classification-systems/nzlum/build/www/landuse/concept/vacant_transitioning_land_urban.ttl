@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:brownfield_development skos:notation "3.9.1" ;
+    skos:prefLabel "Brownfield development"@en .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:greenfield_development skos:notation "3.9.2" ;
+    skos:prefLabel "Greenfield development"@en .
+
+luc:vacant_land skos:notation "3.9.3" ;
+    skos:prefLabel "Idle and derelict land"@en .
+
+luc:vacant_transitioning_land_urban.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:vacant_transitioning_land_urban.jsonld,
+        luc:vacant_transitioning_land_urban.rdf,
+        luc:vacant_transitioning_land_urban.ttl .
+
+luc:vacant_transitioning_land_urban.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:vacant_transitioning_land_urban .
+
+luc:vacant_transitioning_land_urban.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:vacant_transitioning_land_urban .
+
+luc:vacant_transitioning_land_urban.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:vacant_transitioning_land_urban .
+
+luc:vacant_transitioning_land_urban a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:brownfield_development,
+        luc:greenfield_development,
+        luc:vacant_land ;
+    skos:notation "3.9.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en ;
+    foaf:isPrimaryTopicOf luc:vacant_transitioning_land_urban.html ;
+    lu:colour "#D69B97" .
+

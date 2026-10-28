@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/degraded_land_ag">
+    <skos:prefLabel xml:lang="en">Degraded land</skos:prefLabel>
+    <skos:notation>2.8.3</skos:notation>
+  </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land">
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land_ag">
+        <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
+        <skos:notation>2.8.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/degraded_land_ag"/>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/no_defined_use_ag">
+        <skos:prefLabel xml:lang="en">No defined use</skos:prefLabel>
+        <skos:notation>2.8.4</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abandoned_land_ag">
+        <skos:prefLabel xml:lang="en">Abandoned land</skos:prefLabel>
+        <skos:notation>2.8.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+        <skos:notation>2.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <lu:colour>#BCBFE1</lu:colour>
+    <skos:scopeNote xml:lang="en">In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+    <skos:changeNote xml:lang="en">Preferred label changed from 'Land in transition' at v0.4.0</skos:changeNote>
+    <skos:notation>2.8.0</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.</skos:definition>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+</rdf:RDF>

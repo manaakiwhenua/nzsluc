@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:goats ;
+    skos:prefLabel "Animals"@en .
+
+com:goats.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:goats.jsonld,
+        com:goats.rdf,
+        com:goats.ttl .
+
+com:goats.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:goats .
+
+com:goats.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:goats .
+
+com:goats.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:goats .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:goats a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "goats" ;
+    skos:usageNote "Specify meat, dairy, stud, or wool where appropriate."@en ;
+    foaf:isPrimaryTopicOf com:goats.html .
+

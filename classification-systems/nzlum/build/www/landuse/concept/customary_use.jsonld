@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:customary_use.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:customary_use"
+      }
+    },
+    {
+      "@id": "luc:customary_use.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:customary_use"
+      }
+    },
+    {
+      "@id": "luc:customary_use.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:customary_use.ttl"
+        },
+        {
+          "@id": "luc:customary_use.jsonld"
+        },
+        {
+          "@id": "luc:customary_use.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:customary_use.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:customary_use"
+      }
+    },
+    {
+      "@id": "luc:customary_use",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:customary_use.html"
+      },
+      "skos:broader": {
+        "@id": "luc:minimal_use_relatively_natural"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai)."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.3.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Customary use"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use."
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "This is often an ancillary use; assign only if customary use is the prime use of the land."
+      }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    }
+  ]
+}

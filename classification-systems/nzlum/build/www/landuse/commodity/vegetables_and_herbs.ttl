@@ -1,0 +1,235 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:arrowroot skos:notation "arrowroot" .
+
+com:artichokes skos:notation "artichokes" .
+
+com:asparagus skos:notation "asparagus" .
+
+com:beans skos:notation "beans" .
+
+com:beetroot skos:notation "beetroot" .
+
+com:bitter_melon skos:notation "bitter melon" .
+
+com:broccoli skos:notation "broccoli" .
+
+com:brussels_sprouts skos:notation "brussels sprouts" .
+
+com:burdock skos:notation "burdock" .
+
+com:cabbages skos:notation "cabbages" .
+
+com:capsicums skos:notation "capsicums" .
+
+com:carrots skos:notation "carrots" .
+
+com:cauliflowers skos:notation "cauliflowers" .
+
+com:celery skos:notation "celery" .
+
+com:chamomile skos:notation "chamomile" .
+
+com:chervil skos:notation "chervil" .
+
+com:chicory skos:notation "chicory" .
+
+com:chillies skos:notation "chillies" .
+
+com:chinese_cabbages skos:notation "chinese cabbages" .
+
+com:chives skos:notation "chives" .
+
+com:coriander skos:notation "coriander" .
+
+com:cucumbers skos:notation "cucumbers" .
+
+com:echinacea skos:notation "echinacea" .
+
+com:eggplants skos:notation "eggplants" .
+
+com:fennel skos:notation "fennel" .
+
+com:french_beans skos:notation "french beans" .
+
+com:garlic skos:notation "garlic" .
+
+com:gherkins skos:notation "gherkins" .
+
+com:herbs skos:notation "herbs" .
+
+com:kale skos:notation "kale" .
+
+com:kumara skos:notation "kumara" .
+
+com:leeks skos:notation "leeks" .
+
+com:lemongrass skos:notation "lemongrass" .
+
+com:lettuces skos:notation "lettuces" .
+
+com:marjoram skos:notation "marjoram" .
+
+com:marrows_and_squashes skos:notation "marrows and squashes" .
+
+com:mint skos:notation "mint" .
+
+com:mushrooms skos:notation "mushrooms" .
+
+com:okra skos:notation "okra" .
+
+com:onions skos:notation "onions" .
+
+com:oregano skos:notation "oregano" .
+
+com:parsley skos:notation "parsley" .
+
+com:parsnips skos:notation "parsnips" .
+
+com:peas skos:notation "peas" .
+
+com:peppermint skos:notation "peppermint" .
+
+com:potatoes skos:notation "potatoes" .
+
+com:pumpkins skos:notation "pumpkins" .
+
+com:radishes skos:notation "radishes" .
+
+com:rhubarb skos:notation "rhubarb" .
+
+com:rocket skos:notation "rocket" .
+
+com:rosemary skos:notation "rosemary" .
+
+com:sage skos:notation "sage" .
+
+com:silverbeet_and_spinach skos:notation "silverbeet and spinach" .
+
+com:snowpeas skos:notation "snowpeas" .
+
+com:spring_onions_and_shallots skos:notation "spring onions and shallots" .
+
+com:sprouts skos:notation "sprouts" .
+
+com:sugar_beet skos:notation "sugar beet" .
+
+com:swedes skos:notation "swedes" .
+
+com:sweet_corn skos:notation "sweet corn" .
+
+com:sweet_potatoes skos:notation "sweet potatoes" .
+
+com:tarragon skos:notation "tarragon" .
+
+com:thyme skos:notation "thyme" .
+
+com:tomatoes skos:notation "tomatoes" .
+
+com:truffles skos:notation "truffles" .
+
+com:turnips skos:notation "turnips" .
+
+com:vegetable_seeds skos:notation "vegetable seeds" .
+
+com:vegetables skos:notation "vegetables" .
+
+com:vegetables_and_herbs.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:vegetables_and_herbs.jsonld,
+        com:vegetables_and_herbs.rdf,
+        com:vegetables_and_herbs.ttl .
+
+com:vegetables_and_herbs.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:vegetables_and_herbs .
+
+com:vegetables_and_herbs.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:vegetables_and_herbs .
+
+com:vegetables_and_herbs.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:vegetables_and_herbs .
+
+com:zucchini skos:notation "zucchini" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:vegetables_and_herbs a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:arrowroot,
+        com:artichokes,
+        com:asparagus,
+        com:beans,
+        com:beetroot,
+        com:bitter_melon,
+        com:broccoli,
+        com:brussels_sprouts,
+        com:burdock,
+        com:cabbages,
+        com:capsicums,
+        com:carrots,
+        com:cauliflowers,
+        com:celery,
+        com:chamomile,
+        com:chervil,
+        com:chicory,
+        com:chillies,
+        com:chinese_cabbages,
+        com:chives,
+        com:coriander,
+        com:cucumbers,
+        com:echinacea,
+        com:eggplants,
+        com:fennel,
+        com:french_beans,
+        com:garlic,
+        com:gherkins,
+        com:herbs,
+        com:kale,
+        com:kumara,
+        com:leeks,
+        com:lemongrass,
+        com:lettuces,
+        com:marjoram,
+        com:marrows_and_squashes,
+        com:mint,
+        com:mushrooms,
+        com:okra,
+        com:onions,
+        com:oregano,
+        com:parsley,
+        com:parsnips,
+        com:peas,
+        com:peppermint,
+        com:potatoes,
+        com:pumpkins,
+        com:radishes,
+        com:rhubarb,
+        com:rocket,
+        com:rosemary,
+        com:sage,
+        com:silverbeet_and_spinach,
+        com:snowpeas,
+        com:spring_onions_and_shallots,
+        com:sprouts,
+        com:sugar_beet,
+        com:swedes,
+        com:sweet_corn,
+        com:sweet_potatoes,
+        com:tarragon,
+        com:thyme,
+        com:tomatoes,
+        com:truffles,
+        com:turnips,
+        com:vegetable_seeds,
+        com:vegetables,
+        com:zucchini ;
+    skos:prefLabel "Vegetables and herbs"@en ;
+    foaf:isPrimaryTopicOf com:vegetables_and_herbs.html .
+

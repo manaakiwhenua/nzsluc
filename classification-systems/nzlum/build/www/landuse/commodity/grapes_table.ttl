@@ -1,0 +1,37 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:fruit skos:member com:grapes_table ;
+    skos:prefLabel "Fruit"@en .
+
+com:grapes skos:notation "grapes" .
+
+com:grapes_table.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:grapes_table.jsonld,
+        com:grapes_table.rdf,
+        com:grapes_table.ttl .
+
+com:grapes_table.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:grapes_table .
+
+com:grapes_table.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:grapes_table .
+
+com:grapes_table.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:grapes_table .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:grapes_table a skos:Concept ;
+    skos:broader com:grapes ;
+    skos:inScheme lus:commodities ;
+    skos:notation "grapes table" ;
+    foaf:isPrimaryTopicOf com:grapes_table.html .
+

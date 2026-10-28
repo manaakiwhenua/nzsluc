@@ -1,0 +1,49 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:conservation skos:notation "1.0.0" ;
+    skos:prefLabel "Conservation and Minimal Use"@en .
+
+luc:rehabilitating_land skos:notation "1.4.1" ;
+    skos:prefLabel "Rehabilitating land"@en .
+
+luc:unused_and_transitioning.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:unused_and_transitioning.jsonld,
+        luc:unused_and_transitioning.rdf,
+        luc:unused_and_transitioning.ttl .
+
+luc:unused_and_transitioning.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:unused_and_transitioning .
+
+luc:unused_and_transitioning.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:unused_and_transitioning .
+
+luc:unused_and_transitioning.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:unused_and_transitioning .
+
+luc:unused_land skos:notation "1.4.2" ;
+    skos:prefLabel "Unused land"@en .
+
+luc:unused_and_transitioning a skos:Concept ;
+    skos:broader luc:conservation ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+    skos:definition "Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state."@en ;
+    skos:inScheme lus:nzlum0.4.0 ;
+    skos:narrower luc:rehabilitating_land,
+        luc:unused_land ;
+    skos:notation "1.4.0" ;
+    skos:prefLabel "Unused and transitioning land"@en ;
+    skos:scopeNote "Corridors and roadside areas may fit under this class."@en,
+        "Does not per se include land undergoing natural succession in the context of changing plant species."@en,
+        "Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included."@en ;
+    foaf:isPrimaryTopicOf luc:unused_and_transitioning.html ;
+    lu:colour "#C8C69F" .
+

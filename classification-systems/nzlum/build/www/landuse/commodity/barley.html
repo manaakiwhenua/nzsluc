@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>barley · NZLUM</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/landuse/nzlum-ld.css">
+<link rel="canonical" href="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley">
+<link rel="alternate" type="text/turtle" href="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley.ttl" title="Turtle">
+<link rel="alternate" type="application/ld+json" href="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley.jsonld" title="JSON-LD">
+<link rel="alternate" type="application/rdf+xml" href="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley.rdf" title="RDF/XML">
+<script type="application/ld+json">{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:cereals",
+      "skos:member": {
+        "@id": "com:barley"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
+      }
+    },
+    {
+      "@id": "com:barley",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:barley.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "barley"
+    },
+    {
+      "@id": "com:barley.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:barley"
+      }
+    },
+    {
+      "@id": "com:barley.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:barley.ttl"
+        },
+        {
+          "@id": "com:barley.jsonld"
+        },
+        {
+          "@id": "com:barley.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:barley.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:barley"
+      }
+    },
+    {
+      "@id": "com:barley.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:barley"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>barley</h1><div><span class="chip code">barley</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/commodity/barley</p></div><h2>Hierarchy</h2><dl><dt>Member of</dt><dd><a href="/landuse/commodity/cereals">Cereals</a></dd></dl><h2>In scheme</h2><ul class="plain"><li><a href="/landuse/scheme/commodities">NZLUM commodities</a></li></ul><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/commodity/barley.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/commodity/barley.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/commodity/barley.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+</body>
+</html>

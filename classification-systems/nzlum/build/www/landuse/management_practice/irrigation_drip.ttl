@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:irrigation skos:member mgmt:irrigation_drip ;
+    skos:prefLabel "Irrigation"@en .
+
+mgmt:irrigation_drip.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:irrigation_drip.jsonld,
+        mgmt:irrigation_drip.rdf,
+        mgmt:irrigation_drip.ttl .
+
+mgmt:irrigation_drip.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:irrigation_drip .
+
+mgmt:irrigation_drip.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:irrigation_drip .
+
+mgmt:irrigation_drip.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:irrigation_drip .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:irrigation_drip a skos:Concept ;
+    skos:definition "Irrigation system that applies water to the soil very slowly through tubes/tapes either above or below the soil surface."@en ;
+    skos:inScheme lus:management_practices ;
+    skos:notation "irrigation drip" ;
+    skos:scopeNote "Also trickle irrigation."@en ;
+    foaf:isPrimaryTopicOf mgmt:irrigation_drip.html .
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_containment">
+        <skos:prefLabel xml:lang="en">Intensive animal containment</skos:prefLabel>
+        <skos:notation>2.6.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms">
+        <skos:prefLabel xml:lang="en">Poultry farms</skos:prefLabel>
+        <skos:notation>2.6.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/piggeries">
+        <skos:prefLabel xml:lang="en">Piggeries</skos:prefLabel>
+        <skos:notation>2.6.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/horse_studs">
+        <skos:prefLabel xml:lang="en">Horse studs</skos:prefLabel>
+        <skos:notation>2.6.4</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture">
+        <skos:prefLabel xml:lang="en">Aquaculture</skos:prefLabel>
+        <skos:notation>2.6.5</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:notation>2.6.0</skos:notation>
+    <skos:definition xml:lang="en">Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
+    <lu:colour>#BFA798</lu:colour>
+    <skos:usageNote xml:lang="en">The management field can be used to record practices such as free range or organic.</skos:usageNote>
+    <skos:usageNote xml:lang="en">Record animal types as commodities, if known.</skos:usageNote>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+        <skos:notation>2.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+</rdf:RDF>

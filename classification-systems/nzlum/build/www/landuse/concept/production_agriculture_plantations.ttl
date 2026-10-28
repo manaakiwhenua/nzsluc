@@ -1,0 +1,75 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
+    skos:prefLabel "Grazing modified pasture systems"@en .
+
+luc:intensive_animal_production skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en .
+
+luc:intensive_horticulture skos:notation "2.5.0" ;
+    skos:prefLabel "Intensive horticulture"@en .
+
+luc:perennial_horticulture skos:notation "2.4.0" ;
+    skos:prefLabel "Perennial horticulture"@en .
+
+luc:plantation_forests skos:notation "2.1.0" ;
+    skos:prefLabel "Plantation forests"@en .
+
+luc:production_agriculture_plantations.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:production_agriculture_plantations.jsonld,
+        luc:production_agriculture_plantations.rdf,
+        luc:production_agriculture_plantations.ttl .
+
+luc:production_agriculture_plantations.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:production_agriculture_plantations .
+
+luc:production_agriculture_plantations.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:production_agriculture_plantations .
+
+luc:production_agriculture_plantations.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:production_agriculture_plantations .
+
+luc:short_rotation_seasonal_cropping skos:notation "2.3.0" ;
+    skos:prefLabel "Short-rotation and seasonal cropping"@en .
+
+luc:smallholder_farm skos:notation "2.9.0" ;
+    skos:prefLabel "Smallholder farm"@en .
+
+luc:vacant_and_transitioning_land skos:notation "2.8.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:water_wastewater_agriculture skos:notation "2.7.0" ;
+    skos:prefLabel "Water and wastewater"@en .
+
+lus:nzlum0.3.0 skos:hasTopConcept luc:production_agriculture_plantations .
+
+lus:nzlum0.4.0 skos:hasTopConcept luc:production_agriculture_plantations .
+
+luc:production_agriculture_plantations a skos:Concept ;
+    skos:definition "Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:grazing_modified_pasture_systems,
+        luc:intensive_animal_production,
+        luc:intensive_horticulture,
+        luc:perennial_horticulture,
+        luc:plantation_forests,
+        luc:short_rotation_seasonal_cropping,
+        luc:smallholder_farm,
+        luc:vacant_and_transitioning_land,
+        luc:water_wastewater_agriculture ;
+    skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en ;
+    skos:scopeNote "If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied."@en ;
+    skos:topConceptOf lus:nzlum0.4.0 ;
+    skos:usageNote "Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field."@en ;
+    foaf:isPrimaryTopicOf luc:production_agriculture_plantations.html .
+

@@ -1,0 +1,100 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:alumina skos:notation "alumina" .
+
+com:aluminium skos:notation "aluminium" .
+
+com:bauxite skos:notation "bauxite" .
+
+com:coal skos:notation "coal" .
+
+com:coal_black skos:notation "coal_black " .
+
+com:coal_brown skos:notation "coal_brown " .
+
+com:copper skos:notation "copper" .
+
+com:diamonds_rough skos:notation "diamonds_rough " .
+
+com:gold skos:notation "gold" .
+
+com:iron_ore skos:notation "iron_ore" .
+
+com:ironsand skos:notation "ironsand" .
+
+com:lead skos:notation "lead" .
+
+com:metal skos:notation "metal" .
+
+com:mineral_sands skos:notation "mineral_sands " .
+
+com:mines.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:mines.jsonld,
+        com:mines.rdf,
+        com:mines.ttl .
+
+com:mines.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:mines .
+
+com:mines.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:mines .
+
+com:mines.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:mines .
+
+com:nickel skos:notation "nickel" .
+
+com:rare_earths skos:notation "rare_earths " .
+
+com:salt skos:notation "salt" .
+
+com:shingle skos:notation "shingle" .
+
+com:silica_sand skos:notation "silica_sand" .
+
+com:stone skos:notation "stone" .
+
+com:uranium skos:notation "uranium" .
+
+com:zeolite skos:notation "zeolite" .
+
+com:zinc skos:notation "zinc" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:mines a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:alumina,
+        com:aluminium,
+        com:bauxite,
+        com:coal,
+        com:coal_black,
+        com:coal_brown,
+        com:copper,
+        com:diamonds_rough,
+        com:gold,
+        com:iron_ore,
+        com:ironsand,
+        com:lead,
+        com:metal,
+        com:mineral_sands,
+        com:nickel,
+        com:rare_earths,
+        com:salt,
+        com:shingle,
+        com:silica_sand,
+        com:stone,
+        com:uranium,
+        com:zeolite,
+        com:zinc ;
+    skos:prefLabel "Mines"@en ;
+    foaf:isPrimaryTopicOf com:mines.html .
+

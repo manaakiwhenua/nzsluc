@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:extractive_industry_not_in_use",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:extractive_industry_not_in_use.html"
+      },
+      "skos:broader": {
+        "@id": "luc:mining"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land undergoing rehabilitation after mining activities, and unmined land within a mining permit."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.7.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Extractive industry not in use"
+      }
+    },
+    {
+      "@id": "luc:extractive_industry_not_in_use.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:extractive_industry_not_in_use"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:extractive_industry_not_in_use.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:extractive_industry_not_in_use.ttl"
+        },
+        {
+          "@id": "luc:extractive_industry_not_in_use.jsonld"
+        },
+        {
+          "@id": "luc:extractive_industry_not_in_use.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:extractive_industry_not_in_use.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:extractive_industry_not_in_use"
+      }
+    },
+    {
+      "@id": "luc:extractive_industry_not_in_use.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:extractive_industry_not_in_use"
+      }
+    }
+  ]
+}

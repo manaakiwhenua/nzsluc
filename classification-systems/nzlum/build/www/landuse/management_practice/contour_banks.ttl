@@ -1,0 +1,34 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:crop skos:member mgmt:contour_banks ;
+    skos:prefLabel "Crop"@en .
+
+mgmt:contour_banks.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:contour_banks.jsonld,
+        mgmt:contour_banks.rdf,
+        mgmt:contour_banks.ttl .
+
+mgmt:contour_banks.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:contour_banks .
+
+mgmt:contour_banks.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:contour_banks .
+
+mgmt:contour_banks.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:contour_banks .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:contour_banks a skos:Concept ;
+    skos:inScheme lus:management_practices ;
+    skos:notation "contour banks" ;
+    foaf:isPrimaryTopicOf mgmt:contour_banks.html .
+

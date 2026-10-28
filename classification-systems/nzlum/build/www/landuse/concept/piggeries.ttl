@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:intensive_animal_production skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en .
+
+luc:piggeries.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:piggeries.jsonld,
+        luc:piggeries.rdf,
+        luc:piggeries.ttl .
+
+luc:piggeries.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:piggeries .
+
+luc:piggeries.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:piggeries .
+
+luc:piggeries.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:piggeries .
+
+luc:piggeries a skos:Concept ;
+    skos:broader luc:intensive_animal_production ;
+    skos:definition "Facilities designed for the intensive rearing of pigs."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.6.3" ;
+    skos:prefLabel "Piggeries"@en ;
+    foaf:isPrimaryTopicOf luc:piggeries.html .
+

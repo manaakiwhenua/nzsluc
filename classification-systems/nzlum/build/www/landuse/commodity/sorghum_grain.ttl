@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:cereals skos:member com:sorghum_grain ;
+    skos:prefLabel "Cereals"@en .
+
+com:sorghum_grain.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:sorghum_grain.jsonld,
+        com:sorghum_grain.rdf,
+        com:sorghum_grain.ttl .
+
+com:sorghum_grain.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:sorghum_grain .
+
+com:sorghum_grain.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:sorghum_grain .
+
+com:sorghum_grain.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:sorghum_grain .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:sorghum_grain a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "sorghum grain" ;
+    skos:usageNote "Sorghum grown for grain. Excludes forage sorghum."@en ;
+    foaf:isPrimaryTopicOf com:sorghum_grain.html .
+

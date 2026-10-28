@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:unused_and_transitioning skos:notation "1.4.0" ;
+    skos:prefLabel "Unused and transitioning land"@en .
+
+luc:unused_land.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:unused_land.jsonld,
+        luc:unused_land.rdf,
+        luc:unused_land.ttl .
+
+luc:unused_land.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:unused_land .
+
+luc:unused_land.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:unused_land .
+
+luc:unused_land.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:unused_land .
+
+luc:unused_land a skos:Concept ;
+    skos:broader luc:unused_and_transitioning ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/36> ;
+    skos:definition "Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance."@en ;
+    skos:example "A vacant farm, apparently undergoing natural succession."@en,
+        "CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "1.4.2" ;
+    skos:prefLabel "Unused land"@en ;
+    foaf:isPrimaryTopicOf luc:unused_land.html .
+

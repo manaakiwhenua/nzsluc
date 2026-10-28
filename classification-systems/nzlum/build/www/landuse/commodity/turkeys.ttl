@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:turkeys ;
+    skos:prefLabel "Animals"@en .
+
+com:turkeys.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:turkeys.jsonld,
+        com:turkeys.rdf,
+        com:turkeys.ttl .
+
+com:turkeys.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:turkeys .
+
+com:turkeys.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:turkeys .
+
+com:turkeys.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:turkeys .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:turkeys a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "turkeys" ;
+    skos:usageNote "Poultry farms."@en ;
+    foaf:isPrimaryTopicOf com:turkeys.html .
+

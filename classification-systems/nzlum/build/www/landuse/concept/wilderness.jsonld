@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:wilderness.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:wilderness.ttl"
+        },
+        {
+          "@id": "luc:wilderness.jsonld"
+        },
+        {
+          "@id": "luc:wilderness.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:wilderness.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:wilderness"
+      }
+    },
+    {
+      "@id": "luc:wilderness",
+      "@type": "skos:Concept",
+      "dcterms:source": {
+        "@language": "en",
+        "@value": "IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area."
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:wilderness.html"
+      },
+      "lu:colour": "#3F007D",
+      "skos:broader": {
+        "@id": "luc:nature_cons"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.1.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Wilderness area"
+      }
+    },
+    {
+      "@id": "luc:wilderness.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:wilderness"
+      }
+    },
+    {
+      "@id": "luc:wilderness.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:wilderness"
+      }
+    }
+  ]
+}

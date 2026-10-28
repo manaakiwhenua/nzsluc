@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lu:colour.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat lu:colour.jsonld,
+        lu:colour.rdf,
+        lu:colour.ttl .
+
+lu:colour.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic lu:colour .
+
+lu:colour.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic lu:colour .
+
+lu:colour.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic lu:colour .
+
+lu:colour a owl:DatatypeProperty ;
+    rdfs:label "colour"@en ;
+    rdfs:comment "Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. \"#7F6DF2\"). Optional; absence means no colour has been assigned."@en ;
+    rdfs:domain skos:Concept ;
+    rdfs:range xsd:string ;
+    foaf:isPrimaryTopicOf lu:colour.html .
+

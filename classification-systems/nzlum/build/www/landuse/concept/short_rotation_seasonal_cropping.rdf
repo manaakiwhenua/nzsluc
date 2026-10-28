@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
+    <skos:scopeNote xml:lang="en">This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years.</skos:scopeNote>
+    <skos:notation>2.3.0</skos:notation>
+    <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture">
+        <skos:prefLabel xml:lang="en">Short-rotation horticulture</skos:prefLabel>
+        <skos:notation>2.3.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping">
+        <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
+        <skos:notation>2.3.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_mixed_livestock_cropping">
+        <skos:prefLabel xml:lang="en">Arable and mixed livestock cropping</skos:prefLabel>
+        <skos:notation>2.3.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf">
+        <skos:prefLabel xml:lang="en">Seasonal flowers and bulbs, and turf farming</skos:prefLabel>
+        <skos:notation>2.3.4</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:definition xml:lang="en">This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.</skos:definition>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/65"/>
+    <skos:changeNote xml:lang="en">The explicit five year periodicity was added in v0.4.0.</skos:changeNote>
+    <lu:colour>#7F7F54</lu:colour>
+    <skos:usageNote xml:lang="en">If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+        <skos:notation>2.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+</rdf:RDF>

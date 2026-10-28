@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu_status": "https://nzlum.landcareresearch.co.nz/landuse/status/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "lu_status:published.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:published"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "adms:status": {
+        "@id": "lu_status:published"
+      }
+    },
+    {
+      "@id": "lu_status:published.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_status:published.ttl"
+        },
+        {
+          "@id": "lu_status:published.jsonld"
+        },
+        {
+          "@id": "lu_status:published.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lu_status:published.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:published"
+      }
+    },
+    {
+      "@id": "lu_status:published.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:published"
+      }
+    },
+    {
+      "@id": "lu_status:published",
+      "@type": "rdfs:Resource",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lu_status:published.html"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Published"
+      }
+    }
+  ]
+}

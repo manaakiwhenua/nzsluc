@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:cereals skos:member com:millet_and_pancium ;
+    skos:prefLabel "Cereals"@en .
+
+com:millet_and_pancium.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:millet_and_pancium.jsonld,
+        com:millet_and_pancium.rdf,
+        com:millet_and_pancium.ttl .
+
+com:millet_and_pancium.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:millet_and_pancium .
+
+com:millet_and_pancium.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:millet_and_pancium .
+
+com:millet_and_pancium.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:millet_and_pancium .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:millet_and_pancium a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "millet and pancium" ;
+    foaf:isPrimaryTopicOf com:millet_and_pancium.html .
+

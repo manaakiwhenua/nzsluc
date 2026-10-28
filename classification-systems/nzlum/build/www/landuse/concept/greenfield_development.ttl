@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:greenfield_development.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:greenfield_development.jsonld,
+        luc:greenfield_development.rdf,
+        luc:greenfield_development.ttl .
+
+luc:greenfield_development.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:greenfield_development .
+
+luc:greenfield_development.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:greenfield_development .
+
+luc:greenfield_development.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:greenfield_development .
+
+luc:vacant_transitioning_land_urban skos:notation "3.9.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:greenfield_development a skos:Concept ;
+    skos:broader luc:vacant_transitioning_land_urban ;
+    skos:definition "Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.9.2" ;
+    skos:prefLabel "Greenfield development"@en ;
+    foaf:isPrimaryTopicOf luc:greenfield_development.html .
+

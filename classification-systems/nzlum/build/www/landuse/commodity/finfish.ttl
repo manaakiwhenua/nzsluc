@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:finfish ;
+    skos:prefLabel "Animals"@en .
+
+com:finfish.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:finfish.jsonld,
+        com:finfish.rdf,
+        com:finfish.ttl .
+
+com:finfish.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:finfish .
+
+com:finfish.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:finfish .
+
+com:finfish.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:finfish .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:finfish a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "finfish" ;
+    skos:usageNote "Aquaculture: tuna, salmon, trout, freshwater species, etc."@en ;
+    foaf:isPrimaryTopicOf com:finfish.html .
+

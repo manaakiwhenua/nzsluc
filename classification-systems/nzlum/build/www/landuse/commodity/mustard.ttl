@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:oilseeds skos:member com:mustard ;
+    skos:prefLabel "Oilseeds"@en .
+
+com:mustard.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:mustard.jsonld,
+        com:mustard.rdf,
+        com:mustard.ttl .
+
+com:mustard.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:mustard .
+
+com:mustard.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:mustard .
+
+com:mustard.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:mustard .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:mustard a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "mustard " ;
+    foaf:isPrimaryTopicOf com:mustard.html .
+

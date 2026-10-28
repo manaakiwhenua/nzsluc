@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:dairy skos:notation "2.2.1" ;
+    skos:prefLabel "Dairy"@en .
+
+luc:extensive_dry_stock skos:notation "2.2.3" ;
+    skos:prefLabel "Extensive dry stock"@en .
+
+luc:grazing_modified_pasture_systems.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:grazing_modified_pasture_systems.jsonld,
+        luc:grazing_modified_pasture_systems.rdf,
+        luc:grazing_modified_pasture_systems.ttl .
+
+luc:grazing_modified_pasture_systems.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:grazing_modified_pasture_systems .
+
+luc:grazing_modified_pasture_systems.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:grazing_modified_pasture_systems .
+
+luc:grazing_modified_pasture_systems.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:grazing_modified_pasture_systems .
+
+luc:intensive_dry_stock skos:notation "2.2.2" ;
+    skos:prefLabel "Intensive dry stock"@en .
+
+luc:production_agriculture_plantations skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en .
+
+luc:grazing_modified_pasture_systems a skos:Concept ;
+    skos:broader luc:production_agriculture_plantations ;
+    skos:definition "Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:dairy,
+        luc:extensive_dry_stock,
+        luc:intensive_dry_stock ;
+    skos:notation "2.2.0" ;
+    skos:prefLabel "Grazing modified pasture systems"@en ;
+    skos:scopeNote "Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use."@en,
+        "Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping."@en ;
+    skos:usageNote "The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known."@en ;
+    foaf:isPrimaryTopicOf luc:grazing_modified_pasture_systems.html ;
+    lu:colour "#357735" .
+

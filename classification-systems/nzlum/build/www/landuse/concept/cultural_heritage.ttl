@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:cultural_heritage.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:cultural_heritage.jsonld,
+        luc:cultural_heritage.rdf,
+        luc:cultural_heritage.ttl .
+
+luc:cultural_heritage.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:cultural_heritage .
+
+luc:cultural_heritage.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:cultural_heritage .
+
+luc:cultural_heritage.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:cultural_heritage .
+
+luc:cultural_natural_heritage skos:notation "1.2.0" ;
+    skos:prefLabel "Cultural and natural heritage"@en .
+
+luc:cultural_heritage a skos:Concept ;
+    skos:broader luc:cultural_natural_heritage ;
+    skos:definition "Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "1.2.2" ;
+    skos:prefLabel "Cultural heritage"@en ;
+    foaf:isPrimaryTopicOf luc:cultural_heritage.html .
+

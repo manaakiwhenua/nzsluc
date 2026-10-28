@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:rehabilitating_land_ag.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:rehabilitating_land_ag.jsonld,
+        luc:rehabilitating_land_ag.rdf,
+        luc:rehabilitating_land_ag.ttl .
+
+luc:rehabilitating_land_ag.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:rehabilitating_land_ag .
+
+luc:rehabilitating_land_ag.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:rehabilitating_land_ag .
+
+luc:rehabilitating_land_ag.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:rehabilitating_land_ag .
+
+luc:vacant_and_transitioning_land skos:notation "2.8.0" ;
+    skos:prefLabel "Vacant and transitioning land"@en .
+
+luc:rehabilitating_land_ag a skos:Concept ;
+    skos:broader luc:vacant_and_transitioning_land ;
+    skos:changeNote "Changed notation at v0.4.0" ;
+    skos:definition "Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered."@en ;
+    skos:inScheme lus:nzlum0.4.0 ;
+    skos:notation "2.8.1" ;
+    skos:prefLabel "Rehabilitating land"@en ;
+    foaf:isPrimaryTopicOf luc:rehabilitating_land_ag.html .
+

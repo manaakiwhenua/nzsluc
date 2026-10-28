@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:navigation_communication"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:navigation_communication.ttl"
+        },
+        {
+          "@id": "luc:navigation_communication.jsonld"
+        },
+        {
+          "@id": "luc:navigation_communication.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:navigation_communication.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:navigation_communication"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:navigation_communication.html"
+      },
+      "skos:broader": {
+        "@id": "luc:utilities"
+      },
+      "skos:changeNote": [
+        {
+          "@language": "en",
+          "@value": "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."
+        },
+        {
+          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Navigation and communication infrastructure."
+      },
+      "skos:example": {
+        "@language": "en",
+        "@value": "Radar stations, beacons, lighthouses, TV and radio transmission towers."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.5.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Navigation and communication"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:navigation_communication"
+      }
+    }
+  ]
+}

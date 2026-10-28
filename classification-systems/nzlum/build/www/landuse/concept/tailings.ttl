@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:mining skos:notation "3.7.0" ;
+    skos:prefLabel "Mining"@en .
+
+luc:tailings.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:tailings.jsonld,
+        luc:tailings.rdf,
+        luc:tailings.ttl .
+
+luc:tailings.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:tailings .
+
+luc:tailings.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:tailings .
+
+luc:tailings.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:tailings .
+
+luc:tailings a skos:Concept ;
+    skos:broader luc:mining ;
+    skos:definition "Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.7.3" ;
+    skos:prefLabel "Tailings"@en ;
+    foaf:isPrimaryTopicOf luc:tailings.html .
+

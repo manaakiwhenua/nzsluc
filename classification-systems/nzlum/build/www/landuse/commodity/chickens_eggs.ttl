@@ -1,0 +1,38 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:chickens_eggs ;
+    skos:prefLabel "Animals"@en .
+
+com:chickens skos:notation "chickens" .
+
+com:chickens_eggs.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:chickens_eggs.jsonld,
+        com:chickens_eggs.rdf,
+        com:chickens_eggs.ttl .
+
+com:chickens_eggs.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:chickens_eggs .
+
+com:chickens_eggs.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:chickens_eggs .
+
+com:chickens_eggs.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:chickens_eggs .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:chickens_eggs a skos:Concept ;
+    skos:broader com:chickens ;
+    skos:inScheme lus:commodities ;
+    skos:notation "chickens eggs" ;
+    skos:usageNote "Poultry farms. Production mainly for eggs."@en ;
+    foaf:isPrimaryTopicOf com:chickens_eggs.html .
+

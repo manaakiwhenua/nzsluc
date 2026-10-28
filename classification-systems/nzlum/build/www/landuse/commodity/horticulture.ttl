@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:horticulture.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:horticulture.jsonld,
+        com:horticulture.rdf,
+        com:horticulture.ttl .
+
+com:horticulture.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:horticulture .
+
+com:horticulture.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:horticulture .
+
+com:horticulture.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:horticulture .
+
+com:turf skos:notation "turf" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:horticulture a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:turf ;
+    skos:prefLabel "Horticulture"@en ;
+    foaf:isPrimaryTopicOf com:horticulture.html .
+

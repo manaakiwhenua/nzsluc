@@ -54,8 +54,14 @@ def code_key(code):
         return [code]
 
 
-def guid():
-    return "{%s}" % uuid.uuid4()
+# Deterministic keys: QGIS only needs rule keys and symbol-layer ids to be unique
+# within the style, so derive them from what they identify. Random uuid4 keys
+# made every rebuild produce a spurious diff.
+GUID_NAMESPACE = uuid.uuid5(uuid.NAMESPACE_URL, "https://nzlum.landcareresearch.co.nz/landuse/qgis-style")
+
+
+def guid(name):
+    return "{%s}" % uuid.uuid5(GUID_NAMESPACE, name)
 
 
 def rgba_value(hex_colour):
@@ -129,9 +135,9 @@ def make_symbol(name, layers):
     return symbol
 
 
-def make_simplefill_layer(colour_value):
+def make_simplefill_layer(symbol_name, colour_value):
     layer = ET.Element("layer", {
-        "locked": "0", "pass": "0", "class": "SimpleFill", "enabled": "1", "id": guid(),
+        "locked": "0", "pass": "0", "class": "SimpleFill", "enabled": "1", "id": guid(f"{symbol_name}:SimpleFill"),
     })
     lopt = ET.SubElement(layer, "Option", {"type": "Map"})
 
@@ -162,7 +168,7 @@ def make_linepatternfill_layer(symbol_name, fallback_colour_value, colour_expres
     property; QGIS renders the hatch via an embedded line symbol).
     """
     layer = ET.Element("layer", {
-        "locked": "0", "pass": "0", "class": "LinePatternFill", "enabled": "1", "id": guid(),
+        "locked": "0", "pass": "0", "class": "LinePatternFill", "enabled": "1", "id": guid(f"{symbol_name}:LinePatternFill"),
     })
     lopt = ET.SubElement(layer, "Option", {"type": "Map"})
 
@@ -194,7 +200,7 @@ def make_linepatternfill_layer(symbol_name, fallback_colour_value, colour_expres
     add_empty_ddp(line_symbol)
 
     line_layer = ET.SubElement(line_symbol, "layer", {
-        "locked": "0", "pass": "0", "class": "SimpleLine", "enabled": "1", "id": guid(),
+        "locked": "0", "pass": "0", "class": "SimpleLine", "enabled": "1", "id": guid(f"{symbol_name}:SimpleLine"),
     })
     slopt = ET.SubElement(line_layer, "Option", {"type": "Map"})
 
@@ -248,7 +254,7 @@ def make_rule(label_text, symbol_name, filter_expr):
         attrib["label"] = label_text
     attrib["symbol"] = symbol_name
     attrib["filter"] = filter_expr
-    attrib["key"] = guid()
+    attrib["key"] = guid(f"rule:{filter_expr}")
     return ET.Element("rule", attrib)
 
 
@@ -267,7 +273,7 @@ def build_qml(classed, water):
         "type": "RuleRenderer", "symbollevels": "0", "forceraster": "0",
         "referencescale": "-1", "enableorderby": "0",
     })
-    rules_root = ET.SubElement(renderer, "rules", {"key": guid()})
+    rules_root = ET.SubElement(renderer, "rules", {"key": guid("rules")})
     symbols_root = ET.SubElement(renderer, "symbols")
 
     unclassified_rgba = rgba_value(UNCLASSIFIED_HEX)
@@ -278,7 +284,7 @@ def build_qml(classed, water):
         label_text = f"{n} {lab}"
         filter_expr = f"\"lu_code\" = '{n}' AND \"water\" IS NULL"
         rules_root.append(make_rule(label_text, symbol_name, filter_expr))
-        symbols_root.append(make_symbol(symbol_name, [make_simplefill_layer(rgba_value(col))]))
+        symbols_root.append(make_symbol(symbol_name, [make_simplefill_layer(symbol_name, rgba_value(col))]))
 
     # Water rules: solid water-colour base, land-use colour as a hatch
     # overlay on top (looked up by expression, so this stays 12 rules
@@ -288,14 +294,14 @@ def build_qml(classed, water):
         symbol_name = f"water{idx}"
         rules_root.append(make_rule(value, symbol_name, water_filter(value)))
         symbols_root.append(make_symbol(symbol_name, [
-            make_simplefill_layer(rgba_value(col)),
+            make_simplefill_layer(symbol_name, rgba_value(col)),
             make_linepatternfill_layer(symbol_name, unclassified_rgba, hatch_expr),
         ]))
 
     # Catch-all for anything that doesn't match a classified rule, so the
     # renderer degrades visibly (neutral grey) rather than silently.
     rules_root.append(make_rule(None, "unclassified", "ELSE"))
-    symbols_root.append(make_symbol("unclassified", [make_simplefill_layer(unclassified_rgba)]))
+    symbols_root.append(make_symbol("unclassified", [make_simplefill_layer("unclassified", unclassified_rgba)]))
 
     ET.SubElement(qgis, "blendMode").text = "0"
     ET.SubElement(qgis, "featureBlendMode").text = "0"

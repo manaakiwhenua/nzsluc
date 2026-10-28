@@ -1,0 +1,195 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
+      }
+    },
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
+      }
+    },
+    {
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
+      }
+    },
+    {
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
+      }
+    },
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
+      }
+    },
+    {
+      "@id": "luc:built_environment.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:built_environment.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.3.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:built_environment.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:built_environment.ttl"
+        },
+        {
+          "@id": "luc:built_environment.jsonld"
+        },
+        {
+          "@id": "luc:built_environment.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:built_environment.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:built_environment",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:built_environment.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "luc:utilities"
+        },
+        {
+          "@id": "luc:waste_treatment_disposal"
+        },
+        {
+          "@id": "luc:commercial"
+        },
+        {
+          "@id": "luc:manufacturing_industrial"
+        },
+        {
+          "@id": "luc:vacant_transitioning_land_urban"
+        },
+        {
+          "@id": "luc:residential"
+        },
+        {
+          "@id": "luc:public_recreation_services"
+        },
+        {
+          "@id": "luc:transport"
+        },
+        {
+          "@id": "luc:mining"
+        }
+      ],
+      "skos:notation": "3.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Built environment"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character."
+      },
+      "skos:topConceptOf": {
+        "@id": "lus:nzlum0.4.0"
+      }
+    }
+  ]
+}

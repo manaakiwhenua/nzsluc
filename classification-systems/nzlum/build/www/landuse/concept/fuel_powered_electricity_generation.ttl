@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:fuel_powered_electricity_generation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:fuel_powered_electricity_generation.jsonld,
+        luc:fuel_powered_electricity_generation.rdf,
+        luc:fuel_powered_electricity_generation.ttl .
+
+luc:fuel_powered_electricity_generation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:fuel_powered_electricity_generation .
+
+luc:fuel_powered_electricity_generation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:fuel_powered_electricity_generation .
+
+luc:fuel_powered_electricity_generation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:fuel_powered_electricity_generation .
+
+luc:utilities skos:notation "3.5.0" ;
+    skos:prefLabel "Utilities"@en .
+
+luc:fuel_powered_electricity_generation a skos:Concept ;
+    skos:broader luc:utilities ;
+    skos:definition "Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.5.1" ;
+    skos:prefLabel "Fuel powered electricity generation"@en ;
+    foaf:isPrimaryTopicOf luc:fuel_powered_electricity_generation.html .
+

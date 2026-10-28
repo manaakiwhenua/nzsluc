@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:high_density_residential.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:high_density_residential.jsonld,
+        luc:high_density_residential.rdf,
+        luc:high_density_residential.ttl .
+
+luc:high_density_residential.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:high_density_residential .
+
+luc:high_density_residential.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:high_density_residential .
+
+luc:high_density_residential.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:high_density_residential .
+
+luc:residential skos:notation "3.1.0" ;
+    skos:prefLabel "Residential"@en .
+
+luc:high_density_residential a skos:Concept ;
+    skos:broader luc:residential ;
+    skos:definition "Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.1.1" ;
+    skos:prefLabel "High-density residential"@en ;
+    foaf:isPrimaryTopicOf luc:high_density_residential.html ;
+    lu:colour "#4C3B39" .
+

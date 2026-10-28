@@ -16,8 +16,9 @@
 > make mdx-all
 > make html-all
 > make pdf-all
-> make all              # everything above, for VERSION
-> make all-versions      # everything above, for every version in VERSIONS
+> make www               # dereferenceable Linked Data documents, all versions at once
+> make all              # everything above except www, for VERSION
+> make all-versions      # everything above, for every version in VERSIONS, then www
 > ```
 >
 > `make validate` runs the SPARQL sanity checks in `validation/*.rq` (e.g. concepts missing a `skos:notation` or `skos:prefLabel`, `skos:broader`/`skos:narrower` inconsistencies, and tertiary-level classes that share the same `lu:colour`) against the built vocabulary.
@@ -79,6 +80,36 @@ An overview of the class hierarchy is available:
 - As a table with definitions, in HTML: [nzlum_v0.4.0.html](build/0.4.0/nzlum_v0.4.0.html)
 - As a table with definitions, in PDF: [nzlum_v0.4.0.pdf](build/0.4.0/nzlum_v0.4.0.pdf)
 - As RDF: [nzlum.ttl](build/0.4.0/nzlum-0.4.0.ttl)
+- As dereferenceable Linked Data documents (HTML, Turtle, JSON-LD, RDF/XML per URI): `build/www/landuse/` (see below)
+
+## Linked Data publication
+
+Every URI minted under `https://nzlum.landcareresearch.co.nz/landuse/` is intended to resolve. `make www` runs [`scripts/export_www.py`](scripts/export_www.py), which writes, for each resource, four sibling documents under `build/www/landuse/` mirroring the URI path:
+
+| Request | File served | Content |
+| --- | --- | --- |
+| `…/landuse/concept/conservation` | `concept/conservation.html` | human-readable landing page, with embedded JSON-LD and `<link rel="alternate">` to the RDF |
+| `…/landuse/concept/conservation.ttl` | `concept/conservation.ttl` | Turtle |
+| `…/landuse/concept/conservation.jsonld` | `concept/conservation.jsonld` | JSON-LD |
+| `…/landuse/concept/conservation.rdf` | `concept/conservation.rdf` | RDF/XML |
+| `…/landuse/scheme/nzlum0.4.0.ttl` | `scheme/nzlum0.4.0.ttl` | the *complete* vocabulary as published in that version |
+| `…/landuse/` | `index.html` | index of everything in the namespace; `all.ttl` etc. hold the whole served graph |
+| `…/landuse/code/nzlum0.4.0/2.8.2` | `code/nzlum0.4.0/2.8.2.html` | lookup of a code *within a version*; redirects to the concept URI |
+| `…/landuse/code/nzlum0.4.0/` | `code/nzlum0.4.0/index.html` | code table for that version |
+
+To publish, copy `build/www/landuse` into the `public/` folder of the [nzlum-site](https://github.com/manaakiwhenua/nzlum-site) repository (so that it becomes `public/landuse`). GitHub Pages serves `foo.html` for a request to `/foo` without a redirect, so each URI resolves to its own landing page. The layout deliberately uses flat `name.html` files rather than `name/index.html`, because the latter would make GitHub Pages redirect the URI to a trailing-slash form.
+
+Known limitations of this static publication:
+
+- GitHub Pages cannot do HTTP content negotiation. A client that sends `Accept: text/turtle` to the bare URI still receives HTML; it must follow the `<link rel="alternate">` (or `foaf:isPrimaryTopicOf` / `dct:hasFormat` statements in the RDF) or append the extension. Proper negotiation, with `303` redirects and `Vary: Accept`, needs an edge layer (e.g. a Cloudflare Worker in front of the site) or a different host; the file layout here is designed so such a layer only has to rewrite the path.
+- After the first deployment, check that GitHub Pages serves `.ttl` as `text/turtle` and that extension-less requests for names containing dots (e.g. `scheme/nzlum0.4.0`, `code/nzlum0.4.0/2.8.2`) resolve.
+
+### URI versioning policy
+
+- **Concept URIs are not versioned.** `luc:conservation` names the idea; the scheme versions (`lus:nzlum0.3.0`, `lus:nzlum0.4.0`, …) name snapshots of how the concepts were arranged, coded and worded. This follows usual SKOS practice.
+- The description served at a concept URI is taken from the **latest version that contains it**. The concept is stated to be `skos:inScheme` every version that includes it, and its landing page tabulates its code, label and site page in each version, flagging where they differ.
+- A concept that is **dropped** in a later version is served from the last version that contained it, with `owl:deprecated true` and a `skos:historyNote` added by the exporter. When the meaning of a concept genuinely changes, mint a new concept and link the old one with `dct:isReplacedBy` rather than redefining the existing URI.
+- **Codes (`skos:notation`) are not stable identifiers.** Between 0.3.0 and 0.4.0 eleven codes were reassigned to different concepts. A code is only meaningful together with its version, which is why data records carry `lu_version` and why the versioned code lookup exists.
 
 ## Data structure
 
@@ -90,6 +121,7 @@ This section specifies the proposed data structure for the attribution of land-u
 | lu_code_secondary | integer | `2` | Numerical land use code (primary use) at the secondary level |
 | lu_code_tertiary | integer | `3` | Numerical land use code (primary use) at the tertiary level |
 | lu_code | string | `1.2.3` | Complete land use code (primary use) |
+| lu_version | string | `0.4.0` | NZLUM version against which the record was classified. Required: codes are reassigned between versions, so `lu_code` is ambiguous without it. Resolve a code via `https://nzlum.landcareresearch.co.nz/landuse/code/nzlum{lu_version}/{lu_code}` |
 | lu_description | string | `Natural Heritage` | Land use class label (primary use) |
 | lu_code_ancillary | (sorted set of) string | `2.2.0,3.2.1` | Land use code (ancillary uses), multiple uses are to be specified with comma separation with optional whitespace characters |
 | commod | (sorted set of) string | `cattle dairy` | Commodity type; multiple commodities are to be specified with comma separation with optional whitespace characters |

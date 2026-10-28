@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:landfills skos:notation "3.8.1" ;
+    skos:prefLabel "Landfills"@en .
+
+luc:municipal_wastewater skos:notation "3.8.3" ;
+    skos:prefLabel "Municipal wastewater"@en .
+
+luc:stormwater_management skos:notation "3.8.5" ;
+    skos:prefLabel "Stormwater management"@en .
+
+luc:transfer_stations_recycling skos:notation "3.8.2" ;
+    skos:prefLabel "Transfer stations and recycling facilities"@en .
+
+luc:waste_treatment_disposal.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:waste_treatment_disposal.jsonld,
+        luc:waste_treatment_disposal.rdf,
+        luc:waste_treatment_disposal.ttl .
+
+luc:waste_treatment_disposal.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:waste_treatment_disposal .
+
+luc:waste_treatment_disposal.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:waste_treatment_disposal .
+
+luc:waste_treatment_disposal.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:waste_treatment_disposal .
+
+luc:wastewater_treatment_land_application skos:notation "3.8.4" ;
+    skos:prefLabel "Wastewater treatment – land application"@en .
+
+luc:waste_treatment_disposal a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:landfills,
+        luc:municipal_wastewater,
+        luc:stormwater_management,
+        luc:transfer_stations_recycling,
+        luc:wastewater_treatment_land_application ;
+    skos:notation "3.8.0" ;
+    skos:prefLabel "Waste treatment and disposal"@en ;
+    foaf:isPrimaryTopicOf luc:waste_treatment_disposal.html ;
+    lu:colour "#E77148" .
+

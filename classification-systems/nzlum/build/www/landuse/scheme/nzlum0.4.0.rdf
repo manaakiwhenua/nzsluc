@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:doap="http://usefulinc.com/ns/doap#"
+  xmlns:adms="http://www.w3.org/ns/adms#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:DatatypeProperty rdf:about="https://nzlum.landcareresearch.co.nz/landuse/colour">
+    <rdfs:label xml:lang="en">colour</rdfs:label>
+    <rdfs:comment xml:lang="en">Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. "#7F6DF2"). Optional; absence means no colour has been assigned.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <rdfs:Resource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft">
+    <rdfs:label xml:lang="en">Draft</rdfs:label>
+  </rdfs:Resource>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/hydroelectricity_generation">
+    <skos:definition xml:lang="en">Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity.</skos:definition>
+    <skos:scopeNote xml:lang="en">Includes canals and other water conveyance infrastructure associated with hydroelectricity generation.</skos:scopeNote>
+    <skos:notation>3.5.2</skos:notation>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
+        <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+        <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <adms:status rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/published"/>
+        <dcterms:replaces rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-02-13</dcterms:issued>
+        <owl:versionInfo>0.4.0</owl:versionInfo>
+        <dcterms:isVersionOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.html"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en">Hydroelectricity generation</skos:prefLabel>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/electricity_substations_transmission"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_extraction_transmission"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/solar_electricity_generation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wind_electricity_generation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/hydroelectricity_generation"/>
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
+        <skos:changeNote xml:lang="en">Class 3.5.0 redefined at v0.4.0 to include naviation and communciation infrastructure, which was formerly captured under class 3.6.0.</skos:changeNote>
+        <skos:notation>3.5.0</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <lu:colour>#F8ADFA</lu:colour>
+        <skos:definition xml:lang="en">Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure.</skos:definition>
+        <skos:prefLabel xml:lang="en">Utilities</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land_ag">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
+        <skos:notation>2.8.1</skos:notation>
+        <skos:definition xml:lang="en">Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.</skos:definition>
+        <skos:changeNote>Changed notation at v0.4.0</skos:changeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/degraded_land_ag">
+        <skos:definition xml:lang="en">Unused land that is degraded through erosion or flood events that is not being rehabilitated.</skos:definition>
+        <skos:notation>2.8.3</skos:notation>
+        <skos:usageNote xml:lang="en">Can include contaminated land.</skos:usageNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:prefLabel xml:lang="en">Degraded land</skos:prefLabel>
+        <skos:changeNote xml:lang="en">Changed notation at v0.4.0</skos:changeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/no_defined_use_ag">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:notation>2.8.4</skos:notation>
+        <skos:changeNote xml:lang="en">Changed notation at v0.4.0</skos:changeNote>
+        <skos:definition xml:lang="en">Land cleared of vegetation where the current proposed land use is unknown.</skos:definition>
+        <skos:example xml:lang="en">Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown.</skos:example>
+        <skos:prefLabel xml:lang="en">No defined use</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abandoned_land_ag">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:notation>2.8.2</skos:notation>
+        <skos:definition xml:lang="en">Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.</skos:definition>
+        <skos:changeNote xml:lang="en">Changed notation at v0.4.0</skos:changeNote>
+        <skos:prefLabel xml:lang="en">Abandoned land</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+        <skos:definition xml:lang="en">Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.</skos:definition>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/smallholder_farm"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:scopeNote xml:lang="en">If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.</skos:scopeNote>
+        <skos:usageNote xml:lang="en">Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.</skos:usageNote>
+        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.0.0</skos:notation>
+      </skos:Concept>
+    </skos:broader>
+    <lu:colour>#BCBFE1</lu:colour>
+    <skos:scopeNote xml:lang="en">In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+    <skos:changeNote xml:lang="en">Preferred label changed from 'Land in transition' at v0.4.0</skos:changeNote>
+    <skos:notation>2.8.0</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_native_vegetation">
+    <skos:usageNote xml:lang="en">This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>1.3.3</skos:notation>
+    <skos:definition xml:lang="en">Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred.</skos:definition>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural">
+        <skos:definition xml:lang="en">This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land).</skos:definition>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_from_indigenous_vegetation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/surface_water_supply"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/ground_water"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/environmental_infrastructure_protection"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_native_vegetation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/customary_use"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/defence_land_natural_areas"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained"/>
+        <skos:notation>1.3.0</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <skos:prefLabel xml:lang="en">Minimal use from relatively natural environments</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1.</skos:scopeNote>
+        <lu:colour>#FFC77A</lu:colour>
+      </skos:Concept>
+    </skos:broader>
+    <skos:prefLabel xml:lang="en">Grazing native vegetation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings">
+    <skos:prefLabel xml:lang="en">Tailings</skos:prefLabel>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining">
+        <skos:usageNote xml:lang="en">Record the specific type of mining activitiy in the commodity attribute, if known.</skos:usageNote>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extractive_industry_not_in_use"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mines"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/evaporation_basins"/>
+        <skos:prefLabel xml:lang="en">Mining</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:notation>3.7.0</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <lu:colour>#E1CEA7</lu:colour>
+        <skos:definition xml:lang="en">Mining and extractive industries (including salt extraction from evaporation basins).</skos:definition>
+      </skos:Concept>
+    </skos:broader>
+    <skos:definition xml:lang="en">Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output).</skos:definition>
+    <skos:notation>3.7.3</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail">
+        <skos:notation>3.3.1</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:example xml:lang="en">Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.</skos:example>
+        <skos:prefLabel xml:lang="en">Retail</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:definition xml:lang="en">Areas used for the sale of goods and services directly to consumers.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">Land and buildings primarily used for administrative, professional, or managerial activities.</skos:definition>
+        <skos:prefLabel xml:lang="en">Office</skos:prefLabel>
+        <skos:example xml:lang="en">Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.</skos:example>
+        <skos:notation>3.3.2</skos:notation>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/healthcare">
+        <skos:notation>3.3.5</skos:notation>
+        <skos:example xml:lang="en">Hospitals, specialist clinics, physiotherapists, medical offices, laboratories</skos:example>
+        <skos:prefLabel xml:lang="en">Healthcare</skos:prefLabel>
+        <skos:definition xml:lang="en">Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/hospitality">
+        <skos:example xml:lang="en">Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.</skos:example>
+        <skos:prefLabel xml:lang="en">Hospitality</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:notation>3.3.3</skos:notation>
+        <skos:definition xml:lang="en">Land and buildings providing accommodation, food, and beverage services to the public.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transportation_warehousing_commercial">
+        <skos:scopeNote xml:lang="en">Excludes airports, ports, roads, and train stations (captured under 3.6.0)</skos:scopeNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:prefLabel xml:lang="en">Transportation &amp; warehousing</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>3.3.6</skos:notation>
+        <skos:definition xml:lang="en">Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/entertainment">
+        <skos:prefLabel xml:lang="en">Entertainment</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:definition xml:lang="en">Land areas and facilities offering leisure and recreational activities for public enjoyment.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:example xml:lang="en">Cinemas, theatres, amusement parks, casinos, concert venues.</skos:example>
+        <skos:notation>3.3.4</skos:notation>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:definition xml:lang="en">Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.</skos:definition>
+    <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+        <skos:notation>3.0.0</skos:notation>
+        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:scopeNote xml:lang="en">Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+        <skos:definition xml:lang="en">Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:broader>
+    <lu:colour>#B8C2CE</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:usageNote xml:lang="en">Central government offices when these are privately rented should be captured in this category, even if they are public-facing.</skos:usageNote>
+    <skos:notation>3.3.0</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+    <skos:prefLabel xml:lang="en">Fuel powered electricity generation</skos:prefLabel>
+    <skos:notation>3.5.1</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential">
+    <lu:colour>#A87A76</lu:colour>
+    <skos:scopeNote xml:lang="en">Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">Rural residential</skos:prefLabel>
+    <skos:usageNote xml:lang="en">Properties in this size interval and without a dwelling could be in transition to residential.</skos:usageNote>
+    <skos:usageNote xml:lang="en">As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.</skos:usageNote>
+    <skos:definition xml:lang="en">Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.</skos:definition>
+    <skos:notation>3.1.4</skos:notation>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/residential">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/medium_density_residential"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/low_density_residential"/>
+        <skos:definition xml:lang="en">Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <lu:colour>#815E5B</lu:colour>
+        <skos:prefLabel xml:lang="en">Residential</skos:prefLabel>
+        <skos:notation>3.1.0</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:usageNote xml:lang="en">Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.</skos:usageNote>
+        <skos:scopeNote xml:lang="en">The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’</skos:scopeNote>
+      </skos:Concept>
+    </skos:broader>
+    <skos:historyNote xml:lang="en">In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use.</skos:historyNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock">
+    <skos:scopeNote xml:lang="en">Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Arable or winter forage crops are unlikely to be common rotations in this land-use category</skos:scopeNote>
+    <skos:definition xml:lang="en">Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.</skos:definition>
+    <skos:notation>2.2.3</skos:notation>
+    <skos:prefLabel xml:lang="en">Extensive dry stock</skos:prefLabel>
+    <lu:colour>#ABA248</lu:colour>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
+        <lu:colour>#357735</lu:colour>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_dry_stock"/>
+        <skos:scopeNote xml:lang="en">Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.</skos:scopeNote>
+        <skos:usageNote xml:lang="en">The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.</skos:usageNote>
+        <skos:definition xml:lang="en">Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.</skos:definition>
+        <skos:notation>2.2.0</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape">
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape.</dcterms:source>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/other_conserved_area"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
+        <skos:notation>1.1.0</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <skos:definition xml:lang="en">Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ).</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+      </skos:Concept>
+    </skos:broader>
+    <skos:prefLabel xml:lang="en">Protected landscape</skos:prefLabel>
+    <lu:colour>#E9E8F2</lu:colour>
+    <skos:notation>1.1.6</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
+    <skos:scopeNote xml:lang="en">Does not per se include land undergoing natural succession in the context of changing plant species.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Corridors and roadside areas may fit under this class.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included.</skos:scopeNote>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land">
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+        <skos:example xml:lang="en">CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use.</skos:example>
+        <skos:example xml:lang="en">A vacant farm, apparently undergoing natural succession.</skos:example>
+        <skos:prefLabel xml:lang="en">Unused land</skos:prefLabel>
+        <skos:notation>1.4.2</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+        <skos:definition xml:lang="en">Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state.</skos:definition>
+        <skos:scopeNote xml:lang="en">This may include riparian plantings.</skos:scopeNote>
+        <skos:notation>1.4.1</skos:notation>
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+        <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
+    <skos:notation>1.4.0</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
+        <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+        <skos:usageNote xml:lang="en">Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.</skos:usageNote>
+        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>1.0.0</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).</skos:definition>
+        <skos:scopeNote xml:lang="en">Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.</skos:scopeNote>
+      </skos:Concept>
+    </skos:broader>
+    <lu:colour>#C8C69F</lu:colour>
+    <skos:definition xml:lang="en">Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</dcterms:source>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <lu:colour>#7C76B6</lu:colour>
+    <skos:definition xml:lang="en">Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
+
+  a) protect the ecological integrity of one or more ecosystems for the current and future generations;
+
+  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and
+
+  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.</skos:definition>
+    <skos:prefLabel xml:lang="en">National Park</skos:prefLabel>
+    <skos:notation>1.1.3</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/electricity_substations_transmission">
+    <skos:example xml:lang="en">Substations, transformers, high-voltage transmission towers.</skos:example>
+    <skos:definition xml:lang="en">Facilities and infrastructure associated with distribution and transmission of electrical power.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+    <skos:prefLabel xml:lang="en">Electricity substations and transmission</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.5.5</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture">
+    <skos:scopeNote xml:lang="en">May include livestock rotations, but this is considered less likely</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">Short-rotation horticulture</skos:prefLabel>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.3.3</skos:notation>
+    <skos:definition xml:lang="en">Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption.</skos:definition>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
+        <skos:scopeNote xml:lang="en">This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years.</skos:scopeNote>
+        <skos:notation>2.3.0</skos:notation>
+        <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_mixed_livestock_cropping"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
+        <skos:definition xml:lang="en">This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.</skos:definition>
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/65"/>
+        <skos:changeNote xml:lang="en">The explicit five year periodicity was added in v0.4.0.</skos:changeNote>
+        <lu:colour>#7F7F54</lu:colour>
+        <skos:usageNote xml:lang="en">If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).</skos:usageNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management">
+    <skos:notation>3.8.5</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/municipal_wastewater"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transfer_stations_recycling"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills"/>
+        <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
+        <skos:notation>3.8.0</skos:notation>
+        <skos:definition xml:lang="en">Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <lu:colour>#E77148</lu:colour>
+      </skos:Concept>
+    </skos:broader>
+    <skos:example xml:lang="en">Detention basins, drainage systems, retention ponds, rain gardens, wetlands.</skos:example>
+    <skos:prefLabel xml:lang="en">Stormwater management</skos:prefLabel>
+    <skos:definition xml:lang="en">Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Navigation and communication infrastructure.</skos:definition>
+    <skos:example xml:lang="en">Radar stations, beacons, lighthouses, TV and radio transmission towers.</skos:example>
+    <skos:changeNote xml:lang="en">Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.</skos:changeNote>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+    <skos:notation>3.5.8</skos:notation>
+    <skos:prefLabel xml:lang="en">Navigation and communication</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/horse_studs">
+    <skos:definition xml:lang="en">Establishments focused on the breeding and raising of horses.</skos:definition>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_containment"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/piggeries"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/horse_studs"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture"/>
+        <skos:notation>2.6.0</skos:notation>
+        <skos:definition xml:lang="en">Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
+        <lu:colour>#BFA798</lu:colour>
+        <skos:usageNote xml:lang="en">The management field can be used to record practices such as free range or organic.</skos:usageNote>
+        <skos:usageNote xml:lang="en">Record animal types as commodities, if known.</skos:usageNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:prefLabel xml:lang="en">Horse studs</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.6.4</skos:notation>
+    <skos:usageNote xml:lang="en">Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included.</skos:usageNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes">
+    <skos:definition xml:lang="en">Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports).</skos:definition>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/roads"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes"/>
+        <skos:definition xml:lang="en">Land allocated to infrastructure used for the transportation of goods or people.</skos:definition>
+        <skos:usageNote xml:lang="en">Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</skos:usageNote>
+        <lu:colour>#72737E</lu:colour>
+        <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
+        <skos:changeNote xml:lang="en">Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'.</skos:changeNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>3.6.0</skos:notation>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.6.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Airports/aerodromes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/planted_environmental_infrastructure_protection">
+        <skos:definition xml:lang="en">An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted.</skos:definition>
+        <skos:prefLabel xml:lang="en">Planted environmental &amp; infrastructure protection</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:notation>2.1.4</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_production_plantations">
+        <skos:notation>2.1.3</skos:notation>
+        <skos:definition xml:lang="en">An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations.</skos:definition>
+        <skos:prefLabel xml:lang="en">Other production uses</skos:prefLabel>
+        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_plantation_forestry">
+        <skos:changeNote xml:lang="en">Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</skos:changeNote>
+        <skos:prefLabel xml:lang="en">Indigenous plantation forestry</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:usageNote xml:lang="en">Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</skos:usageNote>
+        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+        <skos:definition xml:lang="en">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species).</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.1.2</skos:notation>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry">
+        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+        <skos:usageNote xml:lang="en">Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</skos:usageNote>
+        <skos:definition xml:lang="en">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).</skos:definition>
+        <skos:notation>2.1.1</skos:notation>
+        <skos:prefLabel xml:lang="en">Exotic plantation forestry</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:changeNote xml:lang="en">Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</skos:changeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <lu:colour>#122112</lu:colour>
+    <skos:notation>2.1.0</skos:notation>
+    <skos:definition xml:lang="en">Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry.</skos:definition>
+    <skos:scopeNote xml:lang="en">This includes farm forestry and may consist of monocultures or mixed species.</skos:scopeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+    <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/customary_use">
+    <skos:prefLabel xml:lang="en">Customary use</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai).</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:scopeNote xml:lang="en">This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.</skos:scopeNote>
+    <skos:notation>1.3.5</skos:notation>
+    <skos:usageNote xml:lang="en">This is often an ancillary use; assign only if customary use is the prime use of the land.</skos:usageNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/outdoor_recreation">
+    <skos:scopeNote xml:lang="en">The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.</skos:scopeNote>
+    <lu:colour>#C19878</lu:colour>
+    <skos:example xml:lang="en">Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves.</skos:example>
+    <skos:notation>3.2.1</skos:notation>
+    <skos:definition xml:lang="en">Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas.</skos:definition>
+    <skos:prefLabel xml:lang="en">Outdoor recreation</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/outdoor_recreation"/>
+        <lu:colour>#C19878</lu:colour>
+        <skos:definition xml:lang="en">Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:prefLabel xml:lang="en">Public recreation and services</skos:prefLabel>
+        <skos:notation>3.2.0</skos:notation>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping">
+    <skos:notation>2.3.1</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</skos:definition>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops">
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
+        <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
+        <skos:usageNote xml:lang="en">Management practices such as irrigation or netting can be recorded as management practices.</skos:usageNote>
+        <skos:usageNote xml:lang="en">Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).</skos:usageNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vine_fruits"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/other_perennial_horticulture"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+        <skos:notation>2.4.0</skos:notation>
+        <lu:colour>#A4A898</lu:colour>
+        <skos:definition xml:lang="en">Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.</skos:definition>
+      </skos:Concept>
+    </skos:broader>
+    <skos:definition xml:lang="en">Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.</skos:definition>
+    <skos:notation>2.4.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Tree crops</skos:prefLabel>
+    <skos:usageNote xml:lang="en">Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.</skos:usageNote>
+    <skos:usageNote xml:lang="en">Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transfer_stations_recycling">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <skos:prefLabel xml:lang="en">Transfer stations and recycling facilities</skos:prefLabel>
+    <skos:notation>3.8.2</skos:notation>
+    <skos:definition xml:lang="en">Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation">
+    <skos:notation>3.2.2</skos:notation>
+    <lu:colour>#958273</lu:colour>
+    <skos:definition xml:lang="en">Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
+    <skos:prefLabel xml:lang="en">Indoor recreation</skos:prefLabel>
+    <skos:example xml:lang="en">Sports centres, gyms, swimming pools, indoor arenas.</skos:example>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services">
+    <skos:definition xml:lang="en">Land used for providing essential services and facilities to support the local community.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
+    <skos:prefLabel xml:lang="en">Community services</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.2.3</skos:notation>
+    <skos:example xml:lang="en">Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.</skos:example>
+    <lu:colour>#E09962</lu:colour>
+  </skos:Concept>
+  <skos:ConceptScheme rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+    <dcterms:isReplacedBy rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <owl:versionInfo>0.3.0</owl:versionInfo>
+    <dcterms:isVersionOf>
+      <skos:ConceptScheme rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum">
+        <dcterms:title xml:lang="en">New Zealand Land Use and Management classification system</dcterms:title>
+        <foaf:homepage rdf:resource="https://nzlum.landcareresearch.co.nz/"/>
+        <doap:repository>
+          <doap:GitRepository rdf:nodeID="n88814eaac34f4758a5123f8902819d4bb1">
+            <doap:browse rdf:resource="https://github.com/manaakiwhenua/nzsluc"/>
+          </doap:GitRepository>
+        </doap:repository>
+        <dcterms:relation rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
+        <dcterms:hasVersion rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <dcterms:hasVersion rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+      </skos:ConceptScheme>
+    </dcterms:isVersionOf>
+    <adms:status>
+      <rdfs:Resource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/superseded">
+        <rdfs:label xml:lang="en">Superseded</rdfs:label>
+      </rdfs:Resource>
+    </adms:status>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-30</dcterms:issued>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res">
+    <lu:colour>#5E3A98</lu:colour>
+    <skos:prefLabel xml:lang="en">Strict nature reserve</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <skos:notation>1.1.1</skos:notation>
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve.</dcterms:source>
+    <skos:definition xml:lang="en">Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_conserved_area">
+    <skos:notation>1.1.7</skos:notation>
+    <lu:colour>#FCFBFD</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <skos:prefLabel xml:lang="en">Other conserved area</skos:prefLabel>
+    <skos:scopeNote>If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/general_purpose_factory">
+    <skos:definition xml:lang="en">An area used for manufacturing, assembly, or repairs of various products.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.4.1</skos:notation>
+    <skos:prefLabel xml:lang="en">General purpose factory</skos:prefLabel>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/food_processing_factory"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/abattoirs"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/general_purpose_factory"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/major_industrial_complex"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
+        <lu:colour>#D0D2DF</lu:colour>
+        <skos:definition xml:lang="en">Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
+        <skos:notation>3.4.0</skos:notation>
+      </skos:Concept>
+    </skos:broader>
+    <skos:scopeNote xml:lang="en">Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill">
+    <skos:prefLabel xml:lang="en">Sawmill</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.4.4</skos:notation>
+    <skos:definition xml:lang="en">An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture">
+    <skos:definition xml:lang="en">Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:prefLabel xml:lang="en">Aquaculture</skos:prefLabel>
+    <skos:notation>2.6.5</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy">
+    <skos:definition xml:lang="en">Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
+    <skos:scopeNote xml:lang="en">Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.</skos:scopeNote>
+    <lu:colour>#8D7735</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.2.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Dairy</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/greenfield_development">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Greenfield development</skos:prefLabel>
+    <skos:notation>3.9.2</skos:notation>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban">
+        <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
+        <lu:colour>#D69B97</lu:colour>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/greenfield_development"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/brownfield_development"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.</skos:definition>
+        <skos:notation>3.9.0</skos:notation>
+      </skos:Concept>
+    </skos:broader>
+    <skos:definition xml:lang="en">Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/environmental_infrastructure_protection">
+    <skos:scopeNote xml:lang="en">Land planted for environmental and infrastructure protection should be captured under 2.1.4.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">This is not limited to indigenous vegetation.</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">Environmental &amp; infrastructure protection</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways).</skos:definition>
+    <skos:notation>1.3.7</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vine_fruits">
+    <skos:notation>2.4.2</skos:notation>
+    <skos:definition xml:lang="en">Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants.</skos:definition>
+    <skos:prefLabel xml:lang="en">Vine fruits</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/major_industrial_complex">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+    <skos:example xml:lang="en">Car plant, paper mill.</skos:example>
+    <skos:prefLabel xml:lang="en">Major industrial complex</skos:prefLabel>
+    <skos:definition xml:lang="en">An area with large-scale industrial use and significant infrastructure .</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.4.3</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses">
+        <skos:prefLabel xml:lang="en">Glasshouses/shadehouses</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:scopeNote xml:lang="en">Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.</skos:scopeNote>
+        <skos:definition xml:lang="en">Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production.</skos:definition>
+        <skos:notation>2.5.2</skos:notation>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.5.1</skos:notation>
+        <skos:prefLabel xml:lang="en">Production nurseries</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
+        <skos:scopeNote xml:lang="en">Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.</skos:scopeNote>
+        <skos:definition xml:lang="en">Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:definition xml:lang="en">Intensive forms of plant production, often with special-purpose improvements used for horticultural production.</skos:definition>
+    <skos:usageNote xml:lang="en">Record management practices such as hydroponic systems, irrigation, and netting, if known.</skos:usageNote>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+    <lu:colour>#4A4C39</lu:colour>
+    <skos:notation>2.5.0</skos:notation>
+    <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_heritage">
+    <skos:definition xml:lang="en">Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks).</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Cultural heritage</skos:prefLabel>
+    <skos:notation>1.2.2</skos:notation>
+    <skos:broader>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage">
+        <skos:definition xml:lang="en">Conservation classes are for purposes other than biodiversity protecton.</skos:definition>
+        <skos:prefLabel xml:lang="en">Cultural and natural heritage</skos:prefLabel>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_heritage"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_cultural_heritage"/>
+        <skos:notation>1.2.0</skos:notation>
+        <lu:colour>#A00019</lu:colour>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/solar_electricity_generation">
+    <skos:prefLabel xml:lang="en">Solar electricity generation</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.5.4</skos:notation>
+    <skos:definition xml:lang="en">Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
+    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/effluent_pond">
+        <skos:prefLabel xml:lang="en">Effluent pond</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.7.2</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:definition xml:lang="en">Effluent ponds typically associated with dairying.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_land_application">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:scopeNote xml:lang="en">probably an ancillary use where some form of grazing is the primary use.</skos:scopeNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:notation>2.7.3</skos:notation>
+        <skos:definition xml:lang="en">Land used for effluent disposal</skos:definition>
+        <skos:prefLabel xml:lang="en">Water treatment – land application</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stock_water">
+        <skos:prefLabel xml:lang="en">Stock water</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.7.1</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:definition xml:lang="en">Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/irrigation_reservoirs_canals">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:prefLabel xml:lang="en">Irrigation reservoirs and canals</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:notation>2.7.5</skos:notation>
+        <skos:definition xml:lang="en">Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:notation>2.7.4</skos:notation>
+        <skos:prefLabel xml:lang="en">Water treatment – wetland</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">Constructed or natural wetlands used to improve water quality prior to discharge.</skos:definition>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:notation>2.7.0</skos:notation>
+    <skos:definition xml:lang="en">Built water features associated with agricultural use.</skos:definition>
+    <lu:colour>#3B505B</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ground_water">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Ground water</skos:prefLabel>
+    <skos:notation>1.3.2</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:definition xml:lang="en">An area managed as an aquifer recharge zone.</skos:definition>
+  </skos:Concept>
+  <rdfs:Resource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/published">
+    <rdfs:label xml:lang="en">Published</rdfs:label>
+  </rdfs:Resource>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/smallholder_farm">
+    <skos:definition xml:lang="en">A rural property larger than a rural residential property (&gt; 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation.</skos:definition>
+    <skos:changeNote xml:lang="en">Added at v0.4.0 to capture the gap between 3.1.4 Rural residential (0.4–2 ha) and commercial pastoral classes (2.2.0).</skos:changeNote>
+    <skos:scopeNote xml:lang="en">Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land.</skos:scopeNote>
+    <lu:colour>#E5D64F</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.9.0</skos:notation>
+    <skos:usageNote xml:lang="en">Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3.</skos:usageNote>
+    <skos:usageNote xml:lang="en">As a subclass of 2.0.0, commodities and management practices may still be recorded.</skos:usageNote>
+    <skos:prefLabel xml:lang="en">Smallholder farm</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+  </skos:Concept>
+  <foaf:Person rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao">
+    <foaf:name xml:lang="mi">Kīngi Tāwhiao</foaf:name>
+    <foaf:name xml:lang="mi">Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao</foaf:name>
+  </foaf:Person>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+    <skos:prefLabel xml:lang="en">Gas treatment, storage, and transmission</skos:prefLabel>
+    <skos:example xml:lang="en">Treatment plants, storage facilities, pipelines.</skos:example>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Facilities and infrastructure for processing, storage, and transport of natural gas.</skos:definition>
+    <skos:notation>3.5.6</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_dry_stock">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:usageNote xml:lang="en">Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent.</skos:usageNote>
+    <lu:colour>#357735</lu:colour>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/66"/>
+    <skos:changeNote xml:lang="en">A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive.</skos:changeNote>
+    <skos:scopeNote xml:lang="en">Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding.</skos:scopeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
+    <skos:notation>2.2.2</skos:notation>
+    <skos:definition xml:lang="en">Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain.</skos:definition>
+    <skos:prefLabel xml:lang="en">Intensive dry stock</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management">
+    <skos:definition xml:lang="en">Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land.</skos:definition>
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area.</dcterms:source>
+    <skos:prefLabel xml:lang="en">Habitat or species management area</skos:prefLabel>
+    <skos:notation>1.1.5</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <lu:colour>#C9CAE3</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abattoirs">
+    <skos:notation>3.4.6</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+    <skos:definition xml:lang="en">Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.</skos:definition>
+    <skos:prefLabel xml:lang="en">Abattoirs</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_mixed_livestock_cropping">
+    <skos:scopeNote xml:lang="en">Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known).</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.3.2</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <skos:prefLabel xml:lang="en">Arable and mixed livestock cropping</skos:prefLabel>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time..</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/municipal_wastewater">
+    <skos:prefLabel xml:lang="en">Municipal wastewater</skos:prefLabel>
+    <skos:definition xml:lang="en">Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <skos:notation>3.8.3</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/piggeries">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:prefLabel xml:lang="en">Piggeries</skos:prefLabel>
+    <skos:notation>2.6.3</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Facilities designed for the intensive rearing of pigs.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms">
+    <skos:notation>2.6.2</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:definition xml:lang="en">Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production.</skos:definition>
+    <skos:prefLabel xml:lang="en">Poultry farms</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure">
+    <skos:definition xml:lang="en">An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations.</skos:definition>
+    <skos:prefLabel xml:lang="en">Farm buildings/infrastructure</skos:prefLabel>
+    <skos:notation>3.4.5</skos:notation>
+    <skos:scopeNote xml:lang="en">If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential.</skos:scopeNote>
+    <skos:example xml:lang="en">Barns, silos, storage sheds, and irrigation systems.</skos:example>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mines">
+    <skos:prefLabel xml:lang="en">Mines</skos:prefLabel>
+    <skos:notation>3.7.1</skos:notation>
+    <skos:definition xml:lang="en">Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/evaporation_basins">
+    <skos:definition xml:lang="en">Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.7.4</skos:notation>
+    <skos:prefLabel xml:lang="en">Evaporation basins</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills">
+    <skos:scopeNote xml:lang="en">Landfill gas recovery systems are classified as part of a landfill land use.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Includes all class 1 to 5 landfills</skos:scopeNote>
+    <skos:definition xml:lang="en">Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.</skos:definition>
+    <skos:prefLabel xml:lang="en">Landfills</skos:prefLabel>
+    <skos:example>Landfills designed to receive inert construction materials.</skos:example>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <skos:notation>3.8.1</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways">
+    <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
+    <skos:notation>3.6.3</skos:notation>
+    <skos:definition xml:lang="en">Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extractive_industry_not_in_use">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Extractive industry not in use</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+    <skos:definition xml:lang="en">Land undergoing rehabilitation after mining activities, and unmined land within a mining permit.</skos:definition>
+    <skos:notation>3.7.5</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_from_indigenous_vegetation">
+    <skos:changeNote xml:lang="en">The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests.</skos:changeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:definition xml:lang="en">Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Production from indigenous vegetation</skos:prefLabel>
+    <skos:notation>1.3.4</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/roads">
+    <skos:notation>3.6.2</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
+    <skos:definition xml:lang="en">The full roading corridor, including sealed road areas and unsealed roadside strips.</skos:definition>
+    <skos:prefLabel xml:lang="en">Roads</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/brownfield_development">
+    <skos:definition xml:lang="en">Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities.</skos:definition>
+    <skos:prefLabel xml:lang="en">Brownfield development</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">May include residential areas undergoing infill development that increase housing density.</skos:scopeNote>
+    <skos:changeNote>Notation changed from 3.9.3 to 3.9.1 at v0.4.0</skos:changeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <skos:notation>3.9.1</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf">
+    <skos:scopeNote xml:lang="en">This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes.</skos:definition>
+    <skos:prefLabel xml:lang="en">Seasonal flowers and bulbs, and turf farming</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+    <skos:notation>2.3.4</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/medium_density_residential">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+    <skos:scopeNote xml:lang="en">Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.</skos:scopeNote>
+    <skos:example xml:lang="en">Townhouses, terraced housing, low-rise apartments.</skos:example>
+    <skos:notation>3.1.2</skos:notation>
+    <lu:colour>#644E4C</lu:colour>
+    <skos:prefLabel xml:lang="en">Medium-density residential</skos:prefLabel>
+    <skos:definition xml:lang="en">Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_extraction_transmission">
+    <skos:notation>3.5.7</skos:notation>
+    <skos:prefLabel xml:lang="en">Water extraction and transmission</skos:prefLabel>
+    <skos:definition xml:lang="en">Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:scopeNote xml:lang="en">Includes drinking water reservoirs.</skos:scopeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness">
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area.</dcterms:source>
+    <skos:prefLabel xml:lang="en">Wilderness area</skos:prefLabel>
+    <lu:colour>#3F007D</lu:colour>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <skos:notation>1.1.2</skos:notation>
+    <skos:definition xml:lang="en">Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indigenous_cultural_heritage">
+    <skos:prefLabel xml:lang="en">Indigenous cultural heritage</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>1.2.1</skos:notation>
+    <skos:definition xml:lang="en">Indigenous cultural heritage sites and areas (e.g. historical pā sites, New Zealand land wars sites, and other indigenous heritage sites).</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks).</skos:definition>
+    <skos:notation>1.2.3</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+    <skos:prefLabel xml:lang="en">Natural heritage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land">
+    <skos:prefLabel xml:lang="en">Idle and derelict land</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <skos:notation>3.9.3</skos:notation>
+    <skos:definition xml:lang="en">Derelict land and developed land that is idle.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:changeNote>Notation changed from 3.9.1 to 3.9.3 at v0.4.0</skos:changeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Retained (non-planted) indigenous vegetation set aside for carbon credits.</skos:definition>
+    <skos:notation>1.3.8</skos:notation>
+    <skos:prefLabel xml:lang="en">Carbon forest</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport">
+    <skos:example xml:lang="en">Ports, docks, and wharves.</skos:example>
+    <skos:example xml:lang="en">Harbours, navigational channels.</skos:example>
+    <skos:definition xml:lang="en">Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port.</skos:definition>
+    <skos:prefLabel xml:lang="en">Ports and water transport</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
+    <skos:usageNote xml:lang="en">The water attribute can be used to differentiate the terrestrial and marine parts of the same facility.</skos:usageNote>
+    <skos:notation>3.6.4</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries">
+    <skos:definition xml:lang="en">Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Quarries</skos:prefLabel>
+    <skos:notation>3.7.2</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/surface_water_supply">
+    <skos:notation>1.3.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Surface water supply</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:definition xml:lang="en">An area managed as a catchment for water supply.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+    <skos:notation>3.1.1</skos:notation>
+    <skos:definition xml:lang="en">Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">High-density residential</skos:prefLabel>
+    <lu:colour>#4C3B39</lu:colour>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wind_electricity_generation">
+    <skos:definition xml:lang="en">Power generation from wind, including wind farms.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Wind electricity generation</skos:prefLabel>
+    <skos:notation>3.5.3</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_containment">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:notation>2.6.1</skos:notation>
+    <skos:definition xml:lang="en">Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes.</skos:definition>
+    <skos:prefLabel xml:lang="en">Intensive animal containment</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/low_density_residential">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Low-density residential</skos:prefLabel>
+    <lu:colour>#815E5B</lu:colour>
+    <skos:notation>3.1.3</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+    <skos:definition xml:lang="en">Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:example xml:lang="en">Irrigation, groundwater recharge, soil fertility enhancement.</skos:example>
+    <skos:usageNote xml:lang="en"> This is often likely to be an ancillary use.</skos:usageNote>
+    <skos:definition xml:lang="en">Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.</skos:definition>
+    <skos:prefLabel xml:lang="en">Wastewater treatment – land application</skos:prefLabel>
+    <skos:notation>3.8.4</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection">
+    <skos:definition xml:lang="en">Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance.</skos:definition>
+    <lu:colour>#A39FCB</lu:colour>
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature.</dcterms:source>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <skos:notation>1.1.4</skos:notation>
+    <skos:prefLabel xml:lang="en">Natural feature protection</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/defence_land_natural_areas">
+    <skos:prefLabel xml:lang="en">Defence land</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas.</skos:definition>
+    <lu:colour>#FF9E17</lu:colour>
+    <skos:example xml:lang="en">Waiouru Military Camp</skos:example>
+    <skos:example xml:lang="en">Kaipara Air Weapons Range</skos:example>
+    <skos:scopeNote xml:lang="en">Areas associated with buildings or more built environments on defence land are captured under an urban class.</skos:scopeNote>
+    <skos:notation>1.3.6</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_perennial_horticulture">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.4.3</skos:notation>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
+    <skos:definition xml:lang="en">Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies).</skos:definition>
+    <skos:prefLabel xml:lang="en">Other perennial horticulture</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/food_processing_factory">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+    <skos:prefLabel xml:lang="en">Food processing factory</skos:prefLabel>
+    <skos:notation>3.4.2</skos:notation>
+    <skos:definition xml:lang="en">An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included.</skos:definition>
+    <skos:example>Cannery; milk production plant.</skos:example>
+  </skos:Concept>
+  <dcterms:BibliographicResource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho">
+    <dcterms:description xml:lang="en">One strand of flax is easy to break, but many strands together will stand strong.</dcterms:description>
+    <dcterms:description xml:lang="mi">Kotahi te aho ka whati, ki te kāpuia e kore e whati.</dcterms:description>
+    <dcterms:creator rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
+  </dcterms:BibliographicResource>
+</rdf:RDF>

@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:crop skos:member com:ginger ;
+    skos:prefLabel "Crop"@en .
+
+com:ginger.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:ginger.jsonld,
+        com:ginger.rdf,
+        com:ginger.ttl .
+
+com:ginger.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:ginger .
+
+com:ginger.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:ginger .
+
+com:ginger.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:ginger .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:ginger a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "ginger"@en ;
+    foaf:isPrimaryTopicOf com:ginger.html .
+

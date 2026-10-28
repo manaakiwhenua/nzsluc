@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:intensive_horticulture skos:notation "2.5.0" ;
+    skos:prefLabel "Intensive horticulture"@en .
+
+luc:production_nurseries.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:production_nurseries.jsonld,
+        luc:production_nurseries.rdf,
+        luc:production_nurseries.ttl .
+
+luc:production_nurseries.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:production_nurseries .
+
+luc:production_nurseries.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:production_nurseries .
+
+luc:production_nurseries.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:production_nurseries .
+
+luc:production_nurseries a skos:Concept ;
+    skos:broader luc:intensive_horticulture ;
+    skos:definition "Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.5.1" ;
+    skos:prefLabel "Production nurseries"@en ;
+    skos:scopeNote "Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality."@en,
+        "These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes."@en ;
+    foaf:isPrimaryTopicOf luc:production_nurseries.html .
+

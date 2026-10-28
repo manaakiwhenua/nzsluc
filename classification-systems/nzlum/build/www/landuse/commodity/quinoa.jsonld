@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:quinoa",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:quinoa.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "quinoa",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Quinoa is a pseudocereal related to beetroot, spinach and tumbleweeds. As it is grown as a grain it is considered part of cereals."
+      }
+    },
+    {
+      "@id": "com:quinoa.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:quinoa.ttl"
+        },
+        {
+          "@id": "com:quinoa.jsonld"
+        },
+        {
+          "@id": "com:quinoa.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:cereals",
+      "skos:member": {
+        "@id": "com:quinoa"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
+      }
+    },
+    {
+      "@id": "com:quinoa.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:quinoa"
+      }
+    },
+    {
+      "@id": "com:quinoa.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:quinoa"
+      }
+    },
+    {
+      "@id": "com:quinoa.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:quinoa"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}

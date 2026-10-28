@@ -1,0 +1,56 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:airports_aerodromes skos:notation "3.6.1" ;
+    skos:prefLabel "Airports/aerodromes"@en .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:ports_water_transport skos:notation "3.6.4" ;
+    skos:prefLabel "Ports and water transport"@en .
+
+luc:railways skos:notation "3.6.3" ;
+    skos:prefLabel "Railways"@en .
+
+luc:roads skos:notation "3.6.2" ;
+    skos:prefLabel "Roads"@en .
+
+luc:transport.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:transport.jsonld,
+        luc:transport.rdf,
+        luc:transport.ttl .
+
+luc:transport.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:transport .
+
+luc:transport.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:transport .
+
+luc:transport.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:transport .
+
+luc:transport a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69>,
+        "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."@en ;
+    skos:definition "Land allocated to infrastructure used for the transportation of goods or people."@en ;
+    skos:inScheme lus:nzlum0.4.0 ;
+    skos:narrower luc:airports_aerodromes,
+        luc:ports_water_transport,
+        luc:railways,
+        luc:roads ;
+    skos:notation "3.6.0" ;
+    skos:prefLabel "Transportation"@en ;
+    skos:usageNote "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en ;
+    foaf:isPrimaryTopicOf luc:transport.html ;
+    lu:colour "#72737E" .
+

@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:other_perennial_horticulture.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:other_perennial_horticulture.jsonld,
+        luc:other_perennial_horticulture.rdf,
+        luc:other_perennial_horticulture.ttl .
+
+luc:other_perennial_horticulture.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:other_perennial_horticulture .
+
+luc:other_perennial_horticulture.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:other_perennial_horticulture .
+
+luc:other_perennial_horticulture.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:other_perennial_horticulture .
+
+luc:perennial_horticulture skos:notation "2.4.0" ;
+    skos:prefLabel "Perennial horticulture"@en .
+
+luc:other_perennial_horticulture a skos:Concept ;
+    skos:broader luc:perennial_horticulture ;
+    skos:definition "Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.4.3" ;
+    skos:prefLabel "Other perennial horticulture"@en ;
+    foaf:isPrimaryTopicOf luc:other_perennial_horticulture.html .
+

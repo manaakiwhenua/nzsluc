@@ -1,0 +1,34 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix mgmt: <https://nzlum.landcareresearch.co.nz/landuse/management_practice/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mgmt:crop skos:member mgmt:tillage_conventional ;
+    skos:prefLabel "Crop"@en .
+
+mgmt:tillage_conventional.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat mgmt:tillage_conventional.jsonld,
+        mgmt:tillage_conventional.rdf,
+        mgmt:tillage_conventional.ttl .
+
+mgmt:tillage_conventional.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic mgmt:tillage_conventional .
+
+mgmt:tillage_conventional.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic mgmt:tillage_conventional .
+
+mgmt:tillage_conventional.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic mgmt:tillage_conventional .
+
+lus:management_practices dcterms:title "NZLUM management practices"@en .
+
+mgmt:tillage_conventional a skos:Concept ;
+    skos:inScheme lus:management_practices ;
+    skos:notation "tillage conventional" ;
+    foaf:isPrimaryTopicOf mgmt:tillage_conventional.html .
+

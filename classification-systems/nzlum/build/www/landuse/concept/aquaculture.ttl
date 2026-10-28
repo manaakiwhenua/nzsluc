@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:aquaculture.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:aquaculture.jsonld,
+        luc:aquaculture.rdf,
+        luc:aquaculture.ttl .
+
+luc:aquaculture.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:aquaculture .
+
+luc:aquaculture.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:aquaculture .
+
+luc:aquaculture.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:aquaculture .
+
+luc:intensive_animal_production skos:notation "2.6.0" ;
+    skos:prefLabel "Intensive animal production"@en .
+
+luc:aquaculture a skos:Concept ;
+    skos:broader luc:intensive_animal_production ;
+    skos:definition "Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.6.5" ;
+    skos:prefLabel "Aquaculture"@en ;
+    foaf:isPrimaryTopicOf luc:aquaculture.html .
+

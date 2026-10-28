@@ -1,0 +1,60 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:arable_cropping skos:notation "2.3.1" ;
+    skos:prefLabel "Arable cropping"@en .
+
+luc:arable_mixed_livestock_cropping skos:notation "2.3.2" ;
+    skos:prefLabel "Arable and mixed livestock cropping"@en .
+
+luc:production_agriculture_plantations skos:notation "2.0.0" ;
+    skos:prefLabel "Production agriculture and plantations"@en .
+
+luc:seasonal_flowers_bulbs_turf skos:notation "2.3.4" ;
+    skos:prefLabel "Seasonal flowers and bulbs, and turf farming"@en .
+
+luc:short_rotation_horticulture skos:notation "2.3.3" ;
+    skos:prefLabel "Short-rotation horticulture"@en .
+
+luc:short_rotation_seasonal_cropping.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:short_rotation_seasonal_cropping.jsonld,
+        luc:short_rotation_seasonal_cropping.rdf,
+        luc:short_rotation_seasonal_cropping.ttl .
+
+luc:short_rotation_seasonal_cropping.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:short_rotation_seasonal_cropping .
+
+luc:short_rotation_seasonal_cropping.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:short_rotation_seasonal_cropping .
+
+luc:short_rotation_seasonal_cropping.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:short_rotation_seasonal_cropping .
+
+luc:short_rotation_seasonal_cropping a skos:Concept ;
+    skos:broader luc:production_agriculture_plantations ;
+    skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/65>,
+        "The explicit five year periodicity was added in v0.4.0."@en ;
+    skos:definition "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:arable_cropping,
+        luc:arable_mixed_livestock_cropping,
+        luc:seasonal_flowers_bulbs_turf,
+        luc:short_rotation_horticulture ;
+    skos:notation "2.3.0" ;
+    skos:prefLabel "Short-rotation and seasonal cropping"@en ;
+    skos:scopeNote "Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class."@en,
+        "The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years."@en,
+        "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."@en ;
+    skos:usageNote "If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary)."@en ;
+    foaf:isPrimaryTopicOf luc:short_rotation_seasonal_cropping.html ;
+    lu:colour "#7F7F54" .
+

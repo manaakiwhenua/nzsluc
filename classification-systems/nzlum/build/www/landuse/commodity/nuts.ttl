@@ -1,0 +1,61 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:almonds skos:notation "almonds" .
+
+com:brazil_nuts skos:notation "brazil nuts" .
+
+com:cashews skos:notation "cashews" .
+
+com:chestnuts skos:notation "chestnuts" .
+
+com:hazelnuts skos:notation "hazelnuts" .
+
+com:macadamias skos:notation "macadamias" .
+
+com:nuts.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:nuts.jsonld,
+        com:nuts.rdf,
+        com:nuts.ttl .
+
+com:nuts.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:nuts .
+
+com:nuts.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:nuts .
+
+com:nuts.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:nuts .
+
+com:pecan_nuts skos:notation "pecan nuts" .
+
+com:pinenuts skos:notation "pinenuts" .
+
+com:pistachios skos:notation "pistachios" .
+
+com:walnuts skos:notation "walnuts" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:nuts a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:almonds,
+        com:brazil_nuts,
+        com:cashews,
+        com:chestnuts,
+        com:hazelnuts,
+        com:macadamias,
+        com:pecan_nuts,
+        com:pinenuts,
+        com:pistachios,
+        com:walnuts ;
+    skos:prefLabel "Nuts"@en ;
+    foaf:isPrimaryTopicOf com:nuts.html .
+

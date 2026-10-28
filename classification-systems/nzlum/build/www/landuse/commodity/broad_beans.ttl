@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:pulses skos:member com:broad_beans ;
+    skos:prefLabel "Pulses"@en .
+
+com:broad_beans.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:broad_beans.jsonld,
+        com:broad_beans.rdf,
+        com:broad_beans.ttl .
+
+com:broad_beans.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:broad_beans .
+
+com:broad_beans.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:broad_beans .
+
+com:broad_beans.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:broad_beans .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:broad_beans a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "broad beans" ;
+    foaf:isPrimaryTopicOf com:broad_beans.html .
+

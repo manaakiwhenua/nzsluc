@@ -1,0 +1,67 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:azuki_bean skos:notation "azuki bean" .
+
+com:broad_beans skos:notation "broad beans" .
+
+com:chickpeas skos:notation "chickpeas" .
+
+com:cowpea skos:notation "cowpea" .
+
+com:field_beans skos:notation "field beans" .
+
+com:field_peas skos:notation "field peas" .
+
+com:lentils skos:notation "lentils" .
+
+com:lupins skos:notation "lupins" .
+
+com:mung_bean skos:notation "mung bean" .
+
+com:navy_bean skos:notation "navy bean" .
+
+com:pigeon_pea skos:notation "pigeon pea" .
+
+com:pulses.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:pulses.jsonld,
+        com:pulses.rdf,
+        com:pulses.ttl .
+
+com:pulses.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:pulses .
+
+com:pulses.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:pulses .
+
+com:pulses.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:pulses .
+
+com:vetches skos:notation "vetches" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:pulses a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:azuki_bean,
+        com:broad_beans,
+        com:chickpeas,
+        com:cowpea,
+        com:field_beans,
+        com:field_peas,
+        com:lentils,
+        com:lupins,
+        com:mung_bean,
+        com:navy_bean,
+        com:pigeon_pea,
+        com:vetches ;
+    skos:prefLabel "Pulses"@en ;
+    foaf:isPrimaryTopicOf com:pulses.html .
+

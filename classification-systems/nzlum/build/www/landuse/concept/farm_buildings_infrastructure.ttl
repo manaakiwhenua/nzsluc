@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:farm_buildings_infrastructure.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:farm_buildings_infrastructure.jsonld,
+        luc:farm_buildings_infrastructure.rdf,
+        luc:farm_buildings_infrastructure.ttl .
+
+luc:farm_buildings_infrastructure.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:farm_buildings_infrastructure .
+
+luc:farm_buildings_infrastructure.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:farm_buildings_infrastructure .
+
+luc:farm_buildings_infrastructure.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:farm_buildings_infrastructure .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:farm_buildings_infrastructure a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations."@en ;
+    skos:example "Barns, silos, storage sheds, and irrigation systems."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.5" ;
+    skos:prefLabel "Farm buildings/infrastructure"@en ;
+    skos:scopeNote "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."@en ;
+    foaf:isPrimaryTopicOf luc:farm_buildings_infrastructure.html .
+

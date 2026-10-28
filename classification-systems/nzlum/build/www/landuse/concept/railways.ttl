@@ -1,0 +1,36 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:railways.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:railways.jsonld,
+        luc:railways.rdf,
+        luc:railways.ttl .
+
+luc:railways.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:railways .
+
+luc:railways.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:railways .
+
+luc:railways.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:railways .
+
+luc:transport skos:notation "3.6.0" ;
+    skos:prefLabel "Transportation"@en .
+
+luc:railways a skos:Concept ;
+    skos:broader luc:transport ;
+    skos:definition "Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.6.3" ;
+    skos:prefLabel "Railways"@en ;
+    foaf:isPrimaryTopicOf luc:railways.html .
+

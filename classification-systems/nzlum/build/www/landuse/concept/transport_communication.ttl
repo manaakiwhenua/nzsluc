@@ -1,0 +1,62 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+luc:airports_aerodromes skos:notation "3.6.1" ;
+    skos:prefLabel "Airports/aerodromes"@en .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:navigation_communication skos:notation "3.5.8" ;
+    skos:prefLabel "Navigation and communication"@en .
+
+luc:ports_water_transport skos:notation "3.6.4" ;
+    skos:prefLabel "Ports and water transport"@en .
+
+luc:railways skos:notation "3.6.3" ;
+    skos:prefLabel "Railways"@en .
+
+luc:roads skos:notation "3.6.2" ;
+    skos:prefLabel "Roads"@en .
+
+luc:transport_communication.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:transport_communication.jsonld,
+        luc:transport_communication.rdf,
+        luc:transport_communication.ttl .
+
+luc:transport_communication.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:transport_communication .
+
+luc:transport_communication.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:transport_communication .
+
+luc:transport_communication.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:transport_communication .
+
+luc:transport_communication a skos:Concept ;
+    owl:deprecated true ;
+    skos:broader luc:built_environment ;
+    skos:definition "Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment."@en ;
+    skos:historyNote "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:narrower luc:airports_aerodromes,
+        luc:navigation_communication,
+        luc:ports_water_transport,
+        luc:railways,
+        luc:roads ;
+    skos:notation "3.6.0" ;
+    skos:prefLabel "Transport and communication"@en ;
+    skos:usageNote "Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes."@en ;
+    foaf:isPrimaryTopicOf luc:transport_communication.html ;
+    lu:colour "#72737E" .
+

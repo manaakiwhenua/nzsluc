@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:conservation.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:conservation.jsonld,
+        luc:conservation.rdf,
+        luc:conservation.ttl .
+
+luc:conservation.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:conservation .
+
+luc:conservation.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:conservation .
+
+luc:conservation.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:conservation .
+
+luc:cultural_natural_heritage skos:notation "1.2.0" ;
+    skos:prefLabel "Cultural and natural heritage"@en .
+
+luc:minimal_use_relatively_natural skos:notation "1.3.0" ;
+    skos:prefLabel "Minimal use from relatively natural environments"@en .
+
+luc:nature_cons skos:notation "1.1.0" ;
+    skos:prefLabel "Nature conservation"@en .
+
+luc:unused_and_transitioning skos:notation "1.4.0" ;
+    skos:prefLabel "Unused and transitioning land"@en .
+
+lus:nzlum0.3.0 skos:hasTopConcept luc:conservation .
+
+lus:nzlum0.4.0 skos:hasTopConcept luc:conservation .
+
+luc:conservation a skos:Concept ;
+    skos:definition "Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:cultural_natural_heritage,
+        luc:minimal_use_relatively_natural,
+        luc:nature_cons,
+        luc:unused_and_transitioning ;
+    skos:notation "1.0.0" ;
+    skos:prefLabel "Conservation and Minimal Use"@en ;
+    skos:scopeNote "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en ;
+    skos:topConceptOf lus:nzlum0.4.0 ;
+    skos:usageNote "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en ;
+    foaf:isPrimaryTopicOf luc:conservation.html .
+

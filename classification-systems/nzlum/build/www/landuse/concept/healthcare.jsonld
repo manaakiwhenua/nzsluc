@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
+    },
+    {
+      "@id": "luc:healthcare.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:healthcare.ttl"
+        },
+        {
+          "@id": "luc:healthcare.jsonld"
+        },
+        {
+          "@id": "luc:healthcare.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:healthcare.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:healthcare"
+      }
+    },
+    {
+      "@id": "luc:healthcare",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:healthcare.html"
+      },
+      "skos:broader": {
+        "@id": "luc:commercial"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury."
+      },
+      "skos:example": {
+        "@language": "en",
+        "@value": "Hospitals, specialist clinics, physiotherapists, medical offices, laboratories"
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.3.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Healthcare"
+      }
+    },
+    {
+      "@id": "luc:healthcare.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:healthcare"
+      }
+    },
+    {
+      "@id": "luc:healthcare.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:healthcare"
+      }
+    }
+  ]
+}

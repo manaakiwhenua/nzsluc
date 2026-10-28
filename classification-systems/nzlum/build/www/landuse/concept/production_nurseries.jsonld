@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:production_nurseries.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_nurseries"
+      }
+    },
+    {
+      "@id": "luc:production_nurseries.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_nurseries"
+      }
+    },
+    {
+      "@id": "luc:production_nurseries.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:production_nurseries.ttl"
+        },
+        {
+          "@id": "luc:production_nurseries.jsonld"
+        },
+        {
+          "@id": "luc:production_nurseries.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:production_nurseries.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:production_nurseries"
+      }
+    },
+    {
+      "@id": "luc:intensive_horticulture",
+      "skos:notation": "2.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intensive horticulture"
+      }
+    },
+    {
+      "@id": "luc:production_nurseries",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:production_nurseries.html"
+      },
+      "skos:broader": {
+        "@id": "luc:intensive_horticulture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover)."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.5.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production nurseries"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality."
+        },
+        {
+          "@language": "en",
+          "@value": "These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes."
+        }
+      ]
+    }
+  ]
+}

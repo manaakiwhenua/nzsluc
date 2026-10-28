@@ -1,0 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:built_environment skos:notation "3.0.0" ;
+    skos:prefLabel "Built environment"@en .
+
+luc:commercial.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:commercial.jsonld,
+        luc:commercial.rdf,
+        luc:commercial.ttl .
+
+luc:commercial.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:commercial .
+
+luc:commercial.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:commercial .
+
+luc:commercial.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:commercial .
+
+luc:entertainment skos:notation "3.3.4" ;
+    skos:prefLabel "Entertainment"@en .
+
+luc:healthcare skos:notation "3.3.5" ;
+    skos:prefLabel "Healthcare"@en .
+
+luc:hospitality skos:notation "3.3.3" ;
+    skos:prefLabel "Hospitality"@en .
+
+luc:office skos:notation "3.3.2" ;
+    skos:prefLabel "Office"@en .
+
+luc:retail skos:notation "3.3.1" ;
+    skos:prefLabel "Retail"@en .
+
+luc:transportation_warehousing_commercial skos:notation "3.3.6" ;
+    skos:prefLabel "Transportation & warehousing"@en .
+
+luc:commercial a skos:Concept ;
+    skos:broader luc:built_environment ;
+    skos:definition "Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:narrower luc:entertainment,
+        luc:healthcare,
+        luc:hospitality,
+        luc:office,
+        luc:retail,
+        luc:transportation_warehousing_commercial ;
+    skos:notation "3.3.0" ;
+    skos:prefLabel "Commercial"@en ;
+    skos:usageNote "Central government offices when these are privately rented should be captured in this category, even if they are public-facing."@en ;
+    foaf:isPrimaryTopicOf luc:commercial.html ;
+    lu:colour "#B8C2CE" .
+

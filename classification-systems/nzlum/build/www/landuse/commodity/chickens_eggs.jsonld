@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:chickens",
+      "skos:notation": "chickens"
+    },
+    {
+      "@id": "com:chickens_eggs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:chickens_eggs.html"
+      },
+      "skos:broader": {
+        "@id": "com:chickens"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chickens eggs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms. Production mainly for eggs."
+      }
+    },
+    {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:chickens_eggs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:chickens_eggs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_eggs"
+      }
+    },
+    {
+      "@id": "com:chickens_eggs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_eggs"
+      }
+    },
+    {
+      "@id": "com:chickens_eggs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chickens_eggs.ttl"
+        },
+        {
+          "@id": "com:chickens_eggs.jsonld"
+        },
+        {
+          "@id": "com:chickens_eggs.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:chickens_eggs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_eggs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    }
+  ]
+}

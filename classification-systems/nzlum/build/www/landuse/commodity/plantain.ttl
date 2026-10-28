@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:pasture skos:member com:plantain ;
+    skos:prefLabel "Pasture"@en .
+
+com:plantain.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:plantain.jsonld,
+        com:plantain.rdf,
+        com:plantain.ttl .
+
+com:plantain.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:plantain .
+
+com:plantain.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:plantain .
+
+com:plantain.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:plantain .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:plantain a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "plantain" ;
+    foaf:isPrimaryTopicOf com:plantain.html .
+

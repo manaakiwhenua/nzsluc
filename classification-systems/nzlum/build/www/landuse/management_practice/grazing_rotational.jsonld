@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "mgmt": "https://nzlum.landcareresearch.co.nz/landuse/management_practice/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "mgmt:grazing_rotational.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing_rotational"
+      }
+    },
+    {
+      "@id": "mgmt:grazing",
+      "skos:member": {
+        "@id": "mgmt:grazing_rotational"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing"
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:grazing_rotational.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Moving livestock between paddocks in regular sequence to permit the recovery and growth of the pasture plants after grazing."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "grazing rotational",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Also cell grazing."
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Stocking rates per paddock are higher than under set stocking."
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing_rotational"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing_rotational"
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:grazing_rotational.ttl"
+        },
+        {
+          "@id": "mgmt:grazing_rotational.jsonld"
+        },
+        {
+          "@id": "mgmt:grazing_rotational.rdf"
+        }
+      ]
+    }
+  ]
+}

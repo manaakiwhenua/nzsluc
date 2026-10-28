@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:ports_water_transport.ttl"
+        },
+        {
+          "@id": "luc:ports_water_transport.jsonld"
+        },
+        {
+          "@id": "luc:ports_water_transport.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:ports_water_transport.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:ports_water_transport"
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:ports_water_transport"
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:ports_water_transport.html"
+      },
+      "skos:broader": {
+        "@id": "luc:transport"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port."
+      },
+      "skos:example": [
+        {
+          "@language": "en",
+          "@value": "Ports, docks, and wharves."
+        },
+        {
+          "@language": "en",
+          "@value": "Harbours, navigational channels."
+        }
+      ],
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.6.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Ports and water transport"
+      },
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:ports_water_transport"
+      }
+    }
+  ]
+}

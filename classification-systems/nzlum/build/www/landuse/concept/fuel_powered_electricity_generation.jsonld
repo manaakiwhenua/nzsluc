@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
+      }
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:fuel_powered_electricity_generation.ttl"
+        },
+        {
+          "@id": "luc:fuel_powered_electricity_generation.jsonld"
+        },
+        {
+          "@id": "luc:fuel_powered_electricity_generation.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:fuel_powered_electricity_generation"
+      }
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:fuel_powered_electricity_generation.html"
+      },
+      "skos:broader": {
+        "@id": "luc:utilities"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "3.5.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fuel powered electricity generation"
+      }
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:fuel_powered_electricity_generation"
+      }
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:fuel_powered_electricity_generation"
+      }
+    }
+  ]
+}

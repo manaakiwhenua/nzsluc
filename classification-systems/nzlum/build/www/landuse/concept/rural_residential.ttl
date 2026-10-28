@@ -1,0 +1,42 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:residential skos:notation "3.1.0" ;
+    skos:prefLabel "Residential"@en .
+
+luc:rural_residential.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:rural_residential.jsonld,
+        luc:rural_residential.rdf,
+        luc:rural_residential.ttl .
+
+luc:rural_residential.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:rural_residential .
+
+luc:rural_residential.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:rural_residential .
+
+luc:rural_residential.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:rural_residential .
+
+luc:rural_residential a skos:Concept ;
+    skos:broader luc:residential ;
+    skos:definition "Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas."@en ;
+    skos:historyNote "In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.1.4" ;
+    skos:prefLabel "Rural residential"@en ;
+    skos:scopeNote "Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard."@en ;
+    skos:usageNote "As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll."@en,
+        "Properties in this size interval and without a dwelling could be in transition to residential."@en ;
+    foaf:isPrimaryTopicOf luc:rural_residential.html ;
+    lu:colour "#A87A76" .
+

@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:perennial_horticulture skos:notation "2.4.0" ;
+    skos:prefLabel "Perennial horticulture"@en .
+
+luc:tree_crops.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:tree_crops.jsonld,
+        luc:tree_crops.rdf,
+        luc:tree_crops.ttl .
+
+luc:tree_crops.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:tree_crops .
+
+luc:tree_crops.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:tree_crops .
+
+luc:tree_crops.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:tree_crops .
+
+luc:tree_crops a skos:Concept ;
+    skos:broader luc:perennial_horticulture ;
+    skos:definition "Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years."@en ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "2.4.1" ;
+    skos:prefLabel "Tree crops"@en ;
+    skos:usageNote "Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known."@en,
+        "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."@en ;
+    foaf:isPrimaryTopicOf luc:tree_crops.html .
+

@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:dairy.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:dairy.ttl"
+        },
+        {
+          "@id": "luc:dairy.jsonld"
+        },
+        {
+          "@id": "luc:dairy.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:grazing_modified_pasture_systems",
+      "skos:notation": "2.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing modified pasture systems"
+      }
+    },
+    {
+      "@id": "luc:dairy",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:dairy.html"
+      },
+      "lu:colour": "#8D7735",
+      "skos:broader": {
+        "@id": "luc:grazing_modified_pasture_systems"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.2.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Dairy"
+      },
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."
+        },
+        {
+          "@language": "en",
+          "@value": "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."
+        }
+      ]
+    },
+    {
+      "@id": "luc:dairy.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    },
+    {
+      "@id": "luc:dairy.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    },
+    {
+      "@id": "luc:dairy.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    }
+  ]
+}

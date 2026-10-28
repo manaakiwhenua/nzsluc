@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lu": "https://nzlum.landcareresearch.co.nz/landuse/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:national_park.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:national_park"
+      }
+    },
+    {
+      "@id": "luc:national_park.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:national_park.ttl"
+        },
+        {
+          "@id": "luc:national_park.jsonld"
+        },
+        {
+          "@id": "luc:national_park.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:national_park",
+      "@type": "skos:Concept",
+      "dcterms:source": {
+        "@language": "en",
+        "@value": "IUCN (2008) Protected Areas Management Categories, Category Ib: national park."
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:national_park.html"
+      },
+      "lu:colour": "#7C76B6",
+      "skos:broader": {
+        "@id": "luc:nature_cons"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:\n\n  a) protect the ecological integrity of one or more ecosystems for the current and future generations;\n\n  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and\n\n  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "1.1.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "National Park"
+      }
+    },
+    {
+      "@id": "luc:national_park.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:national_park"
+      }
+    },
+    {
+      "@id": "luc:national_park.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:national_park"
+      }
+    }
+  ]
+}

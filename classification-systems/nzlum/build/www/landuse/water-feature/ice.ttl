@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lu: <https://nzlum.landcareresearch.co.nz/landuse/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wtr: <https://nzlum.landcareresearch.co.nz/landuse/water-feature/> .
+
+lus:water_features dcterms:title "NZLUM water features"@en .
+
+wtr:ice.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat wtr:ice.jsonld,
+        wtr:ice.rdf,
+        wtr:ice.ttl .
+
+wtr:ice.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic wtr:ice .
+
+wtr:ice.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic wtr:ice .
+
+wtr:ice.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic wtr:ice .
+
+wtr:ice a skos:Concept ;
+    skos:inScheme lus:water_features ;
+    skos:notation "ice" ;
+    foaf:isPrimaryTopicOf wtr:ice.html ;
+    lu:colour "#EDF5FF" .
+

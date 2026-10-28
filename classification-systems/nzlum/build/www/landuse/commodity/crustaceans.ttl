@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:crustaceans ;
+    skos:prefLabel "Animals"@en .
+
+com:crustaceans.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:crustaceans.jsonld,
+        com:crustaceans.rdf,
+        com:crustaceans.ttl .
+
+com:crustaceans.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:crustaceans .
+
+com:crustaceans.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:crustaceans .
+
+com:crustaceans.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:crustaceans .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:crustaceans a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "crustaceans" ;
+    skos:usageNote "Aquaculture: prawns, freshwater crayfish, etc."@en ;
+    foaf:isPrimaryTopicOf com:crustaceans.html .
+

@@ -1,0 +1,35 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals skos:member com:crocodiles ;
+    skos:prefLabel "Animals"@en .
+
+com:crocodiles.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:crocodiles.jsonld,
+        com:crocodiles.rdf,
+        com:crocodiles.ttl .
+
+com:crocodiles.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:crocodiles .
+
+com:crocodiles.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:crocodiles .
+
+com:crocodiles.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:crocodiles .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:crocodiles a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "crocodiles" ;
+    skos:usageNote "Aquaculture."@en ;
+    foaf:isPrimaryTopicOf com:crocodiles.html .
+

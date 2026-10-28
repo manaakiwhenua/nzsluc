@@ -1,0 +1,515 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "com:guavas",
+      "skos:notation": "guavas"
+    },
+    {
+      "@id": "com:nashi_pears",
+      "skos:notation": "pears nashi"
+    },
+    {
+      "@id": "com:jackfruit",
+      "skos:notation": "jackfruit"
+    },
+    {
+      "@id": "com:peacharines",
+      "skos:notation": "peacharines"
+    },
+    {
+      "@id": "com:dates",
+      "skos:notation": "dates"
+    },
+    {
+      "@id": "com:boysenberries",
+      "skos:notation": "boysenberries"
+    },
+    {
+      "@id": "com:fruit.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:fruit.ttl"
+        },
+        {
+          "@id": "com:fruit.jsonld"
+        },
+        {
+          "@id": "com:fruit.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:lemons",
+      "skos:notation": "lemons"
+    },
+    {
+      "@id": "com:pepinos",
+      "skos:notation": "pepinos"
+    },
+    {
+      "@id": "com:loquats",
+      "skos:notation": "loquats"
+    },
+    {
+      "@id": "com:mangoes",
+      "skos:notation": "mangoes"
+    },
+    {
+      "@id": "com:persimmons",
+      "skos:notation": "persimmons"
+    },
+    {
+      "@id": "com:kiwifruit",
+      "skos:notation": "kiwifruit"
+    },
+    {
+      "@id": "com:gooseberries",
+      "skos:notation": "gooseberries"
+    },
+    {
+      "@id": "com:rambutans",
+      "skos:notation": "rambutans"
+    },
+    {
+      "@id": "com:pawpaws",
+      "skos:notation": "pawpaws"
+    },
+    {
+      "@id": "com:pears",
+      "skos:notation": "pears"
+    },
+    {
+      "@id": "com:fruit.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:fruit"
+      }
+    },
+    {
+      "@id": "com:tamarillo",
+      "skos:notation": "tamarillo"
+    },
+    {
+      "@id": "com:blueberries",
+      "skos:notation": "blueberries"
+    },
+    {
+      "@id": "com:oranges",
+      "skos:notation": "oranges"
+    },
+    {
+      "@id": "com:redcurrants",
+      "skos:notation": "redcurrants"
+    },
+    {
+      "@id": "com:fruit.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:fruit"
+      }
+    },
+    {
+      "@id": "com:bananas",
+      "skos:notation": "bananas"
+    },
+    {
+      "@id": "com:dragon_fruit",
+      "skos:notation": "dragon fruit"
+    },
+    {
+      "@id": "com:rosella",
+      "skos:notation": "rosella"
+    },
+    {
+      "@id": "com:strawberries",
+      "skos:notation": "strawberries"
+    },
+    {
+      "@id": "com:grapes_dried",
+      "skos:notation": "grapes dried"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:lychees",
+      "skos:notation": "lychees"
+    },
+    {
+      "@id": "com:babacos",
+      "skos:notation": "babacos"
+    },
+    {
+      "@id": "com:apricots",
+      "skos:notation": "apricots"
+    },
+    {
+      "@id": "com:carambolas",
+      "skos:notation": "carambolas"
+    },
+    {
+      "@id": "com:feijoa",
+      "skos:notation": "feijoa"
+    },
+    {
+      "@id": "com:tangelos",
+      "skos:notation": "tangelos"
+    },
+    {
+      "@id": "com:raspberries",
+      "skos:notation": "raspberries"
+    },
+    {
+      "@id": "com:avocados",
+      "skos:notation": "avocados"
+    },
+    {
+      "@id": "com:cherries",
+      "skos:notation": "cherries"
+    },
+    {
+      "@id": "com:grapefruit",
+      "skos:notation": "grapefruit"
+    },
+    {
+      "@id": "com:apples",
+      "skos:notation": "apples"
+    },
+    {
+      "@id": "com:chokos",
+      "skos:notation": "chokos"
+    },
+    {
+      "@id": "com:kumquat",
+      "skos:notation": "kumquat"
+    },
+    {
+      "@id": "com:blackcurrants",
+      "skos:notation": "blackcurrants"
+    },
+    {
+      "@id": "com:nectarines",
+      "skos:notation": "nectarines"
+    },
+    {
+      "@id": "com:melons",
+      "skos:notation": "melons"
+    },
+    {
+      "@id": "com:fruit.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:fruit"
+      }
+    },
+    {
+      "@id": "com:mangosteen",
+      "skos:notation": "mangosteen"
+    },
+    {
+      "@id": "com:figs",
+      "skos:notation": "figs"
+    },
+    {
+      "@id": "com:blackberries",
+      "skos:notation": "blackberries"
+    },
+    {
+      "@id": "com:olives",
+      "skos:notation": "olives"
+    },
+    {
+      "@id": "com:coconut",
+      "skos:notation": "coconut"
+    },
+    {
+      "@id": "com:grapes_table",
+      "skos:notation": "grapes table"
+    },
+    {
+      "@id": "com:passionfruit",
+      "skos:notation": "passionfruit"
+    },
+    {
+      "@id": "com:mulberries",
+      "skos:notation": "mulberries"
+    },
+    {
+      "@id": "com:pomegranate",
+      "skos:notation": "pomegranate"
+    },
+    {
+      "@id": "com:quinces",
+      "skos:notation": "quinces"
+    },
+    {
+      "@id": "com:custard_apples",
+      "skos:notation": "custard apples"
+    },
+    {
+      "@id": "com:plums",
+      "skos:notation": "plums"
+    },
+    {
+      "@id": "com:watermelons",
+      "skos:notation": "watermelons"
+    },
+    {
+      "@id": "com:longans",
+      "skos:notation": "longans"
+    },
+    {
+      "@id": "com:pineapples",
+      "skos:notation": "pineapples"
+    },
+    {
+      "@id": "com:grapes",
+      "skos:notation": "grapes"
+    },
+    {
+      "@id": "com:mandarins",
+      "skos:notation": "mandarins"
+    },
+    {
+      "@id": "com:loganberries",
+      "skos:notation": "loganberries"
+    },
+    {
+      "@id": "com:fruit",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:fruit.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:nashi_pears"
+        },
+        {
+          "@id": "com:kiwifruit"
+        },
+        {
+          "@id": "com:mangosteen"
+        },
+        {
+          "@id": "com:feijoa"
+        },
+        {
+          "@id": "com:persimmons"
+        },
+        {
+          "@id": "com:longans"
+        },
+        {
+          "@id": "com:bananas"
+        },
+        {
+          "@id": "com:strawberries"
+        },
+        {
+          "@id": "com:dates"
+        },
+        {
+          "@id": "com:oranges"
+        },
+        {
+          "@id": "com:pawpaws"
+        },
+        {
+          "@id": "com:quinces"
+        },
+        {
+          "@id": "com:rambutans"
+        },
+        {
+          "@id": "com:olives"
+        },
+        {
+          "@id": "com:watermelons"
+        },
+        {
+          "@id": "com:mangoes"
+        },
+        {
+          "@id": "com:figs"
+        },
+        {
+          "@id": "com:grapefruit"
+        },
+        {
+          "@id": "com:nectarines"
+        },
+        {
+          "@id": "com:raspberries"
+        },
+        {
+          "@id": "com:coconut"
+        },
+        {
+          "@id": "com:peacharines"
+        },
+        {
+          "@id": "com:rosella"
+        },
+        {
+          "@id": "com:pomegranate"
+        },
+        {
+          "@id": "com:peaches"
+        },
+        {
+          "@id": "com:tangelos"
+        },
+        {
+          "@id": "com:babacos"
+        },
+        {
+          "@id": "com:pears"
+        },
+        {
+          "@id": "com:melons"
+        },
+        {
+          "@id": "com:redcurrants"
+        },
+        {
+          "@id": "com:tamarillo"
+        },
+        {
+          "@id": "com:pineapples"
+        },
+        {
+          "@id": "com:avocados"
+        },
+        {
+          "@id": "com:lemons"
+        },
+        {
+          "@id": "com:lychees"
+        },
+        {
+          "@id": "com:dragon_fruit"
+        },
+        {
+          "@id": "com:loquats"
+        },
+        {
+          "@id": "com:mulberries"
+        },
+        {
+          "@id": "com:pepinos"
+        },
+        {
+          "@id": "com:guavas"
+        },
+        {
+          "@id": "com:passionfruit"
+        },
+        {
+          "@id": "com:blackcurrants"
+        },
+        {
+          "@id": "com:kumquat"
+        },
+        {
+          "@id": "com:loganberries"
+        },
+        {
+          "@id": "com:grapes_wine"
+        },
+        {
+          "@id": "com:gooseberries"
+        },
+        {
+          "@id": "com:grapes"
+        },
+        {
+          "@id": "com:blueberries"
+        },
+        {
+          "@id": "com:grapes_table"
+        },
+        {
+          "@id": "com:cranberries"
+        },
+        {
+          "@id": "com:apricots"
+        },
+        {
+          "@id": "com:grapes_dried"
+        },
+        {
+          "@id": "com:apples"
+        },
+        {
+          "@id": "com:mandarins"
+        },
+        {
+          "@id": "com:cherries"
+        },
+        {
+          "@id": "com:jackfruit"
+        },
+        {
+          "@id": "com:carambolas"
+        },
+        {
+          "@id": "com:blackberries"
+        },
+        {
+          "@id": "com:boysenberries"
+        },
+        {
+          "@id": "com:plums"
+        },
+        {
+          "@id": "com:limes"
+        },
+        {
+          "@id": "com:chokos"
+        },
+        {
+          "@id": "com:custard_apples"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:peaches",
+      "skos:notation": "peaches"
+    },
+    {
+      "@id": "com:cranberries",
+      "skos:notation": "cranberries"
+    },
+    {
+      "@id": "com:grapes_wine",
+      "skos:notation": "grapes wine"
+    },
+    {
+      "@id": "com:limes",
+      "skos:notation": "limes"
+    }
+  ]
+}

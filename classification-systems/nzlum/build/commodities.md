@@ -200,8 +200,7 @@
 |  | sorghum forage |  |
 |  | turnips forage |  |
 |  | yarrow |  |
-| Pulses |  |  |
-|  | azuki bean |  |
+| Pulses | azuki bean |  |
 |  | broad beans |  |
 |  | chickpeas |  |
 |  | cowpea |  |
@@ -209,6 +208,7 @@
 |  | field peas |  |
 |  | lentils |  |
 |  | lupins |  |
+|  | mung bean |  |
 |  | navy bean |  |
 |  | pigeon pea |  |
 |  | vetches |  |

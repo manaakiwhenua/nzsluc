@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "com": "https://nzlum.landcareresearch.co.nz/landuse/commodity/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:turf.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:turf.ttl"
+        },
+        {
+          "@id": "com:turf.jsonld"
+        },
+        {
+          "@id": "com:turf.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:turf.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:turf"
+      }
+    },
+    {
+      "@id": "com:turf.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:turf"
+      }
+    },
+    {
+      "@id": "com:turf.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:turf"
+      }
+    },
+    {
+      "@id": "com:horticulture",
+      "skos:member": {
+        "@id": "com:turf"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
+      }
+    },
+    {
+      "@id": "com:turf",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:turf.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turf"
+    }
+  ]
+}

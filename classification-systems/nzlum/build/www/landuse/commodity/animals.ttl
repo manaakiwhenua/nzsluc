@@ -1,0 +1,127 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:animals.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:animals.jsonld,
+        com:animals.rdf,
+        com:animals.ttl .
+
+com:animals.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:animals .
+
+com:animals.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:animals .
+
+com:animals.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:animals .
+
+com:bees skos:notation "bees" .
+
+com:cats skos:notation "cats" .
+
+com:cattle skos:notation "cattle" .
+
+com:cattle_dairy skos:notation "cattle dairy" .
+
+com:cattle_meat skos:notation "cattle meat" .
+
+com:cattle_stud skos:notation "cattle stud" .
+
+com:chickens skos:notation "chickens" .
+
+com:chickens_eggs skos:notation "chickens eggs" .
+
+com:chickens_meat skos:notation "chickens meat" .
+
+com:crocodiles skos:notation "crocodiles" .
+
+com:crustaceans skos:notation "crustaceans" .
+
+com:deer skos:notation "deer" .
+
+com:dogs skos:notation "dogs" .
+
+com:ducks skos:notation "ducks" .
+
+com:emus skos:notation "emus" .
+
+com:finfish skos:notation "finfish" .
+
+com:geese skos:notation "geese" .
+
+com:goats skos:notation "goats" .
+
+com:goats_dairy skos:notation "goats dairy" .
+
+com:goats_meat skos:notation "goats meat" .
+
+com:goats_stud skos:notation "goats stud" .
+
+com:goats_wool skos:notation "goats wool" .
+
+com:horses skos:notation "horses" .
+
+com:molluscs skos:notation "molluscs" .
+
+com:ostriches skos:notation "ostriches" .
+
+com:pigs skos:notation "pigs" .
+
+com:sheep skos:notation "sheep" .
+
+com:sheep_dairy skos:notation "sheep dairy" .
+
+com:sheep_meat skos:notation "sheep meat" .
+
+com:sheep_stud skos:notation "sheep stud" .
+
+com:sheep_wool skos:notation "sheep wool" .
+
+com:turkeys skos:notation "turkeys" .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:animals a skos:Collection ;
+    skos:inScheme lus:commodities ;
+    skos:member com:bees,
+        com:cats,
+        com:cattle,
+        com:cattle_dairy,
+        com:cattle_meat,
+        com:cattle_stud,
+        com:chickens,
+        com:chickens_eggs,
+        com:chickens_meat,
+        com:crocodiles,
+        com:crustaceans,
+        com:deer,
+        com:dogs,
+        com:ducks,
+        com:emus,
+        com:finfish,
+        com:geese,
+        com:goats,
+        com:goats_dairy,
+        com:goats_meat,
+        com:goats_stud,
+        com:goats_wool,
+        com:horses,
+        com:molluscs,
+        com:ostriches,
+        com:pigs,
+        com:sheep,
+        com:sheep_dairy,
+        com:sheep_meat,
+        com:sheep_stud,
+        com:sheep_wool,
+        com:turkeys ;
+    skos:prefLabel "Animals"@en ;
+    foaf:isPrimaryTopicOf com:animals.html .
+

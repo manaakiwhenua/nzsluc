@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:tarragon ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:tarragon.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:tarragon.jsonld,
+        com:tarragon.rdf,
+        com:tarragon.ttl .
+
+com:tarragon.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:tarragon .
+
+com:tarragon.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:tarragon .
+
+com:tarragon.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:tarragon .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:tarragon a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "tarragon" ;
+    foaf:isPrimaryTopicOf com:tarragon.html .
+

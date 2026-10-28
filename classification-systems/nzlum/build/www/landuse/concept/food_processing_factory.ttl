@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+luc:food_processing_factory.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:food_processing_factory.jsonld,
+        luc:food_processing_factory.rdf,
+        luc:food_processing_factory.ttl .
+
+luc:food_processing_factory.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:food_processing_factory .
+
+luc:food_processing_factory.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:food_processing_factory .
+
+luc:food_processing_factory.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:food_processing_factory .
+
+luc:manufacturing_industrial skos:notation "3.4.0" ;
+    skos:prefLabel "Manufacturing and industrial"@en .
+
+luc:food_processing_factory a skos:Concept ;
+    skos:broader luc:manufacturing_industrial ;
+    skos:definition "An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included."@en ;
+    skos:example "Cannery; milk production plant." ;
+    skos:inScheme lus:nzlum0.3.0,
+        lus:nzlum0.4.0 ;
+    skos:notation "3.4.2" ;
+    skos:prefLabel "Food processing factory"@en ;
+    foaf:isPrimaryTopicOf luc:food_processing_factory.html .
+

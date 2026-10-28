@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix luc: <https://nzlum.landcareresearch.co.nz/landuse/concept/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+luc:land_in_transition_agriculture skos:notation "2.8.0" ;
+    skos:prefLabel "Land in transition"@en .
+
+luc:land_undergoing_rehabilitation_ag.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat luc:land_undergoing_rehabilitation_ag.jsonld,
+        luc:land_undergoing_rehabilitation_ag.rdf,
+        luc:land_undergoing_rehabilitation_ag.ttl .
+
+luc:land_undergoing_rehabilitation_ag.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_ag .
+
+luc:land_undergoing_rehabilitation_ag.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_ag .
+
+luc:land_undergoing_rehabilitation_ag.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic luc:land_undergoing_rehabilitation_ag .
+
+luc:land_undergoing_rehabilitation_ag a skos:Concept ;
+    owl:deprecated true ;
+    skos:broader luc:land_in_transition_agriculture ;
+    skos:definition "Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered."@en ;
+    skos:historyNote "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:notation "2.8.3" ;
+    skos:prefLabel "Land undergoing rehabilitation"@en ;
+    foaf:isPrimaryTopicOf luc:land_undergoing_rehabilitation_ag.html .
+

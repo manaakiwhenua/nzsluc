@@ -1,0 +1,34 @@
+@prefix com: <https://nzlum.landcareresearch.co.nz/landuse/commodity/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+com:vegetables_and_herbs skos:member com:spring_onions_and_shallots ;
+    skos:prefLabel "Vegetables and herbs"@en .
+
+com:spring_onions_and_shallots.html a foaf:Document ;
+    dcterms:format "text/html" ;
+    dcterms:hasFormat com:spring_onions_and_shallots.jsonld,
+        com:spring_onions_and_shallots.rdf,
+        com:spring_onions_and_shallots.ttl .
+
+com:spring_onions_and_shallots.jsonld a foaf:Document ;
+    dcterms:format "application/ld+json" ;
+    foaf:primaryTopic com:spring_onions_and_shallots .
+
+com:spring_onions_and_shallots.rdf a foaf:Document ;
+    dcterms:format "application/rdf+xml" ;
+    foaf:primaryTopic com:spring_onions_and_shallots .
+
+com:spring_onions_and_shallots.ttl a foaf:Document ;
+    dcterms:format "text/turtle" ;
+    foaf:primaryTopic com:spring_onions_and_shallots .
+
+lus:commodities dcterms:title "NZLUM commodities"@en .
+
+com:spring_onions_and_shallots a skos:Concept ;
+    skos:inScheme lus:commodities ;
+    skos:notation "spring onions and shallots" ;
+    foaf:isPrimaryTopicOf com:spring_onions_and_shallots.html .
+

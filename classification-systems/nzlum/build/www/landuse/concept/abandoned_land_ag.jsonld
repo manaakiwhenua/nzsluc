@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "luc": "https://nzlum.landcareresearch.co.nz/landuse/concept/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "luc:vacant_and_transitioning_land",
+      "skos:notation": "2.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:abandoned_land_ag"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:abandoned_land_ag.html"
+      },
+      "skos:broader": {
+        "@id": "luc:vacant_and_transitioning_land"
+      },
+      "skos:changeNote": {
+        "@language": "en",
+        "@value": "Changed notation at v0.4.0"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."
+      },
+      "skos:inScheme": [
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.3.0"
+        }
+      ],
+      "skos:notation": "2.8.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Abandoned land"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:abandoned_land_ag"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:abandoned_land_ag"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:abandoned_land_ag.ttl"
+        },
+        {
+          "@id": "luc:abandoned_land_ag.jsonld"
+        },
+        {
+          "@id": "luc:abandoned_land_ag.rdf"
+        }
+      ]
+    }
+  ]
+}
