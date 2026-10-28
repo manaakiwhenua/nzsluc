@@ -274,7 +274,7 @@ com:pulses a skos:Collection ;
     com:field_peas,
     com:lentils,
     com:lupins,
-    com:mung_beans,
+    com:mung_bean,
     com:navy_bean,
     com:pigeon_pea,
     com:vetches .
@@ -379,6 +379,7 @@ com:cattle_meat a skos:Concept ;
 
 com:cattle_stud a skos:Concept ;
   skos:inScheme lus:commodities ;
+  skos:broader com:cattle ;
   skos:notation "cattle stud" ;
   skos:usageNote "Cattle raised for sale as breeding animals."@en .
 
@@ -843,14 +844,17 @@ com:grapes a skos:Concept ;
 
 com:grapes_dried a skos:Concept ;
   skos:inScheme lus:commodities ;
+  skos:broader com:grapes ;
   skos:notation "grapes dried" .
 
 com:grapes_table a skos:Concept ;
   skos:inScheme lus:commodities ;
+  skos:broader com:grapes ;
   skos:notation "grapes table" .
 
 com:grapes_wine a skos:Concept ;
   skos:inScheme lus:commodities ;
+  skos:broader com:grapes ;
   skos:notation "grapes wine" .
 
 com:guavas a skos:Concept ;
@@ -947,6 +951,7 @@ com:pears a skos:Concept ;
 
 com:nashi_pears a skos:Concept ;
   skos:inScheme lus:commodities ;
+  skos:broader com:pears ;
   skos:notation "pears nashi" .
 
 com:pepinos a skos:Concept ;
