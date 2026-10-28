@@ -16,14 +16,6 @@
       }
     },
     {
-      "@id": "com:radishes.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:radishes"
-      }
-    },
-    {
       "@id": "com:radishes.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -32,13 +24,11 @@
       }
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:radishes.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:radishes"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -58,6 +48,23 @@
       ]
     },
     {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:radishes"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:radishes",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -67,13 +74,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "radishes"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     }
   ]
 }

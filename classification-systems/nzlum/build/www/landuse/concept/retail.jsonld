@@ -8,6 +8,22 @@
   },
   "@graph": [
     {
+      "@id": "luc:retail.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:retail.ttl"
+        },
+        {
+          "@id": "luc:retail.jsonld"
+        },
+        {
+          "@id": "luc:retail.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:retail",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -39,14 +55,6 @@
       }
     },
     {
-      "@id": "luc:commercial",
-      "skos:notation": "3.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Commercial"
-      }
-    },
-    {
       "@id": "luc:retail.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -55,33 +63,25 @@
       }
     },
     {
-      "@id": "luc:retail.html",
+      "@id": "luc:retail.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:retail.ttl"
-        },
-        {
-          "@id": "luc:retail.jsonld"
-        },
-        {
-          "@id": "luc:retail.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:retail.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:retail"
       }
     },
     {
-      "@id": "luc:retail.rdf",
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
+    },
+    {
+      "@id": "luc:retail.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:retail"
       }

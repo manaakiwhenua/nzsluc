@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pigeon_pea.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pigeon_pea"
-      }
-    },
-    {
       "@id": "com:pigeon_pea",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -53,13 +45,6 @@
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:pulses",
       "skos:member": {
         "@id": "com:pigeon_pea"
@@ -67,6 +52,21 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Pulses"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:pigeon_pea.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pigeon_pea"
       }
     },
     {
@@ -78,9 +78,9 @@
       }
     },
     {
-      "@id": "com:pigeon_pea.ttl",
+      "@id": "com:pigeon_pea.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:pigeon_pea"
       }

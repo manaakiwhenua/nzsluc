@@ -8,29 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:cropping_multiple",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:cropping_multiple.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "cropping multiple"
-    },
-    {
-      "@id": "mgmt:cropping_multiple.jsonld",
+      "@id": "mgmt:cropping_multiple.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_multiple"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -60,17 +42,35 @@
       ]
     },
     {
-      "@id": "mgmt:cropping_multiple.ttl",
+      "@id": "mgmt:cropping_multiple",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:cropping_multiple.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping multiple"
+    },
+    {
+      "@id": "mgmt:cropping_multiple.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_multiple"
       }
     },
     {
-      "@id": "mgmt:cropping_multiple.rdf",
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_multiple.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_multiple"
       }

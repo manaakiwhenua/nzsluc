@@ -18,6 +18,14 @@
   },
   "@graph": [
     {
+      "@id": "com:bamboo.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:bamboo"
+      }
+    },
+    {
       "@id": "com:bamboo",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,6 +37,16 @@
       "skos:notation": "bamboo"
     },
     {
+      "@id": "com:forest",
+      "skos:member": {
+        "@id": "com:bamboo"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
+      }
+    },
+    {
       "@id": "com:bamboo.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -37,13 +55,18 @@
       }
     },
     {
-      "@id": "com:forest",
-      "skos:member": {
-        "@id": "com:bamboo"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Forest"
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:bamboo.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:bamboo"
       }
     },
     {
@@ -61,29 +84,6 @@
           "@id": "com:bamboo.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:bamboo.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:bamboo"
-      }
-    },
-    {
-      "@id": "com:bamboo.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:bamboo"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     }
   ]
 }

@@ -18,125 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "luc:utilities",
-      "skos:notation": "3.5.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Utilities"
-      }
-    },
-    {
-      "@id": "luc:transport",
-      "skos:notation": "3.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Transportation"
-      }
-    },
-    {
-      "@id": "luc:residential",
-      "skos:notation": "3.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Residential"
-      }
-    },
-    {
-      "@id": "luc:commercial",
-      "skos:notation": "3.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Commercial"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal",
-      "skos:notation": "3.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Waste treatment and disposal"
-      }
-    },
-    {
-      "@id": "lus:nzlum0.4.0",
-      "skos:hasTopConcept": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:public_recreation_services",
-      "skos:notation": "3.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Public recreation and services"
-      }
-    },
-    {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
       "@id": "luc:built_environment.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:built_environment.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:vacant_transitioning_land_urban",
-      "skos:notation": "3.9.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
-      }
-    },
-    {
-      "@id": "luc:mining",
-      "skos:notation": "3.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mining"
-      }
-    },
-    {
-      "@id": "lus:nzlum0.3.0",
-      "skos:hasTopConcept": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:built_environment.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:built_environment.ttl"
-        },
-        {
-          "@id": "luc:built_environment.jsonld"
-        },
-        {
-          "@id": "luc:built_environment.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:built_environment.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:built_environment"
       }
@@ -161,31 +45,31 @@
       ],
       "skos:narrower": [
         {
-          "@id": "luc:utilities"
-        },
-        {
-          "@id": "luc:waste_treatment_disposal"
-        },
-        {
           "@id": "luc:commercial"
-        },
-        {
-          "@id": "luc:manufacturing_industrial"
         },
         {
           "@id": "luc:vacant_transitioning_land_urban"
         },
         {
-          "@id": "luc:residential"
-        },
-        {
-          "@id": "luc:public_recreation_services"
-        },
-        {
           "@id": "luc:transport"
         },
         {
+          "@id": "luc:waste_treatment_disposal"
+        },
+        {
+          "@id": "luc:residential"
+        },
+        {
+          "@id": "luc:manufacturing_industrial"
+        },
+        {
+          "@id": "luc:utilities"
+        },
+        {
           "@id": "luc:mining"
+        },
+        {
+          "@id": "luc:public_recreation_services"
         }
       ],
       "skos:notation": "3.0.0",
@@ -199,6 +83,122 @@
       },
       "skos:topConceptOf": {
         "@id": "lus:nzlum0.4.0"
+      }
+    },
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
+      }
+    },
+    {
+      "@id": "luc:built_environment.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:built_environment.ttl"
+        },
+        {
+          "@id": "luc:built_environment.jsonld"
+        },
+        {
+          "@id": "luc:built_environment.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
+      }
+    },
+    {
+      "@id": "luc:built_environment.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
+      }
+    },
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.3.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
+      }
+    },
+    {
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:built_environment.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
       }
     }
   ]

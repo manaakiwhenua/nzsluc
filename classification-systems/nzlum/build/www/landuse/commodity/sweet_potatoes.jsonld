@@ -8,32 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "com:sweet_potatoes",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sweet_potatoes.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sweet potatoes"
-    },
-    {
       "@id": "com:sweet_potatoes.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:sweet_potatoes"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:sweet_potatoes"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -61,11 +40,24 @@
       }
     },
     {
-      "@id": "com:sweet_potatoes.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:sweet_potatoes",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sweet_potatoes.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sweet potatoes"
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
         "@id": "com:sweet_potatoes"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -73,6 +65,14 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:sweet_potatoes.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sweet_potatoes"
       }
     }
   ]

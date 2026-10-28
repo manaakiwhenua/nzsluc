@@ -26,50 +26,6 @@
       }
     },
     {
-      "@id": "com:loquats.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:loquats"
-      }
-    },
-    {
-      "@id": "com:loquats.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:loquats"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:loquats",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:loquats.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "loquats"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:loquats"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "com:loquats.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -84,6 +40,50 @@
           "@id": "com:loquats.rdf"
         }
       ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:loquats.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:loquats"
+      }
+    },
+    {
+      "@id": "com:loquats.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:loquats"
+      }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:loquats"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:loquats",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:loquats.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "loquats"
     }
   ]
 }

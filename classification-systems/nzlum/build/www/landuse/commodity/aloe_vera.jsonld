@@ -8,13 +8,17 @@
   },
   "@graph": [
     {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:aloe_vera"
+      "@id": "com:aloe_vera",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:aloe_vera.html"
       },
-      "skos:prefLabel": {
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": {
         "@language": "en",
-        "@value": "Crop"
+        "@value": "aloe vera"
       }
     },
     {
@@ -34,14 +38,6 @@
       ]
     },
     {
-      "@id": "com:aloe_vera.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:aloe_vera"
-      }
-    },
-    {
       "@id": "com:aloe_vera.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -58,6 +54,16 @@
       }
     },
     {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:aloe_vera"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -65,17 +71,11 @@
       }
     },
     {
-      "@id": "com:aloe_vera",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:aloe_vera.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": {
-        "@language": "en",
-        "@value": "aloe vera"
+      "@id": "com:aloe_vera.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:aloe_vera"
       }
     }
   ]

@@ -18,20 +18,27 @@
   },
   "@graph": [
     {
-      "@id": "com:salt",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:salt.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "salt"
+      "@id": "com:salt.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:salt"
+      }
     },
     {
-      "@id": "com:salt.rdf",
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:salt"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:salt.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:salt"
       }
@@ -53,27 +60,9 @@
       ]
     },
     {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:salt"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:salt.ttl",
+      "@id": "com:salt.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:salt"
-      }
-    },
-    {
-      "@id": "com:salt.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:salt"
       }
@@ -84,6 +73,17 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:salt",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:salt.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "salt"
     }
   ]
 }

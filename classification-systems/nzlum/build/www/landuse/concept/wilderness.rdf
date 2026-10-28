@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:definition xml:lang="en">Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition.</skos:definition>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+        <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+        <skos:notation>1.1.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:notation>1.1.2</skos:notation>
+    <lu:colour>#3F007D</lu:colour>
+    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area.</dcterms:source>
+    <skos:prefLabel xml:lang="en">Wilderness area</skos:prefLabel>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.rdf">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness">
-        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area.</dcterms:source>
-        <skos:prefLabel xml:lang="en">Wilderness area</skos:prefLabel>
-        <lu:colour>#3F007D</lu:colour>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
-        <skos:notation>1.1.2</skos:notation>
-        <skos:definition xml:lang="en">Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition.</skos:definition>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wilderness.rdf"/>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
-    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
-    <skos:notation>1.1.0</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

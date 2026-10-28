@@ -8,11 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:lead.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:mines",
+      "skos:member": {
         "@id": "com:lead"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
       }
     },
     {
@@ -24,13 +26,11 @@
       }
     },
     {
-      "@id": "com:mines",
-      "skos:member": {
+      "@id": "com:lead.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:lead"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
       }
     },
     {

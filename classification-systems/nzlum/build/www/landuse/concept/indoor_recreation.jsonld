@@ -9,14 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:public_recreation_services",
-      "skos:notation": "3.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Public recreation and services"
-      }
-    },
-    {
       "@id": "luc:indoor_recreation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -49,14 +41,6 @@
       }
     },
     {
-      "@id": "luc:indoor_recreation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:indoor_recreation"
-      }
-    },
-    {
       "@id": "luc:indoor_recreation.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -65,11 +49,11 @@
       }
     },
     {
-      "@id": "luc:indoor_recreation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:indoor_recreation"
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
       }
     },
     {
@@ -87,6 +71,22 @@
           "@id": "luc:indoor_recreation.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:indoor_recreation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:indoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:indoor_recreation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:indoor_recreation"
+      }
     }
   ]
 }

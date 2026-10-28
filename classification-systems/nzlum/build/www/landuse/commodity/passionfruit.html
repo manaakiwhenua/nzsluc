@@ -18,20 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:passionfruit",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:passionfruit.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "passionfruit"
-    },
-    {
-      "@id": "com:passionfruit.rdf",
+      "@id": "com:passionfruit.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:passionfruit"
       }
@@ -53,19 +42,29 @@
       ]
     },
     {
-      "@id": "com:passionfruit.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:passionfruit"
-      }
-    },
-    {
       "@id": "com:passionfruit.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:passionfruit"
+      }
+    },
+    {
+      "@id": "com:passionfruit",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:passionfruit.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "passionfruit"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -79,10 +78,11 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:passionfruit.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:passionfruit"
       }
     }
   ]

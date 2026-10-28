@@ -8,20 +8,36 @@
   },
   "@graph": [
     {
-      "@id": "luc:vacant_and_transitioning_land",
-      "skos:notation": "2.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
-      }
-    },
-    {
       "@id": "luc:abandoned_land_ag.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:abandoned_land_ag"
       }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:abandoned_land_ag"
+      }
+    },
+    {
+      "@id": "luc:abandoned_land_ag.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:abandoned_land_ag.ttl"
+        },
+        {
+          "@id": "luc:abandoned_land_ag.jsonld"
+        },
+        {
+          "@id": "luc:abandoned_land_ag.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:abandoned_land_ag",
@@ -63,28 +79,12 @@
       }
     },
     {
-      "@id": "luc:abandoned_land_ag.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:abandoned_land_ag"
+      "@id": "luc:vacant_and_transitioning_land",
+      "skos:notation": "2.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
       }
-    },
-    {
-      "@id": "luc:abandoned_land_ag.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:abandoned_land_ag.ttl"
-        },
-        {
-          "@id": "luc:abandoned_land_ag.jsonld"
-        },
-        {
-          "@id": "luc:abandoned_land_ag.rdf"
-        }
-      ]
     }
   ]
 }

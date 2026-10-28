@@ -18,25 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:figs",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:figs.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "figs"
-    },
-    {
-      "@id": "com:figs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:figs"
-      }
-    },
-    {
       "@id": "com:figs.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -53,17 +34,43 @@
       ]
     },
     {
-      "@id": "com:figs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:figs"
-      }
+      "@id": "com:figs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:figs.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "figs"
     },
     {
       "@id": "com:figs.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:figs"
+      }
+    },
+    {
+      "@id": "com:figs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:figs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:figs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:figs"
       }
@@ -76,13 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

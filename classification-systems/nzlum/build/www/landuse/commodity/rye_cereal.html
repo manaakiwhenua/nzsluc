@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:rye_cereal.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:rye_cereal"
-      }
-    },
-    {
       "@id": "com:rye_cereal.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -52,6 +44,32 @@
       }
     },
     {
+      "@id": "com:rye_cereal.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:rye_cereal"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:rye_cereal",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:rye_cereal.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rye cereal"
+    },
+    {
       "@id": "com:rye_cereal.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -66,24 +84,6 @@
           "@id": "com:rye_cereal.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:rye_cereal",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:rye_cereal.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rye cereal"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     }
   ]
 }

@@ -16,6 +16,22 @@
       }
     },
     {
+      "@id": "luc:hydroelectricity_generation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:hydroelectricity_generation"
+      }
+    },
+    {
+      "@id": "luc:hydroelectricity_generation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:hydroelectricity_generation"
+      }
+    },
+    {
       "@id": "luc:hydroelectricity_generation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -44,22 +60,6 @@
       "skos:scopeNote": {
         "@language": "en",
         "@value": "Includes canals and other water conveyance infrastructure associated with hydroelectricity generation."
-      }
-    },
-    {
-      "@id": "luc:hydroelectricity_generation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:hydroelectricity_generation"
-      }
-    },
-    {
-      "@id": "luc:hydroelectricity_generation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:hydroelectricity_generation"
       }
     },
     {

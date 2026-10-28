@@ -18,29 +18,26 @@
   },
   "@graph": [
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:bananas",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:bananas.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bananas"
-    },
-    {
       "@id": "com:bananas.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:bananas"
+      }
+    },
+    {
+      "@id": "com:bananas.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:bananas"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -60,6 +57,17 @@
       ]
     },
     {
+      "@id": "com:bananas",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:bananas.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bananas"
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:bananas"
@@ -73,14 +81,6 @@
       "@id": "com:bananas.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:bananas"
-      }
-    },
-    {
-      "@id": "com:bananas.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:bananas"
       }

@@ -26,6 +26,27 @@
       }
     },
     {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:coal"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:coal",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:coal.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coal"
+    },
+    {
       "@id": "com:coal.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -50,13 +71,10 @@
       ]
     },
     {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:coal"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Mines"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -65,24 +83,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:coal"
-      }
-    },
-    {
-      "@id": "com:coal",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:coal.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coal"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

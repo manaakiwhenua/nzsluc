@@ -19,6 +19,30 @@
   },
   "@graph": [
     {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:protected_landscape.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:protected_landscape"
+      }
+    },
+    {
+      "@id": "luc:protected_landscape.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:protected_landscape"
+      }
+    },
+    {
       "@id": "luc:protected_landscape.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -33,14 +57,6 @@
           "@id": "luc:protected_landscape.rdf"
         }
       ]
-    },
-    {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
-      }
     },
     {
       "@id": "luc:protected_landscape.rdf",
@@ -81,28 +97,12 @@
         "@language": "en",
         "@value": "Protected landscape"
       }
-    },
-    {
-      "@id": "luc:protected_landscape.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:protected_landscape"
-      }
-    },
-    {
-      "@id": "luc:protected_landscape.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:protected_landscape"
-      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#E9E8F2"><h1><span class="sw" style="background:#E9E8F2"></span>Protected landscape</h1><div><span class="chip code">1.1.6</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape</p></div><h2>Definition</h2><blockquote>Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</blockquote><h2>Source</h2><blockquote>IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a> › <strong>Protected landscape</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.1.6</code></td><td>Protected landscape</td><td><a href="/classification/v0-4/classes/100/#116-protected-landscape">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.1.6">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.1.6</code></td><td>Protected landscape</td><td><a href="/classification/v0-3/classes/100/#116-protected-landscape">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.1.6">code lookup</a></td><td>same</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#E9E8F2</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/protected_landscape.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/protected_landscape.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/protected_landscape.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#E9E8F2"><h1><span class="sw" style="background:#E9E8F2"></span>Protected landscape</h1><div><span class="chip code">1.1.6</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape</p></div><h2>Definition</h2><blockquote>Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</blockquote><h2>Source</h2><blockquote>IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a> › <strong>Protected landscape</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.1.6</code></td><td>Protected landscape</td><td><a href="/classification/v0-4/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.1.6">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.1.6</code></td><td>Protected landscape</td><td><a href="/classification/v0-3/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.1.6">code lookup</a></td><td>same</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#E9E8F2</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/protected_landscape.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/protected_landscape.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/protected_landscape.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

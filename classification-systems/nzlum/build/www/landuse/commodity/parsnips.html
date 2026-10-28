@@ -18,35 +18,17 @@
   },
   "@graph": [
     {
-      "@id": "com:parsnips.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:parsnips"
-      }
-    },
-    {
-      "@id": "com:parsnips.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:parsnips"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:parsnips"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
       "@id": "com:parsnips.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:parsnips"
+      }
+    },
+    {
+      "@id": "com:parsnips.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:parsnips"
       }
@@ -63,6 +45,31 @@
       "skos:notation": "parsnips"
     },
     {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:parsnips"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:parsnips.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:parsnips"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:parsnips.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -77,13 +84,6 @@
           "@id": "com:parsnips.rdf"
         }
       ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     }
   ]
 }

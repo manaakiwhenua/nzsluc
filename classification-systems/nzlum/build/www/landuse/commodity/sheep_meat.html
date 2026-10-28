@@ -18,9 +18,45 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:sheep_meat"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:sheep_meat.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sheep_meat"
+      }
+    },
+    {
+      "@id": "com:sheep_meat",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sheep_meat.html"
+      },
+      "skos:broader": {
+        "@id": "com:sheep"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep meat",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Sheep for meat production."
+      }
+    },
+    {
+      "@id": "com:sheep_meat.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:sheep_meat"
       }
@@ -34,32 +70,10 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:sheep_meat"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sheep",
-      "skos:notation": "sheep"
-    },
-    {
-      "@id": "com:sheep_meat.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep_meat"
       }
     },
     {
@@ -79,22 +93,8 @@
       ]
     },
     {
-      "@id": "com:sheep_meat",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sheep_meat.html"
-      },
-      "skos:broader": {
-        "@id": "com:sheep"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sheep meat",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Sheep for meat production."
-      }
+      "@id": "com:sheep",
+      "skos:notation": "sheep"
     }
   ]
 }

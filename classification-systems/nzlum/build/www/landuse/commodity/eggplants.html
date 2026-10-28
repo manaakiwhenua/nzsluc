@@ -18,38 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:eggplants"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:eggplants",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:eggplants.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "eggplants"
-    },
-    {
       "@id": "com:eggplants.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:eggplants"
-      }
-    },
-    {
-      "@id": "com:eggplants.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:eggplants"
       }
@@ -63,10 +34,11 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:eggplants.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:eggplants"
       }
     },
     {
@@ -84,6 +56,34 @@
           "@id": "com:eggplants.rdf"
         }
       ]
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:eggplants"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:eggplants",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:eggplants.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "eggplants"
     }
   ]
 }

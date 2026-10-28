@@ -9,6 +9,30 @@
   },
   "@graph": [
     {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
+      "@id": "luc:protected_landscape.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:protected_landscape"
+      }
+    },
+    {
+      "@id": "luc:protected_landscape.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:protected_landscape"
+      }
+    },
+    {
       "@id": "luc:protected_landscape.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -23,14 +47,6 @@
           "@id": "luc:protected_landscape.rdf"
         }
       ]
-    },
-    {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
-      }
     },
     {
       "@id": "luc:protected_landscape.rdf",
@@ -70,22 +86,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Protected landscape"
-      }
-    },
-    {
-      "@id": "luc:protected_landscape.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:protected_landscape"
-      }
-    },
-    {
-      "@id": "luc:protected_landscape.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:protected_landscape"
       }
     }
   ]

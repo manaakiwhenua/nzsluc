@@ -8,32 +8,40 @@
   },
   "@graph": [
     {
-      "@id": "com:chickpeas",
-      "skos:notation": "chickpeas"
-    },
-    {
       "@id": "com:mung_bean",
       "skos:notation": "mung bean"
     },
     {
-      "@id": "com:pulses.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pulses"
-      }
+      "@id": "com:cowpea",
+      "skos:notation": "cowpea"
+    },
+    {
+      "@id": "com:vetches",
+      "skos:notation": "vetches"
+    },
+    {
+      "@id": "com:lentils",
+      "skos:notation": "lentils"
+    },
+    {
+      "@id": "com:pigeon_pea",
+      "skos:notation": "pigeon pea"
     },
     {
       "@id": "com:field_beans",
       "skos:notation": "field beans"
     },
     {
-      "@id": "com:field_peas",
-      "skos:notation": "field peas"
+      "@id": "com:broad_beans",
+      "skos:notation": "broad beans"
     },
     {
-      "@id": "com:pigeon_pea",
-      "skos:notation": "pigeon pea"
+      "@id": "com:azuki_bean",
+      "skos:notation": "azuki bean"
+    },
+    {
+      "@id": "com:lupins",
+      "skos:notation": "lupins"
     },
     {
       "@id": "com:pulses.ttl",
@@ -52,28 +60,8 @@
       }
     },
     {
-      "@id": "com:broad_beans",
-      "skos:notation": "broad beans"
-    },
-    {
-      "@id": "com:vetches",
-      "skos:notation": "vetches"
-    },
-    {
       "@id": "com:navy_bean",
       "skos:notation": "navy bean"
-    },
-    {
-      "@id": "com:azuki_bean",
-      "skos:notation": "azuki bean"
-    },
-    {
-      "@id": "com:lupins",
-      "skos:notation": "lupins"
-    },
-    {
-      "@id": "com:cowpea",
-      "skos:notation": "cowpea"
     },
     {
       "@id": "com:pulses.html",
@@ -92,6 +80,14 @@
       ]
     },
     {
+      "@id": "com:pulses.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pulses"
+      }
+    },
+    {
       "@id": "com:pulses",
       "@type": "skos:Collection",
       "foaf:isPrimaryTopicOf": {
@@ -102,25 +98,28 @@
       },
       "skos:member": [
         {
-          "@id": "com:vetches"
+          "@id": "com:mung_bean"
         },
         {
-          "@id": "com:cowpea"
+          "@id": "com:field_peas"
         },
         {
-          "@id": "com:broad_beans"
-        },
-        {
-          "@id": "com:azuki_bean"
+          "@id": "com:field_beans"
         },
         {
           "@id": "com:lupins"
         },
         {
-          "@id": "com:mung_bean"
+          "@id": "com:azuki_bean"
+        },
+        {
+          "@id": "com:vetches"
         },
         {
           "@id": "com:pigeon_pea"
+        },
+        {
+          "@id": "com:cowpea"
         },
         {
           "@id": "com:chickpeas"
@@ -129,13 +128,10 @@
           "@id": "com:navy_bean"
         },
         {
+          "@id": "com:broad_beans"
+        },
+        {
           "@id": "com:lentils"
-        },
-        {
-          "@id": "com:field_beans"
-        },
-        {
-          "@id": "com:field_peas"
         }
       ],
       "skos:prefLabel": {
@@ -144,15 +140,19 @@
       }
     },
     {
-      "@id": "com:lentils",
-      "skos:notation": "lentils"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:chickpeas",
+      "skos:notation": "chickpeas"
+    },
+    {
+      "@id": "com:field_peas",
+      "skos:notation": "field peas"
     }
   ]
 }

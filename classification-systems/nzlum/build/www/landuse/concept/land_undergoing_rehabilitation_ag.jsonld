@@ -9,19 +9,19 @@
   },
   "@graph": [
     {
-      "@id": "luc:land_undergoing_rehabilitation_ag.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:land_undergoing_rehabilitation_ag"
-      }
-    },
-    {
       "@id": "luc:land_undergoing_rehabilitation_ag.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:land_undergoing_rehabilitation_ag"
+      }
+    },
+    {
+      "@id": "luc:land_in_transition_agriculture",
+      "skos:notation": "2.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Land in transition"
       }
     },
     {
@@ -41,17 +41,17 @@
       ]
     },
     {
-      "@id": "luc:land_in_transition_agriculture",
-      "skos:notation": "2.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Land in transition"
-      }
-    },
-    {
       "@id": "luc:land_undergoing_rehabilitation_ag.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:land_undergoing_rehabilitation_ag"
+      }
+    },
+    {
+      "@id": "luc:land_undergoing_rehabilitation_ag.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:land_undergoing_rehabilitation_ag"
       }

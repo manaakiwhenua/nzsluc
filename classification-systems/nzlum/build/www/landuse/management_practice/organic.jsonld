@@ -8,6 +8,32 @@
   },
   "@graph": [
     {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:organic"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:organic.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:organic"
+      }
+    },
+    {
+      "@id": "mgmt:organic.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:organic"
+      }
+    },
+    {
       "@id": "mgmt:pasture",
       "skos:member": {
         "@id": "mgmt:organic"
@@ -15,6 +41,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Pasture"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -34,14 +67,6 @@
       ]
     },
     {
-      "@id": "mgmt:organic.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:organic"
-      }
-    },
-    {
       "@id": "mgmt:organic",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -51,31 +76,6 @@
         "@id": "lus:management_practices"
       },
       "skos:notation": "organic"
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:organic"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:organic.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:organic"
-      }
     },
     {
       "@id": "mgmt:organic.jsonld",

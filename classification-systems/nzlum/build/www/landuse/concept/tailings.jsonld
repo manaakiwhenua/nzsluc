@@ -8,6 +8,30 @@
   },
   "@graph": [
     {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:tailings.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:tailings.ttl"
+        },
+        {
+          "@id": "luc:tailings.jsonld"
+        },
+        {
+          "@id": "luc:tailings.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:tailings.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -57,30 +81,6 @@
         "@language": "en",
         "@value": "Tailings"
       }
-    },
-    {
-      "@id": "luc:mining",
-      "skos:notation": "3.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mining"
-      }
-    },
-    {
-      "@id": "luc:tailings.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:tailings.ttl"
-        },
-        {
-          "@id": "luc:tailings.jsonld"
-        },
-        {
-          "@id": "luc:tailings.rdf"
-        }
-      ]
     }
   ]
 }

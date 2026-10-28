@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture">
-    <skos:prefLabel xml:lang="en">Land in transition</skos:prefLabel>
-    <skos:notation>2.8.0</skos:notation>
-  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_undergoing_rehabilitation_ag.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -33,7 +29,12 @@
   </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_undergoing_rehabilitation_ag">
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture">
+        <skos:prefLabel xml:lang="en">Land in transition</skos:prefLabel>
+        <skos:notation>2.8.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
     <skos:notation>2.8.3</skos:notation>
     <skos:prefLabel xml:lang="en">Land undergoing rehabilitation</skos:prefLabel>
     <skos:definition xml:lang="en">Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.</skos:definition>

@@ -16,22 +16,6 @@
       }
     },
     {
-      "@id": "luc:solar_electricity_generation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:solar_electricity_generation"
-      }
-    },
-    {
-      "@id": "luc:solar_electricity_generation.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:solar_electricity_generation"
-      }
-    },
-    {
       "@id": "luc:solar_electricity_generation.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -51,6 +35,22 @@
       "@id": "luc:solar_electricity_generation.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:solar_electricity_generation"
+      }
+    },
+    {
+      "@id": "luc:solar_electricity_generation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:solar_electricity_generation"
+      }
+    },
+    {
+      "@id": "luc:solar_electricity_generation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:solar_electricity_generation"
       }

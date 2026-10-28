@@ -18,31 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:crocodiles"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:crocodiles",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:crocodiles.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "crocodiles",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture."
-      }
-    },
-    {
       "@id": "com:crocodiles.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -51,11 +26,13 @@
       }
     },
     {
-      "@id": "com:crocodiles.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:animals",
+      "skos:member": {
         "@id": "com:crocodiles"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
       }
     },
     {
@@ -81,6 +58,29 @@
           "@id": "com:crocodiles.rdf"
         }
       ]
+    },
+    {
+      "@id": "com:crocodiles",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:crocodiles.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "crocodiles",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Aquaculture."
+      }
+    },
+    {
+      "@id": "com:crocodiles.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:crocodiles"
+      }
     },
     {
       "@id": "lus:commodities",

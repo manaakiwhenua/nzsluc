@@ -18,30 +18,15 @@
   },
   "@graph": [
     {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:jute"
+      "@id": "com:jute",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:jute.html"
       },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "com:jute.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:jute"
-      }
-    },
-    {
-      "@id": "com:jute.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:jute"
-      }
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "jute"
     },
     {
       "@id": "com:jute.html",
@@ -60,15 +45,20 @@
       ]
     },
     {
-      "@id": "com:jute",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:jute.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "jute"
+      "@id": "com:jute.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:jute"
+      }
+    },
+    {
+      "@id": "com:jute.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:jute"
+      }
     },
     {
       "@id": "com:jute.rdf",
@@ -76,6 +66,16 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:jute"
+      }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:jute"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     },
     {

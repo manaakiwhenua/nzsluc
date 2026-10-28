@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pineapples.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pineapples.ttl"
-        },
-        {
-          "@id": "com:pineapples.jsonld"
-        },
-        {
-          "@id": "com:pineapples.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:pineapples.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -61,16 +45,6 @@
       "skos:notation": "pineapples"
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:pineapples"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "com:pineapples.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -84,6 +58,32 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:pineapples"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:pineapples.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pineapples.ttl"
+        },
+        {
+          "@id": "com:pineapples.jsonld"
+        },
+        {
+          "@id": "com:pineapples.rdf"
+        }
+      ]
     }
   ]
 }

@@ -8,6 +8,40 @@
   },
   "@graph": [
     {
+      "@id": "com:goats_wool.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_wool"
+      }
+    },
+    {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:goats_wool"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:goats_wool.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_wool"
+      }
+    },
+    {
+      "@id": "com:goats_wool.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_wool"
+      }
+    },
+    {
       "@id": "com:goats_wool.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -24,13 +58,14 @@
       ]
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:goats_wool"
-      },
-      "skos:prefLabel": {
+      "@id": "com:goats",
+      "skos:notation": "goats"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Animals"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -49,41 +84,6 @@
       "skos:usageNote": {
         "@language": "en",
         "@value": "Goats for fibre production."
-      }
-    },
-    {
-      "@id": "com:goats",
-      "skos:notation": "goats"
-    },
-    {
-      "@id": "com:goats_wool.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_wool"
-      }
-    },
-    {
-      "@id": "com:goats_wool.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_wool"
-      }
-    },
-    {
-      "@id": "com:goats_wool.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_wool"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

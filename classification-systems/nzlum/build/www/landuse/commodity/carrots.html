@@ -18,49 +18,12 @@
   },
   "@graph": [
     {
-      "@id": "com:carrots.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:carrots"
-      }
-    },
-    {
       "@id": "com:carrots.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:carrots"
       }
-    },
-    {
-      "@id": "com:carrots.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:carrots"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:carrots"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:carrots",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:carrots.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carrots"
     },
     {
       "@id": "com:carrots.html",
@@ -79,11 +42,48 @@
       ]
     },
     {
+      "@id": "com:carrots.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:carrots"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:carrots"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:carrots.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:carrots"
+      }
+    },
+    {
+      "@id": "com:carrots",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:carrots.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carrots"
     }
   ]
 }

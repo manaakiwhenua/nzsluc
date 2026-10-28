@@ -18,12 +18,49 @@
   },
   "@graph": [
     {
+      "@id": "com:copper.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:copper"
+      }
+    },
+    {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:copper"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:copper.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:copper"
+      }
+    },
+    {
       "@id": "com:copper.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:copper"
       }
+    },
+    {
+      "@id": "com:copper",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:copper.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "copper"
     },
     {
       "@id": "com:copper.html",
@@ -42,47 +79,10 @@
       ]
     },
     {
-      "@id": "com:copper.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:copper"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:copper"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:copper",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:copper.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "copper"
-    },
-    {
-      "@id": "com:copper.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:copper"
       }
     }
   ]

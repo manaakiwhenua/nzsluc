@@ -18,20 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:coconut",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:coconut.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coconut"
-    },
-    {
-      "@id": "com:coconut.rdf",
+      "@id": "com:coconut.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:coconut"
       }
@@ -42,6 +31,13 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:coconut"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -61,6 +57,25 @@
       ]
     },
     {
+      "@id": "com:coconut",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:coconut.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coconut"
+    },
+    {
+      "@id": "com:coconut.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:coconut"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:coconut"
@@ -68,21 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:coconut.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:coconut"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

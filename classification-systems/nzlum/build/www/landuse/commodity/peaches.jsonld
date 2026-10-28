@@ -8,11 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:peaches.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:peaches.ttl"
+        },
+        {
+          "@id": "com:peaches.jsonld"
+        },
+        {
+          "@id": "com:peaches.rdf"
+        }
+      ]
     },
     {
       "@id": "com:peaches.rdf",
@@ -31,13 +40,18 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:peaches.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:peaches"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -52,27 +66,13 @@
       "skos:notation": "peaches"
     },
     {
-      "@id": "com:peaches.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:peaches.ttl"
-        },
-        {
-          "@id": "com:peaches.jsonld"
-        },
-        {
-          "@id": "com:peaches.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:peaches.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:peaches"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     }
   ]

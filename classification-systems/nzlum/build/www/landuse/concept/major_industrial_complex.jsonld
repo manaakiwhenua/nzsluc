@@ -8,6 +8,38 @@
   },
   "@graph": [
     {
+      "@id": "luc:major_industrial_complex.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:major_industrial_complex"
+      }
+    },
+    {
+      "@id": "luc:major_industrial_complex.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:major_industrial_complex"
+      }
+    },
+    {
+      "@id": "luc:major_industrial_complex.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:major_industrial_complex.ttl"
+        },
+        {
+          "@id": "luc:major_industrial_complex.jsonld"
+        },
+        {
+          "@id": "luc:major_industrial_complex.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:major_industrial_complex",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -39,30 +71,6 @@
       }
     },
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
-      "@id": "luc:major_industrial_complex.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:major_industrial_complex.ttl"
-        },
-        {
-          "@id": "luc:major_industrial_complex.jsonld"
-        },
-        {
-          "@id": "luc:major_industrial_complex.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:major_industrial_complex.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -71,19 +79,11 @@
       }
     },
     {
-      "@id": "luc:major_industrial_complex.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:major_industrial_complex"
-      }
-    },
-    {
-      "@id": "luc:major_industrial_complex.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:major_industrial_complex"
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
     }
   ]

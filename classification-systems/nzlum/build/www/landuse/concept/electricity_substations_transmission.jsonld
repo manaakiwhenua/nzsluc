@@ -8,27 +8,19 @@
   },
   "@graph": [
     {
-      "@id": "luc:utilities",
-      "skos:notation": "3.5.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Utilities"
-      }
-    },
-    {
-      "@id": "luc:electricity_substations_transmission.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:electricity_substations_transmission"
-      }
-    },
-    {
       "@id": "luc:electricity_substations_transmission.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:electricity_substations_transmission"
+      }
+    },
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
       }
     },
     {
@@ -46,6 +38,14 @@
           "@id": "luc:electricity_substations_transmission.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:electricity_substations_transmission.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:electricity_substations_transmission"
+      }
     },
     {
       "@id": "luc:electricity_substations_transmission.jsonld",

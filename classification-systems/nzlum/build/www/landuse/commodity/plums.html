@@ -18,25 +18,17 @@
   },
   "@graph": [
     {
-      "@id": "com:plums.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:plums.ttl"
-        },
-        {
-          "@id": "com:plums.jsonld"
-        },
-        {
-          "@id": "com:plums.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:plums.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:plums"
+      }
+    },
+    {
+      "@id": "com:plums.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:plums"
       }
@@ -53,24 +45,6 @@
       "skos:notation": "plums"
     },
     {
-      "@id": "com:plums.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:plums"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:plums"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -83,6 +57,32 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:plums"
+      }
+    },
+    {
+      "@id": "com:plums.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:plums.ttl"
+        },
+        {
+          "@id": "com:plums.jsonld"
+        },
+        {
+          "@id": "com:plums.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:plums"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     }
   ]

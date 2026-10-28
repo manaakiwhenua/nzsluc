@@ -18,6 +18,35 @@
   },
   "@graph": [
     {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:silica_sand"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:silica_sand.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:silica_sand"
+      }
+    },
+    {
+      "@id": "com:silica_sand",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:silica_sand.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "silica_sand"
+    },
+    {
       "@id": "com:silica_sand.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -42,33 +71,11 @@
       ]
     },
     {
-      "@id": "com:silica_sand.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:silica_sand"
-      }
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:silica_sand"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Mines"
+        "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:silica_sand",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:silica_sand.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "silica_sand"
     },
     {
       "@id": "com:silica_sand.jsonld",
@@ -76,13 +83,6 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:silica_sand"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

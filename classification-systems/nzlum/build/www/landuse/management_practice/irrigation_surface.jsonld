@@ -8,56 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:irrigation_surface.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:irrigation_surface"
-      }
-    },
-    {
-      "@id": "mgmt:irrigation_surface.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:irrigation_surface"
-      }
-    },
-    {
-      "@id": "mgmt:irrigation_surface",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:irrigation_surface.html"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows."
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "irrigation surface",
-      "skos:scopeNote": {
-        "@language": "en",
-        "@value": "Also flood/furrow irrigation."
-      }
-    },
-    {
-      "@id": "mgmt:irrigation_surface.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:irrigation_surface"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
       "@id": "mgmt:irrigation_surface.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -81,6 +31,56 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Irrigation"
+      }
+    },
+    {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_surface",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:irrigation_surface.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows."
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "irrigation surface",
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Also flood/furrow irrigation."
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_surface.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_surface"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_surface.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_surface"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_surface.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_surface"
       }
     }
   ]

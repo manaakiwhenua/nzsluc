@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office">
+    <skos:definition xml:lang="en">Land and buildings primarily used for administrative, professional, or managerial activities.</skos:definition>
+    <skos:example xml:lang="en">Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.</skos:example>
+    <skos:prefLabel xml:lang="en">Office</skos:prefLabel>
+    <skos:notation>3.3.2</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial">
         <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
         <skos:notation>3.3.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:definition xml:lang="en">Land and buildings primarily used for administrative, professional, or managerial activities.</skos:definition>
-    <skos:prefLabel xml:lang="en">Office</skos:prefLabel>
-    <skos:example xml:lang="en">Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.</skos:example>
-    <skos:notation>3.3.2</skos:notation>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office.html">
         <dcterms:format>text/html</dcterms:format>
@@ -27,10 +27,6 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/office"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/office"/>
     <dcterms:format>text/turtle</dcterms:format>
@@ -38,5 +34,9 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/office"/>
     <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/office.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/office"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

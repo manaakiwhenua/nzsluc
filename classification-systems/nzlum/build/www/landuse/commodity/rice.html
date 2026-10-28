@@ -18,12 +18,15 @@
   },
   "@graph": [
     {
-      "@id": "com:rice.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:rice"
-      }
+      "@id": "com:rice",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:rice.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rice"
     },
     {
       "@id": "com:cereals",
@@ -36,23 +39,12 @@
       }
     },
     {
-      "@id": "com:rice.rdf",
+      "@id": "com:rice.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:rice"
       }
-    },
-    {
-      "@id": "com:rice",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:rice.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rice"
     },
     {
       "@id": "com:rice.jsonld",
@@ -83,6 +75,14 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:rice.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rice"
       }
     }
   ]

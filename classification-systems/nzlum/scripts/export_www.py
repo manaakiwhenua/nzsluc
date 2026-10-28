@@ -318,8 +318,16 @@ class Exporter:
             top, guard = b, guard + 1
         top_not = (first_lit(g, top, SKOS.notation) or "").replace(".", "")
         url = f"{self.site}/classification/v{maj}-{mnr}/classes/{top_not}/"
-        if top != c:
-            url += "#" + slugify(f"{first_lit(g, c, SKOS.notation)} {first_lit(g, c, SKOS.prefLabel) or ''}")
+        # On the class pages only secondary classes are headings; tertiary classes sit in
+        # tabs under their secondary, so link tertiaries to the secondary's anchor.
+        sec = c
+        while sec != top:
+            b = next(g.objects(sec, SKOS.broader), None)
+            if b is None or b == top:
+                break
+            sec = b
+        if sec != top:
+            url += "#" + slugify(f"{first_lit(g, sec, SKOS.notation)} {first_lit(g, sec, SKOS.prefLabel) or ''}")
         return url
 
     def version_differences(self, v, c):

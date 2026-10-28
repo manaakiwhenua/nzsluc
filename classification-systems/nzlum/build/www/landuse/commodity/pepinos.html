@@ -18,43 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pepinos.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pepinos"
-      }
-    },
-    {
-      "@id": "com:pepinos.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pepinos"
-      }
-    },
-    {
-      "@id": "com:pepinos",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:pepinos.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pepinos"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:pepinos"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "com:pepinos.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -79,11 +42,48 @@
       ]
     },
     {
+      "@id": "com:pepinos.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pepinos"
+      }
+    },
+    {
+      "@id": "com:pepinos.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pepinos"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:pepinos"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:pepinos",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:pepinos.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pepinos"
     }
   ]
 }

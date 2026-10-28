@@ -8,17 +8,35 @@
   },
   "@graph": [
     {
-      "@id": "com:carnations.ttl",
+      "@id": "com:carnations.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:carnations"
       }
     },
     {
-      "@id": "com:carnations.rdf",
+      "@id": "com:carnations.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:carnations"
+      }
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:carnations"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
+      "@id": "com:carnations.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:carnations"
       }
@@ -40,6 +58,13 @@
       ]
     },
     {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:carnations",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -49,31 +74,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "carnations"
-    },
-    {
-      "@id": "com:carnations.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:carnations"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:carnations"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
     }
   ]
 }

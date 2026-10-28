@@ -8,6 +8,35 @@
   },
   "@graph": [
     {
+      "@id": "com:chinese_cabbages.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chinese_cabbages"
+      }
+    },
+    {
+      "@id": "com:chinese_cabbages",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:chinese_cabbages.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chinese cabbages"
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:chinese_cabbages"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "com:chinese_cabbages.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -32,33 +61,11 @@
       ]
     },
     {
-      "@id": "com:chinese_cabbages.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chinese_cabbages"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:chinese_cabbages"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Vegetables and herbs"
+        "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:chinese_cabbages",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:chinese_cabbages.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chinese cabbages"
     },
     {
       "@id": "com:chinese_cabbages.rdf",
@@ -66,13 +73,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:chinese_cabbages"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

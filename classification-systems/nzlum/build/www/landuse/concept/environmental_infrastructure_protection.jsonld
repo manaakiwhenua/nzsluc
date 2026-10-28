@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:environmental_infrastructure_protection.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:environmental_infrastructure_protection.ttl"
-        },
-        {
-          "@id": "luc:environmental_infrastructure_protection.jsonld"
-        },
-        {
-          "@id": "luc:environmental_infrastructure_protection.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:environmental_infrastructure_protection",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -61,14 +45,6 @@
       ]
     },
     {
-      "@id": "luc:environmental_infrastructure_protection.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:environmental_infrastructure_protection"
-      }
-    },
-    {
       "@id": "luc:environmental_infrastructure_protection.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -77,11 +53,35 @@
       }
     },
     {
+      "@id": "luc:environmental_infrastructure_protection.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:environmental_infrastructure_protection.ttl"
+        },
+        {
+          "@id": "luc:environmental_infrastructure_protection.jsonld"
+        },
+        {
+          "@id": "luc:environmental_infrastructure_protection.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:minimal_use_relatively_natural",
       "skos:notation": "1.3.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Minimal use from relatively natural environments"
+      }
+    },
+    {
+      "@id": "luc:environmental_infrastructure_protection.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:environmental_infrastructure_protection"
       }
     },
     {

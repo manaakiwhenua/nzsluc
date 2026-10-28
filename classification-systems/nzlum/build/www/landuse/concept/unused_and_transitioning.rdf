@@ -1,56 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land">
+        <skos:prefLabel xml:lang="en">Unused land</skos:prefLabel>
+        <skos:notation>1.4.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land">
+        <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
+        <skos:notation>1.4.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
+        <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
+        <skos:notation>1.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:definition xml:lang="en">Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.</skos:definition>
+    <skos:scopeNote xml:lang="en">Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Corridors and roadside areas may fit under this class.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Does not per se include land undergoing natural succession in the context of changing plant species.</skos:scopeNote>
+    <skos:notation>1.4.0</skos:notation>
+    <lu:colour>#C8C69F</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+    <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.jsonld">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
-        <skos:scopeNote xml:lang="en">Does not per se include land undergoing natural succession in the context of changing plant species.</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">Corridors and roadside areas may fit under this class.</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included.</skos:scopeNote>
-        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
-        <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
-        <skos:notation>1.4.0</skos:notation>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-        <lu:colour>#C8C69F</lu:colour>
-        <skos:definition xml:lang="en">Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.</skos:definition>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.rdf"/>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land">
-    <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
-    <skos:notation>1.4.1</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land">
-    <skos:prefLabel xml:lang="en">Unused land</skos:prefLabel>
-    <skos:notation>1.4.2</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
-    <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
-    <skos:notation>1.0.0</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

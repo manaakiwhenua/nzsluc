@@ -26,21 +26,6 @@
       }
     },
     {
-      "@id": "com:buckwheat.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:buckwheat"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:buckwheat",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -53,14 +38,6 @@
       "skos:usageNote": {
         "@language": "en",
         "@value": "Buckwheat is a pseudocereal related to rhubarb. As it is grown as a grain it is considered part of cereals."
-      }
-    },
-    {
-      "@id": "com:buckwheat.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:buckwheat"
       }
     },
     {
@@ -78,6 +55,29 @@
           "@id": "com:buckwheat.rdf"
         }
       ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:buckwheat.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:buckwheat"
+      }
+    },
+    {
+      "@id": "com:buckwheat.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:buckwheat"
+      }
     }
   ]
 }

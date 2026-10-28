@@ -8,32 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:marjoram.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:marjoram"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:marjoram"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:marjoram.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:marjoram"
-      }
-    },
-    {
       "@id": "com:marjoram.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -51,6 +25,16 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "marjoram"
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:marjoram"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
     },
     {
       "@id": "com:marjoram.html",
@@ -73,6 +57,22 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:marjoram.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:marjoram"
+      }
+    },
+    {
+      "@id": "com:marjoram.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:marjoram"
       }
     }
   ]

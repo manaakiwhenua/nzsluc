@@ -16,20 +16,9 @@
       }
     },
     {
-      "@id": "com:stone",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:stone.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "stone"
-    },
-    {
-      "@id": "com:stone.jsonld",
+      "@id": "com:stone.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:stone"
       }
@@ -42,14 +31,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:stone.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:stone"
       }
     },
     {
@@ -69,10 +50,29 @@
       ]
     },
     {
+      "@id": "com:stone",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:stone.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "stone"
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:stone.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:stone"
       }
     }
   ]

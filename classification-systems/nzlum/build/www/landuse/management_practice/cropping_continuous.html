@@ -18,6 +18,24 @@
   },
   "@graph": [
     {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:cropping_continuous"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_continuous.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:cropping_continuous"
+      }
+    },
+    {
       "@id": "mgmt:cropping_continuous.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -34,22 +52,10 @@
       ]
     },
     {
-      "@id": "mgmt:cropping_continuous",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:cropping_continuous.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "cropping continuous"
-    },
-    {
-      "@id": "mgmt:cropping_continuous.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:cropping_continuous"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -61,29 +67,23 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:cropping_continuous.jsonld",
+      "@id": "mgmt:cropping_continuous.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_continuous"
       }
     },
     {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:cropping_continuous"
+      "@id": "mgmt:cropping_continuous",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:cropping_continuous.html"
       },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping continuous"
     }
   ]
 }

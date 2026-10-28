@@ -9,44 +9,9 @@
   },
   "@graph": [
     {
-      "@id": "lus:nzlum",
-      "@type": "skos:ConceptScheme",
-      "dcterms:hasVersion": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "dcterms:relation": {
-        "@id": "lu_proverb:kotahi_te_aho"
-      },
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "New Zealand Land Use and Management classification system"
-      },
-      "doap:repository": {
-        "@id": "_:n88814eaac34f4758a5123f8902819d4bb1"
-      },
-      "foaf:homepage": {
-        "@id": "https://nzlum.landcareresearch.co.nz/"
-      },
-      "foaf:isPrimaryTopicOf": {
-        "@id": "lus:nzlum.html"
-      }
-    },
-    {
-      "@id": "_:n88814eaac34f4758a5123f8902819d4bb1",
-      "@type": "doap:GitRepository",
-      "doap:browse": {
-        "@id": "https://github.com/manaakiwhenua/nzsluc"
-      }
-    },
-    {
-      "@id": "lus:nzlum.ttl",
+      "@id": "lus:nzlum.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "lus:nzlum"
       }
@@ -60,15 +25,46 @@
       }
     },
     {
-      "@id": "lus:nzlum0.4.0",
-      "dcterms:isVersionOf": {
+      "@id": "lus:nzlum.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "lus:nzlum"
       }
     },
     {
-      "@id": "lus:nzlum0.3.0",
-      "dcterms:isVersionOf": {
-        "@id": "lus:nzlum"
+      "@id": "lus:nzlum",
+      "@type": "skos:ConceptScheme",
+      "dcterms:hasVersion": [
+        {
+          "@id": "lus:nzlum0.3.0"
+        },
+        {
+          "@id": "lus:nzlum0.4.0"
+        }
+      ],
+      "dcterms:relation": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "New Zealand Land Use and Management classification system"
+      },
+      "doap:repository": {
+        "@id": "_:n8b7a1b759382482d82be210b310aeca9b1"
+      },
+      "foaf:homepage": {
+        "@id": "https://nzlum.landcareresearch.co.nz/"
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lus:nzlum.html"
+      }
+    },
+    {
+      "@id": "_:n8b7a1b759382482d82be210b310aeca9b1",
+      "@type": "doap:GitRepository",
+      "doap:browse": {
+        "@id": "https://github.com/manaakiwhenua/nzsluc"
       }
     },
     {
@@ -88,10 +84,14 @@
       ]
     },
     {
-      "@id": "lus:nzlum.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "lus:nzlum0.3.0",
+      "dcterms:isVersionOf": {
+        "@id": "lus:nzlum"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "dcterms:isVersionOf": {
         "@id": "lus:nzlum"
       }
     }

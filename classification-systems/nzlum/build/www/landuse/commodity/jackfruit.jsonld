@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:jackfruit.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:jackfruit"
-      }
-    },
-    {
       "@id": "com:jackfruit",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -30,6 +22,14 @@
       "@id": "com:jackfruit.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:jackfruit"
+      }
+    },
+    {
+      "@id": "com:jackfruit.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:jackfruit"
       }
@@ -59,6 +59,13 @@
       ]
     },
     {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:jackfruit"
@@ -66,13 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

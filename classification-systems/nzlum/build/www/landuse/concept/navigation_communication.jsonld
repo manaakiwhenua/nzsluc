@@ -16,14 +16,6 @@
       }
     },
     {
-      "@id": "luc:navigation_communication.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:navigation_communication"
-      }
-    },
-    {
       "@id": "luc:navigation_communication.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -40,14 +32,6 @@
       ]
     },
     {
-      "@id": "luc:navigation_communication.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:navigation_communication"
-      }
-    },
-    {
       "@id": "luc:navigation_communication",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -58,11 +42,11 @@
       },
       "skos:changeNote": [
         {
-          "@language": "en",
-          "@value": "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."
+          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
         },
         {
-          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
+          "@language": "en",
+          "@value": "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."
         }
       ],
       "skos:definition": {
@@ -88,9 +72,25 @@
       }
     },
     {
+      "@id": "luc:navigation_communication.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:navigation_communication"
+      }
+    },
+    {
       "@id": "luc:navigation_communication.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:navigation_communication"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:navigation_communication"
       }

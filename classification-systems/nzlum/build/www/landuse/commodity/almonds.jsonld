@@ -8,20 +8,12 @@
   },
   "@graph": [
     {
-      "@id": "com:almonds.html",
+      "@id": "com:almonds.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:almonds.ttl"
-        },
-        {
-          "@id": "com:almonds.jsonld"
-        },
-        {
-          "@id": "com:almonds.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:almonds"
+      }
     },
     {
       "@id": "com:nuts",
@@ -50,11 +42,26 @@
       }
     },
     {
-      "@id": "com:almonds.rdf",
+      "@id": "com:almonds.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:almonds"
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:almonds.ttl"
+        },
+        {
+          "@id": "com:almonds.jsonld"
+        },
+        {
+          "@id": "com:almonds.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -67,13 +74,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "almonds"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     }
   ]
 }

@@ -18,31 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:chillies"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:chillies.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chillies"
-      }
-    },
-    {
       "@id": "com:chillies.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -62,6 +37,32 @@
       "skos:notation": "chillies"
     },
     {
+      "@id": "com:chillies.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chillies"
+      }
+    },
+    {
+      "@id": "com:chillies.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chillies"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:chillies"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "com:chillies.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -78,11 +79,10 @@
       ]
     },
     {
-      "@id": "com:chillies.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chillies"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

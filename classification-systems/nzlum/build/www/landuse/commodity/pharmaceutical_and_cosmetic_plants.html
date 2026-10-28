@@ -18,16 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:pharmaceutical_and_cosmetic_plants"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
       "@id": "com:pharmaceutical_and_cosmetic_plants.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -42,22 +32,6 @@
       "foaf:primaryTopic": {
         "@id": "com:pharmaceutical_and_cosmetic_plants"
       }
-    },
-    {
-      "@id": "com:pharmaceutical_and_cosmetic_plants.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pharmaceutical_and_cosmetic_plants.ttl"
-        },
-        {
-          "@id": "com:pharmaceutical_and_cosmetic_plants.jsonld"
-        },
-        {
-          "@id": "com:pharmaceutical_and_cosmetic_plants.rdf"
-        }
-      ]
     },
     {
       "@id": "com:pharmaceutical_and_cosmetic_plants.ttl",
@@ -84,6 +58,32 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:pharmaceutical_and_cosmetic_plants"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "com:pharmaceutical_and_cosmetic_plants.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pharmaceutical_and_cosmetic_plants.ttl"
+        },
+        {
+          "@id": "com:pharmaceutical_and_cosmetic_plants.jsonld"
+        },
+        {
+          "@id": "com:pharmaceutical_and_cosmetic_plants.rdf"
+        }
+      ]
     }
   ]
 }

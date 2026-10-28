@@ -18,6 +18,10 @@
   },
   "@graph": [
     {
+      "@id": "com:cattle",
+      "skos:notation": "cattle"
+    },
+    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:cattle_stud"
@@ -25,14 +29,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:cattle_stud.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cattle_stud"
       }
     },
     {
@@ -52,6 +48,21 @@
       }
     },
     {
+      "@id": "com:cattle_stud.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cattle_stud"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:cattle_stud.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -66,17 +77,6 @@
           "@id": "com:cattle_stud.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:cattle",
-      "skos:notation": "cattle"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     },
     {
       "@id": "com:cattle_stud",

@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.rdf">
-    <foaf:primaryTopic>
-      <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals">
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/buckwheat"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/oats"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/triticale"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/maize"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_grain"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canary_seed"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinoa"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/millet_and_pancium"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/rice"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/wheat"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
-        <skos:prefLabel xml:lang="en">Cereals</skos:prefLabel>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.html"/>
-      </skos:Collection>
-    </foaf:primaryTopic>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -41,45 +19,79 @@
         <dcterms:format>application/ld+json</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.rdf"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinoa">
-    <skos:notation>quinoa</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_grain">
-    <skos:notation>sorghum grain</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oats">
-    <skos:notation>oats</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/millet_and_pancium">
-    <skos:notation>millet and pancium</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canary_seed">
-    <skos:notation>canary_seed</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rice">
-    <skos:notation>rice</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/wheat">
-    <skos:notation>wheat</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley">
-    <skos:notation>barley</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/maize">
-    <skos:notation>maize</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/triticale">
-    <skos:notation>triticale</skos:notation>
-  </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal">
     <skos:notation>rye cereal</skos:notation>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/buckwheat">
-    <skos:notation>buckwheat</skos:notation>
-  </rdf:Description>
+  <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals">
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/triticale">
+        <skos:notation>triticale</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/buckwheat">
+        <skos:notation>buckwheat</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/wheat">
+        <skos:notation>wheat</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/millet_and_pancium">
+        <skos:notation>millet and pancium</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal"/>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinoa">
+        <skos:notation>quinoa</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canary_seed">
+        <skos:notation>canary_seed</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/maize">
+        <skos:notation>maize</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rice">
+        <skos:notation>rice</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oats">
+        <skos:notation>oats</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_grain">
+        <skos:notation>sorghum grain</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/barley">
+        <skos:notation>barley</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Cereals</skos:prefLabel>
+    <skos:inScheme>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+        <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+      </rdf:Description>
+    </skos:inScheme>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals.html"/>
+  </skos:Collection>
 </rdf:RDF>

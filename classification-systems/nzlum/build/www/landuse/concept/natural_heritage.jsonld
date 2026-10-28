@@ -8,28 +8,12 @@
   },
   "@graph": [
     {
-      "@id": "luc:natural_heritage.ttl",
+      "@id": "luc:natural_heritage.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:natural_heritage"
       }
-    },
-    {
-      "@id": "luc:natural_heritage.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:natural_heritage.ttl"
-        },
-        {
-          "@id": "luc:natural_heritage.jsonld"
-        },
-        {
-          "@id": "luc:natural_heritage.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:natural_heritage.jsonld",
@@ -45,6 +29,14 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Cultural and natural heritage"
+      }
+    },
+    {
+      "@id": "luc:natural_heritage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_heritage"
       }
     },
     {
@@ -75,12 +67,20 @@
       }
     },
     {
-      "@id": "luc:natural_heritage.rdf",
+      "@id": "luc:natural_heritage.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_heritage"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:natural_heritage.ttl"
+        },
+        {
+          "@id": "luc:natural_heritage.jsonld"
+        },
+        {
+          "@id": "luc:natural_heritage.rdf"
+        }
+      ]
     }
   ]
 }

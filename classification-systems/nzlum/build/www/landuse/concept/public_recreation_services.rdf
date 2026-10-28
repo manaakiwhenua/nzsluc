@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/outdoor_recreation">
-    <skos:prefLabel xml:lang="en">Outdoor recreation</skos:prefLabel>
-    <skos:notation>3.2.1</skos:notation>
-  </rdf:Description>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services">
-        <skos:prefLabel xml:lang="en">Community services</skos:prefLabel>
-        <skos:notation>3.2.3</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
     <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation">
         <skos:prefLabel xml:lang="en">Indoor recreation</skos:prefLabel>
         <skos:notation>3.2.2</skos:notation>
       </rdf:Description>
     </skos:narrower>
-    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/outdoor_recreation"/>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/outdoor_recreation">
+        <skos:prefLabel xml:lang="en">Outdoor recreation</skos:prefLabel>
+        <skos:notation>3.2.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services">
+        <skos:prefLabel xml:lang="en">Community services</skos:prefLabel>
+        <skos:notation>3.2.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">Public recreation and services</skos:prefLabel>
     <lu:colour>#C19878</lu:colour>
     <skos:definition xml:lang="en">Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.</skos:definition>
     <skos:broader>
@@ -34,8 +34,9 @@
         <skos:notation>3.0.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:prefLabel xml:lang="en">Public recreation and services</skos:prefLabel>
     <skos:notation>3.2.0</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.html">
         <dcterms:format>text/html</dcterms:format>
@@ -45,16 +46,16 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.rdf">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.ttl">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

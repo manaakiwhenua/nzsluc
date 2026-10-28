@@ -8,9 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:milking_herringbone.rdf",
+      "@id": "mgmt:milking_herringbone.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:milking_herringbone"
       }
@@ -40,17 +40,6 @@
       }
     },
     {
-      "@id": "mgmt:milking_herringbone",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:milking_herringbone.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "milking herringbone"
-    },
-    {
       "@id": "lus:management_practices",
       "dcterms:title": {
         "@language": "en",
@@ -68,12 +57,23 @@
       }
     },
     {
-      "@id": "mgmt:milking_herringbone.jsonld",
+      "@id": "mgmt:milking_herringbone.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:milking_herringbone"
       }
+    },
+    {
+      "@id": "mgmt:milking_herringbone",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:milking_herringbone.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking herringbone"
     }
   ]
 }

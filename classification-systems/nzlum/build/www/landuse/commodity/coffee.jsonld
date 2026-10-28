@@ -8,16 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:coffee"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
       "@id": "com:coffee.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -34,15 +24,12 @@
       ]
     },
     {
-      "@id": "com:coffee",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:coffee.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coffee"
+      "@id": "com:coffee.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:coffee"
+      }
     },
     {
       "@id": "com:coffee.jsonld",
@@ -53,12 +40,15 @@
       }
     },
     {
-      "@id": "com:coffee.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:coffee"
-      }
+      "@id": "com:coffee",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:coffee.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coffee"
     },
     {
       "@id": "com:coffee.ttl",
@@ -73,6 +63,16 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:coffee"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     }
   ]

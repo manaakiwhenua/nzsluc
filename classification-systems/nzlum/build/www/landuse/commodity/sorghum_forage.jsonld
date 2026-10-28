@@ -16,6 +16,24 @@
       }
     },
     {
+      "@id": "com:sorghum_forage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sorghum_forage"
+      }
+    },
+    {
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:sorghum_forage"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
       "@id": "com:sorghum_forage",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,13 +45,10 @@
       "skos:notation": "sorghum forage"
     },
     {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:sorghum_forage"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Pasture"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -56,21 +71,6 @@
       "@id": "com:sorghum_forage.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:sorghum_forage"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sorghum_forage.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:sorghum_forage"
       }

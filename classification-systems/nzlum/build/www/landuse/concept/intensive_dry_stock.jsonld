@@ -9,6 +9,22 @@
   },
   "@graph": [
     {
+      "@id": "luc:intensive_dry_stock.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:intensive_dry_stock"
+      }
+    },
+    {
+      "@id": "luc:intensive_dry_stock.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:intensive_dry_stock"
+      }
+    },
+    {
       "@id": "luc:intensive_dry_stock",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -54,11 +70,19 @@
       }
     },
     {
-      "@id": "luc:intensive_dry_stock.jsonld",
+      "@id": "luc:intensive_dry_stock.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:intensive_dry_stock"
+      }
+    },
+    {
+      "@id": "luc:grazing_modified_pasture_systems",
+      "skos:notation": "2.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing modified pasture systems"
       }
     },
     {
@@ -76,30 +100,6 @@
           "@id": "luc:intensive_dry_stock.rdf"
         }
       ]
-    },
-    {
-      "@id": "luc:intensive_dry_stock.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:intensive_dry_stock"
-      }
-    },
-    {
-      "@id": "luc:grazing_modified_pasture_systems",
-      "skos:notation": "2.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Grazing modified pasture systems"
-      }
-    },
-    {
-      "@id": "luc:intensive_dry_stock.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:intensive_dry_stock"
-      }
     }
   ]
 }

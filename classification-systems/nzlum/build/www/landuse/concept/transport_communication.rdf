@@ -1,70 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+        <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+        <skos:notation>3.0.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:notation>3.6.0</skos:notation>
+    <lu:colour>#72737E</lu:colour>
+    <skos:prefLabel xml:lang="en">Transport and communication</skos:prefLabel>
+    <skos:definition xml:lang="en">Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment.</skos:definition>
+    <skos:usageNote xml:lang="en">Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</skos:usageNote>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes">
+        <skos:prefLabel xml:lang="en">Airports/aerodromes</skos:prefLabel>
+        <skos:notation>3.6.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/roads">
+        <skos:prefLabel xml:lang="en">Roads</skos:prefLabel>
+        <skos:notation>3.6.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways">
+        <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
+        <skos:notation>3.6.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport">
+        <skos:prefLabel xml:lang="en">Ports and water transport</skos:prefLabel>
+        <skos:notation>3.6.4</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication">
+        <skos:prefLabel xml:lang="en">Navigation and communication</skos:prefLabel>
+        <skos:notation>3.5.8</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication">
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
-        <skos:notation>3.6.0</skos:notation>
-        <lu:colour>#72737E</lu:colour>
-        <skos:prefLabel xml:lang="en">Transport and communication</skos:prefLabel>
-        <skos:definition xml:lang="en">Land allocated to infrastructure used for the transportation of goods or people, or navigation and communication equipment.</skos:definition>
-        <skos:usageNote xml:lang="en">Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</skos:usageNote>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/roads"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-        <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
     <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes">
-    <skos:prefLabel xml:lang="en">Airports/aerodromes</skos:prefLabel>
-    <skos:notation>3.6.1</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication">
-    <skos:prefLabel xml:lang="en">Navigation and communication</skos:prefLabel>
-    <skos:notation>3.5.8</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
-    <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
-    <skos:notation>3.0.0</skos:notation>
-  </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.rdf"/>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways">
-    <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
-    <skos:notation>3.6.3</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport">
-    <skos:prefLabel xml:lang="en">Ports and water transport</skos:prefLabel>
-    <skos:notation>3.6.4</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/roads">
-    <skos:prefLabel xml:lang="en">Roads</skos:prefLabel>
-    <skos:notation>3.6.2</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

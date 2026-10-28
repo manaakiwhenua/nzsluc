@@ -8,11 +8,43 @@
   },
   "@graph": [
     {
+      "@id": "luc:tree_crops.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:tree_crops"
+      }
+    },
+    {
+      "@id": "luc:tree_crops.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:tree_crops.ttl"
+        },
+        {
+          "@id": "luc:tree_crops.jsonld"
+        },
+        {
+          "@id": "luc:tree_crops.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:perennial_horticulture",
       "skos:notation": "2.4.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Perennial horticulture"
+      }
+    },
+    {
+      "@id": "luc:tree_crops.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:tree_crops"
       }
     },
     {
@@ -59,38 +91,6 @@
           "@value": "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."
         }
       ]
-    },
-    {
-      "@id": "luc:tree_crops.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:tree_crops"
-      }
-    },
-    {
-      "@id": "luc:tree_crops.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:tree_crops.ttl"
-        },
-        {
-          "@id": "luc:tree_crops.jsonld"
-        },
-        {
-          "@id": "luc:tree_crops.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:tree_crops.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:tree_crops"
-      }
     }
   ]
 }

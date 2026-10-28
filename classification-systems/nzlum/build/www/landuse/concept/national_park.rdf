@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park">
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
-        <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
-        <skos:notation>1.1.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</dcterms:source>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <lu:colour>#7C76B6</lu:colour>
-    <skos:definition xml:lang="en">Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.ttl">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park">
+        <skos:notation>1.1.3</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+        <skos:definition xml:lang="en">Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
 
   a) protect the ecological integrity of one or more ecosystems for the current and future generations;
 
   b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and
 
   c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.</skos:definition>
-    <skos:prefLabel xml:lang="en">National Park</skos:prefLabel>
-    <skos:notation>1.1.3</skos:notation>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park"/>
+        <skos:prefLabel xml:lang="en">National Park</skos:prefLabel>
+        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</dcterms:source>
+        <lu:colour>#7C76B6</lu:colour>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/national_park"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+    <skos:notation>1.1.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

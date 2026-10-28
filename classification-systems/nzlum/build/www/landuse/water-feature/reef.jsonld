@@ -9,11 +9,20 @@
   },
   "@graph": [
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
+      "@id": "wtr:reef.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:reef.ttl"
+        },
+        {
+          "@id": "wtr:reef.jsonld"
+        },
+        {
+          "@id": "wtr:reef.rdf"
+        }
+      ]
     },
     {
       "@id": "wtr:reef.jsonld",
@@ -32,28 +41,11 @@
       }
     },
     {
-      "@id": "wtr:reef.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:reef"
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
       }
-    },
-    {
-      "@id": "wtr:reef.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:reef.ttl"
-        },
-        {
-          "@id": "wtr:reef.jsonld"
-        },
-        {
-          "@id": "wtr:reef.rdf"
-        }
-      ]
     },
     {
       "@id": "wtr:reef",
@@ -66,6 +58,14 @@
         "@id": "lus:water_features"
       },
       "skos:notation": "reef"
+    },
+    {
+      "@id": "wtr:reef.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:reef"
+      }
     }
   ]
 }

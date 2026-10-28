@@ -9,6 +9,38 @@
   },
   "@graph": [
     {
+      "@id": "luc:dairy.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    },
+    {
+      "@id": "luc:dairy.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    },
+    {
+      "@id": "luc:grazing_modified_pasture_systems",
+      "skos:notation": "2.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing modified pasture systems"
+      }
+    },
+    {
+      "@id": "luc:dairy.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:dairy"
+      }
+    },
+    {
       "@id": "luc:dairy.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -23,14 +55,6 @@
           "@id": "luc:dairy.rdf"
         }
       ]
-    },
-    {
-      "@id": "luc:grazing_modified_pasture_systems",
-      "skos:notation": "2.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Grazing modified pasture systems"
-      }
     },
     {
       "@id": "luc:dairy",
@@ -62,37 +86,13 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."
+          "@value": "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."
         },
         {
           "@language": "en",
-          "@value": "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."
+          "@value": "Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use."
         }
       ]
-    },
-    {
-      "@id": "luc:dairy.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:dairy"
-      }
-    },
-    {
-      "@id": "luc:dairy.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:dairy"
-      }
-    },
-    {
-      "@id": "luc:dairy.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:dairy"
-      }
     }
   ]
 }

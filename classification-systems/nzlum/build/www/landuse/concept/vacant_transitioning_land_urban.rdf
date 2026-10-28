@@ -1,62 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/greenfield_development">
-    <skos:prefLabel xml:lang="en">Greenfield development</skos:prefLabel>
-    <skos:notation>3.9.2</skos:notation>
-  </rdf:Description>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban">
     <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
-    <lu:colour>#D69B97</lu:colour>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land">
-        <skos:prefLabel xml:lang="en">Idle and derelict land</skos:prefLabel>
-        <skos:notation>3.9.3</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/greenfield_development"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/brownfield_development">
         <skos:prefLabel xml:lang="en">Brownfield development</skos:prefLabel>
         <skos:notation>3.9.1</skos:notation>
       </rdf:Description>
     </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land">
+        <skos:prefLabel xml:lang="en">Idle and derelict land</skos:prefLabel>
+        <skos:notation>3.9.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/greenfield_development">
+        <skos:prefLabel xml:lang="en">Greenfield development</skos:prefLabel>
+        <skos:notation>3.9.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <lu:colour>#D69B97</lu:colour>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
         <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
         <skos:notation>3.0.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:definition xml:lang="en">This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.</skos:definition>
     <skos:notation>3.9.0</skos:notation>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.html"/>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

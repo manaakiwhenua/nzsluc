@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.jsonld">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.ttl">
     <foaf:primaryTopic>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection">
-        <skos:definition xml:lang="en">Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance.</skos:definition>
         <lu:colour>#A39FCB</lu:colour>
-        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature.</dcterms:source>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
-        <skos:notation>1.1.4</skos:notation>
-        <skos:prefLabel xml:lang="en">Natural feature protection</skos:prefLabel>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+        <skos:definition xml:lang="en">Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance.</skos:definition>
+        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature.</dcterms:source>
+        <skos:notation>1.1.4</skos:notation>
+        <skos:prefLabel xml:lang="en">Natural feature protection</skos:prefLabel>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.html"/>
       </skos:Concept>
     </foaf:primaryTopic>
-    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.jsonld"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
     <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
     <skos:notation>1.1.0</skos:notation>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/natural_feature_protection.rdf"/>
+  </foaf:Document>
 </rdf:RDF>

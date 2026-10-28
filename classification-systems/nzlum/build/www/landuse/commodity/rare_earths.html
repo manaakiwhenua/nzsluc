@@ -18,31 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:rare_earths.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:rare_earths"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:rare_earths"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
       "@id": "com:rare_earths.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -59,11 +34,13 @@
       ]
     },
     {
-      "@id": "com:rare_earths.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:mines",
+      "skos:member": {
         "@id": "com:rare_earths"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
       }
     },
     {
@@ -76,6 +53,29 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "rare_earths "
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:rare_earths.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:rare_earths"
+      }
+    },
+    {
+      "@id": "com:rare_earths.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:rare_earths"
+      }
     },
     {
       "@id": "com:rare_earths.rdf",

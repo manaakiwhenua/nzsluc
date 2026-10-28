@@ -8,25 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:feijoa",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:feijoa.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "feijoa"
-    },
-    {
-      "@id": "com:feijoa.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:feijoa"
-      }
-    },
-    {
       "@id": "com:feijoa.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -40,16 +21,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:feijoa"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:feijoa"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     },
     {
@@ -69,10 +40,39 @@
       ]
     },
     {
+      "@id": "com:feijoa.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:feijoa"
+      }
+    },
+    {
+      "@id": "com:feijoa",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:feijoa.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "feijoa"
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:feijoa"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     }
   ]

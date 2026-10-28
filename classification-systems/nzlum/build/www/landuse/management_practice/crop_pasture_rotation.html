@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:crop_pasture_rotation"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
       "@id": "mgmt:crop_pasture_rotation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,9 +39,9 @@
       "skos:notation": "crop pasture rotation"
     },
     {
-      "@id": "mgmt:crop_pasture_rotation.ttl",
+      "@id": "mgmt:crop_pasture_rotation.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:crop_pasture_rotation"
       }
@@ -44,14 +54,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "mgmt:crop_pasture_rotation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:crop_pasture_rotation"
       }
     },
     {
@@ -70,13 +72,11 @@
       }
     },
     {
-      "@id": "mgmt:crop",
-      "skos:member": {
+      "@id": "mgmt:crop_pasture_rotation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "mgmt:crop_pasture_rotation"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
       }
     },
     {

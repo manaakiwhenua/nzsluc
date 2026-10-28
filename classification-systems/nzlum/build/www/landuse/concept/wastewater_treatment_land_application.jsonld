@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:waste_treatment_disposal",
-      "skos:notation": "3.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Waste treatment and disposal"
-      }
-    },
-    {
       "@id": "luc:wastewater_treatment_land_application.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -88,6 +80,14 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:wastewater_treatment_land_application"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
       }
     }
   ]

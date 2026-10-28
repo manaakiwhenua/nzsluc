@@ -8,6 +8,46 @@
   },
   "@graph": [
     {
+      "@id": "luc:quarries.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:quarries.ttl"
+        },
+        {
+          "@id": "luc:quarries.jsonld"
+        },
+        {
+          "@id": "luc:quarries.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:quarries.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:quarries"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:quarries.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:quarries"
+      }
+    },
+    {
       "@id": "luc:quarries",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -38,46 +78,6 @@
       "@id": "luc:quarries.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:quarries"
-      }
-    },
-    {
-      "@id": "luc:quarries.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:quarries.ttl"
-        },
-        {
-          "@id": "luc:quarries.jsonld"
-        },
-        {
-          "@id": "luc:quarries.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:quarries.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:quarries"
-      }
-    },
-    {
-      "@id": "luc:mining",
-      "skos:notation": "3.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mining"
-      }
-    },
-    {
-      "@id": "luc:quarries.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:quarries"
       }

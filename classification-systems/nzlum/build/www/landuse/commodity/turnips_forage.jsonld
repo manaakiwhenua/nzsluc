@@ -8,32 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:turnips_forage.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:turnips_forage"
-      }
-    },
-    {
-      "@id": "com:turnips_forage.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:turnips_forage"
-      }
-    },
-    {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:turnips_forage"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
       "@id": "com:turnips_forage.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -58,6 +32,14 @@
       }
     },
     {
+      "@id": "com:turnips_forage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:turnips_forage"
+      }
+    },
+    {
       "@id": "com:turnips_forage",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -69,10 +51,28 @@
       "skos:notation": "turnips forage"
     },
     {
+      "@id": "com:turnips_forage.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:turnips_forage"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:turnips_forage"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
       }
     }
   ]

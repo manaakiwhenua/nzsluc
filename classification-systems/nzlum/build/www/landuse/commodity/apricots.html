@@ -18,25 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:apricots",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:apricots.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "apricots"
-    },
-    {
-      "@id": "com:apricots.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:apricots"
-      }
-    },
-    {
       "@id": "com:apricots.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -61,13 +42,18 @@
       ]
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:apricots"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:apricots.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:apricots"
       }
     },
     {
@@ -79,11 +65,25 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:apricots"
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
+        "@value": "Fruit"
       }
+    },
+    {
+      "@id": "com:apricots",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:apricots.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "apricots"
     }
   ]
 }

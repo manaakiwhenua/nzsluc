@@ -1,66 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.ttl">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_dry_stock"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
+        <skos:scopeNote xml:lang="en">Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.</skos:scopeNote>
+        <skos:notation>2.2.0</skos:notation>
+        <lu:colour>#357735</lu:colour>
+        <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
+        <skos:definition xml:lang="en">Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.</skos:definition>
+        <skos:usageNote xml:lang="en">The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.</skos:usageNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy">
+    <skos:prefLabel xml:lang="en">Dairy</skos:prefLabel>
+    <skos:notation>2.2.1</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.ttl"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
         <dcterms:format>application/ld+json</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.rdf"/>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
-    <lu:colour>#357735</lu:colour>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy">
-        <skos:prefLabel xml:lang="en">Dairy</skos:prefLabel>
-        <skos:notation>2.2.1</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock">
-        <skos:prefLabel xml:lang="en">Extensive dry stock</skos:prefLabel>
-        <skos:notation>2.2.3</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_dry_stock">
-        <skos:prefLabel xml:lang="en">Intensive dry stock</skos:prefLabel>
-        <skos:notation>2.2.2</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:scopeNote xml:lang="en">Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.</skos:scopeNote>
-    <skos:scopeNote xml:lang="en">Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.</skos:scopeNote>
-    <skos:usageNote xml:lang="en">The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.</skos:usageNote>
-    <skos:definition xml:lang="en">Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.</skos:definition>
-    <skos:notation>2.2.0</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
-        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
-        <skos:notation>2.0.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems.html"/>
-  </skos:Concept>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+    <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+    <skos:notation>2.0.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_dry_stock">
+    <skos:prefLabel xml:lang="en">Intensive dry stock</skos:prefLabel>
+    <skos:notation>2.2.2</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock">
+    <skos:prefLabel xml:lang="en">Extensive dry stock</skos:prefLabel>
+    <skos:notation>2.2.3</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

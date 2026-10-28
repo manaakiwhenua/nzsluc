@@ -18,6 +18,24 @@
   },
   "@graph": [
     {
+      "@id": "com:ironsand.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:ironsand"
+      }
+    },
+    {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:ironsand"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
       "@id": "com:ironsand.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -32,35 +50,6 @@
           "@id": "com:ironsand.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:ironsand",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:ironsand.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "ironsand"
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:ironsand"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:ironsand.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:ironsand"
-      }
     },
     {
       "@id": "com:ironsand.jsonld",
@@ -84,6 +73,17 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:ironsand",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:ironsand.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "ironsand"
     }
   ]
 }

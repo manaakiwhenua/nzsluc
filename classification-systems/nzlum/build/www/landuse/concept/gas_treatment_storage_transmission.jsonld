@@ -8,6 +8,14 @@
   },
   "@graph": [
     {
+      "@id": "luc:gas_treatment_storage_transmission.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:gas_treatment_storage_transmission"
+      }
+    },
+    {
       "@id": "luc:utilities",
       "skos:notation": "3.5.0",
       "skos:prefLabel": {
@@ -74,14 +82,6 @@
       "@id": "luc:gas_treatment_storage_transmission.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:gas_treatment_storage_transmission"
-      }
-    },
-    {
-      "@id": "luc:gas_treatment_storage_transmission.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:gas_treatment_storage_transmission"
       }

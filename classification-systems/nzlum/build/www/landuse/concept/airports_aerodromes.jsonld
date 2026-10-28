@@ -8,25 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "luc:transport",
-      "skos:notation": "3.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Transportation"
-      }
-    },
-    {
       "@id": "luc:airports_aerodromes.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:airports_aerodromes"
-      }
-    },
-    {
-      "@id": "luc:airports_aerodromes.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:airports_aerodromes"
       }
@@ -38,22 +22,6 @@
       "foaf:primaryTopic": {
         "@id": "luc:airports_aerodromes"
       }
-    },
-    {
-      "@id": "luc:airports_aerodromes.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:airports_aerodromes.ttl"
-        },
-        {
-          "@id": "luc:airports_aerodromes.jsonld"
-        },
-        {
-          "@id": "luc:airports_aerodromes.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:airports_aerodromes",
@@ -80,6 +48,38 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Airports/aerodromes"
+      }
+    },
+    {
+      "@id": "luc:airports_aerodromes.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:airports_aerodromes.ttl"
+        },
+        {
+          "@id": "luc:airports_aerodromes.jsonld"
+        },
+        {
+          "@id": "luc:airports_aerodromes.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:airports_aerodromes.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:airports_aerodromes"
+      }
+    },
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
       }
     }
   ]

@@ -19,14 +19,6 @@
   },
   "@graph": [
     {
-      "@id": "wtr:swamp.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "wtr:swamp"
-      }
-    },
-    {
       "@id": "wtr:swamp",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -37,6 +29,37 @@
         "@id": "lus:water_features"
       },
       "skos:notation": "swamp"
+    },
+    {
+      "@id": "wtr:swamp.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:swamp"
+      }
+    },
+    {
+      "@id": "wtr:swamp.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "wtr:swamp"
+      }
+    },
+    {
+      "@id": "wtr:swamp.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:swamp"
+      }
+    },
+    {
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
     },
     {
       "@id": "wtr:swamp.html",
@@ -53,29 +76,6 @@
           "@id": "wtr:swamp.rdf"
         }
       ]
-    },
-    {
-      "@id": "wtr:swamp.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:swamp"
-      }
-    },
-    {
-      "@id": "wtr:swamp.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "wtr:swamp"
-      }
-    },
-    {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
     }
   ]
 }

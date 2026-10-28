@@ -9,22 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:intensive_horticulture.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:intensive_horticulture.ttl"
-        },
-        {
-          "@id": "luc:intensive_horticulture.jsonld"
-        },
-        {
-          "@id": "luc:intensive_horticulture.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:intensive_horticulture.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -41,20 +25,20 @@
       }
     },
     {
-      "@id": "luc:production_nurseries",
-      "skos:notation": "2.5.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Production nurseries"
-      }
-    },
-    {
-      "@id": "luc:intensive_horticulture.ttl",
+      "@id": "luc:intensive_horticulture.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:intensive_horticulture"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:intensive_horticulture.ttl"
+        },
+        {
+          "@id": "luc:intensive_horticulture.jsonld"
+        },
+        {
+          "@id": "luc:intensive_horticulture.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:intensive_horticulture",
@@ -94,21 +78,13 @@
       "skos:usageNote": [
         {
           "@language": "en",
-          "@value": "Record management practices such as hydroponic systems, irrigation, and netting, if known."
+          "@value": "The specific commodity or commodities should be noted if known."
         },
         {
           "@language": "en",
-          "@value": "The specific commodity or commodities should be noted if known."
+          "@value": "Record management practices such as hydroponic systems, irrigation, and netting, if known."
         }
       ]
-    },
-    {
-      "@id": "luc:glasshouses_shadehouses",
-      "skos:notation": "2.5.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Glasshouses/shadehouses"
-      }
     },
     {
       "@id": "luc:production_agriculture_plantations",
@@ -116,6 +92,30 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Production agriculture and plantations"
+      }
+    },
+    {
+      "@id": "luc:production_nurseries",
+      "skos:notation": "2.5.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production nurseries"
+      }
+    },
+    {
+      "@id": "luc:intensive_horticulture.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:intensive_horticulture"
+      }
+    },
+    {
+      "@id": "luc:glasshouses_shadehouses",
+      "skos:notation": "2.5.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Glasshouses/shadehouses"
       }
     }
   ]

@@ -24,6 +24,21 @@
       }
     },
     {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:rambutans.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rambutans"
+      }
+    },
+    {
       "@id": "com:rambutans.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -59,21 +74,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "rambutans"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:rambutans.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:rambutans"
-      }
     }
   ]
 }

@@ -8,8 +8,160 @@
   },
   "@graph": [
     {
-      "@id": "com:mushrooms",
-      "skos:notation": "mushrooms"
+      "@id": "com:kumara",
+      "skos:notation": "kumara"
+    },
+    {
+      "@id": "com:chinese_cabbages",
+      "skos:notation": "chinese cabbages"
+    },
+    {
+      "@id": "com:tarragon",
+      "skos:notation": "tarragon"
+    },
+    {
+      "@id": "com:rocket",
+      "skos:notation": "rocket"
+    },
+    {
+      "@id": "com:cabbages",
+      "skos:notation": "cabbages"
+    },
+    {
+      "@id": "com:truffles",
+      "skos:notation": "truffles"
+    },
+    {
+      "@id": "com:turnips",
+      "skos:notation": "turnips"
+    },
+    {
+      "@id": "com:lemongrass",
+      "skos:notation": "lemongrass"
+    },
+    {
+      "@id": "com:garlic",
+      "skos:notation": "garlic"
+    },
+    {
+      "@id": "com:echinacea",
+      "skos:notation": "echinacea"
+    },
+    {
+      "@id": "com:asparagus",
+      "skos:notation": "asparagus"
+    },
+    {
+      "@id": "com:brussels_sprouts",
+      "skos:notation": "brussels sprouts"
+    },
+    {
+      "@id": "com:celery",
+      "skos:notation": "celery"
+    },
+    {
+      "@id": "com:zucchini",
+      "skos:notation": "zucchini"
+    },
+    {
+      "@id": "com:parsnips",
+      "skos:notation": "parsnips"
+    },
+    {
+      "@id": "com:beans",
+      "skos:notation": "beans"
+    },
+    {
+      "@id": "com:sugar_beet",
+      "skos:notation": "sugar beet"
+    },
+    {
+      "@id": "com:marjoram",
+      "skos:notation": "marjoram"
+    },
+    {
+      "@id": "com:radishes",
+      "skos:notation": "radishes"
+    },
+    {
+      "@id": "com:parsley",
+      "skos:notation": "parsley"
+    },
+    {
+      "@id": "com:snowpeas",
+      "skos:notation": "snowpeas"
+    },
+    {
+      "@id": "com:artichokes",
+      "skos:notation": "artichokes"
+    },
+    {
+      "@id": "com:peas",
+      "skos:notation": "peas"
+    },
+    {
+      "@id": "com:cauliflowers",
+      "skos:notation": "cauliflowers"
+    },
+    {
+      "@id": "com:mint",
+      "skos:notation": "mint"
+    },
+    {
+      "@id": "com:thyme",
+      "skos:notation": "thyme"
+    },
+    {
+      "@id": "com:oregano",
+      "skos:notation": "oregano"
+    },
+    {
+      "@id": "com:kale",
+      "skos:notation": "kale"
+    },
+    {
+      "@id": "com:fennel",
+      "skos:notation": "fennel"
+    },
+    {
+      "@id": "com:okra",
+      "skos:notation": "okra"
+    },
+    {
+      "@id": "com:chillies",
+      "skos:notation": "chillies"
+    },
+    {
+      "@id": "com:broccoli",
+      "skos:notation": "broccoli"
+    },
+    {
+      "@id": "com:lettuces",
+      "skos:notation": "lettuces"
+    },
+    {
+      "@id": "com:sprouts",
+      "skos:notation": "sprouts"
+    },
+    {
+      "@id": "com:bitter_melon",
+      "skos:notation": "bitter melon"
+    },
+    {
+      "@id": "com:rhubarb",
+      "skos:notation": "rhubarb"
+    },
+    {
+      "@id": "com:silverbeet_and_spinach",
+      "skos:notation": "silverbeet and spinach"
+    },
+    {
+      "@id": "com:beetroot",
+      "skos:notation": "beetroot"
+    },
+    {
+      "@id": "com:burdock",
+      "skos:notation": "burdock"
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -22,208 +174,208 @@
       },
       "skos:member": [
         {
-          "@id": "com:eggplants"
-        },
-        {
-          "@id": "com:turnips"
-        },
-        {
-          "@id": "com:marrows_and_squashes"
-        },
-        {
-          "@id": "com:celery"
-        },
-        {
-          "@id": "com:zucchini"
-        },
-        {
-          "@id": "com:herbs"
-        },
-        {
-          "@id": "com:sage"
-        },
-        {
-          "@id": "com:mint"
-        },
-        {
-          "@id": "com:mushrooms"
-        },
-        {
-          "@id": "com:parsnips"
-        },
-        {
-          "@id": "com:vegetables"
-        },
-        {
-          "@id": "com:sugar_beet"
-        },
-        {
-          "@id": "com:arrowroot"
-        },
-        {
-          "@id": "com:french_beans"
-        },
-        {
-          "@id": "com:rocket"
-        },
-        {
-          "@id": "com:sprouts"
-        },
-        {
-          "@id": "com:lemongrass"
-        },
-        {
-          "@id": "com:bitter_melon"
-        },
-        {
           "@id": "com:artichokes"
-        },
-        {
-          "@id": "com:cucumbers"
-        },
-        {
-          "@id": "com:rosemary"
-        },
-        {
-          "@id": "com:leeks"
-        },
-        {
-          "@id": "com:parsley"
-        },
-        {
-          "@id": "com:potatoes"
-        },
-        {
-          "@id": "com:carrots"
-        },
-        {
-          "@id": "com:chamomile"
-        },
-        {
-          "@id": "com:spring_onions_and_shallots"
-        },
-        {
-          "@id": "com:cabbages"
-        },
-        {
-          "@id": "com:chives"
-        },
-        {
-          "@id": "com:asparagus"
-        },
-        {
-          "@id": "com:thyme"
-        },
-        {
-          "@id": "com:coriander"
-        },
-        {
-          "@id": "com:kale"
-        },
-        {
-          "@id": "com:peppermint"
-        },
-        {
-          "@id": "com:chervil"
-        },
-        {
-          "@id": "com:cauliflowers"
-        },
-        {
-          "@id": "com:beans"
-        },
-        {
-          "@id": "com:vegetable_seeds"
-        },
-        {
-          "@id": "com:chinese_cabbages"
         },
         {
           "@id": "com:rhubarb"
         },
         {
-          "@id": "com:peas"
-        },
-        {
-          "@id": "com:chicory"
-        },
-        {
-          "@id": "com:garlic"
-        },
-        {
-          "@id": "com:oregano"
-        },
-        {
-          "@id": "com:swedes"
-        },
-        {
-          "@id": "com:truffles"
-        },
-        {
-          "@id": "com:sweet_corn"
-        },
-        {
-          "@id": "com:onions"
-        },
-        {
-          "@id": "com:radishes"
-        },
-        {
-          "@id": "com:kumara"
-        },
-        {
-          "@id": "com:marjoram"
+          "@id": "com:spring_onions_and_shallots"
         },
         {
           "@id": "com:brussels_sprouts"
         },
         {
-          "@id": "com:snowpeas"
+          "@id": "com:cucumbers"
         },
         {
-          "@id": "com:sweet_potatoes"
-        },
-        {
-          "@id": "com:tarragon"
-        },
-        {
-          "@id": "com:broccoli"
-        },
-        {
-          "@id": "com:beetroot"
-        },
-        {
-          "@id": "com:silverbeet_and_spinach"
-        },
-        {
-          "@id": "com:lettuces"
-        },
-        {
-          "@id": "com:fennel"
-        },
-        {
-          "@id": "com:tomatoes"
-        },
-        {
-          "@id": "com:okra"
-        },
-        {
-          "@id": "com:pumpkins"
-        },
-        {
-          "@id": "com:burdock"
+          "@id": "com:thyme"
         },
         {
           "@id": "com:echinacea"
         },
         {
+          "@id": "com:truffles"
+        },
+        {
+          "@id": "com:peppermint"
+        },
+        {
+          "@id": "com:chicory"
+        },
+        {
+          "@id": "com:cabbages"
+        },
+        {
+          "@id": "com:potatoes"
+        },
+        {
+          "@id": "com:marrows_and_squashes"
+        },
+        {
+          "@id": "com:broccoli"
+        },
+        {
+          "@id": "com:coriander"
+        },
+        {
+          "@id": "com:swedes"
+        },
+        {
+          "@id": "com:tomatoes"
+        },
+        {
+          "@id": "com:lettuces"
+        },
+        {
+          "@id": "com:burdock"
+        },
+        {
+          "@id": "com:marjoram"
+        },
+        {
           "@id": "com:capsicums"
+        },
+        {
+          "@id": "com:garlic"
+        },
+        {
+          "@id": "com:mint"
+        },
+        {
+          "@id": "com:parsnips"
+        },
+        {
+          "@id": "com:lemongrass"
+        },
+        {
+          "@id": "com:asparagus"
+        },
+        {
+          "@id": "com:peas"
+        },
+        {
+          "@id": "com:oregano"
+        },
+        {
+          "@id": "com:chamomile"
+        },
+        {
+          "@id": "com:mushrooms"
+        },
+        {
+          "@id": "com:beans"
+        },
+        {
+          "@id": "com:cauliflowers"
+        },
+        {
+          "@id": "com:sweet_potatoes"
+        },
+        {
+          "@id": "com:pumpkins"
+        },
+        {
+          "@id": "com:zucchini"
+        },
+        {
+          "@id": "com:okra"
+        },
+        {
+          "@id": "com:chillies"
+        },
+        {
+          "@id": "com:rocket"
+        },
+        {
+          "@id": "com:onions"
+        },
+        {
+          "@id": "com:silverbeet_and_spinach"
+        },
+        {
+          "@id": "com:sugar_beet"
+        },
+        {
+          "@id": "com:sprouts"
+        },
+        {
+          "@id": "com:parsley"
+        },
+        {
+          "@id": "com:fennel"
+        },
+        {
+          "@id": "com:bitter_melon"
+        },
+        {
+          "@id": "com:turnips"
+        },
+        {
+          "@id": "com:kumara"
+        },
+        {
+          "@id": "com:sage"
+        },
+        {
+          "@id": "com:chinese_cabbages"
+        },
+        {
+          "@id": "com:kale"
+        },
+        {
+          "@id": "com:arrowroot"
+        },
+        {
+          "@id": "com:rosemary"
+        },
+        {
+          "@id": "com:vegetable_seeds"
+        },
+        {
+          "@id": "com:radishes"
+        },
+        {
+          "@id": "com:french_beans"
+        },
+        {
+          "@id": "com:carrots"
+        },
+        {
+          "@id": "com:celery"
+        },
+        {
+          "@id": "com:snowpeas"
+        },
+        {
+          "@id": "com:vegetables"
+        },
+        {
+          "@id": "com:chervil"
+        },
+        {
+          "@id": "com:eggplants"
+        },
+        {
+          "@id": "com:sweet_corn"
+        },
+        {
+          "@id": "com:tarragon"
+        },
+        {
+          "@id": "com:herbs"
         },
         {
           "@id": "com:gherkins"
         },
         {
-          "@id": "com:chillies"
+          "@id": "com:beetroot"
+        },
+        {
+          "@id": "com:chives"
+        },
+        {
+          "@id": "com:leeks"
         }
       ],
       "skos:prefLabel": {
@@ -232,179 +384,20 @@
       }
     },
     {
-      "@id": "com:chervil",
-      "skos:notation": "chervil"
-    },
-    {
-      "@id": "com:beetroot",
-      "skos:notation": "beetroot"
-    },
-    {
-      "@id": "com:broccoli",
-      "skos:notation": "broccoli"
-    },
-    {
-      "@id": "com:oregano",
-      "skos:notation": "oregano"
-    },
-    {
-      "@id": "com:gherkins",
-      "skos:notation": "gherkins"
-    },
-    {
-      "@id": "com:onions",
-      "skos:notation": "onions"
-    },
-    {
-      "@id": "com:herbs",
-      "skos:notation": "herbs"
-    },
-    {
-      "@id": "com:parsley",
-      "skos:notation": "parsley"
-    },
-    {
-      "@id": "com:vegetables_and_herbs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetables_and_herbs"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetables_and_herbs"
-      }
-    },
-    {
-      "@id": "com:lettuces",
-      "skos:notation": "lettuces"
-    },
-    {
-      "@id": "com:mint",
-      "skos:notation": "mint"
-    },
-    {
-      "@id": "com:turnips",
-      "skos:notation": "turnips"
-    },
-    {
-      "@id": "com:rhubarb",
-      "skos:notation": "rhubarb"
-    },
-    {
-      "@id": "com:rosemary",
-      "skos:notation": "rosemary"
-    },
-    {
-      "@id": "com:sweet_potatoes",
-      "skos:notation": "sweet potatoes"
-    },
-    {
-      "@id": "com:swedes",
-      "skos:notation": "swedes"
-    },
-    {
-      "@id": "com:rocket",
-      "skos:notation": "rocket"
-    },
-    {
-      "@id": "com:burdock",
-      "skos:notation": "burdock"
-    },
-    {
-      "@id": "com:coriander",
-      "skos:notation": "coriander"
-    },
-    {
-      "@id": "com:brussels_sprouts",
-      "skos:notation": "brussels sprouts"
-    },
-    {
-      "@id": "com:celery",
-      "skos:notation": "celery"
-    },
-    {
-      "@id": "com:sprouts",
-      "skos:notation": "sprouts"
+      "@id": "com:tomatoes",
+      "skos:notation": "tomatoes"
     },
     {
       "@id": "com:french_beans",
       "skos:notation": "french beans"
     },
     {
-      "@id": "com:pumpkins",
-      "skos:notation": "pumpkins"
+      "@id": "com:chives",
+      "skos:notation": "chives"
     },
     {
-      "@id": "com:marrows_and_squashes",
-      "skos:notation": "marrows and squashes"
-    },
-    {
-      "@id": "com:artichokes",
-      "skos:notation": "artichokes"
-    },
-    {
-      "@id": "com:spring_onions_and_shallots",
-      "skos:notation": "spring onions and shallots"
-    },
-    {
-      "@id": "com:carrots",
-      "skos:notation": "carrots"
-    },
-    {
-      "@id": "com:potatoes",
-      "skos:notation": "potatoes"
-    },
-    {
-      "@id": "com:tomatoes",
-      "skos:notation": "tomatoes"
-    },
-    {
-      "@id": "com:radishes",
-      "skos:notation": "radishes"
-    },
-    {
-      "@id": "com:sage",
-      "skos:notation": "sage"
-    },
-    {
-      "@id": "com:okra",
-      "skos:notation": "okra"
-    },
-    {
-      "@id": "com:kale",
-      "skos:notation": "kale"
-    },
-    {
-      "@id": "com:peppermint",
-      "skos:notation": "peppermint"
-    },
-    {
-      "@id": "com:chicory",
-      "skos:notation": "chicory"
-    },
-    {
-      "@id": "com:zucchini",
-      "skos:notation": "zucchini"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:echinacea",
-      "skos:notation": "echinacea"
-    },
-    {
-      "@id": "com:parsnips",
-      "skos:notation": "parsnips"
+      "@id": "com:arrowroot",
+      "skos:notation": "arrowroot"
     },
     {
       "@id": "com:vegetables_and_herbs.jsonld",
@@ -415,52 +408,111 @@
       }
     },
     {
-      "@id": "com:sweet_corn",
-      "skos:notation": "sweet corn"
+      "@id": "com:onions",
+      "skos:notation": "onions"
     },
     {
-      "@id": "com:beans",
-      "skos:notation": "beans"
+      "@id": "com:vegetable_seeds",
+      "skos:notation": "vegetable seeds"
     },
     {
-      "@id": "com:lemongrass",
-      "skos:notation": "lemongrass"
+      "@id": "com:swedes",
+      "skos:notation": "swedes"
     },
     {
-      "@id": "com:chinese_cabbages",
-      "skos:notation": "chinese cabbages"
+      "@id": "com:mushrooms",
+      "skos:notation": "mushrooms"
+    },
+    {
+      "@id": "com:gherkins",
+      "skos:notation": "gherkins"
+    },
+    {
+      "@id": "com:peppermint",
+      "skos:notation": "peppermint"
+    },
+    {
+      "@id": "com:carrots",
+      "skos:notation": "carrots"
+    },
+    {
+      "@id": "com:eggplants",
+      "skos:notation": "eggplants"
+    },
+    {
+      "@id": "com:sage",
+      "skos:notation": "sage"
+    },
+    {
+      "@id": "com:potatoes",
+      "skos:notation": "potatoes"
+    },
+    {
+      "@id": "com:coriander",
+      "skos:notation": "coriander"
     },
     {
       "@id": "com:leeks",
       "skos:notation": "leeks"
     },
     {
-      "@id": "com:arrowroot",
-      "skos:notation": "arrowroot"
+      "@id": "com:chervil",
+      "skos:notation": "chervil"
     },
     {
-      "@id": "com:garlic",
-      "skos:notation": "garlic"
-    },
-    {
-      "@id": "com:cabbages",
-      "skos:notation": "cabbages"
-    },
-    {
-      "@id": "com:capsicums",
-      "skos:notation": "capsicums"
-    },
-    {
-      "@id": "com:chives",
-      "skos:notation": "chives"
-    },
-    {
-      "@id": "com:snowpeas",
-      "skos:notation": "snowpeas"
+      "@id": "com:pumpkins",
+      "skos:notation": "pumpkins"
     },
     {
       "@id": "com:vegetables",
       "skos:notation": "vegetables"
+    },
+    {
+      "@id": "com:vegetables_and_herbs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetables_and_herbs"
+      }
+    },
+    {
+      "@id": "com:chicory",
+      "skos:notation": "chicory"
+    },
+    {
+      "@id": "com:sweet_potatoes",
+      "skos:notation": "sweet potatoes"
+    },
+    {
+      "@id": "com:marrows_and_squashes",
+      "skos:notation": "marrows and squashes"
+    },
+    {
+      "@id": "com:vegetables_and_herbs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetables_and_herbs"
+      }
+    },
+    {
+      "@id": "com:rosemary",
+      "skos:notation": "rosemary"
+    },
+    {
+      "@id": "com:herbs",
+      "skos:notation": "herbs"
+    },
+    {
+      "@id": "com:sweet_corn",
+      "skos:notation": "sweet corn"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs.html",
@@ -479,72 +531,20 @@
       ]
     },
     {
-      "@id": "com:peas",
-      "skos:notation": "peas"
-    },
-    {
-      "@id": "com:cucumbers",
-      "skos:notation": "cucumbers"
-    },
-    {
-      "@id": "com:silverbeet_and_spinach",
-      "skos:notation": "silverbeet and spinach"
-    },
-    {
-      "@id": "com:vegetable_seeds",
-      "skos:notation": "vegetable seeds"
-    },
-    {
-      "@id": "com:bitter_melon",
-      "skos:notation": "bitter melon"
-    },
-    {
-      "@id": "com:cauliflowers",
-      "skos:notation": "cauliflowers"
-    },
-    {
-      "@id": "com:eggplants",
-      "skos:notation": "eggplants"
-    },
-    {
       "@id": "com:chamomile",
       "skos:notation": "chamomile"
     },
     {
-      "@id": "com:asparagus",
-      "skos:notation": "asparagus"
+      "@id": "com:capsicums",
+      "skos:notation": "capsicums"
     },
     {
-      "@id": "com:kumara",
-      "skos:notation": "kumara"
+      "@id": "com:spring_onions_and_shallots",
+      "skos:notation": "spring onions and shallots"
     },
     {
-      "@id": "com:chillies",
-      "skos:notation": "chillies"
-    },
-    {
-      "@id": "com:fennel",
-      "skos:notation": "fennel"
-    },
-    {
-      "@id": "com:marjoram",
-      "skos:notation": "marjoram"
-    },
-    {
-      "@id": "com:truffles",
-      "skos:notation": "truffles"
-    },
-    {
-      "@id": "com:sugar_beet",
-      "skos:notation": "sugar beet"
-    },
-    {
-      "@id": "com:tarragon",
-      "skos:notation": "tarragon"
-    },
-    {
-      "@id": "com:thyme",
-      "skos:notation": "thyme"
+      "@id": "com:cucumbers",
+      "skos:notation": "cucumbers"
     }
   ]
 }

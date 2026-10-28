@@ -8,12 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "com:kale.jsonld",
+      "@id": "com:kale.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:kale"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:kale.ttl"
+        },
+        {
+          "@id": "com:kale.jsonld"
+        },
+        {
+          "@id": "com:kale.rdf"
+        }
+      ]
     },
     {
       "@id": "com:kale.ttl",
@@ -42,20 +50,11 @@
       }
     },
     {
-      "@id": "com:kale.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:kale.ttl"
-        },
-        {
-          "@id": "com:kale.jsonld"
-        },
-        {
-          "@id": "com:kale.rdf"
-        }
-      ]
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:kale",
@@ -69,10 +68,11 @@
       "skos:notation": "kale"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:kale.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:kale"
       }
     }
   ]

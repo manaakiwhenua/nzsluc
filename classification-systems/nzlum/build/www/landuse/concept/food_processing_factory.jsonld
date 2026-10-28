@@ -8,17 +8,33 @@
   },
   "@graph": [
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
       "@id": "luc:food_processing_factory.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:food_processing_factory"
+      }
+    },
+    {
+      "@id": "luc:food_processing_factory.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:food_processing_factory.ttl"
+        },
+        {
+          "@id": "luc:food_processing_factory.jsonld"
+        },
+        {
+          "@id": "luc:food_processing_factory.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:food_processing_factory.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:food_processing_factory"
       }
@@ -60,28 +76,12 @@
       }
     },
     {
-      "@id": "luc:food_processing_factory.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:food_processing_factory"
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
-    },
-    {
-      "@id": "luc:food_processing_factory.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:food_processing_factory.ttl"
-        },
-        {
-          "@id": "luc:food_processing_factory.jsonld"
-        },
-        {
-          "@id": "luc:food_processing_factory.rdf"
-        }
-      ]
     }
   ]
 }

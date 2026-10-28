@@ -8,6 +8,14 @@
   },
   "@graph": [
     {
+      "@id": "com:carambolas.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:carambolas"
+      }
+    },
+    {
       "@id": "com:carambolas.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -16,22 +24,18 @@
       }
     },
     {
-      "@id": "com:carambolas",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:carambolas.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carambolas"
-    },
-    {
-      "@id": "com:carambolas.rdf",
+      "@id": "com:carambolas.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:carambolas"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -51,12 +55,15 @@
       ]
     },
     {
-      "@id": "com:carambolas.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:carambolas"
-      }
+      "@id": "com:carambolas",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:carambolas.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carambolas"
     },
     {
       "@id": "com:fruit",
@@ -66,13 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

@@ -19,6 +19,41 @@
   },
   "@graph": [
     {
+      "@id": "wtr:ice.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:ice"
+      }
+    },
+    {
+      "@id": "wtr:ice.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:ice"
+      }
+    },
+    {
+      "@id": "wtr:ice",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "wtr:ice.html"
+      },
+      "lu:colour": "#EDF5FF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "ice"
+    },
+    {
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
+    },
+    {
       "@id": "wtr:ice.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -35,46 +70,11 @@
       ]
     },
     {
-      "@id": "wtr:ice",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "wtr:ice.html"
-      },
-      "lu:colour": "#EDF5FF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "ice"
-    },
-    {
       "@id": "wtr:ice.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "wtr:ice"
-      }
-    },
-    {
-      "@id": "wtr:ice.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:ice"
-      }
-    },
-    {
-      "@id": "wtr:ice.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "wtr:ice"
-      }
-    },
-    {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
       }
     }
   ]

@@ -18,25 +18,17 @@
   },
   "@graph": [
     {
-      "@id": "com:chokos.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:chokos.ttl"
-        },
-        {
-          "@id": "com:chokos.jsonld"
-        },
-        {
-          "@id": "com:chokos.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:chokos.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "com:chokos.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:chokos"
       }
@@ -61,6 +53,29 @@
       "skos:notation": "chokos"
     },
     {
+      "@id": "com:chokos.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chokos.ttl"
+        },
+        {
+          "@id": "com:chokos.jsonld"
+        },
+        {
+          "@id": "com:chokos.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:chokos"
@@ -68,21 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:chokos.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chokos"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

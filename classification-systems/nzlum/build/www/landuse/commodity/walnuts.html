@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:walnuts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:walnuts"
-      }
-    },
-    {
       "@id": "com:walnuts.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -40,6 +32,16 @@
           "@id": "com:walnuts.rdf"
         }
       ]
+    },
+    {
+      "@id": "com:nuts",
+      "skos:member": {
+        "@id": "com:walnuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
+      }
     },
     {
       "@id": "com:walnuts",
@@ -61,13 +63,18 @@
       }
     },
     {
-      "@id": "com:nuts",
-      "skos:member": {
-        "@id": "com:walnuts"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Nuts"
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:walnuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:walnuts"
       }
     },
     {
@@ -76,13 +83,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:walnuts"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

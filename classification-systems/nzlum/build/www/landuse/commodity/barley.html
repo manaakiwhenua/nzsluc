@@ -28,6 +28,30 @@
       }
     },
     {
+      "@id": "com:barley.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:barley.ttl"
+        },
+        {
+          "@id": "com:barley.jsonld"
+        },
+        {
+          "@id": "com:barley.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:barley.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:barley"
+      }
+    },
+    {
       "@id": "com:barley",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -47,20 +71,11 @@
       }
     },
     {
-      "@id": "com:barley.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:barley.ttl"
-        },
-        {
-          "@id": "com:barley.jsonld"
-        },
-        {
-          "@id": "com:barley.rdf"
-        }
-      ]
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:barley.jsonld",
@@ -68,21 +83,6 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:barley"
-      }
-    },
-    {
-      "@id": "com:barley.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:barley"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

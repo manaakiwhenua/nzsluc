@@ -8,6 +8,51 @@
   },
   "@graph": [
     {
+      "@id": "com:gold.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:gold.ttl"
+        },
+        {
+          "@id": "com:gold.jsonld"
+        },
+        {
+          "@id": "com:gold.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:gold"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:gold",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:gold.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "gold"
+    },
+    {
+      "@id": "com:gold.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:gold"
+      }
+    },
+    {
       "@id": "com:gold.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -29,51 +74,6 @@
       "foaf:primaryTopic": {
         "@id": "com:gold"
       }
-    },
-    {
-      "@id": "com:gold.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:gold"
-      }
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:gold"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:gold.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:gold.ttl"
-        },
-        {
-          "@id": "com:gold.jsonld"
-        },
-        {
-          "@id": "com:gold.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:gold",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:gold.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "gold"
     }
   ]
 }

@@ -9,35 +9,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:poultry_farms",
-      "skos:notation": "2.6.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Poultry farms"
-      }
-    },
-    {
       "@id": "luc:intensive_animal_production.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:intensive_animal_production"
-      }
-    },
-    {
-      "@id": "luc:piggeries",
-      "skos:notation": "2.6.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Piggeries"
-      }
-    },
-    {
-      "@id": "luc:horse_studs",
-      "skos:notation": "2.6.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horse studs"
       }
     },
     {
@@ -64,16 +40,16 @@
       ],
       "skos:narrower": [
         {
-          "@id": "luc:intensive_animal_containment"
+          "@id": "luc:horse_studs"
         },
         {
           "@id": "luc:poultry_farms"
         },
         {
-          "@id": "luc:piggeries"
+          "@id": "luc:intensive_animal_containment"
         },
         {
-          "@id": "luc:horse_studs"
+          "@id": "luc:piggeries"
         },
         {
           "@id": "luc:aquaculture"
@@ -96,6 +72,14 @@
       ]
     },
     {
+      "@id": "luc:intensive_animal_containment",
+      "skos:notation": "2.6.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intensive animal containment"
+      }
+    },
+    {
       "@id": "luc:intensive_animal_production.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -104,27 +88,27 @@
       }
     },
     {
-      "@id": "luc:intensive_animal_production.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:intensive_animal_production.ttl"
-        },
-        {
-          "@id": "luc:intensive_animal_production.jsonld"
-        },
-        {
-          "@id": "luc:intensive_animal_production.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:intensive_animal_containment",
-      "skos:notation": "2.6.1",
+      "@id": "luc:poultry_farms",
+      "skos:notation": "2.6.2",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Intensive animal containment"
+        "@value": "Poultry farms"
+      }
+    },
+    {
+      "@id": "luc:aquaculture",
+      "skos:notation": "2.6.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Aquaculture"
+      }
+    },
+    {
+      "@id": "luc:piggeries",
+      "skos:notation": "2.6.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Piggeries"
       }
     },
     {
@@ -144,12 +128,28 @@
       }
     },
     {
-      "@id": "luc:aquaculture",
-      "skos:notation": "2.6.5",
+      "@id": "luc:horse_studs",
+      "skos:notation": "2.6.4",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Aquaculture"
+        "@value": "Horse studs"
       }
+    },
+    {
+      "@id": "luc:intensive_animal_production.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:intensive_animal_production.ttl"
+        },
+        {
+          "@id": "luc:intensive_animal_production.jsonld"
+        },
+        {
+          "@id": "luc:intensive_animal_production.rdf"
+        }
+      ]
     }
   ]
 }

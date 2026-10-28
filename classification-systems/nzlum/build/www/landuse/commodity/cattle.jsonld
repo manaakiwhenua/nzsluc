@@ -8,12 +8,15 @@
   },
   "@graph": [
     {
-      "@id": "com:cattle.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cattle"
-      }
+      "@id": "com:cattle",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:cattle.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cattle"
     },
     {
       "@id": "com:animals",
@@ -23,6 +26,30 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:cattle.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:cattle"
+      }
+    },
+    {
+      "@id": "com:cattle.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cattle"
+      }
+    },
+    {
+      "@id": "com:cattle.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:cattle"
       }
     },
     {
@@ -47,33 +74,6 @@
           "@id": "com:cattle.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:cattle.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cattle"
-      }
-    },
-    {
-      "@id": "com:cattle",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:cattle.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle"
-    },
-    {
-      "@id": "com:cattle.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:cattle"
-      }
     }
   ]
 }

@@ -18,6 +18,22 @@
   },
   "@graph": [
     {
+      "@id": "com:melons.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:melons.ttl"
+        },
+        {
+          "@id": "com:melons.jsonld"
+        },
+        {
+          "@id": "com:melons.rdf"
+        }
+      ]
+    },
+    {
       "@id": "com:melons.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -26,11 +42,29 @@
       }
     },
     {
+      "@id": "com:melons",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:melons.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "melons"
+    },
+    {
       "@id": "com:melons.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:melons"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -49,40 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:melons",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:melons.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "melons"
-    },
-    {
-      "@id": "com:melons.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:melons.ttl"
-        },
-        {
-          "@id": "com:melons.jsonld"
-        },
-        {
-          "@id": "com:melons.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

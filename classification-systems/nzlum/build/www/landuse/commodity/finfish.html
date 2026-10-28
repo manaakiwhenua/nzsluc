@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:finfish"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:finfish.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -32,6 +42,22 @@
           "@id": "com:finfish.rdf"
         }
       ]
+    },
+    {
+      "@id": "com:finfish.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:finfish"
+      }
+    },
+    {
+      "@id": "com:finfish.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:finfish"
+      }
     },
     {
       "@id": "com:finfish",
@@ -49,32 +75,6 @@
       }
     },
     {
-      "@id": "com:finfish.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:finfish"
-      }
-    },
-    {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:finfish"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:finfish.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:finfish"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -82,9 +82,9 @@
       }
     },
     {
-      "@id": "com:finfish.rdf",
+      "@id": "com:finfish.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:finfish"
       }

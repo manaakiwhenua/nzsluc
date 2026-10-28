@@ -8,46 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "com:arrowroot.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:arrowroot"
-      }
-    },
-    {
       "@id": "com:arrowroot.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:arrowroot"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:arrowroot"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:arrowroot",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:arrowroot.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "arrowroot"
-    },
-    {
-      "@id": "com:arrowroot.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:arrowroot"
       }
@@ -69,11 +32,48 @@
       ]
     },
     {
+      "@id": "com:arrowroot.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:arrowroot"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:arrowroot"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:arrowroot.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:arrowroot"
+      }
+    },
+    {
+      "@id": "com:arrowroot",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:arrowroot.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "arrowroot"
     }
   ]
 }

@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:nickel.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:nickel"
-      }
-    },
-    {
       "@id": "com:nickel.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -42,17 +34,20 @@
       }
     },
     {
-      "@id": "com:nickel.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:nickel"
-      }
+      "@id": "com:nickel",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:nickel.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "nickel"
     },
     {
-      "@id": "com:nickel.rdf",
+      "@id": "com:nickel.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:nickel"
       }
@@ -65,15 +60,20 @@
       }
     },
     {
-      "@id": "com:nickel",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:nickel.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "nickel"
+      "@id": "com:nickel.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:nickel"
+      }
+    },
+    {
+      "@id": "com:nickel.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:nickel"
+      }
     }
   ]
 }

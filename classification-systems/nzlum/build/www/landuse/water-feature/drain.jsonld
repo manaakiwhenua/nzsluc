@@ -9,21 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
-    },
-    {
-      "@id": "wtr:drain.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "wtr:drain"
-      }
-    },
-    {
       "@id": "wtr:drain.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -57,6 +42,21 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "wtr:drain"
+      }
+    },
+    {
+      "@id": "wtr:drain.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:drain"
+      }
+    },
+    {
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
       }
     },
     {

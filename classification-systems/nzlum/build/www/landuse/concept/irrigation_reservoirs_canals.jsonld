@@ -8,11 +8,35 @@
   },
   "@graph": [
     {
+      "@id": "luc:irrigation_reservoirs_canals.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:irrigation_reservoirs_canals.ttl"
+        },
+        {
+          "@id": "luc:irrigation_reservoirs_canals.jsonld"
+        },
+        {
+          "@id": "luc:irrigation_reservoirs_canals.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:irrigation_reservoirs_canals.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:irrigation_reservoirs_canals"
+      }
+    },
+    {
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water and wastewater"
       }
     },
     {
@@ -24,11 +48,11 @@
       }
     },
     {
-      "@id": "luc:water_wastewater_agriculture",
-      "skos:notation": "2.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Water and wastewater"
+      "@id": "luc:irrigation_reservoirs_canals.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:irrigation_reservoirs_canals"
       }
     },
     {
@@ -57,30 +81,6 @@
         "@language": "en",
         "@value": "Irrigation reservoirs and canals"
       }
-    },
-    {
-      "@id": "luc:irrigation_reservoirs_canals.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:irrigation_reservoirs_canals"
-      }
-    },
-    {
-      "@id": "luc:irrigation_reservoirs_canals.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:irrigation_reservoirs_canals.ttl"
-        },
-        {
-          "@id": "luc:irrigation_reservoirs_canals.jsonld"
-        },
-        {
-          "@id": "luc:irrigation_reservoirs_canals.rdf"
-        }
-      ]
     }
   ]
 }

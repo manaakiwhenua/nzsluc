@@ -8,35 +8,25 @@
   },
   "@graph": [
     {
-      "@id": "lu_person:kingi_tawhiao",
-      "foaf:name": [
-        {
-          "@language": "mi",
-          "@value": "Kīngi Tāwhiao"
-        },
-        {
-          "@language": "mi",
-          "@value": "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"
-        }
-      ]
-    },
-    {
-      "@id": "lus:nzlum",
-      "dcterms:relation": {
-        "@id": "lu_proverb:kotahi_te_aho"
-      },
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "New Zealand Land Use and Management classification system"
-      }
-    },
-    {
       "@id": "lu_proverb:kotahi_te_aho.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "lu_proverb:kotahi_te_aho"
       }
+    },
+    {
+      "@id": "lu_person:kingi_tawhiao",
+      "foaf:name": [
+        {
+          "@language": "mi",
+          "@value": "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"
+        },
+        {
+          "@language": "mi",
+          "@value": "Kīngi Tāwhiao"
+        }
+      ]
     },
     {
       "@id": "lu_proverb:kotahi_te_aho",
@@ -59,20 +49,14 @@
       }
     },
     {
-      "@id": "lu_proverb:kotahi_te_aho.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lu_proverb:kotahi_te_aho.ttl"
-        },
-        {
-          "@id": "lu_proverb:kotahi_te_aho.jsonld"
-        },
-        {
-          "@id": "lu_proverb:kotahi_te_aho.rdf"
-        }
-      ]
+      "@id": "lus:nzlum",
+      "dcterms:relation": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "New Zealand Land Use and Management classification system"
+      }
     },
     {
       "@id": "lu_proverb:kotahi_te_aho.jsonld",
@@ -89,6 +73,22 @@
       "foaf:primaryTopic": {
         "@id": "lu_proverb:kotahi_te_aho"
       }
+    },
+    {
+      "@id": "lu_proverb:kotahi_te_aho.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_proverb:kotahi_te_aho.ttl"
+        },
+        {
+          "@id": "lu_proverb:kotahi_te_aho.jsonld"
+        },
+        {
+          "@id": "lu_proverb:kotahi_te_aho.rdf"
+        }
+      ]
     }
   ]
 }

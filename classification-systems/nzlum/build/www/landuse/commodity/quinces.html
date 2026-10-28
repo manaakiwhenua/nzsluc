@@ -18,12 +18,15 @@
   },
   "@graph": [
     {
-      "@id": "com:quinces.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:quinces"
-      }
+      "@id": "com:quinces",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:quinces.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "quinces"
     },
     {
       "@id": "com:quinces.ttl",
@@ -50,27 +53,6 @@
       ]
     },
     {
-      "@id": "com:quinces",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:quinces.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "quinces"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:quinces"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "com:quinces.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -83,6 +65,24 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:quinces.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:quinces"
+      }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:quinces"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     }
   ]

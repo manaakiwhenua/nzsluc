@@ -18,12 +18,24 @@
   },
   "@graph": [
     {
-      "@id": "com:canary_seed",
-      "skos:notation": "canary_seed"
+      "@id": "com:rice",
+      "skos:notation": "rice"
     },
     {
-      "@id": "com:quinoa",
-      "skos:notation": "quinoa"
+      "@id": "com:cereals.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cereals"
+      }
+    },
+    {
+      "@id": "com:cereals.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:cereals"
+      }
     },
     {
       "@id": "com:cereals",
@@ -36,28 +48,13 @@
       },
       "skos:member": [
         {
-          "@id": "com:buckwheat"
-        },
-        {
-          "@id": "com:oats"
-        },
-        {
           "@id": "com:triticale"
         },
         {
-          "@id": "com:maize"
+          "@id": "com:buckwheat"
         },
         {
-          "@id": "com:sorghum_grain"
-        },
-        {
-          "@id": "com:canary_seed"
-        },
-        {
-          "@id": "com:barley"
-        },
-        {
-          "@id": "com:quinoa"
+          "@id": "com:wheat"
         },
         {
           "@id": "com:millet_and_pancium"
@@ -66,10 +63,25 @@
           "@id": "com:rye_cereal"
         },
         {
+          "@id": "com:quinoa"
+        },
+        {
+          "@id": "com:canary_seed"
+        },
+        {
+          "@id": "com:maize"
+        },
+        {
           "@id": "com:rice"
         },
         {
-          "@id": "com:wheat"
+          "@id": "com:oats"
+        },
+        {
+          "@id": "com:sorghum_grain"
+        },
+        {
+          "@id": "com:barley"
         }
       ],
       "skos:prefLabel": {
@@ -78,16 +90,40 @@
       }
     },
     {
-      "@id": "com:barley",
-      "skos:notation": "barley"
+      "@id": "com:cereals.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:cereals"
+      }
     },
     {
       "@id": "com:triticale",
       "skos:notation": "triticale"
     },
     {
-      "@id": "com:oats",
-      "skos:notation": "oats"
+      "@id": "com:maize",
+      "skos:notation": "maize"
+    },
+    {
+      "@id": "com:wheat",
+      "skos:notation": "wheat"
+    },
+    {
+      "@id": "com:buckwheat",
+      "skos:notation": "buckwheat"
+    },
+    {
+      "@id": "com:barley",
+      "skos:notation": "barley"
+    },
+    {
+      "@id": "com:canary_seed",
+      "skos:notation": "canary_seed"
+    },
+    {
+      "@id": "com:millet_and_pancium",
+      "skos:notation": "millet and pancium"
     },
     {
       "@id": "com:cereals.html",
@@ -106,52 +142,12 @@
       ]
     },
     {
-      "@id": "com:rice",
-      "skos:notation": "rice"
+      "@id": "com:quinoa",
+      "skos:notation": "quinoa"
     },
     {
-      "@id": "com:rye_cereal",
-      "skos:notation": "rye cereal"
-    },
-    {
-      "@id": "com:wheat",
-      "skos:notation": "wheat"
-    },
-    {
-      "@id": "com:cereals.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cereals"
-      }
-    },
-    {
-      "@id": "com:millet_and_pancium",
-      "skos:notation": "millet and pancium"
-    },
-    {
-      "@id": "com:buckwheat",
-      "skos:notation": "buckwheat"
-    },
-    {
-      "@id": "com:cereals.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:cereals"
-      }
-    },
-    {
-      "@id": "com:maize",
-      "skos:notation": "maize"
-    },
-    {
-      "@id": "com:cereals.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cereals"
-      }
+      "@id": "com:sorghum_grain",
+      "skos:notation": "sorghum grain"
     },
     {
       "@id": "lus:commodities",
@@ -161,8 +157,12 @@
       }
     },
     {
-      "@id": "com:sorghum_grain",
-      "skos:notation": "sorghum grain"
+      "@id": "com:oats",
+      "skos:notation": "oats"
+    },
+    {
+      "@id": "com:rye_cereal",
+      "skos:notation": "rye cereal"
     }
   ]
 }

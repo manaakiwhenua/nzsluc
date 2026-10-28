@@ -18,58 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sweet_corn.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sweet_corn.ttl"
-        },
-        {
-          "@id": "com:sweet_corn.jsonld"
-        },
-        {
-          "@id": "com:sweet_corn.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sweet_corn",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sweet_corn.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sweet corn"
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:sweet_corn"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sweet_corn.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sweet_corn"
-      }
-    },
-    {
       "@id": "com:sweet_corn.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -84,6 +32,58 @@
       "foaf:primaryTopic": {
         "@id": "com:sweet_corn"
       }
+    },
+    {
+      "@id": "com:sweet_corn.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sweet_corn"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:sweet_corn"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:sweet_corn",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sweet_corn.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sweet corn"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:sweet_corn.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sweet_corn.ttl"
+        },
+        {
+          "@id": "com:sweet_corn.jsonld"
+        },
+        {
+          "@id": "com:sweet_corn.rdf"
+        }
+      ]
     }
   ]
 }

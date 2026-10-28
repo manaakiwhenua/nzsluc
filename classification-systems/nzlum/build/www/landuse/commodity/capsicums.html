@@ -18,14 +18,15 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:capsicums"
+      "@id": "com:capsicums",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:capsicums.html"
       },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "capsicums"
     },
     {
       "@id": "com:capsicums.html",
@@ -44,23 +45,21 @@
       ]
     },
     {
-      "@id": "com:capsicums.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
         "@id": "com:capsicums"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {
-      "@id": "com:capsicums",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:capsicums.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "capsicums"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:capsicums.rdf",
@@ -71,18 +70,19 @@
       }
     },
     {
-      "@id": "com:capsicums.ttl",
+      "@id": "com:capsicums.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:capsicums"
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:capsicums.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:capsicums"
       }
     }
   ]

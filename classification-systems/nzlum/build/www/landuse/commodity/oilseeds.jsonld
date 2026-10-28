@@ -8,6 +8,14 @@
   },
   "@graph": [
     {
+      "@id": "com:mustard",
+      "skos:notation": "mustard "
+    },
+    {
+      "@id": "com:chia",
+      "skos:notation": "chia"
+    },
+    {
       "@id": "com:soybeans",
       "skos:notation": "soybeans"
     },
@@ -28,28 +36,27 @@
       ]
     },
     {
+      "@id": "com:oilseeds.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oilseeds"
+      }
+    },
+    {
       "@id": "com:safflower",
       "skos:notation": "safflower"
-    },
-    {
-      "@id": "com:mustard",
-      "skos:notation": "mustard "
-    },
-    {
-      "@id": "com:sesame",
-      "skos:notation": "sesame"
-    },
-    {
-      "@id": "com:sunflower",
-      "skos:notation": "sunflower"
     },
     {
       "@id": "com:flaxseed",
       "skos:notation": "flaxseed"
     },
     {
-      "@id": "com:canola",
-      "skos:notation": "canola"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:peanuts",
@@ -74,31 +81,31 @@
       },
       "skos:member": [
         {
-          "@id": "com:canola"
-        },
-        {
-          "@id": "com:soybeans"
-        },
-        {
           "@id": "com:safflower"
         },
         {
           "@id": "com:peanuts"
         },
         {
-          "@id": "com:sunflower"
-        },
-        {
-          "@id": "com:mustard"
-        },
-        {
           "@id": "com:flaxseed"
+        },
+        {
+          "@id": "com:canola"
         },
         {
           "@id": "com:sesame"
         },
         {
+          "@id": "com:mustard"
+        },
+        {
+          "@id": "com:soybeans"
+        },
+        {
           "@id": "com:chia"
+        },
+        {
+          "@id": "com:sunflower"
         }
       ],
       "skos:prefLabel": {
@@ -107,23 +114,12 @@
       }
     },
     {
-      "@id": "com:oilseeds.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oilseeds"
-      }
+      "@id": "com:sesame",
+      "skos:notation": "sesame"
     },
     {
-      "@id": "com:chia",
-      "skos:notation": "chia"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:sunflower",
+      "skos:notation": "sunflower"
     },
     {
       "@id": "com:oilseeds.jsonld",
@@ -132,6 +128,10 @@
       "foaf:primaryTopic": {
         "@id": "com:oilseeds"
       }
+    },
+    {
+      "@id": "com:canola",
+      "skos:notation": "canola"
     }
   ]
 }

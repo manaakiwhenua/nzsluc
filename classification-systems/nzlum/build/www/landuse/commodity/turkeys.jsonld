@@ -8,9 +8,19 @@
   },
   "@graph": [
     {
-      "@id": "com:turkeys.rdf",
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:turkeys"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:turkeys.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:turkeys"
       }
@@ -32,24 +42,6 @@
       ]
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:turkeys"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:turkeys.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:turkeys"
-      }
-    },
-    {
       "@id": "com:turkeys",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -69,6 +61,14 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:turkeys.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:turkeys"
       }
     },
     {

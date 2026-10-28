@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
-      "@id": "luc:sawmill.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:sawmill"
-      }
-    },
-    {
       "@id": "luc:sawmill.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -40,20 +24,12 @@
       }
     },
     {
-      "@id": "luc:sawmill.html",
+      "@id": "luc:sawmill.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:sawmill.ttl"
-        },
-        {
-          "@id": "luc:sawmill.jsonld"
-        },
-        {
-          "@id": "luc:sawmill.rdf"
-        }
-      ]
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:sawmill"
+      }
     },
     {
       "@id": "luc:sawmill",
@@ -80,6 +56,30 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Sawmill"
+      }
+    },
+    {
+      "@id": "luc:sawmill.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:sawmill.ttl"
+        },
+        {
+          "@id": "luc:sawmill.jsonld"
+        },
+        {
+          "@id": "luc:sawmill.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
     }
   ]

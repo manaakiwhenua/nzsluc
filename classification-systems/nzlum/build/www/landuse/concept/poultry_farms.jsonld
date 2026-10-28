@@ -8,11 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:poultry_farms.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:poultry_farms"
+      "@id": "luc:intensive_animal_production",
+      "skos:notation": "2.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intensive animal production"
       }
     },
     {
@@ -43,9 +43,9 @@
       }
     },
     {
-      "@id": "luc:poultry_farms.rdf",
+      "@id": "luc:poultry_farms.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:poultry_farms"
       }
@@ -75,11 +75,11 @@
       ]
     },
     {
-      "@id": "luc:intensive_animal_production",
-      "skos:notation": "2.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Intensive animal production"
+      "@id": "luc:poultry_farms.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:poultry_farms"
       }
     }
   ]

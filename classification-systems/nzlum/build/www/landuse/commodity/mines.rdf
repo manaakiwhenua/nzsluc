@@ -1,74 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zeolite">
+    <skos:notation>zeolite</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal">
+    <skos:notation>coal</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zinc">
+    <skos:notation>zinc</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ironsand">
+    <skos:notation>ironsand</skos:notation>
+  </rdf:Description>
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines">
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bauxite">
-        <skos:notation>bauxite</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zinc">
-        <skos:notation>zinc</skos:notation>
-      </rdf:Description>
-    </skos:member>
     <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/copper">
         <skos:notation>copper</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal">
-        <skos:notation>coal</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal_black">
-        <skos:notation>coal_black </skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mineral_sands">
-        <skos:notation>mineral_sands </skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/uranium">
-        <skos:notation>uranium</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ironsand">
-        <skos:notation>ironsand</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/iron_ore">
-        <skos:notation>iron_ore</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zeolite">
-        <skos:notation>zeolite</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/diamonds_rough">
-        <skos:notation>diamonds_rough </skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/aluminium">
-        <skos:notation>aluminium</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/gold">
-        <skos:notation>gold</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -77,23 +29,24 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/salt">
+        <skos:notation>salt</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rare_earths">
         <skos:notation>rare_earths </skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lead">
-        <skos:notation>lead</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/diamonds_rough">
+        <skos:notation>diamonds_rough </skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/ironsand"/>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/shingle">
-        <skos:notation>shingle</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/salt">
-        <skos:notation>salt</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/gold">
+        <skos:notation>gold</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -102,18 +55,56 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/uranium">
+        <skos:notation>uranium</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal"/>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/aluminium">
+        <skos:notation>aluminium</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal_brown">
         <skos:notation>coal_brown </skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/zeolite"/>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal_black">
+        <skos:notation>coal_black </skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/zinc"/>
     <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/nickel">
         <skos:notation>nickel</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/metal">
-        <skos:notation>metal</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lead">
+        <skos:notation>lead</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/iron_ore">
+        <skos:notation>iron_ore</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bauxite">
+        <skos:notation>bauxite</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mineral_sands">
+        <skos:notation>mineral_sands </skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/shingle">
+        <skos:notation>shingle</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -121,12 +112,17 @@
         <skos:notation>stone</skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/metal">
+        <skos:notation>metal</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Mines</skos:prefLabel>
     <skos:inScheme>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
         <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
       </rdf:Description>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">Mines</skos:prefLabel>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines.html">
         <dcterms:format>text/html</dcterms:format>
@@ -136,6 +132,10 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Collection>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -143,9 +143,5 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines"/>
-    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

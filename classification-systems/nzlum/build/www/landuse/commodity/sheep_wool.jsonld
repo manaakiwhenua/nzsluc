@@ -8,33 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "com:sheep_wool.rdf",
+      "@id": "com:sheep_wool.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep_wool"
-      }
-    },
-    {
-      "@id": "com:sheep_wool.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sheep_wool.ttl"
-        },
-        {
-          "@id": "com:sheep_wool.jsonld"
-        },
-        {
-          "@id": "com:sheep_wool.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sheep_wool.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:sheep_wool"
       }
@@ -47,18 +23,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:sheep",
-      "skos:notation": "sheep"
-    },
-    {
-      "@id": "com:sheep_wool.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep_wool"
       }
     },
     {
@@ -80,11 +44,47 @@
       }
     },
     {
+      "@id": "com:sheep_wool.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sheep_wool"
+      }
+    },
+    {
+      "@id": "com:sheep_wool.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sheep_wool"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:sheep",
+      "skos:notation": "sheep"
+    },
+    {
+      "@id": "com:sheep_wool.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sheep_wool.ttl"
+        },
+        {
+          "@id": "com:sheep_wool.jsonld"
+        },
+        {
+          "@id": "com:sheep_wool.rdf"
+        }
+      ]
     }
   ]
 }

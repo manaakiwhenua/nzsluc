@@ -8,6 +8,17 @@
   },
   "@graph": [
     {
+      "@id": "com:plantain",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:plantain.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "plantain"
+    },
+    {
       "@id": "com:plantain.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -19,24 +30,6 @@
       "@id": "com:plantain.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:plantain"
-      }
-    },
-    {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:plantain"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "com:plantain.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:plantain"
       }
@@ -58,6 +51,14 @@
       ]
     },
     {
+      "@id": "com:plantain.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:plantain"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -65,15 +66,14 @@
       }
     },
     {
-      "@id": "com:plantain",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:plantain.html"
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:plantain"
       },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "plantain"
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
     }
   ]
 }

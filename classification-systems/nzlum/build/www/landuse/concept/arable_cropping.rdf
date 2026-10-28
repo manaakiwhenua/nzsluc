@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.html">
     <dcterms:format>text/html</dcterms:format>
@@ -27,6 +27,11 @@
     </dcterms:hasFormat>
   </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping">
+    <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
     <skos:notation>2.3.1</skos:notation>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
@@ -34,11 +39,6 @@
         <skos:notation>2.3.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</skos:definition>
-    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
-    <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.html"/>
   </skos:Concept>
 </rdf:RDF>

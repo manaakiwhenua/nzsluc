@@ -18,22 +18,20 @@
   },
   "@graph": [
     {
-      "@id": "com:pyrethrum.jsonld",
+      "@id": "com:pyrethrum.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pyrethrum"
-      }
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:pyrethrum"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pyrethrum.ttl"
+        },
+        {
+          "@id": "com:pyrethrum.jsonld"
+        },
+        {
+          "@id": "com:pyrethrum.rdf"
+        }
+      ]
     },
     {
       "@id": "com:pyrethrum",
@@ -55,20 +53,21 @@
       }
     },
     {
-      "@id": "com:pyrethrum.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pyrethrum.ttl"
-        },
-        {
-          "@id": "com:pyrethrum.jsonld"
-        },
-        {
-          "@id": "com:pyrethrum.rdf"
-        }
-      ]
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:pyrethrum"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
     },
     {
       "@id": "com:pyrethrum.rdf",
@@ -79,10 +78,11 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:pyrethrum.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pyrethrum"
       }
     }
   ]

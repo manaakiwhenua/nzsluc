@@ -8,6 +8,24 @@
   },
   "@graph": [
     {
+      "@id": "com:chestnuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chestnuts"
+      }
+    },
+    {
+      "@id": "com:nuts",
+      "skos:member": {
+        "@id": "com:chestnuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
+      }
+    },
+    {
       "@id": "com:chestnuts",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -17,6 +35,14 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "chestnuts"
+    },
+    {
+      "@id": "com:chestnuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chestnuts"
+      }
     },
     {
       "@id": "com:chestnuts.html",
@@ -35,29 +61,10 @@
       ]
     },
     {
-      "@id": "com:chestnuts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chestnuts"
-      }
-    },
-    {
-      "@id": "com:nuts",
-      "skos:member": {
-        "@id": "com:chestnuts"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Nuts"
-      }
-    },
-    {
-      "@id": "com:chestnuts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:chestnuts"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -66,13 +73,6 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:chestnuts"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

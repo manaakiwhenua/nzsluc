@@ -18,6 +18,41 @@
   },
   "@graph": [
     {
+      "@id": "com:cranberries.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:cranberries"
+      }
+    },
+    {
+      "@id": "com:cranberries",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:cranberries.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cranberries"
+    },
+    {
+      "@id": "com:cranberries.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cranberries"
+      }
+    },
+    {
+      "@id": "com:cranberries.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:cranberries"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -41,14 +76,6 @@
       ]
     },
     {
-      "@id": "com:cranberries.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cranberries"
-      }
-    },
-    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:cranberries"
@@ -57,33 +84,6 @@
         "@language": "en",
         "@value": "Fruit"
       }
-    },
-    {
-      "@id": "com:cranberries.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cranberries"
-      }
-    },
-    {
-      "@id": "com:cranberries.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:cranberries"
-      }
-    },
-    {
-      "@id": "com:cranberries",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:cranberries.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cranberries"
     }
   ]
 }

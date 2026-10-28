@@ -8,6 +8,54 @@
   },
   "@graph": [
     {
+      "@id": "luc:indigenous_cultural_heritage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_cultural_heritage"
+      }
+    },
+    {
+      "@id": "luc:indigenous_cultural_heritage.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_cultural_heritage"
+      }
+    },
+    {
+      "@id": "luc:indigenous_cultural_heritage.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_cultural_heritage"
+      }
+    },
+    {
+      "@id": "luc:cultural_natural_heritage",
+      "skos:notation": "1.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cultural and natural heritage"
+      }
+    },
+    {
+      "@id": "luc:indigenous_cultural_heritage.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:indigenous_cultural_heritage.ttl"
+        },
+        {
+          "@id": "luc:indigenous_cultural_heritage.jsonld"
+        },
+        {
+          "@id": "luc:indigenous_cultural_heritage.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:indigenous_cultural_heritage",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -33,54 +81,6 @@
         "@language": "en",
         "@value": "Indigenous cultural heritage"
       }
-    },
-    {
-      "@id": "luc:indigenous_cultural_heritage.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_cultural_heritage"
-      }
-    },
-    {
-      "@id": "luc:indigenous_cultural_heritage.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_cultural_heritage"
-      }
-    },
-    {
-      "@id": "luc:cultural_natural_heritage",
-      "skos:notation": "1.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Cultural and natural heritage"
-      }
-    },
-    {
-      "@id": "luc:indigenous_cultural_heritage.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_cultural_heritage"
-      }
-    },
-    {
-      "@id": "luc:indigenous_cultural_heritage.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:indigenous_cultural_heritage.ttl"
-        },
-        {
-          "@id": "luc:indigenous_cultural_heritage.jsonld"
-        },
-        {
-          "@id": "luc:indigenous_cultural_heritage.rdf"
-        }
-      ]
     }
   ]
 }

@@ -9,75 +9,240 @@
   },
   "@graph": [
     {
-      "@id": "com:sheep_dairy",
+      "@id": "com:rice",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rice"
+    },
+    {
+      "@id": "com:blackcurrants",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blackcurrants"
+    },
+    {
+      "@id": "com:cabbages",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cabbages"
+    },
+    {
+      "@id": "com:rocket",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rocket"
+    },
+    {
+      "@id": "com:chrysanthemums",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chrysanthemums"
+    },
+    {
+      "@id": "com:turnips",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turnips"
+    },
+    {
+      "@id": "com:blueberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blueberries"
+    },
+    {
+      "@id": "com:pepper",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pepper"
+    },
+    {
+      "@id": "com:wheat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "wheat"
+    },
+    {
+      "@id": "com:safflower",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "safflower"
+    },
+    {
+      "@id": "com:capsicums",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "capsicums"
+    },
+    {
+      "@id": "com:grapes_dried",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "com:sheep"
+        "@id": "com:grapes"
       },
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "sheep dairy",
+      "skos:notation": "grapes dried"
+    },
+    {
+      "@id": "com:sugar_cane",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sugar cane"
+    },
+    {
+      "@id": "com:parsnips",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "parsnips"
+    },
+    {
+      "@id": "com:melons",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "melons"
+    },
+    {
+      "@id": "com:turnips_forage",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turnips forage"
+    },
+    {
+      "@id": "com:coffee",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coffee"
+    },
+    {
+      "@id": "com:goats",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "goats",
       "skos:usageNote": {
         "@language": "en",
-        "@value": "Sheep for milk production."
+        "@value": "Specify meat, dairy, stud, or wool where appropriate."
       }
     },
     {
-      "@id": "com:chestnuts",
-      "@type": "skos:Concept",
+      "@id": "com:pulses",
+      "@type": "skos:Collection",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "chestnuts"
+      "skos:member": [
+        {
+          "@id": "com:mung_bean"
+        },
+        {
+          "@id": "com:field_peas"
+        },
+        {
+          "@id": "com:field_beans"
+        },
+        {
+          "@id": "com:lupins"
+        },
+        {
+          "@id": "com:azuki_bean"
+        },
+        {
+          "@id": "com:vetches"
+        },
+        {
+          "@id": "com:pigeon_pea"
+        },
+        {
+          "@id": "com:cowpea"
+        },
+        {
+          "@id": "com:chickpeas"
+        },
+        {
+          "@id": "com:navy_bean"
+        },
+        {
+          "@id": "com:broad_beans"
+        },
+        {
+          "@id": "com:lentils"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pulses"
+      }
     },
     {
-      "@id": "com:tea",
+      "@id": "com:limes",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "tea"
+      "skos:notation": "limes"
     },
     {
-      "@id": "com:beetroot",
+      "@id": "com:beans",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "beetroot"
+      "skos:notation": "beans"
     },
     {
-      "@id": "com:chervil",
+      "@id": "com:radishes",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "chervil"
+      "skos:notation": "radishes"
     },
     {
-      "@id": "com:zinc",
+      "@id": "com:molluscs",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "zinc"
-    },
-    {
-      "@id": "com:onions",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "onions"
-    },
-    {
-      "@id": "com:wasabi",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "wasabi"
+      "skos:notation": "molluscs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Aquaculture: includes peal oysters, edible oysters, abalone, mussels."
+      }
     },
     {
       "@id": "com:chickens_meat",
@@ -95,142 +260,36 @@
       }
     },
     {
-      "@id": "com:jute",
+      "@id": "com:mulberries",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "jute"
+      "skos:notation": "mulberries"
     },
     {
-      "@id": "com:flowers_and_foliage",
+      "@id": "com:coconut",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "flowers and foliage"
+      "skos:notation": "coconut"
     },
     {
-      "@id": "com:mines",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:bauxite"
-        },
-        {
-          "@id": "com:zinc"
-        },
-        {
-          "@id": "com:copper"
-        },
-        {
-          "@id": "com:coal"
-        },
-        {
-          "@id": "com:coal_black"
-        },
-        {
-          "@id": "com:mineral_sands"
-        },
-        {
-          "@id": "com:uranium"
-        },
-        {
-          "@id": "com:ironsand"
-        },
-        {
-          "@id": "com:iron_ore"
-        },
-        {
-          "@id": "com:zeolite"
-        },
-        {
-          "@id": "com:diamonds_rough"
-        },
-        {
-          "@id": "com:aluminium"
-        },
-        {
-          "@id": "com:gold"
-        },
-        {
-          "@id": "com:alumina"
-        },
-        {
-          "@id": "com:rare_earths"
-        },
-        {
-          "@id": "com:lead"
-        },
-        {
-          "@id": "com:shingle"
-        },
-        {
-          "@id": "com:salt"
-        },
-        {
-          "@id": "com:silica_sand"
-        },
-        {
-          "@id": "com:coal_brown"
-        },
-        {
-          "@id": "com:nickel"
-        },
-        {
-          "@id": "com:metal"
-        },
-        {
-          "@id": "com:stone"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
-      "@id": "com:parsley",
+      "@id": "com:diamonds_rough",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "parsley"
+      "skos:notation": "diamonds_rough "
     },
     {
-      "@id": "com:kiwifruit",
+      "@id": "com:pinenuts",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "kiwifruit"
-    },
-    {
-      "@id": "com:vetches",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "vetches"
-    },
-    {
-      "@id": "com:rhubarb",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rhubarb"
-    },
-    {
-      "@id": "com:turnips_forage",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turnips forage"
+      "skos:notation": "pinenuts"
     },
     {
       "@id": "lus:commodities.ttl",
@@ -241,257 +300,159 @@
       }
     },
     {
-      "@id": "com:coal_black",
+      "@id": "com:tropical_flowers",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "coal_black "
+      "skos:notation": "tropical flowers"
     },
     {
-      "@id": "com:sprouts",
+      "@id": "com:kiwifruit",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "sprouts"
+      "skos:notation": "kiwifruit"
     },
     {
-      "@id": "com:field_peas",
+      "@id": "com:thyme",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "field peas"
+      "skos:notation": "thyme"
     },
     {
-      "@id": "com:tamarillo",
+      "@id": "com:canary_seed",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "tamarillo"
+      "skos:notation": "canary_seed"
     },
     {
-      "@id": "com:pulp_wood",
+      "@id": "com:bulbs",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "pulp wood"
+      "skos:notation": "bulbs"
     },
     {
-      "@id": "com:lilies",
+      "@id": "com:zeolite",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "lilies"
+      "skos:notation": "zeolite"
     },
     {
-      "@id": "com:dogs",
+      "@id": "com:zucchini",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "dogs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Includes dog breeding, kennels, or areas used for quarantine of dogs related to import or export."
-      }
+      "skos:notation": "zucchini"
     },
     {
-      "@id": "com:millet_and_pancium",
+      "@id": "com:christmas_trees",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "millet and pancium"
+      "skos:notation": "christmas trees"
     },
     {
-      "@id": "com:peppermint",
+      "@id": "com:ironsand",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "peppermint"
+      "skos:notation": "ironsand"
     },
     {
-      "@id": "com:radishes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "radishes"
-    },
-    {
-      "@id": "com:rosella",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rosella"
-    },
-    {
-      "@id": "com:lucerne",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lucerne"
-    },
-    {
-      "@id": "com:cotton",
+      "@id": "com:cocoa",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
       "skos:notation": {
         "@language": "en",
-        "@value": "cotton"
+        "@value": "cocoa"
       }
     },
     {
-      "@id": "com:okra",
+      "@id": "com:fennel",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "okra"
+      "skos:notation": "fennel"
     },
     {
-      "@id": "com:chicory",
+      "@id": "com:zinc",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "chicory"
+      "skos:notation": "zinc"
     },
     {
-      "@id": "com:chia",
+      "@id": "com:lentils",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "chia"
+      "skos:notation": "lentils"
     },
     {
-      "@id": "com:chickens",
+      "@id": "com:rhubarb",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "chickens",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Poultry farms. Specify whether for eggs or meat where possible."
-      }
+      "skos:notation": "rhubarb"
     },
     {
-      "@id": "com:horticulture",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": {
-        "@id": "com:turf"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horticulture"
-      }
-    },
-    {
-      "@id": "com:ducks",
+      "@id": "com:pigeon_pea",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "ducks",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Poultry farms."
-      }
+      "skos:notation": "pigeon pea"
     },
     {
-      "@id": "com:apricots",
+      "@id": "com:bitter_melon",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "apricots"
+      "skos:notation": "bitter melon"
     },
     {
-      "@id": "com:beans",
+      "@id": "com:grapefruit",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "beans"
+      "skos:notation": "grapefruit"
     },
     {
-      "@id": "com:mustard",
+      "@id": "com:flaxseed",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "mustard "
+      "skos:notation": "flaxseed"
     },
     {
-      "@id": "com:tangelos",
+      "@id": "com:silverbeet_and_spinach",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "tangelos"
-    },
-    {
-      "@id": "com:carambolas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carambolas"
-    },
-    {
-      "@id": "com:arrowroot",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "arrowroot"
-    },
-    {
-      "@id": "com:sugar_cane",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sugar cane"
-    },
-    {
-      "@id": "com:chives",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chives"
-    },
-    {
-      "@id": "com:navy_bean",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "navy bean"
-    },
-    {
-      "@id": "com:wheat",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "wheat"
+      "skos:notation": "silverbeet and spinach"
     },
     {
       "@id": "com:sheep_wool",
@@ -509,342 +470,12 @@
       }
     },
     {
-      "@id": "com:canola",
+      "@id": "com:burdock",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "canola"
-    },
-    {
-      "@id": "com:blackcurrants",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blackcurrants"
-    },
-    {
-      "@id": "com:chokos",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chokos"
-    },
-    {
-      "@id": "com:grapes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapes"
-    },
-    {
-      "@id": "com:nectarines",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "nectarines"
-    },
-    {
-      "@id": "com:oilseeds",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:canola"
-        },
-        {
-          "@id": "com:soybeans"
-        },
-        {
-          "@id": "com:safflower"
-        },
-        {
-          "@id": "com:peanuts"
-        },
-        {
-          "@id": "com:sunflower"
-        },
-        {
-          "@id": "com:mustard"
-        },
-        {
-          "@id": "com:flaxseed"
-        },
-        {
-          "@id": "com:sesame"
-        },
-        {
-          "@id": "com:chia"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Oilseeds"
-      }
-    },
-    {
-      "@id": "com:eucalyptus_oil",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "eucalyptus oil"
-    },
-    {
-      "@id": "com:melons",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "melons"
-    },
-    {
-      "@id": "com:lentils",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lentils"
-    },
-    {
-      "@id": "com:mangosteen",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mangosteen"
-    },
-    {
-      "@id": "com:flaxseed",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "flaxseed"
-    },
-    {
-      "@id": "com:figs",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "figs"
-    },
-    {
-      "@id": "com:passionfruit",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "passionfruit"
-    },
-    {
-      "@id": "com:zeolite",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "zeolite"
-    },
-    {
-      "@id": "com:cattle_dairy",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:cattle"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle dairy",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Cattle for milk production."
-      }
-    },
-    {
-      "@id": "com:quinoa",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "quinoa",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Quinoa is a pseudocereal related to beetroot, spinach and tumbleweeds. As it is grown as a grain it is considered part of cereals."
-      }
-    },
-    {
-      "@id": "com:triticale",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "triticale"
-    },
-    {
-      "@id": "com:sunflower",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sunflower"
-    },
-    {
-      "@id": "com:pistachios",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pistachios"
-    },
-    {
-      "@id": "com:cauliflowers",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cauliflowers"
-    },
-    {
-      "@id": "com:longans",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "longans"
-    },
-    {
-      "@id": "com:plums",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "plums"
-    },
-    {
-      "@id": "com:rye_cereal",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rye cereal"
-    },
-    {
-      "@id": "com:loganberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "loganberries"
-    },
-    {
-      "@id": "com:kumara",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "kumara"
-    },
-    {
-      "@id": "com:pasture",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:lucerne"
-        },
-        {
-          "@id": "com:yarrow"
-        },
-        {
-          "@id": "com:turnips_forage"
-        },
-        {
-          "@id": "com:sorghum_forage"
-        },
-        {
-          "@id": "com:clover"
-        },
-        {
-          "@id": "com:plantain"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "com:boysenberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "boysenberries"
-    },
-    {
-      "@id": "com:mandarins",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mandarins"
-    },
-    {
-      "@id": "com:lupins",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lupins"
-    },
-    {
-      "@id": "com:lavender",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lavender"
-    },
-    {
-      "@id": "com:peanuts",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "peanuts"
-    },
-    {
-      "@id": "com:truffles",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "truffles"
-    },
-    {
-      "@id": "com:parsnips",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "parsnips"
-    },
-    {
-      "@id": "com:sugar_beet",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sugar beet"
+      "skos:notation": "burdock"
     },
     {
       "@id": "com:pecan_nuts",
@@ -855,361 +486,229 @@
       "skos:notation": "pecan nuts"
     },
     {
-      "@id": "com:tarragon",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tarragon"
-    },
-    {
-      "@id": "com:sheep_meat",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:sheep"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sheep meat",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Sheep for meat production."
-      }
-    },
-    {
-      "@id": "com:plantain",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "plantain"
-    },
-    {
-      "@id": "com:cats",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cats",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Includes cat breeding, catteries, or areas used for quarantine of cats related to import or export."
-      }
-    },
-    {
-      "@id": "com:guavas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "guavas"
-    },
-    {
-      "@id": "com:crop",
+      "@id": "com:vegetables_and_herbs",
       "@type": "skos:Collection",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
       "skos:member": [
         {
-          "@id": "com:cotton_seed"
+          "@id": "com:artichokes"
         },
         {
-          "@id": "com:tobacco"
+          "@id": "com:rhubarb"
         },
         {
-          "@id": "com:jute"
+          "@id": "com:spring_onions_and_shallots"
         },
         {
-          "@id": "com:hops"
+          "@id": "com:brussels_sprouts"
         },
         {
-          "@id": "com:ginger"
+          "@id": "com:cucumbers"
         },
         {
-          "@id": "com:sugar_cane"
+          "@id": "com:thyme"
         },
         {
-          "@id": "com:coffee"
+          "@id": "com:echinacea"
         },
         {
-          "@id": "com:cotton"
+          "@id": "com:truffles"
         },
         {
-          "@id": "com:pepper"
+          "@id": "com:peppermint"
         },
         {
-          "@id": "com:pharmaceutical_and_cosmetic_plants"
+          "@id": "com:chicory"
         },
         {
-          "@id": "com:wasabi"
+          "@id": "com:cabbages"
         },
         {
-          "@id": "com:aloe_vera"
+          "@id": "com:potatoes"
         },
         {
-          "@id": "com:poppies"
+          "@id": "com:marrows_and_squashes"
         },
         {
-          "@id": "com:oil_palms"
+          "@id": "com:broccoli"
         },
         {
-          "@id": "com:essential_oil_crops"
+          "@id": "com:coriander"
         },
         {
-          "@id": "com:horseradish"
+          "@id": "com:swedes"
         },
         {
-          "@id": "com:tea"
+          "@id": "com:tomatoes"
         },
         {
-          "@id": "com:pyrethrum"
+          "@id": "com:lettuces"
         },
         {
-          "@id": "com:cocoa"
+          "@id": "com:burdock"
+        },
+        {
+          "@id": "com:marjoram"
+        },
+        {
+          "@id": "com:capsicums"
+        },
+        {
+          "@id": "com:garlic"
+        },
+        {
+          "@id": "com:mint"
+        },
+        {
+          "@id": "com:parsnips"
+        },
+        {
+          "@id": "com:lemongrass"
+        },
+        {
+          "@id": "com:asparagus"
+        },
+        {
+          "@id": "com:peas"
+        },
+        {
+          "@id": "com:oregano"
+        },
+        {
+          "@id": "com:chamomile"
+        },
+        {
+          "@id": "com:mushrooms"
+        },
+        {
+          "@id": "com:beans"
+        },
+        {
+          "@id": "com:cauliflowers"
+        },
+        {
+          "@id": "com:sweet_potatoes"
+        },
+        {
+          "@id": "com:pumpkins"
+        },
+        {
+          "@id": "com:zucchini"
+        },
+        {
+          "@id": "com:okra"
+        },
+        {
+          "@id": "com:chillies"
+        },
+        {
+          "@id": "com:rocket"
+        },
+        {
+          "@id": "com:onions"
+        },
+        {
+          "@id": "com:silverbeet_and_spinach"
+        },
+        {
+          "@id": "com:sugar_beet"
+        },
+        {
+          "@id": "com:sprouts"
+        },
+        {
+          "@id": "com:parsley"
+        },
+        {
+          "@id": "com:fennel"
+        },
+        {
+          "@id": "com:bitter_melon"
+        },
+        {
+          "@id": "com:turnips"
+        },
+        {
+          "@id": "com:kumara"
+        },
+        {
+          "@id": "com:sage"
+        },
+        {
+          "@id": "com:chinese_cabbages"
+        },
+        {
+          "@id": "com:kale"
+        },
+        {
+          "@id": "com:arrowroot"
+        },
+        {
+          "@id": "com:rosemary"
+        },
+        {
+          "@id": "com:vegetable_seeds"
+        },
+        {
+          "@id": "com:radishes"
+        },
+        {
+          "@id": "com:french_beans"
+        },
+        {
+          "@id": "com:carrots"
+        },
+        {
+          "@id": "com:celery"
+        },
+        {
+          "@id": "com:snowpeas"
+        },
+        {
+          "@id": "com:vegetables"
+        },
+        {
+          "@id": "com:chervil"
+        },
+        {
+          "@id": "com:eggplants"
+        },
+        {
+          "@id": "com:sweet_corn"
+        },
+        {
+          "@id": "com:tarragon"
+        },
+        {
+          "@id": "com:herbs"
+        },
+        {
+          "@id": "com:gherkins"
+        },
+        {
+          "@id": "com:beetroot"
+        },
+        {
+          "@id": "com:chives"
+        },
+        {
+          "@id": "com:leeks"
         }
       ],
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Crop"
+        "@value": "Vegetables and herbs"
       }
     },
     {
-      "@id": "com:field_beans",
+      "@id": "com:chokos",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "field beans"
-    },
-    {
-      "@id": "com:uranium",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "uranium"
-    },
-    {
-      "@id": "com:alumina",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "alumina"
-    },
-    {
-      "@id": "com:tea_tree",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tea tree"
-    },
-    {
-      "@id": "com:broccoli",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "broccoli"
-    },
-    {
-      "@id": "com:lemons",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lemons"
-    },
-    {
-      "@id": "com:pepinos",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pepinos"
-    },
-    {
-      "@id": "com:turkeys",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turkeys",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Poultry farms."
-      }
-    },
-    {
-      "@id": "com:mangoes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mangoes"
-    },
-    {
-      "@id": "com:ostriches",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "ostriches",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Poultry farming."
-      }
-    },
-    {
-      "@id": "com:pharmaceutical_and_cosmetic_plants",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pharmaceutical and cosmetic plants"
-    },
-    {
-      "@id": "com:hops",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "hops"
-    },
-    {
-      "@id": "com:almonds",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "almonds"
-    },
-    {
-      "@id": "com:turnips",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turnips"
-    },
-    {
-      "@id": "com:rosemary",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rosemary"
-    },
-    {
-      "@id": "com:tulips",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tulips"
-    },
-    {
-      "@id": "com:carbon_forest_standard",
-      "@type": "skos:Concept",
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carbon forest standard"
-    },
-    {
-      "@id": "com:clover",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "clover"
-    },
-    {
-      "@id": "com:rocket",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rocket"
-    },
-    {
-      "@id": "com:burdock",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "burdock"
-    },
-    {
-      "@id": "com:chrysanthemums",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chrysanthemums"
-    },
-    {
-      "@id": "com:hazelnuts",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "hazelnuts"
-    },
-    {
-      "@id": "com:pumpkins",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pumpkins"
-    },
-    {
-      "@id": "com:pepper",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pepper"
-    },
-    {
-      "@id": "com:pigs",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pigs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Piggeries."
-      }
-    },
-    {
-      "@id": "com:potatoes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "potatoes"
-    },
-    {
-      "@id": "com:buckwheat",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "buckwheat",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Buckwheat is a pseudocereal related to rhubarb. As it is grown as a grain it is considered part of cereals."
-      }
+      "skos:notation": "chokos"
     },
     {
       "@id": "com:goats_dairy",
@@ -1227,718 +726,28 @@
       }
     },
     {
-      "@id": "com:sandalwood",
+      "@id": "com:tea_tree",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "sandalwood"
+      "skos:notation": "tea tree"
     },
     {
-      "@id": "com:strawberries",
+      "@id": "com:clover",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "strawberries"
+      "skos:notation": "clover"
     },
     {
-      "@id": "com:tomatoes",
+      "@id": "com:loquats",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "tomatoes"
-    },
-    {
-      "@id": "com:carrots",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carrots"
-    },
-    {
-      "@id": "com:grapes_dried",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:grapes"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapes dried"
-    },
-    {
-      "@id": "com:gerberas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "gerberas"
-    },
-    {
-      "@id": "com:dragon_fruit",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "dragon fruit"
-    },
-    {
-      "@id": "com:safflower",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "safflower"
-    },
-    {
-      "@id": "com:echinacea",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "echinacea"
-    },
-    {
-      "@id": "com:sweet_corn",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sweet corn"
-    },
-    {
-      "@id": "com:lemongrass",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lemongrass"
-    },
-    {
-      "@id": "com:raspberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "raspberries"
-    },
-    {
-      "@id": "com:crustaceans",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "crustaceans",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture: prawns, freshwater crayfish, etc."
-      }
-    },
-    {
-      "@id": "com:leeks",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "leeks"
-    },
-    {
-      "@id": "com:cabbages",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cabbages"
-    },
-    {
-      "@id": "com:molluscs",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "molluscs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture: includes peal oysters, edible oysters, abalone, mussels."
-      }
-    },
-    {
-      "@id": "com:cherries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cherries"
-    },
-    {
-      "@id": "com:grapefruit",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapefruit"
-    },
-    {
-      "@id": "com:peaches",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "peaches"
-    },
-    {
-      "@id": "com:tropical_flowers",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tropical flowers"
-    },
-    {
-      "@id": "com:cucumbers",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cucumbers"
-    },
-    {
-      "@id": "com:orchids",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "orchids"
-    },
-    {
-      "@id": "com:rare_earths",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rare_earths "
-    },
-    {
-      "@id": "com:aloe_vera",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": {
-        "@language": "en",
-        "@value": "aloe vera"
-      }
-    },
-    {
-      "@id": "com:olives",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "olives"
-    },
-    {
-      "@id": "com:grapes_table",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:grapes"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapes table"
-    },
-    {
-      "@id": "com:nickel",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "nickel"
-    },
-    {
-      "@id": "com:pyrethrum",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pyrethrum"
-    },
-    {
-      "@id": "com:cereals",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:buckwheat"
-        },
-        {
-          "@id": "com:oats"
-        },
-        {
-          "@id": "com:triticale"
-        },
-        {
-          "@id": "com:maize"
-        },
-        {
-          "@id": "com:sorghum_grain"
-        },
-        {
-          "@id": "com:canary_seed"
-        },
-        {
-          "@id": "com:barley"
-        },
-        {
-          "@id": "com:quinoa"
-        },
-        {
-          "@id": "com:millet_and_pancium"
-        },
-        {
-          "@id": "com:rye_cereal"
-        },
-        {
-          "@id": "com:rice"
-        },
-        {
-          "@id": "com:wheat"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Cereals"
-      }
-    },
-    {
-      "@id": "com:oil_palms",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "oil palms"
-    },
-    {
-      "@id": "com:ironsand",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "ironsand"
-    },
-    {
-      "@id": "com:eggplants",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "eggplants"
-    },
-    {
-      "@id": "com:asparagus",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "asparagus"
-    },
-    {
-      "@id": "com:calendula",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "calendula"
-    },
-    {
-      "@id": "com:sheep",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sheep",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Specify meat, dairy, stud or wool where appropriate."
-      }
-    },
-    {
-      "@id": "com:bees",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bees"
-    },
-    {
-      "@id": "com:christmas_trees",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "christmas trees"
-    },
-    {
-      "@id": "com:chillies",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chillies"
-    },
-    {
-      "@id": "com:brazil_nuts",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "brazil nuts"
-    },
-    {
-      "@id": "com:fruit",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:nashi_pears"
-        },
-        {
-          "@id": "com:kiwifruit"
-        },
-        {
-          "@id": "com:mangosteen"
-        },
-        {
-          "@id": "com:feijoa"
-        },
-        {
-          "@id": "com:persimmons"
-        },
-        {
-          "@id": "com:longans"
-        },
-        {
-          "@id": "com:bananas"
-        },
-        {
-          "@id": "com:strawberries"
-        },
-        {
-          "@id": "com:dates"
-        },
-        {
-          "@id": "com:oranges"
-        },
-        {
-          "@id": "com:pawpaws"
-        },
-        {
-          "@id": "com:quinces"
-        },
-        {
-          "@id": "com:rambutans"
-        },
-        {
-          "@id": "com:olives"
-        },
-        {
-          "@id": "com:watermelons"
-        },
-        {
-          "@id": "com:mangoes"
-        },
-        {
-          "@id": "com:figs"
-        },
-        {
-          "@id": "com:grapefruit"
-        },
-        {
-          "@id": "com:nectarines"
-        },
-        {
-          "@id": "com:raspberries"
-        },
-        {
-          "@id": "com:coconut"
-        },
-        {
-          "@id": "com:peacharines"
-        },
-        {
-          "@id": "com:rosella"
-        },
-        {
-          "@id": "com:pomegranate"
-        },
-        {
-          "@id": "com:peaches"
-        },
-        {
-          "@id": "com:tangelos"
-        },
-        {
-          "@id": "com:babacos"
-        },
-        {
-          "@id": "com:pears"
-        },
-        {
-          "@id": "com:melons"
-        },
-        {
-          "@id": "com:redcurrants"
-        },
-        {
-          "@id": "com:tamarillo"
-        },
-        {
-          "@id": "com:pineapples"
-        },
-        {
-          "@id": "com:avocados"
-        },
-        {
-          "@id": "com:lemons"
-        },
-        {
-          "@id": "com:lychees"
-        },
-        {
-          "@id": "com:dragon_fruit"
-        },
-        {
-          "@id": "com:loquats"
-        },
-        {
-          "@id": "com:mulberries"
-        },
-        {
-          "@id": "com:pepinos"
-        },
-        {
-          "@id": "com:guavas"
-        },
-        {
-          "@id": "com:passionfruit"
-        },
-        {
-          "@id": "com:blackcurrants"
-        },
-        {
-          "@id": "com:kumquat"
-        },
-        {
-          "@id": "com:loganberries"
-        },
-        {
-          "@id": "com:grapes_wine"
-        },
-        {
-          "@id": "com:gooseberries"
-        },
-        {
-          "@id": "com:grapes"
-        },
-        {
-          "@id": "com:blueberries"
-        },
-        {
-          "@id": "com:grapes_table"
-        },
-        {
-          "@id": "com:cranberries"
-        },
-        {
-          "@id": "com:apricots"
-        },
-        {
-          "@id": "com:grapes_dried"
-        },
-        {
-          "@id": "com:apples"
-        },
-        {
-          "@id": "com:mandarins"
-        },
-        {
-          "@id": "com:cherries"
-        },
-        {
-          "@id": "com:jackfruit"
-        },
-        {
-          "@id": "com:carambolas"
-        },
-        {
-          "@id": "com:blackberries"
-        },
-        {
-          "@id": "com:boysenberries"
-        },
-        {
-          "@id": "com:plums"
-        },
-        {
-          "@id": "com:limes"
-        },
-        {
-          "@id": "com:chokos"
-        },
-        {
-          "@id": "com:custard_apples"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:carnations",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carnations"
-    },
-    {
-      "@id": "com:marjoram",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "marjoram"
-    },
-    {
-      "@id": "com:coal",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coal"
-    },
-    {
-      "@id": "com:cattle",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle"
-    },
-    {
-      "@id": "com:copper",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "copper"
-    },
-    {
-      "@id": "com:roses",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "roses"
-    },
-    {
-      "@id": "com:cranberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cranberries"
-    },
-    {
-      "@id": "com:maize",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "maize"
-    },
-    {
-      "@id": "com:grapes_wine",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:grapes"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapes wine"
-    },
-    {
-      "@id": "com:horseradish",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "horseradish"
-    },
-    {
-      "@id": "com:limes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "limes"
-    },
-    {
-      "@id": "com:sorghum_forage",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sorghum forage"
-    },
-    {
-      "@id": "com:daffodils",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "daffodils"
-    },
-    {
-      "@id": "com:metal",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "metal"
-    },
-    {
-      "@id": "com:mushrooms",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mushrooms"
-    },
-    {
-      "@id": "com:goats_meat",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:goats"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "goats meat",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Goats for meat production."
-      }
+      "skos:notation": "loquats"
     },
     {
       "@id": "com:jackfruit",
@@ -1949,574 +758,83 @@
       "skos:notation": "jackfruit"
     },
     {
-      "@id": "com:vegetables_and_herbs",
+      "@id": "com:orchids",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "orchids"
+    },
+    {
+      "@id": "com:cats",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cats",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Includes cat breeding, catteries, or areas used for quarantine of cats related to import or export."
+      }
+    },
+    {
+      "@id": "com:pumpkins",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pumpkins"
+    },
+    {
+      "@id": "com:forest",
       "@type": "skos:Collection",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
       "skos:member": [
         {
-          "@id": "com:eggplants"
+          "@id": "com:christmas_trees"
         },
         {
-          "@id": "com:turnips"
+          "@id": "com:bamboo"
         },
         {
-          "@id": "com:marrows_and_squashes"
+          "@id": "com:oil_mallee"
         },
         {
-          "@id": "com:celery"
+          "@id": "com:carbon_forest_standard"
         },
         {
-          "@id": "com:zucchini"
+          "@id": "com:sawlogs"
         },
         {
-          "@id": "com:herbs"
+          "@id": "com:sandalwood"
         },
         {
-          "@id": "com:sage"
+          "@id": "com:eucalyptus_oil"
         },
         {
-          "@id": "com:mint"
+          "@id": "com:carbon_forest_permanent"
         },
         {
-          "@id": "com:mushrooms"
+          "@id": "com:pulp_wood"
         },
         {
-          "@id": "com:parsnips"
-        },
-        {
-          "@id": "com:vegetables"
-        },
-        {
-          "@id": "com:sugar_beet"
-        },
-        {
-          "@id": "com:arrowroot"
-        },
-        {
-          "@id": "com:french_beans"
-        },
-        {
-          "@id": "com:rocket"
-        },
-        {
-          "@id": "com:sprouts"
-        },
-        {
-          "@id": "com:lemongrass"
-        },
-        {
-          "@id": "com:bitter_melon"
-        },
-        {
-          "@id": "com:artichokes"
-        },
-        {
-          "@id": "com:cucumbers"
-        },
-        {
-          "@id": "com:rosemary"
-        },
-        {
-          "@id": "com:leeks"
-        },
-        {
-          "@id": "com:parsley"
-        },
-        {
-          "@id": "com:potatoes"
-        },
-        {
-          "@id": "com:carrots"
-        },
-        {
-          "@id": "com:chamomile"
-        },
-        {
-          "@id": "com:spring_onions_and_shallots"
-        },
-        {
-          "@id": "com:cabbages"
-        },
-        {
-          "@id": "com:chives"
-        },
-        {
-          "@id": "com:asparagus"
-        },
-        {
-          "@id": "com:thyme"
-        },
-        {
-          "@id": "com:coriander"
-        },
-        {
-          "@id": "com:kale"
-        },
-        {
-          "@id": "com:peppermint"
-        },
-        {
-          "@id": "com:chervil"
-        },
-        {
-          "@id": "com:cauliflowers"
-        },
-        {
-          "@id": "com:beans"
-        },
-        {
-          "@id": "com:vegetable_seeds"
-        },
-        {
-          "@id": "com:chinese_cabbages"
-        },
-        {
-          "@id": "com:rhubarb"
-        },
-        {
-          "@id": "com:peas"
-        },
-        {
-          "@id": "com:chicory"
-        },
-        {
-          "@id": "com:garlic"
-        },
-        {
-          "@id": "com:oregano"
-        },
-        {
-          "@id": "com:swedes"
-        },
-        {
-          "@id": "com:truffles"
-        },
-        {
-          "@id": "com:sweet_corn"
-        },
-        {
-          "@id": "com:onions"
-        },
-        {
-          "@id": "com:radishes"
-        },
-        {
-          "@id": "com:kumara"
-        },
-        {
-          "@id": "com:marjoram"
-        },
-        {
-          "@id": "com:brussels_sprouts"
-        },
-        {
-          "@id": "com:snowpeas"
-        },
-        {
-          "@id": "com:sweet_potatoes"
-        },
-        {
-          "@id": "com:tarragon"
-        },
-        {
-          "@id": "com:broccoli"
-        },
-        {
-          "@id": "com:beetroot"
-        },
-        {
-          "@id": "com:silverbeet_and_spinach"
-        },
-        {
-          "@id": "com:lettuces"
-        },
-        {
-          "@id": "com:fennel"
-        },
-        {
-          "@id": "com:tomatoes"
-        },
-        {
-          "@id": "com:okra"
-        },
-        {
-          "@id": "com:pumpkins"
-        },
-        {
-          "@id": "com:burdock"
-        },
-        {
-          "@id": "com:echinacea"
-        },
-        {
-          "@id": "com:capsicums"
-        },
-        {
-          "@id": "com:gherkins"
-        },
-        {
-          "@id": "com:chillies"
+          "@id": "com:tea_tree"
         }
       ],
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Vegetables and herbs"
+        "@value": "Forest"
       }
     },
     {
-      "@id": "com:crocodiles",
+      "@id": "com:lupins",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "crocodiles",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture."
-      }
-    },
-    {
-      "@id": "com:oats",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "oats"
-    },
-    {
-      "@id": "com:barley",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "barley"
-    },
-    {
-      "@id": "com:nuts",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:hazelnuts"
-        },
-        {
-          "@id": "com:macadamias"
-        },
-        {
-          "@id": "com:almonds"
-        },
-        {
-          "@id": "com:pinenuts"
-        },
-        {
-          "@id": "com:walnuts"
-        },
-        {
-          "@id": "com:cashews"
-        },
-        {
-          "@id": "com:brazil_nuts"
-        },
-        {
-          "@id": "com:pistachios"
-        },
-        {
-          "@id": "com:pecan_nuts"
-        },
-        {
-          "@id": "com:chestnuts"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nuts"
-      }
-    },
-    {
-      "@id": "com:oregano",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "oregano"
-    },
-    {
-      "@id": "com:deer",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "deer"
-    },
-    {
-      "@id": "com:lettuces",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lettuces"
-    },
-    {
-      "@id": "com:persimmons",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "persimmons"
-    },
-    {
-      "@id": "com:gooseberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "gooseberries"
-    },
-    {
-      "@id": "com:cocoa",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": {
-        "@language": "en",
-        "@value": "cocoa"
-      }
-    },
-    {
-      "@id": "com:sorghum_grain",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sorghum grain",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Sorghum grown for grain. Excludes forage sorghum."
-      }
-    },
-    {
-      "@id": "com:cattle_stud",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:cattle"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle stud",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Cattle raised for sale as breeding animals."
-      }
-    },
-    {
-      "@id": "com:sweet_potatoes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sweet potatoes"
-    },
-    {
-      "@id": "com:swedes",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "swedes"
-    },
-    {
-      "@id": "com:soybeans",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "soybeans"
-    },
-    {
-      "@id": "com:coriander",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coriander"
-    },
-    {
-      "@id": "com:pawpaws",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pawpaws"
-    },
-    {
-      "@id": "com:celery",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "celery"
-    },
-    {
-      "@id": "com:stone",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "stone"
-    },
-    {
-      "@id": "com:animals",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:horses"
-        },
-        {
-          "@id": "com:sheep_meat"
-        },
-        {
-          "@id": "com:goats"
-        },
-        {
-          "@id": "com:cats"
-        },
-        {
-          "@id": "com:goats_wool"
-        },
-        {
-          "@id": "com:chickens_meat"
-        },
-        {
-          "@id": "com:goats_meat"
-        },
-        {
-          "@id": "com:crustaceans"
-        },
-        {
-          "@id": "com:goats_dairy"
-        },
-        {
-          "@id": "com:cattle_stud"
-        },
-        {
-          "@id": "com:molluscs"
-        },
-        {
-          "@id": "com:pigs"
-        },
-        {
-          "@id": "com:dogs"
-        },
-        {
-          "@id": "com:geese"
-        },
-        {
-          "@id": "com:crocodiles"
-        },
-        {
-          "@id": "com:goats_stud"
-        },
-        {
-          "@id": "com:ostriches"
-        },
-        {
-          "@id": "com:cattle"
-        },
-        {
-          "@id": "com:sheep_wool"
-        },
-        {
-          "@id": "com:turkeys"
-        },
-        {
-          "@id": "com:sheep_stud"
-        },
-        {
-          "@id": "com:ducks"
-        },
-        {
-          "@id": "com:bees"
-        },
-        {
-          "@id": "com:cattle_meat"
-        },
-        {
-          "@id": "com:finfish"
-        },
-        {
-          "@id": "com:deer"
-        },
-        {
-          "@id": "com:emus"
-        },
-        {
-          "@id": "com:chickens"
-        },
-        {
-          "@id": "com:sheep"
-        },
-        {
-          "@id": "com:chickens_eggs"
-        },
-        {
-          "@id": "com:sheep_dairy"
-        },
-        {
-          "@id": "com:cattle_dairy"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:blueberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blueberries"
-    },
-    {
-      "@id": "com:pears",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pears"
-    },
-    {
-      "@id": "com:australian_native_flowers",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "australian native flowers"
-    },
-    {
-      "@id": "com:cattle_meat",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:cattle"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle meat",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Cattle for meat (beef) production."
-      }
+      "skos:notation": "lupins"
     },
     {
       "@id": "com:redcurrants",
@@ -2527,199 +845,48 @@
       "skos:notation": "redcurrants"
     },
     {
-      "@id": "com:bananas",
+      "@id": "com:metal",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "bananas"
+      "skos:notation": "metal"
     },
     {
-      "@id": "com:spring_onions_and_shallots",
+      "@id": "com:navy_bean",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "spring onions and shallots"
+      "skos:notation": "navy bean"
     },
     {
-      "@id": "com:thyme",
+      "@id": "com:quinoa",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "thyme"
-    },
-    {
-      "@id": "com:lead",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lead"
-    },
-    {
-      "@id": "com:pulses",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:vetches"
-        },
-        {
-          "@id": "com:cowpea"
-        },
-        {
-          "@id": "com:broad_beans"
-        },
-        {
-          "@id": "com:azuki_bean"
-        },
-        {
-          "@id": "com:lupins"
-        },
-        {
-          "@id": "com:mung_bean"
-        },
-        {
-          "@id": "com:pigeon_pea"
-        },
-        {
-          "@id": "com:chickpeas"
-        },
-        {
-          "@id": "com:navy_bean"
-        },
-        {
-          "@id": "com:lentils"
-        },
-        {
-          "@id": "com:field_beans"
-        },
-        {
-          "@id": "com:field_peas"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pulses"
-      }
-    },
-    {
-      "@id": "com:turf",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turf"
-    },
-    {
-      "@id": "com:gold",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "gold"
-    },
-    {
-      "@id": "com:shingle",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "shingle"
-    },
-    {
-      "@id": "com:lychees",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lychees"
-    },
-    {
-      "@id": "com:forest",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:eucalyptus_oil"
-        },
-        {
-          "@id": "com:bamboo"
-        },
-        {
-          "@id": "com:carbon_forest_standard"
-        },
-        {
-          "@id": "com:sawlogs"
-        },
-        {
-          "@id": "com:carbon_forest_permanent"
-        },
-        {
-          "@id": "com:pulp_wood"
-        },
-        {
-          "@id": "com:tea_tree"
-        },
-        {
-          "@id": "com:sandalwood"
-        },
-        {
-          "@id": "com:christmas_trees"
-        },
-        {
-          "@id": "com:oil_mallee"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Forest"
-      }
-    },
-    {
-      "@id": "com:emus",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "emus",
+      "skos:notation": "quinoa",
       "skos:usageNote": {
         "@language": "en",
-        "@value": "Poultry farms."
+        "@value": "Quinoa is a pseudocereal related to beetroot, spinach and tumbleweeds. As it is grown as a grain it is considered part of cereals."
       }
     },
     {
-      "@id": "com:iron_ore",
+      "@id": "com:feijoa",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "iron_ore"
+      "skos:notation": "feijoa"
     },
     {
-      "@id": "com:cotton_seed",
+      "@id": "com:pawpaws",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": {
-        "@language": "en",
-        "@value": "cotton seed"
-      }
-    },
-    {
-      "@id": "com:avocados",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "avocados"
+      "skos:notation": "pawpaws"
     },
     {
       "@id": "com:apples",
@@ -2728,193 +895,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "apples"
-    },
-    {
-      "@id": "com:vegetables",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "vegetables"
-    },
-    {
-      "@id": "com:peas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "peas"
-    },
-    {
-      "@id": "com:kumquat",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "kumquat"
-    },
-    {
-      "@id": "com:carbon_forest_permanent",
-      "@type": "skos:Concept",
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry."
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carbon forest permanent"
-    },
-    {
-      "@id": "com:pinenuts",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pinenuts"
-    },
-    {
-      "@id": "com:tobacco",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tobacco"
-    },
-    {
-      "@id": "com:silverbeet_and_spinach",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "silverbeet and spinach"
-    },
-    {
-      "@id": "com:bamboo",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bamboo"
-    },
-    {
-      "@id": "com:diamonds_rough",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "diamonds_rough "
-    },
-    {
-      "@id": "com:finfish",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "finfish",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture: tuna, salmon, trout, freshwater species, etc."
-      }
-    },
-    {
-      "@id": "com:blackberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blackberries"
-    },
-    {
-      "@id": "com:coconut",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coconut"
-    },
-    {
-      "@id": "com:yarrow",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "yarrow"
-    },
-    {
-      "@id": "com:pomegranate",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pomegranate"
-    },
-    {
-      "@id": "com:coffee",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coffee"
-    },
-    {
-      "@id": "com:quinces",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "quinces"
-    },
-    {
-      "@id": "com:salt",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "salt"
-    },
-    {
-      "@id": "com:ginger",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": {
-        "@language": "en",
-        "@value": "ginger"
-      }
-    },
-    {
-      "@id": "com:pineapples",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pineapples"
-    },
-    {
-      "@id": "com:coal_brown",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "coal_brown "
-    },
-    {
-      "@id": "com:fennel",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "fennel"
-    },
-    {
-      "@id": "com:poppies",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "poppies "
     },
     {
       "@id": "lus:commodities",
@@ -2932,97 +912,60 @@
       }
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "@type": "skos:Collection",
-      "skos:inScheme": {
+      "@id": "lus:commodities.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:chrysanthemums"
-        },
-        {
-          "@id": "com:bulbs"
-        },
-        {
-          "@id": "com:orchids"
-        },
-        {
-          "@id": "com:roses"
-        },
-        {
-          "@id": "com:tropical_flowers"
-        },
-        {
-          "@id": "com:australian_native_flowers"
-        },
-        {
-          "@id": "com:calendula"
-        },
-        {
-          "@id": "com:lilies"
-        },
-        {
-          "@id": "com:tulips"
-        },
-        {
-          "@id": "com:daffodils"
-        },
-        {
-          "@id": "com:lavender"
-        },
-        {
-          "@id": "com:carnations"
-        },
-        {
-          "@id": "com:gerberas"
-        },
-        {
-          "@id": "com:proteas"
-        },
-        {
-          "@id": "com:flowers_and_foliage"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     },
     {
-      "@id": "com:cashews",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
+      "@id": "lus:commodities.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "lus:commodities"
-      },
-      "skos:notation": "cashews"
+      }
     },
     {
-      "@id": "com:nashi_pears",
+      "@id": "com:oats",
       "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:pears"
-      },
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "pears nashi"
+      "skos:notation": "oats"
     },
     {
-      "@id": "com:peacharines",
+      "@id": "com:chamomile",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "peacharines"
+      "skos:notation": "chamomile"
     },
     {
-      "@id": "com:pigeon_pea",
+      "@id": "com:spring_onions_and_shallots",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "pigeon pea"
+      "skos:notation": "spring onions and shallots"
+    },
+    {
+      "@id": "com:cucumbers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cucumbers"
+    },
+    {
+      "@id": "com:okra",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "okra"
     },
     {
       "@id": "com:dates",
@@ -3033,68 +976,75 @@
       "skos:notation": "dates"
     },
     {
-      "@id": "com:walnuts",
+      "@id": "com:eggplants",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "walnuts"
+      "skos:notation": "eggplants"
     },
     {
-      "@id": "com:gherkins",
+      "@id": "com:chinese_cabbages",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "gherkins"
+      "skos:notation": "chinese cabbages"
     },
     {
-      "@id": "com:mint",
+      "@id": "com:nickel",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "mint"
+      "skos:notation": "nickel"
     },
     {
-      "@id": "com:herbs",
+      "@id": "com:maize",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "herbs"
+      "skos:notation": "maize"
     },
     {
-      "@id": "com:loquats",
+      "@id": "com:cattle_meat",
       "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:cattle"
+      },
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "loquats"
+      "skos:notation": "cattle meat",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Cattle for meat (beef) production."
+      }
     },
     {
-      "@id": "com:cowpea",
+      "@id": "com:echinacea",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "cowpea"
+      "skos:notation": "echinacea"
     },
     {
-      "@id": "com:rambutans",
+      "@id": "com:garlic",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "rambutans"
+      "skos:notation": "garlic"
     },
     {
-      "@id": "com:french_beans",
+      "@id": "com:oil_palms",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "french beans"
+      "skos:notation": "oil palms"
     },
     {
       "@id": "com:brussels_sprouts",
@@ -3105,24 +1055,321 @@
       "skos:notation": "brussels sprouts"
     },
     {
-      "@id": "com:geese",
+      "@id": "com:marjoram",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "geese",
+      "skos:notation": "marjoram"
+    },
+    {
+      "@id": "com:sugar_beet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sugar beet"
+    },
+    {
+      "@id": "com:pigs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pigs",
       "skos:usageNote": {
         "@language": "en",
-        "@value": "Poultry farms."
+        "@value": "Piggeries."
       }
     },
     {
-      "@id": "com:bulbs",
+      "@id": "com:watermelons",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "bulbs"
+      "skos:notation": "watermelons"
+    },
+    {
+      "@id": "com:mineral_sands",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mineral_sands "
+    },
+    {
+      "@id": "com:mangoes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mangoes"
+    },
+    {
+      "@id": "com:parsley",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "parsley"
+    },
+    {
+      "@id": "com:cattle_stud",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:cattle"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cattle stud",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Cattle raised for sale as breeding animals."
+      }
+    },
+    {
+      "@id": "com:lucerne",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lucerne"
+    },
+    {
+      "@id": "com:vetches",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "vetches"
+    },
+    {
+      "@id": "com:mines",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:copper"
+        },
+        {
+          "@id": "com:alumina"
+        },
+        {
+          "@id": "com:salt"
+        },
+        {
+          "@id": "com:rare_earths"
+        },
+        {
+          "@id": "com:diamonds_rough"
+        },
+        {
+          "@id": "com:ironsand"
+        },
+        {
+          "@id": "com:gold"
+        },
+        {
+          "@id": "com:silica_sand"
+        },
+        {
+          "@id": "com:uranium"
+        },
+        {
+          "@id": "com:coal"
+        },
+        {
+          "@id": "com:aluminium"
+        },
+        {
+          "@id": "com:coal_brown"
+        },
+        {
+          "@id": "com:zeolite"
+        },
+        {
+          "@id": "com:coal_black"
+        },
+        {
+          "@id": "com:zinc"
+        },
+        {
+          "@id": "com:nickel"
+        },
+        {
+          "@id": "com:lead"
+        },
+        {
+          "@id": "com:iron_ore"
+        },
+        {
+          "@id": "com:bauxite"
+        },
+        {
+          "@id": "com:mineral_sands"
+        },
+        {
+          "@id": "com:shingle"
+        },
+        {
+          "@id": "com:stone"
+        },
+        {
+          "@id": "com:metal"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:aloe_vera",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": {
+        "@language": "en",
+        "@value": "aloe vera"
+      }
+    },
+    {
+      "@id": "com:animals",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:deer"
+        },
+        {
+          "@id": "com:crocodiles"
+        },
+        {
+          "@id": "com:chickens_eggs"
+        },
+        {
+          "@id": "com:goats_stud"
+        },
+        {
+          "@id": "com:geese"
+        },
+        {
+          "@id": "com:ostriches"
+        },
+        {
+          "@id": "com:goats_dairy"
+        },
+        {
+          "@id": "com:chickens_meat"
+        },
+        {
+          "@id": "com:cattle_stud"
+        },
+        {
+          "@id": "com:sheep_wool"
+        },
+        {
+          "@id": "com:sheep_stud"
+        },
+        {
+          "@id": "com:goats_wool"
+        },
+        {
+          "@id": "com:cattle_meat"
+        },
+        {
+          "@id": "com:sheep_dairy"
+        },
+        {
+          "@id": "com:pigs"
+        },
+        {
+          "@id": "com:cattle"
+        },
+        {
+          "@id": "com:finfish"
+        },
+        {
+          "@id": "com:horses"
+        },
+        {
+          "@id": "com:cats"
+        },
+        {
+          "@id": "com:cattle_dairy"
+        },
+        {
+          "@id": "com:chickens"
+        },
+        {
+          "@id": "com:emus"
+        },
+        {
+          "@id": "com:goats"
+        },
+        {
+          "@id": "com:dogs"
+        },
+        {
+          "@id": "com:sheep_meat"
+        },
+        {
+          "@id": "com:crustaceans"
+        },
+        {
+          "@id": "com:molluscs"
+        },
+        {
+          "@id": "com:sheep"
+        },
+        {
+          "@id": "com:goats_meat"
+        },
+        {
+          "@id": "com:bees"
+        },
+        {
+          "@id": "com:ducks"
+        },
+        {
+          "@id": "com:turkeys"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:cauliflowers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cauliflowers"
+    },
+    {
+      "@id": "com:sawlogs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sawlogs"
+    },
+    {
+      "@id": "com:broad_beans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "broad beans"
     },
     {
       "@id": "com:essential_oil_crops",
@@ -3136,329 +1383,88 @@
       }
     },
     {
-      "@id": "com:goats",
+      "@id": "com:field_peas",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "goats",
+      "skos:notation": "field peas"
+    },
+    {
+      "@id": "com:eucalyptus_oil",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "eucalyptus oil"
+    },
+    {
+      "@id": "com:sandalwood",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sandalwood"
+    },
+    {
+      "@id": "com:peanuts",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peanuts"
+    },
+    {
+      "@id": "com:pulp_wood",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pulp wood"
+    },
+    {
+      "@id": "com:kumquat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "kumquat"
+    },
+    {
+      "@id": "com:crustaceans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "crustaceans",
       "skos:usageNote": {
         "@language": "en",
-        "@value": "Specify meat, dairy, stud, or wool where appropriate."
+        "@value": "Aquaculture: prawns, freshwater crayfish, etc."
       }
     },
     {
-      "@id": "com:oranges",
+      "@id": "com:mustard",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "oranges"
+      "skos:notation": "mustard "
     },
     {
-      "@id": "com:sheep_stud",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:sheep"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sheep stud",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Sheep raised for sale as breeding animals."
-      }
-    },
-    {
-      "@id": "com:marrows_and_squashes",
+      "@id": "com:sprouts",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "marrows and squashes"
+      "skos:notation": "sprouts"
     },
     {
-      "@id": "com:broad_beans",
+      "@id": "com:chillies",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "broad beans"
-    },
-    {
-      "@id": "com:sawlogs",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sawlogs"
-    },
-    {
-      "@id": "com:aluminium",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "aluminium"
-    },
-    {
-      "@id": "com:sage",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sage"
-    },
-    {
-      "@id": "com:proteas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "proteas"
-    },
-    {
-      "@id": "com:kale",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "kale"
-    },
-    {
-      "@id": "com:zucchini",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "zucchini"
-    },
-    {
-      "@id": "com:macadamias",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "macadamias"
-    },
-    {
-      "@id": "com:chickpeas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chickpeas"
-    },
-    {
-      "@id": "com:babacos",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "babacos"
-    },
-    {
-      "@id": "com:mung_bean",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mung bean"
-    },
-    {
-      "@id": "com:chinese_cabbages",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chinese cabbages"
-    },
-    {
-      "@id": "com:goats_wool",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:goats"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "goats wool",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Goats for fibre production."
-      }
-    },
-    {
-      "@id": "com:feijoa",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "feijoa"
-    },
-    {
-      "@id": "com:garlic",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "garlic"
-    },
-    {
-      "@id": "com:bauxite",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bauxite"
-    },
-    {
-      "@id": "com:capsicums",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "capsicums"
-    },
-    {
-      "@id": "com:snowpeas",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "snowpeas"
-    },
-    {
-      "@id": "lus:commodities.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lus:commodities"
-      }
-    },
-    {
-      "@id": "com:silica_sand",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "silica_sand"
-    },
-    {
-      "@id": "lus:commodities.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "lus:commodities"
-      }
-    },
-    {
-      "@id": "com:vegetable_seeds",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "vegetable seeds"
-    },
-    {
-      "@id": "com:canary_seed",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "canary_seed"
-    },
-    {
-      "@id": "com:bitter_melon",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bitter melon"
-    },
-    {
-      "@id": "com:mulberries",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mulberries"
-    },
-    {
-      "@id": "com:sesame",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sesame"
-    },
-    {
-      "@id": "com:chamomile",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chamomile"
-    },
-    {
-      "@id": "com:horses",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "horses",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Includes horse studs and recreational uses."
-      }
-    },
-    {
-      "@id": "com:chickens_eggs",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "com:chickens"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chickens eggs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Poultry farms. Production mainly for eggs."
-      }
-    },
-    {
-      "@id": "com:custard_apples",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "custard apples"
-    },
-    {
-      "@id": "com:rice",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "rice"
-    },
-    {
-      "@id": "com:watermelons",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "watermelons"
-    },
-    {
-      "@id": "com:azuki_bean",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "azuki bean"
+      "skos:notation": "chillies"
     },
     {
       "@id": "com:goats_stud",
@@ -3476,12 +1482,44 @@
       }
     },
     {
-      "@id": "com:artichokes",
+      "@id": "com:gerberas",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "artichokes"
+      "skos:notation": "gerberas"
+    },
+    {
+      "@id": "com:mandarins",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mandarins"
+    },
+    {
+      "@id": "com:tomatoes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tomatoes"
+    },
+    {
+      "@id": "com:passionfruit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "passionfruit"
+    },
+    {
+      "@id": "com:babacos",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "babacos"
     },
     {
       "@id": "lus:commodities.html",
@@ -3500,12 +1538,12 @@
       ]
     },
     {
-      "@id": "com:mineral_sands",
+      "@id": "com:vegetable_seeds",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "lus:commodities"
       },
-      "skos:notation": "mineral_sands "
+      "skos:notation": "vegetable seeds"
     },
     {
       "@id": "com:oil_mallee",
@@ -3514,6 +1552,1968 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "oil mallee"
+    },
+    {
+      "@id": "com:swedes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "swedes"
+    },
+    {
+      "@id": "com:carrots",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carrots"
+    },
+    {
+      "@id": "com:cotton",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": {
+        "@language": "en",
+        "@value": "cotton"
+      }
+    },
+    {
+      "@id": "com:jute",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "jute"
+    },
+    {
+      "@id": "com:sage",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sage"
+    },
+    {
+      "@id": "com:soybeans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "soybeans"
+    },
+    {
+      "@id": "com:macadamias",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "macadamias"
+    },
+    {
+      "@id": "com:figs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "figs"
+    },
+    {
+      "@id": "com:dragon_fruit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "dragon fruit"
+    },
+    {
+      "@id": "com:barley",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "barley"
+    },
+    {
+      "@id": "com:chicory",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chicory"
+    },
+    {
+      "@id": "com:herbs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "herbs"
+    },
+    {
+      "@id": "com:ginger",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": {
+        "@language": "en",
+        "@value": "ginger"
+      }
+    },
+    {
+      "@id": "com:horticulture",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": {
+        "@id": "com:turf"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
+      }
+    },
+    {
+      "@id": "com:pharmaceutical_and_cosmetic_plants",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pharmaceutical and cosmetic plants"
+    },
+    {
+      "@id": "com:sweet_corn",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sweet corn"
+    },
+    {
+      "@id": "com:hazelnuts",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "hazelnuts"
+    },
+    {
+      "@id": "com:yarrow",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "yarrow"
+    },
+    {
+      "@id": "com:goats_wool",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:goats"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "goats wool",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Goats for fibre production."
+      }
+    },
+    {
+      "@id": "com:peaches",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peaches"
+    },
+    {
+      "@id": "com:salt",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "salt"
+    },
+    {
+      "@id": "com:arrowroot",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "arrowroot"
+    },
+    {
+      "@id": "com:sheep_dairy",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:sheep"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep dairy",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Sheep for milk production."
+      }
+    },
+    {
+      "@id": "com:kumara",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "kumara"
+    },
+    {
+      "@id": "com:tarragon",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tarragon"
+    },
+    {
+      "@id": "com:bauxite",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bauxite"
+    },
+    {
+      "@id": "com:wasabi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "wasabi"
+    },
+    {
+      "@id": "com:gold",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "gold"
+    },
+    {
+      "@id": "com:nuts",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:chestnuts"
+        },
+        {
+          "@id": "com:almonds"
+        },
+        {
+          "@id": "com:macadamias"
+        },
+        {
+          "@id": "com:pistachios"
+        },
+        {
+          "@id": "com:walnuts"
+        },
+        {
+          "@id": "com:pecan_nuts"
+        },
+        {
+          "@id": "com:pinenuts"
+        },
+        {
+          "@id": "com:cashews"
+        },
+        {
+          "@id": "com:brazil_nuts"
+        },
+        {
+          "@id": "com:hazelnuts"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
+      }
+    },
+    {
+      "@id": "com:alumina",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "alumina"
+    },
+    {
+      "@id": "com:aluminium",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "aluminium"
+    },
+    {
+      "@id": "com:rare_earths",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rare_earths "
+    },
+    {
+      "@id": "com:sheep_meat",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:sheep"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep meat",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Sheep for meat production."
+      }
+    },
+    {
+      "@id": "com:lead",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lead"
+    },
+    {
+      "@id": "com:chickens",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chickens",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms. Specify whether for eggs or meat where possible."
+      }
+    },
+    {
+      "@id": "com:sesame",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sesame"
+    },
+    {
+      "@id": "com:rye_cereal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rye cereal"
+    },
+    {
+      "@id": "com:fruit",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:bananas"
+        },
+        {
+          "@id": "com:guavas"
+        },
+        {
+          "@id": "com:pepinos"
+        },
+        {
+          "@id": "com:kumquat"
+        },
+        {
+          "@id": "com:apricots"
+        },
+        {
+          "@id": "com:carambolas"
+        },
+        {
+          "@id": "com:gooseberries"
+        },
+        {
+          "@id": "com:mangosteen"
+        },
+        {
+          "@id": "com:lychees"
+        },
+        {
+          "@id": "com:grapes_wine"
+        },
+        {
+          "@id": "com:rambutans"
+        },
+        {
+          "@id": "com:cranberries"
+        },
+        {
+          "@id": "com:strawberries"
+        },
+        {
+          "@id": "com:feijoa"
+        },
+        {
+          "@id": "com:pineapples"
+        },
+        {
+          "@id": "com:chokos"
+        },
+        {
+          "@id": "com:watermelons"
+        },
+        {
+          "@id": "com:figs"
+        },
+        {
+          "@id": "com:peaches"
+        },
+        {
+          "@id": "com:jackfruit"
+        },
+        {
+          "@id": "com:grapes_dried"
+        },
+        {
+          "@id": "com:avocados"
+        },
+        {
+          "@id": "com:passionfruit"
+        },
+        {
+          "@id": "com:peacharines"
+        },
+        {
+          "@id": "com:oranges"
+        },
+        {
+          "@id": "com:custard_apples"
+        },
+        {
+          "@id": "com:nectarines"
+        },
+        {
+          "@id": "com:grapefruit"
+        },
+        {
+          "@id": "com:kiwifruit"
+        },
+        {
+          "@id": "com:loquats"
+        },
+        {
+          "@id": "com:olives"
+        },
+        {
+          "@id": "com:grapes_table"
+        },
+        {
+          "@id": "com:cherries"
+        },
+        {
+          "@id": "com:mulberries"
+        },
+        {
+          "@id": "com:rosella"
+        },
+        {
+          "@id": "com:pears"
+        },
+        {
+          "@id": "com:blackcurrants"
+        },
+        {
+          "@id": "com:apples"
+        },
+        {
+          "@id": "com:quinces"
+        },
+        {
+          "@id": "com:pomegranate"
+        },
+        {
+          "@id": "com:nashi_pears"
+        },
+        {
+          "@id": "com:pawpaws"
+        },
+        {
+          "@id": "com:grapes"
+        },
+        {
+          "@id": "com:tangelos"
+        },
+        {
+          "@id": "com:blueberries"
+        },
+        {
+          "@id": "com:limes"
+        },
+        {
+          "@id": "com:coconut"
+        },
+        {
+          "@id": "com:dates"
+        },
+        {
+          "@id": "com:plums"
+        },
+        {
+          "@id": "com:loganberries"
+        },
+        {
+          "@id": "com:blackberries"
+        },
+        {
+          "@id": "com:boysenberries"
+        },
+        {
+          "@id": "com:babacos"
+        },
+        {
+          "@id": "com:tamarillo"
+        },
+        {
+          "@id": "com:dragon_fruit"
+        },
+        {
+          "@id": "com:longans"
+        },
+        {
+          "@id": "com:redcurrants"
+        },
+        {
+          "@id": "com:lemons"
+        },
+        {
+          "@id": "com:raspberries"
+        },
+        {
+          "@id": "com:persimmons"
+        },
+        {
+          "@id": "com:melons"
+        },
+        {
+          "@id": "com:mangoes"
+        },
+        {
+          "@id": "com:mandarins"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:iron_ore",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "iron_ore"
+    },
+    {
+      "@id": "com:emus",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "emus",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms."
+      }
+    },
+    {
+      "@id": "com:calendula",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "calendula"
+    },
+    {
+      "@id": "com:proteas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "proteas"
+    },
+    {
+      "@id": "com:roses",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "roses"
+    },
+    {
+      "@id": "com:mint",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mint"
+    },
+    {
+      "@id": "com:brazil_nuts",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "brazil nuts"
+    },
+    {
+      "@id": "com:crocodiles",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "crocodiles",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Aquaculture."
+      }
+    },
+    {
+      "@id": "com:ostriches",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "ostriches",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farming."
+      }
+    },
+    {
+      "@id": "com:pomegranate",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pomegranate"
+    },
+    {
+      "@id": "com:walnuts",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "walnuts"
+    },
+    {
+      "@id": "com:sheep_stud",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:sheep"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep stud",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Sheep raised for sale as breeding animals."
+      }
+    },
+    {
+      "@id": "com:oregano",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "oregano"
+    },
+    {
+      "@id": "com:peacharines",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peacharines"
+    },
+    {
+      "@id": "com:nectarines",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "nectarines"
+    },
+    {
+      "@id": "com:hops",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "hops"
+    },
+    {
+      "@id": "com:grapes_wine",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:grapes"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "grapes wine"
+    },
+    {
+      "@id": "com:lychees",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lychees"
+    },
+    {
+      "@id": "com:kale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "kale"
+    },
+    {
+      "@id": "com:carambolas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carambolas"
+    },
+    {
+      "@id": "com:blackberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blackberries"
+    },
+    {
+      "@id": "com:azuki_bean",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "azuki bean"
+    },
+    {
+      "@id": "com:pepinos",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pepinos"
+    },
+    {
+      "@id": "com:horses",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "horses",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Includes horse studs and recreational uses."
+      }
+    },
+    {
+      "@id": "com:canola",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "canola"
+    },
+    {
+      "@id": "com:raspberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "raspberries"
+    },
+    {
+      "@id": "com:bamboo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bamboo"
+    },
+    {
+      "@id": "com:strawberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "strawberries"
+    },
+    {
+      "@id": "com:field_beans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "field beans"
+    },
+    {
+      "@id": "com:avocados",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "avocados"
+    },
+    {
+      "@id": "com:uranium",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "uranium"
+    },
+    {
+      "@id": "com:beetroot",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "beetroot"
+    },
+    {
+      "@id": "com:grapes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "grapes"
+    },
+    {
+      "@id": "com:cherries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cherries"
+    },
+    {
+      "@id": "com:turf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turf"
+    },
+    {
+      "@id": "com:oilseeds",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:safflower"
+        },
+        {
+          "@id": "com:peanuts"
+        },
+        {
+          "@id": "com:flaxseed"
+        },
+        {
+          "@id": "com:canola"
+        },
+        {
+          "@id": "com:sesame"
+        },
+        {
+          "@id": "com:mustard"
+        },
+        {
+          "@id": "com:soybeans"
+        },
+        {
+          "@id": "com:chia"
+        },
+        {
+          "@id": "com:sunflower"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Oilseeds"
+      }
+    },
+    {
+      "@id": "com:australian_native_flowers",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "australian native flowers"
+    },
+    {
+      "@id": "com:daffodils",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "daffodils"
+    },
+    {
+      "@id": "com:cowpea",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cowpea"
+    },
+    {
+      "@id": "com:plums",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "plums"
+    },
+    {
+      "@id": "com:coriander",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coriander"
+    },
+    {
+      "@id": "com:leeks",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "leeks"
+    },
+    {
+      "@id": "com:truffles",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "truffles"
+    },
+    {
+      "@id": "com:marrows_and_squashes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "marrows and squashes"
+    },
+    {
+      "@id": "com:cotton_seed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": {
+        "@language": "en",
+        "@value": "cotton seed"
+      }
+    },
+    {
+      "@id": "com:vegetables",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "vegetables"
+    },
+    {
+      "@id": "com:loganberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "loganberries"
+    },
+    {
+      "@id": "com:sweet_potatoes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sweet potatoes"
+    },
+    {
+      "@id": "com:rosemary",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rosemary"
+    },
+    {
+      "@id": "com:poppies",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "poppies "
+    },
+    {
+      "@id": "com:chestnuts",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chestnuts"
+    },
+    {
+      "@id": "com:copper",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "copper"
+    },
+    {
+      "@id": "com:finfish",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "finfish",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Aquaculture: tuna, salmon, trout, freshwater species, etc."
+      }
+    },
+    {
+      "@id": "com:chives",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chives"
+    },
+    {
+      "@id": "com:potatoes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "potatoes"
+    },
+    {
+      "@id": "com:sunflower",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sunflower"
+    },
+    {
+      "@id": "com:carnations",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carnations"
+    },
+    {
+      "@id": "com:apricots",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "apricots"
+    },
+    {
+      "@id": "com:coal_black",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coal_black "
+    },
+    {
+      "@id": "com:coal_brown",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coal_brown "
+    },
+    {
+      "@id": "com:longans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "longans"
+    },
+    {
+      "@id": "com:boysenberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "boysenberries"
+    },
+    {
+      "@id": "com:sheep",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Specify meat, dairy, stud or wool where appropriate."
+      }
+    },
+    {
+      "@id": "com:cereals",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:triticale"
+        },
+        {
+          "@id": "com:buckwheat"
+        },
+        {
+          "@id": "com:wheat"
+        },
+        {
+          "@id": "com:millet_and_pancium"
+        },
+        {
+          "@id": "com:rye_cereal"
+        },
+        {
+          "@id": "com:quinoa"
+        },
+        {
+          "@id": "com:canary_seed"
+        },
+        {
+          "@id": "com:maize"
+        },
+        {
+          "@id": "com:rice"
+        },
+        {
+          "@id": "com:oats"
+        },
+        {
+          "@id": "com:sorghum_grain"
+        },
+        {
+          "@id": "com:barley"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
+      }
+    },
+    {
+      "@id": "com:cashews",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cashews"
+    },
+    {
+      "@id": "com:plantain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "plantain"
+    },
+    {
+      "@id": "com:buckwheat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "buckwheat",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Buckwheat is a pseudocereal related to rhubarb. As it is grown as a grain it is considered part of cereals."
+      }
+    },
+    {
+      "@id": "com:lemons",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lemons"
+    },
+    {
+      "@id": "com:gooseberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "gooseberries"
+    },
+    {
+      "@id": "com:lemongrass",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lemongrass"
+    },
+    {
+      "@id": "com:asparagus",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "asparagus"
+    },
+    {
+      "@id": "com:sorghum_forage",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sorghum forage"
+    },
+    {
+      "@id": "com:bees",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bees"
+    },
+    {
+      "@id": "com:pistachios",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pistachios"
+    },
+    {
+      "@id": "com:celery",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "celery"
+    },
+    {
+      "@id": "com:tulips",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tulips"
+    },
+    {
+      "@id": "com:persimmons",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "persimmons"
+    },
+    {
+      "@id": "com:silica_sand",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "silica_sand"
+    },
+    {
+      "@id": "com:stone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "stone"
+    },
+    {
+      "@id": "com:pasture",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:turnips_forage"
+        },
+        {
+          "@id": "com:clover"
+        },
+        {
+          "@id": "com:plantain"
+        },
+        {
+          "@id": "com:yarrow"
+        },
+        {
+          "@id": "com:lucerne"
+        },
+        {
+          "@id": "com:sorghum_forage"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
+      "@id": "com:cattle_dairy",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:cattle"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cattle dairy",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Cattle for milk production."
+      }
+    },
+    {
+      "@id": "com:snowpeas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "snowpeas"
+    },
+    {
+      "@id": "com:artichokes",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "artichokes"
+    },
+    {
+      "@id": "com:peas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peas"
+    },
+    {
+      "@id": "com:dogs",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "dogs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Includes dog breeding, kennels, or areas used for quarantine of dogs related to import or export."
+      }
+    },
+    {
+      "@id": "com:geese",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "geese",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms."
+      }
+    },
+    {
+      "@id": "com:pineapples",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pineapples"
+    },
+    {
+      "@id": "com:chickens_eggs",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:chickens"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chickens eggs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms. Production mainly for eggs."
+      }
+    },
+    {
+      "@id": "com:coal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "coal"
+    },
+    {
+      "@id": "com:lavender",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lavender"
+    },
+    {
+      "@id": "com:millet_and_pancium",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "millet and pancium"
+    },
+    {
+      "@id": "com:deer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "deer"
+    },
+    {
+      "@id": "com:turkeys",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turkeys",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms."
+      }
+    },
+    {
+      "@id": "com:crop",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:aloe_vera"
+        },
+        {
+          "@id": "com:cotton"
+        },
+        {
+          "@id": "com:tobacco"
+        },
+        {
+          "@id": "com:essential_oil_crops"
+        },
+        {
+          "@id": "com:hops"
+        },
+        {
+          "@id": "com:sugar_cane"
+        },
+        {
+          "@id": "com:oil_palms"
+        },
+        {
+          "@id": "com:coffee"
+        },
+        {
+          "@id": "com:wasabi"
+        },
+        {
+          "@id": "com:cocoa"
+        },
+        {
+          "@id": "com:ginger"
+        },
+        {
+          "@id": "com:poppies"
+        },
+        {
+          "@id": "com:pharmaceutical_and_cosmetic_plants"
+        },
+        {
+          "@id": "com:cotton_seed"
+        },
+        {
+          "@id": "com:jute"
+        },
+        {
+          "@id": "com:tea"
+        },
+        {
+          "@id": "com:horseradish"
+        },
+        {
+          "@id": "com:pepper"
+        },
+        {
+          "@id": "com:pyrethrum"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "com:chickpeas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chickpeas"
+    },
+    {
+      "@id": "com:almonds",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "almonds"
+    },
+    {
+      "@id": "com:rambutans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rambutans"
+    },
+    {
+      "@id": "com:cattle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cattle"
+    },
+    {
+      "@id": "com:rosella",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "rosella"
+    },
+    {
+      "@id": "com:broccoli",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "broccoli"
+    },
+    {
+      "@id": "com:lettuces",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lettuces"
+    },
+    {
+      "@id": "com:mangosteen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mangosteen"
+    },
+    {
+      "@id": "com:cranberries",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cranberries"
+    },
+    {
+      "@id": "com:carbon_forest_permanent",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Permanent carbon forestry under the ETS. These are post-1989 forests that will not be clear-felled. They are expected to remain in permanent forestry for at least 50 years. Before 1 January 2023, the ETS didn't distinguish between standard and permanent forestry. Post-1989 forest land that entered the ETS before 1 January 2023 is standard forestry, unless an application has been accepted to change it to permanent forestry."
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carbon forest permanent"
+    },
+    {
+      "@id": "com:lilies",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lilies"
+    },
+    {
+      "@id": "com:tamarillo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tamarillo"
+    },
+    {
+      "@id": "com:pyrethrum",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pyrethrum"
+    },
+    {
+      "@id": "com:flowers_and_foliage",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "flowers and foliage"
+    },
+    {
+      "@id": "com:olives",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "olives"
+    },
+    {
+      "@id": "com:french_beans",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "french beans"
+    },
+    {
+      "@id": "com:sorghum_grain",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sorghum grain",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Sorghum grown for grain. Excludes forage sorghum."
+      }
+    },
+    {
+      "@id": "com:ducks",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "ducks",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Poultry farms."
+      }
+    },
+    {
+      "@id": "com:tea",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tea"
+    },
+    {
+      "@id": "com:onions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "onions"
+    },
+    {
+      "@id": "com:grapes_table",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:grapes"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "grapes table"
+    },
+    {
+      "@id": "com:guavas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "guavas"
+    },
+    {
+      "@id": "com:mushrooms",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mushrooms"
+    },
+    {
+      "@id": "com:gherkins",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "gherkins"
+    },
+    {
+      "@id": "com:mung_bean",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mung bean"
+    },
+    {
+      "@id": "com:nashi_pears",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:pears"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pears nashi"
+    },
+    {
+      "@id": "com:peppermint",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peppermint"
+    },
+    {
+      "@id": "com:chia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chia"
+    },
+    {
+      "@id": "com:quinces",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "quinces"
+    },
+    {
+      "@id": "com:triticale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "triticale"
+    },
+    {
+      "@id": "com:goats_meat",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "com:goats"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "goats meat",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Goats for meat production."
+      }
+    },
+    {
+      "@id": "com:chervil",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chervil"
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "@type": "skos:Collection",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:lilies"
+        },
+        {
+          "@id": "com:gerberas"
+        },
+        {
+          "@id": "com:roses"
+        },
+        {
+          "@id": "com:chrysanthemums"
+        },
+        {
+          "@id": "com:bulbs"
+        },
+        {
+          "@id": "com:orchids"
+        },
+        {
+          "@id": "com:tulips"
+        },
+        {
+          "@id": "com:lavender"
+        },
+        {
+          "@id": "com:carnations"
+        },
+        {
+          "@id": "com:australian_native_flowers"
+        },
+        {
+          "@id": "com:flowers_and_foliage"
+        },
+        {
+          "@id": "com:tropical_flowers"
+        },
+        {
+          "@id": "com:proteas"
+        },
+        {
+          "@id": "com:calendula"
+        },
+        {
+          "@id": "com:daffodils"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
+      "@id": "com:horseradish",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "horseradish"
+    },
+    {
+      "@id": "com:pears",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pears"
+    },
+    {
+      "@id": "com:tobacco",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tobacco"
+    },
+    {
+      "@id": "com:tangelos",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tangelos"
+    },
+    {
+      "@id": "com:carbon_forest_standard",
+      "@type": "skos:Concept",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carbon forest standard"
+    },
+    {
+      "@id": "com:custard_apples",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "custard apples"
+    },
+    {
+      "@id": "com:oranges",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "oranges"
+    },
+    {
+      "@id": "com:bananas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bananas"
+    },
+    {
+      "@id": "com:shingle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "shingle"
     }
   ]
 }

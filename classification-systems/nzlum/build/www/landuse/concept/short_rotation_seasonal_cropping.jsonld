@@ -9,6 +9,54 @@
   },
   "@graph": [
     {
+      "@id": "luc:arable_cropping",
+      "skos:notation": "2.3.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Arable cropping"
+      }
+    },
+    {
+      "@id": "luc:arable_mixed_livestock_cropping",
+      "skos:notation": "2.3.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Arable and mixed livestock cropping"
+      }
+    },
+    {
+      "@id": "luc:short_rotation_seasonal_cropping.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:short_rotation_seasonal_cropping"
+      }
+    },
+    {
+      "@id": "luc:short_rotation_seasonal_cropping.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:short_rotation_seasonal_cropping.ttl"
+        },
+        {
+          "@id": "luc:short_rotation_seasonal_cropping.jsonld"
+        },
+        {
+          "@id": "luc:short_rotation_seasonal_cropping.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:seasonal_flowers_bulbs_turf",
+      "skos:notation": "2.3.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Seasonal flowers and bulbs, and turf farming"
+      }
+    },
+    {
       "@id": "luc:short_rotation_seasonal_cropping",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -41,6 +89,9 @@
       ],
       "skos:narrower": [
         {
+          "@id": "luc:seasonal_flowers_bulbs_turf"
+        },
+        {
           "@id": "luc:short_rotation_horticulture"
         },
         {
@@ -48,9 +99,6 @@
         },
         {
           "@id": "luc:arable_mixed_livestock_cropping"
-        },
-        {
-          "@id": "luc:seasonal_flowers_bulbs_turf"
         }
       ],
       "skos:notation": "2.3.0",
@@ -61,7 +109,7 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."
+          "@value": "The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years."
         },
         {
           "@language": "en",
@@ -69,7 +117,7 @@
         },
         {
           "@language": "en",
-          "@value": "The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years."
+          "@value": "This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity."
         }
       ],
       "skos:usageNote": {
@@ -78,28 +126,12 @@
       }
     },
     {
-      "@id": "luc:short_rotation_seasonal_cropping.rdf",
+      "@id": "luc:short_rotation_seasonal_cropping.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:short_rotation_seasonal_cropping"
       }
-    },
-    {
-      "@id": "luc:short_rotation_seasonal_cropping.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:short_rotation_seasonal_cropping.ttl"
-        },
-        {
-          "@id": "luc:short_rotation_seasonal_cropping.jsonld"
-        },
-        {
-          "@id": "luc:short_rotation_seasonal_cropping.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:production_agriculture_plantations",
@@ -115,38 +147,6 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:short_rotation_seasonal_cropping"
-      }
-    },
-    {
-      "@id": "luc:short_rotation_seasonal_cropping.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:short_rotation_seasonal_cropping"
-      }
-    },
-    {
-      "@id": "luc:seasonal_flowers_bulbs_turf",
-      "skos:notation": "2.3.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Seasonal flowers and bulbs, and turf farming"
-      }
-    },
-    {
-      "@id": "luc:arable_cropping",
-      "skos:notation": "2.3.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Arable cropping"
-      }
-    },
-    {
-      "@id": "luc:arable_mixed_livestock_cropping",
-      "skos:notation": "2.3.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Arable and mixed livestock cropping"
       }
     },
     {

@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:oats.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oats"
-      }
-    },
-    {
       "@id": "com:cereals",
       "skos:member": {
         "@id": "com:oats"
@@ -26,15 +18,20 @@
       }
     },
     {
-      "@id": "com:oats",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:oats.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "oats"
+      "@id": "com:oats.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:oats"
+      }
+    },
+    {
+      "@id": "com:oats.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oats"
+      }
     },
     {
       "@id": "com:oats.html",
@@ -53,11 +50,10 @@
       ]
     },
     {
-      "@id": "com:oats.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:oats"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -69,11 +65,15 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:oats",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:oats.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "oats"
     }
   ]
 }

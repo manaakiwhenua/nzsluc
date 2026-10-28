@@ -9,35 +9,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:evaporation_basins",
-      "skos:notation": "3.7.4",
+      "@id": "luc:built_environment",
+      "skos:notation": "3.0.0",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Evaporation basins"
-      }
-    },
-    {
-      "@id": "luc:quarries",
-      "skos:notation": "3.7.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Quarries"
-      }
-    },
-    {
-      "@id": "luc:extractive_industry_not_in_use",
-      "skos:notation": "3.7.5",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Extractive industry not in use"
-      }
-    },
-    {
-      "@id": "luc:mining.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:mining"
+        "@value": "Built environment"
       }
     },
     {
@@ -49,12 +25,20 @@
       }
     },
     {
-      "@id": "luc:tailings",
-      "skos:notation": "3.7.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Tailings"
-      }
+      "@id": "luc:mining.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:mining.ttl"
+        },
+        {
+          "@id": "luc:mining.jsonld"
+        },
+        {
+          "@id": "luc:mining.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:mining",
@@ -89,10 +73,10 @@
           "@id": "luc:tailings"
         },
         {
-          "@id": "luc:mines"
+          "@id": "luc:evaporation_basins"
         },
         {
-          "@id": "luc:evaporation_basins"
+          "@id": "luc:mines"
         }
       ],
       "skos:notation": "3.7.0",
@@ -106,28 +90,12 @@
       }
     },
     {
-      "@id": "luc:mines",
-      "skos:notation": "3.7.1",
+      "@id": "luc:extractive_industry_not_in_use",
+      "skos:notation": "3.7.5",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Mines"
+        "@value": "Extractive industry not in use"
       }
-    },
-    {
-      "@id": "luc:mining.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:mining.ttl"
-        },
-        {
-          "@id": "luc:mining.jsonld"
-        },
-        {
-          "@id": "luc:mining.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:mining.jsonld",
@@ -138,11 +106,43 @@
       }
     },
     {
-      "@id": "luc:built_environment",
-      "skos:notation": "3.0.0",
+      "@id": "luc:mining.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:mining"
+      }
+    },
+    {
+      "@id": "luc:quarries",
+      "skos:notation": "3.7.2",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Built environment"
+        "@value": "Quarries"
+      }
+    },
+    {
+      "@id": "luc:mines",
+      "skos:notation": "3.7.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "luc:tailings",
+      "skos:notation": "3.7.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Tailings"
+      }
+    },
+    {
+      "@id": "luc:evaporation_basins",
+      "skos:notation": "3.7.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Evaporation basins"
       }
     }
   ]

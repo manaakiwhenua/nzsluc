@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:horticulture.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:horticulture"
-      }
-    },
-    {
       "@id": "com:horticulture.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -24,26 +16,11 @@
       }
     },
     {
-      "@id": "com:horticulture.html",
+      "@id": "com:horticulture.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:horticulture.ttl"
-        },
-        {
-          "@id": "com:horticulture.jsonld"
-        },
-        {
-          "@id": "com:horticulture.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:horticulture"
       }
     },
     {
@@ -69,6 +46,29 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Horticulture"
+      }
+    },
+    {
+      "@id": "com:horticulture.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:horticulture.ttl"
+        },
+        {
+          "@id": "com:horticulture.jsonld"
+        },
+        {
+          "@id": "com:horticulture.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {

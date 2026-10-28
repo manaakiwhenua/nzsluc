@@ -8,38 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:surface_water_supply.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:surface_water_supply"
-      }
-    },
-    {
-      "@id": "luc:surface_water_supply.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:surface_water_supply"
-      }
-    },
-    {
-      "@id": "luc:surface_water_supply.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:surface_water_supply.ttl"
-        },
-        {
-          "@id": "luc:surface_water_supply.jsonld"
-        },
-        {
-          "@id": "luc:surface_water_supply.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:surface_water_supply",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -72,6 +40,38 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Minimal use from relatively natural environments"
+      }
+    },
+    {
+      "@id": "luc:surface_water_supply.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:surface_water_supply.ttl"
+        },
+        {
+          "@id": "luc:surface_water_supply.jsonld"
+        },
+        {
+          "@id": "luc:surface_water_supply.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:surface_water_supply.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:surface_water_supply"
+      }
+    },
+    {
+      "@id": "luc:surface_water_supply.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:surface_water_supply"
       }
     },
     {

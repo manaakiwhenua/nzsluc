@@ -8,6 +8,22 @@
   },
   "@graph": [
     {
+      "@id": "luc:roads.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:roads.ttl"
+        },
+        {
+          "@id": "luc:roads.jsonld"
+        },
+        {
+          "@id": "luc:roads.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:transport",
       "skos:notation": "3.6.0",
       "skos:prefLabel": {
@@ -16,17 +32,17 @@
       }
     },
     {
-      "@id": "luc:roads.ttl",
+      "@id": "luc:roads.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:roads"
       }
     },
     {
-      "@id": "luc:roads.jsonld",
+      "@id": "luc:roads.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:roads"
       }
@@ -59,28 +75,12 @@
       }
     },
     {
-      "@id": "luc:roads.rdf",
+      "@id": "luc:roads.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:roads"
       }
-    },
-    {
-      "@id": "luc:roads.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:roads.ttl"
-        },
-        {
-          "@id": "luc:roads.jsonld"
-        },
-        {
-          "@id": "luc:roads.rdf"
-        }
-      ]
     }
   ]
 }

@@ -8,24 +8,48 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:irrigation.rdf",
+      "@id": "mgmt:irrigation_spray",
+      "skos:notation": "irrigation spray"
+    },
+    {
+      "@id": "mgmt:irrigation.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:irrigation"
       }
     },
     {
-      "@id": "mgmt:irrigation_drip",
-      "skos:notation": "irrigation drip"
+      "@id": "mgmt:irrigation",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:irrigation.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:member": [
+        {
+          "@id": "mgmt:irrigation_surface"
+        },
+        {
+          "@id": "mgmt:irrigation_spray"
+        },
+        {
+          "@id": "mgmt:irrigation_drip"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Irrigation"
+      }
     },
     {
-      "@id": "mgmt:irrigation_surface",
-      "skos:notation": "irrigation surface"
-    },
-    {
-      "@id": "mgmt:irrigation_spray",
-      "skos:notation": "irrigation spray"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
     },
     {
       "@id": "mgmt:irrigation.html",
@@ -44,6 +68,10 @@
       ]
     },
     {
+      "@id": "mgmt:irrigation_surface",
+      "skos:notation": "irrigation surface"
+    },
+    {
       "@id": "mgmt:irrigation.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -52,44 +80,16 @@
       }
     },
     {
-      "@id": "mgmt:irrigation.jsonld",
+      "@id": "mgmt:irrigation.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:irrigation"
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:irrigation",
-      "@type": "skos:Collection",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:irrigation.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:member": [
-        {
-          "@id": "mgmt:irrigation_drip"
-        },
-        {
-          "@id": "mgmt:irrigation_spray"
-        },
-        {
-          "@id": "mgmt:irrigation_surface"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Irrigation"
-      }
+      "@id": "mgmt:irrigation_drip",
+      "skos:notation": "irrigation drip"
     }
   ]
 }

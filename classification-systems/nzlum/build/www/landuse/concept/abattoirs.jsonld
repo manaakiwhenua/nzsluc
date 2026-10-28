@@ -8,33 +8,17 @@
   },
   "@graph": [
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
+      "@id": "luc:abattoirs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:abattoirs"
       }
     },
     {
       "@id": "luc:abattoirs.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:abattoirs"
-      }
-    },
-    {
-      "@id": "luc:abattoirs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:abattoirs"
-      }
-    },
-    {
-      "@id": "luc:abattoirs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:abattoirs"
       }
@@ -54,6 +38,14 @@
           "@id": "luc:abattoirs.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:abattoirs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:abattoirs"
+      }
     },
     {
       "@id": "luc:abattoirs",
@@ -80,6 +72,14 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Abattoirs"
+      }
+    },
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
     }
   ]

@@ -8,12 +8,23 @@
   },
   "@graph": [
     {
-      "@id": "com:lilies.ttl",
+      "@id": "com:lilies.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:lilies"
       }
+    },
+    {
+      "@id": "com:lilies",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:lilies.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lilies"
     },
     {
       "@id": "com:lilies.jsonld",
@@ -21,6 +32,16 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:lilies"
+      }
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:lilies"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -40,20 +61,9 @@
       ]
     },
     {
-      "@id": "com:lilies",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:lilies.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lilies"
-    },
-    {
-      "@id": "com:lilies.rdf",
+      "@id": "com:lilies.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:lilies"
       }
@@ -63,16 +73,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:lilies"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     }
   ]

@@ -16,35 +16,6 @@
       }
     },
     {
-      "@id": "com:forest",
-      "skos:member": {
-        "@id": "com:sandalwood"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Forest"
-      }
-    },
-    {
-      "@id": "com:sandalwood.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sandalwood"
-      }
-    },
-    {
-      "@id": "com:sandalwood",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sandalwood.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sandalwood"
-    },
-    {
       "@id": "com:sandalwood.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -61,18 +32,47 @@
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:sandalwood.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:sandalwood"
+      }
+    },
+    {
+      "@id": "com:forest",
+      "skos:member": {
+        "@id": "com:sandalwood"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
+      }
+    },
+    {
+      "@id": "com:sandalwood",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sandalwood.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sandalwood"
+    },
+    {
+      "@id": "com:sandalwood.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sandalwood"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

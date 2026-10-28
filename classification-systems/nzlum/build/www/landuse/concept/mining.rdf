@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.jsonld">
     <foaf:primaryTopic>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining">
-        <skos:usageNote xml:lang="en">Record the specific type of mining activitiy in the commodity attribute, if known.</skos:usageNote>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:notation>3.7.0</skos:notation>
         <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>
         <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extractive_industry_not_in_use"/>
         <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mines"/>
         <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/evaporation_basins"/>
-        <skos:prefLabel xml:lang="en">Mining</skos:prefLabel>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
-        <skos:notation>3.7.0</skos:notation>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mines"/>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <lu:colour>#E1CEA7</lu:colour>
         <skos:definition xml:lang="en">Mining and extractive industries (including salt extraction from evaporation basins).</skos:definition>
+        <skos:prefLabel xml:lang="en">Mining</skos:prefLabel>
+        <lu:colour>#E1CEA7</lu:colour>
+        <skos:usageNote xml:lang="en">Record the specific type of mining activitiy in the commodity attribute, if known.</skos:usageNote>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.html"/>
       </skos:Concept>
     </foaf:primaryTopic>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extractive_industry_not_in_use">
+    <skos:prefLabel xml:lang="en">Extractive industry not in use</skos:prefLabel>
+    <skos:notation>3.7.5</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+    <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+    <skos:notation>3.0.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/evaporation_basins">
+    <skos:prefLabel xml:lang="en">Evaporation basins</skos:prefLabel>
+    <skos:notation>3.7.4</skos:notation>
+  </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mines">
     <skos:prefLabel xml:lang="en">Mines</skos:prefLabel>
     <skos:notation>3.7.1</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries">
-    <skos:prefLabel xml:lang="en">Quarries</skos:prefLabel>
-    <skos:notation>3.7.2</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extractive_industry_not_in_use">
-    <skos:prefLabel xml:lang="en">Extractive industry not in use</skos:prefLabel>
-    <skos:notation>3.7.5</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings">
     <skos:prefLabel xml:lang="en">Tailings</skos:prefLabel>
     <skos:notation>3.7.3</skos:notation>
   </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries">
+    <skos:prefLabel xml:lang="en">Quarries</skos:prefLabel>
+    <skos:notation>3.7.2</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.ttl"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.jsonld"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining.rdf"/>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/evaporation_basins">
-    <skos:prefLabel xml:lang="en">Evaporation basins</skos:prefLabel>
-    <skos:notation>3.7.4</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
-    <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
-    <skos:notation>3.0.0</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

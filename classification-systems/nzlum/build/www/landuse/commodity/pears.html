@@ -18,17 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pears",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:pears.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pears"
-    },
-    {
       "@id": "com:pears.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -45,13 +34,11 @@
       ]
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:pears.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:pears"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     },
     {
@@ -71,18 +58,31 @@
       }
     },
     {
-      "@id": "com:pears.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pears"
-      }
+      "@id": "com:pears",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:pears.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pears"
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:pears"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     }
   ]

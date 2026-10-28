@@ -8,46 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:unused_land.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:unused_land.ttl"
-        },
-        {
-          "@id": "luc:unused_land.jsonld"
-        },
-        {
-          "@id": "luc:unused_land.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:unused_land.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:unused_land"
-      }
-    },
-    {
-      "@id": "luc:unused_and_transitioning",
-      "skos:notation": "1.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Unused and transitioning land"
-      }
-    },
-    {
-      "@id": "luc:unused_land.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:unused_land"
-      }
-    },
-    {
       "@id": "luc:unused_land",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -91,6 +51,46 @@
       "@id": "luc:unused_land.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:unused_land"
+      }
+    },
+    {
+      "@id": "luc:unused_land.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:unused_land.ttl"
+        },
+        {
+          "@id": "luc:unused_land.jsonld"
+        },
+        {
+          "@id": "luc:unused_land.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:unused_and_transitioning",
+      "skos:notation": "1.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Unused and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:unused_land.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:unused_land"
+      }
+    },
+    {
+      "@id": "luc:unused_land.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:unused_land"
       }

@@ -17,25 +17,9 @@
   },
   "@graph": [
     {
-      "@id": "lu_status:draft.html",
+      "@id": "lu_status:draft.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lu_status:draft.ttl"
-        },
-        {
-          "@id": "lu_status:draft.jsonld"
-        },
-        {
-          "@id": "lu_status:draft.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lu_status:draft.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "lu_status:draft"
       }
@@ -52,17 +36,33 @@
       }
     },
     {
-      "@id": "lu_status:draft.rdf",
+      "@id": "lu_status:draft.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lu_status:draft"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_status:draft.ttl"
+        },
+        {
+          "@id": "lu_status:draft.jsonld"
+        },
+        {
+          "@id": "lu_status:draft.rdf"
+        }
+      ]
     },
     {
       "@id": "lu_status:draft.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:draft"
+      }
+    },
+    {
+      "@id": "lu_status:draft.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "lu_status:draft"
       }

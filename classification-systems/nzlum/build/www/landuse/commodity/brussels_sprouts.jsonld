@@ -8,30 +8,25 @@
   },
   "@graph": [
     {
-      "@id": "com:brussels_sprouts",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:brussels_sprouts.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "brussels sprouts"
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:brussels_sprouts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:brussels_sprouts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
       "@id": "com:brussels_sprouts.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:brussels_sprouts"
+      }
+    },
+    {
+      "@id": "com:brussels_sprouts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:brussels_sprouts"
       }
@@ -53,11 +48,24 @@
       ]
     },
     {
-      "@id": "com:brussels_sprouts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:brussels_sprouts",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:brussels_sprouts.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "brussels sprouts"
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
         "@id": "com:brussels_sprouts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -65,14 +73,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:brussels_sprouts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:brussels_sprouts"
       }
     }
   ]

@@ -9,6 +9,14 @@
   },
   "@graph": [
     {
+      "@id": "luc:habitat_or_species_management.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
+    },
+    {
       "@id": "luc:nature_cons",
       "skos:notation": "1.1.0",
       "skos:prefLabel": {
@@ -31,6 +39,22 @@
           "@id": "luc:habitat_or_species_management.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:habitat_or_species_management.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
+    },
+    {
+      "@id": "luc:habitat_or_species_management.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:habitat_or_species_management"
+      }
     },
     {
       "@id": "luc:habitat_or_species_management",
@@ -62,30 +86,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Habitat or species management area"
-      }
-    },
-    {
-      "@id": "luc:habitat_or_species_management.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:habitat_or_species_management"
-      }
-    },
-    {
-      "@id": "luc:habitat_or_species_management.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:habitat_or_species_management"
-      }
-    },
-    {
-      "@id": "luc:habitat_or_species_management.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:habitat_or_species_management"
       }
     }
   ]

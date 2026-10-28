@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sprouts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sprouts"
-      }
-    },
-    {
       "@id": "com:sprouts",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,30 +19,12 @@
       "skos:notation": "sprouts"
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:sprouts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:sprouts.html",
+      "@id": "com:sprouts.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sprouts.ttl"
-        },
-        {
-          "@id": "com:sprouts.jsonld"
-        },
-        {
-          "@id": "com:sprouts.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sprouts"
+      }
     },
     {
       "@id": "com:sprouts.rdf",
@@ -69,11 +43,37 @@
       }
     },
     {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:sprouts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
+    },
+    {
+      "@id": "com:sprouts.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sprouts.ttl"
+        },
+        {
+          "@id": "com:sprouts.jsonld"
+        },
+        {
+          "@id": "com:sprouts.rdf"
+        }
+      ]
     }
   ]
 }

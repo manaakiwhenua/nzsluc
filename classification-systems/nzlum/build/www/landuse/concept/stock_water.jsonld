@@ -8,6 +8,30 @@
   },
   "@graph": [
     {
+      "@id": "luc:stock_water.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:stock_water"
+      }
+    },
+    {
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water and wastewater"
+      }
+    },
+    {
+      "@id": "luc:stock_water.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:stock_water"
+      }
+    },
+    {
       "@id": "luc:stock_water.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -56,30 +80,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Stock water"
-      }
-    },
-    {
-      "@id": "luc:stock_water.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:stock_water"
-      }
-    },
-    {
-      "@id": "luc:water_wastewater_agriculture",
-      "skos:notation": "2.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Water and wastewater"
-      }
-    },
-    {
-      "@id": "luc:stock_water.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:stock_water"
       }
     }
   ]

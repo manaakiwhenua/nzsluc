@@ -18,17 +18,24 @@
       }
     },
     {
-      "@id": "mgmt:tillage_conservation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:tillage_conservation"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
       "@id": "mgmt:tillage_conservation.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:tillage_conservation"
+      }
+    },
+    {
+      "@id": "mgmt:tillage_conservation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:tillage_conservation"
       }
@@ -45,21 +52,6 @@
       "skos:notation": "tillage conservation"
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:tillage_conservation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:tillage_conservation"
-      }
-    },
-    {
       "@id": "mgmt:tillage_conservation.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -74,6 +66,14 @@
           "@id": "mgmt:tillage_conservation.rdf"
         }
       ]
+    },
+    {
+      "@id": "mgmt:tillage_conservation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:tillage_conservation"
+      }
     }
   ]
 }

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
-    <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
     <skos:usageNote xml:lang="en">Management practices such as irrigation or netting can be recorded as management practices.</skos:usageNote>
     <skos:usageNote xml:lang="en">Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).</skos:usageNote>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
@@ -19,26 +18,27 @@
       </rdf:Description>
     </skos:narrower>
     <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops">
-        <skos:prefLabel xml:lang="en">Tree crops</skos:prefLabel>
-        <skos:notation>2.4.1</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_perennial_horticulture">
         <skos:prefLabel xml:lang="en">Other perennial horticulture</skos:prefLabel>
         <skos:notation>2.4.3</skos:notation>
       </rdf:Description>
     </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops">
+        <skos:prefLabel xml:lang="en">Tree crops</skos:prefLabel>
+        <skos:notation>2.4.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:notation>2.4.0</skos:notation>
+    <skos:definition xml:lang="en">Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.</skos:definition>
+    <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
         <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
         <skos:notation>2.0.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:notation>2.4.0</skos:notation>
     <lu:colour>#A4A898</lu:colour>
-    <skos:definition xml:lang="en">Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.</skos:definition>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.html">
         <dcterms:format>text/html</dcterms:format>
@@ -48,16 +48,16 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.rdf">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.ttl">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

@@ -18,6 +18,35 @@
   },
   "@graph": [
     {
+      "@id": "com:aluminium.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:aluminium"
+      }
+    },
+    {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:aluminium"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
+      "@id": "com:aluminium",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:aluminium.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "aluminium"
+    },
+    {
       "@id": "com:aluminium.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -26,11 +55,10 @@
       }
     },
     {
-      "@id": "com:aluminium.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:aluminium"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -50,39 +78,11 @@
       ]
     },
     {
-      "@id": "com:aluminium",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:aluminium.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "aluminium"
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:aluminium"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
       "@id": "com:aluminium.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:aluminium"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

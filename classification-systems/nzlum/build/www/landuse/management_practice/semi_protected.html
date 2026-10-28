@@ -18,30 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:semi_protected",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:semi_protected.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "semi-protected"
-    },
-    {
-      "@id": "mgmt:semi_protected.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "mgmt:horticulture",
+      "skos:member": {
         "@id": "mgmt:semi_protected"
-      }
-    },
-    {
-      "@id": "mgmt:semi_protected.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:semi_protected"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
       }
     },
     {
@@ -52,13 +35,11 @@
       }
     },
     {
-      "@id": "mgmt:horticulture",
-      "skos:member": {
+      "@id": "mgmt:semi_protected.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "mgmt:semi_protected"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horticulture"
       }
     },
     {
@@ -84,6 +65,25 @@
       "foaf:primaryTopic": {
         "@id": "mgmt:semi_protected"
       }
+    },
+    {
+      "@id": "mgmt:semi_protected.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:semi_protected"
+      }
+    },
+    {
+      "@id": "mgmt:semi_protected",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:semi_protected.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "semi-protected"
     }
   ]
 }

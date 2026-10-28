@@ -18,9 +18,28 @@
   },
   "@graph": [
     {
+      "@id": "com:blackcurrants",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:blackcurrants.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blackcurrants"
+    },
+    {
       "@id": "com:blackcurrants.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:blackcurrants"
+      }
+    },
+    {
+      "@id": "com:blackcurrants.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:blackcurrants"
       }
@@ -42,32 +61,10 @@
       ]
     },
     {
-      "@id": "com:blackcurrants.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:blackcurrants"
-      }
-    },
-    {
-      "@id": "com:blackcurrants",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:blackcurrants.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blackcurrants"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:blackcurrants"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -79,10 +76,13 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:blackcurrants"
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
+        "@value": "Fruit"
       }
     }
   ]

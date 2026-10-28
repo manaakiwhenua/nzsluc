@@ -25,14 +25,6 @@
       }
     },
     {
-      "@id": "luc:smallholder_farm.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:smallholder_farm"
-      }
-    },
-    {
       "@id": "luc:smallholder_farm.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -47,14 +39,6 @@
           "@id": "luc:smallholder_farm.rdf"
         }
       ]
-    },
-    {
-      "@id": "luc:production_agriculture_plantations",
-      "skos:notation": "2.0.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Production agriculture and plantations"
-      }
     },
     {
       "@id": "luc:smallholder_farm",
@@ -95,13 +79,29 @@
       "skos:usageNote": [
         {
           "@language": "en",
-          "@value": "Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3."
+          "@value": "As a subclass of 2.0.0, commodities and management practices may still be recorded."
         },
         {
           "@language": "en",
-          "@value": "As a subclass of 2.0.0, commodities and management practices may still be recorded."
+          "@value": "Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3."
         }
       ]
+    },
+    {
+      "@id": "luc:smallholder_farm.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
+      }
+    },
+    {
+      "@id": "luc:production_agriculture_plantations",
+      "skos:notation": "2.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production agriculture and plantations"
+      }
     }
   ]
 }

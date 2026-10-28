@@ -16,20 +16,12 @@
       }
     },
     {
-      "@id": "luc:ports_water_transport.html",
+      "@id": "luc:ports_water_transport.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:ports_water_transport.ttl"
-        },
-        {
-          "@id": "luc:ports_water_transport.jsonld"
-        },
-        {
-          "@id": "luc:ports_water_transport.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:ports_water_transport"
+      }
     },
     {
       "@id": "luc:ports_water_transport.jsonld",
@@ -48,6 +40,22 @@
       }
     },
     {
+      "@id": "luc:ports_water_transport.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:ports_water_transport.ttl"
+        },
+        {
+          "@id": "luc:ports_water_transport.jsonld"
+        },
+        {
+          "@id": "luc:ports_water_transport.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:ports_water_transport",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -63,11 +71,11 @@
       "skos:example": [
         {
           "@language": "en",
-          "@value": "Ports, docks, and wharves."
+          "@value": "Harbours, navigational channels."
         },
         {
           "@language": "en",
-          "@value": "Harbours, navigational channels."
+          "@value": "Ports, docks, and wharves."
         }
       ],
       "skos:inScheme": [
@@ -86,14 +94,6 @@
       "skos:usageNote": {
         "@language": "en",
         "@value": "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."
-      }
-    },
-    {
-      "@id": "luc:ports_water_transport.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:ports_water_transport"
       }
     }
   ]

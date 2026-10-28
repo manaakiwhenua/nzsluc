@@ -1,66 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture">
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lucerne">
-        <skos:notation>lucerne</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/yarrow">
-        <skos:notation>yarrow</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/turnips_forage">
-        <skos:notation>turnips forage</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_forage">
-        <skos:notation>sorghum forage</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover">
-        <skos:notation>clover</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain">
-        <skos:notation>plantain</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
-    <skos:inScheme>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-        <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-      </rdf:Description>
-    </skos:inScheme>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Collection>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture"/>
+    <foaf:primaryTopic>
+      <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture">
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/turnips_forage"/>
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover"/>
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/yarrow"/>
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/lucerne"/>
+        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_forage"/>
+        <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.html"/>
+      </skos:Collection>
+    </foaf:primaryTopic>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/yarrow">
+    <skos:notation>yarrow</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/turnips_forage">
+    <skos:notation>turnips forage</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_forage">
+    <skos:notation>sorghum forage</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture.rdf"/>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lucerne">
+    <skos:notation>lucerne</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover">
+    <skos:notation>clover</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain">
+    <skos:notation>plantain</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
 </rdf:RDF>

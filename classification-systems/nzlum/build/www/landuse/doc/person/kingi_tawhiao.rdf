@@ -7,12 +7,20 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho">
     <dcterms:creator>
       <foaf:Person rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao">
-        <foaf:name xml:lang="mi">Kīngi Tāwhiao</foaf:name>
         <foaf:name xml:lang="mi">Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao</foaf:name>
+        <foaf:name xml:lang="mi">Kīngi Tāwhiao</foaf:name>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.html"/>
       </foaf:Person>
     </dcterms:creator>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -21,17 +29,7 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao.rdf"/>
   </foaf:Document>
 </rdf:RDF>

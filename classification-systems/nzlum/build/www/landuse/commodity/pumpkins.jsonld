@@ -8,13 +8,19 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:pumpkins.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:pumpkins"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:pumpkins.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pumpkins"
       }
     },
     {
@@ -37,14 +43,6 @@
       "skos:notation": "pumpkins"
     },
     {
-      "@id": "com:pumpkins.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pumpkins"
-      }
-    },
-    {
       "@id": "com:pumpkins.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -61,11 +59,13 @@
       ]
     },
     {
-      "@id": "com:pumpkins.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
         "@id": "com:pumpkins"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {

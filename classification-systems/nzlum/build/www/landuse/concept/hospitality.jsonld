@@ -8,6 +8,46 @@
   },
   "@graph": [
     {
+      "@id": "luc:hospitality.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:hospitality"
+      }
+    },
+    {
+      "@id": "luc:hospitality.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:hospitality"
+      }
+    },
+    {
+      "@id": "luc:hospitality.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:hospitality"
+      }
+    },
+    {
+      "@id": "luc:hospitality.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:hospitality.ttl"
+        },
+        {
+          "@id": "luc:hospitality.jsonld"
+        },
+        {
+          "@id": "luc:hospitality.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:commercial",
       "skos:notation": "3.3.0",
       "skos:prefLabel": {
@@ -44,46 +84,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Hospitality"
-      }
-    },
-    {
-      "@id": "luc:hospitality.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:hospitality.ttl"
-        },
-        {
-          "@id": "luc:hospitality.jsonld"
-        },
-        {
-          "@id": "luc:hospitality.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:hospitality.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:hospitality"
-      }
-    },
-    {
-      "@id": "luc:hospitality.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:hospitality"
-      }
-    },
-    {
-      "@id": "luc:hospitality.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:hospitality"
       }
     }
   ]

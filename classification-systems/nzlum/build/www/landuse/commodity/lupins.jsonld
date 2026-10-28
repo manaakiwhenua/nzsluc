@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:lupins.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lupins.ttl"
-        },
-        {
-          "@id": "com:lupins.jsonld"
-        },
-        {
-          "@id": "com:lupins.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:lupins.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:lupins"
-      }
-    },
-    {
       "@id": "com:lupins.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -40,9 +16,9 @@
       }
     },
     {
-      "@id": "com:lupins.rdf",
+      "@id": "com:lupins.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:lupins"
       }
@@ -59,6 +35,22 @@
       "skos:notation": "lupins"
     },
     {
+      "@id": "com:lupins.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lupins.ttl"
+        },
+        {
+          "@id": "com:lupins.jsonld"
+        },
+        {
+          "@id": "com:lupins.rdf"
+        }
+      ]
+    },
+    {
       "@id": "com:pulses",
       "skos:member": {
         "@id": "com:lupins"
@@ -73,6 +65,14 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:lupins.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:lupins"
       }
     }
   ]

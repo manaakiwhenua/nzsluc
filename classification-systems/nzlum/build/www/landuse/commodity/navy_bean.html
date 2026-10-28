@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:navy_bean.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:navy_bean"
-      }
-    },
-    {
       "@id": "com:navy_bean.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -42,9 +34,9 @@
       ]
     },
     {
-      "@id": "com:navy_bean.jsonld",
+      "@id": "com:navy_bean.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:navy_bean"
       }
@@ -71,18 +63,26 @@
       }
     },
     {
-      "@id": "com:navy_bean.ttl",
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:navy_bean.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:navy_bean"
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:navy_bean.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:navy_bean"
       }
     }
   ]

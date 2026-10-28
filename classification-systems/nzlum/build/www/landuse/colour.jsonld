@@ -10,24 +10,11 @@
   },
   "@graph": [
     {
-      "@id": "lu:colour",
-      "@type": "owl:DatatypeProperty",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "lu:colour.html"
-      },
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. \"#7F6DF2\"). Optional; absence means no colour has been assigned."
-      },
-      "rdfs:domain": {
-        "@id": "skos:Concept"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "colour"
-      },
-      "rdfs:range": {
-        "@id": "xsd:string"
+      "@id": "lu:colour.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lu:colour"
       }
     },
     {
@@ -55,19 +42,32 @@
       ]
     },
     {
-      "@id": "lu:colour.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lu:colour"
-      }
-    },
-    {
       "@id": "lu:colour.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "lu:colour"
+      }
+    },
+    {
+      "@id": "lu:colour",
+      "@type": "owl:DatatypeProperty",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lu:colour.html"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Authoritative colour assigned to this concept for cartographic representation, given as a hex RGB triplet (e.g. \"#7F6DF2\"). Optional; absence means no colour has been assigned."
+      },
+      "rdfs:domain": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "colour"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
     }
   ]

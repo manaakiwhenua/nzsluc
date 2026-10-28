@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport">
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport">
-        <skos:prefLabel xml:lang="en">Ports and water transport</skos:prefLabel>
-        <skos:notation>3.6.4</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
     <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways">
         <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
         <skos:notation>3.6.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes">
+        <skos:prefLabel xml:lang="en">Airports/aerodromes</skos:prefLabel>
+        <skos:notation>3.6.1</skos:notation>
       </rdf:Description>
     </skos:narrower>
     <skos:narrower>
@@ -26,17 +26,15 @@
       </rdf:Description>
     </skos:narrower>
     <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/airports_aerodromes">
-        <skos:prefLabel xml:lang="en">Airports/aerodromes</skos:prefLabel>
-        <skos:notation>3.6.1</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/ports_water_transport">
+        <skos:prefLabel xml:lang="en">Ports and water transport</skos:prefLabel>
+        <skos:notation>3.6.4</skos:notation>
       </rdf:Description>
     </skos:narrower>
-    <skos:definition xml:lang="en">Land allocated to infrastructure used for the transportation of goods or people.</skos:definition>
-    <skos:usageNote xml:lang="en">Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</skos:usageNote>
-    <lu:colour>#72737E</lu:colour>
     <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
-    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
+    <skos:usageNote xml:lang="en">Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</skos:usageNote>
     <skos:changeNote xml:lang="en">Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'.</skos:changeNote>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
         <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
@@ -45,6 +43,8 @@
     </skos:broader>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <skos:notation>3.6.0</skos:notation>
+    <skos:definition xml:lang="en">Land allocated to infrastructure used for the transportation of goods or people.</skos:definition>
+    <lu:colour>#72737E</lu:colour>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport.html">
         <dcterms:format>text/html</dcterms:format>

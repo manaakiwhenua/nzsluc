@@ -8,28 +8,28 @@
   },
   "@graph": [
     {
-      "@id": "luc:seasonal_flowers_bulbs_turf.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:seasonal_flowers_bulbs_turf"
-      }
-    },
-    {
-      "@id": "luc:short_rotation_seasonal_cropping",
-      "skos:notation": "2.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Short-rotation and seasonal cropping"
-      }
-    },
-    {
       "@id": "luc:seasonal_flowers_bulbs_turf.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:seasonal_flowers_bulbs_turf"
       }
+    },
+    {
+      "@id": "luc:seasonal_flowers_bulbs_turf.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:seasonal_flowers_bulbs_turf.ttl"
+        },
+        {
+          "@id": "luc:seasonal_flowers_bulbs_turf.jsonld"
+        },
+        {
+          "@id": "luc:seasonal_flowers_bulbs_turf.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:seasonal_flowers_bulbs_turf.jsonld",
@@ -71,20 +71,20 @@
       }
     },
     {
-      "@id": "luc:seasonal_flowers_bulbs_turf.html",
+      "@id": "luc:short_rotation_seasonal_cropping",
+      "skos:notation": "2.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Short-rotation and seasonal cropping"
+      }
+    },
+    {
+      "@id": "luc:seasonal_flowers_bulbs_turf.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:seasonal_flowers_bulbs_turf.ttl"
-        },
-        {
-          "@id": "luc:seasonal_flowers_bulbs_turf.jsonld"
-        },
-        {
-          "@id": "luc:seasonal_flowers_bulbs_turf.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:seasonal_flowers_bulbs_turf"
+      }
     }
   ]
 }

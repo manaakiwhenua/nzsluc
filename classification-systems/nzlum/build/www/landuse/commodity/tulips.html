@@ -18,25 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:tulips.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:tulips"
-      }
-    },
-    {
       "@id": "com:tulips.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:tulips"
-      }
-    },
-    {
-      "@id": "com:tulips.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:tulips"
       }
@@ -51,6 +35,31 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "tulips"
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:tulips"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
+      "@id": "com:tulips.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:tulips"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
       "@id": "com:tulips.html",
@@ -69,20 +78,11 @@
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
+      "@id": "com:tulips.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:tulips"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     }
   ]

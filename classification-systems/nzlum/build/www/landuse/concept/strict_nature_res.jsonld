@@ -17,22 +17,6 @@
       }
     },
     {
-      "@id": "luc:strict_nature_res.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:strict_nature_res"
-      }
-    },
-    {
-      "@id": "luc:strict_nature_res.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:strict_nature_res"
-      }
-    },
-    {
       "@id": "luc:strict_nature_res.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -86,6 +70,22 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Strict nature reserve"
+      }
+    },
+    {
+      "@id": "luc:strict_nature_res.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:strict_nature_res"
+      }
+    },
+    {
+      "@id": "luc:strict_nature_res.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:strict_nature_res"
       }
     }
   ]

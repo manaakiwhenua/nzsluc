@@ -24,6 +24,14 @@
       ]
     },
     {
+      "@id": "luc:glasshouses_shadehouses.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:glasshouses_shadehouses"
+      }
+    },
+    {
       "@id": "luc:glasshouses_shadehouses.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -32,9 +40,9 @@
       }
     },
     {
-      "@id": "luc:glasshouses_shadehouses.rdf",
+      "@id": "luc:glasshouses_shadehouses.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:glasshouses_shadehouses"
       }
@@ -45,14 +53,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Intensive horticulture"
-      }
-    },
-    {
-      "@id": "luc:glasshouses_shadehouses.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:glasshouses_shadehouses"
       }
     },
     {

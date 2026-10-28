@@ -16,6 +16,14 @@
       }
     },
     {
+      "@id": "com:peanuts.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:peanuts"
+      }
+    },
+    {
       "@id": "com:peanuts.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -51,16 +59,6 @@
       "skos:notation": "peanuts"
     },
     {
-      "@id": "com:oilseeds",
-      "skos:member": {
-        "@id": "com:peanuts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Oilseeds"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -68,11 +66,13 @@
       }
     },
     {
-      "@id": "com:peanuts.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:oilseeds",
+      "skos:member": {
         "@id": "com:peanuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Oilseeds"
       }
     }
   ]

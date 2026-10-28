@@ -8,20 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:grapes_table",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:grapes_table.html"
-      },
-      "skos:broader": {
-        "@id": "com:grapes"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "grapes table"
-    },
-    {
       "@id": "com:grapes_table.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -38,6 +24,10 @@
       ]
     },
     {
+      "@id": "com:grapes",
+      "skos:notation": "grapes"
+    },
+    {
       "@id": "com:grapes_table.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -46,25 +36,10 @@
       }
     },
     {
-      "@id": "com:grapes",
-      "skos:notation": "grapes"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:grapes_table"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:grapes_table.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:grapes_table"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -76,10 +51,35 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      "@id": "com:grapes_table",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:grapes_table.html"
+      },
+      "skos:broader": {
+        "@id": "com:grapes"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "grapes table"
+    },
+    {
+      "@id": "com:grapes_table.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:grapes_table"
+      }
+    },
+    {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:grapes_table"
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
+        "@value": "Fruit"
       }
     }
   ]

@@ -18,6 +18,29 @@
   },
   "@graph": [
     {
+      "@id": "com:babacos.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:babacos"
+      }
+    },
+    {
+      "@id": "com:babacos.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:babacos"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:babacos",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,14 +50,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "babacos"
-    },
-    {
-      "@id": "com:babacos.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:babacos"
-      }
     },
     {
       "@id": "com:babacos.html",
@@ -68,21 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:babacos.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:babacos"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

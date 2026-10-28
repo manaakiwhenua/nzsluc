@@ -8,12 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "com:persimmons.rdf",
+      "@id": "com:persimmons.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:persimmons"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:persimmons.ttl"
+        },
+        {
+          "@id": "com:persimmons.jsonld"
+        },
+        {
+          "@id": "com:persimmons.rdf"
+        }
+      ]
     },
     {
       "@id": "com:persimmons.jsonld",
@@ -43,6 +51,21 @@
       "skos:notation": "persimmons"
     },
     {
+      "@id": "com:persimmons.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:persimmons"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:persimmons"
@@ -50,29 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:persimmons.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:persimmons.ttl"
-        },
-        {
-          "@id": "com:persimmons.jsonld"
-        },
-        {
-          "@id": "com:persimmons.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

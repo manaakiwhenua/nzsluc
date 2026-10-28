@@ -18,24 +18,11 @@
   },
   "@graph": [
     {
-      "@id": "com:oil_palms",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:oil_palms.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "oil palms"
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
+      "@id": "com:oil_palms.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:oil_palms"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
       }
     },
     {
@@ -45,6 +32,25 @@
       "foaf:primaryTopic": {
         "@id": "com:oil_palms"
       }
+    },
+    {
+      "@id": "com:oil_palms.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_palms"
+      }
+    },
+    {
+      "@id": "com:oil_palms",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:oil_palms.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "oil palms"
     },
     {
       "@id": "com:oil_palms.html",
@@ -63,14 +69,6 @@
       ]
     },
     {
-      "@id": "com:oil_palms.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:oil_palms"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -78,11 +76,13 @@
       }
     },
     {
-      "@id": "com:oil_palms.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:crop",
+      "skos:member": {
         "@id": "com:oil_palms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     }
   ]

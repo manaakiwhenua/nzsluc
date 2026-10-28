@@ -8,27 +8,19 @@
   },
   "@graph": [
     {
-      "@id": "luc:greenfield_development.html",
+      "@id": "luc:greenfield_development.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:greenfield_development.ttl"
-        },
-        {
-          "@id": "luc:greenfield_development.jsonld"
-        },
-        {
-          "@id": "luc:greenfield_development.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:greenfield_development"
+      }
     },
     {
-      "@id": "luc:vacant_transitioning_land_urban",
-      "skos:notation": "3.9.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
+      "@id": "luc:greenfield_development.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:greenfield_development"
       }
     },
     {
@@ -59,25 +51,33 @@
       }
     },
     {
-      "@id": "luc:greenfield_development.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:greenfield_development"
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
       }
+    },
+    {
+      "@id": "luc:greenfield_development.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:greenfield_development.ttl"
+        },
+        {
+          "@id": "luc:greenfield_development.jsonld"
+        },
+        {
+          "@id": "luc:greenfield_development.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:greenfield_development.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:greenfield_development"
-      }
-    },
-    {
-      "@id": "luc:greenfield_development.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:greenfield_development"
       }

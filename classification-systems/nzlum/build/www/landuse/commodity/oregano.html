@@ -18,22 +18,20 @@
   },
   "@graph": [
     {
-      "@id": "com:oregano.ttl",
+      "@id": "com:oregano.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:oregano"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:oregano"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:oregano.ttl"
+        },
+        {
+          "@id": "com:oregano.jsonld"
+        },
+        {
+          "@id": "com:oregano.rdf"
+        }
+      ]
     },
     {
       "@id": "com:oregano.jsonld",
@@ -55,6 +53,23 @@
       "skos:notation": "oregano"
     },
     {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:oregano"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:oregano.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -63,26 +78,11 @@
       }
     },
     {
-      "@id": "com:oregano.html",
+      "@id": "com:oregano.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:oregano.ttl"
-        },
-        {
-          "@id": "com:oregano.jsonld"
-        },
-        {
-          "@id": "com:oregano.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:oregano"
       }
     }
   ]

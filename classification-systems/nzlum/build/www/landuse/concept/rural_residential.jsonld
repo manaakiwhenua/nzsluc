@@ -9,44 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "luc:rural_residential.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:rural_residential"
-      }
-    },
-    {
-      "@id": "luc:residential",
-      "skos:notation": "3.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Residential"
-      }
-    },
-    {
       "@id": "luc:rural_residential.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:rural_residential"
       }
-    },
-    {
-      "@id": "luc:rural_residential.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:rural_residential.ttl"
-        },
-        {
-          "@id": "luc:rural_residential.jsonld"
-        },
-        {
-          "@id": "luc:rural_residential.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:rural_residential",
@@ -95,12 +63,44 @@
       ]
     },
     {
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
+      }
+    },
+    {
       "@id": "luc:rural_residential.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:rural_residential"
       }
+    },
+    {
+      "@id": "luc:rural_residential.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:rural_residential"
+      }
+    },
+    {
+      "@id": "luc:rural_residential.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:rural_residential.ttl"
+        },
+        {
+          "@id": "luc:rural_residential.jsonld"
+        },
+        {
+          "@id": "luc:rural_residential.rdf"
+        }
+      ]
     }
   ]
 }

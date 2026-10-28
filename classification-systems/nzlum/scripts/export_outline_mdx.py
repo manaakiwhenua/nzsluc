@@ -52,6 +52,31 @@ def colour_swatch(g, c) -> str:
     uri = colour_swatch_data_uri(col)
     return f'<img src="{uri}" width="14" height="14" alt="{col}" style="display:inline-block;vertical-align:text-bottom" /> `{col}`'
 
+SITE = LU.rstrip("/").rsplit("/", 1)[0]          # https://nzlum.landcareresearch.co.nz
+FORMATS = [("ttl", "text/turtle", "Turtle"), ("jsonld", "application/ld+json", "JSON-LD"), ("rdf", "application/rdf+xml", "RDF/XML")]
+
+def local_href(uri):
+    """Root-relative link for a URI on the site, so it works locally and in production."""
+    u = str(uri)
+    return u[len(SITE):] if u.startswith(SITE + "/") else u
+
+def identifier_line(c, indent=""):
+    """The concept's canonical URI with links to its RDF serialisations."""
+    uri = str(c)
+    alts = " · ".join(f'<a href="{local_href(uri)}.{ext}" type="{mime}">{name}</a>' for ext, mime, name in FORMATS)
+    # The URI is emitted as a JSX string expression so MDX does not auto-link the bare URL.
+    return (f'{indent}<p class="nzlum-identifier"><small>Identifier: '
+            f'<a href="{local_href(uri)}"><code>{{"{uri}"}}</code></a> · {alts}</small></p>\n\n')
+
+def head_frontmatter(c):
+    """Starlight `head` entries advertising the RDF alternates of the page's top concept."""
+    # No rel=canonical here: Starlight sets its own for the page; the identifier line
+    # in the body names the concept URI.
+    out = "head:\n"
+    for ext, mime, name in FORMATS:
+        out += f"  - tag: link\n    attrs:\n      rel: alternate\n      type: {mime}\n      href: {c}.{ext}\n      title: {name}\n"
+    return out
+
 def get_top_concepts(g, scheme):
     return sorted(
         [c for c in g.subjects(SKOS.topConceptOf, scheme)],
@@ -93,12 +118,13 @@ def write_index_mdx(dir_path, top, g):
     mdx_path = os.path.join(dir_path, "index.mdx")
     with open(mdx_path, "w", encoding="utf-8") as f:
         # Frontmatter
-        f.write(f"---\ntitle: {top_label}\ndescription: {top_def}\nlabel: {top_not}\n---\n\n")
+        f.write(f"---\ntitle: {top_label}\ndescription: {top_def}\nlabel: {top_not}\n{head_frontmatter(top)}---\n\n")
         f.write("import { Tabs, TabItem, LinkButton, Aside } from '@astrojs/starlight/components';\n\n")
         f.write(f"{top_def}\n\n")
         top_swatch = colour_swatch(g, top)
         if top_swatch:
             f.write(f"{top_swatch}\n\n")
+        f.write(identifier_line(top))
         render_all_notes(f, g, top)
         # Secondary classes
         for sec in get_narrower(g, top):
@@ -110,6 +136,7 @@ def write_index_mdx(dir_path, top, g):
             sec_swatch = colour_swatch(g, sec)
             if sec_swatch:
                 f.write(f"{sec_swatch}\n\n")
+            f.write(identifier_line(sec))
             render_all_notes(f, g, sec)
             tertiaries = get_narrower(g, sec)
             if tertiaries:
@@ -122,7 +149,8 @@ def write_index_mdx(dir_path, top, g):
                     f.write(f'  <TabItem label="{tert_not} {tert_label}">\n')
                     if tert_swatch:
                         f.write(f"    {tert_swatch}\n\n")
-                    f.write(f"    {tert_def}\n")
+                    f.write(f"    {tert_def}\n\n")
+                    f.write(identifier_line(tert, indent="    "))
                     render_all_notes(f, g, tert)
                     f.write("  </TabItem>\n\n")
                 f.write("</Tabs>\n\n")

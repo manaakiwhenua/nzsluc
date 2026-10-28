@@ -40,10 +40,13 @@
       ]
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
+      "@id": "mgmt:horticulture",
+      "skos:member": {
+        "@id": "mgmt:free_standing"
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM management practices"
+        "@value": "Horticulture"
       }
     },
     {
@@ -58,21 +61,18 @@
       "skos:notation": "free standing"
     },
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:free_standing.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:free_standing"
-      }
-    },
-    {
-      "@id": "mgmt:horticulture",
-      "skos:member": {
-        "@id": "mgmt:free_standing"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horticulture"
       }
     }
   ]

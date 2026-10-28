@@ -8,25 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "luc:waste_treatment_disposal",
-      "skos:notation": "3.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Waste treatment and disposal"
-      }
-    },
-    {
       "@id": "luc:stormwater_management.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:stormwater_management"
-      }
-    },
-    {
-      "@id": "luc:stormwater_management.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:stormwater_management"
       }
@@ -85,6 +69,22 @@
           "@id": "luc:stormwater_management.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:stormwater_management.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:stormwater_management"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
+      }
     }
   ]
 }

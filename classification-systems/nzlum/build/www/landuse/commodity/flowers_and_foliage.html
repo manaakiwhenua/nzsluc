@@ -18,33 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:flowers_and_foliage.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:flowers_and_foliage"
-      }
-    },
-    {
-      "@id": "com:flowers_and_foliage.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:flowers_and_foliage"
-      }
-    },
-    {
-      "@id": "com:flowers_and_foliage",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:flowers_and_foliage.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "flowers and foliage"
-    },
-    {
       "@id": "com:flowers_and_foliage.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -61,11 +34,23 @@
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:flowers_and_foliage.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:flowers_and_foliage"
       }
+    },
+    {
+      "@id": "com:flowers_and_foliage",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:flowers_and_foliage.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "flowers and foliage"
     },
     {
       "@id": "com:flowers_and_bulbs",
@@ -81,6 +66,21 @@
       "@id": "com:flowers_and_foliage.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:flowers_and_foliage"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:flowers_and_foliage.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:flowers_and_foliage"
       }

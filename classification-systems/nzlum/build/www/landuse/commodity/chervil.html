@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chervil.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chervil"
-      }
-    },
-    {
       "@id": "com:chervil.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -34,13 +26,11 @@
       }
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:chervil.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:chervil"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -53,6 +43,24 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "chervil"
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:chervil"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:chervil.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chervil"
+      }
     },
     {
       "@id": "com:chervil.html",
@@ -69,14 +77,6 @@
           "@id": "com:chervil.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:chervil.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chervil"
-      }
     },
     {
       "@id": "lus:commodities",

@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:sheep_stud"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:sheep_stud.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -26,13 +36,27 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
+      "@id": "com:sheep_stud.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sheep_stud.ttl"
+        },
+        {
+          "@id": "com:sheep_stud.jsonld"
+        },
+        {
+          "@id": "com:sheep_stud.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:sheep_stud.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:sheep_stud"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
       }
     },
     {
@@ -54,24 +78,15 @@
       }
     },
     {
-      "@id": "com:sheep",
-      "skos:notation": "sheep"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     },
     {
-      "@id": "com:sheep_stud.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sheep_stud.ttl"
-        },
-        {
-          "@id": "com:sheep_stud.jsonld"
-        },
-        {
-          "@id": "com:sheep_stud.rdf"
-        }
-      ]
+      "@id": "com:sheep",
+      "skos:notation": "sheep"
     },
     {
       "@id": "com:sheep_stud.ttl",
@@ -79,21 +94,6 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:sheep_stud"
-      }
-    },
-    {
-      "@id": "com:sheep_stud.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep_stud"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

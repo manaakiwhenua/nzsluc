@@ -12,78 +12,16 @@
       "skos:notation": "bamboo"
     },
     {
-      "@id": "com:forest",
-      "@type": "skos:Collection",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:forest.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:eucalyptus_oil"
-        },
-        {
-          "@id": "com:bamboo"
-        },
-        {
-          "@id": "com:carbon_forest_standard"
-        },
-        {
-          "@id": "com:sawlogs"
-        },
-        {
-          "@id": "com:carbon_forest_permanent"
-        },
-        {
-          "@id": "com:pulp_wood"
-        },
-        {
-          "@id": "com:tea_tree"
-        },
-        {
-          "@id": "com:sandalwood"
-        },
-        {
-          "@id": "com:christmas_trees"
-        },
-        {
-          "@id": "com:oil_mallee"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Forest"
-      }
-    },
-    {
-      "@id": "com:tea_tree",
-      "skos:notation": "tea tree"
-    },
-    {
-      "@id": "com:forest.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:forest"
-      }
-    },
-    {
-      "@id": "com:pulp_wood",
-      "skos:notation": "pulp wood"
-    },
-    {
-      "@id": "com:sandalwood",
-      "skos:notation": "sandalwood"
+      "@id": "com:christmas_trees",
+      "skos:notation": "christmas trees"
     },
     {
       "@id": "com:sawlogs",
       "skos:notation": "sawlogs"
     },
     {
-      "@id": "com:christmas_trees",
-      "skos:notation": "christmas trees"
+      "@id": "com:carbon_forest_permanent",
+      "skos:notation": "carbon forest permanent"
     },
     {
       "@id": "com:forest.html",
@@ -102,22 +40,6 @@
       ]
     },
     {
-      "@id": "com:carbon_forest_permanent",
-      "skos:notation": "carbon forest permanent"
-    },
-    {
-      "@id": "com:oil_mallee",
-      "skos:notation": "oil mallee"
-    },
-    {
-      "@id": "com:eucalyptus_oil",
-      "skos:notation": "eucalyptus oil"
-    },
-    {
-      "@id": "com:carbon_forest_standard",
-      "skos:notation": "carbon forest standard"
-    },
-    {
       "@id": "com:forest.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -126,10 +48,49 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      "@id": "com:forest",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:forest.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:christmas_trees"
+        },
+        {
+          "@id": "com:bamboo"
+        },
+        {
+          "@id": "com:oil_mallee"
+        },
+        {
+          "@id": "com:carbon_forest_standard"
+        },
+        {
+          "@id": "com:sawlogs"
+        },
+        {
+          "@id": "com:sandalwood"
+        },
+        {
+          "@id": "com:eucalyptus_oil"
+        },
+        {
+          "@id": "com:carbon_forest_permanent"
+        },
+        {
+          "@id": "com:pulp_wood"
+        },
+        {
+          "@id": "com:tea_tree"
+        }
+      ],
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
+        "@value": "Forest"
       }
     },
     {
@@ -139,6 +100,45 @@
       "foaf:primaryTopic": {
         "@id": "com:forest"
       }
+    },
+    {
+      "@id": "com:eucalyptus_oil",
+      "skos:notation": "eucalyptus oil"
+    },
+    {
+      "@id": "com:sandalwood",
+      "skos:notation": "sandalwood"
+    },
+    {
+      "@id": "com:forest.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:forest"
+      }
+    },
+    {
+      "@id": "com:pulp_wood",
+      "skos:notation": "pulp wood"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:carbon_forest_standard",
+      "skos:notation": "carbon forest standard"
+    },
+    {
+      "@id": "com:oil_mallee",
+      "skos:notation": "oil mallee"
+    },
+    {
+      "@id": "com:tea_tree",
+      "skos:notation": "tea tree"
     }
   ]
 }

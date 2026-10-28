@@ -8,35 +8,19 @@
   },
   "@graph": [
     {
-      "@id": "luc:planted_environmental_infrastructure_protection.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:planted_environmental_infrastructure_protection"
-      }
-    },
-    {
-      "@id": "luc:planted_environmental_infrastructure_protection.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:planted_environmental_infrastructure_protection.ttl"
-        },
-        {
-          "@id": "luc:planted_environmental_infrastructure_protection.jsonld"
-        },
-        {
-          "@id": "luc:planted_environmental_infrastructure_protection.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:plantation_forests",
       "skos:notation": "2.1.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Plantation forests"
+      }
+    },
+    {
+      "@id": "luc:planted_environmental_infrastructure_protection.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:planted_environmental_infrastructure_protection"
       }
     },
     {
@@ -67,6 +51,22 @@
       }
     },
     {
+      "@id": "luc:planted_environmental_infrastructure_protection.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.ttl"
+        },
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.jsonld"
+        },
+        {
+          "@id": "luc:planted_environmental_infrastructure_protection.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:planted_environmental_infrastructure_protection.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -75,9 +75,9 @@
       }
     },
     {
-      "@id": "luc:planted_environmental_infrastructure_protection.rdf",
+      "@id": "luc:planted_environmental_infrastructure_protection.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:planted_environmental_infrastructure_protection"
       }

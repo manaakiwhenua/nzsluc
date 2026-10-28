@@ -19,22 +19,6 @@
       "skos:notation": "mustard "
     },
     {
-      "@id": "com:mustard.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:mustard"
-      }
-    },
-    {
-      "@id": "com:mustard.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:mustard"
-      }
-    },
-    {
       "@id": "com:mustard.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -51,13 +35,11 @@
       ]
     },
     {
-      "@id": "com:oilseeds",
-      "skos:member": {
+      "@id": "com:mustard.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:mustard"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Oilseeds"
       }
     },
     {
@@ -69,10 +51,28 @@
       }
     },
     {
+      "@id": "com:mustard.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:mustard"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:oilseeds",
+      "skos:member": {
+        "@id": "com:mustard"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Oilseeds"
       }
     }
   ]

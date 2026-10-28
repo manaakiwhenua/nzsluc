@@ -17,6 +17,14 @@
       }
     },
     {
+      "@id": "luc:other_conserved_area.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_conserved_area"
+      }
+    },
+    {
       "@id": "luc:other_conserved_area.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -25,9 +33,9 @@
       }
     },
     {
-      "@id": "luc:other_conserved_area.jsonld",
+      "@id": "luc:other_conserved_area.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:other_conserved_area"
       }
@@ -76,14 +84,6 @@
         "@value": "Other conserved area"
       },
       "skos:scopeNote": "If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’"
-    },
-    {
-      "@id": "luc:other_conserved_area.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:other_conserved_area"
-      }
     }
   ]
 }

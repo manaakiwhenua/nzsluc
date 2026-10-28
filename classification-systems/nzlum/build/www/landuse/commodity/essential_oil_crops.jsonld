@@ -8,35 +8,17 @@
   },
   "@graph": [
     {
-      "@id": "com:essential_oil_crops.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:essential_oil_crops.ttl"
-        },
-        {
-          "@id": "com:essential_oil_crops.jsonld"
-        },
-        {
-          "@id": "com:essential_oil_crops.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:essential_oil_crops"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
       "@id": "com:essential_oil_crops.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:essential_oil_crops"
+      }
+    },
+    {
+      "@id": "com:essential_oil_crops.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:essential_oil_crops"
       }
@@ -56,12 +38,20 @@
       }
     },
     {
-      "@id": "com:essential_oil_crops.jsonld",
+      "@id": "com:essential_oil_crops.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:essential_oil_crops"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:essential_oil_crops.ttl"
+        },
+        {
+          "@id": "com:essential_oil_crops.jsonld"
+        },
+        {
+          "@id": "com:essential_oil_crops.rdf"
+        }
+      ]
     },
     {
       "@id": "com:essential_oil_crops.rdf",
@@ -76,6 +66,16 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:essential_oil_crops"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     }
   ]

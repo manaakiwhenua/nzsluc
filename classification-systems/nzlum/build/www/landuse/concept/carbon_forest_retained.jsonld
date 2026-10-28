@@ -8,19 +8,27 @@
   },
   "@graph": [
     {
-      "@id": "luc:carbon_forest_retained.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:carbon_forest_retained"
-      }
-    },
-    {
       "@id": "luc:carbon_forest_retained.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:carbon_forest_retained"
+      }
+    },
+    {
+      "@id": "luc:carbon_forest_retained.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:carbon_forest_retained"
+      }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
       }
     },
     {
@@ -38,6 +46,14 @@
           "@id": "luc:carbon_forest_retained.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:carbon_forest_retained.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:carbon_forest_retained"
+      }
     },
     {
       "@id": "luc:carbon_forest_retained",
@@ -64,22 +80,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Carbon forest"
-      }
-    },
-    {
-      "@id": "luc:carbon_forest_retained.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:carbon_forest_retained"
-      }
-    },
-    {
-      "@id": "luc:minimal_use_relatively_natural",
-      "skos:notation": "1.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Minimal use from relatively natural environments"
       }
     }
   ]

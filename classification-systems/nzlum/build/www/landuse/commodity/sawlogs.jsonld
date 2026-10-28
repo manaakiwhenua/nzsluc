@@ -8,14 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "com:forest",
-      "skos:member": {
-        "@id": "com:sawlogs"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Forest"
-      }
+      "@id": "com:sawlogs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sawlogs.ttl"
+        },
+        {
+          "@id": "com:sawlogs.jsonld"
+        },
+        {
+          "@id": "com:sawlogs.rdf"
+        }
+      ]
     },
     {
       "@id": "com:sawlogs.ttl",
@@ -37,27 +43,13 @@
       "skos:notation": "sawlogs"
     },
     {
-      "@id": "com:sawlogs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sawlogs.ttl"
-        },
-        {
-          "@id": "com:sawlogs.jsonld"
-        },
-        {
-          "@id": "com:sawlogs.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sawlogs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:forest",
+      "skos:member": {
         "@id": "com:sawlogs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
       }
     },
     {
@@ -73,6 +65,14 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:sawlogs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sawlogs"
       }
     }
   ]

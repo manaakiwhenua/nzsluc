@@ -8,25 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "com:redcurrants.html",
+      "@id": "com:redcurrants.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:redcurrants.ttl"
-        },
-        {
-          "@id": "com:redcurrants.jsonld"
-        },
-        {
-          "@id": "com:redcurrants.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:redcurrants.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:redcurrants"
       }
@@ -43,11 +27,42 @@
       "skos:notation": "redcurrants"
     },
     {
+      "@id": "com:redcurrants.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:redcurrants"
+      }
+    },
+    {
       "@id": "com:redcurrants.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:redcurrants"
+      }
+    },
+    {
+      "@id": "com:redcurrants.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:redcurrants.ttl"
+        },
+        {
+          "@id": "com:redcurrants.jsonld"
+        },
+        {
+          "@id": "com:redcurrants.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -58,21 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:redcurrants.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:redcurrants"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

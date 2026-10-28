@@ -8,6 +8,33 @@
   },
   "@graph": [
     {
+      "@id": "com:safflower.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:safflower"
+      }
+    },
+    {
+      "@id": "com:safflower.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:safflower"
+      }
+    },
+    {
+      "@id": "com:safflower",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:safflower.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "safflower"
+    },
+    {
       "@id": "com:safflower.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -32,11 +59,10 @@
       }
     },
     {
-      "@id": "com:safflower.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:safflower"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -47,32 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Oilseeds"
-      }
-    },
-    {
-      "@id": "com:safflower.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:safflower"
-      }
-    },
-    {
-      "@id": "com:safflower",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:safflower.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "safflower"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

@@ -18,11 +18,29 @@
   },
   "@graph": [
     {
+      "@id": "com:canary_seed.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:canary_seed"
+      }
+    },
+    {
       "@id": "com:canary_seed.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:canary_seed"
+      }
+    },
+    {
+      "@id": "com:cereals",
+      "skos:member": {
+        "@id": "com:canary_seed"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
       }
     },
     {
@@ -37,21 +55,10 @@
       "skos:notation": "canary_seed"
     },
     {
-      "@id": "com:cereals",
-      "skos:member": {
-        "@id": "com:canary_seed"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Cereals"
-      }
-    },
-    {
-      "@id": "com:canary_seed.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:canary_seed"
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -71,18 +78,11 @@
       ]
     },
     {
-      "@id": "com:canary_seed.rdf",
+      "@id": "com:canary_seed.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:canary_seed"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

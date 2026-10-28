@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock">
+    <skos:definition xml:lang="en">Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.</skos:definition>
+    <skos:prefLabel xml:lang="en">Extensive dry stock</skos:prefLabel>
+    <skos:notation>2.2.3</skos:notation>
     <skos:scopeNote xml:lang="en">Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation.</skos:scopeNote>
     <skos:scopeNote xml:lang="en">Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)</skos:scopeNote>
     <skos:scopeNote xml:lang="en">Arable or winter forage crops are unlikely to be common rotations in this land-use category</skos:scopeNote>
-    <skos:definition xml:lang="en">Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.</skos:definition>
-    <skos:notation>2.2.3</skos:notation>
-    <skos:prefLabel xml:lang="en">Extensive dry stock</skos:prefLabel>
-    <lu:colour>#ABA248</lu:colour>
-    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <lu:colour>#ABA248</lu:colour>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
         <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
@@ -36,12 +36,12 @@
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
     <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/extensive_dry_stock"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

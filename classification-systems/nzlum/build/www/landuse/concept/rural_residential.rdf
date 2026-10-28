@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.rdf">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential">
-        <lu:colour>#A87A76</lu:colour>
-        <skos:scopeNote xml:lang="en">Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.</skos:scopeNote>
-        <skos:prefLabel xml:lang="en">Rural residential</skos:prefLabel>
-        <skos:usageNote xml:lang="en">Properties in this size interval and without a dwelling could be in transition to residential.</skos:usageNote>
-        <skos:usageNote xml:lang="en">As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.</skos:usageNote>
-        <skos:definition xml:lang="en">Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.</skos:definition>
-        <skos:notation>3.1.4</skos:notation>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
-        <skos:historyNote xml:lang="en">In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use.</skos:historyNote>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.rdf"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/residential">
     <skos:prefLabel xml:lang="en">Residential</skos:prefLabel>
     <skos:notation>3.1.0</skos:notation>
   </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential">
+    <skos:prefLabel xml:lang="en">Rural residential</skos:prefLabel>
+    <skos:definition xml:lang="en">Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+    <skos:usageNote xml:lang="en">Properties in this size interval and without a dwelling could be in transition to residential.</skos:usageNote>
+    <skos:usageNote xml:lang="en">As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.</skos:usageNote>
+    <skos:historyNote xml:lang="en">In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use.</skos:historyNote>
+    <skos:notation>3.1.4</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:scopeNote xml:lang="en">Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.</skos:scopeNote>
+    <lu:colour>#A87A76</lu:colour>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rural_residential.html"/>
+  </skos:Concept>
 </rdf:RDF>

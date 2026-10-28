@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:perennial_horticulture",
-      "skos:notation": "2.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Perennial horticulture"
-      }
-    },
-    {
-      "@id": "luc:other_perennial_horticulture.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:other_perennial_horticulture"
-      }
-    },
-    {
       "@id": "luc:other_perennial_horticulture",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -51,6 +35,22 @@
       }
     },
     {
+      "@id": "luc:other_perennial_horticulture.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_perennial_horticulture"
+      }
+    },
+    {
+      "@id": "luc:other_perennial_horticulture.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:other_perennial_horticulture"
+      }
+    },
+    {
       "@id": "luc:other_perennial_horticulture.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -67,11 +67,11 @@
       ]
     },
     {
-      "@id": "luc:other_perennial_horticulture.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:other_perennial_horticulture"
+      "@id": "luc:perennial_horticulture",
+      "skos:notation": "2.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Perennial horticulture"
       }
     },
     {

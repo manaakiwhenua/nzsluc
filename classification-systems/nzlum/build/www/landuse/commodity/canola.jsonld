@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:canola.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:canola"
-      }
-    },
-    {
       "@id": "com:canola.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -32,20 +24,17 @@
       ]
     },
     {
-      "@id": "com:canola",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:canola.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "canola"
-    },
-    {
       "@id": "com:canola.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:canola"
+      }
+    },
+    {
+      "@id": "com:canola.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:canola"
       }
@@ -59,6 +48,13 @@
       }
     },
     {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:oilseeds",
       "skos:member": {
         "@id": "com:canola"
@@ -69,11 +65,15 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:canola",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:canola.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "canola"
     }
   ]
 }

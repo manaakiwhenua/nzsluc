@@ -9,14 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
-      }
-    },
-    {
       "@id": "luc:natural_feature_protection.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -31,6 +23,14 @@
           "@id": "luc:natural_feature_protection.rdf"
         }
       ]
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
     },
     {
       "@id": "luc:natural_feature_protection.rdf",

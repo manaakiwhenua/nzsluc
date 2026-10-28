@@ -18,11 +18,59 @@
   },
   "@graph": [
     {
+      "@id": "com:dogs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:dogs.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "dogs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Includes dog breeding, kennels, or areas used for quarantine of dogs related to import or export."
+      }
+    },
+    {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:dogs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
+      "@id": "com:dogs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:dogs"
+      }
+    },
+    {
       "@id": "com:dogs.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:dogs"
+      }
+    },
+    {
+      "@id": "com:dogs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:dogs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     },
     {
@@ -40,54 +88,6 @@
           "@id": "com:dogs.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:dogs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:dogs"
-      }
-    },
-    {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:dogs"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:dogs",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:dogs.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "dogs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Includes dog breeding, kennels, or areas used for quarantine of dogs related to import or export."
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:dogs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:dogs"
-      }
     }
   ]
 }

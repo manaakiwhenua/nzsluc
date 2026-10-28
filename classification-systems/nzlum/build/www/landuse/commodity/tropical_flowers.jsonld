@@ -8,11 +8,32 @@
   },
   "@graph": [
     {
-      "@id": "com:tropical_flowers.ttl",
+      "@id": "com:tropical_flowers",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:tropical_flowers.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tropical flowers"
+    },
+    {
+      "@id": "com:tropical_flowers.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:tropical_flowers"
+      }
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:tropical_flowers"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -31,25 +52,6 @@
       }
     },
     {
-      "@id": "com:tropical_flowers.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:tropical_flowers"
-      }
-    },
-    {
-      "@id": "com:tropical_flowers",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:tropical_flowers.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tropical flowers"
-    },
-    {
       "@id": "com:tropical_flowers.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -66,13 +68,11 @@
       ]
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
+      "@id": "com:tropical_flowers.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:tropical_flowers"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     }
   ]

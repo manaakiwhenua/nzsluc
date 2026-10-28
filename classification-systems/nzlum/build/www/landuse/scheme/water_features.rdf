@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/swamp">
-    <skos:notation>swamp</skos:notation>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/ice">
+    <lu:colour>#EDF5FF</lu:colour>
+    <skos:notation>ice</skos:notation>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-09</dcterms:issued>
@@ -15,71 +16,71 @@
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.html"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <lu:colour>#83B09E</lu:colour>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond">
-    <skos:notation>pond</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-    <lu:colour>#C3DFFF</lu:colour>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/marine">
-    <lu:colour>#C3DFFF</lu:colour>
-    <skos:notation>marine</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon">
-    <lu:colour>#C3DFFF</lu:colour>
-    <skos:notation>lagoon</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/ice">
-    <skos:notation>ice</skos:notation>
-    <lu:colour>#EDF5FF</lu:colour>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mangrove">
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
     <skos:notation>mangrove</skos:notation>
     <lu:colour>#83B09E</lu:colour>
   </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/reef">
-    <skos:notation>reef</skos:notation>
-    <lu:colour>#A9B0AD</lu:colour>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/sand">
+    <skos:notation>sand</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+    <lu:colour>#FFFABA</lu:colour>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/marine">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+    <lu:colour>#C3DFFF</lu:colour>
+    <skos:notation>marine</skos:notation>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon">
+    <lu:colour>#C3DFFF</lu:colour>
+    <skos:notation>lagoon</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/drain">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+    <skos:notation>drain</skos:notation>
+    <lu:colour>#C3DFFF</lu:colour>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lake">
+    <lu:colour>#C3DFFF</lu:colour>
+    <skos:notation>lake</skos:notation>
+    <skos:usageNote xml:lang="en">Matches any value prefixed with 'lake' (e.g. 'lake bed').</skos:usageNote>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud">
     <skos:notation>mud</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
     <lu:colour>#D9C49E</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lake">
-    <skos:usageNote xml:lang="en">Matches any value prefixed with 'lake' (e.g. 'lake bed').</skos:usageNote>
-    <skos:notation>lake</skos:notation>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/swamp">
+    <skos:notation>swamp</skos:notation>
+    <lu:colour>#83B09E</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond">
+    <skos:notation>pond</skos:notation>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
     <lu:colour>#C3DFFF</lu:colour>
   </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/drain">
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/reef">
+    <lu:colour>#A9B0AD</lu:colour>
+    <skos:notation>reef</skos:notation>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-    <lu:colour>#C3DFFF</lu:colour>
-    <skos:notation>drain</skos:notation>
   </skos:Concept>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/river">
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
     <skos:notation>river</skos:notation>
     <lu:colour>#C3DFFF</lu:colour>
   </skos:Concept>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/sand">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-    <lu:colour>#FFFABA</lu:colour>
-    <skos:notation>sand</skos:notation>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>

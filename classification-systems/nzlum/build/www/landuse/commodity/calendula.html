@@ -18,9 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:calendula.rdf",
+      "@id": "com:calendula.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:calendula"
       }
@@ -37,6 +37,39 @@
       "skos:notation": "calendula"
     },
     {
+      "@id": "com:calendula.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:calendula"
+      }
+    },
+    {
+      "@id": "com:calendula.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:calendula"
+      }
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:calendula"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:calendula.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -51,39 +84,6 @@
           "@id": "com:calendula.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:calendula.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:calendula"
-      }
-    },
-    {
-      "@id": "com:calendula.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:calendula"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:calendula"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
     }
   ]
 }

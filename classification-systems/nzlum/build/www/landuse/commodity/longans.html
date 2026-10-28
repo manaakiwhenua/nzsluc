@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:longans.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:longans"
-      }
-    },
-    {
       "@id": "com:longans",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -37,6 +29,37 @@
       "skos:notation": "longans"
     },
     {
+      "@id": "com:longans.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:longans"
+      }
+    },
+    {
+      "@id": "com:longans.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:longans"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:longans.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:longans"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:longans"
@@ -44,14 +67,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:longans.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:longans"
       }
     },
     {
@@ -69,21 +84,6 @@
           "@id": "com:longans.rdf"
         }
       ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:longans.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:longans"
-      }
     }
   ]
 }

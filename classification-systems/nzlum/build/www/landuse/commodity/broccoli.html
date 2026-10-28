@@ -18,9 +18,44 @@
   },
   "@graph": [
     {
+      "@id": "com:broccoli.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:broccoli.ttl"
+        },
+        {
+          "@id": "com:broccoli.jsonld"
+        },
+        {
+          "@id": "com:broccoli.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:broccoli",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:broccoli.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "broccoli"
+    },
+    {
       "@id": "com:broccoli.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:broccoli"
+      }
+    },
+    {
+      "@id": "com:broccoli.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:broccoli"
       }
@@ -36,25 +71,6 @@
       }
     },
     {
-      "@id": "com:broccoli.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:broccoli"
-      }
-    },
-    {
-      "@id": "com:broccoli",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:broccoli.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "broccoli"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
@@ -68,22 +84,6 @@
       "foaf:primaryTopic": {
         "@id": "com:broccoli"
       }
-    },
-    {
-      "@id": "com:broccoli.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:broccoli.ttl"
-        },
-        {
-          "@id": "com:broccoli.jsonld"
-        },
-        {
-          "@id": "com:broccoli.rdf"
-        }
-      ]
     }
   ]
 }

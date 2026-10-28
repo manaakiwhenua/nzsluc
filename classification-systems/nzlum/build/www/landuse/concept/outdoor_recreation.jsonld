@@ -17,46 +17,6 @@
       }
     },
     {
-      "@id": "luc:outdoor_recreation.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:outdoor_recreation.ttl"
-        },
-        {
-          "@id": "luc:outdoor_recreation.jsonld"
-        },
-        {
-          "@id": "luc:outdoor_recreation.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:outdoor_recreation.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:outdoor_recreation"
-      }
-    },
-    {
-      "@id": "luc:public_recreation_services",
-      "skos:notation": "3.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Public recreation and services"
-      }
-    },
-    {
-      "@id": "luc:outdoor_recreation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:outdoor_recreation"
-      }
-    },
-    {
       "@id": "luc:outdoor_recreation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -90,13 +50,53 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."
+          "@value": "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."
         },
         {
           "@language": "en",
-          "@value": "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."
+          "@value": "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."
         }
       ]
+    },
+    {
+      "@id": "luc:outdoor_recreation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:outdoor_recreation.ttl"
+        },
+        {
+          "@id": "luc:outdoor_recreation.jsonld"
+        },
+        {
+          "@id": "luc:outdoor_recreation.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:outdoor_recreation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:outdoor_recreation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
+      }
     }
   ]
 }

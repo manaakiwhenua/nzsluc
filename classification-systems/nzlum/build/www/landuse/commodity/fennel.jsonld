@@ -8,19 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:fennel"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:fennel.rdf",
+      "@id": "com:fennel.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:fennel"
       }
@@ -34,22 +24,21 @@
       }
     },
     {
-      "@id": "com:fennel",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:fennel.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "fennel"
-    },
-    {
-      "@id": "com:fennel.ttl",
+      "@id": "com:fennel.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:fennel"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:fennel"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -74,6 +63,17 @@
           "@id": "com:fennel.rdf"
         }
       ]
+    },
+    {
+      "@id": "com:fennel",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:fennel.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "fennel"
     }
   ]
 }

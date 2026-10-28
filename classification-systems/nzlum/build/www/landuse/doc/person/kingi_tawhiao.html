@@ -17,21 +17,12 @@
   },
   "@graph": [
     {
-      "@id": "lu_person:kingi_tawhiao",
-      "@type": "foaf:Person",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "lu_person:kingi_tawhiao.html"
-      },
-      "foaf:name": [
-        {
-          "@language": "mi",
-          "@value": "Kīngi Tāwhiao"
-        },
-        {
-          "@language": "mi",
-          "@value": "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"
-        }
-      ]
+      "@id": "lu_person:kingi_tawhiao.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lu_person:kingi_tawhiao"
+      }
     },
     {
       "@id": "lu_person:kingi_tawhiao.rdf",
@@ -42,26 +33,21 @@
       }
     },
     {
-      "@id": "lu_proverb:kotahi_te_aho",
-      "dcterms:creator": {
-        "@id": "lu_person:kingi_tawhiao"
-      }
-    },
-    {
-      "@id": "lu_person:kingi_tawhiao.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "lu_person:kingi_tawhiao"
-      }
-    },
-    {
-      "@id": "lu_person:kingi_tawhiao.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "lu_person:kingi_tawhiao"
-      }
+      "@id": "lu_person:kingi_tawhiao",
+      "@type": "foaf:Person",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lu_person:kingi_tawhiao.html"
+      },
+      "foaf:name": [
+        {
+          "@language": "mi",
+          "@value": "Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao"
+        },
+        {
+          "@language": "mi",
+          "@value": "Kīngi Tāwhiao"
+        }
+      ]
     },
     {
       "@id": "lu_person:kingi_tawhiao.html",
@@ -78,6 +64,20 @@
           "@id": "lu_person:kingi_tawhiao.rdf"
         }
       ]
+    },
+    {
+      "@id": "lu_proverb:kotahi_te_aho",
+      "dcterms:creator": {
+        "@id": "lu_person:kingi_tawhiao"
+      }
+    },
+    {
+      "@id": "lu_person:kingi_tawhiao.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lu_person:kingi_tawhiao"
+      }
     }
   ]
 }

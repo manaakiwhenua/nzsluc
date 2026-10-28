@@ -26,17 +26,28 @@
       }
     },
     {
-      "@id": "com:tarragon.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:tarragon"
-      }
+      "@id": "com:tarragon",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:tarragon.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tarragon"
     },
     {
       "@id": "com:tarragon.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:tarragon"
+      }
+    },
+    {
+      "@id": "com:tarragon.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:tarragon"
       }
@@ -73,17 +84,6 @@
           "@id": "com:tarragon.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:tarragon",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:tarragon.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tarragon"
     }
   ]
 }

@@ -8,8 +8,14 @@
   },
   "@graph": [
     {
-      "@id": "com:chickens",
-      "skos:notation": "chickens"
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:chickens_eggs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
     },
     {
       "@id": "com:chickens_eggs",
@@ -30,27 +36,9 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:chickens_eggs"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
       "@id": "com:chickens_eggs.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chickens_eggs"
-      }
-    },
-    {
-      "@id": "com:chickens_eggs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:chickens_eggs"
       }
@@ -72,18 +60,30 @@
       ]
     },
     {
-      "@id": "com:chickens_eggs.rdf",
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:chickens",
+      "skos:notation": "chickens"
+    },
+    {
+      "@id": "com:chickens_eggs.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:chickens_eggs"
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:chickens_eggs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_eggs"
       }
     }
   ]

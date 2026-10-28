@@ -19,17 +19,24 @@
   },
   "@graph": [
     {
-      "@id": "wtr:lake.ttl",
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
+    },
+    {
+      "@id": "wtr:lake.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "wtr:lake"
       }
     },
     {
-      "@id": "wtr:lake.jsonld",
+      "@id": "wtr:lake.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "wtr:lake"
       }
@@ -51,10 +58,11 @@
       }
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
+      "@id": "wtr:lake.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:lake"
       }
     },
     {
@@ -72,14 +80,6 @@
           "@id": "wtr:lake.rdf"
         }
       ]
-    },
-    {
-      "@id": "wtr:lake.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "wtr:lake"
-      }
     }
   ]
 }

@@ -8,28 +8,9 @@
   },
   "@graph": [
     {
-      "@id": "com:bulbs",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:bulbs.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "bulbs"
-    },
-    {
-      "@id": "com:bulbs.jsonld",
+      "@id": "com:bulbs.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:bulbs"
-      }
-    },
-    {
-      "@id": "com:bulbs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:bulbs"
       }
@@ -51,9 +32,30 @@
       ]
     },
     {
-      "@id": "com:bulbs.rdf",
+      "@id": "com:bulbs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:bulbs.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "bulbs"
+    },
+    {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:bulbs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
+      "@id": "com:bulbs.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:bulbs"
       }
@@ -66,13 +68,11 @@
       }
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
+      "@id": "com:bulbs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:bulbs"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     }
   ]

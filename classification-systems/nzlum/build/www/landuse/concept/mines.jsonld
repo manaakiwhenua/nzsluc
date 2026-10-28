@@ -16,9 +16,25 @@
       }
     },
     {
-      "@id": "luc:mines.ttl",
+      "@id": "luc:mines.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:mines.ttl"
+        },
+        {
+          "@id": "luc:mines.jsonld"
+        },
+        {
+          "@id": "luc:mines.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:mines.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:mines"
       }
@@ -29,6 +45,14 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Mining"
+      }
+    },
+    {
+      "@id": "luc:mines.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:mines"
       }
     },
     {
@@ -57,30 +81,6 @@
         "@language": "en",
         "@value": "Mines"
       }
-    },
-    {
-      "@id": "luc:mines.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:mines"
-      }
-    },
-    {
-      "@id": "luc:mines.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:mines.ttl"
-        },
-        {
-          "@id": "luc:mines.jsonld"
-        },
-        {
-          "@id": "luc:mines.rdf"
-        }
-      ]
     }
   ]
 }

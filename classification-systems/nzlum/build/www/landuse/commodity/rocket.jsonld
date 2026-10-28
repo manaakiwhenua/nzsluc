@@ -19,22 +19,6 @@
       "skos:notation": "rocket"
     },
     {
-      "@id": "com:rocket.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:rocket"
-      }
-    },
-    {
-      "@id": "com:rocket.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:rocket"
-      }
-    },
-    {
       "@id": "com:rocket.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -51,6 +35,14 @@
       ]
     },
     {
+      "@id": "com:rocket.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:rocket"
+      }
+    },
+    {
       "@id": "com:vegetables_and_herbs",
       "skos:member": {
         "@id": "com:rocket"
@@ -58,6 +50,14 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:rocket.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rocket"
       }
     },
     {

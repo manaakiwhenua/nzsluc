@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.jsonld">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond">
+        <skos:notation>pond</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+        <lu:colour>#C3DFFF</lu:colour>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -14,12 +25,7 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.jsonld"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond"/>
@@ -27,14 +33,7 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond">
-    <skos:notation>pond</skos:notation>
-    <skos:inScheme>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
-        <dcterms:title xml:lang="en">NZLUM water features</dcterms:title>
-      </rdf:Description>
-    </skos:inScheme>
-    <lu:colour>#C3DFFF</lu:colour>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/pond.html"/>
-  </skos:Concept>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
+    <dcterms:title xml:lang="en">NZLUM water features</dcterms:title>
+  </rdf:Description>
 </rdf:RDF>

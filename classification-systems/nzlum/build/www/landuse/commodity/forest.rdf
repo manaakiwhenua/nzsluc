@@ -1,75 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bamboo">
-    <skos:notation>bamboo</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sandalwood">
-    <skos:notation>sandalwood</skos:notation>
-  </rdf:Description>
+  <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest">
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/christmas_trees">
+        <skos:notation>christmas trees</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bamboo">
+        <skos:notation>bamboo</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oil_mallee">
+        <skos:notation>oil mallee</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_standard">
+        <skos:notation>carbon forest standard</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sawlogs">
+        <skos:notation>sawlogs</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sandalwood">
+        <skos:notation>sandalwood</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eucalyptus_oil">
+        <skos:notation>eucalyptus oil</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_permanent">
+        <skos:notation>carbon forest permanent</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pulp_wood">
+        <skos:notation>pulp wood</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tea_tree">
+        <skos:notation>tea tree</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:inScheme>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+        <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+      </rdf:Description>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en">Forest</skos:prefLabel>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Collection>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.jsonld">
-    <foaf:primaryTopic>
-      <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest">
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/eucalyptus_oil"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/bamboo"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_standard"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sawlogs"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_permanent"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/pulp_wood"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/tea_tree"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sandalwood"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/christmas_trees"/>
-        <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/oil_mallee"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
-        <skos:prefLabel xml:lang="en">Forest</skos:prefLabel>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.html"/>
-      </skos:Collection>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sawlogs">
-    <skos:notation>sawlogs</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_standard">
-    <skos:notation>carbon forest standard</skos:notation>
-  </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.rdf"/>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_permanent">
-    <skos:notation>carbon forest permanent</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oil_mallee">
-    <skos:notation>oil mallee</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pulp_wood">
-    <skos:notation>pulp wood</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/christmas_trees">
-    <skos:notation>christmas trees</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eucalyptus_oil">
-    <skos:notation>eucalyptus oil</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tea_tree">
-    <skos:notation>tea tree</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

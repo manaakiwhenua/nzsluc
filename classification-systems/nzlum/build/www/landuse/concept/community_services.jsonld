@@ -9,22 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:community_services.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:community_services"
-      }
-    },
-    {
-      "@id": "luc:public_recreation_services",
-      "skos:notation": "3.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Public recreation and services"
-      }
-    },
-    {
       "@id": "luc:community_services.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -33,9 +17,33 @@
       }
     },
     {
+      "@id": "luc:community_services.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:community_services.ttl"
+        },
+        {
+          "@id": "luc:community_services.jsonld"
+        },
+        {
+          "@id": "luc:community_services.rdf"
+        }
+      ]
+    },
+    {
       "@id": "luc:community_services.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:community_services"
+      }
+    },
+    {
+      "@id": "luc:community_services.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:community_services"
       }
@@ -73,20 +81,12 @@
       }
     },
     {
-      "@id": "luc:community_services.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:community_services.ttl"
-        },
-        {
-          "@id": "luc:community_services.jsonld"
-        },
-        {
-          "@id": "luc:community_services.rdf"
-        }
-      ]
+      "@id": "luc:public_recreation_services",
+      "skos:notation": "3.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public recreation and services"
+      }
     }
   ]
 }

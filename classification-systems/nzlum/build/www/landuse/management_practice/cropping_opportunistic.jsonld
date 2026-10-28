@@ -8,6 +8,43 @@
   },
   "@graph": [
     {
+      "@id": "mgmt:cropping_opportunistic.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:cropping_opportunistic.ttl"
+        },
+        {
+          "@id": "mgmt:cropping_opportunistic.jsonld"
+        },
+        {
+          "@id": "mgmt:cropping_opportunistic.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:cropping_opportunistic"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_opportunistic",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:cropping_opportunistic.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "cropping opportunistic"
+    },
+    {
       "@id": "mgmt:cropping_opportunistic.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -37,43 +74,6 @@
         "@language": "en",
         "@value": "NZLUM management practices"
       }
-    },
-    {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:cropping_opportunistic"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:cropping_opportunistic.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:cropping_opportunistic.ttl"
-        },
-        {
-          "@id": "mgmt:cropping_opportunistic.jsonld"
-        },
-        {
-          "@id": "mgmt:cropping_opportunistic.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:cropping_opportunistic",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:cropping_opportunistic.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "cropping opportunistic"
     }
   ]
 }

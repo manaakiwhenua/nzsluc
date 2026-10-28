@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application">
+    <skos:example xml:lang="en">Irrigation, groundwater recharge, soil fertility enhancement.</skos:example>
+    <skos:notation>3.8.4</skos:notation>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
         <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
@@ -14,11 +16,9 @@
     </skos:broader>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:example xml:lang="en">Irrigation, groundwater recharge, soil fertility enhancement.</skos:example>
-    <skos:usageNote xml:lang="en"> This is often likely to be an ancillary use.</skos:usageNote>
     <skos:definition xml:lang="en">Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.</skos:definition>
+    <skos:usageNote xml:lang="en"> This is often likely to be an ancillary use.</skos:usageNote>
     <skos:prefLabel xml:lang="en">Wastewater treatment – land application</skos:prefLabel>
-    <skos:notation>3.8.4</skos:notation>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application.html">
         <dcterms:format>text/html</dcterms:format>
@@ -28,13 +28,13 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>
     <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>

@@ -8,19 +8,27 @@
   },
   "@graph": [
     {
-      "@id": "luc:indigenous_plantation_forestry.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_plantation_forestry"
-      }
-    },
-    {
       "@id": "luc:plantation_forests",
       "skos:notation": "2.1.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Plantation forests"
+      }
+    },
+    {
+      "@id": "luc:indigenous_plantation_forestry.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_plantation_forestry"
+      }
+    },
+    {
+      "@id": "luc:indigenous_plantation_forestry.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_plantation_forestry"
       }
     },
     {
@@ -81,17 +89,9 @@
       ]
     },
     {
-      "@id": "luc:indigenous_plantation_forestry.rdf",
+      "@id": "luc:indigenous_plantation_forestry.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_plantation_forestry"
-      }
-    },
-    {
-      "@id": "luc:indigenous_plantation_forestry.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:indigenous_plantation_forestry"
       }

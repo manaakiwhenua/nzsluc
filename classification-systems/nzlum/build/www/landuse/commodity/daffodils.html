@@ -29,6 +29,14 @@
       "skos:notation": "daffodils"
     },
     {
+      "@id": "com:daffodils.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:daffodils"
+      }
+    },
+    {
       "@id": "com:daffodils.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -37,27 +45,13 @@
       }
     },
     {
-      "@id": "com:daffodils.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:daffodils.ttl"
-        },
-        {
-          "@id": "com:daffodils.jsonld"
-        },
-        {
-          "@id": "com:daffodils.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:daffodils.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
         "@id": "com:daffodils"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -76,14 +70,20 @@
       }
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:daffodils"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
+      "@id": "com:daffodils.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:daffodils.ttl"
+        },
+        {
+          "@id": "com:daffodils.jsonld"
+        },
+        {
+          "@id": "com:daffodils.rdf"
+        }
+      ]
     }
   ]
 }

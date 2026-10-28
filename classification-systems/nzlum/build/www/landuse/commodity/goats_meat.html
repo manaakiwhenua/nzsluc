@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:goats_meat"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:goats_meat",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -36,20 +46,6 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:goats_meat"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:goats",
-      "skos:notation": "goats"
-    },
-    {
       "@id": "com:goats_meat.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -64,14 +60,6 @@
           "@id": "com:goats_meat.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:goats_meat.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_meat"
-      }
     },
     {
       "@id": "com:goats_meat.jsonld",
@@ -90,10 +78,22 @@
       }
     },
     {
+      "@id": "com:goats",
+      "skos:notation": "goats"
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:goats_meat.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_meat"
       }
     }
   ]

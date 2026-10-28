@@ -18,9 +18,20 @@
   },
   "@graph": [
     {
-      "@id": "com:asparagus.ttl",
+      "@id": "com:asparagus",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:asparagus.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "asparagus"
+    },
+    {
+      "@id": "com:asparagus.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:asparagus"
       }
@@ -52,28 +63,17 @@
       }
     },
     {
-      "@id": "com:asparagus.rdf",
+      "@id": "com:asparagus.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:asparagus"
       }
     },
     {
-      "@id": "com:asparagus",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:asparagus.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "asparagus"
-    },
-    {
-      "@id": "com:asparagus.jsonld",
+      "@id": "com:asparagus.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:asparagus"
       }

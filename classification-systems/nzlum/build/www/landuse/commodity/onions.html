@@ -18,6 +18,38 @@
   },
   "@graph": [
     {
+      "@id": "com:onions.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:onions.ttl"
+        },
+        {
+          "@id": "com:onions.jsonld"
+        },
+        {
+          "@id": "com:onions.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "com:onions.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:onions"
+      }
+    },
+    {
+      "@id": "com:onions.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:onions"
+      }
+    },
+    {
       "@id": "com:onions.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -33,14 +65,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:onions.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:onions"
       }
     },
     {
@@ -60,30 +84,6 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "onions"
-    },
-    {
-      "@id": "com:onions.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:onions"
-      }
-    },
-    {
-      "@id": "com:onions.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:onions.ttl"
-        },
-        {
-          "@id": "com:onions.jsonld"
-        },
-        {
-          "@id": "com:onions.rdf"
-        }
-      ]
     }
   ]
 }

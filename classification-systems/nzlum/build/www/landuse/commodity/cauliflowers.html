@@ -26,24 +26,6 @@
       }
     },
     {
-      "@id": "com:cauliflowers.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cauliflowers"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:cauliflowers"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
       "@id": "com:cauliflowers",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -63,10 +45,21 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:cauliflowers"
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "com:cauliflowers.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:cauliflowers"
       }
     },
     {
@@ -84,6 +77,13 @@
           "@id": "com:cauliflowers.rdf"
         }
       ]
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

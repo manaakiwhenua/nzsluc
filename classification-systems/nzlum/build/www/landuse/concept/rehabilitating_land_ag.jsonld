@@ -16,12 +16,20 @@
       }
     },
     {
-      "@id": "luc:rehabilitating_land_ag.rdf",
+      "@id": "luc:rehabilitating_land_ag.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:rehabilitating_land_ag"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:rehabilitating_land_ag.ttl"
+        },
+        {
+          "@id": "luc:rehabilitating_land_ag.jsonld"
+        },
+        {
+          "@id": "luc:rehabilitating_land_ag.rdf"
+        }
+      ]
     },
     {
       "@id": "luc:vacant_and_transitioning_land",
@@ -29,6 +37,14 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:rehabilitating_land_ag.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:rehabilitating_land_ag"
       }
     },
     {
@@ -61,22 +77,6 @@
       "foaf:primaryTopic": {
         "@id": "luc:rehabilitating_land_ag"
       }
-    },
-    {
-      "@id": "luc:rehabilitating_land_ag.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:rehabilitating_land_ag.ttl"
-        },
-        {
-          "@id": "luc:rehabilitating_land_ag.jsonld"
-        },
-        {
-          "@id": "luc:rehabilitating_land_ag.rdf"
-        }
-      ]
     }
   ]
 }

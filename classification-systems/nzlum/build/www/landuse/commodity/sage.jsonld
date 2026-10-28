@@ -16,14 +16,15 @@
       }
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:sage"
+      "@id": "com:sage",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sage.html"
       },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sage"
     },
     {
       "@id": "com:sage.html",
@@ -50,15 +51,14 @@
       }
     },
     {
-      "@id": "com:sage",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sage.html"
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:sage"
       },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sage"
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
     },
     {
       "@id": "com:sage.jsonld",

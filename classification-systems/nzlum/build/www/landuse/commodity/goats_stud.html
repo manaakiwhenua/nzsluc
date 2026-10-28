@@ -18,6 +18,24 @@
   },
   "@graph": [
     {
+      "@id": "com:goats_stud",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:goats_stud.html"
+      },
+      "skos:broader": {
+        "@id": "com:goats"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "goats stud",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Goats raised for sale as breeding animals."
+      }
+    },
+    {
       "@id": "com:goats_stud.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -36,41 +54,11 @@
       }
     },
     {
-      "@id": "com:goats",
-      "skos:notation": "goats"
-    },
-    {
       "@id": "com:goats_stud.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:goats_stud"
-      }
-    },
-    {
-      "@id": "com:goats_stud.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_stud"
-      }
-    },
-    {
-      "@id": "com:goats_stud",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:goats_stud.html"
-      },
-      "skos:broader": {
-        "@id": "com:goats"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "goats stud",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Goats raised for sale as breeding animals."
       }
     },
     {
@@ -90,10 +78,22 @@
       ]
     },
     {
+      "@id": "com:goats",
+      "skos:notation": "goats"
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:goats_stud.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_stud"
       }
     }
   ]

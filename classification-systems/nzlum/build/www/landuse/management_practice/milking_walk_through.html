@@ -26,20 +26,31 @@
       }
     },
     {
-      "@id": "mgmt:milking_walk_through.rdf",
+      "@id": "mgmt:milking_walk_through.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:milking_walk_through"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:milking_walk_through.ttl"
+        },
+        {
+          "@id": "mgmt:milking_walk_through.jsonld"
+        },
+        {
+          "@id": "mgmt:milking_walk_through.rdf"
+        }
+      ]
     },
     {
-      "@id": "mgmt:milking_walk_through.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:milking_walk_through"
-      }
+      "@id": "mgmt:milking_walk_through",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:milking_walk_through.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "milking walk through "
     },
     {
       "@id": "lus:management_practices",
@@ -59,31 +70,20 @@
       }
     },
     {
-      "@id": "mgmt:milking_walk_through",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:milking_walk_through.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "milking walk through "
+      "@id": "mgmt:milking_walk_through.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:milking_walk_through"
+      }
     },
     {
-      "@id": "mgmt:milking_walk_through.html",
+      "@id": "mgmt:milking_walk_through.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:milking_walk_through.ttl"
-        },
-        {
-          "@id": "mgmt:milking_walk_through.jsonld"
-        },
-        {
-          "@id": "mgmt:milking_walk_through.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:milking_walk_through"
+      }
     }
   ]
 }

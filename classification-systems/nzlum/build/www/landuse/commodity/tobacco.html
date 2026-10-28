@@ -18,34 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:tobacco.rdf",
+      "@id": "com:tobacco.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:tobacco"
-      }
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:tobacco"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:tobacco.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:tobacco"
       }
@@ -67,6 +42,22 @@
       ]
     },
     {
+      "@id": "com:tobacco.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:tobacco"
+      }
+    },
+    {
+      "@id": "com:tobacco.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:tobacco"
+      }
+    },
+    {
       "@id": "com:tobacco",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -78,11 +69,20 @@
       "skos:notation": "tobacco"
     },
     {
-      "@id": "com:tobacco.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:crop",
+      "skos:member": {
         "@id": "com:tobacco"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     }
   ]

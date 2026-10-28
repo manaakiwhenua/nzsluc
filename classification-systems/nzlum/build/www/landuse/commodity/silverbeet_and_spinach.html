@@ -18,19 +18,17 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:silverbeet_and_spinach"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
       "@id": "com:silverbeet_and_spinach.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:silverbeet_and_spinach"
+      }
+    },
+    {
+      "@id": "com:silverbeet_and_spinach.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:silverbeet_and_spinach"
       }
@@ -52,12 +50,15 @@
       ]
     },
     {
-      "@id": "com:silverbeet_and_spinach.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:silverbeet_and_spinach"
-      }
+      "@id": "com:silverbeet_and_spinach",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:silverbeet_and_spinach.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "silverbeet and spinach"
     },
     {
       "@id": "com:silverbeet_and_spinach.jsonld",
@@ -68,22 +69,21 @@
       }
     },
     {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:silverbeet_and_spinach"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:silverbeet_and_spinach",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:silverbeet_and_spinach.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "silverbeet and spinach"
     }
   ]
 }

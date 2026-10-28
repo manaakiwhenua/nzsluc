@@ -18,6 +18,25 @@
   },
   "@graph": [
     {
+      "@id": "com:gooseberries.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:gooseberries"
+      }
+    },
+    {
+      "@id": "com:gooseberries",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:gooseberries.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "gooseberries"
+    },
+    {
       "@id": "com:gooseberries.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -32,17 +51,6 @@
           "@id": "com:gooseberries.rdf"
         }
       ]
-    },
-    {
-      "@id": "com:gooseberries",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:gooseberries.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "gooseberries"
     },
     {
       "@id": "com:gooseberries.jsonld",
@@ -61,6 +69,13 @@
       }
     },
     {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:gooseberries"
@@ -68,21 +83,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:gooseberries.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:gooseberries"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     }
   ]

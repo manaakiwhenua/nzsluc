@@ -18,6 +18,14 @@
   },
   "@graph": [
     {
+      "@id": "com:blackberries.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:blackberries"
+      }
+    },
+    {
       "@id": "com:blackberries.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -34,28 +42,24 @@
       ]
     },
     {
-      "@id": "com:blackberries",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:blackberries.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blackberries"
-    },
-    {
-      "@id": "com:blackberries.ttl",
+      "@id": "com:blackberries.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:blackberries"
       }
     },
     {
-      "@id": "com:blackberries.jsonld",
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
+    },
+    {
+      "@id": "com:blackberries.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:blackberries"
       }
@@ -71,19 +75,15 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:blackberries.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:blackberries"
-      }
+      "@id": "com:blackberries",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:blackberries.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blackberries"
     }
   ]
 }

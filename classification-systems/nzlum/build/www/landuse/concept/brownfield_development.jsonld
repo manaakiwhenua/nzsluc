@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:brownfield_development.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:brownfield_development"
-      }
-    },
-    {
-      "@id": "luc:brownfield_development.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:brownfield_development"
-      }
-    },
-    {
       "@id": "luc:brownfield_development.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -38,22 +22,6 @@
         "@language": "en",
         "@value": "Vacant and transitioning land"
       }
-    },
-    {
-      "@id": "luc:brownfield_development.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:brownfield_development.ttl"
-        },
-        {
-          "@id": "luc:brownfield_development.jsonld"
-        },
-        {
-          "@id": "luc:brownfield_development.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:brownfield_development",
@@ -85,6 +53,38 @@
       "skos:scopeNote": {
         "@language": "en",
         "@value": "May include residential areas undergoing infill development that increase housing density."
+      }
+    },
+    {
+      "@id": "luc:brownfield_development.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:brownfield_development"
+      }
+    },
+    {
+      "@id": "luc:brownfield_development.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:brownfield_development.ttl"
+        },
+        {
+          "@id": "luc:brownfield_development.jsonld"
+        },
+        {
+          "@id": "luc:brownfield_development.rdf"
+        }
+      ]
+    },
+    {
+      "@id": "luc:brownfield_development.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:brownfield_development"
       }
     }
   ]

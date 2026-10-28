@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:chickens"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:chickens.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -34,21 +44,11 @@
       ]
     },
     {
-      "@id": "com:chickens.ttl",
+      "@id": "com:chickens.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:chickens"
-      }
-    },
-    {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:chickens"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
       }
     },
     {
@@ -56,14 +56,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:chickens.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chickens"
       }
     },
     {
@@ -87,6 +79,14 @@
       "skos:usageNote": {
         "@language": "en",
         "@value": "Poultry farms. Specify whether for eggs or meat where possible."
+      }
+    },
+    {
+      "@id": "com:chickens.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens"
       }
     }
   ]

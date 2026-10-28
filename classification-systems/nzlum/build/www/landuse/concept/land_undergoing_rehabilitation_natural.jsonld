@@ -17,6 +17,33 @@
       }
     },
     {
+      "@id": "luc:land_undergoing_rehabilitation_natural",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:land_undergoing_rehabilitation_natural.html"
+      },
+      "owl:deprecated": true,
+      "skos:broader": {
+        "@id": "luc:unused_land_transition"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.3.0"
+      },
+      "skos:notation": "1.4.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Land undergoing rehabilitation"
+      }
+    },
+    {
       "@id": "luc:unused_land_transition",
       "skos:notation": "1.4.0",
       "skos:prefLabel": {
@@ -54,33 +81,6 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:land_undergoing_rehabilitation_natural"
-      }
-    },
-    {
-      "@id": "luc:land_undergoing_rehabilitation_natural",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:land_undergoing_rehabilitation_natural.html"
-      },
-      "owl:deprecated": true,
-      "skos:broader": {
-        "@id": "luc:unused_land_transition"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state (including riparian plantings)."
-      },
-      "skos:historyNote": {
-        "@language": "en",
-        "@value": "Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0."
-      },
-      "skos:inScheme": {
-        "@id": "lus:nzlum0.3.0"
-      },
-      "skos:notation": "1.4.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Land undergoing rehabilitation"
       }
     }
   ]

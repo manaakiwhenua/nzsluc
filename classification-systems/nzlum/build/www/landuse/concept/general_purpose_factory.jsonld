@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
-      "@id": "luc:general_purpose_factory.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:general_purpose_factory"
-      }
-    },
-    {
       "@id": "luc:general_purpose_factory",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -55,6 +39,30 @@
       }
     },
     {
+      "@id": "luc:general_purpose_factory.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:general_purpose_factory"
+      }
+    },
+    {
+      "@id": "luc:general_purpose_factory.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:general_purpose_factory"
+      }
+    },
+    {
+      "@id": "luc:general_purpose_factory.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:general_purpose_factory"
+      }
+    },
+    {
       "@id": "luc:general_purpose_factory.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
@@ -71,19 +79,11 @@
       ]
     },
     {
-      "@id": "luc:general_purpose_factory.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:general_purpose_factory"
-      }
-    },
-    {
-      "@id": "luc:general_purpose_factory.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:general_purpose_factory"
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
     }
   ]

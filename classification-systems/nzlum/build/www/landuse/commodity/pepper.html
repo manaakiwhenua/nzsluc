@@ -18,19 +18,9 @@
   },
   "@graph": [
     {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:pepper"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "com:pepper.rdf",
+      "@id": "com:pepper.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:pepper"
       }
@@ -47,9 +37,9 @@
       "skos:notation": "pepper"
     },
     {
-      "@id": "com:pepper.jsonld",
+      "@id": "com:pepper.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:pepper"
       }
@@ -78,9 +68,19 @@
       }
     },
     {
-      "@id": "com:pepper.ttl",
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:pepper"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "com:pepper.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:pepper"
       }

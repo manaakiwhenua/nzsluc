@@ -19,37 +19,9 @@
   },
   "@graph": [
     {
-      "@id": "wtr:pond.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "wtr:pond"
-      }
-    },
-    {
-      "@id": "wtr:pond",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "wtr:pond.html"
-      },
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "pond"
-    },
-    {
       "@id": "wtr:pond.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:pond"
-      }
-    },
-    {
-      "@id": "wtr:pond.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "wtr:pond"
       }
@@ -71,10 +43,38 @@
       ]
     },
     {
+      "@id": "wtr:pond",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "wtr:pond.html"
+      },
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "pond"
+    },
+    {
       "@id": "lus:water_features",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM water features"
+      }
+    },
+    {
+      "@id": "wtr:pond.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "wtr:pond"
+      }
+    },
+    {
+      "@id": "wtr:pond.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:pond"
       }
     }
   ]
