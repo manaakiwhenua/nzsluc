@@ -8,44 +8,14 @@
   },
   "@graph": [
     {
-      "@id": "com:peanuts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:oilseeds",
+      "skos:member": {
         "@id": "com:peanuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Oilseeds"
       }
-    },
-    {
-      "@id": "com:peanuts.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:peanuts"
-      }
-    },
-    {
-      "@id": "com:peanuts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:peanuts"
-      }
-    },
-    {
-      "@id": "com:peanuts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:peanuts.ttl"
-        },
-        {
-          "@id": "com:peanuts.jsonld"
-        },
-        {
-          "@id": "com:peanuts.rdf"
-        }
-      ]
     },
     {
       "@id": "com:peanuts",
@@ -59,20 +29,50 @@
       "skos:notation": "peanuts"
     },
     {
+      "@id": "com:peanuts.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:peanuts.jsonld"
+        },
+        {
+          "@id": "com:peanuts.rdf"
+        },
+        {
+          "@id": "com:peanuts.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:peanuts.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:peanuts"
+      }
+    },
+    {
+      "@id": "com:peanuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:peanuts"
+      }
+    },
+    {
+      "@id": "com:peanuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:peanuts"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:oilseeds",
-      "skos:member": {
-        "@id": "com:peanuts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Oilseeds"
       }
     }
   ]

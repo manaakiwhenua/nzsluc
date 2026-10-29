@@ -28,8 +28,7 @@ luc:intensive_animal_production skos:notation "2.6.0" ;
 luc:intensive_animal_containment a skos:Concept ;
     skos:broader luc:intensive_animal_production ;
     skos:definition "Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.6.1" ;
     skos:prefLabel "Intensive animal containment"@en ;
     foaf:isPrimaryTopicOf luc:intensive_animal_containment.html .

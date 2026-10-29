@@ -18,6 +18,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:residues_heavily_grazed"
@@ -25,29 +32,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:residues_heavily_grazed.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:residues_heavily_grazed.ttl"
-        },
-        {
-          "@id": "mgmt:residues_heavily_grazed.jsonld"
-        },
-        {
-          "@id": "mgmt:residues_heavily_grazed.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -62,6 +46,30 @@
       "skos:notation": "residues heavily grazed"
     },
     {
+      "@id": "mgmt:residues_heavily_grazed.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:residues_heavily_grazed.jsonld"
+        },
+        {
+          "@id": "mgmt:residues_heavily_grazed.rdf"
+        },
+        {
+          "@id": "mgmt:residues_heavily_grazed.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:residues_heavily_grazed.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_heavily_grazed"
+      }
+    },
+    {
       "@id": "mgmt:residues_heavily_grazed.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -73,14 +81,6 @@
       "@id": "mgmt:residues_heavily_grazed.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:residues_heavily_grazed"
-      }
-    },
-    {
-      "@id": "mgmt:residues_heavily_grazed.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:residues_heavily_grazed"
       }

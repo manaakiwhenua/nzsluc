@@ -9,6 +9,46 @@
   },
   "@graph": [
     {
+      "@id": "luc:airports_aerodromes",
+      "skos:notation": "3.6.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Airports/aerodromes"
+      }
+    },
+    {
+      "@id": "luc:built_environment",
+      "skos:notation": "3.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Built environment"
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport",
+      "skos:notation": "3.6.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Ports and water transport"
+      }
+    },
+    {
+      "@id": "luc:railways",
+      "skos:notation": "3.6.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Railways"
+      }
+    },
+    {
+      "@id": "luc:roads",
+      "skos:notation": "3.6.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Roads"
+      }
+    },
+    {
       "@id": "luc:transport",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -20,11 +60,11 @@
       },
       "skos:changeNote": [
         {
-          "@language": "en",
-          "@value": "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."
+          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
         },
         {
-          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
+          "@language": "en",
+          "@value": "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."
         }
       ],
       "skos:definition": {
@@ -36,16 +76,16 @@
       },
       "skos:narrower": [
         {
-          "@id": "luc:railways"
-        },
-        {
           "@id": "luc:airports_aerodromes"
         },
         {
-          "@id": "luc:roads"
+          "@id": "luc:ports_water_transport"
         },
         {
-          "@id": "luc:ports_water_transport"
+          "@id": "luc:railways"
+        },
+        {
+          "@id": "luc:roads"
         }
       ],
       "skos:notation": "3.6.0",
@@ -59,20 +99,20 @@
       }
     },
     {
-      "@id": "luc:built_environment",
-      "skos:notation": "3.0.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Built environment"
-      }
-    },
-    {
-      "@id": "luc:airports_aerodromes",
-      "skos:notation": "3.6.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Airports/aerodromes"
-      }
+      "@id": "luc:transport.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:transport.jsonld"
+        },
+        {
+          "@id": "luc:transport.rdf"
+        },
+        {
+          "@id": "luc:transport.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:transport.jsonld",
@@ -83,57 +123,17 @@
       }
     },
     {
-      "@id": "luc:railways",
-      "skos:notation": "3.6.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Railways"
+      "@id": "luc:transport.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:transport"
       }
     },
     {
       "@id": "luc:transport.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:transport"
-      }
-    },
-    {
-      "@id": "luc:transport.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:transport.ttl"
-        },
-        {
-          "@id": "luc:transport.jsonld"
-        },
-        {
-          "@id": "luc:transport.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:ports_water_transport",
-      "skos:notation": "3.6.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Ports and water transport"
-      }
-    },
-    {
-      "@id": "luc:roads",
-      "skos:notation": "3.6.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Roads"
-      }
-    },
-    {
-      "@id": "luc:transport.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:transport"
       }

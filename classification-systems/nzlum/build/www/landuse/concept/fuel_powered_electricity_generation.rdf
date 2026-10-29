@@ -5,20 +5,6 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.jsonld">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation">
-        <skos:definition xml:lang="en">Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.</skos:definition>
-        <skos:prefLabel xml:lang="en">Fuel powered electricity generation</skos:prefLabel>
-        <skos:notation>3.5.1</skos:notation>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -27,7 +13,12 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation"/>
@@ -39,4 +30,12 @@
     <skos:prefLabel xml:lang="en">Utilities</skos:prefLabel>
     <skos:notation>3.5.0</skos:notation>
   </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation">
+    <skos:notation>3.5.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Fuel powered electricity generation</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.</skos:definition>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/fuel_powered_electricity_generation.html"/>
+  </skos:Concept>
 </rdf:RDF>

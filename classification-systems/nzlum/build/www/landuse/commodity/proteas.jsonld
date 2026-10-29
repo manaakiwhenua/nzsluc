@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:proteas"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
       "@id": "com:proteas",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -24,13 +34,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:proteas.ttl"
-        },
-        {
           "@id": "com:proteas.jsonld"
         },
         {
           "@id": "com:proteas.rdf"
+        },
+        {
+          "@id": "com:proteas.ttl"
         }
       ]
     },
@@ -43,19 +53,17 @@
       }
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:proteas"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
-    },
-    {
       "@id": "com:proteas.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:proteas"
+      }
+    },
+    {
+      "@id": "com:proteas.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:proteas"
       }
@@ -65,14 +73,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:proteas.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:proteas"
       }
     }
   ]

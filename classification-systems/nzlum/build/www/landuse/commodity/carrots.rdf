@@ -15,18 +15,20 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Vegetables and herbs</skos:prefLabel>
   </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots"/>

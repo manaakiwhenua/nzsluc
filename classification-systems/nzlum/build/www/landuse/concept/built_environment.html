@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:built_environment.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
       "@id": "luc:built_environment",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -35,41 +27,36 @@
         "@language": "en",
         "@value": "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
           "@id": "luc:commercial"
         },
         {
-          "@id": "luc:vacant_transitioning_land_urban"
-        },
-        {
-          "@id": "luc:transport"
-        },
-        {
-          "@id": "luc:waste_treatment_disposal"
-        },
-        {
-          "@id": "luc:residential"
-        },
-        {
           "@id": "luc:manufacturing_industrial"
-        },
-        {
-          "@id": "luc:utilities"
         },
         {
           "@id": "luc:mining"
         },
         {
           "@id": "luc:public_recreation_services"
+        },
+        {
+          "@id": "luc:residential"
+        },
+        {
+          "@id": "luc:transport"
+        },
+        {
+          "@id": "luc:utilities"
+        },
+        {
+          "@id": "luc:vacant_transitioning_land_urban"
+        },
+        {
+          "@id": "luc:waste_treatment_disposal"
         }
       ],
       "skos:notation": "3.0.0",
@@ -86,102 +73,26 @@
       }
     },
     {
-      "@id": "luc:utilities",
-      "skos:notation": "3.5.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Utilities"
-      }
-    },
-    {
       "@id": "luc:built_environment.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:built_environment.ttl"
-        },
-        {
           "@id": "luc:built_environment.jsonld"
         },
         {
           "@id": "luc:built_environment.rdf"
+        },
+        {
+          "@id": "luc:built_environment.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:vacant_transitioning_land_urban",
-      "skos:notation": "3.9.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
-      }
-    },
-    {
-      "@id": "luc:mining",
-      "skos:notation": "3.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mining"
-      }
-    },
-    {
-      "@id": "luc:residential",
-      "skos:notation": "3.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Residential"
-      }
     },
     {
       "@id": "luc:built_environment.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal",
-      "skos:notation": "3.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Waste treatment and disposal"
-      }
-    },
-    {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
-      }
-    },
-    {
-      "@id": "lus:nzlum0.3.0",
-      "skos:hasTopConcept": {
-        "@id": "luc:built_environment"
-      }
-    },
-    {
-      "@id": "luc:transport",
-      "skos:notation": "3.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Transportation"
-      }
-    },
-    {
-      "@id": "luc:commercial",
-      "skos:notation": "3.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Commercial"
-      }
-    },
-    {
-      "@id": "lus:nzlum0.4.0",
-      "skos:hasTopConcept": {
         "@id": "luc:built_environment"
       }
     },
@@ -194,11 +105,101 @@
       }
     },
     {
+      "@id": "luc:built_environment.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
+    },
+    {
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
+      }
+    },
+    {
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mining"
+      }
+    },
+    {
       "@id": "luc:public_recreation_services",
       "skos:notation": "3.2.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Public recreation and services"
+      }
+    },
+    {
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
+      }
+    },
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
+      }
+    },
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
+      }
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.3.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.1",
+      "skos:hasTopConcept": {
+        "@id": "luc:built_environment"
       }
     }
   ]
@@ -206,6 +207,6 @@
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Built environment</h1><div><span class="chip code">3.0.0</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment</p></div><h2>Definition</h2><blockquote>Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.</blockquote><h2>Scope note</h2><blockquote>Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.</blockquote><h2>Hierarchy</h2><dl><dt>Top concept of</dt><dd><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a></dd></dl><h2>Narrower</h2><ul class="plain"><li><code>3.1.0</code> <a href="/landuse/concept/residential">Residential</a></li><li><code>3.2.0</code> <a href="/landuse/concept/public_recreation_services">Public recreation and services</a></li><li><code>3.3.0</code> <a href="/landuse/concept/commercial">Commercial</a></li><li><code>3.4.0</code> <a href="/landuse/concept/manufacturing_industrial">Manufacturing and industrial</a></li><li><code>3.5.0</code> <a href="/landuse/concept/utilities">Utilities</a></li><li><code>3.6.0</code> <a href="/landuse/concept/transport">Transportation</a></li><li><code>3.7.0</code> <a href="/landuse/concept/mining">Mining</a></li><li><code>3.8.0</code> <a href="/landuse/concept/waste_treatment_disposal">Waste treatment and disposal</a></li><li><code>3.9.0</code> <a href="/landuse/concept/vacant_transitioning_land_urban">Vacant and transitioning land</a></li></ul><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>3.0.0</code></td><td>Built environment</td><td><a href="/classification/v0-4/classes/300/">class page</a> · <a href="/landuse/code/nzlum0.4.0/3.0.0">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>3.0.0</code></td><td>Built environment</td><td><a href="/classification/v0-3/classes/300/">class page</a> · <a href="/landuse/code/nzlum0.3.0/3.0.0">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/built_environment.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/built_environment.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/built_environment.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Built environment</h1><div><span class="chip code">3.0.0</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment</p></div><h2>Definition</h2><blockquote>Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.</blockquote><h2>Scope note</h2><blockquote>Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.</blockquote><h2>Hierarchy</h2><dl><dt>Top concept of</dt><dd><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a></dd></dl><h2>Narrower</h2><ul class="plain"><li><code>3.1.0</code> <a href="/landuse/concept/residential">Residential</a></li><li><code>3.2.0</code> <a href="/landuse/concept/public_recreation_services">Public recreation and services</a></li><li><code>3.3.0</code> <a href="/landuse/concept/commercial">Commercial</a></li><li><code>3.4.0</code> <a href="/landuse/concept/manufacturing_industrial">Manufacturing and industrial</a></li><li><code>3.5.0</code> <a href="/landuse/concept/utilities">Utilities</a></li><li><code>3.6.0</code> <a href="/landuse/concept/transport">Transportation</a></li><li><code>3.7.0</code> <a href="/landuse/concept/mining">Mining</a></li><li><code>3.8.0</code> <a href="/landuse/concept/waste_treatment_disposal">Waste treatment and disposal</a></li><li><code>3.9.0</code> <a href="/landuse/concept/vacant_transitioning_land_urban">Vacant and transitioning land</a></li></ul><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>3.0.0</code></td><td>Built environment</td><td><a href="/classification/v0-4/classes/300/">class page</a> · <a href="/landuse/code/nzlum0.4.1/3.0.0">code lookup</a></td><td>draft; differs: colour</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>3.0.0</code></td><td>Built environment</td><td><a href="/classification/v0-4/classes/300/">class page</a> · <a href="/landuse/code/nzlum0.4.0/3.0.0">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>3.0.0</code></td><td>Built environment</td><td><a href="/classification/v0-3/classes/300/">class page</a> · <a href="/landuse/code/nzlum0.3.0/3.0.0">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/built_environment.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/built_environment.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/built_environment.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

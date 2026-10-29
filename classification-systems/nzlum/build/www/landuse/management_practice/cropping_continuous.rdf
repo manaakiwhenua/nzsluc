@@ -2,14 +2,14 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous">
-        <skos:notation>cropping continuous</skos:notation>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
+        <skos:notation>cropping continuous</skos:notation>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous.html"/>
       </skos:Concept>
     </skos:member>
@@ -23,6 +23,9 @@
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
+    <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -34,7 +37,4 @@
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous.jsonld"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/cropping_continuous.rdf"/>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
-    <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

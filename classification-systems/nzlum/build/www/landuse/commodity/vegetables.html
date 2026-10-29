@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetables.ttl",
+      "@id": "com:vegetables",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:vegetables.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "vegetables"
+    },
+    {
+      "@id": "com:vegetables.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetables"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:vegetables.jsonld"
+        },
+        {
+          "@id": "com:vegetables.rdf"
+        },
+        {
+          "@id": "com:vegetables.ttl"
+        }
+      ]
     },
     {
       "@id": "com:vegetables.jsonld",
@@ -42,15 +61,12 @@
       }
     },
     {
-      "@id": "com:vegetables",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:vegetables.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "vegetables"
+      "@id": "com:vegetables.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetables"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -61,22 +77,6 @@
         "@language": "en",
         "@value": "Vegetables and herbs"
       }
-    },
-    {
-      "@id": "com:vegetables.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:vegetables.ttl"
-        },
-        {
-          "@id": "com:vegetables.jsonld"
-        },
-        {
-          "@id": "com:vegetables.rdf"
-        }
-      ]
     },
     {
       "@id": "lus:commodities",

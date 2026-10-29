@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chicory.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chicory"
-      }
-    },
-    {
-      "@id": "com:chicory.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:chicory.ttl"
-        },
-        {
-          "@id": "com:chicory.jsonld"
-        },
-        {
-          "@id": "com:chicory.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:chicory.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chicory"
-      }
-    },
-    {
       "@id": "com:chicory",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -61,13 +29,27 @@
       "skos:notation": "chicory"
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:chicory.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chicory.jsonld"
+        },
+        {
+          "@id": "com:chicory.rdf"
+        },
+        {
+          "@id": "com:chicory.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:chicory.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:chicory"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -76,6 +58,24 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:chicory"
+      }
+    },
+    {
+      "@id": "com:chicory.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chicory"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:chicory"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {

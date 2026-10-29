@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:beetroot.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:beetroot"
-      }
-    },
-    {
-      "@id": "com:beetroot.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:beetroot"
-      }
-    },
-    {
       "@id": "com:beetroot",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -45,9 +29,41 @@
       "skos:notation": "beetroot"
     },
     {
+      "@id": "com:beetroot.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:beetroot.jsonld"
+        },
+        {
+          "@id": "com:beetroot.rdf"
+        },
+        {
+          "@id": "com:beetroot.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:beetroot.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:beetroot"
+      }
+    },
+    {
+      "@id": "com:beetroot.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:beetroot"
+      }
+    },
+    {
+      "@id": "com:beetroot.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:beetroot"
       }
@@ -68,22 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:beetroot.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:beetroot.ttl"
-        },
-        {
-          "@id": "com:beetroot.jsonld"
-        },
-        {
-          "@id": "com:beetroot.rdf"
-        }
-      ]
     }
   ]
 }

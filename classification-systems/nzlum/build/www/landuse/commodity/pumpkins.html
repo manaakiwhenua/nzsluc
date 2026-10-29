@@ -18,30 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pumpkins.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pumpkins"
-      }
-    },
-    {
-      "@id": "com:pumpkins.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pumpkins"
-      }
-    },
-    {
-      "@id": "com:pumpkins.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pumpkins"
-      }
-    },
-    {
       "@id": "com:pumpkins",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -58,15 +34,39 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:pumpkins.ttl"
-        },
-        {
           "@id": "com:pumpkins.jsonld"
         },
         {
           "@id": "com:pumpkins.rdf"
+        },
+        {
+          "@id": "com:pumpkins.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:pumpkins.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pumpkins"
+      }
+    },
+    {
+      "@id": "com:pumpkins.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pumpkins"
+      }
+    },
+    {
+      "@id": "com:pumpkins.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pumpkins"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",

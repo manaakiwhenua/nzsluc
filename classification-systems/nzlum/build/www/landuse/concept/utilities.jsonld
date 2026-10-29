@@ -9,11 +9,59 @@
   },
   "@graph": [
     {
-      "@id": "luc:utilities.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:utilities"
+      "@id": "luc:built_environment",
+      "skos:notation": "3.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Built environment"
+      }
+    },
+    {
+      "@id": "luc:electricity_substations_transmission",
+      "skos:notation": "3.5.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Electricity substations and transmission"
+      }
+    },
+    {
+      "@id": "luc:fuel_powered_electricity_generation",
+      "skos:notation": "3.5.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fuel powered electricity generation"
+      }
+    },
+    {
+      "@id": "luc:gas_treatment_storage_transmission",
+      "skos:notation": "3.5.6",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Gas treatment, storage, and transmission"
+      }
+    },
+    {
+      "@id": "luc:hydroelectricity_generation",
+      "skos:notation": "3.5.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Hydroelectricity generation"
+      }
+    },
+    {
+      "@id": "luc:navigation_communication",
+      "skos:notation": "3.5.8",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Navigation and communication"
+      }
+    },
+    {
+      "@id": "luc:solar_electricity_generation",
+      "skos:notation": "3.5.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Solar electricity generation"
       }
     },
     {
@@ -39,38 +87,33 @@
         "@language": "en",
         "@value": "Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
-          "@id": "luc:hydroelectricity_generation"
-        },
-        {
-          "@id": "luc:gas_treatment_storage_transmission"
+          "@id": "luc:electricity_substations_transmission"
         },
         {
           "@id": "luc:fuel_powered_electricity_generation"
         },
         {
-          "@id": "luc:electricity_substations_transmission"
+          "@id": "luc:gas_treatment_storage_transmission"
         },
         {
-          "@id": "luc:wind_electricity_generation"
+          "@id": "luc:hydroelectricity_generation"
         },
         {
-          "@id": "luc:water_extraction_transmission"
+          "@id": "luc:navigation_communication"
         },
         {
           "@id": "luc:solar_electricity_generation"
         },
         {
-          "@id": "luc:navigation_communication"
+          "@id": "luc:water_extraction_transmission"
+        },
+        {
+          "@id": "luc:wind_electricity_generation"
         }
       ],
       "skos:notation": "3.5.0",
@@ -80,27 +123,27 @@
       }
     },
     {
-      "@id": "luc:built_environment",
-      "skos:notation": "3.0.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Built environment"
-      }
+      "@id": "luc:utilities.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:utilities.jsonld"
+        },
+        {
+          "@id": "luc:utilities.rdf"
+        },
+        {
+          "@id": "luc:utilities.ttl"
+        }
+      ]
     },
     {
-      "@id": "luc:wind_electricity_generation",
-      "skos:notation": "3.5.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Wind electricity generation"
-      }
-    },
-    {
-      "@id": "luc:hydroelectricity_generation",
-      "skos:notation": "3.5.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Hydroelectricity generation"
+      "@id": "luc:utilities.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:utilities"
       }
     },
     {
@@ -109,46 +152,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:utilities"
-      }
-    },
-    {
-      "@id": "luc:navigation_communication",
-      "skos:notation": "3.5.8",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Navigation and communication"
-      }
-    },
-    {
-      "@id": "luc:utilities.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:utilities.ttl"
-        },
-        {
-          "@id": "luc:utilities.jsonld"
-        },
-        {
-          "@id": "luc:utilities.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:gas_treatment_storage_transmission",
-      "skos:notation": "3.5.6",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Gas treatment, storage, and transmission"
-      }
-    },
-    {
-      "@id": "luc:electricity_substations_transmission",
-      "skos:notation": "3.5.5",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Electricity substations and transmission"
       }
     },
     {
@@ -168,19 +171,11 @@
       }
     },
     {
-      "@id": "luc:solar_electricity_generation",
-      "skos:notation": "3.5.4",
+      "@id": "luc:wind_electricity_generation",
+      "skos:notation": "3.5.3",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Solar electricity generation"
-      }
-    },
-    {
-      "@id": "luc:fuel_powered_electricity_generation",
-      "skos:notation": "3.5.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fuel powered electricity generation"
+        "@value": "Wind electricity generation"
       }
     }
   ]

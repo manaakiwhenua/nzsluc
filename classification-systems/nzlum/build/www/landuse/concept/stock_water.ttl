@@ -28,8 +28,7 @@ luc:water_wastewater_agriculture skos:notation "2.7.0" ;
 luc:stock_water a skos:Concept ;
     skos:broader luc:water_wastewater_agriculture ;
     skos:definition "Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.7.1" ;
     skos:prefLabel "Stock water"@en ;
     foaf:isPrimaryTopicOf luc:stock_water.html .

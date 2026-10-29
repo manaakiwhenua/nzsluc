@@ -29,8 +29,7 @@ luc:office a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Land and buildings primarily used for administrative, professional, or managerial activities."@en ;
     skos:example "Corporate offices, professional services, banks, government buildings, business parks, coworking spaces."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.2" ;
     skos:prefLabel "Office"@en ;
     foaf:isPrimaryTopicOf luc:office.html .

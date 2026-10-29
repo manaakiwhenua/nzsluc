@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chinese_cabbages.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chinese_cabbages"
-      }
-    },
-    {
       "@id": "com:chinese_cabbages",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -25,6 +17,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "chinese cabbages"
+    },
+    {
+      "@id": "com:chinese_cabbages.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chinese_cabbages.jsonld"
+        },
+        {
+          "@id": "com:chinese_cabbages.rdf"
+        },
+        {
+          "@id": "com:chinese_cabbages.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:chinese_cabbages.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chinese_cabbages"
+      }
+    },
+    {
+      "@id": "com:chinese_cabbages.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chinese_cabbages"
+      }
+    },
+    {
+      "@id": "com:chinese_cabbages.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chinese_cabbages"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -37,42 +69,10 @@
       }
     },
     {
-      "@id": "com:chinese_cabbages.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chinese_cabbages"
-      }
-    },
-    {
-      "@id": "com:chinese_cabbages.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:chinese_cabbages.ttl"
-        },
-        {
-          "@id": "com:chinese_cabbages.jsonld"
-        },
-        {
-          "@id": "com:chinese_cabbages.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:chinese_cabbages.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:chinese_cabbages"
       }
     }
   ]

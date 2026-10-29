@@ -28,8 +28,7 @@ luc:planted_environmental_infrastructure_protection.ttl a foaf:Document ;
 luc:planted_environmental_infrastructure_protection a skos:Concept ;
     skos:broader luc:plantation_forests ;
     skos:definition "An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.1.4" ;
     skos:prefLabel "Planted environmental & infrastructure protection"@en ;
     foaf:isPrimaryTopicOf luc:planted_environmental_infrastructure_protection.html .

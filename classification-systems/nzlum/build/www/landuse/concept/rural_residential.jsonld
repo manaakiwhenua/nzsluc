@@ -9,11 +9,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:rural_residential.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:rural_residential"
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
       }
     },
     {
@@ -34,14 +34,9 @@
         "@language": "en",
         "@value": "In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident's primary source of income. Thus the term 'lifestyle' reflects a motivation for a particular land use, but is not itself a useful land use."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.1.4",
       "skos:prefLabel": {
         "@language": "en",
@@ -54,21 +49,29 @@
       "skos:usageNote": [
         {
           "@language": "en",
-          "@value": "Properties in this size interval and without a dwelling could be in transition to residential."
+          "@value": "As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll."
         },
         {
           "@language": "en",
-          "@value": "As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll."
+          "@value": "Properties in this size interval and without a dwelling could be in transition to residential."
         }
       ]
     },
     {
-      "@id": "luc:residential",
-      "skos:notation": "3.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Residential"
-      }
+      "@id": "luc:rural_residential.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:rural_residential.jsonld"
+        },
+        {
+          "@id": "luc:rural_residential.rdf"
+        },
+        {
+          "@id": "luc:rural_residential.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:rural_residential.jsonld",
@@ -87,20 +90,12 @@
       }
     },
     {
-      "@id": "luc:rural_residential.html",
+      "@id": "luc:rural_residential.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:rural_residential.ttl"
-        },
-        {
-          "@id": "luc:rural_residential.jsonld"
-        },
-        {
-          "@id": "luc:rural_residential.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:rural_residential"
+      }
     }
   ]
 }

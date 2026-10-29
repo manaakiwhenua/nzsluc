@@ -8,8 +8,8 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mines">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal">
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
         <skos:notation>coal</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal.html"/>
       </skos:Concept>
     </skos:member>
@@ -23,6 +23,9 @@
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -33,7 +36,4 @@
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal.jsonld"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/coal.rdf"/>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

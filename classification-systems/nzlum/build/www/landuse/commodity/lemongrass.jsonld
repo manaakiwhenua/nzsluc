@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:lemongrass.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:lemongrass"
-      }
-    },
-    {
       "@id": "com:lemongrass",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -25,6 +17,30 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "lemongrass"
+    },
+    {
+      "@id": "com:lemongrass.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lemongrass.jsonld"
+        },
+        {
+          "@id": "com:lemongrass.rdf"
+        },
+        {
+          "@id": "com:lemongrass.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:lemongrass.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:lemongrass"
+      }
     },
     {
       "@id": "com:lemongrass.rdf",
@@ -58,22 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:lemongrass.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lemongrass.ttl"
-        },
-        {
-          "@id": "com:lemongrass.jsonld"
-        },
-        {
-          "@id": "com:lemongrass.rdf"
-        }
-      ]
     }
   ]
 }

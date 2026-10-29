@@ -5,38 +5,38 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf">
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
-        <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
-        <skos:notation>2.3.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:notation>2.3.4</skos:notation>
-    <skos:scopeNote xml:lang="en">This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.</skos:scopeNote>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:prefLabel xml:lang="en">Seasonal flowers and bulbs, and turf farming</skos:prefLabel>
-    <skos:definition xml:lang="en">Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes.</skos:definition>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+        <skos:definition xml:lang="en">Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes.</skos:definition>
+        <skos:scopeNote xml:lang="en">This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.</skos:scopeNote>
+        <skos:notation>2.3.4</skos:notation>
+        <skos:prefLabel xml:lang="en">Seasonal flowers and bulbs, and turf farming</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
-    <dcterms:format>application/ld+json</dcterms:format>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
+    <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
+    <skos:notation>2.3.0</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/seasonal_flowers_bulbs_turf"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
 </rdf:RDF>

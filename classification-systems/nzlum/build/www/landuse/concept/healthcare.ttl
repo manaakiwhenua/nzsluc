@@ -29,8 +29,7 @@ luc:healthcare a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury."@en ;
     skos:example "Hospitals, specialist clinics, physiotherapists, medical offices, laboratories"@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.5" ;
     skos:prefLabel "Healthcare"@en ;
     foaf:isPrimaryTopicOf luc:healthcare.html .

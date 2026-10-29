@@ -2,8 +2,8 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pasture">
     <skos:member>
@@ -15,27 +15,25 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.ttl"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.jsonld"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/plantain.rdf"/>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

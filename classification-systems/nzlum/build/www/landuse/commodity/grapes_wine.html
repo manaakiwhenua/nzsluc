@@ -18,39 +18,18 @@
   },
   "@graph": [
     {
-      "@id": "com:grapes_wine.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:grapes_wine"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     },
     {
       "@id": "com:grapes",
       "skos:notation": "grapes"
-    },
-    {
-      "@id": "com:grapes_wine.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:grapes_wine.ttl"
-        },
-        {
-          "@id": "com:grapes_wine.jsonld"
-        },
-        {
-          "@id": "com:grapes_wine.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     },
     {
       "@id": "com:grapes_wine",
@@ -67,13 +46,35 @@
       "skos:notation": "grapes wine"
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:grapes_wine.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:grapes_wine.jsonld"
+        },
+        {
+          "@id": "com:grapes_wine.rdf"
+        },
+        {
+          "@id": "com:grapes_wine.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:grapes_wine.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:grapes_wine"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:grapes_wine.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:grapes_wine"
       }
     },
     {
@@ -85,11 +86,10 @@
       }
     },
     {
-      "@id": "com:grapes_wine.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:grapes_wine"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

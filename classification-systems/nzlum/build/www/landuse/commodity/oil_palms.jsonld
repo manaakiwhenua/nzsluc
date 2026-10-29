@@ -8,27 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:oil_palms.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:crop",
+      "skos:member": {
         "@id": "com:oil_palms"
-      }
-    },
-    {
-      "@id": "com:oil_palms.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oil_palms"
-      }
-    },
-    {
-      "@id": "com:oil_palms.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:oil_palms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     },
     {
@@ -48,31 +34,45 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:oil_palms.ttl"
-        },
-        {
           "@id": "com:oil_palms.jsonld"
         },
         {
           "@id": "com:oil_palms.rdf"
+        },
+        {
+          "@id": "com:oil_palms.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:oil_palms.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_palms"
+      }
+    },
+    {
+      "@id": "com:oil_palms.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_palms"
+      }
+    },
+    {
+      "@id": "com:oil_palms.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_palms"
+      }
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:oil_palms"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
       }
     }
   ]

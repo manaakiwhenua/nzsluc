@@ -29,8 +29,7 @@ luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
 luc:extensive_dry_stock a skos:Concept ;
     skos:broader luc:grazing_modified_pasture_systems ;
     skos:definition "Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.2.3" ;
     skos:prefLabel "Extensive dry stock"@en ;
     skos:scopeNote "Arable or winter forage crops are unlikely to be common rotations in this land-use category"@en,

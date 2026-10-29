@@ -18,68 +18,23 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:cropping_cover",
-      "skos:notation": "cropping cover"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
     },
     {
-      "@id": "mgmt:crop_pasture_rotation",
-      "skos:notation": "crop pasture rotation"
-    },
-    {
-      "@id": "mgmt:fallow_chemical",
-      "skos:notation": "fallow chemical"
-    },
-    {
-      "@id": "mgmt:residues_heavily_grazed",
-      "skos:notation": "residues heavily grazed"
-    },
-    {
-      "@id": "mgmt:pasture_cropping",
-      "skos:notation": "pasture cropping"
+      "@id": "mgmt:biodynamic",
+      "skos:notation": "biodynamic"
     },
     {
       "@id": "mgmt:contour_banks",
       "skos:notation": "contour banks"
     },
     {
-      "@id": "mgmt:organic",
-      "skos:notation": "organic"
-    },
-    {
-      "@id": "mgmt:residues_baled",
-      "skos:notation": "residues baled"
-    },
-    {
-      "@id": "mgmt:cropping_opportunistic",
-      "skos:notation": "cropping opportunistic"
-    },
-    {
-      "@id": "mgmt:fallow_mechanical",
-      "skos:notation": "fallow mechanical"
-    },
-    {
-      "@id": "mgmt:crop.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:crop"
-      }
-    },
-    {
-      "@id": "mgmt:tillage_conservation",
-      "skos:notation": "tillage conservation"
-    },
-    {
-      "@id": "mgmt:cropping_strip",
-      "skos:notation": "cropping strip"
-    },
-    {
-      "@id": "mgmt:cropping_continuous",
-      "skos:notation": "cropping continuous"
-    },
-    {
-      "@id": "mgmt:tillage_conventional",
-      "skos:notation": "tillage conventional"
+      "@id": "mgmt:controlled_traffic_farming",
+      "skos:notation": "controlled traffic farming"
     },
     {
       "@id": "mgmt:crop",
@@ -92,76 +47,76 @@
       },
       "skos:member": [
         {
-          "@id": "mgmt:residues_burnt"
-        },
-        {
           "@id": "mgmt:biodynamic"
-        },
-        {
-          "@id": "mgmt:crop_pasture_rotation"
-        },
-        {
-          "@id": "mgmt:cropping_rotational"
-        },
-        {
-          "@id": "mgmt:residues_incorporated"
-        },
-        {
-          "@id": "mgmt:tillage_conservation"
-        },
-        {
-          "@id": "mgmt:organic"
-        },
-        {
-          "@id": "mgmt:residues_heavily_grazed"
-        },
-        {
-          "@id": "mgmt:residues_intact"
-        },
-        {
-          "@id": "mgmt:fallow_chemical"
-        },
-        {
-          "@id": "mgmt:cropping_opportunistic"
-        },
-        {
-          "@id": "mgmt:residues_mulched"
-        },
-        {
-          "@id": "mgmt:controlled_traffic_farming"
-        },
-        {
-          "@id": "mgmt:pasture_cropping"
-        },
-        {
-          "@id": "mgmt:cropping_strip"
-        },
-        {
-          "@id": "mgmt:tillage_conventional"
-        },
-        {
-          "@id": "mgmt:residues_baled"
         },
         {
           "@id": "mgmt:contour_banks"
         },
         {
-          "@id": "mgmt:cropping_continuous"
+          "@id": "mgmt:controlled_traffic_farming"
         },
         {
-          "@id": "mgmt:precision_agriculture"
+          "@id": "mgmt:crop_pasture_rotation"
+        },
+        {
+          "@id": "mgmt:cropping_continuous"
         },
         {
           "@id": "mgmt:cropping_cover"
         },
         {
+          "@id": "mgmt:cropping_multiple"
+        },
+        {
+          "@id": "mgmt:cropping_opportunistic"
+        },
+        {
+          "@id": "mgmt:cropping_rotational"
+        },
+        {
           "@id": "mgmt:cropping_row_alley"
+        },
+        {
+          "@id": "mgmt:cropping_strip"
+        },
+        {
+          "@id": "mgmt:fallow_chemical"
         },
         {
           "@id": "mgmt:fallow_mechanical"
         },
         {
-          "@id": "mgmt:cropping_multiple"
+          "@id": "mgmt:organic"
+        },
+        {
+          "@id": "mgmt:pasture_cropping"
+        },
+        {
+          "@id": "mgmt:precision_agriculture"
+        },
+        {
+          "@id": "mgmt:residues_baled"
+        },
+        {
+          "@id": "mgmt:residues_burnt"
+        },
+        {
+          "@id": "mgmt:residues_heavily_grazed"
+        },
+        {
+          "@id": "mgmt:residues_incorporated"
+        },
+        {
+          "@id": "mgmt:residues_intact"
+        },
+        {
+          "@id": "mgmt:residues_mulched"
+        },
+        {
+          "@id": "mgmt:tillage_conservation"
+        },
+        {
+          "@id": "mgmt:tillage_conventional"
         }
       ],
       "skos:prefLabel": {
@@ -170,11 +125,20 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
+      "@id": "mgmt:crop.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:crop.jsonld"
+        },
+        {
+          "@id": "mgmt:crop.rdf"
+        },
+        {
+          "@id": "mgmt:crop.ttl"
+        }
+      ]
     },
     {
       "@id": "mgmt:crop.jsonld",
@@ -185,42 +149,6 @@
       }
     },
     {
-      "@id": "mgmt:biodynamic",
-      "skos:notation": "biodynamic"
-    },
-    {
-      "@id": "mgmt:residues_incorporated",
-      "skos:notation": "residues incorporated"
-    },
-    {
-      "@id": "mgmt:residues_mulched",
-      "skos:notation": "residues mulched"
-    },
-    {
-      "@id": "mgmt:residues_intact",
-      "skos:notation": "residues intact"
-    },
-    {
-      "@id": "mgmt:residues_burnt",
-      "skos:notation": "residues burnt"
-    },
-    {
-      "@id": "mgmt:controlled_traffic_farming",
-      "skos:notation": "controlled traffic farming"
-    },
-    {
-      "@id": "mgmt:precision_agriculture",
-      "skos:notation": "precision agriculture"
-    },
-    {
-      "@id": "mgmt:cropping_row_alley",
-      "skos:notation": "cropping row alley"
-    },
-    {
-      "@id": "mgmt:cropping_multiple",
-      "skos:notation": "cropping multiple"
-    },
-    {
       "@id": "mgmt:crop.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -229,24 +157,96 @@
       }
     },
     {
+      "@id": "mgmt:crop.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:crop"
+      }
+    },
+    {
+      "@id": "mgmt:crop_pasture_rotation",
+      "skos:notation": "crop pasture rotation"
+    },
+    {
+      "@id": "mgmt:cropping_continuous",
+      "skos:notation": "cropping continuous"
+    },
+    {
+      "@id": "mgmt:cropping_cover",
+      "skos:notation": "cropping cover"
+    },
+    {
+      "@id": "mgmt:cropping_multiple",
+      "skos:notation": "cropping multiple"
+    },
+    {
+      "@id": "mgmt:cropping_opportunistic",
+      "skos:notation": "cropping opportunistic"
+    },
+    {
       "@id": "mgmt:cropping_rotational",
       "skos:notation": "cropping rotational"
     },
     {
-      "@id": "mgmt:crop.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:crop.ttl"
-        },
-        {
-          "@id": "mgmt:crop.jsonld"
-        },
-        {
-          "@id": "mgmt:crop.rdf"
-        }
-      ]
+      "@id": "mgmt:cropping_row_alley",
+      "skos:notation": "cropping row alley"
+    },
+    {
+      "@id": "mgmt:cropping_strip",
+      "skos:notation": "cropping strip"
+    },
+    {
+      "@id": "mgmt:fallow_chemical",
+      "skos:notation": "fallow chemical"
+    },
+    {
+      "@id": "mgmt:fallow_mechanical",
+      "skos:notation": "fallow mechanical"
+    },
+    {
+      "@id": "mgmt:organic",
+      "skos:notation": "organic"
+    },
+    {
+      "@id": "mgmt:pasture_cropping",
+      "skos:notation": "pasture cropping"
+    },
+    {
+      "@id": "mgmt:precision_agriculture",
+      "skos:notation": "precision agriculture"
+    },
+    {
+      "@id": "mgmt:residues_baled",
+      "skos:notation": "residues baled"
+    },
+    {
+      "@id": "mgmt:residues_burnt",
+      "skos:notation": "residues burnt"
+    },
+    {
+      "@id": "mgmt:residues_heavily_grazed",
+      "skos:notation": "residues heavily grazed"
+    },
+    {
+      "@id": "mgmt:residues_incorporated",
+      "skos:notation": "residues incorporated"
+    },
+    {
+      "@id": "mgmt:residues_intact",
+      "skos:notation": "residues intact"
+    },
+    {
+      "@id": "mgmt:residues_mulched",
+      "skos:notation": "residues mulched"
+    },
+    {
+      "@id": "mgmt:tillage_conservation",
+      "skos:notation": "tillage conservation"
+    },
+    {
+      "@id": "mgmt:tillage_conventional",
+      "skos:notation": "tillage conventional"
     }
   ]
 }

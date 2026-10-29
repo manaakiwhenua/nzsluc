@@ -8,12 +8,44 @@
   },
   "@graph": [
     {
-      "@id": "luc:tree_crops.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:tree_crops"
+      "@id": "luc:perennial_horticulture",
+      "skos:notation": "2.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Perennial horticulture"
       }
+    },
+    {
+      "@id": "luc:tree_crops",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:tree_crops.html"
+      },
+      "skos:broader": {
+        "@id": "luc:perennial_horticulture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "2.4.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Tree crops"
+      },
+      "skos:usageNote": [
+        {
+          "@language": "en",
+          "@value": "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."
+        },
+        {
+          "@language": "en",
+          "@value": "Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known."
+        }
+      ]
     },
     {
       "@id": "luc:tree_crops.html",
@@ -21,23 +53,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:tree_crops.ttl"
-        },
-        {
           "@id": "luc:tree_crops.jsonld"
         },
         {
           "@id": "luc:tree_crops.rdf"
+        },
+        {
+          "@id": "luc:tree_crops.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:perennial_horticulture",
-      "skos:notation": "2.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Perennial horticulture"
-      }
     },
     {
       "@id": "luc:tree_crops.jsonld",
@@ -56,41 +80,12 @@
       }
     },
     {
-      "@id": "luc:tree_crops",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:tree_crops.html"
-      },
-      "skos:broader": {
-        "@id": "luc:perennial_horticulture"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years."
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "2.4.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Tree crops"
-      },
-      "skos:usageNote": [
-        {
-          "@language": "en",
-          "@value": "Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known."
-        },
-        {
-          "@language": "en",
-          "@value": "Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops."
-        }
-      ]
+      "@id": "luc:tree_crops.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:tree_crops"
+      }
     }
   ]
 }

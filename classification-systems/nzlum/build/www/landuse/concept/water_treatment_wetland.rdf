@@ -5,37 +5,36 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland">
-    <skos:notation>2.7.4</skos:notation>
-    <skos:prefLabel xml:lang="en">Water treatment – wetland</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
-        <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
-        <skos:notation>2.7.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:definition xml:lang="en">Constructed or natural wetlands used to improve water quality prior to discharge.</skos:definition>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland">
+        <skos:prefLabel xml:lang="en">Water treatment – wetland</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.7.4</skos:notation>
+        <skos:definition xml:lang="en">Constructed or natural wetlands used to improve water quality prior to discharge.</skos:definition>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland"/>
-    <dcterms:format>application/ld+json</dcterms:format>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.rdf"/>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
+    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
+    <skos:notation>2.7.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

@@ -8,21 +8,23 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint">
-        <skos:notation>mint</skos:notation>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
+        <skos:notation>mint</skos:notation>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Vegetables and herbs</skos:prefLabel>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.ttl"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint"/>
@@ -36,7 +38,4 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

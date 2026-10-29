@@ -18,9 +18,52 @@
   },
   "@graph": [
     {
+      "@id": "com:ironsand",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:ironsand.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "ironsand"
+    },
+    {
+      "@id": "com:ironsand.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:ironsand.jsonld"
+        },
+        {
+          "@id": "com:ironsand.rdf"
+        },
+        {
+          "@id": "com:ironsand.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:ironsand.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:ironsand"
+      }
+    },
+    {
       "@id": "com:ironsand.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:ironsand"
+      }
+    },
+    {
+      "@id": "com:ironsand.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:ironsand"
       }
@@ -36,54 +79,11 @@
       }
     },
     {
-      "@id": "com:ironsand.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:ironsand.ttl"
-        },
-        {
-          "@id": "com:ironsand.jsonld"
-        },
-        {
-          "@id": "com:ironsand.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:ironsand.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:ironsand"
-      }
-    },
-    {
-      "@id": "com:ironsand.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:ironsand"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:ironsand",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:ironsand.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "ironsand"
     }
   ]
 }

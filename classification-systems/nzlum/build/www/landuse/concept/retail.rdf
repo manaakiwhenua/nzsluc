@@ -7,17 +7,16 @@
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail">
     <skos:notation>3.3.1</skos:notation>
-    <skos:prefLabel xml:lang="en">Retail</skos:prefLabel>
-    <skos:definition xml:lang="en">Areas used for the sale of goods and services directly to consumers.</skos:definition>
     <skos:example xml:lang="en">Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.</skos:example>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Areas used for the sale of goods and services directly to consumers.</skos:definition>
+    <skos:prefLabel xml:lang="en">Retail</skos:prefLabel>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial">
         <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
         <skos:notation>3.3.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail.html">
         <dcterms:format>text/html</dcterms:format>
@@ -27,6 +26,10 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/retail"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/retail"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -34,9 +37,5 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/retail"/>
     <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/retail.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/retail"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

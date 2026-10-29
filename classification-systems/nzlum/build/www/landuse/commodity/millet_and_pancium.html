@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:millet_and_pancium.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:millet_and_pancium"
-      }
-    },
-    {
       "@id": "com:cereals",
       "skos:member": {
         "@id": "com:millet_and_pancium"
@@ -47,19 +39,20 @@
       "skos:notation": "millet and pancium"
     },
     {
-      "@id": "com:millet_and_pancium.rdf",
+      "@id": "com:millet_and_pancium.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:millet_and_pancium"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:millet_and_pancium.jsonld"
+        },
+        {
+          "@id": "com:millet_and_pancium.rdf"
+        },
+        {
+          "@id": "com:millet_and_pancium.ttl"
+        }
+      ]
     },
     {
       "@id": "com:millet_and_pancium.jsonld",
@@ -70,20 +63,27 @@
       }
     },
     {
-      "@id": "com:millet_and_pancium.html",
+      "@id": "com:millet_and_pancium.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:millet_and_pancium.ttl"
-        },
-        {
-          "@id": "com:millet_and_pancium.jsonld"
-        },
-        {
-          "@id": "com:millet_and_pancium.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:millet_and_pancium"
+      }
+    },
+    {
+      "@id": "com:millet_and_pancium.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:millet_and_pancium"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

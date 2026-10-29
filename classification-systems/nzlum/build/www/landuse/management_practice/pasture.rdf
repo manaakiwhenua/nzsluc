@@ -7,8 +7,13 @@
 >
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture">
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/precision_agriculture">
-        <skos:notation>precision agriculture</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/biodynamic">
+        <skos:notation>biodynamic</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation">
+        <skos:notation>crop pasture rotation</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -17,18 +22,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/biodynamic">
-        <skos:notation>biodynamic</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/precision_agriculture">
+        <skos:notation>precision agriculture</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/organic">
         <skos:notation>organic</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/crop_pasture_rotation">
-        <skos:notation>crop pasture rotation</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
@@ -46,10 +46,6 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Collection>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture"/>
     <dcterms:format>text/turtle</dcterms:format>
@@ -57,5 +53,9 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/pasture"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

@@ -8,29 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:babacos.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:babacos"
-      }
-    },
-    {
-      "@id": "com:babacos.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:babacos"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:babacos",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -47,13 +24,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:babacos.ttl"
-        },
-        {
           "@id": "com:babacos.jsonld"
         },
         {
           "@id": "com:babacos.rdf"
+        },
+        {
+          "@id": "com:babacos.ttl"
         }
       ]
     },
@@ -66,6 +43,22 @@
       }
     },
     {
+      "@id": "com:babacos.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:babacos"
+      }
+    },
+    {
+      "@id": "com:babacos.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:babacos"
+      }
+    },
+    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:babacos"
@@ -73,6 +66,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

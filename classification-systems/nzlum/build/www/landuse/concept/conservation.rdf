@@ -5,65 +5,65 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
+        <skos:notation>1.0.0</skos:notation>
+        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:usageNote xml:lang="en">Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.</skos:usageNote>
+        <skos:scopeNote xml:lang="en">Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.</skos:scopeNote>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+        <skos:definition xml:lang="en">Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).</skos:definition>
+        <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.html"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.1">
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+    <skos:notation>1.1.0</skos:notation>
+  </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
     <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
     <skos:notation>1.4.0</skos:notation>
   </rdf:Description>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation">
-    <skos:inScheme>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
-        <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-      </rdf:Description>
-    </skos:inScheme>
-    <skos:inScheme>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
-        <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-      </rdf:Description>
-    </skos:inScheme>
-    <skos:usageNote xml:lang="en">Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.</skos:usageNote>
-    <skos:notation>1.0.0</skos:notation>
-    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage">
-        <skos:prefLabel xml:lang="en">Cultural and natural heritage</skos:prefLabel>
-        <skos:notation>1.2.0</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
-        <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
-        <skos:notation>1.1.0</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural">
-        <skos:prefLabel xml:lang="en">Minimal use from relatively natural environments</skos:prefLabel>
-        <skos:notation>1.3.0</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:definition xml:lang="en">Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).</skos:definition>
-    <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:prefLabel xml:lang="en">Conservation and Minimal Use</skos:prefLabel>
-    <skos:scopeNote xml:lang="en">Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.</skos:scopeNote>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/conservation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural">
+    <skos:prefLabel xml:lang="en">Minimal use from relatively natural environments</skos:prefLabel>
+    <skos:notation>1.3.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/cultural_natural_heritage">
+    <skos:prefLabel xml:lang="en">Cultural and natural heritage</skos:prefLabel>
+    <skos:notation>1.2.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

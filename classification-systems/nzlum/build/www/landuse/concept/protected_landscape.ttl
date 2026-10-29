@@ -30,8 +30,7 @@ luc:protected_landscape a skos:Concept ;
     dcterms:source "IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape."@en ;
     skos:broader luc:nature_cons ;
     skos:definition "Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.1.6" ;
     skos:prefLabel "Protected landscape"@en ;
     foaf:isPrimaryTopicOf luc:protected_landscape.html ;

@@ -8,12 +8,15 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal">
-        <skos:notation>rye cereal</skos:notation>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
+        <skos:notation>rye cereal</skos:notation>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Cereals</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
   </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal.html">
     <dcterms:format>text/html</dcterms:format>
@@ -36,7 +39,4 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

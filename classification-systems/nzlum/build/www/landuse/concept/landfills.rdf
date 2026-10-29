@@ -6,20 +6,19 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills">
-    <skos:notation>3.8.1</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:definition xml:lang="en">Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.</skos:definition>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
         <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
         <skos:notation>3.8.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:prefLabel xml:lang="en">Landfills</skos:prefLabel>
-    <skos:scopeNote xml:lang="en">Includes all class 1 to 5 landfills</skos:scopeNote>
     <skos:scopeNote xml:lang="en">Landfill gas recovery systems are classified as part of a landfill land use.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Includes all class 1 to 5 landfills</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.8.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Landfills</skos:prefLabel>
     <skos:example>Landfills designed to receive inert construction materials.</skos:example>
+    <skos:definition xml:lang="en">Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.</skos:definition>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills.html">
         <dcterms:format>text/html</dcterms:format>

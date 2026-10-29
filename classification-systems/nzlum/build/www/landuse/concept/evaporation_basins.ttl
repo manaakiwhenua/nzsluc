@@ -28,8 +28,7 @@ luc:mining skos:notation "3.7.0" ;
 luc:evaporation_basins a skos:Concept ;
     skos:broader luc:mining ;
     skos:definition "Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.7.4" ;
     skos:prefLabel "Evaporation basins"@en ;
     foaf:isPrimaryTopicOf luc:evaporation_basins.html .

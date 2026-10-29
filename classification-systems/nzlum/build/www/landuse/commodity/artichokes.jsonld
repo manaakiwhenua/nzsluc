@@ -8,18 +8,29 @@
   },
   "@graph": [
     {
+      "@id": "com:artichokes",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:artichokes.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "artichokes"
+    },
+    {
       "@id": "com:artichokes.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:artichokes.ttl"
-        },
-        {
           "@id": "com:artichokes.jsonld"
         },
         {
           "@id": "com:artichokes.rdf"
+        },
+        {
+          "@id": "com:artichokes.ttl"
         }
       ]
     },
@@ -32,15 +43,12 @@
       }
     },
     {
-      "@id": "com:artichokes",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:artichokes.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "artichokes"
+      "@id": "com:artichokes.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:artichokes"
+      }
     },
     {
       "@id": "com:artichokes.ttl",
@@ -65,14 +73,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:artichokes.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:artichokes"
       }
     }
   ]

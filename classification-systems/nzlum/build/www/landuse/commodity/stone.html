@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:stone.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:stone"
-      }
-    },
-    {
-      "@id": "com:stone.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:stone"
-      }
-    },
-    {
       "@id": "com:mines",
       "skos:member": {
         "@id": "com:stone"
@@ -42,22 +26,6 @@
         "@language": "en",
         "@value": "Mines"
       }
-    },
-    {
-      "@id": "com:stone.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:stone.ttl"
-        },
-        {
-          "@id": "com:stone.jsonld"
-        },
-        {
-          "@id": "com:stone.rdf"
-        }
-      ]
     },
     {
       "@id": "com:stone",
@@ -71,11 +39,20 @@
       "skos:notation": "stone"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:stone.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:stone.jsonld"
+        },
+        {
+          "@id": "com:stone.rdf"
+        },
+        {
+          "@id": "com:stone.ttl"
+        }
+      ]
     },
     {
       "@id": "com:stone.jsonld",
@@ -83,6 +60,29 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:stone"
+      }
+    },
+    {
+      "@id": "com:stone.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:stone"
+      }
+    },
+    {
+      "@id": "com:stone.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:stone"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

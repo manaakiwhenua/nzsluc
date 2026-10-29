@@ -18,40 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:residues_incorporated"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:residues_incorporated.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:residues_incorporated"
-      }
-    },
-    {
-      "@id": "mgmt:residues_incorporated.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:residues_incorporated.ttl"
-        },
-        {
-          "@id": "mgmt:residues_incorporated.jsonld"
-        },
-        {
-          "@id": "mgmt:residues_incorporated.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:management_practices",
       "dcterms:title": {
         "@language": "en",
@@ -59,11 +25,13 @@
       }
     },
     {
-      "@id": "mgmt:residues_incorporated.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "mgmt:crop",
+      "skos:member": {
         "@id": "mgmt:residues_incorporated"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     },
     {
@@ -76,6 +44,38 @@
         "@id": "lus:management_practices"
       },
       "skos:notation": "residues incorporated"
+    },
+    {
+      "@id": "mgmt:residues_incorporated.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:residues_incorporated.jsonld"
+        },
+        {
+          "@id": "mgmt:residues_incorporated.rdf"
+        },
+        {
+          "@id": "mgmt:residues_incorporated.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:residues_incorporated.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_incorporated"
+      }
+    },
+    {
+      "@id": "mgmt:residues_incorporated.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:residues_incorporated"
+      }
     },
     {
       "@id": "mgmt:residues_incorporated.ttl",

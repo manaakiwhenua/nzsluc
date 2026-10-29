@@ -19,13 +19,27 @@
       "skos:notation": "cashews"
     },
     {
-      "@id": "com:nuts",
-      "skos:member": {
+      "@id": "com:cashews.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:cashews.jsonld"
+        },
+        {
+          "@id": "com:cashews.rdf"
+        },
+        {
+          "@id": "com:cashews.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:cashews.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:cashews"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nuts"
       }
     },
     {
@@ -37,21 +51,6 @@
       }
     },
     {
-      "@id": "com:cashews.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cashews"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:cashews.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -60,20 +59,21 @@
       }
     },
     {
-      "@id": "com:cashews.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:cashews.ttl"
-        },
-        {
-          "@id": "com:cashews.jsonld"
-        },
-        {
-          "@id": "com:cashews.rdf"
-        }
-      ]
+      "@id": "com:nuts",
+      "skos:member": {
+        "@id": "com:cashews"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

@@ -28,8 +28,7 @@ luc:minimal_use_relatively_natural skos:notation "1.3.0" ;
 luc:grazing_native_vegetation a skos:Concept ;
     skos:broader luc:minimal_use_relatively_natural ;
     skos:definition "Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.3.3" ;
     skos:prefLabel "Grazing native vegetation"@en ;
     skos:usageNote "This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context."@en ;

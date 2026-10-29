@@ -29,8 +29,7 @@ luc:hospitality a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Land and buildings providing accommodation, food, and beverage services to the public."@en ;
     skos:example "Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.3" ;
     skos:prefLabel "Hospitality"@en ;
     foaf:isPrimaryTopicOf luc:hospitality.html .

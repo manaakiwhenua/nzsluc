@@ -5,41 +5,38 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-  </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries">
     <skos:prefLabel xml:lang="en">Production nurseries</skos:prefLabel>
-    <skos:definition xml:lang="en">Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).</skos:definition>
-    <skos:scopeNote xml:lang="en">These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.</skos:scopeNote>
-    <skos:scopeNote xml:lang="en">Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.</skos:scopeNote>
     <skos:notation>2.5.1</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
         <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
         <skos:notation>2.5.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.html"/>
+    <skos:scopeNote xml:lang="en">Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).</skos:definition>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

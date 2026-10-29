@@ -28,8 +28,7 @@ luc:mining skos:notation "3.7.0" ;
 luc:extractive_industry_not_in_use a skos:Concept ;
     skos:broader luc:mining ;
     skos:definition "Land undergoing rehabilitation after mining activities, and unmined land within a mining permit."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.7.5" ;
     skos:prefLabel "Extractive industry not in use"@en ;
     foaf:isPrimaryTopicOf luc:extractive_industry_not_in_use.html .

@@ -19,6 +19,30 @@
       "skos:notation": "lettuces"
     },
     {
+      "@id": "com:lettuces.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lettuces.jsonld"
+        },
+        {
+          "@id": "com:lettuces.rdf"
+        },
+        {
+          "@id": "com:lettuces.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:lettuces.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:lettuces"
+      }
+    },
+    {
       "@id": "com:lettuces.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -27,20 +51,12 @@
       }
     },
     {
-      "@id": "com:lettuces.html",
+      "@id": "com:lettuces.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lettuces.ttl"
-        },
-        {
-          "@id": "com:lettuces.jsonld"
-        },
-        {
-          "@id": "com:lettuces.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:lettuces"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -53,26 +69,10 @@
       }
     },
     {
-      "@id": "com:lettuces.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:lettuces"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:lettuces.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:lettuces"
       }
     }
   ]

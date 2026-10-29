@@ -15,25 +15,27 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Oilseeds</skos:prefLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.rdf"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/canola"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

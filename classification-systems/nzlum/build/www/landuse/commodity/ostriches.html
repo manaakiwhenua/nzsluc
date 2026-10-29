@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:ostriches.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:ostriches"
-      }
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:ostriches"
@@ -51,11 +43,20 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:ostriches.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:ostriches.jsonld"
+        },
+        {
+          "@id": "com:ostriches.rdf"
+        },
+        {
+          "@id": "com:ostriches.ttl"
+        }
+      ]
     },
     {
       "@id": "com:ostriches.jsonld",
@@ -74,20 +75,19 @@
       }
     },
     {
-      "@id": "com:ostriches.html",
+      "@id": "com:ostriches.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:ostriches.ttl"
-        },
-        {
-          "@id": "com:ostriches.jsonld"
-        },
-        {
-          "@id": "com:ostriches.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:ostriches"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

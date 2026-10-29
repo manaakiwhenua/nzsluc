@@ -28,8 +28,7 @@ luc:cultural_natural_heritage skos:notation "1.2.0" ;
 luc:cultural_heritage a skos:Concept ;
     skos:broader luc:cultural_natural_heritage ;
     skos:definition "Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.2.2" ;
     skos:prefLabel "Cultural heritage"@en ;
     foaf:isPrimaryTopicOf luc:cultural_heritage.html .

@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:adms="http://www.w3.org/ns/adms#"
 >
-  <rdfs:Resource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft">
-    <rdfs:label xml:lang="en">Draft</rdfs:label>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft.rdf"/>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.1">
+    <adms:status>
+      <rdfs:Resource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft">
+        <rdfs:label xml:lang="en">Draft</rdfs:label>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft.html"/>
+      </rdfs:Resource>
+    </adms:status>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
+        <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </rdfs:Resource>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/status/draft.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/status/draft"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
 </rdf:RDF>

@@ -2,77 +2,72 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+    <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+    <skos:notation>3.0.0</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
+        <lu:colour>#D0D2DF</lu:colour>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/food_processing_factory"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/major_industrial_complex"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/general_purpose_factory"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/abattoirs"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure"/>
+        <skos:definition xml:lang="en">Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.</skos:definition>
+        <skos:notation>3.4.0</skos:notation>
+        <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure">
+    <skos:prefLabel xml:lang="en">Farm buildings/infrastructure</skos:prefLabel>
+    <skos:notation>3.4.5</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.rdf"/>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/food_processing_factory">
+    <skos:prefLabel xml:lang="en">Food processing factory</skos:prefLabel>
+    <skos:notation>3.4.2</skos:notation>
+  </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abattoirs">
     <skos:prefLabel xml:lang="en">Abattoirs</skos:prefLabel>
     <skos:notation>3.4.6</skos:notation>
   </rdf:Description>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
-        <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
-        <skos:notation>3.0.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:notation>3.4.0</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:definition xml:lang="en">Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.</skos:definition>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/general_purpose_factory">
-        <skos:prefLabel xml:lang="en">General purpose factory</skos:prefLabel>
-        <skos:notation>3.4.1</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/food_processing_factory">
-        <skos:prefLabel xml:lang="en">Food processing factory</skos:prefLabel>
-        <skos:notation>3.4.2</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/major_industrial_complex">
-        <skos:prefLabel xml:lang="en">Major industrial complex</skos:prefLabel>
-        <skos:notation>3.4.3</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/farm_buildings_infrastructure">
-        <skos:prefLabel xml:lang="en">Farm buildings/infrastructure</skos:prefLabel>
-        <skos:notation>3.4.5</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/abattoirs"/>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill">
-        <skos:prefLabel xml:lang="en">Sawmill</skos:prefLabel>
-        <skos:notation>3.4.4</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
-    <lu:colour>#D0D2DF</lu:colour>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill">
+    <skos:prefLabel xml:lang="en">Sawmill</skos:prefLabel>
+    <skos:notation>3.4.4</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/major_industrial_complex">
+    <skos:prefLabel xml:lang="en">Major industrial complex</skos:prefLabel>
+    <skos:notation>3.4.3</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/general_purpose_factory">
+    <skos:prefLabel xml:lang="en">General purpose factory</skos:prefLabel>
+    <skos:notation>3.4.1</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

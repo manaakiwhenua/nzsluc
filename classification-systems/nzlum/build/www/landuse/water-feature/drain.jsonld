@@ -9,20 +9,11 @@
   },
   "@graph": [
     {
-      "@id": "wtr:drain.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:drain.ttl"
-        },
-        {
-          "@id": "wtr:drain.jsonld"
-        },
-        {
-          "@id": "wtr:drain.rdf"
-        }
-      ]
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
     },
     {
       "@id": "wtr:drain",
@@ -37,12 +28,20 @@
       "skos:notation": "drain"
     },
     {
-      "@id": "wtr:drain.ttl",
+      "@id": "wtr:drain.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:drain"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:drain.jsonld"
+        },
+        {
+          "@id": "wtr:drain.rdf"
+        },
+        {
+          "@id": "wtr:drain.ttl"
+        }
+      ]
     },
     {
       "@id": "wtr:drain.jsonld",
@@ -53,16 +52,17 @@
       }
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
-    },
-    {
       "@id": "wtr:drain.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "wtr:drain"
+      }
+    },
+    {
+      "@id": "wtr:drain.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "wtr:drain"
       }

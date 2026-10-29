@@ -4,6 +4,10 @@
 @prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+lus:nzlum0.3.0 skos:hasTopConcept luc:conservation .
+
+lus:nzlum0.4.1 skos:hasTopConcept luc:conservation .
+
 luc:conservation.html a foaf:Document ;
     dcterms:format "text/html" ;
     dcterms:hasFormat luc:conservation.jsonld,
@@ -34,14 +38,11 @@ luc:nature_cons skos:notation "1.1.0" ;
 luc:unused_and_transitioning skos:notation "1.4.0" ;
     skos:prefLabel "Unused and transitioning land"@en .
 
-lus:nzlum0.3.0 skos:hasTopConcept luc:conservation .
-
 lus:nzlum0.4.0 skos:hasTopConcept luc:conservation .
 
 luc:conservation a skos:Concept ;
     skos:definition "Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:cultural_natural_heritage,
         luc:minimal_use_relatively_natural,
         luc:nature_cons,

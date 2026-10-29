@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:bitter_melon.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:bitter_melon.ttl"
-        },
-        {
-          "@id": "com:bitter_melon.jsonld"
-        },
-        {
-          "@id": "com:bitter_melon.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:bitter_melon.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:bitter_melon"
-      }
-    },
-    {
       "@id": "com:bitter_melon",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -43,9 +19,41 @@
       "skos:notation": "bitter melon"
     },
     {
+      "@id": "com:bitter_melon.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:bitter_melon.jsonld"
+        },
+        {
+          "@id": "com:bitter_melon.rdf"
+        },
+        {
+          "@id": "com:bitter_melon.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:bitter_melon.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:bitter_melon"
+      }
+    },
+    {
+      "@id": "com:bitter_melon.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:bitter_melon"
+      }
+    },
+    {
+      "@id": "com:bitter_melon.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:bitter_melon"
       }
@@ -58,14 +66,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:bitter_melon.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:bitter_melon"
       }
     },
     {

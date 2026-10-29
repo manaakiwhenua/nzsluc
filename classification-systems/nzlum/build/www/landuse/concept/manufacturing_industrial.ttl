@@ -47,8 +47,7 @@ luc:sawmill skos:notation "3.4.4" ;
 luc:manufacturing_industrial a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:abattoirs,
         luc:farm_buildings_infrastructure,
         luc:food_processing_factory,

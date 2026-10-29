@@ -5,120 +5,31 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals">
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/deer">
-        <skos:notation>deer</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crocodiles">
-        <skos:notation>crocodiles</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens_eggs">
-        <skos:notation>chickens eggs</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_stud">
-        <skos:notation>goats stud</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/geese">
-        <skos:notation>geese</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ostriches">
-        <skos:notation>ostriches</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_dairy">
-        <skos:notation>goats dairy</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens_meat">
-        <skos:notation>chickens meat</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_stud">
-        <skos:notation>cattle stud</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_wool">
-        <skos:notation>sheep wool</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_stud">
-        <skos:notation>sheep stud</skos:notation>
-      </rdf:Description>
-    </skos:member>
     <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_wool">
         <skos:notation>goats wool</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_meat">
-        <skos:notation>cattle meat</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_dairy">
-        <skos:notation>sheep dairy</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pigs">
-        <skos:notation>pigs</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle">
-        <skos:notation>cattle</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/finfish">
-        <skos:notation>finfish</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/horses">
-        <skos:notation>horses</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cats">
-        <skos:notation>cats</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_dairy">
-        <skos:notation>cattle dairy</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens">
-        <skos:notation>chickens</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/emus">
-        <skos:notation>emus</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats">
-        <skos:notation>goats</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -127,18 +38,23 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_dairy">
+        <skos:notation>cattle dairy</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat">
         <skos:notation>sheep meat</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crustaceans">
-        <skos:notation>crustaceans</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens_eggs">
+        <skos:notation>chickens eggs</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/molluscs">
-        <skos:notation>molluscs</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_meat">
+        <skos:notation>cattle meat</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -147,8 +63,18 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_meat">
-        <skos:notation>goats meat</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle">
+        <skos:notation>cattle</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/deer">
+        <skos:notation>deer</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/horses">
+        <skos:notation>horses</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -157,8 +83,38 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_stud">
+        <skos:notation>sheep stud</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ducks">
         <skos:notation>ducks</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/geese">
+        <skos:notation>geese</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_wool">
+        <skos:notation>sheep wool</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/molluscs">
+        <skos:notation>molluscs</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_meat">
+        <skos:notation>goats meat</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ostriches">
+        <skos:notation>ostriches</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -166,31 +122,77 @@
         <skos:notation>turkeys</skos:notation>
       </rdf:Description>
     </skos:member>
-    <skos:prefLabel xml:lang="en">Animals</skos:prefLabel>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cats">
+        <skos:notation>cats</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens_meat">
+        <skos:notation>chickens meat</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/finfish">
+        <skos:notation>finfish</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_dairy">
+        <skos:notation>sheep dairy</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chickens">
+        <skos:notation>chickens</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_dairy">
+        <skos:notation>goats dairy</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats">
+        <skos:notation>goats</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/emus">
+        <skos:notation>emus</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pigs">
+        <skos:notation>pigs</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/goats_stud">
+        <skos:notation>goats stud</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crustaceans">
+        <skos:notation>crustaceans</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crocodiles">
+        <skos:notation>crocodiles</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cattle_stud">
+        <skos:notation>cattle stud</skos:notation>
+      </rdf:Description>
+    </skos:member>
     <skos:inScheme>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
         <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
       </rdf:Description>
     </skos:inScheme>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
+    <skos:prefLabel xml:lang="en">Animals</skos:prefLabel>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.html"/>
   </skos:Collection>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
 </rdf:RDF>

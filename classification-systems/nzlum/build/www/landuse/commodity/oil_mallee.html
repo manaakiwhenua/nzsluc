@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:oil_mallee.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oil_mallee"
-      }
-    },
-    {
-      "@id": "com:oil_mallee.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:oil_mallee"
-      }
-    },
-    {
-      "@id": "com:oil_mallee.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:oil_mallee.ttl"
-        },
-        {
-          "@id": "com:oil_mallee.jsonld"
-        },
-        {
-          "@id": "com:oil_mallee.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:forest",
       "skos:member": {
         "@id": "com:oil_mallee"
@@ -57,13 +25,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Forest"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     },
     {
@@ -78,11 +39,50 @@
       "skos:notation": "oil mallee"
     },
     {
+      "@id": "com:oil_mallee.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:oil_mallee.jsonld"
+        },
+        {
+          "@id": "com:oil_mallee.rdf"
+        },
+        {
+          "@id": "com:oil_mallee.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:oil_mallee.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_mallee"
+      }
+    },
+    {
+      "@id": "com:oil_mallee.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oil_mallee"
+      }
+    },
+    {
       "@id": "com:oil_mallee.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:oil_mallee"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

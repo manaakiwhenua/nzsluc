@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition">
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:broader>
@@ -34,25 +55,6 @@
     </skos:narrower>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.html"/>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_land_transition"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
 </rdf:RDF>

@@ -8,6 +8,51 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:limes"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:limes",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:limes.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "limes"
+    },
+    {
+      "@id": "com:limes.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:limes.jsonld"
+        },
+        {
+          "@id": "com:limes.rdf"
+        },
+        {
+          "@id": "com:limes.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:limes.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:limes"
+      }
+    },
+    {
       "@id": "com:limes.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -24,55 +69,10 @@
       }
     },
     {
-      "@id": "com:limes.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:limes.ttl"
-        },
-        {
-          "@id": "com:limes.jsonld"
-        },
-        {
-          "@id": "com:limes.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:limes.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:limes"
-      }
-    },
-    {
-      "@id": "com:limes",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:limes.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "limes"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:limes"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     }
   ]

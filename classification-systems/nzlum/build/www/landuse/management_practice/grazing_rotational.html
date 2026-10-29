@@ -18,6 +18,23 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:grazing",
+      "skos:member": {
+        "@id": "mgmt:grazing_rotational"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Grazing"
+      }
+    },
+    {
       "@id": "mgmt:grazing_rotational",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -46,33 +63,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:grazing_rotational.ttl"
-        },
-        {
           "@id": "mgmt:grazing_rotational.jsonld"
         },
         {
           "@id": "mgmt:grazing_rotational.rdf"
+        },
+        {
+          "@id": "mgmt:grazing_rotational.ttl"
         }
       ]
-    },
-    {
-      "@id": "mgmt:grazing_rotational.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:grazing_rotational"
-      }
-    },
-    {
-      "@id": "mgmt:grazing",
-      "skos:member": {
-        "@id": "mgmt:grazing_rotational"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Grazing"
-      }
     },
     {
       "@id": "mgmt:grazing_rotational.jsonld",
@@ -83,10 +82,11 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
+      "@id": "mgmt:grazing_rotational.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing_rotational"
       }
     },
     {

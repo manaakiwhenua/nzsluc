@@ -8,18 +8,17 @@
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res">
     <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve.</dcterms:source>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring.</skos:definition>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
         <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
         <skos:notation>1.1.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:notation>1.1.1</skos:notation>
-    <skos:definition xml:lang="en">Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring.</skos:definition>
-    <skos:prefLabel xml:lang="en">Strict nature reserve</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <lu:colour>#5E3A98</lu:colour>
+    <skos:prefLabel xml:lang="en">Strict nature reserve</skos:prefLabel>
+    <skos:notation>1.1.1</skos:notation>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res.html">
         <dcterms:format>text/html</dcterms:format>
@@ -29,13 +28,13 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/strict_nature_res"/>

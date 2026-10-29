@@ -8,13 +8,20 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute">
-        <skos:notation>jute</skos:notation>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
+        <skos:notation>jute</skos:notation>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Crop</skos:prefLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -23,12 +30,7 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.jsonld"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute"/>
@@ -36,7 +38,4 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

@@ -28,8 +28,7 @@ luc:transport skos:notation "3.6.0" ;
 luc:roads a skos:Concept ;
     skos:broader luc:transport ;
     skos:definition "The full roading corridor, including sealed road areas and unsealed roadside strips."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.6.2" ;
     skos:prefLabel "Roads"@en ;
     foaf:isPrimaryTopicOf luc:roads.html .

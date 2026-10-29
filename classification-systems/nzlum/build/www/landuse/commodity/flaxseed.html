@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:flaxseed.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:flaxseed"
-      }
-    },
-    {
       "@id": "com:flaxseed",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -37,10 +29,35 @@
       "skos:notation": "flaxseed"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:flaxseed.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:flaxseed.jsonld"
+        },
+        {
+          "@id": "com:flaxseed.rdf"
+        },
+        {
+          "@id": "com:flaxseed.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:flaxseed.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:flaxseed"
+      }
+    },
+    {
+      "@id": "com:flaxseed.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:flaxseed"
       }
     },
     {
@@ -62,28 +79,11 @@
       }
     },
     {
-      "@id": "com:flaxseed.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:flaxseed"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:flaxseed.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:flaxseed.ttl"
-        },
-        {
-          "@id": "com:flaxseed.jsonld"
-        },
-        {
-          "@id": "com:flaxseed.rdf"
-        }
-      ]
     }
   ]
 }

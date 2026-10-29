@@ -29,8 +29,7 @@ luc:brownfield_development a skos:Concept ;
     skos:broader luc:vacant_transitioning_land_urban ;
     skos:changeNote "Notation changed from 3.9.3 to 3.9.1 at v0.4.0" ;
     skos:definition "Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.9.1" ;
     skos:prefLabel "Brownfield development"@en ;
     skos:scopeNote "May include residential areas undergoing infill development that increase housing density."@en ;

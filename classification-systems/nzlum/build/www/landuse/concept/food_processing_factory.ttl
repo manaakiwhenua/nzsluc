@@ -29,8 +29,7 @@ luc:food_processing_factory a skos:Concept ;
     skos:broader luc:manufacturing_industrial ;
     skos:definition "An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included."@en ;
     skos:example "Cannery; milk production plant." ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.4.2" ;
     skos:prefLabel "Food processing factory"@en ;
     foaf:isPrimaryTopicOf luc:food_processing_factory.html .

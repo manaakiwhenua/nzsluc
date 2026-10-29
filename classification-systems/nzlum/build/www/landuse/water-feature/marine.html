@@ -19,20 +19,11 @@
   },
   "@graph": [
     {
-      "@id": "wtr:marine.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:marine.ttl"
-        },
-        {
-          "@id": "wtr:marine.jsonld"
-        },
-        {
-          "@id": "wtr:marine.rdf"
-        }
-      ]
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
     },
     {
       "@id": "wtr:marine",
@@ -47,12 +38,20 @@
       "skos:notation": "marine"
     },
     {
-      "@id": "wtr:marine.rdf",
+      "@id": "wtr:marine.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "wtr:marine"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:marine.jsonld"
+        },
+        {
+          "@id": "wtr:marine.rdf"
+        },
+        {
+          "@id": "wtr:marine.ttl"
+        }
+      ]
     },
     {
       "@id": "wtr:marine.jsonld",
@@ -63,18 +62,19 @@
       }
     },
     {
-      "@id": "wtr:marine.ttl",
+      "@id": "wtr:marine.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "wtr:marine"
       }
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
+      "@id": "wtr:marine.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:marine"
       }
     }
   ]

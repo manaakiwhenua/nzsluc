@@ -2,45 +2,43 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy">
+    <skos:scopeNote xml:lang="en">Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.</skos:scopeNote>
+    <skos:scopeNote xml:lang="en">Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.</skos:scopeNote>
+    <skos:notation>2.2.1</skos:notation>
+    <skos:prefLabel xml:lang="en">Dairy</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.</skos:definition>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
+        <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
+        <skos:notation>2.2.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <lu:colour>#8D7735</lu:colour>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy">
-        <skos:definition xml:lang="en">Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.</skos:definition>
-        <skos:scopeNote xml:lang="en">Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.</skos:scopeNote>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:notation>2.2.1</skos:notation>
-        <lu:colour>#8D7735</lu:colour>
-        <skos:prefLabel xml:lang="en">Dairy</skos:prefLabel>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.ttl"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
-    <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
-    <skos:notation>2.2.0</skos:notation>
-  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/dairy"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

@@ -18,30 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:coriander.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:coriander"
-      }
-    },
-    {
-      "@id": "com:coriander.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:coriander.ttl"
-        },
-        {
-          "@id": "com:coriander.jsonld"
-        },
-        {
-          "@id": "com:coriander.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:coriander",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -53,14 +29,20 @@
       "skos:notation": "coriander"
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:coriander"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
+      "@id": "com:coriander.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:coriander.jsonld"
+        },
+        {
+          "@id": "com:coriander.rdf"
+        },
+        {
+          "@id": "com:coriander.ttl"
+        }
+      ]
     },
     {
       "@id": "com:coriander.jsonld",
@@ -71,11 +53,29 @@
       }
     },
     {
+      "@id": "com:coriander.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:coriander"
+      }
+    },
+    {
       "@id": "com:coriander.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:coriander"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:coriander"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {

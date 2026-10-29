@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:tea_tree.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:tea_tree"
-      }
-    },
-    {
-      "@id": "com:tea_tree.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:tea_tree"
-      }
-    },
-    {
       "@id": "com:forest",
       "skos:member": {
         "@id": "com:tea_tree"
@@ -31,37 +15,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Forest"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:tea_tree.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:tea_tree.ttl"
-        },
-        {
-          "@id": "com:tea_tree.jsonld"
-        },
-        {
-          "@id": "com:tea_tree.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:tea_tree.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:tea_tree"
       }
     },
     {
@@ -74,6 +27,53 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "tea tree"
+    },
+    {
+      "@id": "com:tea_tree.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:tea_tree.jsonld"
+        },
+        {
+          "@id": "com:tea_tree.rdf"
+        },
+        {
+          "@id": "com:tea_tree.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:tea_tree.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:tea_tree"
+      }
+    },
+    {
+      "@id": "com:tea_tree.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:tea_tree"
+      }
+    },
+    {
+      "@id": "com:tea_tree.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:tea_tree"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

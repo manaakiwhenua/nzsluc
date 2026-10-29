@@ -9,6 +9,14 @@
   },
   "@graph": [
     {
+      "@id": "luc:brownfield_development",
+      "skos:notation": "3.9.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brownfield development"
+      }
+    },
+    {
       "@id": "luc:built_environment",
       "skos:notation": "3.0.0",
       "skos:prefLabel": {
@@ -33,22 +41,6 @@
       }
     },
     {
-      "@id": "luc:vacant_transitioning_land_urban.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:vacant_transitioning_land_urban.ttl"
-        },
-        {
-          "@id": "luc:vacant_transitioning_land_urban.jsonld"
-        },
-        {
-          "@id": "luc:vacant_transitioning_land_urban.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:vacant_transitioning_land_urban",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -62,29 +54,48 @@
         "@language": "en",
         "@value": "This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
           "@id": "luc:brownfield_development"
         },
         {
-          "@id": "luc:vacant_land"
+          "@id": "luc:greenfield_development"
         },
         {
-          "@id": "luc:greenfield_development"
+          "@id": "luc:vacant_land"
         }
       ],
       "skos:notation": "3.9.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Vacant and transitioning land"
+      }
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:vacant_transitioning_land_urban.jsonld"
+        },
+        {
+          "@id": "luc:vacant_transitioning_land_urban.rdf"
+        },
+        {
+          "@id": "luc:vacant_transitioning_land_urban.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:vacant_transitioning_land_urban.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_transitioning_land_urban"
       }
     },
     {
@@ -99,22 +110,6 @@
       "@id": "luc:vacant_transitioning_land_urban.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:vacant_transitioning_land_urban"
-      }
-    },
-    {
-      "@id": "luc:brownfield_development",
-      "skos:notation": "3.9.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Brownfield development"
-      }
-    },
-    {
-      "@id": "luc:vacant_transitioning_land_urban.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:vacant_transitioning_land_urban"
       }

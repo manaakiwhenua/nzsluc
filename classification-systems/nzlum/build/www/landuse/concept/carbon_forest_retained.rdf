@@ -5,14 +5,22 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.ttl">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained">
+        <skos:prefLabel xml:lang="en">Carbon forest</skos:prefLabel>
+        <skos:definition xml:lang="en">Retained (non-planted) indigenous vegetation set aside for carbon credits.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural"/>
+        <skos:notation>1.3.8</skos:notation>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.ttl"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained"/>
@@ -26,18 +34,8 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained">
-    <skos:definition xml:lang="en">Retained (non-planted) indigenous vegetation set aside for carbon credits.</skos:definition>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural">
-        <skos:prefLabel xml:lang="en">Minimal use from relatively natural environments</skos:prefLabel>
-        <skos:notation>1.3.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:prefLabel xml:lang="en">Carbon forest</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:notation>1.3.8</skos:notation>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/carbon_forest_retained.html"/>
-  </skos:Concept>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/minimal_use_relatively_natural">
+    <skos:prefLabel xml:lang="en">Minimal use from relatively natural environments</skos:prefLabel>
+    <skos:notation>1.3.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

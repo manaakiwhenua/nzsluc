@@ -29,14 +29,20 @@
       "skos:notation": "bauxite"
     },
     {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:bauxite"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
+      "@id": "com:bauxite.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:bauxite.jsonld"
+        },
+        {
+          "@id": "com:bauxite.rdf"
+        },
+        {
+          "@id": "com:bauxite.ttl"
+        }
+      ]
     },
     {
       "@id": "com:bauxite.jsonld",
@@ -47,20 +53,12 @@
       }
     },
     {
-      "@id": "com:bauxite.html",
+      "@id": "com:bauxite.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:bauxite.ttl"
-        },
-        {
-          "@id": "com:bauxite.jsonld"
-        },
-        {
-          "@id": "com:bauxite.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:bauxite"
+      }
     },
     {
       "@id": "com:bauxite.ttl",
@@ -71,18 +69,20 @@
       }
     },
     {
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:bauxite"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:bauxite.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:bauxite"
       }
     }
   ]

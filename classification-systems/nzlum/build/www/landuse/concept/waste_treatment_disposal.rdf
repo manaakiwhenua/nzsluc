@@ -2,66 +2,70 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.rdf">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/municipal_wastewater"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transfer_stations_recycling"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application"/>
-        <skos:definition xml:lang="en">Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.</skos:definition>
-        <lu:colour>#E77148</lu:colour>
-        <skos:notation>3.8.0</skos:notation>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
-        <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills">
-    <skos:prefLabel xml:lang="en">Landfills</skos:prefLabel>
-    <skos:notation>3.8.1</skos:notation>
-  </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transfer_stations_recycling">
-    <skos:prefLabel xml:lang="en">Transfer stations and recycling facilities</skos:prefLabel>
-    <skos:notation>3.8.2</skos:notation>
-  </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
     <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
     <skos:notation>3.0.0</skos:notation>
   </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.rdf"/>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application">
+        <skos:prefLabel xml:lang="en">Wastewater treatment – land application</skos:prefLabel>
+        <skos:notation>3.8.4</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transfer_stations_recycling">
+        <skos:prefLabel xml:lang="en">Transfer stations and recycling facilities</skos:prefLabel>
+        <skos:notation>3.8.2</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/landfills">
+        <skos:prefLabel xml:lang="en">Landfills</skos:prefLabel>
+        <skos:notation>3.8.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management">
+        <skos:prefLabel xml:lang="en">Stormwater management</skos:prefLabel>
+        <skos:notation>3.8.5</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/municipal_wastewater">
+        <skos:prefLabel xml:lang="en">Municipal wastewater</skos:prefLabel>
+        <skos:notation>3.8.3</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:definition xml:lang="en">Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.</skos:definition>
+    <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
+    <lu:colour>#E77148</lu:colour>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>3.8.0</skos:notation>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/municipal_wastewater">
-    <skos:prefLabel xml:lang="en">Municipal wastewater</skos:prefLabel>
-    <skos:notation>3.8.3</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management">
-    <skos:prefLabel xml:lang="en">Stormwater management</skos:prefLabel>
-    <skos:notation>3.8.5</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/wastewater_treatment_land_application">
-    <skos:prefLabel xml:lang="en">Wastewater treatment – land application</skos:prefLabel>
-    <skos:notation>3.8.4</skos:notation>
-  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

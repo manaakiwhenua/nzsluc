@@ -28,8 +28,7 @@ luc:vacant_transitioning_land_urban skos:notation "3.9.0" ;
 luc:greenfield_development a skos:Concept ;
     skos:broader luc:vacant_transitioning_land_urban ;
     skos:definition "Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.9.2" ;
     skos:prefLabel "Greenfield development"@en ;
     foaf:isPrimaryTopicOf luc:greenfield_development.html .

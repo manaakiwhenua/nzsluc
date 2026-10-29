@@ -28,8 +28,7 @@ luc:transport skos:notation "3.6.0" ;
 luc:airports_aerodromes a skos:Concept ;
     skos:broader luc:transport ;
     skos:definition "Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.6.1" ;
     skos:prefLabel "Airports/aerodromes"@en ;
     foaf:isPrimaryTopicOf luc:airports_aerodromes.html .

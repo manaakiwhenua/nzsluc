@@ -2,44 +2,41 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
+        <skos:notation>3.2.2</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <lu:colour>#958273</lu:colour>
+        <skos:definition xml:lang="en">Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.</skos:definition>
+        <skos:prefLabel xml:lang="en">Indoor recreation</skos:prefLabel>
+        <skos:example xml:lang="en">Sports centres, gyms, swimming pools, indoor arenas.</skos:example>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.rdf"/>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services">
     <skos:prefLabel xml:lang="en">Public recreation and services</skos:prefLabel>
     <skos:notation>3.2.0</skos:notation>
   </rdf:Description>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation">
-    <skos:definition xml:lang="en">Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.</skos:definition>
-    <skos:notation>3.2.2</skos:notation>
-    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
-    <skos:example xml:lang="en">Sports centres, gyms, swimming pools, indoor arenas.</skos:example>
-    <skos:prefLabel xml:lang="en">Indoor recreation</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <lu:colour>#958273</lu:colour>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/indoor_recreation.html"/>
-  </skos:Concept>
 </rdf:RDF>

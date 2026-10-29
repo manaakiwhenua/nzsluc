@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:quinces"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
       "@id": "com:quinces",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -19,43 +29,20 @@
       "skos:notation": "quinces"
     },
     {
-      "@id": "com:quinces.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:quinces"
-      }
-    },
-    {
       "@id": "com:quinces.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:quinces.ttl"
-        },
-        {
           "@id": "com:quinces.jsonld"
         },
         {
           "@id": "com:quinces.rdf"
+        },
+        {
+          "@id": "com:quinces.ttl"
         }
       ]
-    },
-    {
-      "@id": "com:quinces.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:quinces"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     },
     {
       "@id": "com:quinces.jsonld",
@@ -66,13 +53,26 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:quinces.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:quinces"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "com:quinces.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:quinces"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

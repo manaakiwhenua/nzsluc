@@ -29,8 +29,7 @@ luc:major_industrial_complex a skos:Concept ;
     skos:broader luc:manufacturing_industrial ;
     skos:definition "An area with large-scale industrial use and significant infrastructure ."@en ;
     skos:example "Car plant, paper mill."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.4.3" ;
     skos:prefLabel "Major industrial complex"@en ;
     foaf:isPrimaryTopicOf luc:major_industrial_complex.html .

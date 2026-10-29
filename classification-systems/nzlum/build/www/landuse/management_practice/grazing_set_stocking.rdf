@@ -2,8 +2,8 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing">
     <skos:member>
@@ -15,6 +15,10 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Grazing</skos:prefLabel>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking"/>
     <dcterms:format>text/turtle</dcterms:format>
@@ -22,12 +26,7 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.ttl"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.jsonld"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/grazing_set_stocking"/>

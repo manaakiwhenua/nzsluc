@@ -18,6 +18,33 @@
   },
   "@graph": [
     {
+      "@id": "com:blackberries",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:blackberries.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "blackberries"
+    },
+    {
+      "@id": "com:blackberries.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:blackberries.jsonld"
+        },
+        {
+          "@id": "com:blackberries.rdf"
+        },
+        {
+          "@id": "com:blackberries.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:blackberries.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -26,34 +53,11 @@
       }
     },
     {
-      "@id": "com:blackberries.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:blackberries.ttl"
-        },
-        {
-          "@id": "com:blackberries.jsonld"
-        },
-        {
-          "@id": "com:blackberries.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:blackberries.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:blackberries"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     },
     {
@@ -75,15 +79,11 @@
       }
     },
     {
-      "@id": "com:blackberries",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:blackberries.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "blackberries"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

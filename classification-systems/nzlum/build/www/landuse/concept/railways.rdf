@@ -5,31 +5,27 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.ttl">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.rdf">
     <foaf:primaryTopic>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.</skos:definition>
         <skos:prefLabel xml:lang="en">Railways</skos:prefLabel>
         <skos:notation>3.6.3</skos:notation>
-        <skos:definition xml:lang="en">Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.</skos:definition>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.html"/>
       </skos:Concept>
     </foaf:primaryTopic>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport">
-    <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
-    <skos:notation>3.6.0</skos:notation>
-  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways"/>
@@ -38,4 +34,8 @@
     </dcterms:hasFormat>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/railways.rdf"/>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport">
+    <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
+    <skos:notation>3.6.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

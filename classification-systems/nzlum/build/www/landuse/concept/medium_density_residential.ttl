@@ -30,8 +30,7 @@ luc:medium_density_residential a skos:Concept ;
     skos:broader luc:residential ;
     skos:definition "Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings."@en ;
     skos:example "Townhouses, terraced housing, low-rise apartments."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.1.2" ;
     skos:prefLabel "Medium-density residential"@en ;
     skos:scopeNote "Alignment to the Medium Density Residential Standards (MfE 2022) should be considered."@en ;

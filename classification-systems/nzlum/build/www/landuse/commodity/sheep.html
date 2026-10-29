@@ -28,17 +28,40 @@
       }
     },
     {
-      "@id": "com:sheep.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep"
+      "@id": "com:sheep",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:sheep.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "sheep",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Specify meat, dairy, stud or wool where appropriate."
       }
     },
     {
-      "@id": "com:sheep.ttl",
+      "@id": "com:sheep.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sheep.jsonld"
+        },
+        {
+          "@id": "com:sheep.rdf"
+        },
+        {
+          "@id": "com:sheep.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:sheep.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:sheep"
       }
@@ -52,41 +75,18 @@
       }
     },
     {
-      "@id": "com:sheep.html",
+      "@id": "com:sheep.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sheep.ttl"
-        },
-        {
-          "@id": "com:sheep.jsonld"
-        },
-        {
-          "@id": "com:sheep.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sheep"
+      }
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sheep",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:sheep.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "sheep",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Specify meat, dairy, stud or wool where appropriate."
       }
     }
   ]

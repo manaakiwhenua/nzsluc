@@ -28,8 +28,7 @@ luc:short_rotation_seasonal_cropping skos:notation "2.3.0" ;
 luc:arable_cropping a skos:Concept ;
     skos:broader luc:short_rotation_seasonal_cropping ;
     skos:definition "Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.3.1" ;
     skos:prefLabel "Arable cropping"@en ;
     skos:usageNote "The specific commodity or commodities should be noted if known."@en ;

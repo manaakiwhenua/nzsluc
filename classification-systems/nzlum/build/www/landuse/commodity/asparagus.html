@@ -29,38 +29,20 @@
       "skos:notation": "asparagus"
     },
     {
-      "@id": "com:asparagus.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:asparagus"
-      }
-    },
-    {
       "@id": "com:asparagus.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:asparagus.ttl"
-        },
-        {
           "@id": "com:asparagus.jsonld"
         },
         {
           "@id": "com:asparagus.rdf"
+        },
+        {
+          "@id": "com:asparagus.ttl"
         }
       ]
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:asparagus"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
     },
     {
       "@id": "com:asparagus.jsonld",
@@ -71,11 +53,29 @@
       }
     },
     {
+      "@id": "com:asparagus.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:asparagus"
+      }
+    },
+    {
       "@id": "com:asparagus.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:asparagus"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:asparagus"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
       }
     },
     {

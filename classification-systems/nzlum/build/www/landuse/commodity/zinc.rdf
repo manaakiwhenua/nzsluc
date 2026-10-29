@@ -15,6 +15,9 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Mines</skos:prefLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
+    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zinc.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -36,7 +39,4 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
-    <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

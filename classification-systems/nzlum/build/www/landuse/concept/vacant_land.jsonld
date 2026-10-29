@@ -21,14 +21,9 @@
         "@language": "en",
         "@value": "Derelict land and developed land that is idle."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.9.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -36,11 +31,35 @@
       }
     },
     {
-      "@id": "luc:vacant_transitioning_land_urban",
-      "skos:notation": "3.9.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
+      "@id": "luc:vacant_land.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:vacant_land.jsonld"
+        },
+        {
+          "@id": "luc:vacant_land.rdf"
+        },
+        {
+          "@id": "luc:vacant_land.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:vacant_land.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_land"
+      }
+    },
+    {
+      "@id": "luc:vacant_land.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:vacant_land"
       }
     },
     {
@@ -52,35 +71,11 @@
       }
     },
     {
-      "@id": "luc:vacant_land.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:vacant_land.ttl"
-        },
-        {
-          "@id": "luc:vacant_land.jsonld"
-        },
-        {
-          "@id": "luc:vacant_land.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:vacant_land.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:vacant_land"
-      }
-    },
-    {
-      "@id": "luc:vacant_land.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:vacant_land"
+      "@id": "luc:vacant_transitioning_land_urban",
+      "skos:notation": "3.9.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
       }
     }
   ]

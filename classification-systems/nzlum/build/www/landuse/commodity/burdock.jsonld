@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:burdock.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:burdock.ttl"
-        },
-        {
-          "@id": "com:burdock.jsonld"
-        },
-        {
-          "@id": "com:burdock.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:burdock.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:burdock"
-      }
-    },
-    {
       "@id": "com:burdock",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -41,6 +17,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "burdock"
+    },
+    {
+      "@id": "com:burdock.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:burdock.jsonld"
+        },
+        {
+          "@id": "com:burdock.rdf"
+        },
+        {
+          "@id": "com:burdock.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:burdock.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:burdock"
+      }
+    },
+    {
+      "@id": "com:burdock.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:burdock"
+      }
+    },
+    {
+      "@id": "com:burdock.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:burdock"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -53,26 +69,10 @@
       }
     },
     {
-      "@id": "com:burdock.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:burdock"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:burdock.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:burdock"
       }
     }
   ]

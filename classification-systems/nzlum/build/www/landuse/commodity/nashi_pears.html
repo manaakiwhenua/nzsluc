@@ -18,57 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:nashi_pears.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:nashi_pears.ttl"
-        },
-        {
-          "@id": "com:nashi_pears.jsonld"
-        },
-        {
-          "@id": "com:nashi_pears.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:nashi_pears.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:nashi_pears"
-      }
-    },
-    {
-      "@id": "com:nashi_pears.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:nashi_pears"
-      }
-    },
-    {
-      "@id": "com:nashi_pears.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:nashi_pears"
-      }
-    },
-    {
-      "@id": "com:pears",
-      "skos:notation": "pears"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:nashi_pears"
@@ -91,6 +40,57 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "pears nashi"
+    },
+    {
+      "@id": "com:nashi_pears.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:nashi_pears.jsonld"
+        },
+        {
+          "@id": "com:nashi_pears.rdf"
+        },
+        {
+          "@id": "com:nashi_pears.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:nashi_pears.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:nashi_pears"
+      }
+    },
+    {
+      "@id": "com:nashi_pears.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:nashi_pears"
+      }
+    },
+    {
+      "@id": "com:nashi_pears.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:nashi_pears"
+      }
+    },
+    {
+      "@id": "com:pears",
+      "skos:notation": "pears"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

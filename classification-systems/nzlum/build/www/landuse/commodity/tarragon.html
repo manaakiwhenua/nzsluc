@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:tarragon.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:tarragon"
-      }
-    },
-    {
       "@id": "com:tarragon",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -35,6 +27,30 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "tarragon"
+    },
+    {
+      "@id": "com:tarragon.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:tarragon.jsonld"
+        },
+        {
+          "@id": "com:tarragon.rdf"
+        },
+        {
+          "@id": "com:tarragon.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:tarragon.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:tarragon"
+      }
     },
     {
       "@id": "com:tarragon.rdf",
@@ -68,22 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:tarragon.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:tarragon.ttl"
-        },
-        {
-          "@id": "com:tarragon.jsonld"
-        },
-        {
-          "@id": "com:tarragon.rdf"
-        }
-      ]
     }
   ]
 }

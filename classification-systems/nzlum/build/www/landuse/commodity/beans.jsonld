@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:beans.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:beans"
-      }
-    },
-    {
-      "@id": "com:beans.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:beans.ttl"
-        },
-        {
-          "@id": "com:beans.jsonld"
-        },
-        {
-          "@id": "com:beans.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:beans",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -41,6 +17,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "beans"
+    },
+    {
+      "@id": "com:beans.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:beans.jsonld"
+        },
+        {
+          "@id": "com:beans.rdf"
+        },
+        {
+          "@id": "com:beans.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:beans.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:beans"
+      }
+    },
+    {
+      "@id": "com:beans.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:beans"
+      }
+    },
+    {
+      "@id": "com:beans.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:beans"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -53,26 +69,10 @@
       }
     },
     {
-      "@id": "com:beans.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:beans"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:beans.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:beans"
       }
     }
   ]

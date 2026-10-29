@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:horses"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:horses",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -33,22 +43,20 @@
       }
     },
     {
-      "@id": "com:horses.rdf",
+      "@id": "com:horses.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:horses"
-      }
-    },
-    {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:horses"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:horses.jsonld"
+        },
+        {
+          "@id": "com:horses.rdf"
+        },
+        {
+          "@id": "com:horses.ttl"
+        }
+      ]
     },
     {
       "@id": "com:horses.jsonld",
@@ -59,26 +67,11 @@
       }
     },
     {
-      "@id": "com:horses.html",
+      "@id": "com:horses.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:horses.ttl"
-        },
-        {
-          "@id": "com:horses.jsonld"
-        },
-        {
-          "@id": "com:horses.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:horses"
       }
     },
     {
@@ -87,6 +80,13 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:horses"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

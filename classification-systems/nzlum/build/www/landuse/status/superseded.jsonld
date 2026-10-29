@@ -9,22 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "lu_status:superseded.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lu_status:superseded.ttl"
-        },
-        {
-          "@id": "lu_status:superseded.jsonld"
-        },
-        {
-          "@id": "lu_status:superseded.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lu_status:superseded",
       "@type": "rdfs:Resource",
       "foaf:isPrimaryTopicOf": {
@@ -36,9 +20,33 @@
       }
     },
     {
+      "@id": "lu_status:superseded.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_status:superseded.jsonld"
+        },
+        {
+          "@id": "lu_status:superseded.rdf"
+        },
+        {
+          "@id": "lu_status:superseded.ttl"
+        }
+      ]
+    },
+    {
       "@id": "lu_status:superseded.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:superseded"
+      }
+    },
+    {
+      "@id": "lu_status:superseded.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "lu_status:superseded"
       }
@@ -54,14 +62,6 @@
     {
       "@id": "lus:nzlum0.3.0",
       "adms:status": {
-        "@id": "lu_status:superseded"
-      }
-    },
-    {
-      "@id": "lu_status:superseded.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
         "@id": "lu_status:superseded"
       }
     }

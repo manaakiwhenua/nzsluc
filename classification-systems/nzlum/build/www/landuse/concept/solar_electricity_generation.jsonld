@@ -8,11 +8,25 @@
   },
   "@graph": [
     {
-      "@id": "luc:utilities",
-      "skos:notation": "3.5.0",
+      "@id": "luc:solar_electricity_generation",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:solar_electricity_generation.html"
+      },
+      "skos:broader": {
+        "@id": "luc:utilities"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "3.5.4",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Utilities"
+        "@value": "Solar electricity generation"
       }
     },
     {
@@ -21,13 +35,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:solar_electricity_generation.ttl"
-        },
-        {
           "@id": "luc:solar_electricity_generation.jsonld"
         },
         {
           "@id": "luc:solar_electricity_generation.rdf"
+        },
+        {
+          "@id": "luc:solar_electricity_generation.ttl"
         }
       ]
     },
@@ -56,30 +70,11 @@
       }
     },
     {
-      "@id": "luc:solar_electricity_generation",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:solar_electricity_generation.html"
-      },
-      "skos:broader": {
-        "@id": "luc:utilities"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity."
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "3.5.4",
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Solar electricity generation"
+        "@value": "Utilities"
       }
     }
   ]

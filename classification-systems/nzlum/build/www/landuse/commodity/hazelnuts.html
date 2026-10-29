@@ -18,17 +18,52 @@
   },
   "@graph": [
     {
-      "@id": "com:hazelnuts.ttl",
+      "@id": "com:hazelnuts",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:hazelnuts.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "hazelnuts"
+    },
+    {
+      "@id": "com:hazelnuts.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:hazelnuts"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:hazelnuts.jsonld"
+        },
+        {
+          "@id": "com:hazelnuts.rdf"
+        },
+        {
+          "@id": "com:hazelnuts.ttl"
+        }
+      ]
     },
     {
       "@id": "com:hazelnuts.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:hazelnuts"
+      }
+    },
+    {
+      "@id": "com:hazelnuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:hazelnuts"
+      }
+    },
+    {
+      "@id": "com:hazelnuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:hazelnuts"
       }
@@ -49,41 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:hazelnuts",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:hazelnuts.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "hazelnuts"
-    },
-    {
-      "@id": "com:hazelnuts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:hazelnuts"
-      }
-    },
-    {
-      "@id": "com:hazelnuts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:hazelnuts.ttl"
-        },
-        {
-          "@id": "com:hazelnuts.jsonld"
-        },
-        {
-          "@id": "com:hazelnuts.rdf"
-        }
-      ]
     }
   ]
 }

@@ -31,8 +31,7 @@ luc:intensive_dry_stock a skos:Concept ;
     skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/66>,
         "A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive."@en ;
     skos:definition "Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.2.2" ;
     skos:prefLabel "Intensive dry stock"@en ;
     skos:scopeNote "Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding."@en ;

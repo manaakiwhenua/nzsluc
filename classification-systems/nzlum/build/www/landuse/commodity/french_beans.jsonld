@@ -8,6 +8,33 @@
   },
   "@graph": [
     {
+      "@id": "com:french_beans",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:french_beans.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "french beans"
+    },
+    {
+      "@id": "com:french_beans.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:french_beans.jsonld"
+        },
+        {
+          "@id": "com:french_beans.rdf"
+        },
+        {
+          "@id": "com:french_beans.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:french_beans.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -24,20 +51,12 @@
       }
     },
     {
-      "@id": "com:french_beans.html",
+      "@id": "com:french_beans.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:french_beans.ttl"
-        },
-        {
-          "@id": "com:french_beans.jsonld"
-        },
-        {
-          "@id": "com:french_beans.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:french_beans"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -50,29 +69,10 @@
       }
     },
     {
-      "@id": "com:french_beans",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:french_beans.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "french beans"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:french_beans.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:french_beans"
       }
     }
   ]

@@ -5,6 +5,20 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>2.3.1</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+        <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
+        <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</skos:definition>
+        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -19,26 +33,10 @@
         <dcterms:format>application/ld+json</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.rdf"/>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping">
-    <skos:definition xml:lang="en">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</skos:definition>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:prefLabel xml:lang="en">Arable cropping</skos:prefLabel>
-    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
-    <skos:notation>2.3.1</skos:notation>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
-        <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
-        <skos:notation>2.3.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/arable_cropping.html"/>
-  </skos:Concept>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
+    <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
+    <skos:notation>2.3.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

@@ -18,6 +18,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:precision_agriculture"
@@ -25,6 +32,16 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:pasture",
+      "skos:member": {
+        "@id": "mgmt:precision_agriculture"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
       }
     },
     {
@@ -44,13 +61,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:precision_agriculture.ttl"
-        },
-        {
           "@id": "mgmt:precision_agriculture.jsonld"
         },
         {
           "@id": "mgmt:precision_agriculture.rdf"
+        },
+        {
+          "@id": "mgmt:precision_agriculture.ttl"
         }
       ]
     },
@@ -63,34 +80,17 @@
       }
     },
     {
-      "@id": "mgmt:precision_agriculture.ttl",
+      "@id": "mgmt:precision_agriculture.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:precision_agriculture"
       }
     },
     {
-      "@id": "mgmt:pasture",
-      "skos:member": {
-        "@id": "mgmt:precision_agriculture"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:precision_agriculture.rdf",
+      "@id": "mgmt:precision_agriculture.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:precision_agriculture"
       }

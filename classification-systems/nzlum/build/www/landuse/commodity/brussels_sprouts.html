@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:brussels_sprouts.ttl",
+      "@id": "com:brussels_sprouts",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:brussels_sprouts.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "brussels sprouts"
+    },
+    {
+      "@id": "com:brussels_sprouts.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:brussels_sprouts"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:brussels_sprouts.jsonld"
+        },
+        {
+          "@id": "com:brussels_sprouts.rdf"
+        },
+        {
+          "@id": "com:brussels_sprouts.ttl"
+        }
+      ]
     },
     {
       "@id": "com:brussels_sprouts.jsonld",
@@ -42,31 +61,12 @@
       }
     },
     {
-      "@id": "com:brussels_sprouts.html",
+      "@id": "com:brussels_sprouts.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:brussels_sprouts.ttl"
-        },
-        {
-          "@id": "com:brussels_sprouts.jsonld"
-        },
-        {
-          "@id": "com:brussels_sprouts.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:brussels_sprouts",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:brussels_sprouts.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "brussels sprouts"
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:brussels_sprouts"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",

@@ -5,40 +5,37 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-  </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses">
-    <skos:prefLabel xml:lang="en">Glasshouses/shadehouses</skos:prefLabel>
     <skos:definition xml:lang="en">Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production.</skos:definition>
+    <skos:scopeNote xml:lang="en">Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Glasshouses/shadehouses</skos:prefLabel>
+    <skos:notation>2.5.2</skos:notation>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
         <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
         <skos:notation>2.5.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:scopeNote xml:lang="en">Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.</skos:scopeNote>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:notation>2.5.2</skos:notation>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.html"/>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

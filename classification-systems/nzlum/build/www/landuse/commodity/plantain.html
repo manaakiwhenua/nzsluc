@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:plantain"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
       "@id": "com:plantain",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,6 +37,22 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "plantain"
+    },
+    {
+      "@id": "com:plantain.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:plantain.jsonld"
+        },
+        {
+          "@id": "com:plantain.rdf"
+        },
+        {
+          "@id": "com:plantain.ttl"
+        }
+      ]
     },
     {
       "@id": "com:plantain.jsonld",
@@ -45,22 +71,6 @@
       }
     },
     {
-      "@id": "com:plantain.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:plantain.ttl"
-        },
-        {
-          "@id": "com:plantain.jsonld"
-        },
-        {
-          "@id": "com:plantain.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:plantain.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -73,16 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:plantain"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
       }
     }
   ]

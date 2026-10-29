@@ -8,46 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:gas_treatment_storage_transmission.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:gas_treatment_storage_transmission"
-      }
-    },
-    {
-      "@id": "luc:utilities",
-      "skos:notation": "3.5.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Utilities"
-      }
-    },
-    {
-      "@id": "luc:gas_treatment_storage_transmission.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:gas_treatment_storage_transmission.ttl"
-        },
-        {
-          "@id": "luc:gas_treatment_storage_transmission.jsonld"
-        },
-        {
-          "@id": "luc:gas_treatment_storage_transmission.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:gas_treatment_storage_transmission.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:gas_treatment_storage_transmission"
-      }
-    },
-    {
       "@id": "luc:gas_treatment_storage_transmission",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -64,18 +24,45 @@
         "@language": "en",
         "@value": "Treatment plants, storage facilities, pipelines."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.5.6",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Gas treatment, storage, and transmission"
+      }
+    },
+    {
+      "@id": "luc:gas_treatment_storage_transmission.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:gas_treatment_storage_transmission.jsonld"
+        },
+        {
+          "@id": "luc:gas_treatment_storage_transmission.rdf"
+        },
+        {
+          "@id": "luc:gas_treatment_storage_transmission.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:gas_treatment_storage_transmission.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:gas_treatment_storage_transmission"
+      }
+    },
+    {
+      "@id": "luc:gas_treatment_storage_transmission.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:gas_treatment_storage_transmission"
       }
     },
     {
@@ -84,6 +71,14 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:gas_treatment_storage_transmission"
+      }
+    },
+    {
+      "@id": "luc:utilities",
+      "skos:notation": "3.5.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Utilities"
       }
     }
   ]

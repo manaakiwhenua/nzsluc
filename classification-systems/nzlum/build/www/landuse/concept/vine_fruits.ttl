@@ -28,8 +28,7 @@ luc:vine_fruits.ttl a foaf:Document ;
 luc:vine_fruits a skos:Concept ;
     skos:broader luc:perennial_horticulture ;
     skos:definition "Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.4.2" ;
     skos:prefLabel "Vine fruits"@en ;
     foaf:isPrimaryTopicOf luc:vine_fruits.html .

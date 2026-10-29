@@ -15,10 +15,6 @@
     </skos:member>
     <skos:prefLabel xml:lang="en">Pasture</skos:prefLabel>
   </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -27,7 +23,12 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/clover"/>

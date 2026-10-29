@@ -18,27 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:lavender.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lavender.ttl"
-        },
-        {
-          "@id": "com:lavender.jsonld"
-        },
-        {
-          "@id": "com:lavender.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:lavender.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
         "@id": "com:lavender"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -53,14 +39,20 @@
       "skos:notation": "lavender"
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:lavender"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
+      "@id": "com:lavender.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lavender.jsonld"
+        },
+        {
+          "@id": "com:lavender.rdf"
+        },
+        {
+          "@id": "com:lavender.ttl"
+        }
+      ]
     },
     {
       "@id": "com:lavender.jsonld",
@@ -74,6 +66,14 @@
       "@id": "com:lavender.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:lavender"
+      }
+    },
+    {
+      "@id": "com:lavender.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:lavender"
       }

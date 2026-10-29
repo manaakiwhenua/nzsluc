@@ -8,40 +8,37 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/animals">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat">
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
+        <skos:notation>sheep meat</skos:notation>
         <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep"/>
         <skos:usageNote xml:lang="en">Sheep for meat production.</skos:usageNote>
-        <skos:notation>sheep meat</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Animals</skos:prefLabel>
   </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep">
     <skos:notation>sheep</skos:notation>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
     <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/sheep_meat.rdf"/>
+  </foaf:Document>
 </rdf:RDF>

@@ -9,38 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:natural_feature_protection.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:natural_feature_protection.ttl"
-        },
-        {
-          "@id": "luc:natural_feature_protection.jsonld"
-        },
-        {
-          "@id": "luc:natural_feature_protection.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
-      }
-    },
-    {
-      "@id": "luc:natural_feature_protection.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_feature_protection"
-      }
-    },
-    {
       "@id": "luc:natural_feature_protection",
       "@type": "skos:Concept",
       "dcterms:source": {
@@ -58,18 +26,45 @@
         "@language": "en",
         "@value": "Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.1.4",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Natural feature protection"
+      }
+    },
+    {
+      "@id": "luc:natural_feature_protection.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:natural_feature_protection.jsonld"
+        },
+        {
+          "@id": "luc:natural_feature_protection.rdf"
+        },
+        {
+          "@id": "luc:natural_feature_protection.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:natural_feature_protection.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_feature_protection"
+      }
+    },
+    {
+      "@id": "luc:natural_feature_protection.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_feature_protection"
       }
     },
     {
@@ -81,11 +76,11 @@
       }
     },
     {
-      "@id": "luc:natural_feature_protection.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_feature_protection"
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
       }
     }
   ]

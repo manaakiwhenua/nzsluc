@@ -18,6 +18,56 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:contour_banks",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:contour_banks.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "contour banks"
+    },
+    {
+      "@id": "mgmt:contour_banks.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:contour_banks.jsonld"
+        },
+        {
+          "@id": "mgmt:contour_banks.rdf"
+        },
+        {
+          "@id": "mgmt:contour_banks.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:contour_banks.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:contour_banks"
+      }
+    },
+    {
+      "@id": "mgmt:contour_banks.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:contour_banks"
+      }
+    },
+    {
       "@id": "mgmt:contour_banks.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -34,56 +84,6 @@
         "@language": "en",
         "@value": "Crop"
       }
-    },
-    {
-      "@id": "mgmt:contour_banks.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:contour_banks"
-      }
-    },
-    {
-      "@id": "mgmt:contour_banks.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:contour_banks.ttl"
-        },
-        {
-          "@id": "mgmt:contour_banks.jsonld"
-        },
-        {
-          "@id": "mgmt:contour_banks.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:contour_banks.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:contour_banks"
-      }
-    },
-    {
-      "@id": "mgmt:contour_banks",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:contour_banks.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "contour banks"
     }
   ]
 }

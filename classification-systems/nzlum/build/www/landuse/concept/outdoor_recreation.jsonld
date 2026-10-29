@@ -9,14 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:outdoor_recreation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:outdoor_recreation"
-      }
-    },
-    {
       "@id": "luc:outdoor_recreation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -34,14 +26,9 @@
         "@language": "en",
         "@value": "Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.2.1",
       "skos:prefLabel": {
         "@language": "en",
@@ -50,11 +37,11 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."
+          "@value": "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."
         },
         {
           "@language": "en",
-          "@value": "The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks."
+          "@value": "Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1."
         }
       ]
     },
@@ -64,13 +51,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:outdoor_recreation.ttl"
-        },
-        {
           "@id": "luc:outdoor_recreation.jsonld"
         },
         {
           "@id": "luc:outdoor_recreation.rdf"
+        },
+        {
+          "@id": "luc:outdoor_recreation.ttl"
         }
       ]
     },
@@ -86,6 +73,14 @@
       "@id": "luc:outdoor_recreation.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:outdoor_recreation"
+      }
+    },
+    {
+      "@id": "luc:outdoor_recreation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:outdoor_recreation"
       }

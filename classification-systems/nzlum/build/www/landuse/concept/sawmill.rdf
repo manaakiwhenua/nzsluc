@@ -2,40 +2,40 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill">
-    <skos:notation>3.4.4</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:definition xml:lang="en">An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.</skos:definition>
-    <skos:prefLabel xml:lang="en">Sawmill</skos:prefLabel>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
-        <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
-        <skos:notation>3.4.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill">
+        <skos:prefLabel xml:lang="en">Sawmill</skos:prefLabel>
+        <skos:notation>3.4.4</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:definition xml:lang="en">An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.</skos:definition>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
-    <dcterms:format>application/ld+json</dcterms:format>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/manufacturing_industrial">
+    <skos:prefLabel xml:lang="en">Manufacturing and industrial</skos:prefLabel>
+    <skos:notation>3.4.0</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/sawmill"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
 </rdf:RDF>

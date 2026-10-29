@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:grazing_native_vegetation.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:grazing_native_vegetation"
-      }
-    },
-    {
       "@id": "luc:grazing_native_vegetation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -28,14 +20,9 @@
         "@language": "en",
         "@value": "Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.3.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -52,23 +39,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:grazing_native_vegetation.ttl"
-        },
-        {
           "@id": "luc:grazing_native_vegetation.jsonld"
         },
         {
           "@id": "luc:grazing_native_vegetation.rdf"
+        },
+        {
+          "@id": "luc:grazing_native_vegetation.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:minimal_use_relatively_natural",
-      "skos:notation": "1.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Minimal use from relatively natural environments"
-      }
     },
     {
       "@id": "luc:grazing_native_vegetation.jsonld",
@@ -79,11 +58,27 @@
       }
     },
     {
+      "@id": "luc:grazing_native_vegetation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:grazing_native_vegetation"
+      }
+    },
+    {
       "@id": "luc:grazing_native_vegetation.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:grazing_native_vegetation"
+      }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
       }
     }
   ]

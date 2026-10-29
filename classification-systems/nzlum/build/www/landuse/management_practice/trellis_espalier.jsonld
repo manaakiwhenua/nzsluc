@@ -8,11 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:trellis_espalier.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:horticulture",
+      "skos:member": {
         "@id": "mgmt:trellis_espalier"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
       }
     },
     {
@@ -27,13 +36,27 @@
       "skos:notation": "trellis/espalier"
     },
     {
-      "@id": "mgmt:horticulture",
-      "skos:member": {
+      "@id": "mgmt:trellis_espalier.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:trellis_espalier.jsonld"
+        },
+        {
+          "@id": "mgmt:trellis_espalier.rdf"
+        },
+        {
+          "@id": "mgmt:trellis_espalier.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:trellis_espalier.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "mgmt:trellis_espalier"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horticulture"
       }
     },
     {
@@ -45,35 +68,12 @@
       }
     },
     {
-      "@id": "mgmt:trellis_espalier.jsonld",
+      "@id": "mgmt:trellis_espalier.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:trellis_espalier"
       }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:trellis_espalier.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:trellis_espalier.ttl"
-        },
-        {
-          "@id": "mgmt:trellis_espalier.jsonld"
-        },
-        {
-          "@id": "mgmt:trellis_espalier.rdf"
-        }
-      ]
     }
   ]
 }

@@ -8,11 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:roses.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
         "@id": "com:roses"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -27,21 +29,20 @@
       "skos:notation": "roses"
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:roses"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:roses.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:roses.jsonld"
+        },
+        {
+          "@id": "com:roses.rdf"
+        },
+        {
+          "@id": "com:roses.ttl"
+        }
+      ]
     },
     {
       "@id": "com:roses.jsonld",
@@ -52,20 +53,12 @@
       }
     },
     {
-      "@id": "com:roses.html",
+      "@id": "com:roses.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:roses.ttl"
-        },
-        {
-          "@id": "com:roses.jsonld"
-        },
-        {
-          "@id": "com:roses.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:roses"
+      }
     },
     {
       "@id": "com:roses.ttl",
@@ -73,6 +66,13 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:roses"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

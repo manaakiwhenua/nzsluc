@@ -29,8 +29,7 @@ luc:vacant_land a skos:Concept ;
     skos:broader luc:vacant_transitioning_land_urban ;
     skos:changeNote "Notation changed from 3.9.1 to 3.9.3 at v0.4.0" ;
     skos:definition "Derelict land and developed land that is idle."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.9.3" ;
     skos:prefLabel "Idle and derelict land"@en ;
     foaf:isPrimaryTopicOf luc:vacant_land.html .

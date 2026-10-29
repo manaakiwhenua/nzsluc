@@ -47,8 +47,7 @@ luc:transportation_warehousing_commercial skos:notation "3.3.6" ;
 luc:commercial a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:entertainment,
         luc:healthcare,
         luc:hospitality,

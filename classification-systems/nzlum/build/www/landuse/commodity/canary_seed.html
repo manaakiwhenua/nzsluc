@@ -18,6 +18,41 @@
   },
   "@graph": [
     {
+      "@id": "com:canary_seed",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:canary_seed.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "canary_seed"
+    },
+    {
+      "@id": "com:canary_seed.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:canary_seed.jsonld"
+        },
+        {
+          "@id": "com:canary_seed.rdf"
+        },
+        {
+          "@id": "com:canary_seed.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:canary_seed.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:canary_seed"
+      }
+    },
+    {
       "@id": "com:canary_seed.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -26,9 +61,9 @@
       }
     },
     {
-      "@id": "com:canary_seed.jsonld",
+      "@id": "com:canary_seed.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:canary_seed"
       }
@@ -44,45 +79,10 @@
       }
     },
     {
-      "@id": "com:canary_seed",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:canary_seed.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "canary_seed"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:canary_seed.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:canary_seed.ttl"
-        },
-        {
-          "@id": "com:canary_seed.jsonld"
-        },
-        {
-          "@id": "com:canary_seed.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:canary_seed.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:canary_seed"
       }
     }
   ]

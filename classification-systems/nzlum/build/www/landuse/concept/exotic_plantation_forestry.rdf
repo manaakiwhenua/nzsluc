@@ -2,43 +2,44 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
-    <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
-    <skos:notation>2.1.0</skos:notation>
-  </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry">
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:definition xml:lang="en">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).</skos:definition>
-        <skos:notation>2.1.1</skos:notation>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
-        <skos:prefLabel xml:lang="en">Exotic plantation forestry</skos:prefLabel>
-        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
-        <skos:usageNote xml:lang="en">Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</skos:usageNote>
-        <skos:changeNote xml:lang="en">Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</skos:changeNote>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry"/>
         <dcterms:format>application/ld+json</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.rdf"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
+        <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
+        <skos:notation>2.1.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:prefLabel xml:lang="en">Exotic plantation forestry</skos:prefLabel>
+    <skos:definition xml:lang="en">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).</skos:definition>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+    <skos:usageNote xml:lang="en">Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</skos:usageNote>
+    <skos:changeNote xml:lang="en">Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</skos:changeNote>
+    <skos:notation>2.1.1</skos:notation>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/exotic_plantation_forestry.html"/>
+  </skos:Concept>
 </rdf:RDF>

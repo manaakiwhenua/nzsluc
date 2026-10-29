@@ -28,8 +28,7 @@ luc:water_extraction_transmission.ttl a foaf:Document ;
 luc:water_extraction_transmission a skos:Concept ;
     skos:broader luc:utilities ;
     skos:definition "Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.7" ;
     skos:prefLabel "Water extraction and transmission"@en ;
     skos:scopeNote "Includes drinking water reservoirs."@en ;

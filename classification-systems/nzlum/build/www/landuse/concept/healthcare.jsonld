@@ -8,38 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:healthcare.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:healthcare"
-      }
-    },
-    {
-      "@id": "luc:healthcare.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:healthcare"
-      }
-    },
-    {
-      "@id": "luc:healthcare.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:healthcare.ttl"
-        },
-        {
-          "@id": "luc:healthcare.jsonld"
-        },
-        {
-          "@id": "luc:healthcare.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:commercial",
       "skos:notation": "3.3.0",
       "skos:prefLabel": {
@@ -64,14 +32,9 @@
         "@language": "en",
         "@value": "Hospitals, specialist clinics, physiotherapists, medical offices, laboratories"
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.3.5",
       "skos:prefLabel": {
         "@language": "en",
@@ -79,9 +42,41 @@
       }
     },
     {
+      "@id": "luc:healthcare.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:healthcare.jsonld"
+        },
+        {
+          "@id": "luc:healthcare.rdf"
+        },
+        {
+          "@id": "luc:healthcare.ttl"
+        }
+      ]
+    },
+    {
       "@id": "luc:healthcare.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:healthcare"
+      }
+    },
+    {
+      "@id": "luc:healthcare.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:healthcare"
+      }
+    },
+    {
+      "@id": "luc:healthcare.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:healthcare"
       }

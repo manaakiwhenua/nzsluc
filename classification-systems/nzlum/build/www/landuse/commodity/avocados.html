@@ -29,12 +29,20 @@
       "skos:notation": "avocados"
     },
     {
-      "@id": "com:avocados.ttl",
+      "@id": "com:avocados.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:avocados"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:avocados.jsonld"
+        },
+        {
+          "@id": "com:avocados.rdf"
+        },
+        {
+          "@id": "com:avocados.ttl"
+        }
+      ]
     },
     {
       "@id": "com:avocados.jsonld",
@@ -45,32 +53,17 @@
       }
     },
     {
-      "@id": "com:avocados.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:avocados.ttl"
-        },
-        {
-          "@id": "com:avocados.jsonld"
-        },
-        {
-          "@id": "com:avocados.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:avocados.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:avocados"
+      }
+    },
+    {
+      "@id": "com:avocados.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:avocados"
       }
@@ -83,6 +76,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

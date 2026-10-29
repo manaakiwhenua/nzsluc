@@ -17,28 +17,28 @@
       }
     },
     {
-      "@id": "luc:mining.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:mining"
+      "@id": "luc:evaporation_basins",
+      "skos:notation": "3.7.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Evaporation basins"
       }
     },
     {
-      "@id": "luc:mining.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:mining.ttl"
-        },
-        {
-          "@id": "luc:mining.jsonld"
-        },
-        {
-          "@id": "luc:mining.rdf"
-        }
-      ]
+      "@id": "luc:extractive_industry_not_in_use",
+      "skos:notation": "3.7.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Extractive industry not in use"
+      }
+    },
+    {
+      "@id": "luc:mines",
+      "skos:notation": "3.7.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
     },
     {
       "@id": "luc:mining",
@@ -54,29 +54,24 @@
         "@language": "en",
         "@value": "Mining and extractive industries (including salt extraction from evaporation basins)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
-          "@id": "luc:quarries"
+          "@id": "luc:evaporation_basins"
         },
         {
           "@id": "luc:extractive_industry_not_in_use"
         },
         {
-          "@id": "luc:tailings"
-        },
-        {
-          "@id": "luc:evaporation_basins"
-        },
-        {
           "@id": "luc:mines"
+        },
+        {
+          "@id": "luc:quarries"
+        },
+        {
+          "@id": "luc:tailings"
         }
       ],
       "skos:notation": "3.7.0",
@@ -90,12 +85,20 @@
       }
     },
     {
-      "@id": "luc:extractive_industry_not_in_use",
-      "skos:notation": "3.7.5",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Extractive industry not in use"
-      }
+      "@id": "luc:mining.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:mining.jsonld"
+        },
+        {
+          "@id": "luc:mining.rdf"
+        },
+        {
+          "@id": "luc:mining.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:mining.jsonld",
@@ -114,6 +117,14 @@
       }
     },
     {
+      "@id": "luc:mining.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:mining"
+      }
+    },
+    {
       "@id": "luc:quarries",
       "skos:notation": "3.7.2",
       "skos:prefLabel": {
@@ -122,27 +133,11 @@
       }
     },
     {
-      "@id": "luc:mines",
-      "skos:notation": "3.7.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
-      }
-    },
-    {
       "@id": "luc:tailings",
       "skos:notation": "3.7.3",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Tailings"
-      }
-    },
-    {
-      "@id": "luc:evaporation_basins",
-      "skos:notation": "3.7.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Evaporation basins"
       }
     }
   ]

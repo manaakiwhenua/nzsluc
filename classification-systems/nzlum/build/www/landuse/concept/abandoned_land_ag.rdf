@@ -6,18 +6,17 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abandoned_land_ag">
-    <skos:definition xml:lang="en">Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.</skos:definition>
     <skos:prefLabel xml:lang="en">Abandoned land</skos:prefLabel>
-    <skos:changeNote xml:lang="en">Changed notation at v0.4.0</skos:changeNote>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <skos:notation>2.8.2</skos:notation>
+    <skos:definition xml:lang="en">Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.</skos:definition>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land">
         <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
         <skos:notation>2.8.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:changeNote xml:lang="en">Changed notation at v0.4.0</skos:changeNote>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/abandoned_land_ag.html">
         <dcterms:format>text/html</dcterms:format>

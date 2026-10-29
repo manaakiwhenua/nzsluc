@@ -2,10 +2,14 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/effluent_pond">
+    <skos:prefLabel xml:lang="en">Effluent pond</skos:prefLabel>
+    <skos:notation>2.7.2</skos:notation>
+  </rdf:Description>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
     <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_wetland">
@@ -13,6 +17,13 @@
         <skos:notation>2.7.4</skos:notation>
       </rdf:Description>
     </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stock_water">
+        <skos:prefLabel xml:lang="en">Stock water</skos:prefLabel>
+        <skos:notation>2.7.1</skos:notation>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/effluent_pond"/>
     <skos:narrower>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/irrigation_reservoirs_canals">
         <skos:prefLabel xml:lang="en">Irrigation reservoirs and canals</skos:prefLabel>
@@ -25,30 +36,17 @@
         <skos:notation>2.7.3</skos:notation>
       </rdf:Description>
     </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/effluent_pond">
-        <skos:prefLabel xml:lang="en">Effluent pond</skos:prefLabel>
-        <skos:notation>2.7.2</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stock_water">
-        <skos:prefLabel xml:lang="en">Stock water</skos:prefLabel>
-        <skos:notation>2.7.1</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:definition xml:lang="en">Built water features associated with agricultural use.</skos:definition>
-    <skos:notation>2.7.0</skos:notation>
-    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <lu:colour>#3B505B</lu:colour>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
         <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
         <skos:notation>2.0.0</skos:notation>
       </rdf:Description>
     </skos:broader>
+    <lu:colour>#3B505B</lu:colour>
+    <skos:notation>2.7.0</skos:notation>
+    <skos:definition xml:lang="en">Built water features associated with agricultural use.</skos:definition>
+    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture.html">
         <dcterms:format>text/html</dcterms:format>
@@ -58,13 +56,13 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>

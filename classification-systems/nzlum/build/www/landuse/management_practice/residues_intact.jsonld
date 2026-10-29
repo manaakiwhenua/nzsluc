@@ -8,6 +8,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:residues_intact"
@@ -18,18 +25,38 @@
       }
     },
     {
+      "@id": "mgmt:residues_intact",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:residues_intact.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues intact"
+    },
+    {
+      "@id": "mgmt:residues_intact.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:residues_intact.jsonld"
+        },
+        {
+          "@id": "mgmt:residues_intact.rdf"
+        },
+        {
+          "@id": "mgmt:residues_intact.ttl"
+        }
+      ]
+    },
+    {
       "@id": "mgmt:residues_intact.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:residues_intact"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -47,33 +74,6 @@
       "foaf:primaryTopic": {
         "@id": "mgmt:residues_intact"
       }
-    },
-    {
-      "@id": "mgmt:residues_intact.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:residues_intact.ttl"
-        },
-        {
-          "@id": "mgmt:residues_intact.jsonld"
-        },
-        {
-          "@id": "mgmt:residues_intact.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:residues_intact",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:residues_intact.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "residues intact"
     }
   ]
 }

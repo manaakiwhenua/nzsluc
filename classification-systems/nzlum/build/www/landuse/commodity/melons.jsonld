@@ -8,27 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:melons.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:melons.ttl"
-        },
-        {
-          "@id": "com:melons.jsonld"
-        },
-        {
-          "@id": "com:melons.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:melons.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:melons"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     },
     {
@@ -43,19 +29,20 @@
       "skos:notation": "melons"
     },
     {
-      "@id": "com:melons.rdf",
+      "@id": "com:melons.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:melons"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:melons.jsonld"
+        },
+        {
+          "@id": "com:melons.rdf"
+        },
+        {
+          "@id": "com:melons.ttl"
+        }
+      ]
     },
     {
       "@id": "com:melons.jsonld",
@@ -66,13 +53,26 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:melons.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:melons"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "com:melons.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:melons"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

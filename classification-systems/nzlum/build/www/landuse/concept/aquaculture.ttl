@@ -28,8 +28,7 @@ luc:intensive_animal_production skos:notation "2.6.0" ;
 luc:aquaculture a skos:Concept ;
     skos:broader luc:intensive_animal_production ;
     skos:definition "Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.6.5" ;
     skos:prefLabel "Aquaculture"@en ;
     foaf:isPrimaryTopicOf luc:aquaculture.html .

@@ -2,38 +2,37 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud">
+    <skos:inScheme>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
+        <dcterms:title xml:lang="en">NZLUM water features</dcterms:title>
+      </rdf:Description>
+    </skos:inScheme>
+    <skos:notation>mud</skos:notation>
+    <lu:colour>#D9C49E</lu:colour>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.rdf">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud">
-        <skos:notation>mud</skos:notation>
-        <lu:colour>#D9C49E</lu:colour>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.rdf"/>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/mud"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
-    <dcterms:title xml:lang="en">NZLUM water features</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

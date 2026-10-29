@@ -29,8 +29,7 @@ luc:gas_treatment_storage_transmission a skos:Concept ;
     skos:broader luc:utilities ;
     skos:definition "Facilities and infrastructure for processing, storage, and transport of natural gas."@en ;
     skos:example "Treatment plants, storage facilities, pipelines."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.6" ;
     skos:prefLabel "Gas treatment, storage, and transmission"@en ;
     foaf:isPrimaryTopicOf luc:gas_treatment_storage_transmission.html .

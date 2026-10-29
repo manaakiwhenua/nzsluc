@@ -19,18 +19,37 @@
   },
   "@graph": [
     {
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
+    },
+    {
+      "@id": "wtr:reef",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "wtr:reef.html"
+      },
+      "lu:colour": "#A9B0AD",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "reef"
+    },
+    {
       "@id": "wtr:reef.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "wtr:reef.ttl"
-        },
-        {
           "@id": "wtr:reef.jsonld"
         },
         {
           "@id": "wtr:reef.rdf"
+        },
+        {
+          "@id": "wtr:reef.ttl"
         }
       ]
     },
@@ -49,25 +68,6 @@
       "foaf:primaryTopic": {
         "@id": "wtr:reef"
       }
-    },
-    {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
-    },
-    {
-      "@id": "wtr:reef",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "wtr:reef.html"
-      },
-      "lu:colour": "#A9B0AD",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "reef"
     },
     {
       "@id": "wtr:reef.ttl",

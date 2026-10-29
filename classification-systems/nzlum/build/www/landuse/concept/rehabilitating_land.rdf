@@ -5,38 +5,39 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:notation>1.4.1</skos:notation>
-    <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
-    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
-    <skos:scopeNote xml:lang="en">This may include riparian plantings.</skos:scopeNote>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
-        <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
-        <skos:notation>1.4.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:definition xml:lang="en">Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state.</skos:definition>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:notation>1.4.1</skos:notation>
+        <skos:scopeNote xml:lang="en">This may include riparian plantings.</skos:scopeNote>
+        <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/36"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning"/>
+        <skos:definition xml:lang="en">Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state.</skos:definition>
+        <skos:prefLabel xml:lang="en">Rehabilitating land</skos:prefLabel>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/rehabilitating_land"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_and_transitioning">
+    <skos:prefLabel xml:lang="en">Unused and transitioning land</skos:prefLabel>
+    <skos:notation>1.4.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

@@ -8,20 +8,21 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:irrigation_spray.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:irrigation_spray.ttl"
-        },
-        {
-          "@id": "mgmt:irrigation_spray.jsonld"
-        },
-        {
-          "@id": "mgmt:irrigation_spray.rdf"
-        }
-      ]
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation",
+      "skos:member": {
+        "@id": "mgmt:irrigation_spray"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Irrigation"
+      }
     },
     {
       "@id": "mgmt:irrigation_spray",
@@ -43,13 +44,27 @@
       }
     },
     {
-      "@id": "mgmt:irrigation",
-      "skos:member": {
+      "@id": "mgmt:irrigation_spray.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:irrigation_spray.jsonld"
+        },
+        {
+          "@id": "mgmt:irrigation_spray.rdf"
+        },
+        {
+          "@id": "mgmt:irrigation_spray.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:irrigation_spray.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "mgmt:irrigation_spray"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Irrigation"
       }
     },
     {
@@ -61,24 +76,9 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
       "@id": "mgmt:irrigation_spray.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:irrigation_spray"
-      }
-    },
-    {
-      "@id": "mgmt:irrigation_spray.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "mgmt:irrigation_spray"
       }

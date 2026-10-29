@@ -2,29 +2,24 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon">
-        <lu:colour>#C3DFFF</lu:colour>
-        <skos:notation>lagoon</skos:notation>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon"/>
@@ -35,4 +30,10 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features">
     <dcterms:title xml:lang="en">NZLUM water features</dcterms:title>
   </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon">
+    <skos:notation>lagoon</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/water_features"/>
+    <lu:colour>#C3DFFF</lu:colour>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/water-feature/lagoon.html"/>
+  </skos:Concept>
 </rdf:RDF>

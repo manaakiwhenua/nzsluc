@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:railways.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:railways.ttl"
-        },
-        {
-          "@id": "luc:railways.jsonld"
-        },
-        {
-          "@id": "luc:railways.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:railways",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -36,18 +20,37 @@
         "@language": "en",
         "@value": "Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.6.3",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Railways"
+      }
+    },
+    {
+      "@id": "luc:railways.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:railways.jsonld"
+        },
+        {
+          "@id": "luc:railways.rdf"
+        },
+        {
+          "@id": "luc:railways.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:railways.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:railways"
       }
     },
     {
@@ -59,9 +62,9 @@
       }
     },
     {
-      "@id": "luc:railways.jsonld",
+      "@id": "luc:railways.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:railways"
       }
@@ -72,14 +75,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Transportation"
-      }
-    },
-    {
-      "@id": "luc:railways.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:railways"
       }
     }
   ]

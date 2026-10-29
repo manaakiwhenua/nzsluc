@@ -29,13 +29,27 @@
       "skos:notation": "leeks"
     },
     {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
+      "@id": "com:leeks.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:leeks.jsonld"
+        },
+        {
+          "@id": "com:leeks.rdf"
+        },
+        {
+          "@id": "com:leeks.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:leeks.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:leeks"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
       }
     },
     {
@@ -47,21 +61,6 @@
       }
     },
     {
-      "@id": "com:leeks.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:leeks"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:leeks.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -70,20 +69,21 @@
       }
     },
     {
-      "@id": "com:leeks.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:leeks.ttl"
-        },
-        {
-          "@id": "com:leeks.jsonld"
-        },
-        {
-          "@id": "com:leeks.rdf"
-        }
-      ]
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:leeks"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

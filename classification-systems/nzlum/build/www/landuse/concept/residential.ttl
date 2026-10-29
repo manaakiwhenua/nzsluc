@@ -41,8 +41,7 @@ luc:rural_residential skos:notation "3.1.4" ;
 luc:residential a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:high_density_residential,
         luc:low_density_residential,
         luc:medium_density_residential,

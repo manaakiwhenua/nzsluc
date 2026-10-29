@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:longans"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
       "@id": "com:longans",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,9 +39,25 @@
       "skos:notation": "longans"
     },
     {
-      "@id": "com:longans.ttl",
+      "@id": "com:longans.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:longans.jsonld"
+        },
+        {
+          "@id": "com:longans.rdf"
+        },
+        {
+          "@id": "com:longans.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:longans.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:longans"
       }
@@ -45,45 +71,19 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:longans.jsonld",
+      "@id": "com:longans.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:longans"
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:longans"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:longans.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:longans.ttl"
-        },
-        {
-          "@id": "com:longans.jsonld"
-        },
-        {
-          "@id": "com:longans.rdf"
-        }
-      ]
     }
   ]
 }

@@ -10,149 +10,6 @@
   },
   "@graph": [
     {
-      "@id": "lus:water_features.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "lus:water_features"
-      }
-    },
-    {
-      "@id": "wtr:swamp",
-      "@type": "skos:Concept",
-      "lu:colour": "#83B09E",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "swamp"
-    },
-    {
-      "@id": "wtr:lagoon",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "lagoon"
-    },
-    {
-      "@id": "wtr:marine",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "marine"
-    },
-    {
-      "@id": "wtr:river",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "river"
-    },
-    {
-      "@id": "lus:water_features.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lus:water_features.ttl"
-        },
-        {
-          "@id": "lus:water_features.jsonld"
-        },
-        {
-          "@id": "lus:water_features.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "wtr:ice",
-      "@type": "skos:Concept",
-      "lu:colour": "#EDF5FF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "ice"
-    },
-    {
-      "@id": "wtr:sand",
-      "@type": "skos:Concept",
-      "lu:colour": "#FFFABA",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "sand"
-    },
-    {
-      "@id": "wtr:lake",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "lake",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Matches any value prefixed with 'lake' (e.g. 'lake bed')."
-      }
-    },
-    {
-      "@id": "wtr:mud",
-      "@type": "skos:Concept",
-      "lu:colour": "#D9C49E",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "mud"
-    },
-    {
-      "@id": "lus:water_features.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lus:water_features"
-      }
-    },
-    {
-      "@id": "wtr:mangrove",
-      "@type": "skos:Concept",
-      "lu:colour": "#83B09E",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "mangrove"
-    },
-    {
-      "@id": "wtr:drain",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "drain"
-    },
-    {
-      "@id": "lus:water_features.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "lus:water_features"
-      }
-    },
-    {
-      "@id": "wtr:pond",
-      "@type": "skos:Concept",
-      "lu:colour": "#C3DFFF",
-      "skos:inScheme": {
-        "@id": "lus:water_features"
-      },
-      "skos:notation": "pond"
-    },
-    {
       "@id": "lus:water_features",
       "@type": "skos:ConceptScheme",
       "dcterms:issued": {
@@ -168,6 +25,122 @@
       }
     },
     {
+      "@id": "lus:water_features.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lus:water_features.jsonld"
+        },
+        {
+          "@id": "lus:water_features.rdf"
+        },
+        {
+          "@id": "lus:water_features.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "lus:water_features.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "lus:water_features"
+      }
+    },
+    {
+      "@id": "lus:water_features.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lus:water_features"
+      }
+    },
+    {
+      "@id": "lus:water_features.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lus:water_features"
+      }
+    },
+    {
+      "@id": "wtr:drain",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "drain"
+    },
+    {
+      "@id": "wtr:ice",
+      "@type": "skos:Concept",
+      "lu:colour": "#EDF5FF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "ice"
+    },
+    {
+      "@id": "wtr:lagoon",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "lagoon"
+    },
+    {
+      "@id": "wtr:lake",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "lake",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Matches any value prefixed with 'lake' (e.g. 'lake bed')."
+      }
+    },
+    {
+      "@id": "wtr:mangrove",
+      "@type": "skos:Concept",
+      "lu:colour": "#83B09E",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "mangrove"
+    },
+    {
+      "@id": "wtr:marine",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "marine"
+    },
+    {
+      "@id": "wtr:mud",
+      "@type": "skos:Concept",
+      "lu:colour": "#D9C49E",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "mud"
+    },
+    {
+      "@id": "wtr:pond",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "pond"
+    },
+    {
       "@id": "wtr:reef",
       "@type": "skos:Concept",
       "lu:colour": "#A9B0AD",
@@ -175,6 +148,33 @@
         "@id": "lus:water_features"
       },
       "skos:notation": "reef"
+    },
+    {
+      "@id": "wtr:river",
+      "@type": "skos:Concept",
+      "lu:colour": "#C3DFFF",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "river"
+    },
+    {
+      "@id": "wtr:sand",
+      "@type": "skos:Concept",
+      "lu:colour": "#FFFABA",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "sand"
+    },
+    {
+      "@id": "wtr:swamp",
+      "@type": "skos:Concept",
+      "lu:colour": "#83B09E",
+      "skos:inScheme": {
+        "@id": "lus:water_features"
+      },
+      "skos:notation": "swamp"
     }
   ]
 }

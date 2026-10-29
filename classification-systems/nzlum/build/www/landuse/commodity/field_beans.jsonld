@@ -24,23 +24,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:field_beans.ttl"
-        },
-        {
           "@id": "com:field_beans.jsonld"
         },
         {
           "@id": "com:field_beans.rdf"
+        },
+        {
+          "@id": "com:field_beans.ttl"
         }
       ]
-    },
-    {
-      "@id": "com:field_beans.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:field_beans"
-      }
     },
     {
       "@id": "com:field_beans.jsonld",
@@ -54,6 +46,14 @@
       "@id": "com:field_beans.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:field_beans"
+      }
+    },
+    {
+      "@id": "com:field_beans.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:field_beans"
       }

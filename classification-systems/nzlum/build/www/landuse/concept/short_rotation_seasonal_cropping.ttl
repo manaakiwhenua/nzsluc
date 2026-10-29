@@ -43,8 +43,7 @@ luc:short_rotation_seasonal_cropping a skos:Concept ;
     skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/65>,
         "The explicit five year periodicity was added in v0.4.0."@en ;
     skos:definition "This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:arable_cropping,
         luc:arable_mixed_livestock_cropping,
         luc:seasonal_flowers_bulbs_turf,

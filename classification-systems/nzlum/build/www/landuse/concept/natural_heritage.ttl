@@ -28,8 +28,7 @@ luc:natural_heritage.ttl a foaf:Document ;
 luc:natural_heritage a skos:Concept ;
     skos:broader luc:cultural_natural_heritage ;
     skos:definition "Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.2.3" ;
     skos:prefLabel "Natural heritage"@en ;
     foaf:isPrimaryTopicOf luc:natural_heritage.html .

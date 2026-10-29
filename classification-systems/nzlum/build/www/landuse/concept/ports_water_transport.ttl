@@ -30,8 +30,7 @@ luc:ports_water_transport a skos:Concept ;
     skos:definition "Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port."@en ;
     skos:example "Harbours, navigational channels."@en,
         "Ports, docks, and wharves."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.6.4" ;
     skos:prefLabel "Ports and water transport"@en ;
     skos:usageNote "The water attribute can be used to differentiate the terrestrial and marine parts of the same facility."@en ;

@@ -7,34 +7,31 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum">
     <dcterms:relation>
       <dcterms:BibliographicResource rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho">
-        <dcterms:description xml:lang="en">One strand of flax is easy to break, but many strands together will stand strong.</dcterms:description>
-        <dcterms:description xml:lang="mi">Kotahi te aho ka whati, ki te kāpuia e kore e whati.</dcterms:description>
         <dcterms:creator rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao"/>
+        <dcterms:description xml:lang="mi">Kotahi te aho ka whati, ki te kāpuia e kore e whati.</dcterms:description>
+        <dcterms:description xml:lang="en">One strand of flax is easy to break, but many strands together will stand strong.</dcterms:description>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.html"/>
       </dcterms:BibliographicResource>
     </dcterms:relation>
     <dcterms:title xml:lang="en">New Zealand Land Use and Management classification system</dcterms:title>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/doc/proverb/kotahi_te_aho.rdf"/>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/doc/person/kingi_tawhiao">
     <foaf:name xml:lang="mi">Tūkaroto Matutaera Pōtatau Te Wherowhero Tāwhiao</foaf:name>

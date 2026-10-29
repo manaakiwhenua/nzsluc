@@ -26,22 +26,6 @@
       }
     },
     {
-      "@id": "wtr:lake.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "wtr:lake"
-      }
-    },
-    {
-      "@id": "wtr:lake.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:lake"
-      }
-    },
-    {
       "@id": "wtr:lake",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -58,6 +42,22 @@
       }
     },
     {
+      "@id": "wtr:lake.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:lake.jsonld"
+        },
+        {
+          "@id": "wtr:lake.rdf"
+        },
+        {
+          "@id": "wtr:lake.ttl"
+        }
+      ]
+    },
+    {
       "@id": "wtr:lake.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -66,20 +66,20 @@
       }
     },
     {
-      "@id": "wtr:lake.html",
+      "@id": "wtr:lake.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:lake.ttl"
-        },
-        {
-          "@id": "wtr:lake.jsonld"
-        },
-        {
-          "@id": "wtr:lake.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "wtr:lake"
+      }
+    },
+    {
+      "@id": "wtr:lake.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:lake"
+      }
     }
   ]
 }

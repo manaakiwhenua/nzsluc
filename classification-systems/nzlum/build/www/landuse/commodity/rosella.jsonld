@@ -8,37 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:rosella.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:rosella"
-      }
-    },
-    {
-      "@id": "com:rosella.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:rosella"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:rosella.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:rosella"
-      }
-    },
-    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:rosella"
@@ -65,15 +34,46 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:rosella.ttl"
-        },
-        {
           "@id": "com:rosella.jsonld"
         },
         {
           "@id": "com:rosella.rdf"
+        },
+        {
+          "@id": "com:rosella.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:rosella.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:rosella"
+      }
+    },
+    {
+      "@id": "com:rosella.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rosella"
+      }
+    },
+    {
+      "@id": "com:rosella.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:rosella"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

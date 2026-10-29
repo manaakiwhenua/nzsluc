@@ -2,45 +2,42 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-  </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication">
-    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
-    <skos:changeNote xml:lang="en">Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.</skos:changeNote>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities">
         <skos:prefLabel xml:lang="en">Utilities</skos:prefLabel>
         <skos:notation>3.5.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:notation>3.5.8</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:example xml:lang="en">Radar stations, beacons, lighthouses, TV and radio transmission towers.</skos:example>
-    <skos:prefLabel xml:lang="en">Navigation and communication</skos:prefLabel>
     <skos:definition xml:lang="en">Navigation and communication infrastructure.</skos:definition>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.html"/>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:changeNote rdf:resource="https://github.com/manaakiwhenua/nzsluc/issues/69"/>
+    <skos:changeNote xml:lang="en">Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.</skos:changeNote>
+    <skos:example xml:lang="en">Radar stations, beacons, lighthouses, TV and radio transmission towers.</skos:example>
+    <skos:notation>3.5.8</skos:notation>
+    <skos:prefLabel xml:lang="en">Navigation and communication</skos:prefLabel>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/navigation_communication"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

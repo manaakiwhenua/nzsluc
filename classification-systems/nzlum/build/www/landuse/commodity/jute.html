@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:crop",
+      "skos:member": {
+        "@id": "com:jute"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
       "@id": "com:jute",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -34,23 +44,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:jute.ttl"
-        },
-        {
           "@id": "com:jute.jsonld"
         },
         {
           "@id": "com:jute.rdf"
+        },
+        {
+          "@id": "com:jute.ttl"
         }
       ]
-    },
-    {
-      "@id": "com:jute.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:jute"
-      }
     },
     {
       "@id": "com:jute.jsonld",
@@ -69,13 +71,11 @@
       }
     },
     {
-      "@id": "com:crop",
-      "skos:member": {
+      "@id": "com:jute.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:jute"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
       }
     },
     {

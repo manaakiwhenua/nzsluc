@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:grazing_native_vegetation.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:grazing_native_vegetation"
-      }
-    },
-    {
       "@id": "luc:grazing_native_vegetation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -38,14 +30,9 @@
         "@language": "en",
         "@value": "Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.3.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -62,28 +49,28 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:grazing_native_vegetation.ttl"
-        },
-        {
           "@id": "luc:grazing_native_vegetation.jsonld"
         },
         {
           "@id": "luc:grazing_native_vegetation.rdf"
+        },
+        {
+          "@id": "luc:grazing_native_vegetation.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:minimal_use_relatively_natural",
-      "skos:notation": "1.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Minimal use from relatively natural environments"
-      }
     },
     {
       "@id": "luc:grazing_native_vegetation.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:grazing_native_vegetation"
+      }
+    },
+    {
+      "@id": "luc:grazing_native_vegetation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:grazing_native_vegetation"
       }
@@ -95,12 +82,20 @@
       "foaf:primaryTopic": {
         "@id": "luc:grazing_native_vegetation"
       }
+    },
+    {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Grazing native vegetation</h1><div><span class="chip code">1.3.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_native_vegetation</p></div><h2>Definition</h2><blockquote>Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred.</blockquote><h2>Usage note</h2><blockquote>This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.3.0</code> <a href="/landuse/concept/minimal_use_relatively_natural">Minimal use from relatively natural environments</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.3.0</code> <a href="/landuse/concept/minimal_use_relatively_natural">Minimal use from relatively natural environments</a> › <strong>Grazing native vegetation</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.3.3</code></td><td>Grazing native vegetation</td><td><a href="/classification/v0-4/classes/100/#130-minimal-use-from-relatively-natural-environments">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.3.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.3.3</code></td><td>Grazing native vegetation</td><td><a href="/classification/v0-3/classes/100/#130-minimal-use-from-relatively-natural-environments">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.3.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/grazing_native_vegetation.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/grazing_native_vegetation.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/grazing_native_vegetation.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Grazing native vegetation</h1><div><span class="chip code">1.3.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_native_vegetation</p></div><h2>Definition</h2><blockquote>Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred.</blockquote><h2>Usage note</h2><blockquote>This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.3.0</code> <a href="/landuse/concept/minimal_use_relatively_natural">Minimal use from relatively natural environments</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.3.0</code> <a href="/landuse/concept/minimal_use_relatively_natural">Minimal use from relatively natural environments</a> › <strong>Grazing native vegetation</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>1.3.3</code></td><td>Grazing native vegetation</td><td><a href="/classification/v0-4/classes/100/#130-minimal-use-from-relatively-natural-environments">class page</a> · <a href="/landuse/code/nzlum0.4.1/1.3.3">code lookup</a></td><td>draft; differs: colour</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.3.3</code></td><td>Grazing native vegetation</td><td><a href="/classification/v0-4/classes/100/#130-minimal-use-from-relatively-natural-environments">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.3.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.3.3</code></td><td>Grazing native vegetation</td><td><a href="/classification/v0-3/classes/100/#130-minimal-use-from-relatively-natural-environments">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.3.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/grazing_native_vegetation.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/grazing_native_vegetation.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/grazing_native_vegetation.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

@@ -28,18 +28,37 @@
         "@language": "en",
         "@value": "Power generation from wind, including wind farms."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.5.3",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Wind electricity generation"
+      }
+    },
+    {
+      "@id": "luc:wind_electricity_generation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:wind_electricity_generation.jsonld"
+        },
+        {
+          "@id": "luc:wind_electricity_generation.rdf"
+        },
+        {
+          "@id": "luc:wind_electricity_generation.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:wind_electricity_generation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:wind_electricity_generation"
       }
     },
     {
@@ -54,30 +73,6 @@
       "@id": "luc:wind_electricity_generation.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:wind_electricity_generation"
-      }
-    },
-    {
-      "@id": "luc:wind_electricity_generation.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:wind_electricity_generation.ttl"
-        },
-        {
-          "@id": "luc:wind_electricity_generation.jsonld"
-        },
-        {
-          "@id": "luc:wind_electricity_generation.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:wind_electricity_generation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:wind_electricity_generation"
       }

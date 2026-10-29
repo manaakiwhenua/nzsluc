@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:orchids"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
       "@id": "com:orchids",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -19,6 +29,22 @@
       "skos:notation": "orchids"
     },
     {
+      "@id": "com:orchids.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:orchids.jsonld"
+        },
+        {
+          "@id": "com:orchids.rdf"
+        },
+        {
+          "@id": "com:orchids.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:orchids.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -27,13 +53,11 @@
       }
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
+      "@id": "com:orchids.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:orchids"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -45,34 +69,10 @@
       }
     },
     {
-      "@id": "com:orchids.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:orchids.ttl"
-        },
-        {
-          "@id": "com:orchids.jsonld"
-        },
-        {
-          "@id": "com:orchids.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:orchids.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:orchids"
       }
     }
   ]

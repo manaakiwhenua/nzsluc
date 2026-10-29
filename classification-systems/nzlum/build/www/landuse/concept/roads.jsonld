@@ -8,28 +8,42 @@
   },
   "@graph": [
     {
+      "@id": "luc:roads",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:roads.html"
+      },
+      "skos:broader": {
+        "@id": "luc:transport"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The full roading corridor, including sealed road areas and unsealed roadside strips."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "3.6.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Roads"
+      }
+    },
+    {
       "@id": "luc:roads.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:roads.ttl"
-        },
-        {
           "@id": "luc:roads.jsonld"
         },
         {
           "@id": "luc:roads.rdf"
+        },
+        {
+          "@id": "luc:roads.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:transport",
-      "skos:notation": "3.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Transportation"
-      }
     },
     {
       "@id": "luc:roads.jsonld",
@@ -48,38 +62,19 @@
       }
     },
     {
-      "@id": "luc:roads",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:roads.html"
-      },
-      "skos:broader": {
-        "@id": "luc:transport"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The full roading corridor, including sealed road areas and unsealed roadside strips."
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "3.6.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Roads"
-      }
-    },
-    {
       "@id": "luc:roads.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:roads"
+      }
+    },
+    {
+      "@id": "luc:transport",
+      "skos:notation": "3.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transportation"
       }
     }
   ]

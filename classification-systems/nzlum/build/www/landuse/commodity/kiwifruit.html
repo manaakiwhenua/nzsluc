@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:kiwifruit"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
       "@id": "com:kiwifruit",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,44 +39,27 @@
       "skos:notation": "kiwifruit"
     },
     {
-      "@id": "com:kiwifruit.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:kiwifruit"
-      }
-    },
-    {
       "@id": "com:kiwifruit.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:kiwifruit.ttl"
-        },
-        {
           "@id": "com:kiwifruit.jsonld"
         },
         {
           "@id": "com:kiwifruit.rdf"
+        },
+        {
+          "@id": "com:kiwifruit.ttl"
         }
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:kiwifruit.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:kiwifruit"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     },
     {
@@ -78,11 +71,18 @@
       }
     },
     {
-      "@id": "com:kiwifruit.jsonld",
+      "@id": "com:kiwifruit.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:kiwifruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

@@ -18,9 +18,36 @@
   },
   "@graph": [
     {
-      "@id": "com:peppermint.ttl",
+      "@id": "com:peppermint",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:peppermint.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peppermint"
+    },
+    {
+      "@id": "com:peppermint.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:peppermint.jsonld"
+        },
+        {
+          "@id": "com:peppermint.rdf"
+        },
+        {
+          "@id": "com:peppermint.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:peppermint.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:peppermint"
       }
@@ -34,20 +61,12 @@
       }
     },
     {
-      "@id": "com:peppermint.html",
+      "@id": "com:peppermint.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:peppermint.ttl"
-        },
-        {
-          "@id": "com:peppermint.jsonld"
-        },
-        {
-          "@id": "com:peppermint.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:peppermint"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -60,29 +79,10 @@
       }
     },
     {
-      "@id": "com:peppermint",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:peppermint.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "peppermint"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:peppermint.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:peppermint"
       }
     }
   ]

@@ -2,9 +2,13 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
+    <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
+    <skos:notation>2.6.0</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -27,17 +31,11 @@
     </dcterms:hasFormat>
   </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture">
-    <skos:definition xml:lang="en">Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.</skos:definition>
-    <skos:notation>2.6.5</skos:notation>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <skos:prefLabel xml:lang="en">Aquaculture</skos:prefLabel>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
-        <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
-        <skos:notation>2.6.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:definition xml:lang="en">Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:notation>2.6.5</skos:notation>
     <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/aquaculture.html"/>
   </skos:Concept>
 </rdf:RDF>

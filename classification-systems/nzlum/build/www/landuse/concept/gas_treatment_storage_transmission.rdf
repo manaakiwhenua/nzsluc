@@ -2,43 +2,39 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission">
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities"/>
+        <skos:notation>3.5.6</skos:notation>
+        <skos:prefLabel xml:lang="en">Gas treatment, storage, and transmission</skos:prefLabel>
+        <skos:definition xml:lang="en">Facilities and infrastructure for processing, storage, and transport of natural gas.</skos:definition>
+        <skos:example xml:lang="en">Treatment plants, storage facilities, pipelines.</skos:example>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities">
+    <skos:prefLabel xml:lang="en">Utilities</skos:prefLabel>
+    <skos:notation>3.5.0</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.ttl"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.rdf"/>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:example xml:lang="en">Treatment plants, storage facilities, pipelines.</skos:example>
-    <skos:notation>3.5.6</skos:notation>
-    <skos:prefLabel xml:lang="en">Gas treatment, storage, and transmission</skos:prefLabel>
-    <skos:definition xml:lang="en">Facilities and infrastructure for processing, storage, and transport of natural gas.</skos:definition>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/utilities">
-        <skos:prefLabel xml:lang="en">Utilities</skos:prefLabel>
-        <skos:notation>3.5.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/gas_treatment_storage_transmission.html"/>
-  </skos:Concept>
 </rdf:RDF>

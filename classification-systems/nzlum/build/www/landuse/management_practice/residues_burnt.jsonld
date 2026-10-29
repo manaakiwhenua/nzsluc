@@ -8,6 +8,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:residues_burnt"
@@ -18,11 +25,31 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
+      "@id": "mgmt:residues_burnt",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:residues_burnt.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "residues burnt"
+    },
+    {
+      "@id": "mgmt:residues_burnt.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:residues_burnt.jsonld"
+        },
+        {
+          "@id": "mgmt:residues_burnt.rdf"
+        },
+        {
+          "@id": "mgmt:residues_burnt.ttl"
+        }
+      ]
     },
     {
       "@id": "mgmt:residues_burnt.jsonld",
@@ -41,39 +68,12 @@
       }
     },
     {
-      "@id": "mgmt:residues_burnt.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:residues_burnt.ttl"
-        },
-        {
-          "@id": "mgmt:residues_burnt.jsonld"
-        },
-        {
-          "@id": "mgmt:residues_burnt.rdf"
-        }
-      ]
-    },
-    {
       "@id": "mgmt:residues_burnt.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:residues_burnt"
       }
-    },
-    {
-      "@id": "mgmt:residues_burnt",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:residues_burnt.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "residues burnt"
     }
   ]
 }

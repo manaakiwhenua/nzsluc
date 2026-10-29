@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:bauxite",
-      "skos:notation": "bauxite"
-    },
-    {
-      "@id": "com:nickel",
-      "skos:notation": "nickel"
-    },
-    {
-      "@id": "com:mines.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:mines"
-      }
-    },
-    {
       "@id": "com:alumina",
       "skos:notation": "alumina"
     },
@@ -42,48 +26,52 @@
       "skos:notation": "aluminium"
     },
     {
+      "@id": "com:bauxite",
+      "skos:notation": "bauxite"
+    },
+    {
+      "@id": "com:coal",
+      "skos:notation": "coal"
+    },
+    {
+      "@id": "com:coal_black",
+      "skos:notation": "coal_black "
+    },
+    {
+      "@id": "com:coal_brown",
+      "skos:notation": "coal_brown "
+    },
+    {
+      "@id": "com:copper",
+      "skos:notation": "copper"
+    },
+    {
+      "@id": "com:diamonds_rough",
+      "skos:notation": "diamonds_rough "
+    },
+    {
       "@id": "com:gold",
       "skos:notation": "gold"
-    },
-    {
-      "@id": "com:silica_sand",
-      "skos:notation": "silica_sand"
-    },
-    {
-      "@id": "com:rare_earths",
-      "skos:notation": "rare_earths "
-    },
-    {
-      "@id": "com:mines.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:mines"
-      }
-    },
-    {
-      "@id": "com:stone",
-      "skos:notation": "stone"
-    },
-    {
-      "@id": "com:salt",
-      "skos:notation": "salt"
-    },
-    {
-      "@id": "com:lead",
-      "skos:notation": "lead"
-    },
-    {
-      "@id": "com:mineral_sands",
-      "skos:notation": "mineral_sands "
     },
     {
       "@id": "com:iron_ore",
       "skos:notation": "iron_ore"
     },
     {
-      "@id": "com:diamonds_rough",
-      "skos:notation": "diamonds_rough "
+      "@id": "com:ironsand",
+      "skos:notation": "ironsand"
+    },
+    {
+      "@id": "com:lead",
+      "skos:notation": "lead"
+    },
+    {
+      "@id": "com:metal",
+      "skos:notation": "metal"
+    },
+    {
+      "@id": "com:mineral_sands",
+      "skos:notation": "mineral_sands "
     },
     {
       "@id": "com:mines",
@@ -96,73 +84,73 @@
       },
       "skos:member": [
         {
-          "@id": "com:copper"
-        },
-        {
           "@id": "com:alumina"
-        },
-        {
-          "@id": "com:salt"
-        },
-        {
-          "@id": "com:rare_earths"
-        },
-        {
-          "@id": "com:diamonds_rough"
-        },
-        {
-          "@id": "com:ironsand"
-        },
-        {
-          "@id": "com:gold"
-        },
-        {
-          "@id": "com:silica_sand"
-        },
-        {
-          "@id": "com:uranium"
-        },
-        {
-          "@id": "com:coal"
         },
         {
           "@id": "com:aluminium"
         },
         {
-          "@id": "com:coal_brown"
+          "@id": "com:bauxite"
         },
         {
-          "@id": "com:zeolite"
+          "@id": "com:coal"
         },
         {
           "@id": "com:coal_black"
         },
         {
-          "@id": "com:zinc"
+          "@id": "com:coal_brown"
         },
         {
-          "@id": "com:nickel"
+          "@id": "com:copper"
         },
         {
-          "@id": "com:lead"
+          "@id": "com:diamonds_rough"
+        },
+        {
+          "@id": "com:gold"
         },
         {
           "@id": "com:iron_ore"
         },
         {
-          "@id": "com:bauxite"
+          "@id": "com:ironsand"
+        },
+        {
+          "@id": "com:lead"
+        },
+        {
+          "@id": "com:metal"
         },
         {
           "@id": "com:mineral_sands"
         },
         {
+          "@id": "com:nickel"
+        },
+        {
+          "@id": "com:rare_earths"
+        },
+        {
+          "@id": "com:salt"
+        },
+        {
           "@id": "com:shingle"
+        },
+        {
+          "@id": "com:silica_sand"
         },
         {
           "@id": "com:stone"
         },
         {
-          "@id": "com:metal"
+          "@id": "com:uranium"
+        },
+        {
+          "@id": "com:zeolite"
+        },
+        {
+          "@id": "com:zinc"
         }
       ],
       "skos:prefLabel": {
@@ -171,38 +159,18 @@
       }
     },
     {
-      "@id": "com:coal",
-      "skos:notation": "coal"
-    },
-    {
-      "@id": "com:zeolite",
-      "skos:notation": "zeolite"
-    },
-    {
-      "@id": "com:ironsand",
-      "skos:notation": "ironsand"
-    },
-    {
-      "@id": "com:zinc",
-      "skos:notation": "zinc"
-    },
-    {
-      "@id": "com:uranium",
-      "skos:notation": "uranium"
-    },
-    {
       "@id": "com:mines.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:mines.ttl"
-        },
-        {
           "@id": "com:mines.jsonld"
         },
         {
           "@id": "com:mines.rdf"
+        },
+        {
+          "@id": "com:mines.ttl"
         }
       ]
     },
@@ -215,12 +183,56 @@
       }
     },
     {
-      "@id": "com:metal",
-      "skos:notation": "metal"
+      "@id": "com:mines.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:mines"
+      }
     },
     {
-      "@id": "com:copper",
-      "skos:notation": "copper"
+      "@id": "com:mines.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:mines"
+      }
+    },
+    {
+      "@id": "com:nickel",
+      "skos:notation": "nickel"
+    },
+    {
+      "@id": "com:rare_earths",
+      "skos:notation": "rare_earths "
+    },
+    {
+      "@id": "com:salt",
+      "skos:notation": "salt"
+    },
+    {
+      "@id": "com:shingle",
+      "skos:notation": "shingle"
+    },
+    {
+      "@id": "com:silica_sand",
+      "skos:notation": "silica_sand"
+    },
+    {
+      "@id": "com:stone",
+      "skos:notation": "stone"
+    },
+    {
+      "@id": "com:uranium",
+      "skos:notation": "uranium"
+    },
+    {
+      "@id": "com:zeolite",
+      "skos:notation": "zeolite"
+    },
+    {
+      "@id": "com:zinc",
+      "skos:notation": "zinc"
     },
     {
       "@id": "lus:commodities",
@@ -228,18 +240,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:coal_black",
-      "skos:notation": "coal_black "
-    },
-    {
-      "@id": "com:shingle",
-      "skos:notation": "shingle"
-    },
-    {
-      "@id": "com:coal_brown",
-      "skos:notation": "coal_brown "
     }
   ]
 }

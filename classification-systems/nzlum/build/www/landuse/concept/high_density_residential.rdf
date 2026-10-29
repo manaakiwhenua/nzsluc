@@ -2,29 +2,10 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/residential">
-    <skos:prefLabel xml:lang="en">Residential</skos:prefLabel>
-    <skos:notation>3.1.0</skos:notation>
-  </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.jsonld">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential">
-        <skos:notation>3.1.1</skos:notation>
-        <lu:colour>#4C3B39</lu:colour>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:definition xml:lang="en">Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.</skos:definition>
-        <skos:prefLabel xml:lang="en">High-density residential</skos:prefLabel>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -33,7 +14,12 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential"/>
@@ -41,4 +27,17 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/residential">
+    <skos:prefLabel xml:lang="en">Residential</skos:prefLabel>
+    <skos:notation>3.1.0</skos:notation>
+  </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/residential"/>
+    <skos:prefLabel xml:lang="en">High-density residential</skos:prefLabel>
+    <lu:colour>#4C3B39</lu:colour>
+    <skos:notation>3.1.1</skos:notation>
+    <skos:definition xml:lang="en">Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.</skos:definition>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/high_density_residential.html"/>
+  </skos:Concept>
 </rdf:RDF>

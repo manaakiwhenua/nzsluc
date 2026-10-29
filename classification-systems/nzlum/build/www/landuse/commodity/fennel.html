@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:fennel.ttl",
+      "@id": "com:fennel",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:fennel.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "fennel"
+    },
+    {
+      "@id": "com:fennel.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:fennel"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:fennel.jsonld"
+        },
+        {
+          "@id": "com:fennel.rdf"
+        },
+        {
+          "@id": "com:fennel.ttl"
+        }
+      ]
     },
     {
       "@id": "com:fennel.jsonld",
@@ -37,6 +56,14 @@
       "@id": "com:fennel.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:fennel"
+      }
+    },
+    {
+      "@id": "com:fennel.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:fennel"
       }
@@ -57,33 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:fennel.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:fennel.ttl"
-        },
-        {
-          "@id": "com:fennel.jsonld"
-        },
-        {
-          "@id": "com:fennel.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:fennel",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:fennel.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "fennel"
     }
   ]
 }

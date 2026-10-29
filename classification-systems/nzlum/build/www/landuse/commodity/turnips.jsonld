@@ -8,12 +8,31 @@
   },
   "@graph": [
     {
-      "@id": "com:turnips.rdf",
+      "@id": "com:turnips",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:turnips.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turnips"
+    },
+    {
+      "@id": "com:turnips.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:turnips"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:turnips.jsonld"
+        },
+        {
+          "@id": "com:turnips.rdf"
+        },
+        {
+          "@id": "com:turnips.ttl"
+        }
+      ]
     },
     {
       "@id": "com:turnips.jsonld",
@@ -24,15 +43,12 @@
       }
     },
     {
-      "@id": "com:turnips",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:turnips.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turnips"
+      "@id": "com:turnips.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:turnips"
+      }
     },
     {
       "@id": "com:turnips.ttl",
@@ -58,22 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:turnips.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:turnips.ttl"
-        },
-        {
-          "@id": "com:turnips.jsonld"
-        },
-        {
-          "@id": "com:turnips.rdf"
-        }
-      ]
     }
   ]
 }

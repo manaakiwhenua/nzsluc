@@ -8,11 +8,10 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:open_growing.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:open_growing"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -23,6 +22,41 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Horticulture"
+      }
+    },
+    {
+      "@id": "mgmt:open_growing",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:open_growing.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "open growing"
+    },
+    {
+      "@id": "mgmt:open_growing.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:open_growing.jsonld"
+        },
+        {
+          "@id": "mgmt:open_growing.rdf"
+        },
+        {
+          "@id": "mgmt:open_growing.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:open_growing.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:open_growing"
       }
     },
     {
@@ -40,40 +74,6 @@
       "foaf:primaryTopic": {
         "@id": "mgmt:open_growing"
       }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:open_growing.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:open_growing.ttl"
-        },
-        {
-          "@id": "mgmt:open_growing.jsonld"
-        },
-        {
-          "@id": "mgmt:open_growing.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:open_growing",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:open_growing.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "open growing"
     }
   ]
 }

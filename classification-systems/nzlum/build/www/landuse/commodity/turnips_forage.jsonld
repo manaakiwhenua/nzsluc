@@ -8,20 +8,49 @@
   },
   "@graph": [
     {
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:turnips_forage"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
+      "@id": "com:turnips_forage",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:turnips_forage.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "turnips forage"
+    },
+    {
       "@id": "com:turnips_forage.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:turnips_forage.ttl"
-        },
-        {
           "@id": "com:turnips_forage.jsonld"
         },
         {
           "@id": "com:turnips_forage.rdf"
+        },
+        {
+          "@id": "com:turnips_forage.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:turnips_forage.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:turnips_forage"
+      }
     },
     {
       "@id": "com:turnips_forage.rdf",
@@ -40,39 +69,10 @@
       }
     },
     {
-      "@id": "com:turnips_forage",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:turnips_forage.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "turnips forage"
-    },
-    {
-      "@id": "com:turnips_forage.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:turnips_forage"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:turnips_forage"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
       }
     }
   ]

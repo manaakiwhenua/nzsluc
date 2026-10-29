@@ -18,45 +18,10 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:free_standing.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:free_standing"
-      }
-    },
-    {
-      "@id": "mgmt:free_standing.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:free_standing"
-      }
-    },
-    {
-      "@id": "mgmt:free_standing.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:free_standing.ttl"
-        },
-        {
-          "@id": "mgmt:free_standing.jsonld"
-        },
-        {
-          "@id": "mgmt:free_standing.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:horticulture",
-      "skos:member": {
-        "@id": "mgmt:free_standing"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Horticulture"
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -71,10 +36,27 @@
       "skos:notation": "free standing"
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
+      "@id": "mgmt:free_standing.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:free_standing.jsonld"
+        },
+        {
+          "@id": "mgmt:free_standing.rdf"
+        },
+        {
+          "@id": "mgmt:free_standing.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:free_standing.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:free_standing"
       }
     },
     {
@@ -83,6 +65,24 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:free_standing"
+      }
+    },
+    {
+      "@id": "mgmt:free_standing.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:free_standing"
+      }
+    },
+    {
+      "@id": "mgmt:horticulture",
+      "skos:member": {
+        "@id": "mgmt:free_standing"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
       }
     }
   ]

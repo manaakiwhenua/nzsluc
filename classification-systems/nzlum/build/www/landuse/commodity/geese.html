@@ -18,20 +18,14 @@
   },
   "@graph": [
     {
-      "@id": "com:geese.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:geese.ttl"
-        },
-        {
-          "@id": "com:geese.jsonld"
-        },
-        {
-          "@id": "com:geese.rdf"
-        }
-      ]
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:geese"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
     },
     {
       "@id": "com:geese",
@@ -49,29 +43,20 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
-        "@id": "com:geese"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:geese.ttl",
+      "@id": "com:geese.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:geese"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:geese.jsonld"
+        },
+        {
+          "@id": "com:geese.rdf"
+        },
+        {
+          "@id": "com:geese.ttl"
+        }
+      ]
     },
     {
       "@id": "com:geese.jsonld",
@@ -87,6 +72,21 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:geese"
+      }
+    },
+    {
+      "@id": "com:geese.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:geese"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

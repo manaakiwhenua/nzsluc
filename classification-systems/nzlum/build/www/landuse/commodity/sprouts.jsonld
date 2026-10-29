@@ -19,9 +19,25 @@
       "skos:notation": "sprouts"
     },
     {
-      "@id": "com:sprouts.ttl",
+      "@id": "com:sprouts.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sprouts.jsonld"
+        },
+        {
+          "@id": "com:sprouts.rdf"
+        },
+        {
+          "@id": "com:sprouts.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:sprouts.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:sprouts"
       }
@@ -35,9 +51,9 @@
       }
     },
     {
-      "@id": "com:sprouts.jsonld",
+      "@id": "com:sprouts.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:sprouts"
       }
@@ -58,22 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:sprouts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sprouts.ttl"
-        },
-        {
-          "@id": "com:sprouts.jsonld"
-        },
-        {
-          "@id": "com:sprouts.rdf"
-        }
-      ]
     }
   ]
 }

@@ -20,14 +20,9 @@
         "@language": "en",
         "@value": "An area used for manufacturing, assembly, or repairs of various products."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.4.1",
       "skos:prefLabel": {
         "@language": "en",
@@ -39,9 +34,25 @@
       }
     },
     {
-      "@id": "luc:general_purpose_factory.ttl",
+      "@id": "luc:general_purpose_factory.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:general_purpose_factory.jsonld"
+        },
+        {
+          "@id": "luc:general_purpose_factory.rdf"
+        },
+        {
+          "@id": "luc:general_purpose_factory.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:general_purpose_factory.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:general_purpose_factory"
       }
@@ -55,28 +66,12 @@
       }
     },
     {
-      "@id": "luc:general_purpose_factory.jsonld",
+      "@id": "luc:general_purpose_factory.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:general_purpose_factory"
       }
-    },
-    {
-      "@id": "luc:general_purpose_factory.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:general_purpose_factory.ttl"
-        },
-        {
-          "@id": "luc:general_purpose_factory.jsonld"
-        },
-        {
-          "@id": "luc:general_purpose_factory.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:manufacturing_industrial",

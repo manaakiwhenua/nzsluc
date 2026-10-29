@@ -18,6 +18,10 @@
       }
     },
     {
+      "@id": "com:goats",
+      "skos:notation": "goats"
+    },
+    {
       "@id": "com:goats_meat",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -41,13 +45,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:goats_meat.ttl"
-        },
-        {
           "@id": "com:goats_meat.jsonld"
         },
         {
           "@id": "com:goats_meat.rdf"
+        },
+        {
+          "@id": "com:goats_meat.ttl"
         }
       ]
     },
@@ -68,22 +72,18 @@
       }
     },
     {
-      "@id": "com:goats",
-      "skos:notation": "goats"
+      "@id": "com:goats_meat.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:goats_meat"
+      }
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:goats_meat.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:goats_meat"
       }
     }
   ]

@@ -28,8 +28,7 @@ luc:minimal_use_relatively_natural skos:notation "1.3.0" ;
 luc:ground_water a skos:Concept ;
     skos:broader luc:minimal_use_relatively_natural ;
     skos:definition "An area managed as an aquifer recharge zone."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.3.2" ;
     skos:prefLabel "Ground water"@en ;
     foaf:isPrimaryTopicOf luc:ground_water.html .

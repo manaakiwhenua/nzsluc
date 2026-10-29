@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:cultural_heritage.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:cultural_heritage.ttl"
-        },
-        {
-          "@id": "luc:cultural_heritage.jsonld"
-        },
-        {
-          "@id": "luc:cultural_heritage.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:cultural_heritage.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:cultural_heritage"
-      }
-    },
-    {
       "@id": "luc:cultural_heritage",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -44,14 +20,9 @@
         "@language": "en",
         "@value": "Cultural heritage areas (e.g. historical mining sites, selected DOC 'iconic sites', Toru Whenua and other cultural landmarks)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.2.2",
       "skos:prefLabel": {
         "@language": "en",
@@ -59,12 +30,20 @@
       }
     },
     {
-      "@id": "luc:cultural_natural_heritage",
-      "skos:notation": "1.2.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Cultural and natural heritage"
-      }
+      "@id": "luc:cultural_heritage.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:cultural_heritage.jsonld"
+        },
+        {
+          "@id": "luc:cultural_heritage.rdf"
+        },
+        {
+          "@id": "luc:cultural_heritage.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:cultural_heritage.jsonld",
@@ -75,11 +54,27 @@
       }
     },
     {
+      "@id": "luc:cultural_heritage.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:cultural_heritage"
+      }
+    },
+    {
       "@id": "luc:cultural_heritage.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:cultural_heritage"
+      }
+    },
+    {
+      "@id": "luc:cultural_natural_heritage",
+      "skos:notation": "1.2.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cultural and natural heritage"
       }
     }
   ]

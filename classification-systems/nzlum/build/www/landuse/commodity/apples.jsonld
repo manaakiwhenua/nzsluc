@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:apples.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:apples"
-      }
-    },
-    {
-      "@id": "com:apples.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:apples"
-      }
-    },
-    {
       "@id": "com:apples",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -40,27 +24,36 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:apples.ttl"
-        },
-        {
           "@id": "com:apples.jsonld"
         },
         {
           "@id": "com:apples.rdf"
+        },
+        {
+          "@id": "com:apples.ttl"
         }
       ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
     },
     {
       "@id": "com:apples.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:apples"
+      }
+    },
+    {
+      "@id": "com:apples.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:apples"
+      }
+    },
+    {
+      "@id": "com:apples.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:apples"
       }
@@ -73,6 +66,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

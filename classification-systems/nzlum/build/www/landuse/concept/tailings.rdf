@@ -5,37 +5,36 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings">
+    <skos:prefLabel xml:lang="en">Tailings</skos:prefLabel>
+    <skos:notation>3.7.3</skos:notation>
+    <skos:definition xml:lang="en">Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output).</skos:definition>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining">
+        <skos:prefLabel xml:lang="en">Mining</skos:prefLabel>
+        <skos:notation>3.7.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings">
-        <skos:prefLabel xml:lang="en">Tailings</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:definition xml:lang="en">Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output).</skos:definition>
-        <skos:notation>3.7.3</skos:notation>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/mining"/>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.jsonld"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tailings"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining">
-    <skos:prefLabel xml:lang="en">Mining</skos:prefLabel>
-    <skos:notation>3.7.0</skos:notation>
-  </rdf:Description>
 </rdf:RDF>

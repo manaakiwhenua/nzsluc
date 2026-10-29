@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture">
-        <skos:prefLabel xml:lang="en">Land in transition</skos:prefLabel>
-        <skos:notation>2.8.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:notation>2.8.1</skos:notation>
-    <skos:prefLabel xml:lang="en">Unused degraded land</skos:prefLabel>
-    <skos:definition xml:lang="en">Unused land that is degraded through erosion or flood events that is not being rehabilitated.</skos:definition>
-    <skos:usageNote xml:lang="en">Can include contaminated land.</skos:usageNote>
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag"/>
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture"/>
+        <skos:notation>2.8.1</skos:notation>
+        <skos:prefLabel xml:lang="en">Unused degraded land</skos:prefLabel>
+        <skos:definition xml:lang="en">Unused land that is degraded through erosion or flood events that is not being rehabilitated.</skos:definition>
+        <skos:usageNote xml:lang="en">Can include contaminated land.</skos:usageNote>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag"/>
-    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.jsonld"/>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/unused_degraded_land_ag.rdf"/>
+  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/land_in_transition_agriculture">
+    <skos:prefLabel xml:lang="en">Land in transition</skos:prefLabel>
+    <skos:notation>2.8.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

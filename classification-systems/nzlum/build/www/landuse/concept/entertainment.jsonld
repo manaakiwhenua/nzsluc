@@ -8,43 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:entertainment.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:entertainment.ttl"
-        },
-        {
-          "@id": "luc:entertainment.jsonld"
-        },
-        {
-          "@id": "luc:entertainment.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:entertainment.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:entertainment"
-      }
-    },
-    {
       "@id": "luc:commercial",
       "skos:notation": "3.3.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Commercial"
-      }
-    },
-    {
-      "@id": "luc:entertainment.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:entertainment"
       }
     },
     {
@@ -64,14 +32,9 @@
         "@language": "en",
         "@value": "Cinemas, theatres, amusement parks, casinos, concert venues."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.3.4",
       "skos:prefLabel": {
         "@language": "en",
@@ -79,9 +42,41 @@
       }
     },
     {
+      "@id": "luc:entertainment.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:entertainment.jsonld"
+        },
+        {
+          "@id": "luc:entertainment.rdf"
+        },
+        {
+          "@id": "luc:entertainment.ttl"
+        }
+      ]
+    },
+    {
       "@id": "luc:entertainment.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:entertainment"
+      }
+    },
+    {
+      "@id": "luc:entertainment.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:entertainment"
+      }
+    },
+    {
+      "@id": "luc:entertainment.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:entertainment"
       }

@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pigs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pigs"
-      }
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:pigs"
@@ -23,14 +15,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Animals"
-      }
-    },
-    {
-      "@id": "com:pigs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pigs"
       }
     },
     {
@@ -49,27 +33,28 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:pigs.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:pigs.ttl"
-        },
-        {
           "@id": "com:pigs.jsonld"
         },
         {
           "@id": "com:pigs.rdf"
+        },
+        {
+          "@id": "com:pigs.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:pigs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pigs"
+      }
     },
     {
       "@id": "com:pigs.rdf",
@@ -77,6 +62,21 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:pigs"
+      }
+    },
+    {
+      "@id": "com:pigs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pigs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

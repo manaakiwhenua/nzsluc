@@ -28,8 +28,7 @@ luc:production_nurseries.ttl a foaf:Document ;
 luc:production_nurseries a skos:Concept ;
     skos:broader luc:intensive_horticulture ;
     skos:definition "Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.5.1" ;
     skos:prefLabel "Production nurseries"@en ;
     skos:scopeNote "Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality."@en,

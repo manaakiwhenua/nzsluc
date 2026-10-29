@@ -28,8 +28,7 @@ luc:short_rotation_seasonal_cropping skos:notation "2.3.0" ;
 luc:short_rotation_horticulture a skos:Concept ;
     skos:broader luc:short_rotation_seasonal_cropping ;
     skos:definition "Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.3.3" ;
     skos:prefLabel "Short-rotation horticulture"@en ;
     skos:scopeNote "May include livestock rotations, but this is considered less likely"@en ;

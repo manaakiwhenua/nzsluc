@@ -31,8 +31,7 @@ luc:navigation_communication a skos:Concept ;
         "Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure."@en ;
     skos:definition "Navigation and communication infrastructure."@en ;
     skos:example "Radar stations, beacons, lighthouses, TV and radio transmission towers."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.8" ;
     skos:prefLabel "Navigation and communication"@en ;
     foaf:isPrimaryTopicOf luc:navigation_communication.html .

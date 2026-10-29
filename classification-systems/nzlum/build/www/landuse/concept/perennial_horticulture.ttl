@@ -38,8 +38,7 @@ luc:vine_fruits skos:notation "2.4.2" ;
 luc:perennial_horticulture a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:other_perennial_horticulture,
         luc:tree_crops,
         luc:vine_fruits ;

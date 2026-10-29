@@ -8,20 +8,12 @@
   },
   "@graph": [
     {
-      "@id": "luc:retail.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:retail.ttl"
-        },
-        {
-          "@id": "luc:retail.jsonld"
-        },
-        {
-          "@id": "luc:retail.rdf"
-        }
-      ]
+      "@id": "luc:commercial",
+      "skos:notation": "3.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial"
+      }
     },
     {
       "@id": "luc:retail",
@@ -40,19 +32,30 @@
         "@language": "en",
         "@value": "Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.3.1",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Retail"
       }
+    },
+    {
+      "@id": "luc:retail.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:retail.jsonld"
+        },
+        {
+          "@id": "luc:retail.rdf"
+        },
+        {
+          "@id": "luc:retail.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:retail.jsonld",
@@ -68,14 +71,6 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:retail"
-      }
-    },
-    {
-      "@id": "luc:commercial",
-      "skos:notation": "3.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Commercial"
       }
     },
     {

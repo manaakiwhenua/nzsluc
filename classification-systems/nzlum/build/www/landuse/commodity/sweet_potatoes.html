@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sweet_potatoes.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sweet_potatoes"
-      }
-    },
-    {
-      "@id": "com:sweet_potatoes.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sweet_potatoes.ttl"
-        },
-        {
-          "@id": "com:sweet_potatoes.jsonld"
-        },
-        {
-          "@id": "com:sweet_potatoes.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sweet_potatoes.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sweet_potatoes"
-      }
-    },
-    {
       "@id": "com:sweet_potatoes",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -59,6 +27,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "sweet potatoes"
+    },
+    {
+      "@id": "com:sweet_potatoes.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sweet_potatoes.jsonld"
+        },
+        {
+          "@id": "com:sweet_potatoes.rdf"
+        },
+        {
+          "@id": "com:sweet_potatoes.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:sweet_potatoes.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sweet_potatoes"
+      }
+    },
+    {
+      "@id": "com:sweet_potatoes.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sweet_potatoes"
+      }
+    },
+    {
+      "@id": "com:sweet_potatoes.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sweet_potatoes"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -75,14 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sweet_potatoes.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:sweet_potatoes"
       }
     }
   ]

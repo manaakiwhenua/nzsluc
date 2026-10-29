@@ -18,50 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:oranges.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:oranges"
-      }
-    },
-    {
-      "@id": "com:oranges.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:oranges"
-      }
-    },
-    {
-      "@id": "com:oranges.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:oranges.ttl"
-        },
-        {
-          "@id": "com:oranges.jsonld"
-        },
-        {
-          "@id": "com:oranges.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
+      },
+      "skos:prefLabel": {
         "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:oranges.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oranges"
+        "@value": "Fruit"
       }
     },
     {
@@ -76,13 +39,50 @@
       "skos:notation": "oranges"
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:oranges.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:oranges.jsonld"
+        },
+        {
+          "@id": "com:oranges.rdf"
+        },
+        {
+          "@id": "com:oranges.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:oranges.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:oranges"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "com:oranges.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oranges"
+      }
+    },
+    {
+      "@id": "com:oranges.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:oranges"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

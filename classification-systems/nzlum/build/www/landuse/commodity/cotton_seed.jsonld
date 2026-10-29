@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:cotton_seed.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:cotton_seed.ttl"
-        },
-        {
-          "@id": "com:cotton_seed.jsonld"
-        },
-        {
-          "@id": "com:cotton_seed.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:cotton_seed",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -36,6 +20,22 @@
         "@language": "en",
         "@value": "cotton seed"
       }
+    },
+    {
+      "@id": "com:cotton_seed.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:cotton_seed.jsonld"
+        },
+        {
+          "@id": "com:cotton_seed.rdf"
+        },
+        {
+          "@id": "com:cotton_seed.ttl"
+        }
+      ]
     },
     {
       "@id": "com:cotton_seed.jsonld",
@@ -54,10 +54,11 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:cotton_seed.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cotton_seed"
       }
     },
     {
@@ -71,11 +72,10 @@
       }
     },
     {
-      "@id": "com:cotton_seed.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cotton_seed"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

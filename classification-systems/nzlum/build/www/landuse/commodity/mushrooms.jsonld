@@ -8,9 +8,52 @@
   },
   "@graph": [
     {
+      "@id": "com:mushrooms",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:mushrooms.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mushrooms"
+    },
+    {
+      "@id": "com:mushrooms.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:mushrooms.jsonld"
+        },
+        {
+          "@id": "com:mushrooms.rdf"
+        },
+        {
+          "@id": "com:mushrooms.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:mushrooms.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:mushrooms"
+      }
+    },
+    {
+      "@id": "com:mushrooms.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:mushrooms"
+      }
+    },
+    {
+      "@id": "com:mushrooms.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:mushrooms"
       }
@@ -26,54 +69,11 @@
       }
     },
     {
-      "@id": "com:mushrooms.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:mushrooms.ttl"
-        },
-        {
-          "@id": "com:mushrooms.jsonld"
-        },
-        {
-          "@id": "com:mushrooms.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:mushrooms.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:mushrooms"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:mushrooms.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:mushrooms"
-      }
-    },
-    {
-      "@id": "com:mushrooms",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:mushrooms.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mushrooms"
     }
   ]
 }

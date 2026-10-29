@@ -28,8 +28,7 @@ luc:transportation_warehousing_commercial.ttl a foaf:Document ;
 luc:transportation_warehousing_commercial a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.6" ;
     skos:prefLabel "Transportation & warehousing"@en ;
     skos:scopeNote "Excludes airports, ports, roads, and train stations (captured under 3.6.0)"@en ;

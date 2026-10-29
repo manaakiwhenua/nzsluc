@@ -8,47 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:vegetable_seeds.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetable_seeds"
-      }
-    },
-    {
-      "@id": "com:vegetable_seeds.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetable_seeds"
-      }
-    },
-    {
-      "@id": "com:vegetables_and_herbs",
-      "skos:member": {
-        "@id": "com:vegetable_seeds"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vegetables and herbs"
-      }
-    },
-    {
-      "@id": "com:vegetable_seeds.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:vegetable_seeds"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:vegetable_seeds",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -65,15 +24,56 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:vegetable_seeds.ttl"
-        },
-        {
           "@id": "com:vegetable_seeds.jsonld"
         },
         {
           "@id": "com:vegetable_seeds.rdf"
+        },
+        {
+          "@id": "com:vegetable_seeds.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:vegetable_seeds.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetable_seeds"
+      }
+    },
+    {
+      "@id": "com:vegetable_seeds.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetable_seeds"
+      }
+    },
+    {
+      "@id": "com:vegetable_seeds.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:vegetable_seeds"
+      }
+    },
+    {
+      "@id": "com:vegetables_and_herbs",
+      "skos:member": {
+        "@id": "com:vegetable_seeds"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vegetables and herbs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

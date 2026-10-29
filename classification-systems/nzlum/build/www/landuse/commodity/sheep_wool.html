@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sheep_wool.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sheep_wool"
-      }
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:sheep_wool"
@@ -34,6 +26,10 @@
         "@language": "en",
         "@value": "Animals"
       }
+    },
+    {
+      "@id": "com:sheep",
+      "skos:notation": "sheep"
     },
     {
       "@id": "com:sheep_wool",
@@ -54,6 +50,22 @@
       }
     },
     {
+      "@id": "com:sheep_wool.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sheep_wool.jsonld"
+        },
+        {
+          "@id": "com:sheep_wool.rdf"
+        },
+        {
+          "@id": "com:sheep_wool.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:sheep_wool.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -70,31 +82,19 @@
       }
     },
     {
+      "@id": "com:sheep_wool.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sheep_wool"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:sheep",
-      "skos:notation": "sheep"
-    },
-    {
-      "@id": "com:sheep_wool.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sheep_wool.ttl"
-        },
-        {
-          "@id": "com:sheep_wool.jsonld"
-        },
-        {
-          "@id": "com:sheep_wool.rdf"
-        }
-      ]
     }
   ]
 }

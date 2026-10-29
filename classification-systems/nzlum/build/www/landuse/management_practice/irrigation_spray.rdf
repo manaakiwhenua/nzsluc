@@ -8,15 +8,19 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray">
-        <skos:notation>irrigation spray</skos:notation>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
         <skos:scopeNote xml:lang="en">Sprinklers including set systems, permanent (solid set/fixed), continuous/travelling systems and micro-sprinklers.</skos:scopeNote>
         <skos:definition xml:lang="en">Irrigation system that sprays water into the air allowing it to fall on the plants and soil much like natural rainfall.</skos:definition>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
+        <skos:notation>irrigation spray</skos:notation>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Irrigation</skos:prefLabel>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -30,12 +34,7 @@
       </foaf:Document>
     </dcterms:hasFormat>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.jsonld"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_spray.rdf"/>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
     <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>

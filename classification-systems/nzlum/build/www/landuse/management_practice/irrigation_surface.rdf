@@ -8,15 +8,19 @@
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation">
     <skos:member>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface">
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
         <skos:scopeNote xml:lang="en">Also flood/furrow irrigation.</skos:scopeNote>
-        <skos:definition xml:lang="en">Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows.</skos:definition>
         <skos:notation>irrigation surface</skos:notation>
+        <skos:definition xml:lang="en">Water is applied to the land by allowing it to flow by simple gravity before infiltrating. Under furrow irrigation, small parallel channels carry water to irrigate the crop with the crop usually grown on the ridges between the furrows.</skos:definition>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.html"/>
       </skos:Concept>
     </skos:member>
     <skos:prefLabel xml:lang="en">Irrigation</skos:prefLabel>
   </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface"/>
     <dcterms:format>text/turtle</dcterms:format>
@@ -25,17 +29,13 @@
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
+    <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.ttl"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.jsonld"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/management_practice/irrigation_surface.rdf"/>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/management_practices">
-    <dcterms:title xml:lang="en">NZLUM management practices</dcterms:title>
-  </rdf:Description>
 </rdf:RDF>

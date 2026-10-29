@@ -8,11 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:wasabi.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:crop",
+      "skos:member": {
         "@id": "com:wasabi"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     },
     {
@@ -27,26 +29,18 @@
       "skos:notation": "wasabi"
     },
     {
-      "@id": "com:wasabi.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:wasabi"
-      }
-    },
-    {
       "@id": "com:wasabi.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:wasabi.ttl"
-        },
-        {
           "@id": "com:wasabi.jsonld"
         },
         {
           "@id": "com:wasabi.rdf"
+        },
+        {
+          "@id": "com:wasabi.ttl"
         }
       ]
     },
@@ -59,20 +53,26 @@
       }
     },
     {
+      "@id": "com:wasabi.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:wasabi"
+      }
+    },
+    {
+      "@id": "com:wasabi.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:wasabi"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:wasabi"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
       }
     }
   ]

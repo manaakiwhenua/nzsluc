@@ -18,6 +18,51 @@
   },
   "@graph": [
     {
+      "@id": "com:pasture",
+      "skos:member": {
+        "@id": "com:yarrow"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
+    },
+    {
+      "@id": "com:yarrow",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:yarrow.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "yarrow"
+    },
+    {
+      "@id": "com:yarrow.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:yarrow.jsonld"
+        },
+        {
+          "@id": "com:yarrow.rdf"
+        },
+        {
+          "@id": "com:yarrow.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:yarrow.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:yarrow"
+      }
+    },
+    {
       "@id": "com:yarrow.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -34,55 +79,10 @@
       }
     },
     {
-      "@id": "com:yarrow.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:yarrow.ttl"
-        },
-        {
-          "@id": "com:yarrow.jsonld"
-        },
-        {
-          "@id": "com:yarrow.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:yarrow",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:yarrow.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "yarrow"
-    },
-    {
-      "@id": "com:yarrow.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:yarrow"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:pasture",
-      "skos:member": {
-        "@id": "com:yarrow"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
       }
     }
   ]

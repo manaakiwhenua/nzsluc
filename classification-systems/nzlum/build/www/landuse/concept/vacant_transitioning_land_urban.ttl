@@ -38,8 +38,7 @@ luc:vacant_transitioning_land_urban.ttl a foaf:Document ;
 luc:vacant_transitioning_land_urban a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:brownfield_development,
         luc:greenfield_development,
         luc:vacant_land ;

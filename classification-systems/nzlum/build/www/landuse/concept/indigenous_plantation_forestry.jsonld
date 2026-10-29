@@ -8,46 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:plantation_forests",
-      "skos:notation": "2.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Plantation forests"
-      }
-    },
-    {
-      "@id": "luc:indigenous_plantation_forestry.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_plantation_forestry"
-      }
-    },
-    {
-      "@id": "luc:indigenous_plantation_forestry.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:indigenous_plantation_forestry"
-      }
-    },
-    {
-      "@id": "luc:indigenous_plantation_forestry.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:indigenous_plantation_forestry.ttl"
-        },
-        {
-          "@id": "luc:indigenous_plantation_forestry.jsonld"
-        },
-        {
-          "@id": "luc:indigenous_plantation_forestry.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:indigenous_plantation_forestry",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -64,14 +24,9 @@
         "@language": "en",
         "@value": "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.1.2",
       "skos:prefLabel": {
         "@language": "en",
@@ -80,11 +35,27 @@
       "skos:usageNote": [
         {
           "@language": "en",
-          "@value": "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."
+          "@value": "The specific commodity or commodities should be noted if known."
         },
         {
           "@language": "en",
-          "@value": "The specific commodity or commodities should be noted if known."
+          "@value": "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."
+        }
+      ]
+    },
+    {
+      "@id": "luc:indigenous_plantation_forestry.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:indigenous_plantation_forestry.jsonld"
+        },
+        {
+          "@id": "luc:indigenous_plantation_forestry.rdf"
+        },
+        {
+          "@id": "luc:indigenous_plantation_forestry.ttl"
         }
       ]
     },
@@ -94,6 +65,30 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:indigenous_plantation_forestry"
+      }
+    },
+    {
+      "@id": "luc:indigenous_plantation_forestry.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_plantation_forestry"
+      }
+    },
+    {
+      "@id": "luc:indigenous_plantation_forestry.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:indigenous_plantation_forestry"
+      }
+    },
+    {
+      "@id": "luc:plantation_forests",
+      "skos:notation": "2.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Plantation forests"
       }
     }
   ]

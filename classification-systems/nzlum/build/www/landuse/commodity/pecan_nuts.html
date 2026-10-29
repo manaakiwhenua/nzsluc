@@ -28,14 +28,6 @@
       }
     },
     {
-      "@id": "com:pecan_nuts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pecan_nuts"
-      }
-    },
-    {
       "@id": "com:pecan_nuts",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -47,12 +39,20 @@
       "skos:notation": "pecan nuts"
     },
     {
-      "@id": "com:pecan_nuts.ttl",
+      "@id": "com:pecan_nuts.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pecan_nuts"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pecan_nuts.jsonld"
+        },
+        {
+          "@id": "com:pecan_nuts.rdf"
+        },
+        {
+          "@id": "com:pecan_nuts.ttl"
+        }
+      ]
     },
     {
       "@id": "com:pecan_nuts.jsonld",
@@ -63,27 +63,27 @@
       }
     },
     {
+      "@id": "com:pecan_nuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pecan_nuts"
+      }
+    },
+    {
+      "@id": "com:pecan_nuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pecan_nuts"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:pecan_nuts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pecan_nuts.ttl"
-        },
-        {
-          "@id": "com:pecan_nuts.jsonld"
-        },
-        {
-          "@id": "com:pecan_nuts.rdf"
-        }
-      ]
     }
   ]
 }

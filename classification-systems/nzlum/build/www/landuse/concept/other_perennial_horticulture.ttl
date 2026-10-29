@@ -28,8 +28,7 @@ luc:perennial_horticulture skos:notation "2.4.0" ;
 luc:other_perennial_horticulture a skos:Concept ;
     skos:broader luc:perennial_horticulture ;
     skos:definition "Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.4.3" ;
     skos:prefLabel "Other perennial horticulture"@en ;
     foaf:isPrimaryTopicOf luc:other_perennial_horticulture.html .

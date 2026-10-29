@@ -28,8 +28,7 @@ luc:intensive_animal_production skos:notation "2.6.0" ;
 luc:horse_studs a skos:Concept ;
     skos:broader luc:intensive_animal_production ;
     skos:definition "Establishments focused on the breeding and raising of horses."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.6.4" ;
     skos:prefLabel "Horse studs"@en ;
     skos:usageNote "Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included."@en ;

@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:cereals",
+      "skos:member": {
+        "@id": "com:rice"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cereals"
+      }
+    },
+    {
       "@id": "com:rice",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -19,13 +29,35 @@
       "skos:notation": "rice"
     },
     {
-      "@id": "com:cereals",
-      "skos:member": {
+      "@id": "com:rice.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:rice.jsonld"
+        },
+        {
+          "@id": "com:rice.rdf"
+        },
+        {
+          "@id": "com:rice.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:rice.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:rice"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Cereals"
+      }
+    },
+    {
+      "@id": "com:rice.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rice"
       }
     },
     {
@@ -37,42 +69,10 @@
       }
     },
     {
-      "@id": "com:rice.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:rice"
-      }
-    },
-    {
-      "@id": "com:rice.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:rice.ttl"
-        },
-        {
-          "@id": "com:rice.jsonld"
-        },
-        {
-          "@id": "com:rice.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:rice.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:rice"
       }
     }
   ]

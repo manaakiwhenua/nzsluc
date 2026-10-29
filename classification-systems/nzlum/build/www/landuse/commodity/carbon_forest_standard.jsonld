@@ -8,6 +8,45 @@
   },
   "@graph": [
     {
+      "@id": "com:carbon_forest_standard",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:carbon_forest_standard.html"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carbon forest standard"
+    },
+    {
+      "@id": "com:carbon_forest_standard.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:carbon_forest_standard.jsonld"
+        },
+        {
+          "@id": "com:carbon_forest_standard.rdf"
+        },
+        {
+          "@id": "com:carbon_forest_standard.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:carbon_forest_standard.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:carbon_forest_standard"
+      }
+    },
+    {
       "@id": "com:carbon_forest_standard.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -39,45 +78,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:carbon_forest_standard.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:carbon_forest_standard"
-      }
-    },
-    {
-      "@id": "com:carbon_forest_standard",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:carbon_forest_standard.html"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Standard carbon foresty under the ETS. Standard forestry refers to post-1989 forests under the ETS that are expected to be regularly harvested and replanted, such as commercial plantation forests. Other commodities (such as sawlog) are compatible."
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carbon forest standard"
-    },
-    {
-      "@id": "com:carbon_forest_standard.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:carbon_forest_standard.ttl"
-        },
-        {
-          "@id": "com:carbon_forest_standard.jsonld"
-        },
-        {
-          "@id": "com:carbon_forest_standard.rdf"
-        }
-      ]
     }
   ]
 }

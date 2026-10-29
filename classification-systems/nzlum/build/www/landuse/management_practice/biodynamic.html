@@ -18,34 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:biodynamic"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:biodynamic.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:biodynamic"
-      }
-    },
-    {
-      "@id": "mgmt:pasture",
-      "skos:member": {
-        "@id": "mgmt:biodynamic"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
       "@id": "lus:management_practices",
       "dcterms:title": {
         "@language": "en",
@@ -64,12 +36,20 @@
       "skos:notation": "biodynamic"
     },
     {
-      "@id": "mgmt:biodynamic.ttl",
+      "@id": "mgmt:biodynamic.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:biodynamic"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:biodynamic.jsonld"
+        },
+        {
+          "@id": "mgmt:biodynamic.rdf"
+        },
+        {
+          "@id": "mgmt:biodynamic.ttl"
+        }
+      ]
     },
     {
       "@id": "mgmt:biodynamic.jsonld",
@@ -80,20 +60,40 @@
       }
     },
     {
-      "@id": "mgmt:biodynamic.html",
+      "@id": "mgmt:biodynamic.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:biodynamic.ttl"
-        },
-        {
-          "@id": "mgmt:biodynamic.jsonld"
-        },
-        {
-          "@id": "mgmt:biodynamic.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:biodynamic"
+      }
+    },
+    {
+      "@id": "mgmt:biodynamic.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:biodynamic"
+      }
+    },
+    {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:biodynamic"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:pasture",
+      "skos:member": {
+        "@id": "mgmt:biodynamic"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
+      }
     }
   ]
 }

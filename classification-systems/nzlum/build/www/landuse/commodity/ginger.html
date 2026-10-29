@@ -18,19 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:ginger.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:crop",
+      "skos:member": {
         "@id": "com:ginger"
-      }
-    },
-    {
-      "@id": "com:ginger.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:ginger"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     },
     {
@@ -48,35 +42,18 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:crop",
-      "skos:member": {
-        "@id": "com:ginger"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Crop"
-      }
-    },
-    {
       "@id": "com:ginger.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:ginger.ttl"
-        },
-        {
           "@id": "com:ginger.jsonld"
         },
         {
           "@id": "com:ginger.rdf"
+        },
+        {
+          "@id": "com:ginger.ttl"
         }
       ]
     },
@@ -86,6 +63,29 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:ginger"
+      }
+    },
+    {
+      "@id": "com:ginger.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:ginger"
+      }
+    },
+    {
+      "@id": "com:ginger.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:ginger"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]
