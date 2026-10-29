@@ -18,25 +18,36 @@
   },
   "@graph": [
     {
+      "@id": "com:kale",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:kale.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "kale"
+    },
+    {
       "@id": "com:kale.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:kale.ttl"
-        },
-        {
           "@id": "com:kale.jsonld"
         },
         {
           "@id": "com:kale.rdf"
+        },
+        {
+          "@id": "com:kale.ttl"
         }
       ]
     },
     {
-      "@id": "com:kale.ttl",
+      "@id": "com:kale.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:kale"
       }
@@ -45,6 +56,14 @@
       "@id": "com:kale.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:kale"
+      }
+    },
+    {
+      "@id": "com:kale.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:kale"
       }
@@ -64,25 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:kale",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:kale.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "kale"
-    },
-    {
-      "@id": "com:kale.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:kale"
       }
     }
   ]

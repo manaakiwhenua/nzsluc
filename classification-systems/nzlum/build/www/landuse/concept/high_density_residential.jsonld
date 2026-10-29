@@ -22,18 +22,37 @@
         "@language": "en",
         "@value": "Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.1.1",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "High-density residential"
+      }
+    },
+    {
+      "@id": "luc:high_density_residential.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:high_density_residential.jsonld"
+        },
+        {
+          "@id": "luc:high_density_residential.rdf"
+        },
+        {
+          "@id": "luc:high_density_residential.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:high_density_residential.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:high_density_residential"
       }
     },
     {
@@ -45,9 +64,9 @@
       }
     },
     {
-      "@id": "luc:high_density_residential.jsonld",
+      "@id": "luc:high_density_residential.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:high_density_residential"
       }
@@ -59,30 +78,6 @@
         "@language": "en",
         "@value": "Residential"
       }
-    },
-    {
-      "@id": "luc:high_density_residential.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:high_density_residential"
-      }
-    },
-    {
-      "@id": "luc:high_density_residential.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:high_density_residential.ttl"
-        },
-        {
-          "@id": "luc:high_density_residential.jsonld"
-        },
-        {
-          "@id": "luc:high_density_residential.rdf"
-        }
-      ]
     }
   ]
 }

@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:animals",
+      "skos:member": {
+        "@id": "com:crustaceans"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animals"
+      }
+    },
+    {
       "@id": "com:crustaceans",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -23,6 +33,22 @@
       }
     },
     {
+      "@id": "com:crustaceans.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:crustaceans.jsonld"
+        },
+        {
+          "@id": "com:crustaceans.rdf"
+        },
+        {
+          "@id": "com:crustaceans.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:crustaceans.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -31,13 +57,11 @@
       }
     },
     {
-      "@id": "com:animals",
-      "skos:member": {
+      "@id": "com:crustaceans.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "com:crustaceans"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animals"
       }
     },
     {
@@ -53,30 +77,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:crustaceans.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:crustaceans.ttl"
-        },
-        {
-          "@id": "com:crustaceans.jsonld"
-        },
-        {
-          "@id": "com:crustaceans.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:crustaceans.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:crustaceans"
       }
     }
   ]

@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:cranberries.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:cranberries"
-      }
-    },
-    {
       "@id": "com:cranberries",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,12 +19,20 @@
       "skos:notation": "cranberries"
     },
     {
-      "@id": "com:cranberries.ttl",
+      "@id": "com:cranberries.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cranberries"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:cranberries.jsonld"
+        },
+        {
+          "@id": "com:cranberries.rdf"
+        },
+        {
+          "@id": "com:cranberries.ttl"
+        }
+      ]
     },
     {
       "@id": "com:cranberries.jsonld",
@@ -43,27 +43,20 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:cranberries.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:cranberries"
       }
     },
     {
-      "@id": "com:cranberries.html",
+      "@id": "com:cranberries.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:cranberries.ttl"
-        },
-        {
-          "@id": "com:cranberries.jsonld"
-        },
-        {
-          "@id": "com:cranberries.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cranberries"
+      }
     },
     {
       "@id": "com:fruit",
@@ -73,6 +66,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

@@ -30,8 +30,7 @@ luc:strict_nature_res a skos:Concept ;
     dcterms:source "IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve."@en ;
     skos:broader luc:nature_cons ;
     skos:definition "Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.1.1" ;
     skos:prefLabel "Strict nature reserve"@en ;
     foaf:isPrimaryTopicOf luc:strict_nature_res.html ;

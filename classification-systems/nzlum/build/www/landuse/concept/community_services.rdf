@@ -2,42 +2,43 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.jsonld">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.rdf">
     <foaf:primaryTopic>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services">
+        <skos:prefLabel xml:lang="en">Community services</skos:prefLabel>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:example xml:lang="en">Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.</skos:example>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
         <skos:definition xml:lang="en">Land used for providing essential services and facilities to support the local community.</skos:definition>
+        <skos:example xml:lang="en">Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.</skos:example>
         <skos:notation>3.2.3</skos:notation>
         <lu:colour>#E09962</lu:colour>
-        <skos:prefLabel xml:lang="en">Community services</skos:prefLabel>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.html"/>
       </skos:Concept>
     </foaf:primaryTopic>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services"/>
-    <dcterms:format>text/turtle</dcterms:format>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.rdf"/>
   </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/public_recreation_services">
     <skos:prefLabel xml:lang="en">Public recreation and services</skos:prefLabel>
     <skos:notation>3.2.0</skos:notation>
   </rdf:Description>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.ttl"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.jsonld"/>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/community_services.rdf"/>
-  </foaf:Document>
 </rdf:RDF>

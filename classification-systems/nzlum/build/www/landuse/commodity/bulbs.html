@@ -18,30 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:bulbs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:bulbs"
-      }
-    },
-    {
-      "@id": "com:bulbs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:bulbs.ttl"
-        },
-        {
-          "@id": "com:bulbs.jsonld"
-        },
-        {
-          "@id": "com:bulbs.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:bulbs",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -51,6 +27,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "bulbs"
+    },
+    {
+      "@id": "com:bulbs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:bulbs.jsonld"
+        },
+        {
+          "@id": "com:bulbs.rdf"
+        },
+        {
+          "@id": "com:bulbs.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:bulbs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:bulbs"
+      }
+    },
+    {
+      "@id": "com:bulbs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:bulbs"
+      }
+    },
+    {
+      "@id": "com:bulbs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:bulbs"
+      }
     },
     {
       "@id": "com:flowers_and_bulbs",
@@ -63,26 +79,10 @@
       }
     },
     {
-      "@id": "com:bulbs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:bulbs"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:bulbs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:bulbs"
       }
     }
   ]

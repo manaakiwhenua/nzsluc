@@ -7,123 +7,8 @@
 >
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/fruit">
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bananas">
-        <skos:notation>bananas</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/guavas">
-        <skos:notation>guavas</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pepinos">
-        <skos:notation>pepinos</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kumquat">
-        <skos:notation>kumquat</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/apricots">
-        <skos:notation>apricots</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carambolas">
-        <skos:notation>carambolas</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/gooseberries">
-        <skos:notation>gooseberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mangosteen">
-        <skos:notation>mangosteen</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lychees">
-        <skos:notation>lychees</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_wine">
-        <skos:notation>grapes wine</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rambutans">
-        <skos:notation>rambutans</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cranberries">
-        <skos:notation>cranberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/strawberries">
-        <skos:notation>strawberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/feijoa">
-        <skos:notation>feijoa</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pineapples">
-        <skos:notation>pineapples</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chokos">
         <skos:notation>chokos</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/watermelons">
-        <skos:notation>watermelons</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/figs">
-        <skos:notation>figs</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peaches">
-        <skos:notation>peaches</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jackfruit">
-        <skos:notation>jackfruit</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_dried">
-        <skos:notation>grapes dried</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/avocados">
-        <skos:notation>avocados</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/passionfruit">
-        <skos:notation>passionfruit</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peacharines">
-        <skos:notation>peacharines</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -132,148 +17,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/custard_apples">
-        <skos:notation>custard apples</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lemons">
+        <skos:notation>lemons</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/nectarines">
-        <skos:notation>nectarines</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapefruit">
-        <skos:notation>grapefruit</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kiwifruit">
-        <skos:notation>kiwifruit</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/loquats">
-        <skos:notation>loquats</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/olives">
-        <skos:notation>olives</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_table">
-        <skos:notation>grapes table</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cherries">
-        <skos:notation>cherries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mulberries">
-        <skos:notation>mulberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rosella">
-        <skos:notation>rosella</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pears">
-        <skos:notation>pears</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blackcurrants">
-        <skos:notation>blackcurrants</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/apples">
-        <skos:notation>apples</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinces">
-        <skos:notation>quinces</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pomegranate">
-        <skos:notation>pomegranate</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/nashi_pears">
-        <skos:notation>pears nashi</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pawpaws">
-        <skos:notation>pawpaws</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes">
-        <skos:notation>grapes</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tangelos">
-        <skos:notation>tangelos</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blueberries">
-        <skos:notation>blueberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/limes">
-        <skos:notation>limes</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coconut">
-        <skos:notation>coconut</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/dates">
-        <skos:notation>dates</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plums">
-        <skos:notation>plums</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/loganberries">
-        <skos:notation>loganberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blackberries">
-        <skos:notation>blackberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/boysenberries">
-        <skos:notation>boysenberries</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/babacos">
-        <skos:notation>babacos</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tamarillo">
-        <skos:notation>tamarillo</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peaches">
+        <skos:notation>peaches</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -282,23 +32,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/longans">
-        <skos:notation>longans</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/watermelons">
+        <skos:notation>watermelons</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/redcurrants">
-        <skos:notation>redcurrants</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lemons">
-        <skos:notation>lemons</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/raspberries">
-        <skos:notation>raspberries</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blueberries">
+        <skos:notation>blueberries</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -307,8 +47,78 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/melons">
-        <skos:notation>melons</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mandarins">
+        <skos:notation>mandarins</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/plums">
+        <skos:notation>plums</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/babacos">
+        <skos:notation>babacos</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jackfruit">
+        <skos:notation>jackfruit</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinces">
+        <skos:notation>quinces</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_dried">
+        <skos:notation>grapes dried</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/apples">
+        <skos:notation>apples</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cherries">
+        <skos:notation>cherries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pawpaws">
+        <skos:notation>pawpaws</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_wine">
+        <skos:notation>grapes wine</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/figs">
+        <skos:notation>figs</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carambolas">
+        <skos:notation>carambolas</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mulberries">
+        <skos:notation>mulberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/apricots">
+        <skos:notation>apricots</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pineapples">
+        <skos:notation>pineapples</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -317,16 +127,206 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mandarins">
-        <skos:notation>mandarins</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/melons">
+        <skos:notation>melons</skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes_table">
+        <skos:notation>grapes table</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/loganberries">
+        <skos:notation>loganberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kumquat">
+        <skos:notation>kumquat</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bananas">
+        <skos:notation>bananas</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/strawberries">
+        <skos:notation>strawberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/longans">
+        <skos:notation>longans</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/boysenberries">
+        <skos:notation>boysenberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/nectarines">
+        <skos:notation>nectarines</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/guavas">
+        <skos:notation>guavas</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/passionfruit">
+        <skos:notation>passionfruit</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/redcurrants">
+        <skos:notation>redcurrants</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rosella">
+        <skos:notation>rosella</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tamarillo">
+        <skos:notation>tamarillo</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coconut">
+        <skos:notation>coconut</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/gooseberries">
+        <skos:notation>gooseberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/raspberries">
+        <skos:notation>raspberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blackcurrants">
+        <skos:notation>blackcurrants</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/custard_apples">
+        <skos:notation>custard apples</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/olives">
+        <skos:notation>olives</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/loquats">
+        <skos:notation>loquats</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/nashi_pears">
+        <skos:notation>pears nashi</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tangelos">
+        <skos:notation>tangelos</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peacharines">
+        <skos:notation>peacharines</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cranberries">
+        <skos:notation>cranberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mangosteen">
+        <skos:notation>mangosteen</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/feijoa">
+        <skos:notation>feijoa</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lychees">
+        <skos:notation>lychees</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/dates">
+        <skos:notation>dates</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/blackberries">
+        <skos:notation>blackberries</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pepinos">
+        <skos:notation>pepinos</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pears">
+        <skos:notation>pears</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapefruit">
+        <skos:notation>grapefruit</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/avocados">
+        <skos:notation>avocados</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kiwifruit">
+        <skos:notation>kiwifruit</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/limes">
+        <skos:notation>limes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pomegranate">
+        <skos:notation>pomegranate</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/grapes">
+        <skos:notation>grapes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rambutans">
+        <skos:notation>rambutans</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Fruit</skos:prefLabel>
     <skos:inScheme>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
         <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
       </rdf:Description>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">Fruit</skos:prefLabel>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/fruit.html">
         <dcterms:format>text/html</dcterms:format>

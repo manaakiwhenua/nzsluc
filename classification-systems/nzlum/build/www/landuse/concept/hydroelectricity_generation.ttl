@@ -28,8 +28,7 @@ luc:utilities skos:notation "3.5.0" ;
 luc:hydroelectricity_generation a skos:Concept ;
     skos:broader luc:utilities ;
     skos:definition "Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.2" ;
     skos:prefLabel "Hydroelectricity generation"@en ;
     skos:scopeNote "Includes canals and other water conveyance infrastructure associated with hydroelectricity generation."@en ;

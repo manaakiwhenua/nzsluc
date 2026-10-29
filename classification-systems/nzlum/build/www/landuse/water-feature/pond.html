@@ -19,28 +19,11 @@
   },
   "@graph": [
     {
-      "@id": "wtr:pond.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:pond"
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
       }
-    },
-    {
-      "@id": "wtr:pond.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:pond.ttl"
-        },
-        {
-          "@id": "wtr:pond.jsonld"
-        },
-        {
-          "@id": "wtr:pond.rdf"
-        }
-      ]
     },
     {
       "@id": "wtr:pond",
@@ -55,10 +38,27 @@
       "skos:notation": "pond"
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
+      "@id": "wtr:pond.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:pond.jsonld"
+        },
+        {
+          "@id": "wtr:pond.rdf"
+        },
+        {
+          "@id": "wtr:pond.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "wtr:pond.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "wtr:pond"
       }
     },
     {
@@ -70,9 +70,9 @@
       }
     },
     {
-      "@id": "wtr:pond.jsonld",
+      "@id": "wtr:pond.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "wtr:pond"
       }

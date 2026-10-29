@@ -8,10 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:cattle",
-      "skos:notation": "cattle"
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:cattle_stud"
@@ -20,6 +16,44 @@
         "@language": "en",
         "@value": "Animals"
       }
+    },
+    {
+      "@id": "com:cattle",
+      "skos:notation": "cattle"
+    },
+    {
+      "@id": "com:cattle_stud",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:cattle_stud.html"
+      },
+      "skos:broader": {
+        "@id": "com:cattle"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cattle stud",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Cattle raised for sale as breeding animals."
+      }
+    },
+    {
+      "@id": "com:cattle_stud.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:cattle_stud.jsonld"
+        },
+        {
+          "@id": "com:cattle_stud.rdf"
+        },
+        {
+          "@id": "com:cattle_stud.ttl"
+        }
+      ]
     },
     {
       "@id": "com:cattle_stud.jsonld",
@@ -50,40 +84,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:cattle_stud.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:cattle_stud.ttl"
-        },
-        {
-          "@id": "com:cattle_stud.jsonld"
-        },
-        {
-          "@id": "com:cattle_stud.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:cattle_stud",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:cattle_stud.html"
-      },
-      "skos:broader": {
-        "@id": "com:cattle"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cattle stud",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Cattle raised for sale as breeding animals."
       }
     }
   ]

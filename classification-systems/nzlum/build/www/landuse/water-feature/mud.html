@@ -19,11 +19,10 @@
   },
   "@graph": [
     {
-      "@id": "wtr:mud.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "wtr:mud"
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
       }
     },
     {
@@ -39,9 +38,25 @@
       "skos:notation": "mud"
     },
     {
-      "@id": "wtr:mud.ttl",
+      "@id": "wtr:mud.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:mud.jsonld"
+        },
+        {
+          "@id": "wtr:mud.rdf"
+        },
+        {
+          "@id": "wtr:mud.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "wtr:mud.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "wtr:mud"
       }
@@ -55,27 +70,12 @@
       }
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
-    },
-    {
-      "@id": "wtr:mud.html",
+      "@id": "wtr:mud.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:mud.ttl"
-        },
-        {
-          "@id": "wtr:mud.jsonld"
-        },
-        {
-          "@id": "wtr:mud.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:mud"
+      }
     }
   ]
 }

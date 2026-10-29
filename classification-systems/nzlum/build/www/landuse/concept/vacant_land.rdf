@@ -2,24 +2,13 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.jsonld">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land">
-        <skos:definition xml:lang="en">Derelict land and developed land that is idle.</skos:definition>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:notation>3.9.3</skos:notation>
-        <skos:prefLabel xml:lang="en">Idle and derelict land</skos:prefLabel>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
-        <skos:changeNote>Notation changed from 3.9.1 to 3.9.3 at v0.4.0</skos:changeNote>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban">
+    <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
+    <skos:notation>3.9.0</skos:notation>
+  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.html">
     <dcterms:format>text/html</dcterms:format>
     <dcterms:hasFormat>
@@ -28,7 +17,12 @@
         <dcterms:format>text/turtle</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.jsonld"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.rdf">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land"/>
@@ -36,8 +30,13 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban">
-    <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
-    <skos:notation>3.9.0</skos:notation>
-  </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land">
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:prefLabel xml:lang="en">Idle and derelict land</skos:prefLabel>
+    <skos:definition xml:lang="en">Derelict land and developed land that is idle.</skos:definition>
+    <skos:notation>3.9.3</skos:notation>
+    <skos:changeNote>Notation changed from 3.9.1 to 3.9.3 at v0.4.0</skos:changeNote>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_transitioning_land_urban"/>
+    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_land.html"/>
+  </skos:Concept>
 </rdf:RDF>

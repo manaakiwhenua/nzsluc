@@ -16,6 +16,30 @@
       }
     },
     {
+      "@id": "luc:habitat_or_species_management",
+      "skos:notation": "1.1.5",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Habitat or species management area"
+      }
+    },
+    {
+      "@id": "luc:national_park",
+      "skos:notation": "1.1.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "National Park"
+      }
+    },
+    {
+      "@id": "luc:natural_feature_protection",
+      "skos:notation": "1.1.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Natural feature protection"
+      }
+    },
+    {
       "@id": "luc:nature_cons",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -28,20 +52,15 @@
         "@language": "en",
         "@value": "Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
-          "@id": "luc:wilderness"
+          "@id": "luc:habitat_or_species_management"
         },
         {
-          "@id": "luc:strict_nature_res"
+          "@id": "luc:national_park"
         },
         {
           "@id": "luc:natural_feature_protection"
@@ -53,10 +72,10 @@
           "@id": "luc:protected_landscape"
         },
         {
-          "@id": "luc:national_park"
+          "@id": "luc:strict_nature_res"
         },
         {
-          "@id": "luc:habitat_or_species_management"
+          "@id": "luc:wilderness"
         }
       ],
       "skos:notation": "1.1.0",
@@ -66,58 +85,18 @@
       }
     },
     {
-      "@id": "luc:wilderness",
-      "skos:notation": "1.1.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Wilderness area"
-      }
-    },
-    {
-      "@id": "luc:natural_feature_protection",
-      "skos:notation": "1.1.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Natural feature protection"
-      }
-    },
-    {
-      "@id": "luc:strict_nature_res",
-      "skos:notation": "1.1.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Strict nature reserve"
-      }
-    },
-    {
-      "@id": "luc:other_conserved_area",
-      "skos:notation": "1.1.7",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Other conserved area"
-      }
-    },
-    {
-      "@id": "luc:national_park",
-      "skos:notation": "1.1.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "National Park"
-      }
-    },
-    {
       "@id": "luc:nature_cons.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:nature_cons.ttl"
-        },
-        {
           "@id": "luc:nature_cons.jsonld"
         },
         {
           "@id": "luc:nature_cons.rdf"
+        },
+        {
+          "@id": "luc:nature_cons.ttl"
         }
       ]
     },
@@ -130,11 +109,11 @@
       }
     },
     {
-      "@id": "luc:habitat_or_species_management",
-      "skos:notation": "1.1.5",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Habitat or species management area"
+      "@id": "luc:nature_cons.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:nature_cons"
       }
     },
     {
@@ -146,6 +125,14 @@
       }
     },
     {
+      "@id": "luc:other_conserved_area",
+      "skos:notation": "1.1.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other conserved area"
+      }
+    },
+    {
       "@id": "luc:protected_landscape",
       "skos:notation": "1.1.6",
       "skos:prefLabel": {
@@ -154,11 +141,19 @@
       }
     },
     {
-      "@id": "luc:nature_cons.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:nature_cons"
+      "@id": "luc:strict_nature_res",
+      "skos:notation": "1.1.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Strict nature reserve"
+      }
+    },
+    {
+      "@id": "luc:wilderness",
+      "skos:notation": "1.1.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Wilderness area"
       }
     }
   ]

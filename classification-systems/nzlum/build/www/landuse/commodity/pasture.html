@@ -18,20 +18,62 @@
   },
   "@graph": [
     {
-      "@id": "com:plantain",
-      "skos:notation": "plantain"
+      "@id": "com:clover",
+      "skos:notation": "clover"
     },
     {
-      "@id": "com:pasture.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pasture"
+      "@id": "com:lucerne",
+      "skos:notation": "lucerne"
+    },
+    {
+      "@id": "com:pasture",
+      "@type": "skos:Collection",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:pasture.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:member": [
+        {
+          "@id": "com:clover"
+        },
+        {
+          "@id": "com:lucerne"
+        },
+        {
+          "@id": "com:plantain"
+        },
+        {
+          "@id": "com:sorghum_forage"
+        },
+        {
+          "@id": "com:turnips_forage"
+        },
+        {
+          "@id": "com:yarrow"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pasture"
       }
     },
     {
-      "@id": "com:sorghum_forage",
-      "skos:notation": "sorghum forage"
+      "@id": "com:pasture.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pasture.jsonld"
+        },
+        {
+          "@id": "com:pasture.rdf"
+        },
+        {
+          "@id": "com:pasture.ttl"
+        }
+      ]
     },
     {
       "@id": "com:pasture.jsonld",
@@ -50,24 +92,24 @@
       }
     },
     {
-      "@id": "com:turnips_forage",
-      "skos:notation": "turnips forage"
+      "@id": "com:pasture.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pasture"
+      }
     },
     {
-      "@id": "com:pasture.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pasture.ttl"
-        },
-        {
-          "@id": "com:pasture.jsonld"
-        },
-        {
-          "@id": "com:pasture.rdf"
-        }
-      ]
+      "@id": "com:plantain",
+      "skos:notation": "plantain"
+    },
+    {
+      "@id": "com:sorghum_forage",
+      "skos:notation": "sorghum forage"
+    },
+    {
+      "@id": "com:turnips_forage",
+      "skos:notation": "turnips forage"
     },
     {
       "@id": "com:yarrow",
@@ -79,48 +121,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:pasture",
-      "@type": "skos:Collection",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:pasture.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:member": [
-        {
-          "@id": "com:turnips_forage"
-        },
-        {
-          "@id": "com:clover"
-        },
-        {
-          "@id": "com:plantain"
-        },
-        {
-          "@id": "com:yarrow"
-        },
-        {
-          "@id": "com:lucerne"
-        },
-        {
-          "@id": "com:sorghum_forage"
-        }
-      ],
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "com:clover",
-      "skos:notation": "clover"
-    },
-    {
-      "@id": "com:lucerne",
-      "skos:notation": "lucerne"
     }
   ]
 }

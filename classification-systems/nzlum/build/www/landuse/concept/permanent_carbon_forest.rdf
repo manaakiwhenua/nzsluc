@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest">
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
-        <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
-        <skos:notation>2.1.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:notation>2.1.5</skos:notation>
-    <skos:prefLabel xml:lang="en">Permanent carbon forest</skos:prefLabel>
-    <skos:definition xml:lang="en">An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming).</skos:definition>
-    <skos:changeNote xml:lang="en">Retired at NZLUM v0.3 and replaced with consideration of carbon sequestration and carbon credits in the definitions of exotic and indigenous plantation forestry.</skos:changeNote>
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
-    <foaf:isPrimaryTopicOf>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.html">
-        <dcterms:format>text/html</dcterms:format>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.ttl"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.jsonld"/>
-        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.rdf"/>
-      </foaf:Document>
-    </foaf:isPrimaryTopicOf>
-  </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest"/>
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:notation>2.1.5</skos:notation>
+        <skos:prefLabel xml:lang="en">Permanent carbon forest</skos:prefLabel>
+        <skos:definition xml:lang="en">An area planted with indigenous or exotic trees for the purpose of gaining carbon credits (carbon farming).</skos:definition>
+        <skos:changeNote xml:lang="en">Retired at NZLUM v0.3 and replaced with consideration of carbon sequestration and carbon credits in the definitions of exotic and indigenous plantation forestry.</skos:changeNote>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:historyNote xml:lang="en">Last included in NZLUM 0.3.0; not carried into NZLUM 0.4.0.</skos:historyNote>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.html">
+    <dcterms:format>text/html</dcterms:format>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.jsonld">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest"/>
+        <dcterms:format>application/ld+json</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest.rdf">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/permanent_carbon_forest"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
+    <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
+    <skos:notation>2.1.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

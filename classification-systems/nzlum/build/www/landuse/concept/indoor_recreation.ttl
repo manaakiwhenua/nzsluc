@@ -30,8 +30,7 @@ luc:indoor_recreation a skos:Concept ;
     skos:broader luc:public_recreation_services ;
     skos:definition "Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures."@en ;
     skos:example "Sports centres, gyms, swimming pools, indoor arenas."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.2.2" ;
     skos:prefLabel "Indoor recreation"@en ;
     foaf:isPrimaryTopicOf luc:indoor_recreation.html ;

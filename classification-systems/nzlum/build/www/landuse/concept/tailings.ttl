@@ -28,8 +28,7 @@ luc:tailings.ttl a foaf:Document ;
 luc:tailings a skos:Concept ;
     skos:broader luc:mining ;
     skos:definition "Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.7.3" ;
     skos:prefLabel "Tailings"@en ;
     foaf:isPrimaryTopicOf luc:tailings.html .

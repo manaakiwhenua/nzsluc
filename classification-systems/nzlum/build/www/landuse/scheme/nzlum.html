@@ -19,6 +19,53 @@
   },
   "@graph": [
     {
+      "@id": "lus:nzlum",
+      "@type": "skos:ConceptScheme",
+      "dcterms:hasVersion": [
+        {
+          "@id": "lus:nzlum0.3.0"
+        },
+        {
+          "@id": "lus:nzlum0.4.0"
+        },
+        {
+          "@id": "lus:nzlum0.4.1"
+        }
+      ],
+      "dcterms:relation": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "New Zealand Land Use and Management classification system"
+      },
+      "doap:repository": {
+        "@id": "https://github.com/manaakiwhenua/nzsluc"
+      },
+      "foaf:homepage": {
+        "@id": "https://nzlum.landcareresearch.co.nz/"
+      },
+      "foaf:isPrimaryTopicOf": {
+        "@id": "lus:nzlum.html"
+      }
+    },
+    {
+      "@id": "lus:nzlum.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lus:nzlum.jsonld"
+        },
+        {
+          "@id": "lus:nzlum.rdf"
+        },
+        {
+          "@id": "lus:nzlum.ttl"
+        }
+      ]
+    },
+    {
       "@id": "lus:nzlum.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -43,57 +90,6 @@
       }
     },
     {
-      "@id": "lus:nzlum",
-      "@type": "skos:ConceptScheme",
-      "dcterms:hasVersion": [
-        {
-          "@id": "lus:nzlum0.3.0"
-        },
-        {
-          "@id": "lus:nzlum0.4.0"
-        }
-      ],
-      "dcterms:relation": {
-        "@id": "lu_proverb:kotahi_te_aho"
-      },
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "New Zealand Land Use and Management classification system"
-      },
-      "doap:repository": {
-        "@id": "_:n8b7a1b759382482d82be210b310aeca9b1"
-      },
-      "foaf:homepage": {
-        "@id": "https://nzlum.landcareresearch.co.nz/"
-      },
-      "foaf:isPrimaryTopicOf": {
-        "@id": "lus:nzlum.html"
-      }
-    },
-    {
-      "@id": "_:n8b7a1b759382482d82be210b310aeca9b1",
-      "@type": "doap:GitRepository",
-      "doap:browse": {
-        "@id": "https://github.com/manaakiwhenua/nzsluc"
-      }
-    },
-    {
-      "@id": "lus:nzlum.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lus:nzlum.ttl"
-        },
-        {
-          "@id": "lus:nzlum.jsonld"
-        },
-        {
-          "@id": "lus:nzlum.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:nzlum0.3.0",
       "dcterms:isVersionOf": {
         "@id": "lus:nzlum"
@@ -104,12 +100,18 @@
       "dcterms:isVersionOf": {
         "@id": "lus:nzlum"
       }
+    },
+    {
+      "@id": "lus:nzlum0.4.1",
+      "dcterms:isVersionOf": {
+        "@id": "lus:nzlum"
+      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-scheme)"><h1>New Zealand Land Use and Management classification system</h1><div><span class="chip kind" style="--k:var(--c-scheme)">skos:ConceptScheme</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum</p></div><h2>About</h2><dl><dt>Homepage</dt><dd><a href="/" rel="external">https://nzlum.landcareresearch.co.nz/</a></dd><dt>Versions</dt><dd><a href="/landuse/scheme/nzlum0.3.0">New Zealand Land Use and Management classification system v0.3.0</a> (0.3.0, Superseded)<br><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a> (0.4.0, Published)</dd></dl><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>dcterms:relation</td><td><a href="/landuse/doc/proverb/kotahi_te_aho">doc/proverb/kotahi_te_aho</a></td></tr><tr><td>doap:repository</td><td><div>rdf:type: <a href="http://usefulinc.com/ns/doap#GitRepository" rel="external">doap:GitRepository</a></div><div>doap:browse: <a href="https://github.com/manaakiwhenua/nzsluc" rel="external">ns1:nzsluc</a></div></td></tr></table><h2>Referenced by</h2><table><tr><th>Resource</th><th>Property</th></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">New Zealand Land Use and Management classification system v0.3.0</a></td><td>dcterms:isVersionOf</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a></td><td>dcterms:isVersionOf</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/scheme/nzlum.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/scheme/nzlum.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/scheme/nzlum.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-scheme)"><h1>New Zealand Land Use and Management classification system</h1><div><span class="chip kind" style="--k:var(--c-scheme)">skos:ConceptScheme</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum</p></div><h2>About</h2><dl><dt>Homepage</dt><dd><a href="/" rel="external">https://nzlum.landcareresearch.co.nz/</a></dd><dt>Versions</dt><dd><a href="/landuse/scheme/nzlum0.3.0">New Zealand Land Use and Management classification system v0.3.0</a> (0.3.0, Superseded)<br><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a> (0.4.0, Published)<br><a href="/landuse/scheme/nzlum0.4.1">New Zealand Land Use and Management classification system v0.4.1</a> (0.4.1, Draft)</dd></dl><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>dcterms:relation</td><td><a href="/landuse/doc/proverb/kotahi_te_aho">doc/proverb/kotahi_te_aho</a></td></tr><tr><td>doap:repository</td><td><a href="https://github.com/manaakiwhenua/nzsluc" rel="external">ns1:nzsluc</a></td></tr></table><h2>Referenced by</h2><table><tr><th>Resource</th><th>Property</th></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">New Zealand Land Use and Management classification system v0.3.0</a></td><td>dcterms:isVersionOf</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">New Zealand Land Use and Management classification system v0.4.0</a></td><td>dcterms:isVersionOf</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">New Zealand Land Use and Management classification system v0.4.1</a></td><td>dcterms:isVersionOf</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/scheme/nzlum.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/scheme/nzlum.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/scheme/nzlum.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

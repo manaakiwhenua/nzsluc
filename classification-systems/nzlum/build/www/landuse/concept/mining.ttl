@@ -44,8 +44,7 @@ luc:tailings skos:notation "3.7.3" ;
 luc:mining a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "Mining and extractive industries (including salt extraction from evaporation basins)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:evaporation_basins,
         luc:extractive_industry_not_in_use,
         luc:mines,

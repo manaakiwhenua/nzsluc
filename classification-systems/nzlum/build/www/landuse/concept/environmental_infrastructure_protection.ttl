@@ -28,8 +28,7 @@ luc:minimal_use_relatively_natural skos:notation "1.3.0" ;
 luc:environmental_infrastructure_protection a skos:Concept ;
     skos:broader luc:minimal_use_relatively_natural ;
     skos:definition "Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.3.7" ;
     skos:prefLabel "Environmental & infrastructure protection"@en ;
     skos:scopeNote "Land planted for environmental and infrastructure protection should be captured under 2.1.4."@en,

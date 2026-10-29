@@ -9,22 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "lu_status:published.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lu_status:published.ttl"
-        },
-        {
-          "@id": "lu_status:published.jsonld"
-        },
-        {
-          "@id": "lu_status:published.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lu_status:published",
       "@type": "rdfs:Resource",
       "foaf:isPrimaryTopicOf": {
@@ -36,12 +20,20 @@
       }
     },
     {
-      "@id": "lu_status:published.rdf",
+      "@id": "lu_status:published.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lu_status:published"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_status:published.jsonld"
+        },
+        {
+          "@id": "lu_status:published.rdf"
+        },
+        {
+          "@id": "lu_status:published.ttl"
+        }
+      ]
     },
     {
       "@id": "lu_status:published.jsonld",
@@ -52,8 +44,10 @@
       }
     },
     {
-      "@id": "lus:nzlum0.4.0",
-      "adms:status": {
+      "@id": "lu_status:published.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "lu_status:published"
       }
     },
@@ -62,6 +56,12 @@
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
+        "@id": "lu_status:published"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.0",
+      "adms:status": {
         "@id": "lu_status:published"
       }
     }

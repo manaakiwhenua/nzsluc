@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:water_treatment_wetland.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:water_treatment_wetland"
-      }
-    },
-    {
-      "@id": "luc:water_wastewater_agriculture",
-      "skos:notation": "2.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Water and wastewater"
-      }
-    },
-    {
-      "@id": "luc:water_treatment_wetland.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:water_treatment_wetland"
-      }
-    },
-    {
       "@id": "luc:water_treatment_wetland",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -44,14 +20,9 @@
         "@language": "en",
         "@value": "Constructed or natural wetlands used to improve water quality prior to discharge."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.7.4",
       "skos:prefLabel": {
         "@language": "en",
@@ -64,15 +35,31 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:water_treatment_wetland.ttl"
-        },
-        {
           "@id": "luc:water_treatment_wetland.jsonld"
         },
         {
           "@id": "luc:water_treatment_wetland.rdf"
+        },
+        {
+          "@id": "luc:water_treatment_wetland.ttl"
         }
       ]
+    },
+    {
+      "@id": "luc:water_treatment_wetland.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_treatment_wetland"
+      }
+    },
+    {
+      "@id": "luc:water_treatment_wetland.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_treatment_wetland"
+      }
     },
     {
       "@id": "luc:water_treatment_wetland.ttl",
@@ -80,6 +67,14 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:water_treatment_wetland"
+      }
+    },
+    {
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water and wastewater"
       }
     }
   ]

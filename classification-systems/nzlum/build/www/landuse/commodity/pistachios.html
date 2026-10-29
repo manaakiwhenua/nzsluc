@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pistachios.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pistachios"
-      }
-    },
-    {
       "@id": "com:nuts",
       "skos:member": {
         "@id": "com:pistachios"
@@ -47,6 +39,38 @@
       "skos:notation": "pistachios"
     },
     {
+      "@id": "com:pistachios.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pistachios.jsonld"
+        },
+        {
+          "@id": "com:pistachios.rdf"
+        },
+        {
+          "@id": "com:pistachios.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:pistachios.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pistachios"
+      }
+    },
+    {
+      "@id": "com:pistachios.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pistachios"
+      }
+    },
+    {
       "@id": "com:pistachios.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -60,30 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:pistachios.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pistachios"
-      }
-    },
-    {
-      "@id": "com:pistachios.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pistachios.ttl"
-        },
-        {
-          "@id": "com:pistachios.jsonld"
-        },
-        {
-          "@id": "com:pistachios.rdf"
-        }
-      ]
     }
   ]
 }

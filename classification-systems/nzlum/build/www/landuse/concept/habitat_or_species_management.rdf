@@ -9,35 +9,35 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.jsonld">
     <foaf:primaryTopic>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management">
-        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area.</dcterms:source>
-        <lu:colour>#C9CAE3</lu:colour>
         <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <lu:colour>#C9CAE3</lu:colour>
         <skos:notation>1.1.5</skos:notation>
         <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
         <skos:prefLabel xml:lang="en">Habitat or species management area</skos:prefLabel>
+        <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area.</dcterms:source>
         <skos:definition xml:lang="en">Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land.</skos:definition>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.html"/>
       </skos:Concept>
     </foaf:primaryTopic>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
-    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
-    <skos:notation>1.1.0</skos:notation>
-  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.ttl"/>
+    <dcterms:hasFormat>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.ttl">
+        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management"/>
+        <dcterms:format>text/turtle</dcterms:format>
+      </foaf:Document>
+    </dcterms:hasFormat>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.jsonld"/>
     <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/habitat_or_species_management.rdf"/>
   </foaf:Document>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+    <skos:notation>1.1.0</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

@@ -44,8 +44,7 @@ luc:water_wastewater_agriculture.ttl a foaf:Document ;
 luc:water_wastewater_agriculture a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Built water features associated with agricultural use."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:effluent_pond,
         luc:irrigation_reservoirs_canals,
         luc:stock_water,

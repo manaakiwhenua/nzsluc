@@ -29,8 +29,7 @@ luc:farm_buildings_infrastructure a skos:Concept ;
     skos:broader luc:manufacturing_industrial ;
     skos:definition "An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations."@en ;
     skos:example "Barns, silos, storage sheds, and irrigation systems."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.4.5" ;
     skos:prefLabel "Farm buildings/infrastructure"@en ;
     skos:scopeNote "If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential."@en ;

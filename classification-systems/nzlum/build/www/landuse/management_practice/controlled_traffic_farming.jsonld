@@ -8,13 +8,10 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:crop",
-      "skos:member": {
-        "@id": "mgmt:controlled_traffic_farming"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Crop"
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -34,30 +31,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:controlled_traffic_farming.ttl"
-        },
-        {
           "@id": "mgmt:controlled_traffic_farming.jsonld"
         },
         {
           "@id": "mgmt:controlled_traffic_farming.rdf"
+        },
+        {
+          "@id": "mgmt:controlled_traffic_farming.ttl"
         }
       ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:controlled_traffic_farming.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:controlled_traffic_farming"
-      }
     },
     {
       "@id": "mgmt:controlled_traffic_farming.jsonld",
@@ -73,6 +55,24 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "mgmt:controlled_traffic_farming"
+      }
+    },
+    {
+      "@id": "mgmt:controlled_traffic_farming.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:controlled_traffic_farming"
+      }
+    },
+    {
+      "@id": "mgmt:crop",
+      "skos:member": {
+        "@id": "mgmt:controlled_traffic_farming"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Crop"
       }
     }
   ]

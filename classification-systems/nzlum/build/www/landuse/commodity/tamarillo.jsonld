@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:tamarillo"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
       "@id": "com:tamarillo",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -19,6 +29,22 @@
       "skos:notation": "tamarillo"
     },
     {
+      "@id": "com:tamarillo.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:tamarillo.jsonld"
+        },
+        {
+          "@id": "com:tamarillo.rdf"
+        },
+        {
+          "@id": "com:tamarillo.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:tamarillo.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -27,34 +53,11 @@
       }
     },
     {
-      "@id": "com:tamarillo.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:tamarillo.ttl"
-        },
-        {
-          "@id": "com:tamarillo.jsonld"
-        },
-        {
-          "@id": "com:tamarillo.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:tamarillo.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:tamarillo"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     },
     {
@@ -66,13 +69,10 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:tamarillo"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

@@ -18,19 +18,20 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:free_range.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:free_range"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
-      "@id": "mgmt:free_range.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "mgmt:animal",
+      "skos:member": {
         "@id": "mgmt:free_range"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Animal"
       }
     },
     {
@@ -50,31 +51,30 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:free_range.ttl"
-        },
-        {
           "@id": "mgmt:free_range.jsonld"
         },
         {
           "@id": "mgmt:free_range.rdf"
+        },
+        {
+          "@id": "mgmt:free_range.ttl"
         }
       ]
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
+      "@id": "mgmt:free_range.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:free_range"
       }
     },
     {
-      "@id": "mgmt:animal",
-      "skos:member": {
+      "@id": "mgmt:free_range.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
         "@id": "mgmt:free_range"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Animal"
       }
     },
     {

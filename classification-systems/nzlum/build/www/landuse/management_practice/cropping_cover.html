@@ -18,6 +18,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:cropping_cover"
@@ -44,30 +51,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:cropping_cover.ttl"
-        },
-        {
           "@id": "mgmt:cropping_cover.jsonld"
         },
         {
           "@id": "mgmt:cropping_cover.rdf"
+        },
+        {
+          "@id": "mgmt:cropping_cover.ttl"
         }
       ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:cropping_cover.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:cropping_cover"
-      }
     },
     {
       "@id": "mgmt:cropping_cover.jsonld",
@@ -81,6 +73,14 @@
       "@id": "mgmt:cropping_cover.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:cropping_cover"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_cover.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_cover"
       }

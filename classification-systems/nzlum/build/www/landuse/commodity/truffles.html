@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:truffles.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:truffles"
-      }
-    },
-    {
       "@id": "com:truffles",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -35,6 +27,46 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "truffles"
+    },
+    {
+      "@id": "com:truffles.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:truffles.jsonld"
+        },
+        {
+          "@id": "com:truffles.rdf"
+        },
+        {
+          "@id": "com:truffles.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:truffles.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:truffles"
+      }
+    },
+    {
+      "@id": "com:truffles.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:truffles"
+      }
+    },
+    {
+      "@id": "com:truffles.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:truffles"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -47,42 +79,10 @@
       }
     },
     {
-      "@id": "com:truffles.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:truffles.ttl"
-        },
-        {
-          "@id": "com:truffles.jsonld"
-        },
-        {
-          "@id": "com:truffles.rdf"
-        }
-      ]
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:truffles.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:truffles"
-      }
-    },
-    {
-      "@id": "com:truffles.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:truffles"
       }
     }
   ]

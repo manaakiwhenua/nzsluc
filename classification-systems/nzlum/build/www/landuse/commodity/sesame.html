@@ -18,29 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sesame.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sesame"
-      }
-    },
-    {
-      "@id": "com:sesame.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sesame"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:oilseeds",
       "skos:member": {
         "@id": "com:sesame"
@@ -62,6 +39,22 @@
       "skos:notation": "sesame"
     },
     {
+      "@id": "com:sesame.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sesame.jsonld"
+        },
+        {
+          "@id": "com:sesame.rdf"
+        },
+        {
+          "@id": "com:sesame.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:sesame.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -70,20 +63,27 @@
       }
     },
     {
-      "@id": "com:sesame.html",
+      "@id": "com:sesame.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sesame.ttl"
-        },
-        {
-          "@id": "com:sesame.jsonld"
-        },
-        {
-          "@id": "com:sesame.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sesame"
+      }
+    },
+    {
+      "@id": "com:sesame.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sesame"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

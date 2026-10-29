@@ -2,37 +2,50 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations.jsonld">
-    <foaf:primaryTopic>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
+    <skos:hasTopConcept>
       <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/smallholder_farm"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
-        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
         <skos:definition xml:lang="en">Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.</skos:definition>
-        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:scopeNote xml:lang="en">If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.</skos:scopeNote>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/vacant_and_transitioning_land"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/smallholder_farm"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping"/>
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
         <skos:usageNote xml:lang="en">Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.</skos:usageNote>
         <skos:notation>2.0.0</skos:notation>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+        <skos:scopeNote xml:lang="en">If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
         <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations.html"/>
       </skos:Concept>
-    </foaf:primaryTopic>
+    </skos:hasTopConcept>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.1">
+    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
+    <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
+    <skos:notation>2.6.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
+    <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
+    <skos:notation>2.1.0</skos:notation>
+  </rdf:Description>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
     <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
-    <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
-    <skos:notation>2.4.0</skos:notation>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
+    <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
+    <skos:notation>2.5.0</skos:notation>
   </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations.html">
     <dcterms:format>text/html</dcterms:format>
@@ -50,32 +63,20 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
-    <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
-    <skos:notation>2.3.0</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
-    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
-    <skos:notation>2.7.0</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
-    <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
-    <skos:notation>2.6.0</skos:notation>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
+    <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
+    <skos:notation>2.4.0</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/smallholder_farm">
     <skos:prefLabel xml:lang="en">Smallholder farm</skos:prefLabel>
     <skos:notation>2.9.0</skos:notation>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0">
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
+    <skos:prefLabel xml:lang="en">Short-rotation and seasonal cropping</skos:prefLabel>
+    <skos:notation>2.3.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
     <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/plantation_forests">
-    <skos:prefLabel xml:lang="en">Plantation forests</skos:prefLabel>
-    <skos:notation>2.1.0</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
-    <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
-    <skos:notation>2.5.0</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/grazing_modified_pasture_systems">
     <skos:prefLabel xml:lang="en">Grazing modified pasture systems</skos:prefLabel>
@@ -85,7 +86,8 @@
     <skos:prefLabel xml:lang="en">Vacant and transitioning land</skos:prefLabel>
     <skos:notation>2.8.0</skos:notation>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0">
-    <skos:hasTopConcept rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/water_wastewater_agriculture">
+    <skos:prefLabel xml:lang="en">Water and wastewater</skos:prefLabel>
+    <skos:notation>2.7.0</skos:notation>
   </rdf:Description>
 </rdf:RDF>

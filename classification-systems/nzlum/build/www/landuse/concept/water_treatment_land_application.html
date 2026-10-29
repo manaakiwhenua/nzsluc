@@ -18,12 +18,46 @@
   },
   "@graph": [
     {
-      "@id": "luc:water_wastewater_agriculture",
-      "skos:notation": "2.7.0",
+      "@id": "luc:water_treatment_land_application",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:water_treatment_land_application.html"
+      },
+      "skos:broader": {
+        "@id": "luc:water_wastewater_agriculture"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Land used for effluent disposal"
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "2.7.3",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Water and wastewater"
+        "@value": "Water treatment – land application"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "probably an ancillary use where some form of grazing is the primary use."
       }
+    },
+    {
+      "@id": "luc:water_treatment_land_application.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:water_treatment_land_application.jsonld"
+        },
+        {
+          "@id": "luc:water_treatment_land_application.rdf"
+        },
+        {
+          "@id": "luc:water_treatment_land_application.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:water_treatment_land_application.jsonld",
@@ -50,57 +84,18 @@
       }
     },
     {
-      "@id": "luc:water_treatment_land_application",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:water_treatment_land_application.html"
-      },
-      "skos:broader": {
-        "@id": "luc:water_wastewater_agriculture"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Land used for effluent disposal"
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "2.7.3",
+      "@id": "luc:water_wastewater_agriculture",
+      "skos:notation": "2.7.0",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Water treatment – land application"
-      },
-      "skos:scopeNote": {
-        "@language": "en",
-        "@value": "probably an ancillary use where some form of grazing is the primary use."
+        "@value": "Water and wastewater"
       }
-    },
-    {
-      "@id": "luc:water_treatment_land_application.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:water_treatment_land_application.ttl"
-        },
-        {
-          "@id": "luc:water_treatment_land_application.jsonld"
-        },
-        {
-          "@id": "luc:water_treatment_land_application.rdf"
-        }
-      ]
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Water treatment – land application</h1><div><span class="chip code">2.7.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_land_application</p></div><h2>Definition</h2><blockquote>Land used for effluent disposal</blockquote><h2>Scope note</h2><blockquote>probably an ancillary use where some form of grazing is the primary use.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>2.7.0</code> <a href="/landuse/concept/water_wastewater_agriculture">Water and wastewater</a></dd><dt>Path</dt><dd><code>2.0.0</code> <a href="/landuse/concept/production_agriculture_plantations">Production agriculture and plantations</a> › <code>2.7.0</code> <a href="/landuse/concept/water_wastewater_agriculture">Water and wastewater</a> › <strong>Water treatment – land application</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>2.7.3</code></td><td>Water treatment – land application</td><td><a href="/classification/v0-4/classes/200/#270-water-and-wastewater">class page</a> · <a href="/landuse/code/nzlum0.4.0/2.7.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>2.7.3</code></td><td>Water treatment – land application</td><td><a href="/classification/v0-3/classes/200/#270-water-and-wastewater">class page</a> · <a href="/landuse/code/nzlum0.3.0/2.7.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/water_treatment_land_application.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/water_treatment_land_application.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/water_treatment_land_application.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Water treatment – land application</h1><div><span class="chip code">2.7.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/water_treatment_land_application</p></div><h2>Definition</h2><blockquote>Land used for effluent disposal</blockquote><h2>Scope note</h2><blockquote>probably an ancillary use where some form of grazing is the primary use.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>2.7.0</code> <a href="/landuse/concept/water_wastewater_agriculture">Water and wastewater</a></dd><dt>Path</dt><dd><code>2.0.0</code> <a href="/landuse/concept/production_agriculture_plantations">Production agriculture and plantations</a> › <code>2.7.0</code> <a href="/landuse/concept/water_wastewater_agriculture">Water and wastewater</a> › <strong>Water treatment – land application</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>2.7.3</code></td><td>Water treatment – land application</td><td><a href="/classification/v0-4/classes/200/#270-water-and-wastewater">class page</a> · <a href="/landuse/code/nzlum0.4.1/2.7.3">code lookup</a></td><td>draft; differs: colour</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>2.7.3</code></td><td>Water treatment – land application</td><td><a href="/classification/v0-4/classes/200/#270-water-and-wastewater">class page</a> · <a href="/landuse/code/nzlum0.4.0/2.7.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>2.7.3</code></td><td>Water treatment – land application</td><td><a href="/classification/v0-3/classes/200/#270-water-and-wastewater">class page</a> · <a href="/landuse/code/nzlum0.3.0/2.7.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/water_treatment_land_application.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/water_treatment_land_application.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/water_treatment_land_application.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

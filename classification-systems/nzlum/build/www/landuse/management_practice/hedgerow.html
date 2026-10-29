@@ -18,56 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:hedgerow.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:hedgerow.ttl"
-        },
-        {
-          "@id": "mgmt:hedgerow.jsonld"
-        },
-        {
-          "@id": "mgmt:hedgerow.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:hedgerow.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:hedgerow"
-      }
-    },
-    {
-      "@id": "mgmt:hedgerow.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:hedgerow"
-      }
-    },
-    {
-      "@id": "mgmt:hedgerow.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:hedgerow"
-      }
-    },
-    {
-      "@id": "mgmt:horticulture",
-      "skos:member": {
-        "@id": "mgmt:hedgerow"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Horticulture"
-      }
-    },
-    {
       "@id": "lus:management_practices",
       "dcterms:title": {
         "@language": "en",
@@ -84,6 +34,56 @@
         "@id": "lus:management_practices"
       },
       "skos:notation": "hedgerow"
+    },
+    {
+      "@id": "mgmt:hedgerow.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:hedgerow.jsonld"
+        },
+        {
+          "@id": "mgmt:hedgerow.rdf"
+        },
+        {
+          "@id": "mgmt:hedgerow.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:hedgerow.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:hedgerow"
+      }
+    },
+    {
+      "@id": "mgmt:hedgerow.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:hedgerow"
+      }
+    },
+    {
+      "@id": "mgmt:hedgerow.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:hedgerow"
+      }
+    },
+    {
+      "@id": "mgmt:horticulture",
+      "skos:member": {
+        "@id": "mgmt:hedgerow"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Horticulture"
+      }
     }
   ]
 }

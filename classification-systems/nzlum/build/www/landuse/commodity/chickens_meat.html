@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chickens_meat.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chickens_meat"
-      }
-    },
-    {
-      "@id": "com:chickens_meat.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:chickens_meat.ttl"
-        },
-        {
-          "@id": "com:chickens_meat.jsonld"
-        },
-        {
-          "@id": "com:chickens_meat.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:chickens_meat.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:chickens_meat"
-      }
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:chickens_meat"
@@ -57,13 +25,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Animals"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     },
     {
@@ -89,11 +50,50 @@
       }
     },
     {
+      "@id": "com:chickens_meat.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chickens_meat.jsonld"
+        },
+        {
+          "@id": "com:chickens_meat.rdf"
+        },
+        {
+          "@id": "com:chickens_meat.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:chickens_meat.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_meat"
+      }
+    },
+    {
+      "@id": "com:chickens_meat.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chickens_meat"
+      }
+    },
+    {
       "@id": "com:chickens_meat.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:chickens_meat"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

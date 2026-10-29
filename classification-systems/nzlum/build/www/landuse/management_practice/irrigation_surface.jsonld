@@ -8,20 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:irrigation_surface.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:irrigation_surface.ttl"
-        },
-        {
-          "@id": "mgmt:irrigation_surface.jsonld"
-        },
-        {
-          "@id": "mgmt:irrigation_surface.rdf"
-        }
-      ]
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
     },
     {
       "@id": "mgmt:irrigation",
@@ -31,13 +22,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Irrigation"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -60,12 +44,20 @@
       }
     },
     {
-      "@id": "mgmt:irrigation_surface.ttl",
+      "@id": "mgmt:irrigation_surface.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:irrigation_surface"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:irrigation_surface.jsonld"
+        },
+        {
+          "@id": "mgmt:irrigation_surface.rdf"
+        },
+        {
+          "@id": "mgmt:irrigation_surface.ttl"
+        }
+      ]
     },
     {
       "@id": "mgmt:irrigation_surface.jsonld",
@@ -79,6 +71,14 @@
       "@id": "mgmt:irrigation_surface.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:irrigation_surface"
+      }
+    },
+    {
+      "@id": "mgmt:irrigation_surface.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:irrigation_surface"
       }

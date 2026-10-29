@@ -18,14 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "lu_proverb:kotahi_te_aho.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "lu_proverb:kotahi_te_aho"
-      }
-    },
-    {
       "@id": "lu_person:kingi_tawhiao",
       "foaf:name": [
         {
@@ -46,12 +38,12 @@
       },
       "dcterms:description": [
         {
-          "@language": "en",
-          "@value": "One strand of flax is easy to break, but many strands together will stand strong."
-        },
-        {
           "@language": "mi",
           "@value": "Kotahi te aho ka whati, ki te kāpuia e kore e whati."
+        },
+        {
+          "@language": "en",
+          "@value": "One strand of flax is easy to break, but many strands together will stand strong."
         }
       ],
       "foaf:isPrimaryTopicOf": {
@@ -59,14 +51,20 @@
       }
     },
     {
-      "@id": "lus:nzlum",
-      "dcterms:relation": {
-        "@id": "lu_proverb:kotahi_te_aho"
-      },
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "New Zealand Land Use and Management classification system"
-      }
+      "@id": "lu_proverb:kotahi_te_aho.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "lu_proverb:kotahi_te_aho.jsonld"
+        },
+        {
+          "@id": "lu_proverb:kotahi_te_aho.rdf"
+        },
+        {
+          "@id": "lu_proverb:kotahi_te_aho.ttl"
+        }
+      ]
     },
     {
       "@id": "lu_proverb:kotahi_te_aho.jsonld",
@@ -85,20 +83,22 @@
       }
     },
     {
-      "@id": "lu_proverb:kotahi_te_aho.html",
+      "@id": "lu_proverb:kotahi_te_aho.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "lu_proverb:kotahi_te_aho.ttl"
-        },
-        {
-          "@id": "lu_proverb:kotahi_te_aho.jsonld"
-        },
-        {
-          "@id": "lu_proverb:kotahi_te_aho.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      }
+    },
+    {
+      "@id": "lus:nzlum",
+      "dcterms:relation": {
+        "@id": "lu_proverb:kotahi_te_aho"
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "New Zealand Land Use and Management classification system"
+      }
     }
   ]
 }

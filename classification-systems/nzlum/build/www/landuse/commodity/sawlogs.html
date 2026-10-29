@@ -18,27 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:sawlogs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sawlogs.ttl"
-        },
-        {
-          "@id": "com:sawlogs.jsonld"
-        },
-        {
-          "@id": "com:sawlogs.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sawlogs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:forest",
+      "skos:member": {
         "@id": "com:sawlogs"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Forest"
       }
     },
     {
@@ -53,14 +39,20 @@
       "skos:notation": "sawlogs"
     },
     {
-      "@id": "com:forest",
-      "skos:member": {
-        "@id": "com:sawlogs"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Forest"
-      }
+      "@id": "com:sawlogs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sawlogs.jsonld"
+        },
+        {
+          "@id": "com:sawlogs.rdf"
+        },
+        {
+          "@id": "com:sawlogs.ttl"
+        }
+      ]
     },
     {
       "@id": "com:sawlogs.jsonld",
@@ -71,18 +63,26 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:sawlogs.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:sawlogs"
+      }
+    },
+    {
+      "@id": "com:sawlogs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sawlogs"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

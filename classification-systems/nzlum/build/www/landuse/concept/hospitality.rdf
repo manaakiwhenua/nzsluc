@@ -2,8 +2,8 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/hospitality.html">
     <dcterms:format>text/html</dcterms:format>
@@ -27,18 +27,17 @@
     </dcterms:hasFormat>
   </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/hospitality">
-    <skos:example xml:lang="en">Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.</skos:example>
+    <skos:notation>3.3.3</skos:notation>
+    <skos:definition xml:lang="en">Land and buildings providing accommodation, food, and beverage services to the public.</skos:definition>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/commercial">
         <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
         <skos:notation>3.3.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:notation>3.3.3</skos:notation>
-    <skos:definition xml:lang="en">Land and buildings providing accommodation, food, and beverage services to the public.</skos:definition>
     <skos:prefLabel xml:lang="en">Hospitality</skos:prefLabel>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:example xml:lang="en">Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.</skos:example>
     <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/hospitality.html"/>
   </skos:Concept>
 </rdf:RDF>

@@ -55,8 +55,7 @@ luc:utilities a skos:Concept ;
     skos:changeNote <https://github.com/manaakiwhenua/nzsluc/issues/69>,
         "Class 3.5.0 redefined at v0.4.0 to include naviation and communciation infrastructure, which was formerly captured under class 3.6.0."@en ;
     skos:definition "Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:electricity_substations_transmission,
         luc:fuel_powered_electricity_generation,
         luc:gas_treatment_storage_transmission,

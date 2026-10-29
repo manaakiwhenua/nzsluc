@@ -8,12 +8,41 @@
   },
   "@graph": [
     {
-      "@id": "com:pawpaws.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:pawpaws"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
+    },
+    {
+      "@id": "com:pawpaws",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:pawpaws.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "pawpaws"
+    },
+    {
+      "@id": "com:pawpaws.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pawpaws.jsonld"
+        },
+        {
+          "@id": "com:pawpaws.rdf"
+        },
+        {
+          "@id": "com:pawpaws.ttl"
+        }
+      ]
     },
     {
       "@id": "com:pawpaws.jsonld",
@@ -32,47 +61,18 @@
       }
     },
     {
-      "@id": "com:pawpaws.html",
+      "@id": "com:pawpaws.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pawpaws.ttl"
-        },
-        {
-          "@id": "com:pawpaws.jsonld"
-        },
-        {
-          "@id": "com:pawpaws.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:pawpaws",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:pawpaws.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "pawpaws"
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pawpaws"
+      }
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:pawpaws"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     }
   ]

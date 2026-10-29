@@ -28,8 +28,7 @@ luc:wind_electricity_generation.ttl a foaf:Document ;
 luc:wind_electricity_generation a skos:Concept ;
     skos:broader luc:utilities ;
     skos:definition "Power generation from wind, including wind farms."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.3" ;
     skos:prefLabel "Wind electricity generation"@en ;
     foaf:isPrimaryTopicOf luc:wind_electricity_generation.html .

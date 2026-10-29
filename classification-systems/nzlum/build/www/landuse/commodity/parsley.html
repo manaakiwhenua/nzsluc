@@ -18,25 +18,36 @@
   },
   "@graph": [
     {
+      "@id": "com:parsley",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:parsley.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "parsley"
+    },
+    {
       "@id": "com:parsley.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:parsley.ttl"
-        },
-        {
           "@id": "com:parsley.jsonld"
         },
         {
           "@id": "com:parsley.rdf"
+        },
+        {
+          "@id": "com:parsley.ttl"
         }
       ]
     },
     {
-      "@id": "com:parsley.ttl",
+      "@id": "com:parsley.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:parsley"
       }
@@ -45,6 +56,14 @@
       "@id": "com:parsley.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:parsley"
+      }
+    },
+    {
+      "@id": "com:parsley.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:parsley"
       }
@@ -60,30 +79,11 @@
       }
     },
     {
-      "@id": "com:parsley.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:parsley"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:parsley",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:parsley.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "parsley"
     }
   ]
 }

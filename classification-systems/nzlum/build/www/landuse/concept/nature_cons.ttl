@@ -49,8 +49,7 @@ luc:wilderness skos:notation "1.1.2" ;
 luc:nature_cons a skos:Concept ;
     skos:broader luc:conservation ;
     skos:definition "Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:habitat_or_species_management,
         luc:national_park,
         luc:natural_feature_protection,

@@ -4,6 +4,10 @@
 @prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+lus:nzlum0.3.0 skos:hasTopConcept luc:built_environment .
+
+lus:nzlum0.4.1 skos:hasTopConcept luc:built_environment .
+
 luc:built_environment.html a foaf:Document ;
     dcterms:format "text/html" ;
     dcterms:hasFormat luc:built_environment.jsonld,
@@ -49,14 +53,11 @@ luc:vacant_transitioning_land_urban skos:notation "3.9.0" ;
 luc:waste_treatment_disposal skos:notation "3.8.0" ;
     skos:prefLabel "Waste treatment and disposal"@en .
 
-lus:nzlum0.3.0 skos:hasTopConcept luc:built_environment .
-
 lus:nzlum0.4.0 skos:hasTopConcept luc:built_environment .
 
 luc:built_environment a skos:Concept ;
     skos:definition "Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:commercial,
         luc:manufacturing_industrial,
         luc:mining,

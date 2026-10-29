@@ -28,8 +28,7 @@ luc:waste_treatment_disposal skos:notation "3.8.0" ;
 luc:transfer_stations_recycling a skos:Concept ;
     skos:broader luc:waste_treatment_disposal ;
     skos:definition "Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.8.2" ;
     skos:prefLabel "Transfer stations and recycling facilities"@en ;
     foaf:isPrimaryTopicOf luc:transfer_stations_recycling.html .

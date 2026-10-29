@@ -28,8 +28,7 @@ luc:short_rotation_seasonal_cropping skos:notation "2.3.0" ;
 luc:arable_mixed_livestock_cropping a skos:Concept ;
     skos:broader luc:short_rotation_seasonal_cropping ;
     skos:definition "Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time.."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.3.2" ;
     skos:prefLabel "Arable and mixed livestock cropping"@en ;
     skos:scopeNote "Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known)."@en ;

@@ -28,14 +28,9 @@
         "@language": "en",
         "@value": "Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.6.2",
       "skos:prefLabel": {
         "@language": "en",
@@ -43,12 +38,20 @@
       }
     },
     {
-      "@id": "luc:poultry_farms.ttl",
+      "@id": "luc:poultry_farms.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:poultry_farms"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:poultry_farms.jsonld"
+        },
+        {
+          "@id": "luc:poultry_farms.rdf"
+        },
+        {
+          "@id": "luc:poultry_farms.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:poultry_farms.jsonld",
@@ -59,25 +62,17 @@
       }
     },
     {
-      "@id": "luc:poultry_farms.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:poultry_farms.ttl"
-        },
-        {
-          "@id": "luc:poultry_farms.jsonld"
-        },
-        {
-          "@id": "luc:poultry_farms.rdf"
-        }
-      ]
-    },
-    {
       "@id": "luc:poultry_farms.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:poultry_farms"
+      }
+    },
+    {
+      "@id": "luc:poultry_farms.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:poultry_farms"
       }

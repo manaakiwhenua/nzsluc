@@ -29,8 +29,7 @@ luc:indigenous_plantation_forestry a skos:Concept ;
     skos:broader luc:plantation_forests ;
     skos:changeNote "Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0"@en ;
     skos:definition "An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.1.2" ;
     skos:prefLabel "Indigenous plantation forestry"@en ;
     skos:usageNote "Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species."@en,

@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chokos.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:chokos"
-      }
-    },
-    {
-      "@id": "com:chokos.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:chokos"
-      }
-    },
-    {
-      "@id": "com:chokos.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chokos"
-      }
-    },
-    {
       "@id": "com:chokos",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -48,21 +24,38 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:chokos.ttl"
-        },
-        {
           "@id": "com:chokos.jsonld"
         },
         {
           "@id": "com:chokos.rdf"
+        },
+        {
+          "@id": "com:chokos.ttl"
         }
       ]
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:chokos.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "com:chokos.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
+      }
+    },
+    {
+      "@id": "com:chokos.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:chokos"
       }
     },
     {
@@ -73,6 +66,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

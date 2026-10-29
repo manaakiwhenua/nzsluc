@@ -18,18 +18,29 @@
   },
   "@graph": [
     {
+      "@id": "com:onions",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:onions.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "onions"
+    },
+    {
       "@id": "com:onions.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:onions.ttl"
-        },
-        {
           "@id": "com:onions.jsonld"
         },
         {
           "@id": "com:onions.rdf"
+        },
+        {
+          "@id": "com:onions.ttl"
         }
       ]
     },
@@ -42,17 +53,17 @@
       }
     },
     {
-      "@id": "com:onions.ttl",
+      "@id": "com:onions.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:onions"
       }
     },
     {
-      "@id": "com:onions.rdf",
+      "@id": "com:onions.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:onions"
       }
@@ -73,17 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:onions",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:onions.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "onions"
     }
   ]
 }

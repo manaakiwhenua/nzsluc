@@ -5,38 +5,35 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.rdf">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms">
-        <skos:definition xml:lang="en">Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production.</skos:definition>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
-        <skos:notation>2.6.2</skos:notation>
-        <skos:prefLabel xml:lang="en">Poultry farms</skos:prefLabel>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.rdf"/>
-  </foaf:Document>
   <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production">
     <skos:prefLabel xml:lang="en">Intensive animal production</skos:prefLabel>
     <skos:notation>2.6.0</skos:notation>
   </rdf:Description>
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms">
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_animal_production"/>
+    <skos:prefLabel xml:lang="en">Poultry farms</skos:prefLabel>
+    <skos:notation>2.6.2</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:definition xml:lang="en">Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production.</skos:definition>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/poultry_farms"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

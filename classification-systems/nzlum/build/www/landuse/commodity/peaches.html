@@ -18,33 +18,54 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:peaches"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:peaches",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:peaches.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "peaches"
+    },
+    {
       "@id": "com:peaches.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:peaches.ttl"
-        },
-        {
           "@id": "com:peaches.jsonld"
         },
         {
           "@id": "com:peaches.rdf"
+        },
+        {
+          "@id": "com:peaches.ttl"
         }
       ]
-    },
-    {
-      "@id": "com:peaches.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:peaches"
-      }
     },
     {
       "@id": "com:peaches.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:peaches"
+      }
+    },
+    {
+      "@id": "com:peaches.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:peaches"
       }
@@ -62,27 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:peaches",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:peaches.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "peaches"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:peaches"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     }
   ]

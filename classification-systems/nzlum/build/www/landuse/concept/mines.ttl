@@ -28,8 +28,7 @@ luc:mining skos:notation "3.7.0" ;
 luc:mines a skos:Concept ;
     skos:broader luc:mining ;
     skos:definition "Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.7.1" ;
     skos:prefLabel "Mines"@en ;
     foaf:isPrimaryTopicOf luc:mines.html .

@@ -9,22 +9,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:low_density_residential.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:low_density_residential"
-      }
-    },
-    {
-      "@id": "luc:residential",
-      "skos:notation": "3.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Residential"
-      }
-    },
-    {
       "@id": "luc:low_density_residential",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -38,14 +22,9 @@
         "@language": "en",
         "@value": "Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.1.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -58,15 +37,23 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:low_density_residential.ttl"
-        },
-        {
           "@id": "luc:low_density_residential.jsonld"
         },
         {
           "@id": "luc:low_density_residential.rdf"
+        },
+        {
+          "@id": "luc:low_density_residential.ttl"
         }
       ]
+    },
+    {
+      "@id": "luc:low_density_residential.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:low_density_residential"
+      }
     },
     {
       "@id": "luc:low_density_residential.rdf",
@@ -82,6 +69,14 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:low_density_residential"
+      }
+    },
+    {
+      "@id": "luc:residential",
+      "skos:notation": "3.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Residential"
       }
     }
   ]

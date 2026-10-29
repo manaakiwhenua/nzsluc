@@ -8,12 +8,15 @@
   },
   "@graph": [
     {
-      "@id": "com:carrots.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:carrots"
-      }
+      "@id": "com:carrots",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:carrots.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "carrots"
     },
     {
       "@id": "com:carrots.html",
@@ -21,15 +24,31 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:carrots.ttl"
-        },
-        {
           "@id": "com:carrots.jsonld"
         },
         {
           "@id": "com:carrots.rdf"
+        },
+        {
+          "@id": "com:carrots.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:carrots.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:carrots"
+      }
+    },
+    {
+      "@id": "com:carrots.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:carrots"
+      }
     },
     {
       "@id": "com:carrots.ttl",
@@ -55,25 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:carrots.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:carrots"
-      }
-    },
-    {
-      "@id": "com:carrots",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:carrots.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "carrots"
     }
   ]
 }

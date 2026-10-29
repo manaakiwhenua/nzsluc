@@ -18,38 +18,6 @@
       }
     },
     {
-      "@id": "com:finfish.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:finfish.ttl"
-        },
-        {
-          "@id": "com:finfish.jsonld"
-        },
-        {
-          "@id": "com:finfish.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:finfish.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:finfish"
-      }
-    },
-    {
-      "@id": "com:finfish.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:finfish"
-      }
-    },
-    {
       "@id": "com:finfish",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -65,11 +33,20 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:finfish.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:finfish.jsonld"
+        },
+        {
+          "@id": "com:finfish.rdf"
+        },
+        {
+          "@id": "com:finfish.ttl"
+        }
+      ]
     },
     {
       "@id": "com:finfish.jsonld",
@@ -77,6 +54,29 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:finfish"
+      }
+    },
+    {
+      "@id": "com:finfish.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:finfish"
+      }
+    },
+    {
+      "@id": "com:finfish.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:finfish"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

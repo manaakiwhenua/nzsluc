@@ -29,8 +29,7 @@ luc:entertainment a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Land areas and facilities offering leisure and recreational activities for public enjoyment."@en ;
     skos:example "Cinemas, theatres, amusement parks, casinos, concert venues."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.4" ;
     skos:prefLabel "Entertainment"@en ;
     foaf:isPrimaryTopicOf luc:entertainment.html .

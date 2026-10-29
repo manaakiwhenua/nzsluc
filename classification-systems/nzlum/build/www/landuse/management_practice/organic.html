@@ -18,6 +18,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:organic"
@@ -25,6 +32,41 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
+      }
+    },
+    {
+      "@id": "mgmt:organic",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:organic.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "organic"
+    },
+    {
+      "@id": "mgmt:organic.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:organic.jsonld"
+        },
+        {
+          "@id": "mgmt:organic.rdf"
+        },
+        {
+          "@id": "mgmt:organic.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:organic.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:organic"
       }
     },
     {
@@ -51,48 +93,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:organic.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:organic.ttl"
-        },
-        {
-          "@id": "mgmt:organic.jsonld"
-        },
-        {
-          "@id": "mgmt:organic.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:organic",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:organic.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "organic"
-    },
-    {
-      "@id": "mgmt:organic.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:organic"
       }
     }
   ]

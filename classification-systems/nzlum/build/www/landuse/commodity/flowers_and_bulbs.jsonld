@@ -8,92 +8,28 @@
   },
   "@graph": [
     {
-      "@id": "com:chrysanthemums",
-      "skos:notation": "chrysanthemums"
-    },
-    {
-      "@id": "com:tulips",
-      "skos:notation": "tulips"
-    },
-    {
-      "@id": "com:tropical_flowers",
-      "skos:notation": "tropical flowers"
-    },
-    {
-      "@id": "com:calendula",
-      "skos:notation": "calendula"
-    },
-    {
-      "@id": "com:proteas",
-      "skos:notation": "proteas"
-    },
-    {
-      "@id": "com:roses",
-      "skos:notation": "roses"
+      "@id": "com:australian_native_flowers",
+      "skos:notation": "australian native flowers"
     },
     {
       "@id": "com:bulbs",
       "skos:notation": "bulbs"
     },
     {
-      "@id": "com:lavender",
-      "skos:notation": "lavender"
+      "@id": "com:calendula",
+      "skos:notation": "calendula"
     },
     {
-      "@id": "com:gerberas",
-      "skos:notation": "gerberas"
+      "@id": "com:carnations",
+      "skos:notation": "carnations"
     },
     {
-      "@id": "com:lilies",
-      "skos:notation": "lilies"
-    },
-    {
-      "@id": "com:flowers_and_foliage",
-      "skos:notation": "flowers and foliage"
-    },
-    {
-      "@id": "com:flowers_and_bulbs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:flowers_and_bulbs"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:flowers_and_bulbs.ttl"
-        },
-        {
-          "@id": "com:flowers_and_bulbs.jsonld"
-        },
-        {
-          "@id": "com:flowers_and_bulbs.rdf"
-        }
-      ]
+      "@id": "com:chrysanthemums",
+      "skos:notation": "chrysanthemums"
     },
     {
       "@id": "com:daffodils",
       "skos:notation": "daffodils"
-    },
-    {
-      "@id": "com:orchids",
-      "skos:notation": "orchids"
-    },
-    {
-      "@id": "com:australian_native_flowers",
-      "skos:notation": "australian native flowers"
-    },
-    {
-      "@id": "com:flowers_and_bulbs.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:flowers_and_bulbs"
-      }
     },
     {
       "@id": "com:flowers_and_bulbs",
@@ -106,49 +42,49 @@
       },
       "skos:member": [
         {
-          "@id": "com:lilies"
-        },
-        {
-          "@id": "com:gerberas"
-        },
-        {
-          "@id": "com:roses"
-        },
-        {
-          "@id": "com:chrysanthemums"
+          "@id": "com:australian_native_flowers"
         },
         {
           "@id": "com:bulbs"
         },
         {
-          "@id": "com:orchids"
-        },
-        {
-          "@id": "com:tulips"
-        },
-        {
-          "@id": "com:lavender"
+          "@id": "com:calendula"
         },
         {
           "@id": "com:carnations"
         },
         {
-          "@id": "com:australian_native_flowers"
+          "@id": "com:chrysanthemums"
+        },
+        {
+          "@id": "com:daffodils"
         },
         {
           "@id": "com:flowers_and_foliage"
         },
         {
-          "@id": "com:tropical_flowers"
+          "@id": "com:gerberas"
+        },
+        {
+          "@id": "com:lavender"
+        },
+        {
+          "@id": "com:lilies"
+        },
+        {
+          "@id": "com:orchids"
         },
         {
           "@id": "com:proteas"
         },
         {
-          "@id": "com:calendula"
+          "@id": "com:roses"
         },
         {
-          "@id": "com:daffodils"
+          "@id": "com:tropical_flowers"
+        },
+        {
+          "@id": "com:tulips"
         }
       ],
       "skos:prefLabel": {
@@ -157,10 +93,27 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:flowers_and_bulbs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:flowers_and_bulbs.jsonld"
+        },
+        {
+          "@id": "com:flowers_and_bulbs.rdf"
+        },
+        {
+          "@id": "com:flowers_and_bulbs.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:flowers_and_bulbs.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:flowers_and_bulbs"
       }
     },
     {
@@ -172,8 +125,55 @@
       }
     },
     {
-      "@id": "com:carnations",
-      "skos:notation": "carnations"
+      "@id": "com:flowers_and_bulbs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:flowers_and_bulbs"
+      }
+    },
+    {
+      "@id": "com:flowers_and_foliage",
+      "skos:notation": "flowers and foliage"
+    },
+    {
+      "@id": "com:gerberas",
+      "skos:notation": "gerberas"
+    },
+    {
+      "@id": "com:lavender",
+      "skos:notation": "lavender"
+    },
+    {
+      "@id": "com:lilies",
+      "skos:notation": "lilies"
+    },
+    {
+      "@id": "com:orchids",
+      "skos:notation": "orchids"
+    },
+    {
+      "@id": "com:proteas",
+      "skos:notation": "proteas"
+    },
+    {
+      "@id": "com:roses",
+      "skos:notation": "roses"
+    },
+    {
+      "@id": "com:tropical_flowers",
+      "skos:notation": "tropical flowers"
+    },
+    {
+      "@id": "com:tulips",
+      "skos:notation": "tulips"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

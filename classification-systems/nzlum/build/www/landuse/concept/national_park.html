@@ -19,30 +19,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:national_park.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:national_park.ttl"
-        },
-        {
-          "@id": "luc:national_park.jsonld"
-        },
-        {
-          "@id": "luc:national_park.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
-      }
-    },
-    {
       "@id": "luc:national_park",
       "@type": "skos:Concept",
       "dcterms:source": {
@@ -60,14 +36,9 @@
         "@language": "en",
         "@value": "Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:\n\n  a) protect the ecological integrity of one or more ecosystems for the current and future generations;\n\n  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and\n\n  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.1.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -75,12 +46,20 @@
       }
     },
     {
-      "@id": "luc:national_park.ttl",
+      "@id": "luc:national_park.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:national_park"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:national_park.jsonld"
+        },
+        {
+          "@id": "luc:national_park.rdf"
+        },
+        {
+          "@id": "luc:national_park.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:national_park.jsonld",
@@ -97,12 +76,28 @@
       "foaf:primaryTopic": {
         "@id": "luc:national_park"
       }
+    },
+    {
+      "@id": "luc:national_park.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:national_park"
+      }
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#7C76B6"><h1><span class="sw" style="background:#7C76B6"></span>National Park</h1><div><span class="chip code">1.1.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/national_park</p></div><h2>Definition</h2><blockquote>Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:<br><br>  a) protect the ecological integrity of one or more ecosystems for the current and future generations;<br><br>  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and<br><br>  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.</blockquote><h2>Source</h2><blockquote>IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a> › <strong>National Park</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.1.3</code></td><td>National Park</td><td><a href="/classification/v0-4/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.1.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.1.3</code></td><td>National Park</td><td><a href="/classification/v0-3/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.1.3">code lookup</a></td><td>same</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#7C76B6</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/national_park.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/national_park.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/national_park.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#7C76B6"><h1><span class="sw" style="background:#7C76B6"></span>National Park</h1><div><span class="chip code">1.1.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/national_park</p></div><h2>Definition</h2><blockquote>Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:<br><br>  a) protect the ecological integrity of one or more ecosystems for the current and future generations;<br><br>  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and<br><br>  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.</blockquote><h2>Source</h2><blockquote>IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.1.0</code> <a href="/landuse/concept/nature_cons">Nature conservation</a> › <strong>National Park</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>1.1.3</code></td><td>National Park</td><td><a href="/classification/v0-4/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.4.1/1.1.3">code lookup</a></td><td>draft; differs: colour</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.1.3</code></td><td>National Park</td><td><a href="/classification/v0-4/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.1.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.1.3</code></td><td>National Park</td><td><a href="/classification/v0-3/classes/100/#110-nature-conservation">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.1.3">code lookup</a></td><td>same</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#7C76B6</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/national_park.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/national_park.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/national_park.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 VERSION = 0.4.0
-VERSIONS = 0.3.0 0.4.0
+VERSIONS = 0.3.0 0.4.0 0.4.1
 SCHEME = https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum$(VERSION)
 DATA = rdf/scheme.ttl rdf/$(VERSION)/concepts*.ttl
 BUILD = build
@@ -25,6 +25,7 @@ all-versions:
 # Dereferenceable Linked Data documents for every URI in the namespace, for all
 # VERSIONS at once (concept URIs are unversioned). Copy $(WWW)/landuse into the
 # public/ folder of the nzlum-site repository to publish.
+# PYTHONHASHSEED=0 keeps rdflib's RDF/XML and JSON-LD node order stable between runs.
 .PHONY: www
 www:
 	@for v in $(VERSIONS); do \
@@ -32,7 +33,7 @@ www:
 	done
 	riot --validate $(TERM_LISTS)
 	rm -rf $(WWW)
-	./scripts/export_www.py $(WWW) --base $(BASE) --site $(SITE) \
+	PYTHONHASHSEED=0 ./scripts/export_www.py $(WWW) --base $(BASE) --site $(SITE) \
 	  $(foreach v,$(VERSIONS),--version $(v)=$(BUILD)/$(v)/nzlum-$(v).ttl) \
 	  $(foreach t,$(TERM_LISTS),--term-list $(t))
 

@@ -19,6 +19,7 @@
 > make www               # dereferenceable Linked Data documents, all versions at once
 > make all              # everything above except www, for VERSION
 > make all-versions      # everything above, for every version in VERSIONS, then www
+> make VERSION=0.4.1 all # build a different version (0.4.1 is the current draft)
 > ```
 >
 > `make validate` runs the SPARQL sanity checks in `validation/*.rq` (e.g. concepts missing a `skos:notation` or `skos:prefLabel`, `skos:broader`/`skos:narrower` inconsistencies, and tertiary-level classes that share the same `lu:colour`) against the built vocabulary.
@@ -110,6 +111,7 @@ Known limitations of this static publication:
 
 - **Concept URIs are not versioned.** `luc:conservation` names the idea; the scheme versions (`lus:nzlum0.3.0`, `lus:nzlum0.4.0`, …) name snapshots of how the concepts were arranged, coded and worded. This follows usual SKOS practice.
 - The description served at a concept URI is taken from the **latest version that contains it**. The concept is stated to be `skos:inScheme` every version that includes it, and its landing page tabulates its code, label and site page in each version, flagging where they differ.
+- A version whose scheme has `adms:status lu_status:draft` (currently `lus:nzlum0.4.1`) is published alongside the released versions, with its own scheme document, code lookup and version row on every concept page, but it is never the *served* description of a concept: that always comes from the latest **released** version. A concept that exists only in a draft is served from the draft with a `skos:editorialNote` saying so.
 - A concept that is **dropped** in a later version is served from the last version that contained it, with `owl:deprecated true` and a `skos:historyNote` added by the exporter. When the meaning of a concept genuinely changes, mint a new concept and link the old one with `dct:isReplacedBy` rather than redefining the existing URI.
 - **Codes (`skos:notation`) are not stable identifiers.** Between 0.3.0 and 0.4.0 eleven codes were reassigned to different concepts. A code is only meaningful together with its version, which is why data records carry `lu_version` and why the versioned code lookup exists.
 
@@ -263,32 +265,45 @@ Coordinate system: any [current official projection](https://www.linz.govt.nz/gu
 - New Zealand Continental Shelf Lambert Conformal 2000 (NZCS2000).
 
 
-## Suggested colour scheme (at the secondary scale)
+## Colour scheme
 
-| Colour | Class Code | Category | Hex Code |
-|:--:|:--:|---|---|
-| ![7F6DF2](https://place-hold.it/50x50/7F6DF2/7F6DF2.png&text=7F6DF2) | 1.1.0 | **Biodiversity protection** | `#7F6DF2` |
-| ![A88BE0](https://place-hold.it/50x50/A88BE0/A88BE0.png&text=A88BE0) | 1.2.0 | **Cultural and natural heritage** | `#A88BE0` |
-| ![CAB4D4](https://place-hold.it/50x50/CAB4D4/CAB4D4.png&text=CAB4D4) | 1.3.0 | **Minimal use from relatively natural environments** | `#CAB4D4` |
-| ![D6C8DA](https://place-hold.it/50x50/D6C8DA/D6C8DA.png&text=D6C8DA) | 1.4.0 | **Unused and transitioning land** | `#D6C8DA` |
-| ![37966F](https://place-hold.it/50x50/37966F/37966F.png&text=37966F) | 2.1.0 | **Plantation forests** | `#37966F` |
-| ![A5D64B](https://place-hold.it/50x50/A5D64B/A5D64B.png&text=A5D64B) | 2.2.0 | **Grazing modified pasture systems** | `#A5D64B` |
-| ![E7F281](https://place-hold.it/50x50/E7F281/E7F281.png&text=E7F281) | 2.3.0 | **Short-rotation and seasonal cropping** | `#E7F281` |
-| ![F8DB76](https://place-hold.it/50x50/F8DB76/F8DB76.png&text=F8DB76) | 2.4.0 | **Perennial horticulture** | `#F8DB76` |
-| ![EEC22D](https://place-hold.it/50x50/EEC22D/EEC22D.png&text=EEC22D) | 2.5.0 | **Intensive horticulture** | `#EEC22D` |
-| ![A66E4A](https://place-hold.it/50x50/A66E4A/A66E4A.png&text=A66E4A) | 2.6.0 | **Intensive animal production** | `#A66E4A` |
-| ![4DA6FF](https://place-hold.it/50x50/4DA6FF/4DA6FF.png&text=4DA6FF) | 2.7.0 | **Water and wastewater** | `#4DA6FF` |
-| ![BFD3C1](https://place-hold.it/50x50/BFD3C1/BFD3C1.png&text=BFD3C1) | 2.8.0 | **Vacant and transitioning land** | `#BFD3C1` |
-| ![FFBEBE](https://place-hold.it/50x50/FFBEBE/FFBEBE.png&text=FFBEBE) | 3.1.0 | **Residential** | `#FFBEBE` |
-| ![FF5500](https://place-hold.it/50x50/FF5500/FF5500.png&text=FF5500) | 3.2.0 | **Public recreation and services** | `#FF5500` |
-| ![FF0000](https://place-hold.it/50x50/FF0000/FF0000.png&text=FF0000) | 3.3.0 | **Commercial** | `#FF0000` |
-| ![8C2F39](https://place-hold.it/50x50/8C2F39/8C2F39.png&text=8C2F39) | 3.4.0 | **Manufacturing and industrial** | `#8C2F39` |
-| ![D16B7F](https://place-hold.it/50x50/D16B7F/D16B7F.png&text=D16B7F) | 3.5.0 | **Utilities** | `#D16B7F` |
-| ![A80084](https://place-hold.it/50x50/A80084/A80084.png&text=A80084) | 3.6.0 | **Transport and communication** | `#A80084` |
-| ![5A5C6C](https://place-hold.it/50x50/5A5C6C/5A5C6C.png&text=5A5C6C) | 3.7.0 | **Mining** | `#5A5C6C` |
-| ![4A5568](https://place-hold.it/50x50/4A5568/4A5568.png&text=4A5568) | 3.8.0 | **Waste treatment and disposal** | `#4A5568` |
-| ![E5E5E5](https://place-hold.it/50x50/E5E5E5/E5E5E5.png&text=E5E5E5) | 3.9.0 | **Vacant and transitioning land** | `#E5E5E5` |
+The authoritative colour of every class is its `lu:colour` value in the RDF (a hex RGB triplet), and the QGIS, SLD and CartoCSS styles in `build/{version}/` are generated from it, so a map styled with those files matches the classification by construction. In 0.4.0 only 39 of the 119 classes carry a colour and the rest inherit their parent's. The draft 0.4.1 assigns a colour to every class on three rules:
 
+- each secondary class owns one hue, and its own colour is a member or mid-tone of that hue's ladder;
+- the tertiaries within a secondary form a lightness ladder, at least about 7 L\* apart, so that they remain separable under red–green colour-vision deficiency, where hue differences collapse but lightness survives;
+- true blue (roughly 215°–255° in CIE LCh) is not used for any land use class, leaving it free for symbolising the `water` attribute, which may take precedence over the land use code on a map.
+
+Primary and secondary colours, by version:
+
+| Code | Class | 0.4.0 (released) | 0.4.1 (draft) |
+|:--:|---|:--|:--|
+| 1.0.0 | **Conservation and Minimal Use** | — `—` | ![7B6DB5](https://place-hold.it/50x50/7B6DB5/7B6DB5.png&text=7B6DB5) `#7B6DB5` |
+| 1.1.0 | **Nature conservation** | — `—` | ![6A51A3](https://place-hold.it/50x50/6A51A3/6A51A3.png&text=6A51A3) `#6A51A3` |
+| 1.2.0 | **Cultural and natural heritage** | ![A00019](https://place-hold.it/50x50/A00019/A00019.png&text=A00019) `#A00019` | ![AD2D4A](https://place-hold.it/50x50/AD2D4A/AD2D4A.png&text=AD2D4A) `#AD2D4A` |
+| 1.3.0 | **Minimal use from relatively natural environments** | ![FFC77A](https://place-hold.it/50x50/FFC77A/FFC77A.png&text=FFC77A) `#FFC77A` | ![FFC77A](https://place-hold.it/50x50/FFC77A/FFC77A.png&text=FFC77A) `#FFC77A` |
+| 1.4.0 | **Unused and transitioning land** | ![C8C69F](https://place-hold.it/50x50/C8C69F/C8C69F.png&text=C8C69F) `#C8C69F` | ![C8C69F](https://place-hold.it/50x50/C8C69F/C8C69F.png&text=C8C69F) `#C8C69F` |
+| 2.0.0 | **Production agriculture and plantations** | — `—` | ![6E8C44](https://place-hold.it/50x50/6E8C44/6E8C44.png&text=6E8C44) `#6E8C44` |
+| 2.1.0 | **Plantation forests** | ![122112](https://place-hold.it/50x50/122112/122112.png&text=122112) `#122112` | ![122112](https://place-hold.it/50x50/122112/122112.png&text=122112) `#122112` |
+| 2.2.0 | **Grazing modified pasture systems** | ![357735](https://place-hold.it/50x50/357735/357735.png&text=357735) `#357735` | ![769B5C](https://place-hold.it/50x50/769B5C/769B5C.png&text=769B5C) `#769B5C` |
+| 2.3.0 | **Short-rotation and seasonal cropping** | ![7F7F54](https://place-hold.it/50x50/7F7F54/7F7F54.png&text=7F7F54) `#7F7F54` | ![C6A14D](https://place-hold.it/50x50/C6A14D/C6A14D.png&text=C6A14D) `#C6A14D` |
+| 2.4.0 | **Perennial horticulture** | ![A4A898](https://place-hold.it/50x50/A4A898/A4A898.png&text=A4A898) `#A4A898` | ![9EA083](https://place-hold.it/50x50/9EA083/9EA083.png&text=9EA083) `#9EA083` |
+| 2.5.0 | **Intensive horticulture** | ![4A4C39](https://place-hold.it/50x50/4A4C39/4A4C39.png&text=4A4C39) `#4A4C39` | ![4A4C39](https://place-hold.it/50x50/4A4C39/4A4C39.png&text=4A4C39) `#4A4C39` |
+| 2.6.0 | **Intensive animal production** | ![BFA798](https://place-hold.it/50x50/BFA798/BFA798.png&text=BFA798) `#BFA798` | ![C79588](https://place-hold.it/50x50/C79588/C79588.png&text=C79588) `#C79588` |
+| 2.7.0 | **Water and wastewater** | ![3B505B](https://place-hold.it/50x50/3B505B/3B505B.png&text=3B505B) `#3B505B` | ![528582](https://place-hold.it/50x50/528582/528582.png&text=528582) `#528582` |
+| 2.8.0 | **Vacant and transitioning land** | ![BCBFE1](https://place-hold.it/50x50/BCBFE1/BCBFE1.png&text=BCBFE1) `#BCBFE1` | ![B6C8BC](https://place-hold.it/50x50/B6C8BC/B6C8BC.png&text=B6C8BC) `#B6C8BC` |
+| 2.9.0 | **Smallholder farm** | ![E5D64F](https://place-hold.it/50x50/E5D64F/E5D64F.png&text=E5D64F) `#E5D64F` | ![E5D64F](https://place-hold.it/50x50/E5D64F/E5D64F.png&text=E5D64F) `#E5D64F` |
+| 3.0.0 | **Built environment** | — `—` | ![8E7A78](https://place-hold.it/50x50/8E7A78/8E7A78.png&text=8E7A78) `#8E7A78` |
+| 3.1.0 | **Residential** | ![815E5B](https://place-hold.it/50x50/815E5B/815E5B.png&text=815E5B) `#815E5B` | ![815E5B](https://place-hold.it/50x50/815E5B/815E5B.png&text=815E5B) `#815E5B` |
+| 3.2.0 | **Public recreation and services** | ![C19878](https://place-hold.it/50x50/C19878/C19878.png&text=C19878) `#C19878` | ![C19878](https://place-hold.it/50x50/C19878/C19878.png&text=C19878) `#C19878` |
+| 3.3.0 | **Commercial** | ![B8C2CE](https://place-hold.it/50x50/B8C2CE/B8C2CE.png&text=B8C2CE) `#B8C2CE` | ![6E94BA](https://place-hold.it/50x50/6E94BA/6E94BA.png&text=6E94BA) `#6E94BA` |
+| 3.4.0 | **Manufacturing and industrial** | ![D0D2DF](https://place-hold.it/50x50/D0D2DF/D0D2DF.png&text=D0D2DF) `#D0D2DF` | ![9598A8](https://place-hold.it/50x50/9598A8/9598A8.png&text=9598A8) `#9598A8` |
+| 3.5.0 | **Utilities** | ![F8ADFA](https://place-hold.it/50x50/F8ADFA/F8ADFA.png&text=F8ADFA) `#F8ADFA` | ![955085](https://place-hold.it/50x50/955085/955085.png&text=955085) `#955085` |
+| 3.6.0 | **Transportation** | ![72737E](https://place-hold.it/50x50/72737E/72737E.png&text=72737E) `#72737E` | ![72737E](https://place-hold.it/50x50/72737E/72737E.png&text=72737E) `#72737E` |
+| 3.7.0 | **Mining** | ![E1CEA7](https://place-hold.it/50x50/E1CEA7/E1CEA7.png&text=E1CEA7) `#E1CEA7` | ![E1CEA7](https://place-hold.it/50x50/E1CEA7/E1CEA7.png&text=E1CEA7) `#E1CEA7` |
+| 3.8.0 | **Waste treatment and disposal** | ![E77148](https://place-hold.it/50x50/E77148/E77148.png&text=E77148) `#E77148` | ![E77148](https://place-hold.it/50x50/E77148/E77148.png&text=E77148) `#E77148` |
+| 3.9.0 | **Vacant and transitioning land** | ![D69B97](https://place-hold.it/50x50/D69B97/D69B97.png&text=D69B97) `#D69B97` | ![D69B97](https://place-hold.it/50x50/D69B97/D69B97.png&text=D69B97) `#D69B97` |
+
+The full set, including tertiary classes, is in [`nzlum_v0.4.1_summary.svg`](build/0.4.1/nzlum_v0.4.1_summary.svg) and on each concept's Linked Data page.
 
 
 ## References

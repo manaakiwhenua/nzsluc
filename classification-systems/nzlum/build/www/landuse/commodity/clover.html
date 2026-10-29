@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:clover.ttl",
+      "@id": "com:clover",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:clover.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "clover"
+    },
+    {
+      "@id": "com:clover.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:clover"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:clover.jsonld"
+        },
+        {
+          "@id": "com:clover.rdf"
+        },
+        {
+          "@id": "com:clover.ttl"
+        }
+      ]
     },
     {
       "@id": "com:clover.jsonld",
@@ -34,26 +53,19 @@
       }
     },
     {
-      "@id": "com:clover.html",
+      "@id": "com:clover.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:clover.ttl"
-        },
-        {
-          "@id": "com:clover.jsonld"
-        },
-        {
-          "@id": "com:clover.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:clover"
+      }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:clover.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:clover"
       }
     },
     {
@@ -67,23 +79,11 @@
       }
     },
     {
-      "@id": "com:clover.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:clover"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:clover",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:clover.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "clover"
     }
   ]
 }

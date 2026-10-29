@@ -29,8 +29,7 @@ luc:landfills a skos:Concept ;
     skos:broader luc:waste_treatment_disposal ;
     skos:definition "Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions."@en ;
     skos:example "Landfills designed to receive inert construction materials." ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.8.1" ;
     skos:prefLabel "Landfills"@en ;
     skos:scopeNote "Includes all class 1 to 5 landfills"@en,

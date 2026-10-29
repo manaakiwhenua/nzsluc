@@ -9,35 +9,10 @@
   },
   "@graph": [
     {
-      "@id": "wtr:mangrove.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "wtr:mangrove"
-      }
-    },
-    {
-      "@id": "wtr:mangrove.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:mangrove.ttl"
-        },
-        {
-          "@id": "wtr:mangrove.jsonld"
-        },
-        {
-          "@id": "wtr:mangrove.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "wtr:mangrove.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "wtr:mangrove"
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
       }
     },
     {
@@ -53,6 +28,22 @@
       "skos:notation": "mangrove"
     },
     {
+      "@id": "wtr:mangrove.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:mangrove.jsonld"
+        },
+        {
+          "@id": "wtr:mangrove.rdf"
+        },
+        {
+          "@id": "wtr:mangrove.ttl"
+        }
+      ]
+    },
+    {
       "@id": "wtr:mangrove.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -61,10 +52,19 @@
       }
     },
     {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
+      "@id": "wtr:mangrove.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "wtr:mangrove"
+      }
+    },
+    {
+      "@id": "wtr:mangrove.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "wtr:mangrove"
       }
     }
   ]

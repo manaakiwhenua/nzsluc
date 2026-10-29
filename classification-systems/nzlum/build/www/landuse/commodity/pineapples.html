@@ -18,19 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:pineapples.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:pineapples"
-      }
-    },
-    {
-      "@id": "com:pineapples.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:pineapples"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     },
     {
@@ -45,9 +39,41 @@
       "skos:notation": "pineapples"
     },
     {
+      "@id": "com:pineapples.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pineapples.jsonld"
+        },
+        {
+          "@id": "com:pineapples.rdf"
+        },
+        {
+          "@id": "com:pineapples.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:pineapples.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:pineapples"
+      }
+    },
+    {
       "@id": "com:pineapples.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pineapples"
+      }
+    },
+    {
+      "@id": "com:pineapples.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:pineapples"
       }
@@ -58,32 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:pineapples"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:pineapples.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pineapples.ttl"
-        },
-        {
-          "@id": "com:pineapples.jsonld"
-        },
-        {
-          "@id": "com:pineapples.rdf"
-        }
-      ]
     }
   ]
 }

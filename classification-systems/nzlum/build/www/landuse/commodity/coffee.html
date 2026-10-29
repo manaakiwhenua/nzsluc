@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:coffee.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:coffee.ttl"
-        },
-        {
-          "@id": "com:coffee.jsonld"
-        },
-        {
-          "@id": "com:coffee.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:coffee.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:coffee"
-      }
-    },
-    {
-      "@id": "com:coffee.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:coffee"
-      }
-    },
-    {
       "@id": "com:coffee",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -61,18 +29,43 @@
       "skos:notation": "coffee"
     },
     {
-      "@id": "com:coffee.ttl",
+      "@id": "com:coffee.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:coffee.jsonld"
+        },
+        {
+          "@id": "com:coffee.rdf"
+        },
+        {
+          "@id": "com:coffee.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:coffee.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:coffee"
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:coffee.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:coffee"
+      }
+    },
+    {
+      "@id": "com:coffee.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:coffee"
       }
     },
     {
@@ -83,6 +76,13 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

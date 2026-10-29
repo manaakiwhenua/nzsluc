@@ -8,6 +8,41 @@
   },
   "@graph": [
     {
+      "@id": "com:spring_onions_and_shallots",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:spring_onions_and_shallots.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "spring onions and shallots"
+    },
+    {
+      "@id": "com:spring_onions_and_shallots.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:spring_onions_and_shallots.jsonld"
+        },
+        {
+          "@id": "com:spring_onions_and_shallots.rdf"
+        },
+        {
+          "@id": "com:spring_onions_and_shallots.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:spring_onions_and_shallots.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:spring_onions_and_shallots"
+      }
+    },
+    {
       "@id": "com:spring_onions_and_shallots.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -16,25 +51,9 @@
       }
     },
     {
-      "@id": "com:spring_onions_and_shallots.html",
+      "@id": "com:spring_onions_and_shallots.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:spring_onions_and_shallots.ttl"
-        },
-        {
-          "@id": "com:spring_onions_and_shallots.jsonld"
-        },
-        {
-          "@id": "com:spring_onions_and_shallots.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:spring_onions_and_shallots.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:spring_onions_and_shallots"
       }
@@ -55,25 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:spring_onions_and_shallots.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:spring_onions_and_shallots"
-      }
-    },
-    {
-      "@id": "com:spring_onions_and_shallots",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:spring_onions_and_shallots.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "spring onions and shallots"
     }
   ]
 }

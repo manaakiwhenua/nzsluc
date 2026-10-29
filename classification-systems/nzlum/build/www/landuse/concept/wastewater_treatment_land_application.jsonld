@@ -8,28 +8,12 @@
   },
   "@graph": [
     {
-      "@id": "luc:wastewater_treatment_land_application.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:wastewater_treatment_land_application"
+      "@id": "luc:waste_treatment_disposal",
+      "skos:notation": "3.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Waste treatment and disposal"
       }
-    },
-    {
-      "@id": "luc:wastewater_treatment_land_application.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:wastewater_treatment_land_application.ttl"
-        },
-        {
-          "@id": "luc:wastewater_treatment_land_application.jsonld"
-        },
-        {
-          "@id": "luc:wastewater_treatment_land_application.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:wastewater_treatment_land_application",
@@ -48,14 +32,9 @@
         "@language": "en",
         "@value": "Irrigation, groundwater recharge, soil fertility enhancement."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.8.4",
       "skos:prefLabel": {
         "@language": "en",
@@ -65,6 +44,22 @@
         "@language": "en",
         "@value": " This is often likely to be an ancillary use."
       }
+    },
+    {
+      "@id": "luc:wastewater_treatment_land_application.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:wastewater_treatment_land_application.jsonld"
+        },
+        {
+          "@id": "luc:wastewater_treatment_land_application.rdf"
+        },
+        {
+          "@id": "luc:wastewater_treatment_land_application.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:wastewater_treatment_land_application.jsonld",
@@ -83,11 +78,11 @@
       }
     },
     {
-      "@id": "luc:waste_treatment_disposal",
-      "skos:notation": "3.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Waste treatment and disposal"
+      "@id": "luc:wastewater_treatment_land_application.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:wastewater_treatment_land_application"
       }
     }
   ]

@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:molluscs.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:molluscs"
-      }
-    },
-    {
-      "@id": "com:molluscs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:molluscs.ttl"
-        },
-        {
-          "@id": "com:molluscs.jsonld"
-        },
-        {
-          "@id": "com:molluscs.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:animals",
       "skos:member": {
         "@id": "com:molluscs"
@@ -40,6 +16,37 @@
         "@language": "en",
         "@value": "Animals"
       }
+    },
+    {
+      "@id": "com:molluscs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:molluscs.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "molluscs",
+      "skos:usageNote": {
+        "@language": "en",
+        "@value": "Aquaculture: includes peal oysters, edible oysters, abalone, mussels."
+      }
+    },
+    {
+      "@id": "com:molluscs.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:molluscs.jsonld"
+        },
+        {
+          "@id": "com:molluscs.rdf"
+        },
+        {
+          "@id": "com:molluscs.ttl"
+        }
+      ]
     },
     {
       "@id": "com:molluscs.jsonld",
@@ -58,25 +65,18 @@
       }
     },
     {
+      "@id": "com:molluscs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:molluscs"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:molluscs",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:molluscs.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "molluscs",
-      "skos:usageNote": {
-        "@language": "en",
-        "@value": "Aquaculture: includes peal oysters, edible oysters, abalone, mussels."
       }
     }
   ]

@@ -6,40 +6,38 @@
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-  </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
-    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
-    <skos:notation>1.1.0</skos:notation>
-  </rdf:Description>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape">
     <skos:notation>1.1.6</skos:notation>
-    <skos:definition xml:lang="en">Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</skos:definition>
-    <skos:prefLabel xml:lang="en">Protected landscape</skos:prefLabel>
     <lu:colour>#E9E8F2</lu:colour>
-    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons"/>
+    <skos:definition xml:lang="en">Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</skos:definition>
     <dcterms:source xml:lang="en">IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape.</dcterms:source>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
+        <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+        <skos:notation>1.1.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:prefLabel xml:lang="en">Protected landscape</skos:prefLabel>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.html"/>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/protected_landscape"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
 </rdf:RDF>

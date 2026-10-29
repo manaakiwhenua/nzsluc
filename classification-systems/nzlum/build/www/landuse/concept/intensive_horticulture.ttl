@@ -35,8 +35,7 @@ luc:production_nurseries skos:notation "2.5.1" ;
 luc:intensive_horticulture a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Intensive forms of plant production, often with special-purpose improvements used for horticultural production."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:glasshouses_shadehouses,
         luc:production_nurseries ;
     skos:notation "2.5.0" ;

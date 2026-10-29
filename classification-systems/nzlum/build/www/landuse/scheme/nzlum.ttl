@@ -27,13 +27,15 @@ lus:nzlum0.3.0 dcterms:isVersionOf lus:nzlum .
 
 lus:nzlum0.4.0 dcterms:isVersionOf lus:nzlum .
 
+lus:nzlum0.4.1 dcterms:isVersionOf lus:nzlum .
+
 lus:nzlum a skos:ConceptScheme ;
     dcterms:hasVersion lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+        lus:nzlum0.4.0,
+        lus:nzlum0.4.1 ;
     dcterms:relation lu_proverb:kotahi_te_aho ;
     dcterms:title "New Zealand Land Use and Management classification system"@en ;
-    doap:repository [ a doap:GitRepository ;
-            doap:browse <https://github.com/manaakiwhenua/nzsluc> ] ;
+    doap:repository <https://github.com/manaakiwhenua/nzsluc> ;
     foaf:homepage <https://nzlum.landcareresearch.co.nz/> ;
     foaf:isPrimaryTopicOf lus:nzlum.html .
 

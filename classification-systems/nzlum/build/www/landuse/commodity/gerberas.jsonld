@@ -8,28 +8,14 @@
   },
   "@graph": [
     {
-      "@id": "com:gerberas.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
         "@id": "com:gerberas"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
       }
-    },
-    {
-      "@id": "com:gerberas.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:gerberas.ttl"
-        },
-        {
-          "@id": "com:gerberas.jsonld"
-        },
-        {
-          "@id": "com:gerberas.rdf"
-        }
-      ]
     },
     {
       "@id": "com:gerberas",
@@ -43,13 +29,27 @@
       "skos:notation": "gerberas"
     },
     {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
+      "@id": "com:gerberas.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:gerberas.jsonld"
+        },
+        {
+          "@id": "com:gerberas.rdf"
+        },
+        {
+          "@id": "com:gerberas.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:gerberas.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:gerberas"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -61,18 +61,18 @@
       }
     },
     {
+      "@id": "com:gerberas.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:gerberas"
+      }
+    },
+    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:gerberas.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:gerberas"
       }
     }
   ]

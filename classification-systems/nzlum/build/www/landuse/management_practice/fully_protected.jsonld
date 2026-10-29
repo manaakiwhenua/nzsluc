@@ -8,6 +8,48 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:fully_protected",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "mgmt:fully_protected.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:management_practices"
+      },
+      "skos:notation": "fully protected"
+    },
+    {
+      "@id": "mgmt:fully_protected.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:fully_protected.jsonld"
+        },
+        {
+          "@id": "mgmt:fully_protected.rdf"
+        },
+        {
+          "@id": "mgmt:fully_protected.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:fully_protected.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fully_protected"
+      }
+    },
+    {
       "@id": "mgmt:fully_protected.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
@@ -31,48 +73,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Horticulture"
-      }
-    },
-    {
-      "@id": "mgmt:fully_protected.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:fully_protected.ttl"
-        },
-        {
-          "@id": "mgmt:fully_protected.jsonld"
-        },
-        {
-          "@id": "mgmt:fully_protected.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
-      "@id": "mgmt:fully_protected",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "mgmt:fully_protected.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:management_practices"
-      },
-      "skos:notation": "fully protected"
-    },
-    {
-      "@id": "mgmt:fully_protected.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:fully_protected"
       }
     }
   ]

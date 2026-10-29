@@ -28,8 +28,7 @@ luc:minimal_use_relatively_natural skos:notation "1.3.0" ;
 luc:carbon_forest_retained a skos:Concept ;
     skos:broader luc:minimal_use_relatively_natural ;
     skos:definition "Retained (non-planted) indigenous vegetation set aside for carbon credits."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.3.8" ;
     skos:prefLabel "Carbon forest"@en ;
     foaf:isPrimaryTopicOf luc:carbon_forest_retained.html .

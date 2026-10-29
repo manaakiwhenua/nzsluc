@@ -18,11 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:pinenuts.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:nuts",
+      "skos:member": {
         "@id": "com:pinenuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
       }
     },
     {
@@ -37,14 +39,20 @@
       "skos:notation": "pinenuts"
     },
     {
-      "@id": "com:nuts",
-      "skos:member": {
-        "@id": "com:pinenuts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nuts"
-      }
+      "@id": "com:pinenuts.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pinenuts.jsonld"
+        },
+        {
+          "@id": "com:pinenuts.rdf"
+        },
+        {
+          "@id": "com:pinenuts.ttl"
+        }
+      ]
     },
     {
       "@id": "com:pinenuts.jsonld",
@@ -55,34 +63,26 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:pinenuts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pinenuts.ttl"
-        },
-        {
-          "@id": "com:pinenuts.jsonld"
-        },
-        {
-          "@id": "com:pinenuts.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:pinenuts.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:pinenuts"
+      }
+    },
+    {
+      "@id": "com:pinenuts.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pinenuts"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

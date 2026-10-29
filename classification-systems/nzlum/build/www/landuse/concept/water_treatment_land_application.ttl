@@ -28,8 +28,7 @@ luc:water_wastewater_agriculture skos:notation "2.7.0" ;
 luc:water_treatment_land_application a skos:Concept ;
     skos:broader luc:water_wastewater_agriculture ;
     skos:definition "Land used for effluent disposal"@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.7.3" ;
     skos:prefLabel "Water treatment – land application"@en ;
     skos:scopeNote "probably an ancillary use where some form of grazing is the primary use."@en ;

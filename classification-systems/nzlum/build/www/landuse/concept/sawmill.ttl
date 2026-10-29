@@ -28,8 +28,7 @@ luc:sawmill.ttl a foaf:Document ;
 luc:sawmill a skos:Concept ;
     skos:broader luc:manufacturing_industrial ;
     skos:definition "An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.4.4" ;
     skos:prefLabel "Sawmill"@en ;
     foaf:isPrimaryTopicOf luc:sawmill.html .

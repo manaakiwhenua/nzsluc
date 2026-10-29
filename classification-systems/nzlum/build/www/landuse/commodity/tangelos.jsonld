@@ -8,18 +8,39 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:tangelos"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:tangelos",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:tangelos.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "tangelos"
+    },
+    {
       "@id": "com:tangelos.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:tangelos.ttl"
-        },
-        {
           "@id": "com:tangelos.jsonld"
         },
         {
           "@id": "com:tangelos.rdf"
+        },
+        {
+          "@id": "com:tangelos.ttl"
         }
       ]
     },
@@ -40,24 +61,6 @@
       }
     },
     {
-      "@id": "com:tangelos",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:tangelos.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "tangelos"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:tangelos.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -66,13 +69,10 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:tangelos"
-      },
-      "skos:prefLabel": {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

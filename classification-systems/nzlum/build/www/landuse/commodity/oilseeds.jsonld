@@ -8,67 +8,20 @@
   },
   "@graph": [
     {
-      "@id": "com:mustard",
-      "skos:notation": "mustard "
+      "@id": "com:canola",
+      "skos:notation": "canola"
     },
     {
       "@id": "com:chia",
       "skos:notation": "chia"
     },
     {
-      "@id": "com:soybeans",
-      "skos:notation": "soybeans"
-    },
-    {
-      "@id": "com:oilseeds.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:oilseeds.ttl"
-        },
-        {
-          "@id": "com:oilseeds.jsonld"
-        },
-        {
-          "@id": "com:oilseeds.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:oilseeds.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:oilseeds"
-      }
-    },
-    {
-      "@id": "com:safflower",
-      "skos:notation": "safflower"
-    },
-    {
       "@id": "com:flaxseed",
       "skos:notation": "flaxseed"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:peanuts",
-      "skos:notation": "peanuts"
-    },
-    {
-      "@id": "com:oilseeds.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:oilseeds"
-      }
+      "@id": "com:mustard",
+      "skos:notation": "mustard "
     },
     {
       "@id": "com:oilseeds",
@@ -81,28 +34,28 @@
       },
       "skos:member": [
         {
-          "@id": "com:safflower"
+          "@id": "com:canola"
         },
         {
-          "@id": "com:peanuts"
+          "@id": "com:chia"
         },
         {
           "@id": "com:flaxseed"
         },
         {
-          "@id": "com:canola"
+          "@id": "com:mustard"
+        },
+        {
+          "@id": "com:peanuts"
+        },
+        {
+          "@id": "com:safflower"
         },
         {
           "@id": "com:sesame"
         },
         {
-          "@id": "com:mustard"
-        },
-        {
           "@id": "com:soybeans"
-        },
-        {
-          "@id": "com:chia"
         },
         {
           "@id": "com:sunflower"
@@ -114,12 +67,20 @@
       }
     },
     {
-      "@id": "com:sesame",
-      "skos:notation": "sesame"
-    },
-    {
-      "@id": "com:sunflower",
-      "skos:notation": "sunflower"
+      "@id": "com:oilseeds.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:oilseeds.jsonld"
+        },
+        {
+          "@id": "com:oilseeds.rdf"
+        },
+        {
+          "@id": "com:oilseeds.ttl"
+        }
+      ]
     },
     {
       "@id": "com:oilseeds.jsonld",
@@ -130,8 +91,47 @@
       }
     },
     {
-      "@id": "com:canola",
-      "skos:notation": "canola"
+      "@id": "com:oilseeds.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:oilseeds"
+      }
+    },
+    {
+      "@id": "com:oilseeds.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:oilseeds"
+      }
+    },
+    {
+      "@id": "com:peanuts",
+      "skos:notation": "peanuts"
+    },
+    {
+      "@id": "com:safflower",
+      "skos:notation": "safflower"
+    },
+    {
+      "@id": "com:sesame",
+      "skos:notation": "sesame"
+    },
+    {
+      "@id": "com:soybeans",
+      "skos:notation": "soybeans"
+    },
+    {
+      "@id": "com:sunflower",
+      "skos:notation": "sunflower"
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

@@ -18,6 +18,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:fallow_chemical"
@@ -25,14 +32,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:fallow_chemical.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:fallow_chemical"
       }
     },
     {
@@ -47,26 +46,18 @@
       "skos:notation": "fallow chemical"
     },
     {
-      "@id": "mgmt:fallow_chemical.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:fallow_chemical"
-      }
-    },
-    {
       "@id": "mgmt:fallow_chemical.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:fallow_chemical.ttl"
-        },
-        {
           "@id": "mgmt:fallow_chemical.jsonld"
         },
         {
           "@id": "mgmt:fallow_chemical.rdf"
+        },
+        {
+          "@id": "mgmt:fallow_chemical.ttl"
         }
       ]
     },
@@ -79,10 +70,19 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
+      "@id": "mgmt:fallow_chemical.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fallow_chemical"
+      }
+    },
+    {
+      "@id": "mgmt:fallow_chemical.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:fallow_chemical"
       }
     }
   ]

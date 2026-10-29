@@ -28,8 +28,7 @@ luc:indigenous_cultural_heritage.ttl a foaf:Document ;
 luc:indigenous_cultural_heritage a skos:Concept ;
     skos:broader luc:cultural_natural_heritage ;
     skos:definition "Indigenous cultural heritage sites and areas (e.g. historical pā sites, New Zealand land wars sites, and other indigenous heritage sites)."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.2.1" ;
     skos:prefLabel "Indigenous cultural heritage"@en ;
     foaf:isPrimaryTopicOf luc:indigenous_cultural_heritage.html .

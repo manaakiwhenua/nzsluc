@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:peas.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:peas.ttl"
-        },
-        {
-          "@id": "com:peas.jsonld"
-        },
-        {
-          "@id": "com:peas.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:peas",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -35,9 +19,41 @@
       "skos:notation": "peas"
     },
     {
+      "@id": "com:peas.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:peas.jsonld"
+        },
+        {
+          "@id": "com:peas.rdf"
+        },
+        {
+          "@id": "com:peas.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:peas.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:peas"
+      }
+    },
+    {
       "@id": "com:peas.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:peas"
+      }
+    },
+    {
+      "@id": "com:peas.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:peas"
       }
@@ -53,26 +69,10 @@
       }
     },
     {
-      "@id": "com:peas.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:peas"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:peas.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:peas"
       }
     }
   ]

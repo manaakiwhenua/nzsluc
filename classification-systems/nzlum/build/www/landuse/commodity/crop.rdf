@@ -7,33 +7,13 @@
 >
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop">
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pyrethrum">
+        <skos:notation>pyrethrum</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/aloe_vera">
         <skos:notation xml:lang="en">aloe vera</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cotton">
-        <skos:notation xml:lang="en">cotton</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tobacco">
-        <skos:notation>tobacco</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/essential_oil_crops">
-        <skos:notation xml:lang="en">essential oil crops</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/hops">
-        <skos:notation>hops</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sugar_cane">
-        <skos:notation>sugar cane</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -42,23 +22,8 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coffee">
-        <skos:notation>coffee</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/wasabi">
-        <skos:notation>wasabi</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cocoa">
-        <skos:notation xml:lang="en">cocoa</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ginger">
-        <skos:notation xml:lang="en">ginger</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sugar_cane">
+        <skos:notation>sugar cane</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -67,8 +32,8 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pharmaceutical_and_cosmetic_plants">
-        <skos:notation>pharmaceutical and cosmetic plants</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/essential_oil_crops">
+        <skos:notation xml:lang="en">essential oil crops</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -77,8 +42,23 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute">
-        <skos:notation>jute</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/horseradish">
+        <skos:notation>horseradish</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/ginger">
+        <skos:notation xml:lang="en">ginger</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pharmaceutical_and_cosmetic_plants">
+        <skos:notation>pharmaceutical and cosmetic plants</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cotton">
+        <skos:notation xml:lang="en">cotton</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -87,8 +67,18 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/horseradish">
-        <skos:notation>horseradish</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cocoa">
+        <skos:notation xml:lang="en">cocoa</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/wasabi">
+        <skos:notation>wasabi</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tobacco">
+        <skos:notation>tobacco</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -97,8 +87,18 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pyrethrum">
-        <skos:notation>pyrethrum</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/hops">
+        <skos:notation>hops</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coffee">
+        <skos:notation>coffee</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/jute">
+        <skos:notation>jute</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:inScheme>
@@ -116,10 +116,6 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Collection>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -127,5 +123,9 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/crop"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

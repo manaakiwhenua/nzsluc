@@ -8,6 +8,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:pasture_cropping"
@@ -18,22 +25,6 @@
       }
     },
     {
-      "@id": "mgmt:pasture_cropping.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:pasture_cropping"
-      }
-    },
-    {
-      "@id": "mgmt:pasture_cropping.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:pasture_cropping"
-      }
-    },
-    {
       "@id": "mgmt:pasture",
       "skos:member": {
         "@id": "mgmt:pasture_cropping"
@@ -41,13 +32,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Pasture"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -67,13 +51,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:pasture_cropping.ttl"
-        },
-        {
           "@id": "mgmt:pasture_cropping.jsonld"
         },
         {
           "@id": "mgmt:pasture_cropping.rdf"
+        },
+        {
+          "@id": "mgmt:pasture_cropping.ttl"
         }
       ]
     },
@@ -81,6 +65,22 @@
       "@id": "mgmt:pasture_cropping.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:pasture_cropping"
+      }
+    },
+    {
+      "@id": "mgmt:pasture_cropping.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:pasture_cropping"
+      }
+    },
+    {
+      "@id": "mgmt:pasture_cropping.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:pasture_cropping"
       }

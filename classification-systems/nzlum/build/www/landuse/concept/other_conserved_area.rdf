@@ -2,8 +2,8 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_conserved_area.html">
@@ -28,19 +28,18 @@
     </dcterms:hasFormat>
   </foaf:Document>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/other_conserved_area">
-    <skos:notation>1.1.7</skos:notation>
+    <skos:scopeNote>If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’</skos:scopeNote>
+    <skos:definition xml:lang="en">Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
     <lu:colour>#FCFBFD</lu:colour>
+    <skos:prefLabel xml:lang="en">Other conserved area</skos:prefLabel>
+    <skos:notation>1.1.7</skos:notation>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/nature_cons">
         <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
         <skos:notation>1.1.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:prefLabel xml:lang="en">Other conserved area</skos:prefLabel>
-    <skos:scopeNote>If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’</skos:scopeNote>
-    <skos:definition xml:lang="en">Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .</skos:definition>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
     <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/other_conserved_area.html"/>
   </skos:Concept>
 </rdf:RDF>

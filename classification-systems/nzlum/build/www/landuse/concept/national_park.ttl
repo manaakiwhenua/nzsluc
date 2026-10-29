@@ -36,8 +36,7 @@ luc:national_park a skos:Concept ;
   b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and
 
   c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible."""@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.1.3" ;
     skos:prefLabel "National Park"@en ;
     foaf:isPrimaryTopicOf luc:national_park.html ;

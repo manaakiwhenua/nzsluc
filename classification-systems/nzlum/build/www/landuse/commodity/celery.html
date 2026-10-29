@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:celery.rdf",
+      "@id": "com:celery",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:celery.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "celery"
+    },
+    {
+      "@id": "com:celery.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:celery"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:celery.jsonld"
+        },
+        {
+          "@id": "com:celery.rdf"
+        },
+        {
+          "@id": "com:celery.ttl"
+        }
+      ]
     },
     {
       "@id": "com:celery.jsonld",
@@ -34,15 +53,20 @@
       }
     },
     {
-      "@id": "com:celery",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:celery.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "celery"
+      "@id": "com:celery.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:celery"
+      }
+    },
+    {
+      "@id": "com:celery.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:celery"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -59,30 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:celery.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:celery.ttl"
-        },
-        {
-          "@id": "com:celery.jsonld"
-        },
-        {
-          "@id": "com:celery.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:celery.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:celery"
       }
     }
   ]

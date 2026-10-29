@@ -28,8 +28,7 @@ luc:quarries.ttl a foaf:Document ;
 luc:quarries a skos:Concept ;
     skos:broader luc:mining ;
     skos:definition "Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.7.2" ;
     skos:prefLabel "Quarries"@en ;
     foaf:isPrimaryTopicOf luc:quarries.html .

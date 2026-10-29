@@ -6,18 +6,17 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management">
+    <skos:definition xml:lang="en">Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.</skos:definition>
+    <skos:notation>3.8.5</skos:notation>
     <skos:prefLabel xml:lang="en">Stormwater management</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:example xml:lang="en">Detention basins, drainage systems, retention ponds, rain gardens, wetlands.</skos:example>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/waste_treatment_disposal">
         <skos:prefLabel xml:lang="en">Waste treatment and disposal</skos:prefLabel>
         <skos:notation>3.8.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:example xml:lang="en">Detention basins, drainage systems, retention ponds, rain gardens, wetlands.</skos:example>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:notation>3.8.5</skos:notation>
-    <skos:definition xml:lang="en">Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.</skos:definition>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management.html">
         <dcterms:format>text/html</dcterms:format>
@@ -27,6 +26,10 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
+    <dcterms:format>application/ld+json</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
@@ -34,9 +37,5 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
     <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/stormwater_management"/>
-    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

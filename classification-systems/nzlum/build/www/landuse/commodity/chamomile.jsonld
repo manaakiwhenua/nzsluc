@@ -8,20 +8,39 @@
   },
   "@graph": [
     {
+      "@id": "com:chamomile",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:chamomile.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "chamomile"
+    },
+    {
       "@id": "com:chamomile.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:chamomile.ttl"
-        },
-        {
           "@id": "com:chamomile.jsonld"
         },
         {
           "@id": "com:chamomile.rdf"
+        },
+        {
+          "@id": "com:chamomile.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:chamomile.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:chamomile"
+      }
     },
     {
       "@id": "com:chamomile.rdf",
@@ -55,25 +74,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:chamomile.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:chamomile"
-      }
-    },
-    {
-      "@id": "com:chamomile",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:chamomile.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "chamomile"
     }
   ]
 }

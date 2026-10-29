@@ -18,26 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:wasabi",
-      "skos:notation": "wasabi"
-    },
-    {
-      "@id": "com:pepper",
-      "skos:notation": "pepper"
-    },
-    {
-      "@id": "com:oil_palms",
-      "skos:notation": "oil palms"
-    },
-    {
-      "@id": "com:sugar_cane",
-      "skos:notation": "sugar cane"
-    },
-    {
-      "@id": "com:coffee",
-      "skos:notation": "coffee"
-    },
-    {
       "@id": "com:aloe_vera",
       "skos:notation": {
         "@language": "en",
@@ -45,15 +25,29 @@
       }
     },
     {
-      "@id": "com:essential_oil_crops",
+      "@id": "com:cocoa",
       "skos:notation": {
         "@language": "en",
-        "@value": "essential oil crops"
+        "@value": "cocoa"
       }
     },
     {
-      "@id": "com:hops",
-      "skos:notation": "hops"
+      "@id": "com:coffee",
+      "skos:notation": "coffee"
+    },
+    {
+      "@id": "com:cotton",
+      "skos:notation": {
+        "@language": "en",
+        "@value": "cotton"
+      }
+    },
+    {
+      "@id": "com:cotton_seed",
+      "skos:notation": {
+        "@language": "en",
+        "@value": "cotton seed"
+      }
     },
     {
       "@id": "com:crop",
@@ -69,58 +63,58 @@
           "@id": "com:aloe_vera"
         },
         {
-          "@id": "com:cotton"
-        },
-        {
-          "@id": "com:tobacco"
-        },
-        {
-          "@id": "com:essential_oil_crops"
-        },
-        {
-          "@id": "com:hops"
-        },
-        {
-          "@id": "com:sugar_cane"
-        },
-        {
-          "@id": "com:oil_palms"
+          "@id": "com:cocoa"
         },
         {
           "@id": "com:coffee"
         },
         {
-          "@id": "com:wasabi"
-        },
-        {
-          "@id": "com:cocoa"
-        },
-        {
-          "@id": "com:ginger"
-        },
-        {
-          "@id": "com:poppies"
-        },
-        {
-          "@id": "com:pharmaceutical_and_cosmetic_plants"
+          "@id": "com:cotton"
         },
         {
           "@id": "com:cotton_seed"
         },
         {
-          "@id": "com:jute"
+          "@id": "com:essential_oil_crops"
         },
         {
-          "@id": "com:tea"
+          "@id": "com:ginger"
+        },
+        {
+          "@id": "com:hops"
         },
         {
           "@id": "com:horseradish"
         },
         {
+          "@id": "com:jute"
+        },
+        {
+          "@id": "com:oil_palms"
+        },
+        {
           "@id": "com:pepper"
         },
         {
+          "@id": "com:pharmaceutical_and_cosmetic_plants"
+        },
+        {
+          "@id": "com:poppies"
+        },
+        {
           "@id": "com:pyrethrum"
+        },
+        {
+          "@id": "com:sugar_cane"
+        },
+        {
+          "@id": "com:tea"
+        },
+        {
+          "@id": "com:tobacco"
+        },
+        {
+          "@id": "com:wasabi"
         }
       ],
       "skos:prefLabel": {
@@ -129,11 +123,20 @@
       }
     },
     {
-      "@id": "com:cocoa",
-      "skos:notation": {
-        "@language": "en",
-        "@value": "cocoa"
-      }
+      "@id": "com:crop.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:crop.jsonld"
+        },
+        {
+          "@id": "com:crop.rdf"
+        },
+        {
+          "@id": "com:crop.ttl"
+        }
+      ]
     },
     {
       "@id": "com:crop.jsonld",
@@ -152,26 +155,6 @@
       }
     },
     {
-      "@id": "com:crop.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:crop.ttl"
-        },
-        {
-          "@id": "com:crop.jsonld"
-        },
-        {
-          "@id": "com:crop.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:pyrethrum",
-      "skos:notation": "pyrethrum"
-    },
-    {
       "@id": "com:crop.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -180,34 +163,11 @@
       }
     },
     {
-      "@id": "com:tea",
-      "skos:notation": "tea"
-    },
-    {
-      "@id": "com:cotton",
+      "@id": "com:essential_oil_crops",
       "skos:notation": {
         "@language": "en",
-        "@value": "cotton"
+        "@value": "essential oil crops"
       }
-    },
-    {
-      "@id": "com:jute",
-      "skos:notation": "jute"
-    },
-    {
-      "@id": "com:poppies",
-      "skos:notation": "poppies "
-    },
-    {
-      "@id": "com:cotton_seed",
-      "skos:notation": {
-        "@language": "en",
-        "@value": "cotton seed"
-      }
-    },
-    {
-      "@id": "com:horseradish",
-      "skos:notation": "horseradish"
     },
     {
       "@id": "com:ginger",
@@ -217,12 +177,52 @@
       }
     },
     {
-      "@id": "com:tobacco",
-      "skos:notation": "tobacco"
+      "@id": "com:hops",
+      "skos:notation": "hops"
+    },
+    {
+      "@id": "com:horseradish",
+      "skos:notation": "horseradish"
+    },
+    {
+      "@id": "com:jute",
+      "skos:notation": "jute"
+    },
+    {
+      "@id": "com:oil_palms",
+      "skos:notation": "oil palms"
+    },
+    {
+      "@id": "com:pepper",
+      "skos:notation": "pepper"
     },
     {
       "@id": "com:pharmaceutical_and_cosmetic_plants",
       "skos:notation": "pharmaceutical and cosmetic plants"
+    },
+    {
+      "@id": "com:poppies",
+      "skos:notation": "poppies "
+    },
+    {
+      "@id": "com:pyrethrum",
+      "skos:notation": "pyrethrum"
+    },
+    {
+      "@id": "com:sugar_cane",
+      "skos:notation": "sugar cane"
+    },
+    {
+      "@id": "com:tea",
+      "skos:notation": "tea"
+    },
+    {
+      "@id": "com:tobacco",
+      "skos:notation": "tobacco"
+    },
+    {
+      "@id": "com:wasabi",
+      "skos:notation": "wasabi"
     },
     {
       "@id": "lus:commodities",

@@ -18,9 +18,52 @@
   },
   "@graph": [
     {
+      "@id": "com:christmas_trees",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:christmas_trees.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "christmas trees"
+    },
+    {
+      "@id": "com:christmas_trees.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:christmas_trees.jsonld"
+        },
+        {
+          "@id": "com:christmas_trees.rdf"
+        },
+        {
+          "@id": "com:christmas_trees.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:christmas_trees.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:christmas_trees"
+      }
+    },
+    {
+      "@id": "com:christmas_trees.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:christmas_trees"
+      }
+    },
+    {
+      "@id": "com:christmas_trees.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:christmas_trees"
       }
@@ -36,54 +79,11 @@
       }
     },
     {
-      "@id": "com:christmas_trees.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:christmas_trees.ttl"
-        },
-        {
-          "@id": "com:christmas_trees.jsonld"
-        },
-        {
-          "@id": "com:christmas_trees.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:christmas_trees.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:christmas_trees"
-      }
-    },
-    {
-      "@id": "com:christmas_trees.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:christmas_trees"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:christmas_trees",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:christmas_trees.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "christmas trees"
     }
   ]
 }

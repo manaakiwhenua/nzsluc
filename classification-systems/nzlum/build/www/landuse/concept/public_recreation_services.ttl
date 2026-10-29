@@ -38,8 +38,7 @@ luc:public_recreation_services.ttl a foaf:Document ;
 luc:public_recreation_services a skos:Concept ;
     skos:broader luc:built_environment ;
     skos:definition "Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:community_services,
         luc:indoor_recreation,
         luc:outdoor_recreation ;

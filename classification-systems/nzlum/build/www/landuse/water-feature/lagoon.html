@@ -19,6 +19,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:water_features",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM water features"
+      }
+    },
+    {
       "@id": "wtr:lagoon",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,6 +36,22 @@
         "@id": "lus:water_features"
       },
       "skos:notation": "lagoon"
+    },
+    {
+      "@id": "wtr:lagoon.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "wtr:lagoon.jsonld"
+        },
+        {
+          "@id": "wtr:lagoon.rdf"
+        },
+        {
+          "@id": "wtr:lagoon.ttl"
+        }
+      ]
     },
     {
       "@id": "wtr:lagoon.jsonld",
@@ -53,29 +76,6 @@
       "foaf:primaryTopic": {
         "@id": "wtr:lagoon"
       }
-    },
-    {
-      "@id": "lus:water_features",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM water features"
-      }
-    },
-    {
-      "@id": "wtr:lagoon.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "wtr:lagoon.ttl"
-        },
-        {
-          "@id": "wtr:lagoon.jsonld"
-        },
-        {
-          "@id": "wtr:lagoon.rdf"
-        }
-      ]
     }
   ]
 }

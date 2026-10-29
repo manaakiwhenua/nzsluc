@@ -8,32 +8,23 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:trellis_espalier",
-      "skos:notation": "trellis/espalier"
-    },
-    {
-      "@id": "mgmt:horticulture.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:horticulture.ttl"
-        },
-        {
-          "@id": "mgmt:horticulture.jsonld"
-        },
-        {
-          "@id": "mgmt:horticulture.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:horticulture.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:horticulture"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
+    },
+    {
+      "@id": "mgmt:free_standing",
+      "skos:notation": "free standing"
+    },
+    {
+      "@id": "mgmt:fully_protected",
+      "skos:notation": "fully protected"
+    },
+    {
+      "@id": "mgmt:hedgerow",
+      "skos:notation": "hedgerow"
     },
     {
       "@id": "mgmt:horticulture",
@@ -46,25 +37,25 @@
       },
       "skos:member": [
         {
-          "@id": "mgmt:hedgerow"
-        },
-        {
-          "@id": "mgmt:open_growing"
-        },
-        {
           "@id": "mgmt:free_standing"
-        },
-        {
-          "@id": "mgmt:trellis_espalier"
-        },
-        {
-          "@id": "mgmt:semi_protected"
         },
         {
           "@id": "mgmt:fully_protected"
         },
         {
+          "@id": "mgmt:hedgerow"
+        },
+        {
           "@id": "mgmt:mulching_matting"
+        },
+        {
+          "@id": "mgmt:open_growing"
+        },
+        {
+          "@id": "mgmt:semi_protected"
+        },
+        {
+          "@id": "mgmt:trellis_espalier"
         }
       ],
       "skos:prefLabel": {
@@ -73,23 +64,28 @@
       }
     },
     {
-      "@id": "mgmt:free_standing",
-      "skos:notation": "free standing"
+      "@id": "mgmt:horticulture.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:horticulture.jsonld"
+        },
+        {
+          "@id": "mgmt:horticulture.rdf"
+        },
+        {
+          "@id": "mgmt:horticulture.ttl"
+        }
+      ]
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
+      "@id": "mgmt:horticulture.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:horticulture"
       }
-    },
-    {
-      "@id": "mgmt:semi_protected",
-      "skos:notation": "semi-protected"
-    },
-    {
-      "@id": "mgmt:fully_protected",
-      "skos:notation": "fully protected"
     },
     {
       "@id": "mgmt:horticulture.rdf",
@@ -100,24 +96,28 @@
       }
     },
     {
-      "@id": "mgmt:hedgerow",
-      "skos:notation": "hedgerow"
-    },
-    {
-      "@id": "mgmt:open_growing",
-      "skos:notation": "open growing"
-    },
-    {
-      "@id": "mgmt:mulching_matting",
-      "skos:notation": "mulching/matting"
-    },
-    {
       "@id": "mgmt:horticulture.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:horticulture"
       }
+    },
+    {
+      "@id": "mgmt:mulching_matting",
+      "skos:notation": "mulching/matting"
+    },
+    {
+      "@id": "mgmt:open_growing",
+      "skos:notation": "open growing"
+    },
+    {
+      "@id": "mgmt:semi_protected",
+      "skos:notation": "semi-protected"
+    },
+    {
+      "@id": "mgmt:trellis_espalier",
+      "skos:notation": "trellis/espalier"
     }
   ]
 }

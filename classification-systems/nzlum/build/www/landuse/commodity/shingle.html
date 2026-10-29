@@ -28,6 +28,49 @@
       }
     },
     {
+      "@id": "com:shingle",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:shingle.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "shingle"
+    },
+    {
+      "@id": "com:shingle.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:shingle.jsonld"
+        },
+        {
+          "@id": "com:shingle.rdf"
+        },
+        {
+          "@id": "com:shingle.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:shingle.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:shingle"
+      }
+    },
+    {
+      "@id": "com:shingle.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:shingle"
+      }
+    },
+    {
       "@id": "com:shingle.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -41,49 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:shingle.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:shingle"
-      }
-    },
-    {
-      "@id": "com:shingle.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:shingle.ttl"
-        },
-        {
-          "@id": "com:shingle.jsonld"
-        },
-        {
-          "@id": "com:shingle.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:shingle.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:shingle"
-      }
-    },
-    {
-      "@id": "com:shingle",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:shingle.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "shingle"
     }
   ]
 }

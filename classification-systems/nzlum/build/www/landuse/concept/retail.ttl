@@ -29,8 +29,7 @@ luc:retail a skos:Concept ;
     skos:broader luc:commercial ;
     skos:definition "Areas used for the sale of goods and services directly to consumers."@en ;
     skos:example "Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.3.1" ;
     skos:prefLabel "Retail"@en ;
     foaf:isPrimaryTopicOf luc:retail.html .

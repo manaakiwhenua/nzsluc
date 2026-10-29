@@ -18,20 +18,23 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:precision_agriculture",
-      "skos:notation": "precision agriculture"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
+      "@id": "mgmt:biodynamic",
+      "skos:notation": "biodynamic"
     },
     {
       "@id": "mgmt:crop_pasture_rotation",
       "skos:notation": "crop pasture rotation"
     },
     {
-      "@id": "mgmt:pasture.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:pasture"
-      }
+      "@id": "mgmt:organic",
+      "skos:notation": "organic"
     },
     {
       "@id": "mgmt:pasture",
@@ -44,19 +47,19 @@
       },
       "skos:member": [
         {
-          "@id": "mgmt:precision_agriculture"
-        },
-        {
-          "@id": "mgmt:pasture_cropping"
-        },
-        {
           "@id": "mgmt:biodynamic"
+        },
+        {
+          "@id": "mgmt:crop_pasture_rotation"
         },
         {
           "@id": "mgmt:organic"
         },
         {
-          "@id": "mgmt:crop_pasture_rotation"
+          "@id": "mgmt:pasture_cropping"
+        },
+        {
+          "@id": "mgmt:precision_agriculture"
         }
       ],
       "skos:prefLabel": {
@@ -65,35 +68,28 @@
       }
     },
     {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
-    },
-    {
       "@id": "mgmt:pasture.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:pasture.ttl"
-        },
-        {
           "@id": "mgmt:pasture.jsonld"
         },
         {
           "@id": "mgmt:pasture.rdf"
+        },
+        {
+          "@id": "mgmt:pasture.ttl"
         }
       ]
     },
     {
-      "@id": "mgmt:pasture_cropping",
-      "skos:notation": "pasture cropping"
-    },
-    {
-      "@id": "mgmt:biodynamic",
-      "skos:notation": "biodynamic"
+      "@id": "mgmt:pasture.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:pasture"
+      }
     },
     {
       "@id": "mgmt:pasture.rdf",
@@ -104,16 +100,20 @@
       }
     },
     {
-      "@id": "mgmt:organic",
-      "skos:notation": "organic"
-    },
-    {
       "@id": "mgmt:pasture.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:pasture"
       }
+    },
+    {
+      "@id": "mgmt:pasture_cropping",
+      "skos:notation": "pasture cropping"
+    },
+    {
+      "@id": "mgmt:precision_agriculture",
+      "skos:notation": "precision agriculture"
     }
   ]
 }

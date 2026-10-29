@@ -8,6 +8,13 @@
   },
   "@graph": [
     {
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
+      }
+    },
+    {
       "@id": "mgmt:crop",
       "skos:member": {
         "@id": "mgmt:cropping_strip"
@@ -15,37 +22,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Crop"
-      }
-    },
-    {
-      "@id": "mgmt:cropping_strip.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:cropping_strip.ttl"
-        },
-        {
-          "@id": "mgmt:cropping_strip.jsonld"
-        },
-        {
-          "@id": "mgmt:cropping_strip.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "mgmt:cropping_strip.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:cropping_strip"
-      }
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
       }
     },
     {
@@ -60,6 +36,22 @@
       "skos:notation": "cropping strip"
     },
     {
+      "@id": "mgmt:cropping_strip.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:cropping_strip.jsonld"
+        },
+        {
+          "@id": "mgmt:cropping_strip.rdf"
+        },
+        {
+          "@id": "mgmt:cropping_strip.ttl"
+        }
+      ]
+    },
+    {
       "@id": "mgmt:cropping_strip.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -71,6 +63,14 @@
       "@id": "mgmt:cropping_strip.rdf",
       "@type": "foaf:Document",
       "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:cropping_strip"
+      }
+    },
+    {
+      "@id": "mgmt:cropping_strip.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "mgmt:cropping_strip"
       }

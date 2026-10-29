@@ -1,19 +1,13 @@
 {
   "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
     "dcterms": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "lu_status": "https://nzlum.landcareresearch.co.nz/landuse/status/",
+    "lus": "https://nzlum.landcareresearch.co.nz/landuse/scheme/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
-    {
-      "@id": "lu_status:draft.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "lu_status:draft"
-      }
-    },
     {
       "@id": "lu_status:draft",
       "@type": "rdfs:Resource",
@@ -31,13 +25,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "lu_status:draft.ttl"
-        },
-        {
           "@id": "lu_status:draft.jsonld"
         },
         {
           "@id": "lu_status:draft.rdf"
+        },
+        {
+          "@id": "lu_status:draft.ttl"
         }
       ]
     },
@@ -50,10 +44,24 @@
       }
     },
     {
+      "@id": "lu_status:draft.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "lu_status:draft"
+      }
+    },
+    {
       "@id": "lu_status:draft.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
+        "@id": "lu_status:draft"
+      }
+    },
+    {
+      "@id": "lus:nzlum0.4.1",
+      "adms:status": {
         "@id": "lu_status:draft"
       }
     }

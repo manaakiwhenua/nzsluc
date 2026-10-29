@@ -18,35 +18,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:natural_heritage.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_heritage"
-      }
-    },
-    {
-      "@id": "luc:natural_heritage.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_heritage"
-      }
-    },
-    {
       "@id": "luc:cultural_natural_heritage",
       "skos:notation": "1.2.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Cultural and natural heritage"
-      }
-    },
-    {
-      "@id": "luc:natural_heritage.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:natural_heritage"
       }
     },
     {
@@ -62,14 +38,9 @@
         "@language": "en",
         "@value": "Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.2.3",
       "skos:prefLabel": {
         "@language": "en",
@@ -82,21 +53,45 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:natural_heritage.ttl"
-        },
-        {
           "@id": "luc:natural_heritage.jsonld"
         },
         {
           "@id": "luc:natural_heritage.rdf"
+        },
+        {
+          "@id": "luc:natural_heritage.ttl"
         }
       ]
+    },
+    {
+      "@id": "luc:natural_heritage.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_heritage"
+      }
+    },
+    {
+      "@id": "luc:natural_heritage.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_heritage"
+      }
+    },
+    {
+      "@id": "luc:natural_heritage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:natural_heritage"
+      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Natural heritage</h1><div><span class="chip code">1.2.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage</p></div><h2>Definition</h2><blockquote>Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks).</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.2.0</code> <a href="/landuse/concept/cultural_natural_heritage">Cultural and natural heritage</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.2.0</code> <a href="/landuse/concept/cultural_natural_heritage">Cultural and natural heritage</a> › <strong>Natural heritage</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.2.3</code></td><td>Natural heritage</td><td><a href="/classification/v0-4/classes/100/#120-cultural-and-natural-heritage">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.2.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.2.3</code></td><td>Natural heritage</td><td><a href="/classification/v0-3/classes/100/#120-cultural-and-natural-heritage">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.2.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/natural_heritage.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/natural_heritage.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/natural_heritage.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:var(--c-classes)"><h1>Natural heritage</h1><div><span class="chip code">1.2.3</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/natural_heritage</p></div><h2>Definition</h2><blockquote>Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks).</blockquote><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>1.2.0</code> <a href="/landuse/concept/cultural_natural_heritage">Cultural and natural heritage</a></dd><dt>Path</dt><dd><code>1.0.0</code> <a href="/landuse/concept/conservation">Conservation and Minimal Use</a> › <code>1.2.0</code> <a href="/landuse/concept/cultural_natural_heritage">Cultural and natural heritage</a> › <strong>Natural heritage</strong></dd></dl><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>1.2.3</code></td><td>Natural heritage</td><td><a href="/classification/v0-4/classes/100/#120-cultural-and-natural-heritage">class page</a> · <a href="/landuse/code/nzlum0.4.1/1.2.3">code lookup</a></td><td>draft; differs: colour</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>1.2.3</code></td><td>Natural heritage</td><td><a href="/classification/v0-4/classes/100/#120-cultural-and-natural-heritage">class page</a> · <a href="/landuse/code/nzlum0.4.0/1.2.3">code lookup</a></td><td>current</td></tr><tr><td><a href="/landuse/scheme/nzlum0.3.0">NZLUM 0.3.0</a></td><td><code>1.2.3</code></td><td>Natural heritage</td><td><a href="/classification/v0-3/classes/100/#120-cultural-and-natural-heritage">class page</a> · <a href="/landuse/code/nzlum0.3.0/1.2.3">code lookup</a></td><td>same</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/natural_heritage.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/natural_heritage.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/natural_heritage.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

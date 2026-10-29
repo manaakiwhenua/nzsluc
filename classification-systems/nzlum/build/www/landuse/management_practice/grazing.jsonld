@@ -8,23 +8,10 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:grazing_rotational",
-      "skos:notation": "grazing rotational"
-    },
-    {
-      "@id": "mgmt:grazing.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:grazing"
-      }
-    },
-    {
-      "@id": "mgmt:grazing.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:grazing"
+      "@id": "lus:management_practices",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM management practices"
       }
     },
     {
@@ -53,31 +40,20 @@
       }
     },
     {
-      "@id": "mgmt:grazing_tactical",
-      "skos:notation": "grazing tactical"
-    },
-    {
       "@id": "mgmt:grazing.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "mgmt:grazing.ttl"
-        },
-        {
           "@id": "mgmt:grazing.jsonld"
         },
         {
           "@id": "mgmt:grazing.rdf"
+        },
+        {
+          "@id": "mgmt:grazing.ttl"
         }
       ]
-    },
-    {
-      "@id": "lus:management_practices",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM management practices"
-      }
     },
     {
       "@id": "mgmt:grazing.jsonld",
@@ -88,8 +64,32 @@
       }
     },
     {
+      "@id": "mgmt:grazing.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing"
+      }
+    },
+    {
+      "@id": "mgmt:grazing.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:grazing"
+      }
+    },
+    {
+      "@id": "mgmt:grazing_rotational",
+      "skos:notation": "grazing rotational"
+    },
+    {
       "@id": "mgmt:grazing_set_stocking",
       "skos:notation": "grazing set stocking"
+    },
+    {
+      "@id": "mgmt:grazing_tactical",
+      "skos:notation": "grazing tactical"
     }
   ]
 }

@@ -6,6 +6,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries">
+    <skos:prefLabel xml:lang="en">Quarries</skos:prefLabel>
     <skos:notation>3.7.2</skos:notation>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/mining">
@@ -13,10 +14,8 @@
         <skos:notation>3.7.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:definition xml:lang="en">Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted.</skos:definition>
-    <skos:prefLabel xml:lang="en">Quarries</skos:prefLabel>
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:definition xml:lang="en">Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted.</skos:definition>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries.html">
         <dcterms:format>text/html</dcterms:format>
@@ -26,13 +25,13 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries.rdf">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>
     <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries.rdf">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/quarries"/>

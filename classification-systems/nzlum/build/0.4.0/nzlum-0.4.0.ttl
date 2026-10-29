@@ -40,16 +40,17 @@ lu:colour  a          owl:DatatypeProperty;
         rdfs:range    xsd:string .
 
 lus:nzlum  dct:relation  lu_proverb:kotahi_te_aho;
-        a               skos:ConceptScheme;
-        dct:title       "New Zealand Land Use and Management classification system"@en;
-        dct:hasVersion  lus:nzlum0.3.0;
-        dct:hasVersion  lus:nzlum0.4.0;
-        foaf:homepage   <https://nzlum.landcareresearch.co.nz/> .
+        a                skos:ConceptScheme;
+        dct:title        "New Zealand Land Use and Management classification system"@en;
+        dct:hasVersion   lus:nzlum0.3.0;
+        dct:hasVersion   lus:nzlum0.4.0;
+        dct:hasVersion   lus:nzlum0.4.1;
+        foaf:homepage    <https://nzlum.landcareresearch.co.nz/>;
+        doap:repository  <https://github.com/manaakiwhenua/nzsluc> .
 
-_:b0    a            doap:GitRepository;
+<https://github.com/manaakiwhenua/nzsluc>
+        a            doap:GitRepository;
         doap:browse  <https://github.com/manaakiwhenua/nzsluc> .
-
-lus:nzlum  doap:repository  _:b0 .
 
 lus:nzlum0.3.0  a           skos:ConceptScheme;
         dct:issued          "2025-06-30"^^xsd:date;
@@ -67,6 +68,16 @@ lus:nzlum0.4.0  a           skos:ConceptScheme;
         dct:isVersionOf     lus:nzlum;
         adms:status         lu_status:published;
         dct:replaces        lus:nzlum0.3.0;
+        skos:hasTopConcept  luc:conservation;
+        skos:hasTopConcept  luc:production_agriculture_plantations;
+        skos:hasTopConcept  luc:built_environment .
+
+lus:nzlum0.4.1  a           skos:ConceptScheme;
+        dct:created         "2026-10-29"^^xsd:date;
+        owl:versionInfo     "0.4.1";
+        dct:isVersionOf     lus:nzlum;
+        adms:status         lu_status:draft;
+        skos:changeNote     "Draft. Assigns an lu:colour to every class (80 classes had none in 0.4.0) and revises 20 existing colours so that each secondary owns one hue, tertiaries form a lightness ladder within it, and true blue is left free for the water attribute. No codes, labels or definitions change."@en;
         skos:hasTopConcept  luc:conservation;
         skos:hasTopConcept  luc:production_agriculture_plantations;
         skos:hasTopConcept  luc:built_environment .

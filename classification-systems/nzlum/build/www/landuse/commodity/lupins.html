@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:lupins.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:lupins"
-      }
-    },
-    {
-      "@id": "com:lupins.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:lupins"
-      }
-    },
-    {
       "@id": "com:lupins",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -50,15 +34,39 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:lupins.ttl"
-        },
-        {
           "@id": "com:lupins.jsonld"
         },
         {
           "@id": "com:lupins.rdf"
+        },
+        {
+          "@id": "com:lupins.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:lupins.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:lupins"
+      }
+    },
+    {
+      "@id": "com:lupins.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:lupins"
+      }
+    },
+    {
+      "@id": "com:lupins.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:lupins"
+      }
     },
     {
       "@id": "com:pulses",
@@ -75,14 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:lupins.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:lupins"
       }
     }
   ]

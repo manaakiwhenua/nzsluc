@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:thyme.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:thyme"
-      }
-    },
-    {
       "@id": "com:thyme",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -27,28 +19,44 @@
       "skos:notation": "thyme"
     },
     {
+      "@id": "com:thyme.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:thyme.jsonld"
+        },
+        {
+          "@id": "com:thyme.rdf"
+        },
+        {
+          "@id": "com:thyme.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:thyme.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:thyme"
+      }
+    },
+    {
+      "@id": "com:thyme.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:thyme"
+      }
+    },
+    {
       "@id": "com:thyme.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:thyme"
       }
-    },
-    {
-      "@id": "com:thyme.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:thyme.ttl"
-        },
-        {
-          "@id": "com:thyme.jsonld"
-        },
-        {
-          "@id": "com:thyme.rdf"
-        }
-      ]
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -65,14 +73,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:thyme.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:thyme"
       }
     }
   ]

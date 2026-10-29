@@ -1,7 +1,11 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lu_status: <https://nzlum.landcareresearch.co.nz/landuse/status/> .
+@prefix lus: <https://nzlum.landcareresearch.co.nz/landuse/scheme/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lus:nzlum0.4.1 adms:status lu_status:draft .
 
 lu_status:draft.html a foaf:Document ;
     dcterms:format "text/html" ;

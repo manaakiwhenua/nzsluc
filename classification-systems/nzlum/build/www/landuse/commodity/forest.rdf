@@ -7,13 +7,8 @@
 >
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest">
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/christmas_trees">
-        <skos:notation>christmas trees</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bamboo">
-        <skos:notation>bamboo</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pulp_wood">
+        <skos:notation>pulp wood</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -22,8 +17,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_standard">
-        <skos:notation>carbon forest standard</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sandalwood">
+        <skos:notation>sandalwood</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tea_tree">
+        <skos:notation>tea tree</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -32,13 +32,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sandalwood">
-        <skos:notation>sandalwood</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/christmas_trees">
+        <skos:notation>christmas trees</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eucalyptus_oil">
-        <skos:notation>eucalyptus oil</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carbon_forest_standard">
+        <skos:notation>carbon forest standard</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -47,21 +47,21 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pulp_wood">
-        <skos:notation>pulp wood</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bamboo">
+        <skos:notation>bamboo</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tea_tree">
-        <skos:notation>tea tree</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eucalyptus_oil">
+        <skos:notation>eucalyptus oil</skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:prefLabel xml:lang="en">Forest</skos:prefLabel>
     <skos:inScheme>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
         <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
       </rdf:Description>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">Forest</skos:prefLabel>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.html">
         <dcterms:format>text/html</dcterms:format>
@@ -75,12 +75,12 @@
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.jsonld">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
-    <dcterms:format>application/ld+json</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/forest"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

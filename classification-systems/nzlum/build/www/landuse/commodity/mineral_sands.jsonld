@@ -8,20 +8,55 @@
   },
   "@graph": [
     {
+      "@id": "com:mineral_sands",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:mineral_sands.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "mineral_sands "
+    },
+    {
       "@id": "com:mineral_sands.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:mineral_sands.ttl"
-        },
-        {
           "@id": "com:mineral_sands.jsonld"
         },
         {
           "@id": "com:mineral_sands.rdf"
+        },
+        {
+          "@id": "com:mineral_sands.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:mineral_sands.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:mineral_sands"
+      }
+    },
+    {
+      "@id": "com:mineral_sands.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:mineral_sands"
+      }
+    },
+    {
+      "@id": "com:mineral_sands.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:mineral_sands"
+      }
     },
     {
       "@id": "com:mines",
@@ -34,45 +69,10 @@
       }
     },
     {
-      "@id": "com:mineral_sands.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:mineral_sands"
-      }
-    },
-    {
-      "@id": "com:mineral_sands.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:mineral_sands"
-      }
-    },
-    {
-      "@id": "com:mineral_sands",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:mineral_sands.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "mineral_sands "
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:mineral_sands.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:mineral_sands"
       }
     }
   ]

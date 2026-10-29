@@ -8,14 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:conservation.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:conservation"
-      }
-    },
-    {
       "@id": "luc:conservation",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -25,26 +17,21 @@
         "@language": "en",
         "@value": "Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
-          "@id": "luc:unused_and_transitioning"
+          "@id": "luc:cultural_natural_heritage"
         },
         {
-          "@id": "luc:cultural_natural_heritage"
+          "@id": "luc:minimal_use_relatively_natural"
         },
         {
           "@id": "luc:nature_cons"
         },
         {
-          "@id": "luc:minimal_use_relatively_natural"
+          "@id": "luc:unused_and_transitioning"
         }
       ],
       "skos:notation": "1.0.0",
@@ -65,19 +52,43 @@
       }
     },
     {
-      "@id": "luc:nature_cons",
-      "skos:notation": "1.1.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nature conservation"
+      "@id": "luc:conservation.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:conservation.jsonld"
+        },
+        {
+          "@id": "luc:conservation.rdf"
+        },
+        {
+          "@id": "luc:conservation.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:conservation.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
       }
     },
     {
-      "@id": "luc:minimal_use_relatively_natural",
-      "skos:notation": "1.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Minimal use from relatively natural environments"
+      "@id": "luc:conservation.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
+      }
+    },
+    {
+      "@id": "luc:conservation.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:conservation"
       }
     },
     {
@@ -89,19 +100,27 @@
       }
     },
     {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    },
+    {
+      "@id": "luc:nature_cons",
+      "skos:notation": "1.1.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nature conservation"
+      }
+    },
+    {
       "@id": "luc:unused_and_transitioning",
       "skos:notation": "1.4.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Unused and transitioning land"
-      }
-    },
-    {
-      "@id": "luc:conservation.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:conservation"
       }
     },
     {
@@ -117,26 +136,8 @@
       }
     },
     {
-      "@id": "luc:conservation.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:conservation.ttl"
-        },
-        {
-          "@id": "luc:conservation.jsonld"
-        },
-        {
-          "@id": "luc:conservation.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:conservation.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "lus:nzlum0.4.1",
+      "skos:hasTopConcept": {
         "@id": "luc:conservation"
       }
     }

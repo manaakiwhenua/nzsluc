@@ -8,6 +8,14 @@
   },
   "@graph": [
     {
+      "@id": "luc:minimal_use_relatively_natural",
+      "skos:notation": "1.3.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Minimal use from relatively natural environments"
+      }
+    },
+    {
       "@id": "luc:surface_water_supply",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -20,26 +28,13 @@
         "@language": "en",
         "@value": "An area managed as a catchment for water supply."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "1.3.1",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Surface water supply"
-      }
-    },
-    {
-      "@id": "luc:minimal_use_relatively_natural",
-      "skos:notation": "1.3.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Minimal use from relatively natural environments"
       }
     },
     {
@@ -48,13 +43,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:surface_water_supply.ttl"
-        },
-        {
           "@id": "luc:surface_water_supply.jsonld"
         },
         {
           "@id": "luc:surface_water_supply.rdf"
+        },
+        {
+          "@id": "luc:surface_water_supply.ttl"
         }
       ]
     },
@@ -67,17 +62,17 @@
       }
     },
     {
-      "@id": "luc:surface_water_supply.ttl",
+      "@id": "luc:surface_water_supply.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:surface_water_supply"
       }
     },
     {
-      "@id": "luc:surface_water_supply.rdf",
+      "@id": "luc:surface_water_supply.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "luc:surface_water_supply"
       }

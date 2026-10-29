@@ -18,38 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sandalwood.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:sandalwood"
-      }
-    },
-    {
-      "@id": "com:sandalwood.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sandalwood.ttl"
-        },
-        {
-          "@id": "com:sandalwood.jsonld"
-        },
-        {
-          "@id": "com:sandalwood.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sandalwood.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sandalwood"
-      }
-    },
-    {
       "@id": "com:forest",
       "skos:member": {
         "@id": "com:sandalwood"
@@ -69,6 +37,38 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "sandalwood"
+    },
+    {
+      "@id": "com:sandalwood.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sandalwood.jsonld"
+        },
+        {
+          "@id": "com:sandalwood.rdf"
+        },
+        {
+          "@id": "com:sandalwood.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:sandalwood.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sandalwood"
+      }
+    },
+    {
+      "@id": "com:sandalwood.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sandalwood"
+      }
     },
     {
       "@id": "com:sandalwood.ttl",

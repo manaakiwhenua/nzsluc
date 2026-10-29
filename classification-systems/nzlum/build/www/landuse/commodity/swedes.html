@@ -18,12 +18,31 @@
   },
   "@graph": [
     {
-      "@id": "com:swedes.ttl",
+      "@id": "com:swedes",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:swedes.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "swedes"
+    },
+    {
+      "@id": "com:swedes.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:swedes"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:swedes.jsonld"
+        },
+        {
+          "@id": "com:swedes.rdf"
+        },
+        {
+          "@id": "com:swedes.ttl"
+        }
+      ]
     },
     {
       "@id": "com:swedes.jsonld",
@@ -34,20 +53,20 @@
       }
     },
     {
-      "@id": "com:swedes.html",
+      "@id": "com:swedes.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:swedes.ttl"
-        },
-        {
-          "@id": "com:swedes.jsonld"
-        },
-        {
-          "@id": "com:swedes.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:swedes"
+      }
+    },
+    {
+      "@id": "com:swedes.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:swedes"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -65,25 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:swedes.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:swedes"
-      }
-    },
-    {
-      "@id": "com:swedes",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:swedes.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "swedes"
     }
   ]
 }

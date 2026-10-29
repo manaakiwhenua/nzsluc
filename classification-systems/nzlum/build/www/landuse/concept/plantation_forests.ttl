@@ -41,8 +41,7 @@ luc:production_agriculture_plantations skos:notation "2.0.0" ;
 luc:plantation_forests a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:exotic_plantation_forestry,
         luc:indigenous_plantation_forestry,
         luc:other_production_plantations,

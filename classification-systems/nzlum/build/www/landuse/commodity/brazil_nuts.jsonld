@@ -8,30 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:brazil_nuts.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:brazil_nuts"
-      }
-    },
-    {
-      "@id": "com:brazil_nuts.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:brazil_nuts.ttl"
-        },
-        {
-          "@id": "com:brazil_nuts.jsonld"
-        },
-        {
-          "@id": "com:brazil_nuts.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:brazil_nuts",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -43,13 +19,35 @@
       "skos:notation": "brazil nuts"
     },
     {
-      "@id": "com:nuts",
-      "skos:member": {
+      "@id": "com:brazil_nuts.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:brazil_nuts.jsonld"
+        },
+        {
+          "@id": "com:brazil_nuts.rdf"
+        },
+        {
+          "@id": "com:brazil_nuts.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:brazil_nuts.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
         "@id": "com:brazil_nuts"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Nuts"
+      }
+    },
+    {
+      "@id": "com:brazil_nuts.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:brazil_nuts"
       }
     },
     {
@@ -61,11 +59,13 @@
       }
     },
     {
-      "@id": "com:brazil_nuts.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
+      "@id": "com:nuts",
+      "skos:member": {
         "@id": "com:brazil_nuts"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nuts"
       }
     },
     {

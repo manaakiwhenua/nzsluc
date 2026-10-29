@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sorghum_forage.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sorghum_forage"
-      }
-    },
-    {
-      "@id": "com:sorghum_forage.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sorghum_forage"
-      }
-    },
-    {
       "@id": "com:pasture",
       "skos:member": {
         "@id": "com:sorghum_forage"
@@ -55,25 +39,18 @@
       "skos:notation": "sorghum forage"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:sorghum_forage.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:sorghum_forage.ttl"
-        },
-        {
           "@id": "com:sorghum_forage.jsonld"
         },
         {
           "@id": "com:sorghum_forage.rdf"
+        },
+        {
+          "@id": "com:sorghum_forage.ttl"
         }
       ]
     },
@@ -83,6 +60,29 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:sorghum_forage"
+      }
+    },
+    {
+      "@id": "com:sorghum_forage.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sorghum_forage"
+      }
+    },
+    {
+      "@id": "com:sorghum_forage.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sorghum_forage"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

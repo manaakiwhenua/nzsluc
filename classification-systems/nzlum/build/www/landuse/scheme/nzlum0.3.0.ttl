@@ -20,9 +20,6 @@ lu:colour a owl:DatatypeProperty ;
     rdfs:domain skos:Concept ;
     rdfs:range xsd:string .
 
-lu_status:draft a rdfs:Resource ;
-    rdfs:label "Draft"@en .
-
 luc:abandoned_land_ag a skos:Concept ;
     skos:broader luc:land_in_transition_agriculture ;
     skos:definition "Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation."@en ;
@@ -786,20 +783,27 @@ lus:nzlum0.3.0.ttl a foaf:Document ;
     dcterms:format "text/turtle" ;
     foaf:primaryTopic lus:nzlum0.3.0 .
 
+lus:nzlum0.4.1 a skos:ConceptScheme ;
+    dcterms:created "2026-10-29"^^xsd:date ;
+    dcterms:isVersionOf lus:nzlum ;
+    owl:versionInfo "0.4.1" ;
+    skos:changeNote "Draft. Assigns an lu:colour to every class (80 classes had none in 0.4.0) and revises 20 existing colours so that each secondary owns one hue, tertiaries form a lightness ladder within it, and true blue is left free for the water attribute. No codes, labels or definitions change."@en ;
+    skos:hasTopConcept luc:built_environment,
+        luc:conservation,
+        luc:production_agriculture_plantations ;
+    adms:status lu_status:draft .
+
+lu_status:draft a rdfs:Resource ;
+    rdfs:label "Draft"@en .
+
 lu_status:published a rdfs:Resource ;
     rdfs:label "Published"@en .
 
 lu_status:superseded a rdfs:Resource ;
     rdfs:label "Superseded"@en .
 
-lus:nzlum a skos:ConceptScheme ;
-    dcterms:hasVersion lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
-    dcterms:relation lu_proverb:kotahi_te_aho ;
-    dcterms:title "New Zealand Land Use and Management classification system"@en ;
-    doap:repository [ a doap:GitRepository ;
-            doap:browse ns1:nzsluc ] ;
-    foaf:homepage <https://nzlum.landcareresearch.co.nz/> .
+ns1:nzsluc a doap:GitRepository ;
+    doap:browse ns1:nzsluc .
 
 lus:nzlum0.4.0 a skos:ConceptScheme ;
     dcterms:isVersionOf lus:nzlum ;
@@ -833,6 +837,15 @@ luc:unused_land_transition a skos:Concept ;
     skos:prefLabel "Unused land and land in transition"@en ;
     skos:usageNote "Delineation between indigenous and exotic vegetation for the minimal use and unused land and land in transition classes can be made by reference to land-cover information."@en ;
     lu:colour "#C8C69F" .
+
+lus:nzlum a skos:ConceptScheme ;
+    dcterms:hasVersion lus:nzlum0.3.0,
+        lus:nzlum0.4.0,
+        lus:nzlum0.4.1 ;
+    dcterms:relation lu_proverb:kotahi_te_aho ;
+    dcterms:title "New Zealand Land Use and Management classification system"@en ;
+    doap:repository ns1:nzsluc ;
+    foaf:homepage <https://nzlum.landcareresearch.co.nz/> .
 
 luc:cultural_natural_heritage a skos:Concept ;
     skos:broader luc:conservation ;
@@ -936,19 +949,6 @@ luc:short_rotation_seasonal_cropping a skos:Concept ;
     skos:usageNote "If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary)."@en ;
     lu:colour "#7F7F54" .
 
-luc:conservation a skos:Concept ;
-    skos:definition "Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
-    skos:inScheme lus:nzlum0.3.0 ;
-    skos:narrower luc:cultural_natural_heritage,
-        luc:minimal_use_relatively_natural,
-        luc:nature_cons,
-        luc:unused_land_transition ;
-    skos:notation "1.0.0" ;
-    skos:prefLabel "Conservation and Minimal Use"@en ;
-    skos:scopeNote "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en ;
-    skos:topConceptOf lus:nzlum0.3.0 ;
-    skos:usageNote "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en .
-
 luc:intensive_animal_production a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en ;
@@ -1046,6 +1046,19 @@ luc:commercial a skos:Concept ;
     skos:prefLabel "Commercial"@en ;
     skos:usageNote "Central government offices when these are privately rented should be captured in this category, even if they are public-facing."@en ;
     lu:colour "#B8C2CE" .
+
+luc:conservation a skos:Concept ;
+    skos:definition "Class 1.0.0 includes land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances)."@en ;
+    skos:inScheme lus:nzlum0.3.0 ;
+    skos:narrower luc:cultural_natural_heritage,
+        luc:minimal_use_relatively_natural,
+        luc:nature_cons,
+        luc:unused_land_transition ;
+    skos:notation "1.0.0" ;
+    skos:prefLabel "Conservation and Minimal Use"@en ;
+    skos:scopeNote "Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5."@en ;
+    skos:topConceptOf lus:nzlum0.3.0 ;
+    skos:usageNote "Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field."@en .
 
 luc:manufacturing_industrial a skos:Concept ;
     skos:broader luc:built_environment ;

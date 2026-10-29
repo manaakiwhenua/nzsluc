@@ -28,8 +28,7 @@ luc:water_wastewater_agriculture skos:notation "2.7.0" ;
 luc:water_treatment_wetland a skos:Concept ;
     skos:broader luc:water_wastewater_agriculture ;
     skos:definition "Constructed or natural wetlands used to improve water quality prior to discharge."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.7.4" ;
     skos:prefLabel "Water treatment – wetland"@en ;
     foaf:isPrimaryTopicOf luc:water_treatment_wetland.html .

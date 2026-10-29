@@ -33,32 +33,25 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:ducks.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:ducks.ttl"
-        },
-        {
           "@id": "com:ducks.jsonld"
         },
         {
           "@id": "com:ducks.rdf"
+        },
+        {
+          "@id": "com:ducks.ttl"
         }
       ]
     },
     {
-      "@id": "com:ducks.ttl",
+      "@id": "com:ducks.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:ducks"
       }
@@ -72,11 +65,18 @@
       }
     },
     {
-      "@id": "com:ducks.jsonld",
+      "@id": "com:ducks.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:ducks"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

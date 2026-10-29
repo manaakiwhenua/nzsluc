@@ -28,8 +28,7 @@ luc:short_rotation_seasonal_cropping skos:notation "2.3.0" ;
 luc:seasonal_flowers_bulbs_turf a skos:Concept ;
     skos:broader luc:short_rotation_seasonal_cropping ;
     skos:definition "Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.3.4" ;
     skos:prefLabel "Seasonal flowers and bulbs, and turf farming"@en ;
     skos:scopeNote "This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas."@en ;

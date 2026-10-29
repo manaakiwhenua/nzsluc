@@ -8,20 +8,54 @@
   },
   "@graph": [
     {
-      "@id": "luc:water_extraction_transmission.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:water_extraction_transmission"
-      }
-    },
-    {
       "@id": "luc:utilities",
       "skos:notation": "3.5.0",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Utilities"
       }
+    },
+    {
+      "@id": "luc:water_extraction_transmission",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:water_extraction_transmission.html"
+      },
+      "skos:broader": {
+        "@id": "luc:utilities"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "3.5.7",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Water extraction and transmission"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Includes drinking water reservoirs."
+      }
+    },
+    {
+      "@id": "luc:water_extraction_transmission.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:water_extraction_transmission.jsonld"
+        },
+        {
+          "@id": "luc:water_extraction_transmission.rdf"
+        },
+        {
+          "@id": "luc:water_extraction_transmission.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:water_extraction_transmission.jsonld",
@@ -40,51 +74,12 @@
       }
     },
     {
-      "@id": "luc:water_extraction_transmission",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:water_extraction_transmission.html"
-      },
-      "skos:broader": {
-        "@id": "luc:utilities"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs."
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "3.5.7",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Water extraction and transmission"
-      },
-      "skos:scopeNote": {
-        "@language": "en",
-        "@value": "Includes drinking water reservoirs."
-      }
-    },
-    {
-      "@id": "luc:water_extraction_transmission.html",
+      "@id": "luc:water_extraction_transmission.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:water_extraction_transmission.ttl"
-        },
-        {
-          "@id": "luc:water_extraction_transmission.jsonld"
-        },
-        {
-          "@id": "luc:water_extraction_transmission.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:water_extraction_transmission"
+      }
     }
   ]
 }

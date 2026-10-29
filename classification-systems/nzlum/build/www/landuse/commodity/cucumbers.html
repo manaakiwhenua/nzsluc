@@ -18,20 +18,55 @@
   },
   "@graph": [
     {
+      "@id": "com:cucumbers",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:cucumbers.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "cucumbers"
+    },
+    {
       "@id": "com:cucumbers.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:cucumbers.ttl"
-        },
-        {
           "@id": "com:cucumbers.jsonld"
         },
         {
           "@id": "com:cucumbers.rdf"
+        },
+        {
+          "@id": "com:cucumbers.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:cucumbers.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:cucumbers"
+      }
+    },
+    {
+      "@id": "com:cucumbers.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:cucumbers"
+      }
+    },
+    {
+      "@id": "com:cucumbers.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:cucumbers"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -44,46 +79,11 @@
       }
     },
     {
-      "@id": "com:cucumbers.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:cucumbers"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:cucumbers.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:cucumbers"
-      }
-    },
-    {
-      "@id": "com:cucumbers.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:cucumbers"
-      }
-    },
-    {
-      "@id": "com:cucumbers",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:cucumbers.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "cucumbers"
     }
   ]
 }

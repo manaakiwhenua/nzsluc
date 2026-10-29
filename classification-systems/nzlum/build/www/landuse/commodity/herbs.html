@@ -18,17 +18,52 @@
   },
   "@graph": [
     {
-      "@id": "com:herbs.ttl",
+      "@id": "com:herbs",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:herbs.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "herbs"
+    },
+    {
+      "@id": "com:herbs.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:herbs"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:herbs.jsonld"
+        },
+        {
+          "@id": "com:herbs.rdf"
+        },
+        {
+          "@id": "com:herbs.ttl"
+        }
+      ]
     },
     {
       "@id": "com:herbs.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:herbs"
+      }
+    },
+    {
+      "@id": "com:herbs.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:herbs"
+      }
+    },
+    {
+      "@id": "com:herbs.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:herbs"
       }
@@ -44,45 +79,10 @@
       }
     },
     {
-      "@id": "com:herbs",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:herbs.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "herbs"
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:herbs.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:herbs.ttl"
-        },
-        {
-          "@id": "com:herbs.jsonld"
-        },
-        {
-          "@id": "com:herbs.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:herbs.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:herbs"
       }
     }
   ]

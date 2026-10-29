@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:pulp_wood.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:pulp_wood"
-      }
-    },
-    {
-      "@id": "com:pulp_wood.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pulp_wood"
-      }
-    },
-    {
       "@id": "com:forest",
       "skos:member": {
         "@id": "com:pulp_wood"
@@ -31,13 +15,6 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Forest"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
       }
     },
     {
@@ -57,13 +34,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:pulp_wood.ttl"
-        },
-        {
           "@id": "com:pulp_wood.jsonld"
         },
         {
           "@id": "com:pulp_wood.rdf"
+        },
+        {
+          "@id": "com:pulp_wood.ttl"
         }
       ]
     },
@@ -73,6 +50,29 @@
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:pulp_wood"
+      }
+    },
+    {
+      "@id": "com:pulp_wood.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pulp_wood"
+      }
+    },
+    {
+      "@id": "com:pulp_wood.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:pulp_wood"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

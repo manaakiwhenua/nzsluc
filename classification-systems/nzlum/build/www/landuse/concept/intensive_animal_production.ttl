@@ -44,8 +44,7 @@ luc:production_agriculture_plantations skos:notation "2.0.0" ;
 luc:intensive_animal_production a skos:Concept ;
     skos:broader luc:production_agriculture_plantations ;
     skos:definition "Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:narrower luc:aquaculture,
         luc:horse_studs,
         luc:intensive_animal_containment,

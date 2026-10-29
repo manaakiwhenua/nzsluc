@@ -8,11 +8,13 @@
   },
   "@graph": [
     {
-      "@id": "com:redcurrants.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:redcurrants"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     },
     {
@@ -25,6 +27,22 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "redcurrants"
+    },
+    {
+      "@id": "com:redcurrants.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:redcurrants.jsonld"
+        },
+        {
+          "@id": "com:redcurrants.rdf"
+        },
+        {
+          "@id": "com:redcurrants.ttl"
+        }
+      ]
     },
     {
       "@id": "com:redcurrants.jsonld",
@@ -43,36 +61,18 @@
       }
     },
     {
-      "@id": "com:redcurrants.html",
+      "@id": "com:redcurrants.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:redcurrants.ttl"
-        },
-        {
-          "@id": "com:redcurrants.jsonld"
-        },
-        {
-          "@id": "com:redcurrants.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:redcurrants"
+      }
     },
     {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:redcurrants"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
       }
     }
   ]

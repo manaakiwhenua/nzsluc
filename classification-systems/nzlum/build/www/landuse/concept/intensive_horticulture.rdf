@@ -2,58 +2,53 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.rdf">
+    <foaf:primaryTopic>
+      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
+        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+        <skos:usageNote xml:lang="en">Record management practices such as hydroponic systems, irrigation, and netting, if known.</skos:usageNote>
+        <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses"/>
+        <skos:narrower rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries"/>
+        <lu:colour>#4A4C39</lu:colour>
+        <skos:definition xml:lang="en">Intensive forms of plant production, often with special-purpose improvements used for horticultural production.</skos:definition>
+        <skos:notation>2.5.0</skos:notation>
+        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations"/>
+        <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
+        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.html"/>
+      </skos:Concept>
+    </foaf:primaryTopic>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.html">
     <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.ttl">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
-        <dcterms:format>text/turtle</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.ttl"/>
     <dcterms:hasFormat>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.jsonld">
         <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
         <dcterms:format>application/ld+json</dcterms:format>
       </foaf:Document>
     </dcterms:hasFormat>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.rdf">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture"/>
-        <dcterms:format>application/rdf+xml</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
+    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.rdf"/>
   </foaf:Document>
-  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture">
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
-        <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
-        <skos:notation>2.0.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses">
-        <skos:prefLabel xml:lang="en">Glasshouses/shadehouses</skos:prefLabel>
-        <skos:notation>2.5.2</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:narrower>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries">
-        <skos:prefLabel xml:lang="en">Production nurseries</skos:prefLabel>
-        <skos:notation>2.5.1</skos:notation>
-      </rdf:Description>
-    </skos:narrower>
-    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
-    <skos:usageNote xml:lang="en">Record management practices such as hydroponic systems, irrigation, and netting, if known.</skos:usageNote>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:prefLabel xml:lang="en">Intensive horticulture</skos:prefLabel>
-    <lu:colour>#4A4C39</lu:colour>
-    <skos:definition xml:lang="en">Intensive forms of plant production, often with special-purpose improvements used for horticultural production.</skos:definition>
-    <skos:notation>2.5.0</skos:notation>
-    <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/intensive_horticulture.html"/>
-  </skos:Concept>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_nurseries">
+    <skos:prefLabel xml:lang="en">Production nurseries</skos:prefLabel>
+    <skos:notation>2.5.1</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/production_agriculture_plantations">
+    <skos:prefLabel xml:lang="en">Production agriculture and plantations</skos:prefLabel>
+    <skos:notation>2.0.0</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/glasshouses_shadehouses">
+    <skos:prefLabel xml:lang="en">Glasshouses/shadehouses</skos:prefLabel>
+    <skos:notation>2.5.2</skos:notation>
+  </rdf:Description>
 </rdf:RDF>

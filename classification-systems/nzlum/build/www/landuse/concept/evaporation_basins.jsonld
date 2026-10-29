@@ -8,11 +8,25 @@
   },
   "@graph": [
     {
-      "@id": "luc:evaporation_basins.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:evaporation_basins"
+      "@id": "luc:evaporation_basins",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "luc:evaporation_basins.html"
+      },
+      "skos:broader": {
+        "@id": "luc:mining"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction."
+      },
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
+      "skos:notation": "3.7.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Evaporation basins"
       }
     },
     {
@@ -21,28 +35,28 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:evaporation_basins.ttl"
-        },
-        {
           "@id": "luc:evaporation_basins.jsonld"
         },
         {
           "@id": "luc:evaporation_basins.rdf"
+        },
+        {
+          "@id": "luc:evaporation_basins.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:mining",
-      "skos:notation": "3.7.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mining"
-      }
     },
     {
       "@id": "luc:evaporation_basins.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:evaporation_basins"
+      }
+    },
+    {
+      "@id": "luc:evaporation_basins.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:evaporation_basins"
       }
@@ -56,30 +70,11 @@
       }
     },
     {
-      "@id": "luc:evaporation_basins",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "luc:evaporation_basins.html"
-      },
-      "skos:broader": {
-        "@id": "luc:mining"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction."
-      },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
-      "skos:notation": "3.7.4",
+      "@id": "luc:mining",
+      "skos:notation": "3.7.0",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Evaporation basins"
+        "@value": "Mining"
       }
     }
   ]

@@ -19,6 +19,46 @@
   },
   "@graph": [
     {
+      "@id": "luc:airports_aerodromes",
+      "skos:notation": "3.6.1",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Airports/aerodromes"
+      }
+    },
+    {
+      "@id": "luc:built_environment",
+      "skos:notation": "3.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Built environment"
+      }
+    },
+    {
+      "@id": "luc:ports_water_transport",
+      "skos:notation": "3.6.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Ports and water transport"
+      }
+    },
+    {
+      "@id": "luc:railways",
+      "skos:notation": "3.6.3",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Railways"
+      }
+    },
+    {
+      "@id": "luc:roads",
+      "skos:notation": "3.6.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Roads"
+      }
+    },
+    {
       "@id": "luc:transport",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -30,11 +70,11 @@
       },
       "skos:changeNote": [
         {
-          "@language": "en",
-          "@value": "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."
+          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
         },
         {
-          "@id": "https://github.com/manaakiwhenua/nzsluc/issues/69"
+          "@language": "en",
+          "@value": "Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from 'Transport and communication'."
         }
       ],
       "skos:definition": {
@@ -46,16 +86,16 @@
       },
       "skos:narrower": [
         {
-          "@id": "luc:railways"
-        },
-        {
           "@id": "luc:airports_aerodromes"
         },
         {
-          "@id": "luc:roads"
+          "@id": "luc:ports_water_transport"
         },
         {
-          "@id": "luc:ports_water_transport"
+          "@id": "luc:railways"
+        },
+        {
+          "@id": "luc:roads"
         }
       ],
       "skos:notation": "3.6.0",
@@ -69,20 +109,20 @@
       }
     },
     {
-      "@id": "luc:built_environment",
-      "skos:notation": "3.0.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Built environment"
-      }
-    },
-    {
-      "@id": "luc:airports_aerodromes",
-      "skos:notation": "3.6.1",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Airports/aerodromes"
-      }
+      "@id": "luc:transport.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:transport.jsonld"
+        },
+        {
+          "@id": "luc:transport.rdf"
+        },
+        {
+          "@id": "luc:transport.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:transport.jsonld",
@@ -93,11 +133,11 @@
       }
     },
     {
-      "@id": "luc:railways",
-      "skos:notation": "3.6.3",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Railways"
+      "@id": "luc:transport.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:transport"
       }
     },
     {
@@ -107,52 +147,12 @@
       "foaf:primaryTopic": {
         "@id": "luc:transport"
       }
-    },
-    {
-      "@id": "luc:transport.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:transport.ttl"
-        },
-        {
-          "@id": "luc:transport.jsonld"
-        },
-        {
-          "@id": "luc:transport.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:ports_water_transport",
-      "skos:notation": "3.6.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Ports and water transport"
-      }
-    },
-    {
-      "@id": "luc:roads",
-      "skos:notation": "3.6.2",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Roads"
-      }
-    },
-    {
-      "@id": "luc:transport.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:transport"
-      }
     }
   ]
 }
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#72737E"><h1><span class="sw" style="background:#72737E"></span>Transportation</h1><div><span class="chip code">3.6.0</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/transport</p></div><h2>Definition</h2><blockquote>Land allocated to infrastructure used for the transportation of goods or people.</blockquote><h2>Usage note</h2><blockquote>Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</blockquote><h2>Change notes</h2><blockquote>Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from &#x27;Transport and communication&#x27;.</blockquote><li><a href="https://github.com/manaakiwhenua/nzsluc/issues/69">https://github.com/manaakiwhenua/nzsluc/issues/69</a></li><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>3.0.0</code> <a href="/landuse/concept/built_environment">Built environment</a></dd><dt>Path</dt><dd><code>3.0.0</code> <a href="/landuse/concept/built_environment">Built environment</a> › <strong>Transportation</strong></dd></dl><h2>Narrower</h2><ul class="plain"><li><code>3.6.1</code> <a href="/landuse/concept/airports_aerodromes">Airports/aerodromes</a></li><li><code>3.6.2</code> <a href="/landuse/concept/roads">Roads</a></li><li><code>3.6.3</code> <a href="/landuse/concept/railways">Railways</a></li><li><code>3.6.4</code> <a href="/landuse/concept/ports_water_transport">Ports and water transport</a></li></ul><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>3.6.0</code></td><td>Transportation</td><td><a href="/classification/v0-4/classes/300/#360-transportation">class page</a> · <a href="/landuse/code/nzlum0.4.0/3.6.0">code lookup</a></td><td>current</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#72737E</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/transport.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/transport.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/transport.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
+<header class="site"><div class="wrap"><a href="/"><strong>NZLUM</strong></a><nav><a href="/landuse/">Vocabulary index</a><a href="/landuse/code/">Code lookup</a><a href="/classification/system">Classification</a></nav></div></header><main><div class="wrap"><div class="hero" style="--hero:#72737E"><h1><span class="sw" style="background:#72737E"></span>Transportation</h1><div><span class="chip code">3.6.0</span><span class="chip kind" style="--k:var(--c-classes)">skos:Concept</span></div><p class="uri">https://nzlum.landcareresearch.co.nz/landuse/concept/transport</p></div><h2>Definition</h2><blockquote>Land allocated to infrastructure used for the transportation of goods or people.</blockquote><h2>Usage note</h2><blockquote>Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</blockquote><h2>Change notes</h2><blockquote>Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from &#x27;Transport and communication&#x27;.</blockquote><li><a href="https://github.com/manaakiwhenua/nzsluc/issues/69">https://github.com/manaakiwhenua/nzsluc/issues/69</a></li><h2>Hierarchy</h2><dl><dt>Broader</dt><dd><code>3.0.0</code> <a href="/landuse/concept/built_environment">Built environment</a></dd><dt>Path</dt><dd><code>3.0.0</code> <a href="/landuse/concept/built_environment">Built environment</a> › <strong>Transportation</strong></dd></dl><h2>Narrower</h2><ul class="plain"><li><code>3.6.1</code> <a href="/landuse/concept/airports_aerodromes">Airports/aerodromes</a></li><li><code>3.6.2</code> <a href="/landuse/concept/roads">Roads</a></li><li><code>3.6.3</code> <a href="/landuse/concept/railways">Railways</a></li><li><code>3.6.4</code> <a href="/landuse/concept/ports_water_transport">Ports and water transport</a></li></ul><h2>Versions</h2><p>The description above is taken from the most recent version containing this concept. Codes can be reassigned between versions, so cite the concept URI, or a code together with its version.</p><table><tr><th>Version</th><th>Code</th><th>Label</th><th>Links</th><th>Compared with current</th></tr><tr><td><a href="/landuse/scheme/nzlum0.4.1">NZLUM 0.4.1</a></td><td><code>3.6.0</code></td><td>Transportation</td><td><a href="/classification/v0-4/classes/300/#360-transportation">class page</a> · <a href="/landuse/code/nzlum0.4.1/3.6.0">code lookup</a></td><td>draft; same</td></tr><tr><td><a href="/landuse/scheme/nzlum0.4.0">NZLUM 0.4.0</a></td><td><code>3.6.0</code></td><td>Transportation</td><td><a href="/classification/v0-4/classes/300/#360-transportation">class page</a> · <a href="/landuse/code/nzlum0.4.0/3.6.0">code lookup</a></td><td>current</td></tr></table><h2>Other statements</h2><table><tr><th>Property</th><th>Value</th></tr><tr><td>lu:colour</td><td>#72737E</td></tr></table><h2 id="formats">Other formats</h2><ul class="plain"><li><a href="/landuse/concept/transport.ttl" type="text/turtle">Turtle</a> <span class="uri">text/turtle</span></li><li><a href="/landuse/concept/transport.jsonld" type="application/ld+json">JSON-LD</a> <span class="uri">application/ld+json</span></li><li><a href="/landuse/concept/transport.rdf" type="application/rdf+xml">RDF/XML</a> <span class="uri">application/rdf+xml</span></li></ul><p class="uri">Append <code>.ttl</code>, <code>.jsonld</code> or <code>.rdf</code> to the URI. The URI itself returns this page.</p></div></main><footer><div class="wrap">Manaaki Whenua – Landcare Research · <a href="/">nzlum.landcareresearch.co.nz</a> · Source: <a href="https://github.com/manaakiwhenua/nzsluc">manaakiwhenua/nzsluc</a> · Licence: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></footer>
 </body>
 </html>

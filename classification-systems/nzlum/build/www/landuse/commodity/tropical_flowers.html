@@ -18,6 +18,16 @@
   },
   "@graph": [
     {
+      "@id": "com:flowers_and_bulbs",
+      "skos:member": {
+        "@id": "com:tropical_flowers"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Flowers and bulbs"
+      }
+    },
+    {
       "@id": "com:tropical_flowers",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -29,21 +39,27 @@
       "skos:notation": "tropical flowers"
     },
     {
+      "@id": "com:tropical_flowers.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:tropical_flowers.jsonld"
+        },
+        {
+          "@id": "com:tropical_flowers.rdf"
+        },
+        {
+          "@id": "com:tropical_flowers.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:tropical_flowers.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:tropical_flowers"
-      }
-    },
-    {
-      "@id": "com:flowers_and_bulbs",
-      "skos:member": {
-        "@id": "com:tropical_flowers"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Flowers and bulbs"
       }
     },
     {
@@ -55,34 +71,18 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:tropical_flowers.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:tropical_flowers.ttl"
-        },
-        {
-          "@id": "com:tropical_flowers.jsonld"
-        },
-        {
-          "@id": "com:tropical_flowers.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:tropical_flowers.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:tropical_flowers"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

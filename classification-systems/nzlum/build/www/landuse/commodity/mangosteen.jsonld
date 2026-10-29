@@ -8,6 +8,16 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:mangosteen"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
       "@id": "com:mangosteen",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -17,6 +27,22 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "mangosteen"
+    },
+    {
+      "@id": "com:mangosteen.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:mangosteen.jsonld"
+        },
+        {
+          "@id": "com:mangosteen.rdf"
+        },
+        {
+          "@id": "com:mangosteen.ttl"
+        }
+      ]
     },
     {
       "@id": "com:mangosteen.jsonld",
@@ -35,44 +61,18 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:mangosteen.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:mangosteen.ttl"
-        },
-        {
-          "@id": "com:mangosteen.jsonld"
-        },
-        {
-          "@id": "com:mangosteen.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:mangosteen"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
       "@id": "com:mangosteen.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:mangosteen"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

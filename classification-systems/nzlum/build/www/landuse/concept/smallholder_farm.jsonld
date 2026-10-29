@@ -9,36 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "luc:smallholder_farm.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:smallholder_farm"
+      "@id": "luc:production_agriculture_plantations",
+      "skos:notation": "2.0.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Production agriculture and plantations"
       }
-    },
-    {
-      "@id": "luc:smallholder_farm.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:smallholder_farm"
-      }
-    },
-    {
-      "@id": "luc:smallholder_farm.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:smallholder_farm.ttl"
-        },
-        {
-          "@id": "luc:smallholder_farm.jsonld"
-        },
-        {
-          "@id": "luc:smallholder_farm.rdf"
-        }
-      ]
     },
     {
       "@id": "luc:smallholder_farm",
@@ -69,11 +45,11 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management."
+          "@value": "Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land."
         },
         {
           "@language": "en",
-          "@value": "Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land."
+          "@value": "Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management."
         }
       ],
       "skos:usageNote": [
@@ -88,19 +64,43 @@
       ]
     },
     {
-      "@id": "luc:smallholder_farm.ttl",
+      "@id": "luc:smallholder_farm.html",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:smallholder_farm.jsonld"
+        },
+        {
+          "@id": "luc:smallholder_farm.rdf"
+        },
+        {
+          "@id": "luc:smallholder_farm.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:smallholder_farm.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "luc:smallholder_farm"
       }
     },
     {
-      "@id": "luc:production_agriculture_plantations",
-      "skos:notation": "2.0.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Production agriculture and plantations"
+      "@id": "luc:smallholder_farm.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
+      }
+    },
+    {
+      "@id": "luc:smallholder_farm.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:smallholder_farm"
       }
     }
   ]

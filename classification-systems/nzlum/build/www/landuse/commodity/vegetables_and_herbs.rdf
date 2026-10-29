@@ -2,91 +2,18 @@
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/burdock">
-    <skos:notation>burdock</skos:notation>
-  </rdf:Description>
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs">
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/artichokes">
-        <skos:notation>artichokes</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zucchini">
+        <skos:notation>zucchini</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rhubarb">
-        <skos:notation>rhubarb</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/spring_onions_and_shallots">
-        <skos:notation>spring onions and shallots</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/brussels_sprouts">
-        <skos:notation>brussels sprouts</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cucumbers">
-        <skos:notation>cucumbers</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/thyme">
-        <skos:notation>thyme</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/echinacea">
-        <skos:notation>echinacea</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/truffles">
-        <skos:notation>truffles</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peppermint">
-        <skos:notation>peppermint</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chicory">
-        <skos:notation>chicory</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cabbages">
-        <skos:notation>cabbages</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/potatoes">
-        <skos:notation>potatoes</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/marrows_and_squashes">
-        <skos:notation>marrows and squashes</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/broccoli">
-        <skos:notation>broccoli</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coriander">
-        <skos:notation>coriander</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/swedes">
-        <skos:notation>swedes</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/okra">
+        <skos:notation>okra</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -95,19 +22,98 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lettuces">
-        <skos:notation>lettuces</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/burdock"/>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/marjoram">
-        <skos:notation>marjoram</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kale">
+        <skos:notation>kale</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/capsicums">
-        <skos:notation>capsicums</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/fennel">
+        <skos:notation>fennel</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chicory">
+        <skos:notation>chicory</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eggplants">
+        <skos:notation>eggplants</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables">
+        <skos:notation>vegetables</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tarragon">
+        <skos:notation>tarragon</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/burdock">
+        <skos:notation>burdock</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/parsley">
+        <skos:notation>parsley</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/coriander">
+        <skos:notation>coriander</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/beetroot">
+        <skos:notation>beetroot</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cabbages">
+        <skos:notation>cabbages</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/herbs">
+        <skos:notation>herbs</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetable_seeds">
+        <skos:notation>vegetable seeds</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/truffles">
+        <skos:notation>truffles</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots">
+        <skos:notation>carrots</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sweet_corn">
+        <skos:notation>sweet corn</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mushrooms">
+        <skos:notation>mushrooms</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rhubarb">
+        <skos:notation>rhubarb</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/silverbeet_and_spinach">
+        <skos:notation>silverbeet and spinach</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -116,8 +122,118 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/onions">
+        <skos:notation>onions</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sage">
+        <skos:notation>sage</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/lettuces">
+        <skos:notation>lettuces</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/artichokes">
+        <skos:notation>artichokes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/potatoes">
+        <skos:notation>potatoes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sprouts">
+        <skos:notation>sprouts</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chervil">
+        <skos:notation>chervil</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peas">
+        <skos:notation>peas</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/thyme">
+        <skos:notation>thyme</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kumara">
+        <skos:notation>kumara</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pumpkins">
+        <skos:notation>pumpkins</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rocket">
+        <skos:notation>rocket</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mint">
         <skos:notation>mint</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bitter_melon">
+        <skos:notation>bitter melon</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chillies">
+        <skos:notation>chillies</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sugar_beet">
+        <skos:notation>sugar beet</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/snowpeas">
+        <skos:notation>snowpeas</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/french_beans">
+        <skos:notation>french beans</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/spring_onions_and_shallots">
+        <skos:notation>spring onions and shallots</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rosemary">
+        <skos:notation>rosemary</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oregano">
+        <skos:notation>oregano</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/radishes">
+        <skos:notation>radishes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chives">
+        <skos:notation>chives</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -131,28 +247,8 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/asparagus">
-        <skos:notation>asparagus</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peas">
-        <skos:notation>peas</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/oregano">
-        <skos:notation>oregano</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chamomile">
-        <skos:notation>chamomile</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/mushrooms">
-        <skos:notation>mushrooms</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chinese_cabbages">
+        <skos:notation>chinese cabbages</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -161,168 +257,33 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cauliflowers">
-        <skos:notation>cauliflowers</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sweet_potatoes">
-        <skos:notation>sweet potatoes</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/pumpkins">
-        <skos:notation>pumpkins</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/zucchini">
-        <skos:notation>zucchini</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/okra">
-        <skos:notation>okra</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chillies">
-        <skos:notation>chillies</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rocket">
-        <skos:notation>rocket</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/onions">
-        <skos:notation>onions</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/silverbeet_and_spinach">
-        <skos:notation>silverbeet and spinach</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sugar_beet">
-        <skos:notation>sugar beet</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sprouts">
-        <skos:notation>sprouts</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/parsley">
-        <skos:notation>parsley</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/fennel">
-        <skos:notation>fennel</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/bitter_melon">
-        <skos:notation>bitter melon</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/turnips">
-        <skos:notation>turnips</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kumara">
-        <skos:notation>kumara</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sage">
-        <skos:notation>sage</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chinese_cabbages">
-        <skos:notation>chinese cabbages</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/kale">
-        <skos:notation>kale</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/arrowroot">
         <skos:notation>arrowroot</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rosemary">
-        <skos:notation>rosemary</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/broccoli">
+        <skos:notation>broccoli</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetable_seeds">
-        <skos:notation>vegetable seeds</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chamomile">
+        <skos:notation>chamomile</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/radishes">
-        <skos:notation>radishes</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cauliflowers">
+        <skos:notation>cauliflowers</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/french_beans">
-        <skos:notation>french beans</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/marrows_and_squashes">
+        <skos:notation>marrows and squashes</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/carrots">
-        <skos:notation>carrots</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/celery">
-        <skos:notation>celery</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/snowpeas">
-        <skos:notation>snowpeas</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables">
-        <skos:notation>vegetables</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chervil">
-        <skos:notation>chervil</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/eggplants">
-        <skos:notation>eggplants</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sweet_corn">
-        <skos:notation>sweet corn</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/tarragon">
-        <skos:notation>tarragon</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/herbs">
-        <skos:notation>herbs</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/swedes">
+        <skos:notation>swedes</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -331,13 +292,33 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/beetroot">
-        <skos:notation>beetroot</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/echinacea">
+        <skos:notation>echinacea</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/chives">
-        <skos:notation>chives</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/celery">
+        <skos:notation>celery</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/capsicums">
+        <skos:notation>capsicums</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/asparagus">
+        <skos:notation>asparagus</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cucumbers">
+        <skos:notation>cucumbers</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/turnips">
+        <skos:notation>turnips</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -345,12 +326,32 @@
         <skos:notation>leeks</skos:notation>
       </rdf:Description>
     </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/peppermint">
+        <skos:notation>peppermint</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/marjoram">
+        <skos:notation>marjoram</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sweet_potatoes">
+        <skos:notation>sweet potatoes</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/brussels_sprouts">
+        <skos:notation>brussels sprouts</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Vegetables and herbs</skos:prefLabel>
     <skos:inScheme>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/scheme/commodities">
         <dcterms:title xml:lang="en">NZLUM commodities</dcterms:title>
       </rdf:Description>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">Vegetables and herbs</skos:prefLabel>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.html">
         <dcterms:format>text/html</dcterms:format>
@@ -360,16 +361,16 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Collection>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.ttl">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.jsonld">
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs.ttl">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/vegetables_and_herbs"/>
-    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

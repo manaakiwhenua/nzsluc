@@ -18,53 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:sunflower.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:sunflower"
-      }
-    },
-    {
-      "@id": "com:sunflower.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:sunflower.ttl"
-        },
-        {
-          "@id": "com:sunflower.jsonld"
-        },
-        {
-          "@id": "com:sunflower.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:sunflower.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:sunflower"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:sunflower.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:sunflower"
-      }
-    },
-    {
       "@id": "com:oilseeds",
       "skos:member": {
         "@id": "com:sunflower"
@@ -84,6 +37,53 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "sunflower"
+    },
+    {
+      "@id": "com:sunflower.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:sunflower.jsonld"
+        },
+        {
+          "@id": "com:sunflower.rdf"
+        },
+        {
+          "@id": "com:sunflower.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:sunflower.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:sunflower"
+      }
+    },
+    {
+      "@id": "com:sunflower.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:sunflower"
+      }
+    },
+    {
+      "@id": "com:sunflower.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:sunflower"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

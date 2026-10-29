@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:rhubarb.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:rhubarb.ttl"
-        },
-        {
-          "@id": "com:rhubarb.jsonld"
-        },
-        {
-          "@id": "com:rhubarb.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:rhubarb",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -43,6 +27,38 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "rhubarb"
+    },
+    {
+      "@id": "com:rhubarb.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:rhubarb.jsonld"
+        },
+        {
+          "@id": "com:rhubarb.rdf"
+        },
+        {
+          "@id": "com:rhubarb.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:rhubarb.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:rhubarb"
+      }
+    },
+    {
+      "@id": "com:rhubarb.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:rhubarb"
+      }
     },
     {
       "@id": "com:rhubarb.ttl",
@@ -63,26 +79,10 @@
       }
     },
     {
-      "@id": "com:rhubarb.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:rhubarb"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:rhubarb.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:rhubarb"
       }
     }
   ]

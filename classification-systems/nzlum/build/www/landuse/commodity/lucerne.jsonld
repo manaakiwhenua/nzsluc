@@ -8,6 +8,33 @@
   },
   "@graph": [
     {
+      "@id": "com:lucerne",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:lucerne.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lucerne"
+    },
+    {
+      "@id": "com:lucerne.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lucerne.jsonld"
+        },
+        {
+          "@id": "com:lucerne.rdf"
+        },
+        {
+          "@id": "com:lucerne.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:lucerne.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
@@ -32,24 +59,6 @@
       }
     },
     {
-      "@id": "com:lucerne",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:lucerne.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lucerne"
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:pasture",
       "skos:member": {
         "@id": "com:lucerne"
@@ -60,20 +69,11 @@
       }
     },
     {
-      "@id": "com:lucerne.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lucerne.ttl"
-        },
-        {
-          "@id": "com:lucerne.jsonld"
-        },
-        {
-          "@id": "com:lucerne.rdf"
-        }
-      ]
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
+      }
     }
   ]
 }

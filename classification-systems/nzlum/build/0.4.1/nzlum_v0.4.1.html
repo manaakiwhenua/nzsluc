@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NZLUM v0.4.1</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 12mm 10mm 16mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    @bottom-left { content: element(footer-left); color: #555; }
+    @bottom-center { content: element(footer-center); color: #555; }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 7.5pt;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #555;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .footer-left { position: running(footer-left); font-size: 7.5pt; }
+  .footer-center { position: running(footer-center); font-size: 7.5pt; }
+  .footer-left a, .footer-center a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 0.75pt dotted #999;
+  }
+  @media screen {
+    .footer-left, .footer-center { display: none; }
+  }
+  h1 { font-size: 18pt; margin: 0 0 3mm 0; }
+  a.title-link { color: inherit; text-decoration: none; border-bottom: 1pt dotted #999; }
+  .version { font-weight: 400; color: #666; font-size: 12pt; }
+  .scheme-meta { margin-bottom: 6mm; }
+  dl.meta-fields {
+    margin: 2mm 0 0 0;
+    font-size: 9pt;
+  }
+  dl.meta-fields div {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 8mm 2mm 0;
+  }
+  dl.meta-fields dt { display: inline; font-weight: 700; color: #444; margin-right: 2mm; }
+  dl.meta-fields dd { display: inline; margin: 0; color: #555; }
+  .notice.superseded {
+    margin-top: 4mm;
+    padding: 2.5mm 5mm;
+    border-left: 3pt solid #b45309;
+    background: #fffbeb;
+    color: #7c2d12;
+    font-size: 9.5pt;
+    max-width: 160mm;
+  }
+  .notice.superseded a { color: inherit; font-weight: 700; }
+  .whakatauki {
+    margin-top: 4mm;
+    padding: 3mm 5mm;
+    border-left: 3pt solid #888;
+    background: #f7f7f7;
+    max-width: 160mm;
+  }
+  .whakatauki p { margin: 0 0 1mm 0; font-size: 9.5pt; }
+  .whakatauki .mi, .whakatauki .translation { font-style: italic; font-weight: 600; color: #333; }
+  .whakatauki .attribution { font-size: 8.5pt; color: #666; text-align: right; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 8.5pt;
+  }
+  thead th {
+    background: #2d2d2d;
+    color: #fff;
+    text-align: left;
+    padding: 3px 5px;
+  }
+  td {
+    border: 0.5pt solid #bbb;
+    padding: 2.5px 5px;
+    vertical-align: top;
+  }
+  td.code { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+  td.colour { text-align: center; font-family: monospace; font-size: 7.5pt; white-space: nowrap; }
+  tr.new-primary { border-top: 1.5pt solid #333; }
+  td.label.primary { font-weight: 700; }
+  td.label.secondary { font-weight: 600; }
+  a.def-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0.75pt dotted #888;
+  }
+  thead { display: table-header-group; }
+  tr { page-break-inside: avoid; }
+
+  section.definitions { margin-top: 8mm; page-break-before: always; }
+  h2.definitions-title { font-size: 15pt; }
+  section.definitions h2:not(.definitions-title) {
+    font-size: 14pt;
+    border-bottom: 1.5pt solid #333;
+    padding-bottom: 1.5mm;
+    margin-top: 8mm;
+    page-break-before: always;
+  }
+  section.definitions h2.first-primary { page-break-before: avoid; margin-top: 4mm; }
+  section.definitions h3 { font-size: 11.5pt; margin-top: 5mm; color: #222; page-break-before: always; }
+  section.definitions h3.first-secondary { page-break-before: avoid; margin-top: 0; }
+  section.definitions .code {
+    font-family: monospace;
+    color: #666;
+    margin-right: 2mm;
+    font-size: 0.9em;
+  }
+  .swatch {
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-family: monospace;
+    font-size: 7.5pt;
+    margin-left: 5px;
+  }
+  p.definition { margin: 1mm 0 1mm 0; font-size: 9pt; }
+  p.source { margin: 0 0 1mm 0; font-size: 8pt; font-style: italic; color: #666; }
+  .tertiary-group {
+    columns: 2;
+    column-gap: 8mm;
+    margin-top: 2mm;
+  }
+  .tertiary-item {
+    break-inside: avoid;
+    margin-bottom: 3mm;
+    padding-bottom: 2mm;
+    border-bottom: 0.5pt solid #ddd;
+  }
+  p.tertiary-head { margin: 0 0 1mm 0; font-size: 9.5pt; }
+  .callout {
+    font-size: 8pt;
+    padding: 1.5px 6px;
+    border-left: 2.5pt solid;
+    margin: 1.5mm 0;
+    break-inside: avoid;
+  }
+  .callout-label { font-weight: 700; margin-right: 3px; }
+  .callout.note { border-color: #3b82f6; background: #eff6ff; }
+  .callout.tip { border-color: #16a34a; background: #f0fdf4; }
+  .callout.example { border-color: #d97706; background: #fffbeb; }
+  .callout.changed { border-color: #7c3aed; background: #f5f3ff; }
+  .callout.changed a { color: inherit; }
+  .callout.history { border-color: #64748b; background: #f8fafc; }
+</style>
+</head>
+<body>
+<div id="footer-left" class="footer-left"><a href="https://nzlum.landcareresearch.co.nz/">New Zealand Land Use and Management classification system v0.4.1</a></div>
+<div id="footer-center" class="footer-center"><a href="#class-table">&uarr; Back to table</a></div>
+<div class="scheme-meta">
+  <h1><a class="title-link" href="https://nzlum.landcareresearch.co.nz/">New Zealand Land Use and Management classification system</a> <span class="version">v0.4.1</span></h1>
+  <dl class="meta-fields"><div><dt>Status</dt><dd>Draft</dd></div><div><dt>Website</dt><dd><a href="https://nzlum.landcareresearch.co.nz/">https://nzlum.landcareresearch.co.nz/</a></dd></div><div><dt>Git repository</dt><dd><a href="https://github.com/manaakiwhenua/nzsluc">https://github.com/manaakiwhenua/nzsluc</a></dd></div><div><dt>Scheme IRI</dt><dd>https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.1</dd></div></dl>
+  
+  <div class="whakatauki">
+<p class="mi" lang="mi">“Kotahi te aho ka whati, ki te kāpuia e kore e whati.”</p>
+<p class="translation">“One strand of flax is easy to break, but many strands together will stand strong.”</p>
+<p class="attribution">— Kīngi Tāwhiao</p>
+</div>
+</div>
+<table id="class-table">
+<thead>
+<tr>
+<th>Primary code</th><th>Primary class</th><th>Primary colour</th>
+<th>Secondary code</th><th>Secondary class</th><th>Secondary colour</th>
+<th>Tertiary code</th><th>Tertiary class</th><th>Tertiary colour</th>
+</tr>
+</thead>
+<tbody>
+<tr class="new-primary"><td class="code" rowspan="20">1.0.0</td><td class="label primary" rowspan="20"><a class="def-link" href="#def-1.0.0">Conservation and Minimal Use</a></td><td class="colour" rowspan="20" style="background:#7B6DB5;color:#ffffff;">#7B6DB5</td><td class="code" rowspan="7">1.1.0</td><td class="label secondary" rowspan="7"><a class="def-link" href="#def-1.1.0">Nature conservation</a></td><td class="colour" rowspan="7" style="background:#6A51A3;color:#ffffff;">#6A51A3</td><td class="code">1.1.1</td><td class="label tertiary"><a class="def-link" href="#def-1.1.1">Strict nature reserve</a></td><td class="colour" rowspan="1" style="background:#3F007D;color:#ffffff;">#3F007D</td></tr>
+<tr><td class="code">1.1.2</td><td class="label tertiary"><a class="def-link" href="#def-1.1.2">Wilderness area</a></td><td class="colour" rowspan="1" style="background:#54278F;color:#ffffff;">#54278F</td></tr>
+<tr><td class="code">1.1.3</td><td class="label tertiary"><a class="def-link" href="#def-1.1.3">National Park</a></td><td class="colour" rowspan="1" style="background:#6A51A3;color:#ffffff;">#6A51A3</td></tr>
+<tr><td class="code">1.1.4</td><td class="label tertiary"><a class="def-link" href="#def-1.1.4">Natural feature protection</a></td><td class="colour" rowspan="1" style="background:#807DBA;color:#ffffff;">#807DBA</td></tr>
+<tr><td class="code">1.1.5</td><td class="label tertiary"><a class="def-link" href="#def-1.1.5">Habitat or species management area</a></td><td class="colour" rowspan="1" style="background:#9E9AC8;color:#000000;">#9E9AC8</td></tr>
+<tr><td class="code">1.1.6</td><td class="label tertiary"><a class="def-link" href="#def-1.1.6">Protected landscape</a></td><td class="colour" rowspan="1" style="background:#BCBDDC;color:#000000;">#BCBDDC</td></tr>
+<tr><td class="code">1.1.7</td><td class="label tertiary"><a class="def-link" href="#def-1.1.7">Other conserved area</a></td><td class="colour" rowspan="1" style="background:#DADAEB;color:#000000;">#DADAEB</td></tr>
+<tr><td class="code" rowspan="3">1.2.0</td><td class="label secondary" rowspan="3"><a class="def-link" href="#def-1.2.0">Cultural and natural heritage</a></td><td class="colour" rowspan="3" style="background:#AD2D4A;color:#ffffff;">#AD2D4A</td><td class="code">1.2.1</td><td class="label tertiary"><a class="def-link" href="#def-1.2.1">Indigenous cultural heritage</a></td><td class="colour" rowspan="1" style="background:#870330;color:#ffffff;">#870330</td></tr>
+<tr><td class="code">1.2.2</td><td class="label tertiary"><a class="def-link" href="#def-1.2.2">Cultural heritage</a></td><td class="colour" rowspan="1" style="background:#AD2D4A;color:#ffffff;">#AD2D4A</td></tr>
+<tr><td class="code">1.2.3</td><td class="label tertiary"><a class="def-link" href="#def-1.2.3">Natural heritage</a></td><td class="colour" rowspan="1" style="background:#DD5A70;color:#ffffff;">#DD5A70</td></tr>
+<tr><td class="code" rowspan="8">1.3.0</td><td class="label secondary" rowspan="8"><a class="def-link" href="#def-1.3.0">Minimal use from relatively natural environments</a></td><td class="colour" rowspan="8" style="background:#FFC77A;color:#000000;">#FFC77A</td><td class="code">1.3.1</td><td class="label tertiary"><a class="def-link" href="#def-1.3.1">Surface water supply</a></td><td class="colour" rowspan="1" style="background:#50816D;color:#ffffff;">#50816D</td></tr>
+<tr><td class="code">1.3.2</td><td class="label tertiary"><a class="def-link" href="#def-1.3.2">Ground water</a></td><td class="colour" rowspan="1" style="background:#79AB96;color:#000000;">#79AB96</td></tr>
+<tr><td class="code">1.3.3</td><td class="label tertiary"><a class="def-link" href="#def-1.3.3">Grazing native vegetation</a></td><td class="colour" rowspan="1" style="background:#FFD5B1;color:#000000;">#FFD5B1</td></tr>
+<tr><td class="code">1.3.4</td><td class="label tertiary"><a class="def-link" href="#def-1.3.4">Production from indigenous vegetation</a></td><td class="colour" rowspan="1" style="background:#C6894C;color:#ffffff;">#C6894C</td></tr>
+<tr><td class="code">1.3.5</td><td class="label tertiary"><a class="def-link" href="#def-1.3.5">Customary use</a></td><td class="colour" rowspan="1" style="background:#A36B2E;color:#ffffff;">#A36B2E</td></tr>
+<tr><td class="code">1.3.6</td><td class="label tertiary"><a class="def-link" href="#def-1.3.6">Defence land</a></td><td class="colour" rowspan="1" style="background:#FF9E17;color:#000000;">#FF9E17</td></tr>
+<tr><td class="code">1.3.7</td><td class="label tertiary"><a class="def-link" href="#def-1.3.7">Environmental &amp; infrastructure protection</a></td><td class="colour" rowspan="1" style="background:#FBB979;color:#000000;">#FBB979</td></tr>
+<tr><td class="code">1.3.8</td><td class="label tertiary"><a class="def-link" href="#def-1.3.8">Carbon forest</a></td><td class="colour" rowspan="1" style="background:#2E5E4B;color:#ffffff;">#2E5E4B</td></tr>
+<tr><td class="code" rowspan="2">1.4.0</td><td class="label secondary" rowspan="2"><a class="def-link" href="#def-1.4.0">Unused and transitioning land</a></td><td class="colour" rowspan="2" style="background:#C8C69F;color:#000000;">#C8C69F</td><td class="code">1.4.1</td><td class="label tertiary"><a class="def-link" href="#def-1.4.1">Rehabilitating land</a></td><td class="colour" rowspan="1" style="background:#B2AC8B;color:#000000;">#B2AC8B</td></tr>
+<tr><td class="code">1.4.2</td><td class="label tertiary"><a class="def-link" href="#def-1.4.2">Unused land</a></td><td class="colour" rowspan="1" style="background:#DFD8B6;color:#000000;">#DFD8B6</td></tr>
+<tr class="new-primary"><td class="code" rowspan="31">2.0.0</td><td class="label primary" rowspan="31"><a class="def-link" href="#def-2.0.0">Production agriculture and plantations</a></td><td class="colour" rowspan="31" style="background:#6E8C44;color:#ffffff;">#6E8C44</td><td class="code" rowspan="4">2.1.0</td><td class="label secondary" rowspan="4"><a class="def-link" href="#def-2.1.0">Plantation forests</a></td><td class="colour" rowspan="4" style="background:#122112;color:#ffffff;">#122112</td><td class="code">2.1.1</td><td class="label tertiary"><a class="def-link" href="#def-2.1.1">Exotic plantation forestry</a></td><td class="colour" rowspan="1" style="background:#0F3D1A;color:#ffffff;">#0F3D1A</td></tr>
+<tr><td class="code">2.1.2</td><td class="label tertiary"><a class="def-link" href="#def-2.1.2">Indigenous plantation forestry</a></td><td class="colour" rowspan="1" style="background:#23502B;color:#ffffff;">#23502B</td></tr>
+<tr><td class="code">2.1.3</td><td class="label tertiary"><a class="def-link" href="#def-2.1.3">Other production uses</a></td><td class="colour" rowspan="1" style="background:#37633D;color:#ffffff;">#37633D</td></tr>
+<tr><td class="code">2.1.4</td><td class="label tertiary"><a class="def-link" href="#def-2.1.4">Planted environmental &amp; infrastructure protection</a></td><td class="colour" rowspan="1" style="background:#4A774F;color:#ffffff;">#4A774F</td></tr>
+<tr><td class="code" rowspan="3">2.2.0</td><td class="label secondary" rowspan="3"><a class="def-link" href="#def-2.2.0">Grazing modified pasture systems</a></td><td class="colour" rowspan="3" style="background:#769B5C;color:#ffffff;">#769B5C</td><td class="code">2.2.1</td><td class="label tertiary"><a class="def-link" href="#def-2.2.1">Dairy</a></td><td class="colour" rowspan="1" style="background:#5D8144;color:#ffffff;">#5D8144</td></tr>
+<tr><td class="code">2.2.2</td><td class="label tertiary"><a class="def-link" href="#def-2.2.2">Intensive dry stock</a></td><td class="colour" rowspan="1" style="background:#769B5C;color:#ffffff;">#769B5C</td></tr>
+<tr><td class="code">2.2.3</td><td class="label tertiary"><a class="def-link" href="#def-2.2.3">Extensive dry stock</a></td><td class="colour" rowspan="1" style="background:#91B675;color:#000000;">#91B675</td></tr>
+<tr><td class="code" rowspan="4">2.3.0</td><td class="label secondary" rowspan="4"><a class="def-link" href="#def-2.3.0">Short-rotation and seasonal cropping</a></td><td class="colour" rowspan="4" style="background:#C6A14D;color:#000000;">#C6A14D</td><td class="code">2.3.1</td><td class="label tertiary"><a class="def-link" href="#def-2.3.1">Arable cropping</a></td><td class="colour" rowspan="1" style="background:#A98734;color:#ffffff;">#A98734</td></tr>
+<tr><td class="code">2.3.2</td><td class="label tertiary"><a class="def-link" href="#def-2.3.2">Arable and mixed livestock cropping</a></td><td class="colour" rowspan="1" style="background:#C6A14D;color:#000000;">#C6A14D</td></tr>
+<tr><td class="code">2.3.3</td><td class="label tertiary"><a class="def-link" href="#def-2.3.3">Short-rotation horticulture</a></td><td class="colour" rowspan="1" style="background:#E3BC67;color:#000000;">#E3BC67</td></tr>
+<tr><td class="code">2.3.4</td><td class="label tertiary"><a class="def-link" href="#def-2.3.4">Seasonal flowers and bulbs, and turf farming</a></td><td class="colour" rowspan="1" style="background:#FED57E;color:#000000;">#FED57E</td></tr>
+<tr><td class="code" rowspan="3">2.4.0</td><td class="label secondary" rowspan="3"><a class="def-link" href="#def-2.4.0">Perennial horticulture</a></td><td class="colour" rowspan="3" style="background:#9EA083;color:#000000;">#9EA083</td><td class="code">2.4.1</td><td class="label tertiary"><a class="def-link" href="#def-2.4.1">Tree crops</a></td><td class="colour" rowspan="1" style="background:#818367;color:#ffffff;">#818367</td></tr>
+<tr><td class="code">2.4.2</td><td class="label tertiary"><a class="def-link" href="#def-2.4.2">Vine fruits</a></td><td class="colour" rowspan="1" style="background:#9EA083;color:#000000;">#9EA083</td></tr>
+<tr><td class="code">2.4.3</td><td class="label tertiary"><a class="def-link" href="#def-2.4.3">Other perennial horticulture</a></td><td class="colour" rowspan="1" style="background:#BBBEA0;color:#000000;">#BBBEA0</td></tr>
+<tr><td class="code" rowspan="2">2.5.0</td><td class="label secondary" rowspan="2"><a class="def-link" href="#def-2.5.0">Intensive horticulture</a></td><td class="colour" rowspan="2" style="background:#4A4C39;color:#ffffff;">#4A4C39</td><td class="code">2.5.1</td><td class="label tertiary"><a class="def-link" href="#def-2.5.1">Production nurseries</a></td><td class="colour" rowspan="1" style="background:#565126;color:#ffffff;">#565126</td></tr>
+<tr><td class="code">2.5.2</td><td class="label tertiary"><a class="def-link" href="#def-2.5.2">Glasshouses/shadehouses</a></td><td class="colour" rowspan="1" style="background:#797346;color:#ffffff;">#797346</td></tr>
+<tr><td class="code" rowspan="5">2.6.0</td><td class="label secondary" rowspan="5"><a class="def-link" href="#def-2.6.0">Intensive animal production</a></td><td class="colour" rowspan="5" style="background:#C79588;color:#000000;">#C79588</td><td class="code">2.6.1</td><td class="label tertiary"><a class="def-link" href="#def-2.6.1">Intensive animal containment</a></td><td class="colour" rowspan="1" style="background:#9A6C60;color:#ffffff;">#9A6C60</td></tr>
+<tr><td class="code">2.6.2</td><td class="label tertiary"><a class="def-link" href="#def-2.6.2">Poultry farms</a></td><td class="colour" rowspan="1" style="background:#C79588;color:#000000;">#C79588</td></tr>
+<tr><td class="code">2.6.3</td><td class="label tertiary"><a class="def-link" href="#def-2.6.3">Piggeries</a></td><td class="colour" rowspan="1" style="background:#B08074;color:#ffffff;">#B08074</td></tr>
+<tr><td class="code">2.6.4</td><td class="label tertiary"><a class="def-link" href="#def-2.6.4">Horse studs</a></td><td class="colour" rowspan="1" style="background:#DDAA9D;color:#000000;">#DDAA9D</td></tr>
+<tr><td class="code">2.6.5</td><td class="label tertiary"><a class="def-link" href="#def-2.6.5">Aquaculture</a></td><td class="colour" rowspan="1" style="background:#F5C0B2;color:#000000;">#F5C0B2</td></tr>
+<tr><td class="code" rowspan="5">2.7.0</td><td class="label secondary" rowspan="5"><a class="def-link" href="#def-2.7.0">Water and wastewater</a></td><td class="colour" rowspan="5" style="background:#528582;color:#ffffff;">#528582</td><td class="code">2.7.1</td><td class="label tertiary"><a class="def-link" href="#def-2.7.1">Stock water</a></td><td class="colour" rowspan="1" style="background:#528582;color:#ffffff;">#528582</td></tr>
+<tr><td class="code">2.7.2</td><td class="label tertiary"><a class="def-link" href="#def-2.7.2">Effluent pond</a></td><td class="colour" rowspan="1" style="background:#205351;color:#ffffff;">#205351</td></tr>
+<tr><td class="code">2.7.3</td><td class="label tertiary"><a class="def-link" href="#def-2.7.3">Water treatment – land application</a></td><td class="colour" rowspan="1" style="background:#396B69;color:#ffffff;">#396B69</td></tr>
+<tr><td class="code">2.7.4</td><td class="label tertiary"><a class="def-link" href="#def-2.7.4">Water treatment – wetland</a></td><td class="colour" rowspan="1" style="background:#6C9F9C;color:#ffffff;">#6C9F9C</td></tr>
+<tr><td class="code">2.7.5</td><td class="label tertiary"><a class="def-link" href="#def-2.7.5">Irrigation reservoirs and canals</a></td><td class="colour" rowspan="1" style="background:#86BAB7;color:#000000;">#86BAB7</td></tr>
+<tr><td class="code" rowspan="4">2.8.0</td><td class="label secondary" rowspan="4"><a class="def-link" href="#def-2.8.0">Vacant and transitioning land</a></td><td class="colour" rowspan="4" style="background:#B6C8BC;color:#000000;">#B6C8BC</td><td class="code">2.8.1</td><td class="label tertiary"><a class="def-link" href="#def-2.8.1">Rehabilitating land</a></td><td class="colour" rowspan="1" style="background:#B6C8BC;color:#000000;">#B6C8BC</td></tr>
+<tr><td class="code">2.8.2</td><td class="label tertiary"><a class="def-link" href="#def-2.8.2">Abandoned land</a></td><td class="colour" rowspan="1" style="background:#CADCD0;color:#000000;">#CADCD0</td></tr>
+<tr><td class="code">2.8.3</td><td class="label tertiary"><a class="def-link" href="#def-2.8.3">Degraded land</a></td><td class="colour" rowspan="1" style="background:#94A599;color:#000000;">#94A599</td></tr>
+<tr><td class="code">2.8.4</td><td class="label tertiary"><a class="def-link" href="#def-2.8.4">No defined use</a></td><td class="colour" rowspan="1" style="background:#DBEDE0;color:#000000;">#DBEDE0</td></tr>
+<tr><td class="code" rowspan="1">2.9.0</td><td class="label secondary" rowspan="1"><a class="def-link" href="#def-2.9.0">Smallholder farm</a></td><td class="colour" rowspan="1" style="background:#E5D64F;color:#000000;">#E5D64F</td><td class="code"></td><td class="label tertiary"></td><td class="colour" rowspan="1"></td></tr>
+<tr class="new-primary"><td class="code" rowspan="44">3.0.0</td><td class="label primary" rowspan="44"><a class="def-link" href="#def-3.0.0">Built environment</a></td><td class="colour" rowspan="44" style="background:#8E7A78;color:#ffffff;">#8E7A78</td><td class="code" rowspan="4">3.1.0</td><td class="label secondary" rowspan="4"><a class="def-link" href="#def-3.1.0">Residential</a></td><td class="colour" rowspan="4" style="background:#815E5B;color:#ffffff;">#815E5B</td><td class="code">3.1.1</td><td class="label tertiary"><a class="def-link" href="#def-3.1.1">High-density residential</a></td><td class="colour" rowspan="1" style="background:#4C3B39;color:#ffffff;">#4C3B39</td></tr>
+<tr><td class="code">3.1.2</td><td class="label tertiary"><a class="def-link" href="#def-3.1.2">Medium-density residential</a></td><td class="colour" rowspan="1" style="background:#644E4C;color:#ffffff;">#644E4C</td></tr>
+<tr><td class="code">3.1.3</td><td class="label tertiary"><a class="def-link" href="#def-3.1.3">Low-density residential</a></td><td class="colour" rowspan="1" style="background:#815E5B;color:#ffffff;">#815E5B</td></tr>
+<tr><td class="code">3.1.4</td><td class="label tertiary"><a class="def-link" href="#def-3.1.4">Rural residential</a></td><td class="colour" rowspan="1" style="background:#A87A76;color:#ffffff;">#A87A76</td></tr>
+<tr><td class="code" rowspan="3">3.2.0</td><td class="label secondary" rowspan="3"><a class="def-link" href="#def-3.2.0">Public recreation and services</a></td><td class="colour" rowspan="3" style="background:#C19878;color:#000000;">#C19878</td><td class="code">3.2.1</td><td class="label tertiary"><a class="def-link" href="#def-3.2.1">Outdoor recreation</a></td><td class="colour" rowspan="1" style="background:#C19878;color:#000000;">#C19878</td></tr>
+<tr><td class="code">3.2.2</td><td class="label tertiary"><a class="def-link" href="#def-3.2.2">Indoor recreation</a></td><td class="colour" rowspan="1" style="background:#958273;color:#ffffff;">#958273</td></tr>
+<tr><td class="code">3.2.3</td><td class="label tertiary"><a class="def-link" href="#def-3.2.3">Community services</a></td><td class="colour" rowspan="1" style="background:#E09962;color:#000000;">#E09962</td></tr>
+<tr><td class="code" rowspan="6">3.3.0</td><td class="label secondary" rowspan="6"><a class="def-link" href="#def-3.3.0">Commercial</a></td><td class="colour" rowspan="6" style="background:#6E94BA;color:#ffffff;">#6E94BA</td><td class="code">3.3.1</td><td class="label tertiary"><a class="def-link" href="#def-3.3.1">Retail</a></td><td class="colour" rowspan="1" style="background:#6E94BA;color:#ffffff;">#6E94BA</td></tr>
+<tr><td class="code">3.3.2</td><td class="label tertiary"><a class="def-link" href="#def-3.3.2">Office</a></td><td class="colour" rowspan="1" style="background:#396285;color:#ffffff;">#396285</td></tr>
+<tr><td class="code">3.3.3</td><td class="label tertiary"><a class="def-link" href="#def-3.3.3">Hospitality</a></td><td class="colour" rowspan="1" style="background:#A4CAF2;color:#000000;">#A4CAF2</td></tr>
+<tr><td class="code">3.3.4</td><td class="label tertiary"><a class="def-link" href="#def-3.3.4">Entertainment</a></td><td class="colour" rowspan="1" style="background:#89AFD6;color:#000000;">#89AFD6</td></tr>
+<tr><td class="code">3.3.5</td><td class="label tertiary"><a class="def-link" href="#def-3.3.5">Healthcare</a></td><td class="colour" rowspan="1" style="background:#D0E5FC;color:#000000;">#D0E5FC</td></tr>
+<tr><td class="code">3.3.6</td><td class="label tertiary"><a class="def-link" href="#def-3.3.6">Transportation &amp; warehousing</a></td><td class="colour" rowspan="1" style="background:#547B9F;color:#ffffff;">#547B9F</td></tr>
+<tr><td class="code" rowspan="6">3.4.0</td><td class="label secondary" rowspan="6"><a class="def-link" href="#def-3.4.0">Manufacturing and industrial</a></td><td class="colour" rowspan="6" style="background:#9598A8;color:#ffffff;">#9598A8</td><td class="code">3.4.1</td><td class="label tertiary"><a class="def-link" href="#def-3.4.1">General purpose factory</a></td><td class="colour" rowspan="1" style="background:#9598A8;color:#ffffff;">#9598A8</td></tr>
+<tr><td class="code">3.4.2</td><td class="label tertiary"><a class="def-link" href="#def-3.4.2">Food processing factory</a></td><td class="colour" rowspan="1" style="background:#CED1E2;color:#000000;">#CED1E2</td></tr>
+<tr><td class="code">3.4.3</td><td class="label tertiary"><a class="def-link" href="#def-3.4.3">Major industrial complex</a></td><td class="colour" rowspan="1" style="background:#838695;color:#ffffff;">#838695</td></tr>
+<tr><td class="code">3.4.4</td><td class="label tertiary"><a class="def-link" href="#def-3.4.4">Sawmill</a></td><td class="colour" rowspan="1" style="background:#A8AABB;color:#000000;">#A8AABB</td></tr>
+<tr><td class="code">3.4.5</td><td class="label tertiary"><a class="def-link" href="#def-3.4.5">Farm buildings/infrastructure</a></td><td class="colour" rowspan="1" style="background:#E2E4F6;color:#000000;">#E2E4F6</td></tr>
+<tr><td class="code">3.4.6</td><td class="label tertiary"><a class="def-link" href="#def-3.4.6">Abattoirs</a></td><td class="colour" rowspan="1" style="background:#BBBDCE;color:#000000;">#BBBDCE</td></tr>
+<tr><td class="code" rowspan="8">3.5.0</td><td class="label secondary" rowspan="8"><a class="def-link" href="#def-3.5.0">Utilities</a></td><td class="colour" rowspan="8" style="background:#955085;color:#ffffff;">#955085</td><td class="code">3.5.1</td><td class="label tertiary"><a class="def-link" href="#def-3.5.1">Fuel powered electricity generation</a></td><td class="colour" rowspan="1" style="background:#7652A3;color:#ffffff;">#7652A3</td></tr>
+<tr><td class="code">3.5.2</td><td class="label tertiary"><a class="def-link" href="#def-3.5.2">Hydroelectricity generation</a></td><td class="colour" rowspan="1" style="background:#9670C4;color:#ffffff;">#9670C4</td></tr>
+<tr><td class="code">3.5.3</td><td class="label tertiary"><a class="def-link" href="#def-3.5.3">Wind electricity generation</a></td><td class="colour" rowspan="1" style="background:#D6B2FD;color:#000000;">#D6B2FD</td></tr>
+<tr><td class="code">3.5.4</td><td class="label tertiary"><a class="def-link" href="#def-3.5.4">Solar electricity generation</a></td><td class="colour" rowspan="1" style="background:#B78FE5;color:#000000;">#B78FE5</td></tr>
+<tr><td class="code">3.5.5</td><td class="label tertiary"><a class="def-link" href="#def-3.5.5">Electricity substations and transmission</a></td><td class="colour" rowspan="1" style="background:#955085;color:#ffffff;">#955085</td></tr>
+<tr><td class="code">3.5.6</td><td class="label tertiary"><a class="def-link" href="#def-3.5.6">Gas treatment, storage, and transmission</a></td><td class="colour" rowspan="1" style="background:#B36CA2;color:#ffffff;">#B36CA2</td></tr>
+<tr><td class="code">3.5.7</td><td class="label tertiary"><a class="def-link" href="#def-3.5.7">Water extraction and transmission</a></td><td class="colour" rowspan="1" style="background:#D289BF;color:#000000;">#D289BF</td></tr>
+<tr><td class="code">3.5.8</td><td class="label tertiary"><a class="def-link" href="#def-3.5.8">Navigation and communication</a></td><td class="colour" rowspan="1" style="background:#F2A6DE;color:#000000;">#F2A6DE</td></tr>
+<tr><td class="code" rowspan="4">3.6.0</td><td class="label secondary" rowspan="4"><a class="def-link" href="#def-3.6.0">Transportation</a></td><td class="colour" rowspan="4" style="background:#72737E;color:#ffffff;">#72737E</td><td class="code">3.6.1</td><td class="label tertiary"><a class="def-link" href="#def-3.6.1">Airports/aerodromes</a></td><td class="colour" rowspan="1" style="background:#75777E;color:#ffffff;">#75777E</td></tr>
+<tr><td class="code">3.6.2</td><td class="label tertiary"><a class="def-link" href="#def-3.6.2">Roads</a></td><td class="colour" rowspan="1" style="background:#494B51;color:#ffffff;">#494B51</td></tr>
+<tr><td class="code">3.6.3</td><td class="label tertiary"><a class="def-link" href="#def-3.6.3">Railways</a></td><td class="colour" rowspan="1" style="background:#33353A;color:#ffffff;">#33353A</td></tr>
+<tr><td class="code">3.6.4</td><td class="label tertiary"><a class="def-link" href="#def-3.6.4">Ports and water transport</a></td><td class="colour" rowspan="1" style="background:#61636A;color:#ffffff;">#61636A</td></tr>
+<tr><td class="code" rowspan="5">3.7.0</td><td class="label secondary" rowspan="5"><a class="def-link" href="#def-3.7.0">Mining</a></td><td class="colour" rowspan="5" style="background:#E1CEA7;color:#000000;">#E1CEA7</td><td class="code">3.7.1</td><td class="label tertiary"><a class="def-link" href="#def-3.7.1">Mines</a></td><td class="colour" rowspan="1" style="background:#836639;color:#ffffff;">#836639</td></tr>
+<tr><td class="code">3.7.2</td><td class="label tertiary"><a class="def-link" href="#def-3.7.2">Quarries</a></td><td class="colour" rowspan="1" style="background:#9E7E51;color:#ffffff;">#9E7E51</td></tr>
+<tr><td class="code">3.7.3</td><td class="label tertiary"><a class="def-link" href="#def-3.7.3">Tailings</a></td><td class="colour" rowspan="1" style="background:#BA9869;color:#000000;">#BA9869</td></tr>
+<tr><td class="code">3.7.4</td><td class="label tertiary"><a class="def-link" href="#def-3.7.4">Evaporation basins</a></td><td class="colour" rowspan="1" style="background:#FCD7A5;color:#000000;">#FCD7A5</td></tr>
+<tr><td class="code">3.7.5</td><td class="label tertiary"><a class="def-link" href="#def-3.7.5">Extractive industry not in use</a></td><td class="colour" rowspan="1" style="background:#D7B383;color:#000000;">#D7B383</td></tr>
+<tr><td class="code" rowspan="5">3.8.0</td><td class="label secondary" rowspan="5"><a class="def-link" href="#def-3.8.0">Waste treatment and disposal</a></td><td class="colour" rowspan="5" style="background:#E77148;color:#ffffff;">#E77148</td><td class="code">3.8.1</td><td class="label tertiary"><a class="def-link" href="#def-3.8.1">Landfills</a></td><td class="colour" rowspan="1" style="background:#AC3F25;color:#ffffff;">#AC3F25</td></tr>
+<tr><td class="code">3.8.2</td><td class="label tertiary"><a class="def-link" href="#def-3.8.2">Transfer stations and recycling facilities</a></td><td class="colour" rowspan="1" style="background:#E97453;color:#ffffff;">#E97453</td></tr>
+<tr><td class="code">3.8.3</td><td class="label tertiary"><a class="def-link" href="#def-3.8.3">Municipal wastewater</a></td><td class="colour" rowspan="1" style="background:#CB593B;color:#ffffff;">#CB593B</td></tr>
+<tr><td class="code">3.8.4</td><td class="label tertiary"><a class="def-link" href="#def-3.8.4">Wastewater treatment – land application</a></td><td class="colour" rowspan="1" style="background:#FF9475;color:#000000;">#FF9475</td></tr>
+<tr><td class="code">3.8.5</td><td class="label tertiary"><a class="def-link" href="#def-3.8.5">Stormwater management</a></td><td class="colour" rowspan="1" style="background:#FEBDAA;color:#000000;">#FEBDAA</td></tr>
+<tr><td class="code" rowspan="3">3.9.0</td><td class="label secondary" rowspan="3"><a class="def-link" href="#def-3.9.0">Vacant and transitioning land</a></td><td class="colour" rowspan="3" style="background:#D69B97;color:#000000;">#D69B97</td><td class="code">3.9.1</td><td class="label tertiary"><a class="def-link" href="#def-3.9.1">Brownfield development</a></td><td class="colour" rowspan="1" style="background:#87636E;color:#ffffff;">#87636E</td></tr>
+<tr><td class="code">3.9.2</td><td class="label tertiary"><a class="def-link" href="#def-3.9.2">Greenfield development</a></td><td class="colour" rowspan="1" style="background:#AC8792;color:#ffffff;">#AC8792</td></tr>
+<tr><td class="code">3.9.3</td><td class="label tertiary"><a class="def-link" href="#def-3.9.3">Idle and derelict land</a></td><td class="colour" rowspan="1" style="background:#D3ACB7;color:#000000;">#D3ACB7</td></tr>
+</tbody>
+</table>
+<section class="definitions"><h2 class="definitions-title">Class definitions</h2>
+<h2 class="first-primary" id="def-1.0.0"><span class="code">1.0.0</span> Conservation and Minimal Use <span class="swatch" style="background:#7B6DB5;color:#ffffff;">#7B6DB5</span></h2>
+<p class="definition">Land that has a relatively low level of human intervention. The land may be formally reserved by government for conservation purposes, or conserved through other legal or administrative arrangements. Areas may have multiple uses but nature conservation is a central consideration. (Some land may be unused because of a deliberate decision of the government or landowner, or due to circumstances).</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Areas with lower levels of biodiversity protection are anticipated to have other primary uses, but biodiversity protection ranking could be captured as an ancillary use with class 1.1.4 and 1.1.5.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Where a classification is based on information about legal protection, the relevant information (e.g. the Act) should be mentioned in the `comment` field.</div>
+<h3 class="first-secondary" id="def-1.1.0"><span class="code">1.1.0</span> Nature conservation <span class="swatch" style="background:#6A51A3;color:#ffffff;">#6A51A3</span></h3>
+<p class="definition">Nature conservation classes are determined by the classification scheme adopted for the Protected Areas Network of New Zealand (PAN-NZ).</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-1.1.1">
+<p class="tertiary-head"><span class="code">1.1.1</span> <strong>Strict nature reserve</strong> <span class="swatch" style="background:#3F007D;color:#ffffff;">#3F007D</span></p>
+<p class="definition">Protected area managed mainly for science. An area of land possessing outstanding or representative ecosystems, geological or physiological features or species, which is available primarily for scientific research and/or environmental monitoring.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category Ia: strict nature reserve.</p>
+</div><div class="tertiary-item" id="def-1.1.2">
+<p class="tertiary-head"><span class="code">1.1.2</span> <strong>Wilderness area</strong> <span class="swatch" style="background:#54278F;color:#ffffff;">#54278F</span></p>
+<p class="definition">Protected area managed mainly for wilderness protection. A large area of unmodified or slightly modified land, retaining its natural character and influence, without permanent or significant habitation, which is protected and managed so as to preserve its natural condition.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category Ib: wilderness area.</p>
+</div><div class="tertiary-item" id="def-1.1.3">
+<p class="tertiary-head"><span class="code">1.1.3</span> <strong>National Park</strong> <span class="swatch" style="background:#6A51A3;color:#ffffff;">#6A51A3</span></p>
+<p class="definition">Protected area managed mainly for ecosystem conservation and recreation. A natural area of land, designated to:
+
+  a) protect the ecological integrity of one or more ecosystems for the current and future generations;
+
+  b) exclude exploitation or occupation detrimental to the purposes of designation of the area; and
+
+  c) provide a foundation for spiritual, scientific, educational, recreational and visitor opportunities, all of which must be environmentally and culturally compatible.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category Ib: national park.</p>
+</div><div class="tertiary-item" id="def-1.1.4">
+<p class="tertiary-head"><span class="code">1.1.4</span> <strong>Natural feature protection</strong> <span class="swatch" style="background:#807DBA;color:#ffffff;">#807DBA</span></p>
+<p class="definition">Protected area managed for conservation of specific natural features. An area containing one or more specific natural or cultural features that are of outstanding value because of their inherent rarity, representative or aesthetic qualities, or cultural significance.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category III: Natural Monument or Feature.</p>
+</div><div class="tertiary-item" id="def-1.1.5">
+<p class="tertiary-head"><span class="code">1.1.5</span> <strong>Habitat or species management area</strong> <span class="swatch" style="background:#9E9AC8;color:#000000;">#9E9AC8</span></p>
+<p class="definition">Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area.</p>
+</div><div class="tertiary-item" id="def-1.1.6">
+<p class="tertiary-head"><span class="code">1.1.6</span> <strong>Protected landscape</strong> <span class="swatch" style="background:#BCBDDC;color:#000000;">#BCBDDC</span></p>
+<p class="definition">Protected area managed mainly for landscape conservation and recreation. An area of land where the interaction of people and nature over time has produced a distinct character with significant aesthetic, cultural or ecological value, and often high biodiversity.</p>
+<p class="source">Source: IUCN (2008) Protected Areas Management Categories, Category V: Protected Landscape/Seascape.</p>
+</div><div class="tertiary-item" id="def-1.1.7">
+<p class="tertiary-head"><span class="code">1.1.7</span> <strong>Other conserved area</strong> <span class="swatch" style="background:#DADAEB;color:#000000;">#DADAEB</span></p>
+<p class="definition">Land under forms of nature conservation protection that fall outside the scope of the CAPAD classification. This includes heritage agreements, voluntary conservation arrangements, registered property agreements, and recreation areas with primarily native cover .</p>
+<div class="callout note"><span class="callout-label">Scope note</span> If the recreation area is primarily cleared or non-native cover assign to 3.2.1 ‘Outdoor recreation’</div>
+</div></div>
+<h3 id="def-1.2.0"><span class="code">1.2.0</span> Cultural and natural heritage <span class="swatch" style="background:#AD2D4A;color:#ffffff;">#AD2D4A</span></h3>
+<p class="definition">Conservation classes are for purposes other than biodiversity protecton.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-1.2.1">
+<p class="tertiary-head"><span class="code">1.2.1</span> <strong>Indigenous cultural heritage</strong> <span class="swatch" style="background:#870330;color:#ffffff;">#870330</span></p>
+<p class="definition">Indigenous cultural heritage sites and areas (e.g. historical pā sites, New Zealand land wars sites, and other indigenous heritage sites).</p>
+</div><div class="tertiary-item" id="def-1.2.2">
+<p class="tertiary-head"><span class="code">1.2.2</span> <strong>Cultural heritage</strong> <span class="swatch" style="background:#AD2D4A;color:#ffffff;">#AD2D4A</span></p>
+<p class="definition">Cultural heritage areas (e.g. historical mining sites, selected DOC &#x27;iconic sites&#x27;, Toru Whenua and other cultural landmarks).</p>
+</div><div class="tertiary-item" id="def-1.2.3">
+<p class="tertiary-head"><span class="code">1.2.3</span> <strong>Natural heritage</strong> <span class="swatch" style="background:#DD5A70;color:#ffffff;">#DD5A70</span></p>
+<p class="definition">Protected areas for the conservation of specific natural features and landscapes (e.g. UNESCO Global Geoparks).</p>
+</div></div>
+<h3 id="def-1.3.0"><span class="code">1.3.0</span> Minimal use from relatively natural environments <span class="swatch" style="background:#FFC77A;color:#000000;">#FFC77A</span></h3>
+<p class="definition">This class includes land that is subject to relatively low levels of intervention or that is largely unused in the context of prime use or use for resource protection. This land may be covered with indigenous or exotic plant species. It includes land where the structure of the native vegetation generally remains intact despite deliberate use, although the floristics of the vegetation may have changed markedly (e.g. grazing on native tussock land).</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Where native grasses have been deliberately and extensively replaced with other species, the land use should not be classified under class 1.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-1.3.1">
+<p class="tertiary-head"><span class="code">1.3.1</span> <strong>Surface water supply</strong> <span class="swatch" style="background:#50816D;color:#ffffff;">#50816D</span></p>
+<p class="definition">An area managed as a catchment for water supply.</p>
+</div><div class="tertiary-item" id="def-1.3.2">
+<p class="tertiary-head"><span class="code">1.3.2</span> <strong>Ground water</strong> <span class="swatch" style="background:#79AB96;color:#000000;">#79AB96</span></p>
+<p class="definition">An area managed as an aquifer recharge zone.</p>
+</div><div class="tertiary-item" id="def-1.3.3">
+<p class="tertiary-head"><span class="code">1.3.3</span> <strong>Grazing native vegetation</strong> <span class="swatch" style="background:#FFD5B1;color:#000000;">#FFD5B1</span></p>
+<p class="definition">Land uses based on grazing by domestic stock on native vegetation where there has been limited or no deliberate attempt at pasture modification (e.g. native tussock grazing). Some change in species composition may have occurred.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> This is probably limited to South Island high-country farms. Verification (e.g. assessment of vegetation on grazed land) to assess the extent of modification is required. ALUM specifies this class when there is greater than 50% dominant native species, although this criterion needs to be confirmed as being appropriate in a New Zealand context.</div>
+</div><div class="tertiary-item" id="def-1.3.4">
+<p class="tertiary-head"><span class="code">1.3.4</span> <strong>Production from indigenous vegetation</strong> <span class="swatch" style="background:#C6894C;color:#ffffff;">#C6894C</span></p>
+<p class="definition">Commercial production from retained (non-plantation) native forests and related activities on public and private land (e.g. selective native timber production without clearfelling, and other non-sawlong, non-pulpwood, native forest products including oil, wildflowers, firewood, fenceposts, and mānuka/kānuka honey).</p>
+<div class="callout changed"><span class="callout-label">Change note</span> The definition of this class was clarified in NZLUM v0.4.0 by explicitly referring to non-plantation native forests.</div>
+</div><div class="tertiary-item" id="def-1.3.5">
+<p class="tertiary-head"><span class="code">1.3.5</span> <strong>Customary use</strong> <span class="swatch" style="background:#A36B2E;color:#ffffff;">#A36B2E</span></p>
+<p class="definition">Natural environments associated with traditional and sustainable Indigenous food-gathering practices (mahinga kai).</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This may include land zoned for Māori purposes, and should only describe contemporary, not historical, use.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> This is often an ancillary use; assign only if customary use is the prime use of the land.</div>
+</div><div class="tertiary-item" id="def-1.3.6">
+<p class="tertiary-head"><span class="code">1.3.6</span> <strong>Defence land</strong> <span class="swatch" style="background:#FF9E17;color:#000000;">#FF9E17</span></p>
+<p class="definition">Natural areas allocated to field training, weapons testing, and other field defence uses, predominantly in rural areas.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Areas associated with buildings or more built environments on defence land are captured under an urban class.</div>
+<div class="callout example"><span class="callout-label">Example</span> Kaipara Air Weapons Range</div>
+<div class="callout example"><span class="callout-label">Example</span> Waiouru Military Camp</div>
+</div><div class="tertiary-item" id="def-1.3.7">
+<p class="tertiary-head"><span class="code">1.3.7</span> <strong>Environmental &amp; infrastructure protection</strong> <span class="swatch" style="background:#FBB979;color:#000000;">#FBB979</span></p>
+<p class="definition">Land, usually under vegetative cover, used for non-production or environmental purposes (e.g. prevention of land degradation, windbreaks, shade, shelter). Includes land with a primary purpose of flood management (e.g. stop banks, spillways).</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This is not limited to indigenous vegetation.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Land planted for environmental and infrastructure protection should be captured under 2.1.4.</div>
+</div><div class="tertiary-item" id="def-1.3.8">
+<p class="tertiary-head"><span class="code">1.3.8</span> <strong>Carbon forest</strong> <span class="swatch" style="background:#2E5E4B;color:#ffffff;">#2E5E4B</span></p>
+<p class="definition">Retained (non-planted) indigenous vegetation set aside for carbon credits.</p>
+</div></div>
+<h3 id="def-1.4.0"><span class="code">1.4.0</span> Unused and transitioning land <span class="swatch" style="background:#C8C69F;color:#000000;">#C8C69F</span></h3>
+<p class="definition">Land unused for rural production and urban development, without particular conservation instruments, and without any apparent built structure; or land that is transitioning towards a vacant and considerably natural state.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Corridors and roadside areas may fit under this class.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Unused land (in the sense of non-productive, non-conservation or non-built uses), such as cliffs, rock faces, boulders, and tors, and where there are relatively low levels of disturbance, may be included.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Does not per se include land undergoing natural succession in the context of changing plant species.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/36">https://github.com/manaakiwhenua/nzsluc/issues/36</a></div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-1.4.1">
+<p class="tertiary-head"><span class="code">1.4.1</span> <strong>Rehabilitating land</strong> <span class="swatch" style="background:#B2AC8B;color:#000000;">#B2AC8B</span></p>
+<p class="definition">Degraded land (e.g. due to erosion or flood damage) that is being actively rehabilitated through planting with indigenous or exotic species to return land to a natural state.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This may include riparian plantings.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/36">https://github.com/manaakiwhenua/nzsluc/issues/36</a></div>
+</div><div class="tertiary-item" id="def-1.4.2">
+<p class="tertiary-head"><span class="code">1.4.2</span> <strong>Unused land</strong> <span class="swatch" style="background:#DFD8B6;color:#000000;">#DFD8B6</span></p>
+<p class="definition">Land that is unused or unusable for productive agriculture or urban uses, such as cliffs, rock faces, boulders, and tors, where there are relatively low levels of disturbance.</p>
+<div class="callout example"><span class="callout-label">Example</span> A vacant farm, apparently undergoing natural succession.</div>
+<div class="callout example"><span class="callout-label">Example</span> CERA Red Zone land in Christchurch, abandoned after the 2011 Canterbury earthquake and presently pending use.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/36">https://github.com/manaakiwhenua/nzsluc/issues/36</a></div>
+</div></div>
+<h2 id="def-2.0.0"><span class="code">2.0.0</span> Production agriculture and plantations <span class="swatch" style="background:#6E8C44;color:#ffffff;">#6E8C44</span></h2>
+<p class="definition">Land used principally for primary production, where native vegetation has largely been replaced by introduced species through clearing, the sowing of new species, the application of fertilisers, or the dominance of volunteer species. Includes plantation forests, pasture production for stock, cropping and fodder production, and horticultural production.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> If there is evidence of irrigation infrastructure or water-take consents, record irrigation as a management practice, even if irrigation water has not been recently applied.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Fallow or ploughed land should be assigned to the most likely land use based on the dominant activity conducted in comparable nearby areas or other available evidence. Fallow or ploughed land should be allocated to the relevant pasture, cropping or horticultural class (rather than using land in transition). The fallow or ploughed status should be recorded in the management field.</div>
+<h3 class="first-secondary" id="def-2.1.0"><span class="code">2.1.0</span> Plantation forests <span class="swatch" style="background:#122112;color:#ffffff;">#122112</span></h3>
+<p class="definition">Land on which plantations of trees or shrubs (native or exotic species) have been established (i.e. planted) for production, or environmental and resource protection purposes, including carbon forestry.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This includes farm forestry and may consist of monocultures or mixed species.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.1.1">
+<p class="tertiary-head"><span class="code">2.1.1</span> <strong>Exotic plantation forestry</strong> <span class="swatch" style="background:#0F3D1A;color:#ffffff;">#0F3D1A</span></p>
+<p class="definition">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (exotic species).</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</div>
+</div><div class="tertiary-item" id="def-2.1.2">
+<p class="tertiary-head"><span class="code">2.1.2</span> <strong>Indigenous plantation forestry</strong> <span class="swatch" style="background:#23502B;color:#ffffff;">#23502B</span></p>
+<p class="definition">An area managed for pulpwood or saw-log production, or for carbon sequestration and carbon credits (native species).</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Specific additional attributes that could be captured in comments or supplementary attributes are plantation age, rotation number, and species.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Consideration of carbon sequestration and carbon credits were added in NZLUM v0.4.0</div>
+</div><div class="tertiary-item" id="def-2.1.3">
+<p class="tertiary-head"><span class="code">2.1.3</span> <strong>Other production uses</strong> <span class="swatch" style="background:#37633D;color:#ffffff;">#37633D</span></p>
+<p class="definition">An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+</div><div class="tertiary-item" id="def-2.1.4">
+<p class="tertiary-head"><span class="code">2.1.4</span> <strong>Planted environmental &amp; infrastructure protection</strong> <span class="swatch" style="background:#4A774F;color:#ffffff;">#4A774F</span></p>
+<p class="definition">An area managed for environmental and indirect production uses (e.g. prevention of land degradation, windbreaks, shade, and shelter) where trees or shrubs have been planted.</p>
+</div></div>
+<h3 id="def-2.2.0"><span class="code">2.2.0</span> Grazing modified pasture systems <span class="swatch" style="background:#769B5C;color:#ffffff;">#769B5C</span></h3>
+<p class="definition">Grazing pasture and/or forage systems based on significant active modification or replacement of the natural vegetation.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Land under pasture at the time of mapping may be in a rotation system, so that at another time the same area may be, for example, under cropping.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Dairy support is land that is used to support non-lactating dairy stock (dry cows, heifers and calves). It will include any feed required, and will often include winter crops and potentially summer crops (location/irrigation dependent), along with cereal crops, such as maize, barley, and wheat. It can also include feed that is cut and carried to the milking platform. Dairy support land that is not actively used for grazing should be classified as an arable use.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The ability to distinguish between dairy and dry-stock production is provided by including the relevant commodity information, such as `cattle dairy`, `cattle beef`, `sheep wool`, `sheep meat`, etc. Multiple commodities should be recorded if appropriate. Crops used in rotation should also be recorded as commodities, if known.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.2.1">
+<p class="tertiary-head"><span class="code">2.2.1</span> <strong>Dairy</strong> <span class="swatch" style="background:#5D8144;color:#ffffff;">#5D8144</span></p>
+<p class="definition">Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Where the land is permanently used for dry-stock grazing, it should be classified under dry-stock land use.</div>
+</div><div class="tertiary-item" id="def-2.2.2">
+<p class="tertiary-head"><span class="code">2.2.2</span> <strong>Intensive dry stock</strong> <span class="swatch" style="background:#769B5C;color:#ffffff;">#769B5C</span></p>
+<p class="definition">Non-milking platform grazing land with higher inputs (e.g. fertiliser), higher likelihood of irrigation, and higher stocking rates; typically on flat or rolling terrain.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Land used for high-intensity dry-stock grazing may include rotations for arable or winter forage crops, as well as grazing of non-lactating (dry) dairy cattle, beef cattle, sheep, and cattle breeding.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Stock density is an ideal attribute to assist in classification of intensive vs extensive dry stock; physiography (i.e. flat/hill/high country) can be used as a proxy where stock density data is absent.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> A prior definition of this classes treated deer, goats, and horses as extensive by definition; it is now recogised that such systems can also be intensive.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/66">https://github.com/manaakiwhenua/nzsluc/issues/66</a></div>
+</div><div class="tertiary-item" id="def-2.2.3">
+<p class="tertiary-head"><span class="code">2.2.3</span> <strong>Extensive dry stock</strong> <span class="swatch" style="background:#91B675;color:#000000;">#91B675</span></p>
+<p class="definition">Grazing on modified pastures with relatively fewer inputs, lower likelihood of irrigation, and lower stocking rates; more likely on hill, hard-hill, or high-country terrain.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Grazing livestock other than dairy, sheep or beef should usually be captured in this class (though it does not exclude sheep or beef)</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Where there is a high proportion of indigenous vegetation for grazing land, land use should be classified as grazing native vegetation.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Arable or winter forage crops are unlikely to be common rotations in this land-use category</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+</div></div>
+<h3 id="def-2.3.0"><span class="code">2.3.0</span> Short-rotation and seasonal cropping <span class="swatch" style="background:#C6A14D;color:#000000;">#C6A14D</span></h3>
+<p class="definition">This class includes agricultural practices characterised by the cultivation of crops with rapid turnover cycles and seasonal planting patterns, typically optimised for efficient land use and high-yield production.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This class encompasses agricultural activities such as the cultivation of fast-growing crops such as maize, barley, and certain vegetables, often rotated on short-term cycles to maintain soil health and maximise productivity.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Arable, and mixed livestock cropping, integrating both crop cultivation and animal husbandry, are also included in this class.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> The period of rotation to be considered (e.g. in the listing of commodities, or when deciding whether there is any rotation at all) is five years.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> If the type of crop is known, record this in the commodity field. For mixed arable and livestock operations, both commodities should be captured as the primary commodity (neither is ancillary).</div>
+<div class="callout changed"><span class="callout-label">Change note</span> The explicit five year periodicity was added in v0.4.0.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/65">https://github.com/manaakiwhenua/nzsluc/issues/65</a></div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.3.1">
+<p class="tertiary-head"><span class="code">2.3.1</span> <strong>Arable cropping</strong> <span class="swatch" style="background:#A98734;color:#ffffff;">#A98734</span></p>
+<p class="definition">Predominantly grain, seed, or fodder crops (and over time may include vegetable rotations). May be used for dairy support.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+</div><div class="tertiary-item" id="def-2.3.2">
+<p class="tertiary-head"><span class="code">2.3.2</span> <strong>Arable and mixed livestock cropping</strong> <span class="swatch" style="background:#C6A14D;color:#000000;">#C6A14D</span></p>
+<p class="definition">Predominantly grain, seed, or fodder crops; over time it may include short-term (c. 1–3 years) pasture and livestock rotations, and/or vegetable rotations. Pasture and livestock rotations may occur less than 50% of the time..</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Includes maize, barley, wheat, peas, other grain and seed crops, and fodder crops. May be used for dairy support (which should be recorded as a management practice, if this is known).</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+</div><div class="tertiary-item" id="def-2.3.3">
+<p class="tertiary-head"><span class="code">2.3.3</span> <strong>Short-rotation horticulture</strong> <span class="swatch" style="background:#E3BC67;color:#000000;">#E3BC67</span></p>
+<p class="definition">Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> May include livestock rotations, but this is considered less likely</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+</div><div class="tertiary-item" id="def-2.3.4">
+<p class="tertiary-head"><span class="code">2.3.4</span> <strong>Seasonal flowers and bulbs, and turf farming</strong> <span class="swatch" style="background:#FED57E;color:#000000;">#FED57E</span></p>
+<p class="definition">Cultivation of seasonal ornamental flowers, bulbs, and turf grass for commercial purposes.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> This class encompasses activities such as the cultivation of flowers and bulbs for seasonal markets, landscaping, and turf-farming for sports fields, lawns, and recreational areas.</div>
+</div></div>
+<h3 id="def-2.4.0"><span class="code">2.4.0</span> Perennial horticulture <span class="swatch" style="background:#9EA083;color:#000000;">#9EA083</span></h3>
+<p class="definition">Crop plants living for more than 2 years that are intensively cultivated, usually involving a relatively high degree of nutrient, weed, and moisture control.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Management practices such as irrigation or netting can be recorded as management practices.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Crop type can be recorded as the commodity and used to identify key crops (e.g. kiwifruit, avocados, and grapes).</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.4.1">
+<p class="tertiary-head"><span class="code">2.4.1</span> <strong>Tree crops</strong> <span class="swatch" style="background:#818367;color:#ffffff;">#818367</span></p>
+<p class="definition">Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.</div>
+</div><div class="tertiary-item" id="def-2.4.2">
+<p class="tertiary-head"><span class="code">2.4.2</span> <strong>Vine fruits</strong> <span class="swatch" style="background:#9EA083;color:#000000;">#9EA083</span></p>
+<p class="definition">Fruit-bearing plants that grow on vines or trailing stems, often requiring support structures (e.g. trellises, arbours). These plants produce fruits that typically hang from vines and may include grapes, kiwifruit, and passionfruit. Vine fruit cultivation involves specific management practices such as pruning, training, trellising, and pest and disease control specific to vine plants.</p>
+</div><div class="tertiary-item" id="def-2.4.3">
+<p class="tertiary-head"><span class="code">2.4.3</span> <strong>Other perennial horticulture</strong> <span class="swatch" style="background:#BBBEA0;color:#000000;">#BBBEA0</span></p>
+<p class="definition">Perennial plants beyond tree crops and vine fruits, such as berries (e.g. strawberries, blueberries), perennial herbs (e.g. lavender, rosemary), and ornamental perennials (e.g. roses, lilies).</p>
+</div></div>
+<h3 id="def-2.5.0"><span class="code">2.5.0</span> Intensive horticulture <span class="swatch" style="background:#4A4C39;color:#ffffff;">#4A4C39</span></h3>
+<p class="definition">Intensive forms of plant production, often with special-purpose improvements used for horticultural production.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Record management practices such as hydroponic systems, irrigation, and netting, if known.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The specific commodity or commodities should be noted if known.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.5.1">
+<p class="tertiary-head"><span class="code">2.5.1</span> <strong>Production nurseries</strong> <span class="swatch" style="background:#565126;color:#ffffff;">#565126</span></p>
+<p class="definition">Specialised intensive horticultural facilities dedicated to propagating and growing plants for commercial purposes (outdoor or under cover).</p>
+<div class="callout note"><span class="callout-label">Scope note</span> These nurseries focus on cultivating a wide range of plant species, including ornamentals, fruit trees, and shrubs, typically for landscaping, reforestation, or ornamental purposes.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Nurseries may be outdoor (exposed) or under cover. Production nurseries may employ advanced techniques such as grafting, tissue culture, and controlled environment systems to optimise plant growth and quality.</div>
+</div><div class="tertiary-item" id="def-2.5.2">
+<p class="tertiary-head"><span class="code">2.5.2</span> <strong>Glasshouses/shadehouses</strong> <span class="swatch" style="background:#797346;color:#ffffff;">#797346</span></p>
+<p class="definition">Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants.</div>
+</div></div>
+<h3 id="def-2.6.0"><span class="code">2.6.0</span> Intensive animal production <span class="swatch" style="background:#C79588;color:#000000;">#C79588</span></h3>
+<p class="definition">Intensive forms of non-pastoral animal production, livestock production facilities, or animal-holding yards.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Record animal types as commodities, if known.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> The management field can be used to record practices such as free range or organic.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.6.1">
+<p class="tertiary-head"><span class="code">2.6.1</span> <strong>Intensive animal containment</strong> <span class="swatch" style="background:#9A6C60;color:#ffffff;">#9A6C60</span></p>
+<p class="definition">Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes.</p>
+</div><div class="tertiary-item" id="def-2.6.2">
+<p class="tertiary-head"><span class="code">2.6.2</span> <strong>Poultry farms</strong> <span class="swatch" style="background:#C79588;color:#000000;">#C79588</span></p>
+<p class="definition">Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production.</p>
+</div><div class="tertiary-item" id="def-2.6.3">
+<p class="tertiary-head"><span class="code">2.6.3</span> <strong>Piggeries</strong> <span class="swatch" style="background:#B08074;color:#ffffff;">#B08074</span></p>
+<p class="definition">Facilities designed for the intensive rearing of pigs.</p>
+</div><div class="tertiary-item" id="def-2.6.4">
+<p class="tertiary-head"><span class="code">2.6.4</span> <strong>Horse studs</strong> <span class="swatch" style="background:#DDAA9D;color:#000000;">#DDAA9D</span></p>
+<p class="definition">Establishments focused on the breeding and raising of horses.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Applies to the intensive part of horse studs; relatively more extensive and pastoral aspects are not included.</div>
+</div><div class="tertiary-item" id="def-2.6.5">
+<p class="tertiary-head"><span class="code">2.6.5</span> <strong>Aquaculture</strong> <span class="swatch" style="background:#F5C0B2;color:#000000;">#F5C0B2</span></p>
+<p class="definition">Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc.</p>
+</div></div>
+<h3 id="def-2.7.0"><span class="code">2.7.0</span> Water and wastewater <span class="swatch" style="background:#528582;color:#ffffff;">#528582</span></h3>
+<p class="definition">Built water features associated with agricultural use.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.7.1">
+<p class="tertiary-head"><span class="code">2.7.1</span> <strong>Stock water</strong> <span class="swatch" style="background:#528582;color:#ffffff;">#528582</span></p>
+<p class="definition">Reservoirs or farm dams on agricultural land for the purpose of supplying drinking-water for stock.</p>
+</div><div class="tertiary-item" id="def-2.7.2">
+<p class="tertiary-head"><span class="code">2.7.2</span> <strong>Effluent pond</strong> <span class="swatch" style="background:#205351;color:#ffffff;">#205351</span></p>
+<p class="definition">Effluent ponds typically associated with dairying.</p>
+</div><div class="tertiary-item" id="def-2.7.3">
+<p class="tertiary-head"><span class="code">2.7.3</span> <strong>Water treatment – land application</strong> <span class="swatch" style="background:#396B69;color:#ffffff;">#396B69</span></p>
+<p class="definition">Land used for effluent disposal</p>
+<div class="callout note"><span class="callout-label">Scope note</span> probably an ancillary use where some form of grazing is the primary use.</div>
+</div><div class="tertiary-item" id="def-2.7.4">
+<p class="tertiary-head"><span class="code">2.7.4</span> <strong>Water treatment – wetland</strong> <span class="swatch" style="background:#6C9F9C;color:#ffffff;">#6C9F9C</span></p>
+<p class="definition">Constructed or natural wetlands used to improve water quality prior to discharge.</p>
+</div><div class="tertiary-item" id="def-2.7.5">
+<p class="tertiary-head"><span class="code">2.7.5</span> <strong>Irrigation reservoirs and canals</strong> <span class="swatch" style="background:#86BAB7;color:#000000;">#86BAB7</span></p>
+<p class="definition">Land used for water storage, management, or distribution intended for agricultural purposes; areas allocated for irrigation for agricultural purposes.</p>
+</div></div>
+<h3 id="def-2.8.0"><span class="code">2.8.0</span> Vacant and transitioning land <span class="swatch" style="background:#B6C8BC;color:#000000;">#B6C8BC</span></h3>
+<p class="definition">As a subclass of Production agriculture and plantations, land must recently have been used for agriculture or plantations.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> In the case of greenfield development where land use is transitioning to a built-environment category, classify under 3.9.0 Vacant and transitioning land (or a subclass) rather than 2.8.0.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/36">https://github.com/manaakiwhenua/nzsluc/issues/36</a></div>
+<div class="callout changed"><span class="callout-label">Change note</span> Preferred label changed from &#x27;Land in transition&#x27; at v0.4.0</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-2.8.1">
+<p class="tertiary-head"><span class="code">2.8.1</span> <strong>Rehabilitating land</strong> <span class="swatch" style="background:#B6C8BC;color:#000000;">#B6C8BC</span></p>
+<p class="definition">Land in the process of rehabilitation for agricultural production (e.g. after significant flooding), and which is actively being recovered.</p>
+<div class="callout changed"><span class="callout-label">Change note</span> Changed notation at v0.4.0</div>
+</div><div class="tertiary-item" id="def-2.8.2">
+<p class="tertiary-head"><span class="code">2.8.2</span> <strong>Abandoned land</strong> <span class="swatch" style="background:#CADCD0;color:#000000;">#CADCD0</span></p>
+<p class="definition">Land where a previous pattern of agriculture may be observed but that is not currently under production, but not due to physical land degradation.</p>
+<div class="callout changed"><span class="callout-label">Change note</span> Changed notation at v0.4.0</div>
+</div><div class="tertiary-item" id="def-2.8.3">
+<p class="tertiary-head"><span class="code">2.8.3</span> <strong>Degraded land</strong> <span class="swatch" style="background:#94A599;color:#000000;">#94A599</span></p>
+<p class="definition">Unused land that is degraded through erosion or flood events that is not being rehabilitated.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Can include contaminated land.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Changed notation at v0.4.0</div>
+</div><div class="tertiary-item" id="def-2.8.4">
+<p class="tertiary-head"><span class="code">2.8.4</span> <strong>No defined use</strong> <span class="swatch" style="background:#DBEDE0;color:#000000;">#DBEDE0</span></p>
+<p class="definition">Land cleared of vegetation where the current proposed land use is unknown.</p>
+<div class="callout example"><span class="callout-label">Example</span> Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Changed notation at v0.4.0</div>
+</div></div>
+<h3 id="def-2.9.0"><span class="code">2.9.0</span> Smallholder farm <span class="swatch" style="background:#E5D64F;color:#000000;">#E5D64F</span></h3>
+<p class="definition">A rural property larger than a rural residential property (&gt; 2 ha) but where the primary motivation is still residential rather than commercial agricultural production, and where any land management is low-intensity and incidental to the residential occupation.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Extends 3.1.4 Rural residential to properties that exceed the lifestyle block size threshold but retain distinctive residential/lifestyle character. Distinguishable from 2.2.0 Grazing modified pasture systems by the absence of commercial pastoral intent and the relatively low level of active land management.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Properties classified here may carry small numbers of stock or maintain informal pasture, but these activities are subsidiary to the residential use of the land.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> As a subclass of 2.0.0, commodities and management practices may still be recorded.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Typical evidence: NDVR lifestyle codes (property uses 21 single-unit lifestyle, 22 multi-unit lifestyle) or possibly category L with land area in the range 2–40 ha. Properties substantially exceeding 40 ha with lifestyle NDVR codes should typically be excluded, in favour of classification under 2.2.2 or 2.2.3.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Added at v0.4.0 to capture the gap between 3.1.4 Rural residential (0.4–2 ha) and commercial pastoral classes (2.2.0).</div>
+<h2 id="def-3.0.0"><span class="code">3.0.0</span> Built environment <span class="swatch" style="background:#8E7A78;color:#ffffff;">#8E7A78</span></h2>
+<p class="definition">Land uses that involve high levels of interference with natural processes, generally in association with the built environment of closer settlement and supporting infrastructure. The level of intervention may be high enough to completely remodel the natural landscape – the vegetation, surface and groundwater systems, and land surface.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Active outdoor recreation and/or tourism outside of urban areas that is not captured in other land-use categories may be captured under 3.2.1 Outdoor recreation, though may still retain much natural character.</div>
+<h3 class="first-secondary" id="def-3.1.0"><span class="code">3.1.0</span> Residential <span class="swatch" style="background:#815E5B;color:#ffffff;">#815E5B</span></h3>
+<p class="definition">Land uses primarily designated for private, long-term human habitation, encompassing a variety of housing types and densities.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> The class includes holidays homes, retirement villages, student hostels and other forms of low-turnover or longer-term accommodation, even if these are run commercially. Shorter- term forms of accommodation (motels, hotels, holiday parks, etc.) are captured under ‘3.3.0 Commercial’ or ‘3.3.3 Hospitality’</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Some alignment with the National Planning Standards (Zone Framework Standard) (MfE 2019) has been considered in the development of the subclasses. This information (as at time of classification) should be captured in the zone attribute to allow for some reclassification and specification.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.1.1">
+<p class="tertiary-head"><span class="code">3.1.1</span> <strong>High-density residential</strong> <span class="swatch" style="background:#4C3B39;color:#ffffff;">#4C3B39</span></p>
+<p class="definition">Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density.</p>
+</div><div class="tertiary-item" id="def-3.1.2">
+<p class="tertiary-head"><span class="code">3.1.2</span> <strong>Medium-density residential</strong> <span class="swatch" style="background:#644E4C;color:#ffffff;">#644E4C</span></p>
+<p class="definition">Areas featuring a moderate concentration of housing units per unit of land area, often in suburban or semi-urban settings.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Alignment to the Medium Density Residential Standards (MfE 2022) should be considered.</div>
+<div class="callout example"><span class="callout-label">Example</span> Townhouses, terraced housing, low-rise apartments.</div>
+</div><div class="tertiary-item" id="def-3.1.3">
+<p class="tertiary-head"><span class="code">3.1.3</span> <strong>Low-density residential</strong> <span class="swatch" style="background:#815E5B;color:#ffffff;">#815E5B</span></p>
+<p class="definition">Residential properties within urban boundaries that fall within large-lot or low-density residential zones and are often single-family, one- to two- storey houses with yards and landscaping and lower population density.</p>
+</div><div class="tertiary-item" id="def-3.1.4">
+<p class="tertiary-head"><span class="code">3.1.4</span> <strong>Rural residential</strong> <span class="swatch" style="background:#A87A76;color:#ffffff;">#A87A76</span></p>
+<p class="definition">Residential properties with low-intensity (non-commercial) land management practices on land in rural or peri-urban areas.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Typically featuring larger parcel sizes amidst agricultural or natural surroundings. Concordant with the ‘Rural lifestyle zone’ from the Zone Framework Standard.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> As a general guideline, properties with a dwelling, and between 0.4 ha and 2 ha in size, should be considered rural residential. Larger properties should be considered under class 2, especially if the zone context is non-residential, and even if they are declared residential or lifestyle in the District Valuation Roll.</div>
+<div class="callout tip"><span class="callout-label">Usage note</span> Properties in this size interval and without a dwelling could be in transition to residential.</div>
+<div class="callout history"><span class="callout-label">Historical note</span> In land fragmentation analyses, parcels greater than 2 ha in size (with or without a dwelling) have been considered non-residential. The term lifestyle is disfavoured in this context, as it is not a landuse but rather it indicates that some form of primary production does occur but that it is not the resident&#x27;s primary source of income. Thus the term &#x27;lifestyle&#x27; reflects a motivation for a particular land use, but is not itself a useful land use.</div>
+</div></div>
+<h3 id="def-3.2.0"><span class="code">3.2.0</span> Public recreation and services <span class="swatch" style="background:#C19878;color:#000000;">#C19878</span></h3>
+<p class="definition">Land designated for recreational facilities and community amenities, serving recreational needs and essential functions of the local population.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.2.1">
+<p class="tertiary-head"><span class="code">3.2.1</span> <strong>Outdoor recreation</strong> <span class="swatch" style="background:#C19878;color:#000000;">#C19878</span></p>
+<p class="definition">Land areas dedicated to leisure activities conducted in natural or semi-natural settings, typically with considerable unsealed vegetated areas.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Parks or reserves with a high level of native bush or that are protected areas should be classified under class 1.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> The specific identification of this land is intended to enable more ready identification of urban green space. However, this category may also be used to identify developed recreational areas that fall outside urban boundaries, such as mountain-bike parks.</div>
+<div class="callout example"><span class="callout-label">Example</span> Parks, trails, sportsgrounds, camping grounds, zoos, botanic gardens, recreational reserves.</div>
+</div><div class="tertiary-item" id="def-3.2.2">
+<p class="tertiary-head"><span class="code">3.2.2</span> <strong>Indoor recreation</strong> <span class="swatch" style="background:#958273;color:#ffffff;">#958273</span></p>
+<p class="definition">Facilities designed for recreational activities conducted within enclosed or semi-enclosed structures.</p>
+<div class="callout example"><span class="callout-label">Example</span> Sports centres, gyms, swimming pools, indoor arenas.</div>
+</div><div class="tertiary-item" id="def-3.2.3">
+<p class="tertiary-head"><span class="code">3.2.3</span> <strong>Community services</strong> <span class="swatch" style="background:#E09962;color:#000000;">#E09962</span></p>
+<p class="definition">Land used for providing essential services and facilities to support the local community.</p>
+<div class="callout example"><span class="callout-label">Example</span> Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries.</div>
+</div></div>
+<h3 id="def-3.3.0"><span class="code">3.3.0</span> Commercial <span class="swatch" style="background:#6E94BA;color:#ffffff;">#6E94BA</span></h3>
+<p class="definition">Land in a built environment context used for private-sector economic activities, including retail, office, hospitality, entertainment, healthcare, transportation, and warehousing.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Central government offices when these are privately rented should be captured in this category, even if they are public-facing.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.3.1">
+<p class="tertiary-head"><span class="code">3.3.1</span> <strong>Retail</strong> <span class="swatch" style="background:#6E94BA;color:#ffffff;">#6E94BA</span></p>
+<p class="definition">Areas used for the sale of goods and services directly to consumers.</p>
+<div class="callout example"><span class="callout-label">Example</span> Shops, supermarkets, shopping malls, convenience stores, suburban dairies, and other retail outlets.</div>
+</div><div class="tertiary-item" id="def-3.3.2">
+<p class="tertiary-head"><span class="code">3.3.2</span> <strong>Office</strong> <span class="swatch" style="background:#396285;color:#ffffff;">#396285</span></p>
+<p class="definition">Land and buildings primarily used for administrative, professional, or managerial activities.</p>
+<div class="callout example"><span class="callout-label">Example</span> Corporate offices, professional services, banks, government buildings, business parks, coworking spaces.</div>
+</div><div class="tertiary-item" id="def-3.3.3">
+<p class="tertiary-head"><span class="code">3.3.3</span> <strong>Hospitality</strong> <span class="swatch" style="background:#A4CAF2;color:#000000;">#A4CAF2</span></p>
+<p class="definition">Land and buildings providing accommodation, food, and beverage services to the public.</p>
+<div class="callout example"><span class="callout-label">Example</span> Hotels, motels, resorts, bed and breakfast establishments, restaurants, bars, nightclubs.</div>
+</div><div class="tertiary-item" id="def-3.3.4">
+<p class="tertiary-head"><span class="code">3.3.4</span> <strong>Entertainment</strong> <span class="swatch" style="background:#89AFD6;color:#000000;">#89AFD6</span></p>
+<p class="definition">Land areas and facilities offering leisure and recreational activities for public enjoyment.</p>
+<div class="callout example"><span class="callout-label">Example</span> Cinemas, theatres, amusement parks, casinos, concert venues.</div>
+</div><div class="tertiary-item" id="def-3.3.5">
+<p class="tertiary-head"><span class="code">3.3.5</span> <strong>Healthcare</strong> <span class="swatch" style="background:#D0E5FC;color:#000000;">#D0E5FC</span></p>
+<p class="definition">Land dedicated to providing private medical services aimed at diagnosis, treatment, and prevention of illness or injury.</p>
+<div class="callout example"><span class="callout-label">Example</span> Hospitals, specialist clinics, physiotherapists, medical offices, laboratories</div>
+</div><div class="tertiary-item" id="def-3.3.6">
+<p class="tertiary-head"><span class="code">3.3.6</span> <strong>Transportation &amp; warehousing</strong> <span class="swatch" style="background:#547B9F;color:#ffffff;">#547B9F</span></p>
+<p class="definition">Privately owned land associated with the movement and storage of goods, including distribution centres, warehouses, logistics facilities, car dealerships, and commercial parking lots.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Excludes airports, ports, roads, and train stations (captured under 3.6.0)</div>
+</div></div>
+<h3 id="def-3.4.0"><span class="code">3.4.0</span> Manufacturing and industrial <span class="swatch" style="background:#9598A8;color:#ffffff;">#9598A8</span></h3>
+<p class="definition">Land uses dedicated to production, processing, and industrial activities, contributing to the production of goods and materials for commercial purposes.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.4.1">
+<p class="tertiary-head"><span class="code">3.4.1</span> <strong>General purpose factory</strong> <span class="swatch" style="background:#9598A8;color:#ffffff;">#9598A8</span></p>
+<p class="definition">An area used for manufacturing, assembly, or repairs of various products.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Includes some specialised or purpose-built machinery and equipment for mass production across multiple industries.</div>
+</div><div class="tertiary-item" id="def-3.4.2">
+<p class="tertiary-head"><span class="code">3.4.2</span> <strong>Food processing factory</strong> <span class="swatch" style="background:#CED1E2;color:#000000;">#CED1E2</span></p>
+<p class="definition">An area where the principal use is food processing, packaging, and preservation. The building is most likely to be purpose built and may have extensive plant and equipment included.</p>
+<div class="callout example"><span class="callout-label">Example</span> Cannery; milk production plant.</div>
+</div><div class="tertiary-item" id="def-3.4.3">
+<p class="tertiary-head"><span class="code">3.4.3</span> <strong>Major industrial complex</strong> <span class="swatch" style="background:#838695;color:#ffffff;">#838695</span></p>
+<p class="definition">An area with large-scale industrial use and significant infrastructure .</p>
+<div class="callout example"><span class="callout-label">Example</span> Car plant, paper mill.</div>
+</div><div class="tertiary-item" id="def-3.4.4">
+<p class="tertiary-head"><span class="code">3.4.4</span> <strong>Sawmill</strong> <span class="swatch" style="background:#A8AABB;color:#000000;">#A8AABB</span></p>
+<p class="definition">An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products.</p>
+</div><div class="tertiary-item" id="def-3.4.5">
+<p class="tertiary-head"><span class="code">3.4.5</span> <strong>Farm buildings/infrastructure</strong> <span class="swatch" style="background:#E2E4F6;color:#000000;">#E2E4F6</span></p>
+<p class="definition">An area with buildings, sheds, and other infrastructure associated with farm enterprises supporting agricultural operations.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> If it is possible to discriminate a domestic area from a farm, the house and adjoining non-productive land should be classified as 3.1.4 Rural residential.</div>
+<div class="callout example"><span class="callout-label">Example</span> Barns, silos, storage sheds, and irrigation systems.</div>
+</div><div class="tertiary-item" id="def-3.4.6">
+<p class="tertiary-head"><span class="code">3.4.6</span> <strong>Abattoirs</strong> <span class="swatch" style="background:#BBBDCE;color:#000000;">#BBBDCE</span></p>
+<p class="definition">Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market.</p>
+</div></div>
+<h3 id="def-3.5.0"><span class="code">3.5.0</span> Utilities <span class="swatch" style="background:#955085;color:#ffffff;">#955085</span></h3>
+<p class="definition">Land allocated to providing electricity, gas, or water; or for navigation and communication infrastructure.</p>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/69">https://github.com/manaakiwhenua/nzsluc/issues/69</a></div>
+<div class="callout changed"><span class="callout-label">Change note</span> Class 3.5.0 redefined at v0.4.0 to include naviation and communciation infrastructure, which was formerly captured under class 3.6.0.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.5.1">
+<p class="tertiary-head"><span class="code">3.5.1</span> <strong>Fuel powered electricity generation</strong> <span class="swatch" style="background:#7652A3;color:#ffffff;">#7652A3</span></p>
+<p class="definition">Facilities that produce electricity by burning fossil fuels such as coal, oil, and natural gas.</p>
+</div><div class="tertiary-item" id="def-3.5.2">
+<p class="tertiary-head"><span class="code">3.5.2</span> <strong>Hydroelectricity generation</strong> <span class="swatch" style="background:#9670C4;color:#ffffff;">#9670C4</span></p>
+<p class="definition">Facilities that use the energy of flowing or falling water (typically hydroelectric dams) to generate electricity.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Includes canals and other water conveyance infrastructure associated with hydroelectricity generation.</div>
+</div><div class="tertiary-item" id="def-3.5.3">
+<p class="tertiary-head"><span class="code">3.5.3</span> <strong>Wind electricity generation</strong> <span class="swatch" style="background:#D6B2FD;color:#000000;">#D6B2FD</span></p>
+<p class="definition">Power generation from wind, including wind farms.</p>
+</div><div class="tertiary-item" id="def-3.5.4">
+<p class="tertiary-head"><span class="code">3.5.4</span> <strong>Solar electricity generation</strong> <span class="swatch" style="background:#B78FE5;color:#000000;">#B78FE5</span></p>
+<p class="definition">Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity.</p>
+</div><div class="tertiary-item" id="def-3.5.5">
+<p class="tertiary-head"><span class="code">3.5.5</span> <strong>Electricity substations and transmission</strong> <span class="swatch" style="background:#955085;color:#ffffff;">#955085</span></p>
+<p class="definition">Facilities and infrastructure associated with distribution and transmission of electrical power.</p>
+<div class="callout example"><span class="callout-label">Example</span> Substations, transformers, high-voltage transmission towers.</div>
+</div><div class="tertiary-item" id="def-3.5.6">
+<p class="tertiary-head"><span class="code">3.5.6</span> <strong>Gas treatment, storage, and transmission</strong> <span class="swatch" style="background:#B36CA2;color:#ffffff;">#B36CA2</span></p>
+<p class="definition">Facilities and infrastructure for processing, storage, and transport of natural gas.</p>
+<div class="callout example"><span class="callout-label">Example</span> Treatment plants, storage facilities, pipelines.</div>
+</div><div class="tertiary-item" id="def-3.5.7">
+<p class="tertiary-head"><span class="code">3.5.7</span> <strong>Water extraction and transmission</strong> <span class="swatch" style="background:#D289BF;color:#000000;">#D289BF</span></p>
+<p class="definition">Facilities and infrastructure for extracting, purifying, treating, and transporting water from natural sources to meet human needs.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Includes drinking water reservoirs.</div>
+</div><div class="tertiary-item" id="def-3.5.8">
+<p class="tertiary-head"><span class="code">3.5.8</span> <strong>Navigation and communication</strong> <span class="swatch" style="background:#F2A6DE;color:#000000;">#F2A6DE</span></p>
+<p class="definition">Navigation and communication infrastructure.</p>
+<div class="callout example"><span class="callout-label">Example</span> Radar stations, beacons, lighthouses, TV and radio transmission towers.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/69">https://github.com/manaakiwhenua/nzsluc/issues/69</a></div>
+<div class="callout changed"><span class="callout-label">Change note</span> Notation changed from 3.6.5 to 3.5.8 at v0.4.0 when class 3.6.0 redefined to exclude navigation and communication infrastructure.</div>
+</div></div>
+<h3 id="def-3.6.0"><span class="code">3.6.0</span> Transportation <span class="swatch" style="background:#72737E;color:#ffffff;">#72737E</span></h3>
+<p class="definition">Land allocated to infrastructure used for the transportation of goods or people.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Zoning of land for roading or rail purposes that has not yet been constructed should be captured as attributes.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> <a href="https://github.com/manaakiwhenua/nzsluc/issues/69">https://github.com/manaakiwhenua/nzsluc/issues/69</a></div>
+<div class="callout changed"><span class="callout-label">Change note</span> Redefinition of class 3.6.0 to exclude navigation and communication infrastructure, which is now captured under 3.5.8. Renamed from &#x27;Transport and communication&#x27;.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.6.1">
+<p class="tertiary-head"><span class="code">3.6.1</span> <strong>Airports/aerodromes</strong> <span class="swatch" style="background:#75777E;color:#ffffff;">#75777E</span></p>
+<p class="definition">Locations from which aircraft flight operations take place, including areas used for the accommodation of aircraft and coordination of air cargo or passengers (including heliports).</p>
+</div><div class="tertiary-item" id="def-3.6.2">
+<p class="tertiary-head"><span class="code">3.6.2</span> <strong>Roads</strong> <span class="swatch" style="background:#494B51;color:#ffffff;">#494B51</span></p>
+<p class="definition">The full roading corridor, including sealed road areas and unsealed roadside strips.</p>
+</div><div class="tertiary-item" id="def-3.6.3">
+<p class="tertiary-head"><span class="code">3.6.3</span> <strong>Railways</strong> <span class="swatch" style="background:#33353A;color:#ffffff;">#33353A</span></p>
+<p class="definition">Permanent rail transport tracks and associated infrastructure, including stations and terminals; includes the full rail corridor required for safety clearance.</p>
+</div><div class="tertiary-item" id="def-3.6.4">
+<p class="tertiary-head"><span class="code">3.6.4</span> <strong>Ports and water transport</strong> <span class="swatch" style="background:#61636A;color:#ffffff;">#61636A</span></p>
+<p class="definition">Harbour locations where ships dock to transfer people or cargo, including terrestrial parts and designated marine areas that are specifically designated and controlled for activities associated with the port.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> The water attribute can be used to differentiate the terrestrial and marine parts of the same facility.</div>
+<div class="callout example"><span class="callout-label">Example</span> Ports, docks, and wharves.</div>
+<div class="callout example"><span class="callout-label">Example</span> Harbours, navigational channels.</div>
+</div></div>
+<h3 id="def-3.7.0"><span class="code">3.7.0</span> Mining <span class="swatch" style="background:#E1CEA7;color:#000000;">#E1CEA7</span></h3>
+<p class="definition">Mining and extractive industries (including salt extraction from evaporation basins).</p>
+<div class="callout tip"><span class="callout-label">Usage note</span> Record the specific type of mining activitiy in the commodity attribute, if known.</div>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.7.1">
+<p class="tertiary-head"><span class="code">3.7.1</span> <strong>Mines</strong> <span class="swatch" style="background:#836639;color:#ffffff;">#836639</span></p>
+<p class="definition">Land from which minerals, precious stones or coal is being extracted, including open-cut and deep-shaft mines.</p>
+</div><div class="tertiary-item" id="def-3.7.2">
+<p class="tertiary-head"><span class="code">3.7.2</span> <strong>Quarries</strong> <span class="swatch" style="background:#9E7E51;color:#ffffff;">#9E7E51</span></p>
+<p class="definition">Land from which stone, gravel, clay, slate, sand, soil, rock, or other construction materials are being extracted.</p>
+</div><div class="tertiary-item" id="def-3.7.3">
+<p class="tertiary-head"><span class="code">3.7.3</span> <strong>Tailings</strong> <span class="swatch" style="background:#BA9869;color:#000000;">#BA9869</span></p>
+<p class="definition">Tailings dumps and dams for storage or treatment of waste material left over after extraction, often stored in containment facilities or ponds (including quarrying output).</p>
+</div><div class="tertiary-item" id="def-3.7.4">
+<p class="tertiary-head"><span class="code">3.7.4</span> <strong>Evaporation basins</strong> <span class="swatch" style="background:#FCD7A5;color:#000000;">#FCD7A5</span></p>
+<p class="definition">Basins and associated facilities used for evaporation of water from irrigation drainage or (predominantly) salt extraction.</p>
+</div><div class="tertiary-item" id="def-3.7.5">
+<p class="tertiary-head"><span class="code">3.7.5</span> <strong>Extractive industry not in use</strong> <span class="swatch" style="background:#D7B383;color:#000000;">#D7B383</span></p>
+<p class="definition">Land undergoing rehabilitation after mining activities, and unmined land within a mining permit.</p>
+</div></div>
+<h3 id="def-3.8.0"><span class="code">3.8.0</span> Waste treatment and disposal <span class="swatch" style="background:#E77148;color:#ffffff;">#E77148</span></h3>
+<p class="definition">Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.8.1">
+<p class="tertiary-head"><span class="code">3.8.1</span> <strong>Landfills</strong> <span class="swatch" style="background:#AC3F25;color:#ffffff;">#AC3F25</span></p>
+<p class="definition">Designated areas for disposal of solid waste, where waste materials are deposited, compacted, and covered to reduce contamination and control emissions.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> Landfill gas recovery systems are classified as part of a landfill land use.</div>
+<div class="callout note"><span class="callout-label">Scope note</span> Includes all class 1 to 5 landfills</div>
+<div class="callout example"><span class="callout-label">Example</span> Landfills designed to receive inert construction materials.</div>
+</div><div class="tertiary-item" id="def-3.8.2">
+<p class="tertiary-head"><span class="code">3.8.2</span> <strong>Transfer stations and recycling facilities</strong> <span class="swatch" style="background:#E97453;color:#ffffff;">#E97453</span></p>
+<p class="definition">Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites.</p>
+</div><div class="tertiary-item" id="def-3.8.3">
+<p class="tertiary-head"><span class="code">3.8.3</span> <strong>Municipal wastewater</strong> <span class="swatch" style="background:#CB593B;color:#ffffff;">#CB593B</span></p>
+<p class="definition">Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines.</p>
+</div><div class="tertiary-item" id="def-3.8.4">
+<p class="tertiary-head"><span class="code">3.8.4</span> <strong>Wastewater treatment – land application</strong> <span class="swatch" style="background:#FF9475;color:#000000;">#FF9475</span></p>
+<p class="definition">Areas where treated municipal wastewater is applied onto land for beneficial reuse, following appropriate treatment processes to ensure environmental safety.</p>
+<div class="callout tip"><span class="callout-label">Usage note</span>  This is often likely to be an ancillary use.</div>
+<div class="callout example"><span class="callout-label">Example</span> Irrigation, groundwater recharge, soil fertility enhancement.</div>
+</div><div class="tertiary-item" id="def-3.8.5">
+<p class="tertiary-head"><span class="code">3.8.5</span> <strong>Stormwater management</strong> <span class="swatch" style="background:#FEBDAA;color:#000000;">#FEBDAA</span></p>
+<p class="definition">Infrastructure aimed at controlling and mitigating stormwater runoff to prevent flooding, erosion, and pollution.</p>
+<div class="callout example"><span class="callout-label">Example</span> Detention basins, drainage systems, retention ponds, rain gardens, wetlands.</div>
+</div></div>
+<h3 id="def-3.9.0"><span class="code">3.9.0</span> Vacant and transitioning land <span class="swatch" style="background:#D69B97;color:#000000;">#D69B97</span></h3>
+<p class="definition">This land-use type includes areas that are currently unused or undergoing a transition from one land use to another, but in this case with a clear transition towards or within other concepts under the built environment.</p>
+<div class="tertiary-group"><div class="tertiary-item" id="def-3.9.1">
+<p class="tertiary-head"><span class="code">3.9.1</span> <strong>Brownfield development</strong> <span class="swatch" style="background:#87636E;color:#ffffff;">#87636E</span></p>
+<p class="definition">Areas of active redevelopment of previously developed (often industrial) land that may be abandoned, contaminated, or under-utilised, to rehabilitate and repurpose sites for new urban activities.</p>
+<div class="callout note"><span class="callout-label">Scope note</span> May include residential areas undergoing infill development that increase housing density.</div>
+<div class="callout changed"><span class="callout-label">Change note</span> Notation changed from 3.9.3 to 3.9.1 at v0.4.0</div>
+</div><div class="tertiary-item" id="def-3.9.2">
+<p class="tertiary-head"><span class="code">3.9.2</span> <strong>Greenfield development</strong> <span class="swatch" style="background:#AC8792;color:#ffffff;">#AC8792</span></p>
+<p class="definition">Previously undeveloped or agricultural land zoned for or undergoing new construction projects or urban expansion, involving conversion of rural or natural areas into built uses.</p>
+</div><div class="tertiary-item" id="def-3.9.3">
+<p class="tertiary-head"><span class="code">3.9.3</span> <strong>Idle and derelict land</strong> <span class="swatch" style="background:#D3ACB7;color:#000000;">#D3ACB7</span></p>
+<p class="definition">Derelict land and developed land that is idle.</p>
+<div class="callout changed"><span class="callout-label">Change note</span> Notation changed from 3.9.1 to 3.9.3 at v0.4.0</div>
+</div></div>
+</section>
+</body>
+</html>

@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "com:boysenberries.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:boysenberries.ttl"
-        },
-        {
-          "@id": "com:boysenberries.jsonld"
-        },
-        {
-          "@id": "com:boysenberries.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:boysenberries",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -33,6 +17,30 @@
         "@id": "lus:commodities"
       },
       "skos:notation": "boysenberries"
+    },
+    {
+      "@id": "com:boysenberries.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:boysenberries.jsonld"
+        },
+        {
+          "@id": "com:boysenberries.rdf"
+        },
+        {
+          "@id": "com:boysenberries.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:boysenberries.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:boysenberries"
+      }
     },
     {
       "@id": "com:boysenberries.rdf",
@@ -51,13 +59,6 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
       "@id": "com:fruit",
       "skos:member": {
         "@id": "com:boysenberries"
@@ -68,11 +69,10 @@
       }
     },
     {
-      "@id": "com:boysenberries.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:boysenberries"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

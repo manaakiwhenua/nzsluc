@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:intensive_animal_production",
-      "skos:notation": "2.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Intensive animal production"
-      }
-    },
-    {
-      "@id": "luc:aquaculture.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:aquaculture"
-      }
-    },
-    {
       "@id": "luc:aquaculture",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -36,18 +20,45 @@
         "@language": "en",
         "@value": "Controlled cultivation of aquatic organisms (e.g. fish, molluscs, algae) in natural or artificial environments, typically for food production, but also for stock feeds, pharmaceutical uses, biofuels, etc."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.6.5",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Aquaculture"
+      }
+    },
+    {
+      "@id": "luc:aquaculture.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:aquaculture.jsonld"
+        },
+        {
+          "@id": "luc:aquaculture.rdf"
+        },
+        {
+          "@id": "luc:aquaculture.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:aquaculture.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:aquaculture"
+      }
+    },
+    {
+      "@id": "luc:aquaculture.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:aquaculture"
       }
     },
     {
@@ -59,27 +70,11 @@
       }
     },
     {
-      "@id": "luc:aquaculture.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:aquaculture.ttl"
-        },
-        {
-          "@id": "luc:aquaculture.jsonld"
-        },
-        {
-          "@id": "luc:aquaculture.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:aquaculture.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:aquaculture"
+      "@id": "luc:intensive_animal_production",
+      "skos:notation": "2.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intensive animal production"
       }
     }
   ]

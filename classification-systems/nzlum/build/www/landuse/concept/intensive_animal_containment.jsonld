@@ -8,22 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "luc:intensive_animal_production",
-      "skos:notation": "2.6.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Intensive animal production"
-      }
-    },
-    {
-      "@id": "luc:intensive_animal_containment.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:intensive_animal_containment"
-      }
-    },
-    {
       "@id": "luc:intensive_animal_containment",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -36,19 +20,30 @@
         "@language": "en",
         "@value": "Facilities or systems designed to confine and manage animals, including feed lots, pens, dairy sheds and yards, and herd homes, where animals are raised intensively for meat production or other purposes."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.6.1",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Intensive animal containment"
       }
+    },
+    {
+      "@id": "luc:intensive_animal_containment.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:intensive_animal_containment.jsonld"
+        },
+        {
+          "@id": "luc:intensive_animal_containment.rdf"
+        },
+        {
+          "@id": "luc:intensive_animal_containment.ttl"
+        }
+      ]
     },
     {
       "@id": "luc:intensive_animal_containment.jsonld",
@@ -67,20 +62,20 @@
       }
     },
     {
-      "@id": "luc:intensive_animal_containment.html",
+      "@id": "luc:intensive_animal_containment.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:intensive_animal_containment.ttl"
-        },
-        {
-          "@id": "luc:intensive_animal_containment.jsonld"
-        },
-        {
-          "@id": "luc:intensive_animal_containment.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:intensive_animal_containment"
+      }
+    },
+    {
+      "@id": "luc:intensive_animal_production",
+      "skos:notation": "2.6.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intensive animal production"
+      }
     }
   ]
 }

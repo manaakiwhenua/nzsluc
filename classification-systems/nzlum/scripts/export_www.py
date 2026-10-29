@@ -157,12 +157,30 @@ def new_graph(bind="core"):
         return Graph()
 
 
+def canonical_json(obj):
+    """Sort @graph nodes and @id lists so JSON-LD output does not depend on rdflib's set ordering."""
+    if isinstance(obj, dict):
+        out = {k: canonical_json(v) for k, v in obj.items()}
+        if isinstance(out.get("@graph"), list):
+            out["@graph"].sort(key=lambda n: str(n.get("@id", "")) if isinstance(n, dict) else str(n))
+        return out
+    if isinstance(obj, list):
+        items = [canonical_json(v) for v in obj]
+        if items and all(isinstance(v, dict) and set(v) == {"@id"} for v in items):
+            items.sort(key=lambda v: v["@id"])
+        elif items and all(isinstance(v, (str, int, float)) for v in items):
+            items.sort(key=str)
+        return items
+    return obj
+
+
 def prune_jsonld_context(text):
-    """Drop @context prefixes that nothing in the document uses (older rdflib adds many defaults)."""
-    doc = json.loads(text)
+    """Drop @context prefixes that nothing in the document uses (older rdflib adds many defaults),
+    and canonicalise node order so repeated builds give identical files."""
+    doc = canonical_json(json.loads(text))
     ctx = doc.get("@context")
     if not isinstance(ctx, dict):
-        return text
+        return json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
     body = json.dumps({k: v for k, v in doc.items() if k != "@context"})
     keep = {}
     for prefix, val in ctx.items():
@@ -170,7 +188,7 @@ def prune_jsonld_context(text):
             keep[prefix] = val
         elif f'"{prefix}:' in body:
             keep[prefix] = val
-    doc["@context"] = keep
+    doc["@context"] = dict(sorted(keep.items()))
     return json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
 
 
@@ -188,12 +206,19 @@ class Exporter:
         self.base = base.rstrip("/") + "/"
         self.site = site.rstrip("/")
         self.versions = sorted(versions, key=parse_version)        # ascending
-        self.latest = self.versions[-1]
         self.vgraphs = {}
         for v in self.versions:
             g = new_graph("none")
             g.parse(versions[v])
             self.vgraphs[v] = g
+        # A version whose scheme carries adms:status lu_status:draft is published alongside the
+        # others but is never the *served* description of a concept: that comes from the latest
+        # non-draft version.
+        self.drafts = {v for v in self.versions
+                       if any(str(st).endswith("/status/draft")
+                              for st in self.vgraphs[v].objects(self.scheme_uri(v), ADMS.status))}
+        released = [v for v in self.versions if v not in self.drafts]
+        self.latest = (released or self.versions)[-1]
         self.tgraphs = {}                                           # scheme URI -> Graph
         for path in term_lists:
             g = new_graph("none")
@@ -206,6 +231,25 @@ class Exporter:
         copy_bindings(self.G, *self.vgraphs.values(), *self.tgraphs.values())
         self.present = defaultdict(list)                            # concept -> [versions]
         self.build_served_graph()
+        self.relabel_bnodes()
+
+    def relabel_bnodes(self):
+        """Give blank nodes labels derived from their own triples, so output is the same on every run
+        (rdflib otherwise mints a random UUID per blank node)."""
+        import hashlib
+        G = self.G
+        bnodes = {n for t in G for n in (t[0], t[2]) if isinstance(n, BNode)}
+        if not bnodes:
+            return
+        mapping = {}
+        for b in bnodes:
+            desc = sorted(f"{p} {o}" for _, p, o in G.triples((b, None, None)) if not isinstance(o, BNode))
+            desc += sorted(f"{s} {p}" for s, p, _ in G.triples((None, None, b)) if not isinstance(s, BNode))
+            mapping[b] = BNode("b" + hashlib.sha1("\n".join(desc).encode()).hexdigest()[:16])
+        for s_, p, o in list(G):
+            if s_ in mapping or o in mapping:
+                G.remove((s_, p, o))
+                G.add((mapping.get(s_, s_), p, mapping.get(o, o)))
 
     def scheme_uri(self, v):
         return URIRef(f"{self.base}scheme/nzlum{v}")
@@ -219,12 +263,19 @@ class Exporter:
                 self.present[c].append(v)
         for c, vs in self.present.items():
             last = vs[-1]
-            if last != self.latest:
-                for t in self.vgraphs[last].triples((c, None, None)):
-                    G.add(t)
+            if self.latest in vs:
+                continue
+            for t in self.vgraphs[last].triples((c, None, None)):
+                G.add(t)
+            if parse_version(last) < parse_version(self.latest):
+                # dropped before the current release
                 G.add((c, OWL.deprecated, Literal(True)))
                 G.add((c, SKOS.historyNote, Literal(
                     f"Last included in NZLUM {last}; not carried into NZLUM {self.latest}.", lang="en")))
+            else:
+                # introduced in a draft newer than the current release
+                G.add((c, SKOS.editorialNote, Literal(
+                    f"Introduced in draft NZLUM {last}; not part of the current release, NZLUM {self.latest}.", lang="en")))
             for v in vs:
                 G.add((c, SKOS.inScheme, self.scheme_uri(v)))
         for g in self.tgraphs.values():
@@ -335,7 +386,8 @@ class Exporter:
         g, G = self.vgraphs[v], self.G
         diffs = []
         for p, name in [(SKOS.notation, "code"), (SKOS.prefLabel, "label"),
-                        (SKOS.definition, "definition"), (SKOS.broader, "parent")]:
+                        (SKOS.definition, "definition"), (SKOS.broader, "parent"),
+                        (URIRef(self.base + "colour"), "colour")]:
             a = set(g.objects(c, p))
             b = set(G.objects(c, p))
             if a != b:
@@ -618,6 +670,8 @@ class HtmlWriter:
                 diffs = ex.version_differences(v, r)
                 if v == ex.latest:
                     status = "current"
+                elif v in ex.drafts:
+                    status = "draft" + ("; differs: " + ", ".join(diffs) if diffs else "; same")
                 elif v == vs[-1]:
                     status = "served (last version containing this concept)"
                 else:

@@ -6,8 +6,8 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture">
-    <skos:scopeNote xml:lang="en">May include livestock rotations, but this is considered less likely</skos:scopeNote>
-    <skos:notation>2.3.3</skos:notation>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
     <skos:prefLabel xml:lang="en">Short-rotation horticulture</skos:prefLabel>
     <skos:broader>
       <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_seasonal_cropping">
@@ -15,10 +15,9 @@
         <skos:notation>2.3.0</skos:notation>
       </rdf:Description>
     </skos:broader>
-    <skos:usageNote xml:lang="en">The specific commodity or commodities should be noted if known.</skos:usageNote>
     <skos:definition xml:lang="en">Crop plants living for less than 2 years that are intensively cultivated; predominantly rotations of vegetable crops or seasonal fruits grown for human consumption.</skos:definition>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
+    <skos:scopeNote xml:lang="en">May include livestock rotations, but this is considered less likely</skos:scopeNote>
+    <skos:notation>2.3.3</skos:notation>
     <foaf:isPrimaryTopicOf>
       <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture.html">
         <dcterms:format>text/html</dcterms:format>
@@ -28,6 +27,10 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture"/>
     <dcterms:format>application/ld+json</dcterms:format>
@@ -35,9 +38,5 @@
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
-  </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/short_rotation_horticulture"/>
-    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

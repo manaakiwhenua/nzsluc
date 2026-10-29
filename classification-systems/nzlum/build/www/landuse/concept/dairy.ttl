@@ -29,8 +29,7 @@ luc:grazing_modified_pasture_systems skos:notation "2.2.0" ;
 luc:dairy a skos:Concept ;
     skos:broader luc:grazing_modified_pasture_systems ;
     skos:definition "Land on which milking cows (or other stock, such as goats or sheep) are grazed during the milking season, where dairy is the primary purpose of the land."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.2.1" ;
     skos:prefLabel "Dairy"@en ;
     skos:scopeNote "Dairy production systems can include rotations of grazed forage crops and maize for silage, and dry-stock grazing, but this class should only be used where dairy is the primary purpose of the land."@en,

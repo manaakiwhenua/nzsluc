@@ -5,39 +5,38 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
+  <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops">
+    <skos:notation>2.4.1</skos:notation>
+    <skos:definition xml:lang="en">Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.</skos:definition>
+    <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
+    <skos:broader>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
+        <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
+        <skos:notation>2.4.0</skos:notation>
+      </rdf:Description>
+    </skos:broader>
+    <skos:usageNote xml:lang="en">Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.</skos:usageNote>
+    <skos:usageNote xml:lang="en">Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.</skos:usageNote>
+    <skos:prefLabel xml:lang="en">Tree crops</skos:prefLabel>
+    <foaf:isPrimaryTopicOf>
+      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.html">
+        <dcterms:format>text/html</dcterms:format>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.ttl"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.jsonld"/>
+        <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.rdf"/>
+      </foaf:Document>
+    </foaf:isPrimaryTopicOf>
+  </skos:Concept>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.ttl">
-    <foaf:primaryTopic>
-      <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops">
-        <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture"/>
-        <skos:notation>2.4.1</skos:notation>
-        <skos:usageNote xml:lang="en">Examples include orchard fruits such as olives, apples, oranges, and apricots, as well as tree nuts such as hazelnuts, macadamias, and chestnuts, which should be recorded in the commodity attribute, if known.</skos:usageNote>
-        <skos:usageNote xml:lang="en">Management practices may include pruning, pest and disease control, irrigation, and harvesting techniques specific to tree crops.</skos:usageNote>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.4.0"/>
-        <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-        <skos:prefLabel xml:lang="en">Tree crops</skos:prefLabel>
-        <skos:definition xml:lang="en">Long-term cultivated plants, typically trees or woody shrubs, grown for fruits, nuts, or other edible parts. These crops require intensive management practices aimed at ensuring optimal growth, productivity, and quality over multiple years.</skos:definition>
-        <foaf:isPrimaryTopicOf rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.html"/>
-      </skos:Concept>
-    </foaf:primaryTopic>
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops"/>
     <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/perennial_horticulture">
-    <skos:prefLabel xml:lang="en">Perennial horticulture</skos:prefLabel>
-    <skos:notation>2.4.0</skos:notation>
-  </rdf:Description>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
   </foaf:Document>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.html">
-    <dcterms:format>text/html</dcterms:format>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.ttl"/>
-    <dcterms:hasFormat>
-      <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.jsonld">
-        <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops"/>
-        <dcterms:format>application/ld+json</dcterms:format>
-      </foaf:Document>
-    </dcterms:hasFormat>
-    <dcterms:hasFormat rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.rdf"/>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops.jsonld">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/tree_crops"/>
+    <dcterms:format>application/ld+json</dcterms:format>
   </foaf:Document>
 </rdf:RDF>

@@ -28,8 +28,7 @@ luc:plantation_forests skos:notation "2.1.0" ;
 luc:other_production_plantations a skos:Concept ;
     skos:broader luc:plantation_forests ;
     skos:definition "An area managed for non-pulpwood production, including oil, wildflowers, and honey plantations."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.1.3" ;
     skos:prefLabel "Other production uses"@en ;
     skos:usageNote "The specific commodity or commodities should be noted if known."@en ;

@@ -29,8 +29,7 @@ luc:residential skos:notation "3.1.0" ;
 luc:high_density_residential a skos:Concept ;
     skos:broader luc:residential ;
     skos:definition "Areas characterised by a high concentration of housing units per unit of land area, typically in multi-storey buildings or high-rise developments, often found in urban centres supporting high population density."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.1.1" ;
     skos:prefLabel "High-density residential"@en ;
     foaf:isPrimaryTopicOf luc:high_density_residential.html ;

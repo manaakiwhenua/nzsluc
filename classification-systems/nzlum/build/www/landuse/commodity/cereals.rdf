@@ -26,18 +26,10 @@
       </foaf:Document>
     </dcterms:hasFormat>
   </foaf:Document>
-  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal">
-    <skos:notation>rye cereal</skos:notation>
-  </rdf:Description>
   <skos:Collection rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/cereals">
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/triticale">
-        <skos:notation>triticale</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/buckwheat">
-        <skos:notation>buckwheat</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_grain">
+        <skos:notation>sorghum grain</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -46,14 +38,8 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/millet_and_pancium">
-        <skos:notation>millet and pancium</skos:notation>
-      </rdf:Description>
-    </skos:member>
-    <skos:member rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal"/>
-    <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinoa">
-        <skos:notation>quinoa</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/maize">
+        <skos:notation>maize</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -62,13 +48,13 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/maize">
-        <skos:notation>maize</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/buckwheat">
+        <skos:notation>buckwheat</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rice">
-        <skos:notation>rice</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/quinoa">
+        <skos:notation>quinoa</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>
@@ -77,8 +63,23 @@
       </rdf:Description>
     </skos:member>
     <skos:member>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/sorghum_grain">
-        <skos:notation>sorghum grain</skos:notation>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rice">
+        <skos:notation>rice</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/rye_cereal">
+        <skos:notation>rye cereal</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/millet_and_pancium">
+        <skos:notation>millet and pancium</skos:notation>
+      </rdf:Description>
+    </skos:member>
+    <skos:member>
+      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/commodity/triticale">
+        <skos:notation>triticale</skos:notation>
       </rdf:Description>
     </skos:member>
     <skos:member>

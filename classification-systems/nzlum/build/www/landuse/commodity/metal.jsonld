@@ -8,21 +8,38 @@
   },
   "@graph": [
     {
+      "@id": "com:metal",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:metal.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "metal"
+    },
+    {
+      "@id": "com:metal.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:metal.jsonld"
+        },
+        {
+          "@id": "com:metal.rdf"
+        },
+        {
+          "@id": "com:metal.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:metal.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:metal"
-      }
-    },
-    {
-      "@id": "com:mines",
-      "skos:member": {
-        "@id": "com:metal"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Mines"
       }
     },
     {
@@ -42,31 +59,14 @@
       }
     },
     {
-      "@id": "com:metal",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:metal.html"
+      "@id": "com:mines",
+      "skos:member": {
+        "@id": "com:metal"
       },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "metal"
-    },
-    {
-      "@id": "com:metal.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:metal.ttl"
-        },
-        {
-          "@id": "com:metal.jsonld"
-        },
-        {
-          "@id": "com:metal.rdf"
-        }
-      ]
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mines"
+      }
     },
     {
       "@id": "lus:commodities",

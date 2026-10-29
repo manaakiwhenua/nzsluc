@@ -8,12 +8,31 @@
   },
   "@graph": [
     {
-      "@id": "com:parsnips.rdf",
+      "@id": "com:parsnips",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:parsnips.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "parsnips"
+    },
+    {
+      "@id": "com:parsnips.html",
       "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:parsnips"
-      }
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:parsnips.jsonld"
+        },
+        {
+          "@id": "com:parsnips.rdf"
+        },
+        {
+          "@id": "com:parsnips.ttl"
+        }
+      ]
     },
     {
       "@id": "com:parsnips.jsonld",
@@ -24,15 +43,20 @@
       }
     },
     {
-      "@id": "com:parsnips",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:parsnips.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "parsnips"
+      "@id": "com:parsnips.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:parsnips"
+      }
+    },
+    {
+      "@id": "com:parsnips.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "com:parsnips"
+      }
     },
     {
       "@id": "com:vegetables_and_herbs",
@@ -45,35 +69,11 @@
       }
     },
     {
-      "@id": "com:parsnips.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "com:parsnips"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:parsnips.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:parsnips.ttl"
-        },
-        {
-          "@id": "com:parsnips.jsonld"
-        },
-        {
-          "@id": "com:parsnips.rdf"
-        }
-      ]
     }
   ]
 }

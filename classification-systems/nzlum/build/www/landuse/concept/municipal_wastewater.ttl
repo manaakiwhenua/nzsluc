@@ -28,8 +28,7 @@ luc:waste_treatment_disposal skos:notation "3.8.0" ;
 luc:municipal_wastewater a skos:Concept ;
     skos:broader luc:waste_treatment_disposal ;
     skos:definition "Wastewater generated from residential, commercial, and industrial activities within urban areas requiring treatment before discharge or reuse; includes municipal wastewater ponds and sewerage pipelines."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.8.3" ;
     skos:prefLabel "Municipal wastewater"@en ;
     foaf:isPrimaryTopicOf luc:municipal_wastewater.html .

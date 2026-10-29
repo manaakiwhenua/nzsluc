@@ -28,8 +28,7 @@ luc:poultry_farms.ttl a foaf:Document ;
 luc:poultry_farms a skos:Concept ;
     skos:broader luc:intensive_animal_production ;
     skos:definition "Specialised dacilities dedicated to the intensive production of domestic fowl (e.g. chickens, turkeys, ducks, geese) for meat or egg production."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.6.2" ;
     skos:prefLabel "Poultry farms"@en ;
     foaf:isPrimaryTopicOf luc:poultry_farms.html .

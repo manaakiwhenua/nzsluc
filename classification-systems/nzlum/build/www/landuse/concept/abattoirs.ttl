@@ -28,8 +28,7 @@ luc:manufacturing_industrial skos:notation "3.4.0" ;
 luc:abattoirs a skos:Concept ;
     skos:broader luc:manufacturing_industrial ;
     skos:definition "Areas with specialised improvements for the slaughter of stock and the preparation of meat for the wholesale market."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.4.6" ;
     skos:prefLabel "Abattoirs"@en ;
     foaf:isPrimaryTopicOf luc:abattoirs.html .

@@ -30,8 +30,7 @@ luc:community_services a skos:Concept ;
     skos:broader luc:public_recreation_services ;
     skos:definition "Land used for providing essential services and facilities to support the local community."@en ;
     skos:example "Educational institutions, public healthcare facilities, libraries, museums, courts, prisons, civic buildings, emergency services, marae, religious buildings, cemeteries."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.2.3" ;
     skos:prefLabel "Community services"@en ;
     foaf:isPrimaryTopicOf luc:community_services.html ;

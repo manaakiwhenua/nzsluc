@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:lu="https://nzlum.landcareresearch.co.nz/landuse/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
 >
+  <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
+    <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
+    <skos:notation>3.0.0</skos:notation>
+  </rdf:Description>
   <skos:Concept rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication">
     <skos:inScheme rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/scheme/nzlum0.3.0"/>
-    <skos:broader>
-      <rdf:Description rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment">
-        <skos:prefLabel xml:lang="en">Built environment</skos:prefLabel>
-        <skos:notation>3.0.0</skos:notation>
-      </rdf:Description>
-    </skos:broader>
+    <skos:broader rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/built_environment"/>
     <skos:notation>3.6.0</skos:notation>
     <lu:colour>#72737E</lu:colour>
     <skos:prefLabel xml:lang="en">Transport and communication</skos:prefLabel>
@@ -61,13 +60,13 @@
       </foaf:Document>
     </foaf:isPrimaryTopicOf>
   </skos:Concept>
-  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.ttl">
-    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.rdf">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
+  </foaf:Document>
+  <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.ttl">
+    <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </foaf:Document>
   <foaf:Document rdf:about="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication.jsonld">
     <foaf:primaryTopic rdf:resource="https://nzlum.landcareresearch.co.nz/landuse/concept/transport_communication"/>

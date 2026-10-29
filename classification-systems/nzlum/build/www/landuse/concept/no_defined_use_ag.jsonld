@@ -28,26 +28,13 @@
         "@language": "en",
         "@value": "Land being prepared for new primary production use (farms, mines, etc.) but where the precise nature of the proposed land use is unknown."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "2.8.4",
       "skos:prefLabel": {
         "@language": "en",
         "@value": "No defined use"
-      }
-    },
-    {
-      "@id": "luc:vacant_and_transitioning_land",
-      "skos:notation": "2.8.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Vacant and transitioning land"
       }
     },
     {
@@ -56,23 +43,15 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:no_defined_use_ag.ttl"
-        },
-        {
           "@id": "luc:no_defined_use_ag.jsonld"
         },
         {
           "@id": "luc:no_defined_use_ag.rdf"
+        },
+        {
+          "@id": "luc:no_defined_use_ag.ttl"
         }
       ]
-    },
-    {
-      "@id": "luc:no_defined_use_ag.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:no_defined_use_ag"
-      }
     },
     {
       "@id": "luc:no_defined_use_ag.jsonld",
@@ -88,6 +67,22 @@
       "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "luc:no_defined_use_ag"
+      }
+    },
+    {
+      "@id": "luc:no_defined_use_ag.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:no_defined_use_ag"
+      }
+    },
+    {
+      "@id": "luc:vacant_and_transitioning_land",
+      "skos:notation": "2.8.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vacant and transitioning land"
       }
     }
   ]

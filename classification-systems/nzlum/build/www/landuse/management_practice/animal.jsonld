@@ -8,38 +8,6 @@
   },
   "@graph": [
     {
-      "@id": "mgmt:animal.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:animal"
-      }
-    },
-    {
-      "@id": "mgmt:animal.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "mgmt:animal"
-      }
-    },
-    {
-      "@id": "mgmt:free_range",
-      "skos:notation": "free range"
-    },
-    {
-      "@id": "mgmt:milking_rotary",
-      "skos:notation": "milking rotary"
-    },
-    {
-      "@id": "mgmt:milking_herringbone",
-      "skos:notation": "milking herringbone"
-    },
-    {
-      "@id": "mgmt:milking_walk_through",
-      "skos:notation": "milking walk through "
-    },
-    {
       "@id": "lus:management_practices",
       "dcterms:title": {
         "@language": "en",
@@ -57,25 +25,25 @@
       },
       "skos:member": [
         {
-          "@id": "mgmt:milking_walk_through"
-        },
-        {
-          "@id": "mgmt:free_range"
+          "@id": "mgmt:barn_laid"
         },
         {
           "@id": "mgmt:caged"
         },
         {
+          "@id": "mgmt:free_range"
+        },
+        {
           "@id": "mgmt:milking_hand"
+        },
+        {
+          "@id": "mgmt:milking_herringbone"
         },
         {
           "@id": "mgmt:milking_rotary"
         },
         {
-          "@id": "mgmt:barn_laid"
-        },
-        {
-          "@id": "mgmt:milking_herringbone"
+          "@id": "mgmt:milking_walk_through"
         }
       ],
       "skos:prefLabel": {
@@ -84,8 +52,28 @@
       }
     },
     {
-      "@id": "mgmt:milking_hand",
-      "skos:notation": "milking hand"
+      "@id": "mgmt:animal.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "mgmt:animal.jsonld"
+        },
+        {
+          "@id": "mgmt:animal.rdf"
+        },
+        {
+          "@id": "mgmt:animal.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "mgmt:animal.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:animal"
+      }
     },
     {
       "@id": "mgmt:animal.rdf",
@@ -96,28 +84,40 @@
       }
     },
     {
-      "@id": "mgmt:caged",
-      "skos:notation": "caged"
-    },
-    {
-      "@id": "mgmt:animal.html",
+      "@id": "mgmt:animal.ttl",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "mgmt:animal.ttl"
-        },
-        {
-          "@id": "mgmt:animal.jsonld"
-        },
-        {
-          "@id": "mgmt:animal.rdf"
-        }
-      ]
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "mgmt:animal"
+      }
     },
     {
       "@id": "mgmt:barn_laid",
       "skos:notation": "barn laid"
+    },
+    {
+      "@id": "mgmt:caged",
+      "skos:notation": "caged"
+    },
+    {
+      "@id": "mgmt:free_range",
+      "skos:notation": "free range"
+    },
+    {
+      "@id": "mgmt:milking_hand",
+      "skos:notation": "milking hand"
+    },
+    {
+      "@id": "mgmt:milking_herringbone",
+      "skos:notation": "milking herringbone"
+    },
+    {
+      "@id": "mgmt:milking_rotary",
+      "skos:notation": "milking rotary"
+    },
+    {
+      "@id": "mgmt:milking_walk_through",
+      "skos:notation": "milking walk through "
     }
   ]
 }

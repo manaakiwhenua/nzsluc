@@ -17,67 +17,11 @@
       }
     },
     {
-      "@id": "luc:transfer_stations_recycling",
-      "skos:notation": "3.8.2",
+      "@id": "luc:landfills",
+      "skos:notation": "3.8.1",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Transfer stations and recycling facilities"
-      }
-    },
-    {
-      "@id": "luc:wastewater_treatment_land_application",
-      "skos:notation": "3.8.4",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Wastewater treatment – land application"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:waste_treatment_disposal"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:waste_treatment_disposal"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "luc:waste_treatment_disposal.ttl"
-        },
-        {
-          "@id": "luc:waste_treatment_disposal.jsonld"
-        },
-        {
-          "@id": "luc:waste_treatment_disposal.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "luc:stormwater_management",
-      "skos:notation": "3.8.5",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Stormwater management"
-      }
-    },
-    {
-      "@id": "luc:waste_treatment_disposal.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:waste_treatment_disposal"
+        "@value": "Landfills"
       }
     },
     {
@@ -89,11 +33,19 @@
       }
     },
     {
-      "@id": "luc:landfills",
-      "skos:notation": "3.8.1",
+      "@id": "luc:stormwater_management",
+      "skos:notation": "3.8.5",
       "skos:prefLabel": {
         "@language": "en",
-        "@value": "Landfills"
+        "@value": "Stormwater management"
+      }
+    },
+    {
+      "@id": "luc:transfer_stations_recycling",
+      "skos:notation": "3.8.2",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Transfer stations and recycling facilities"
       }
     },
     {
@@ -110,26 +62,21 @@
         "@language": "en",
         "@value": "Land uses dedicated to managing and processing waste materials (solid waste, wastewater, stormwater), primarily associated with industrial and urban activities, to mitigate environmental impacts and protect public health."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:narrower": [
         {
-          "@id": "luc:municipal_wastewater"
+          "@id": "luc:landfills"
         },
         {
-          "@id": "luc:transfer_stations_recycling"
+          "@id": "luc:municipal_wastewater"
         },
         {
           "@id": "luc:stormwater_management"
         },
         {
-          "@id": "luc:landfills"
+          "@id": "luc:transfer_stations_recycling"
         },
         {
           "@id": "luc:wastewater_treatment_land_application"
@@ -139,6 +86,54 @@
       "skos:prefLabel": {
         "@language": "en",
         "@value": "Waste treatment and disposal"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "luc:waste_treatment_disposal.jsonld"
+        },
+        {
+          "@id": "luc:waste_treatment_disposal.rdf"
+        },
+        {
+          "@id": "luc:waste_treatment_disposal.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "luc:waste_treatment_disposal.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:waste_treatment_disposal"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:waste_treatment_disposal"
+      }
+    },
+    {
+      "@id": "luc:waste_treatment_disposal.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:waste_treatment_disposal"
+      }
+    },
+    {
+      "@id": "luc:wastewater_treatment_land_application",
+      "skos:notation": "3.8.4",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Wastewater treatment – land application"
       }
     }
   ]

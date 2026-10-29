@@ -18,9 +18,54 @@
   },
   "@graph": [
     {
+      "@id": "com:fruit",
+      "skos:member": {
+        "@id": "com:lychees"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
+      }
+    },
+    {
+      "@id": "com:lychees",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:lychees.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "lychees"
+    },
+    {
+      "@id": "com:lychees.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:lychees.jsonld"
+        },
+        {
+          "@id": "com:lychees.rdf"
+        },
+        {
+          "@id": "com:lychees.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:lychees.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:lychees"
+      }
+    },
+    {
+      "@id": "com:lychees.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
       "foaf:primaryTopic": {
         "@id": "com:lychees"
       }
@@ -38,51 +83,6 @@
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:lychees.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:lychees.ttl"
-        },
-        {
-          "@id": "com:lychees.jsonld"
-        },
-        {
-          "@id": "com:lychees.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:lychees",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:lychees.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "lychees"
-    },
-    {
-      "@id": "com:fruit",
-      "skos:member": {
-        "@id": "com:lychees"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Fruit"
-      }
-    },
-    {
-      "@id": "com:lychees.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:lychees"
       }
     }
   ]

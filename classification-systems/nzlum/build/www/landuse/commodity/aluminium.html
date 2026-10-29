@@ -18,6 +18,49 @@
   },
   "@graph": [
     {
+      "@id": "com:aluminium",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:aluminium.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "aluminium"
+    },
+    {
+      "@id": "com:aluminium.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:aluminium.jsonld"
+        },
+        {
+          "@id": "com:aluminium.rdf"
+        },
+        {
+          "@id": "com:aluminium.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:aluminium.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:aluminium"
+      }
+    },
+    {
+      "@id": "com:aluminium.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:aluminium"
+      }
+    },
+    {
       "@id": "com:aluminium.ttl",
       "@type": "foaf:Document",
       "dcterms:format": "text/turtle",
@@ -36,53 +79,10 @@
       }
     },
     {
-      "@id": "com:aluminium",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:aluminium.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "aluminium"
-    },
-    {
-      "@id": "com:aluminium.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:aluminium"
-      }
-    },
-    {
       "@id": "lus:commodities",
       "dcterms:title": {
         "@language": "en",
         "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:aluminium.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:aluminium.ttl"
-        },
-        {
-          "@id": "com:aluminium.jsonld"
-        },
-        {
-          "@id": "com:aluminium.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:aluminium.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:aluminium"
       }
     }
   ]

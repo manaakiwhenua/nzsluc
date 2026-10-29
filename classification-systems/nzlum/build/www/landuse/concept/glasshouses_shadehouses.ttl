@@ -28,8 +28,7 @@ luc:intensive_horticulture skos:notation "2.5.0" ;
 luc:glasshouses_shadehouses a skos:Concept ;
     skos:broader luc:intensive_horticulture ;
     skos:definition "Controlled-environment structures for protected cultivation of plants, including vegetable and floriculture production."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "2.5.2" ;
     skos:prefLabel "Glasshouses/shadehouses"@en ;
     skos:scopeNote "Glasshouses provide a transparent enclosure, typically made of glass or plastic, allowing natural sunlight to penetrate while shielding plants from adverse weather conditions. Shadehouses utilise shade cloth or netting to regulate light exposure and temperature levels. These structures enable year-round production of a wide variety of crops, including vegetables, herbs, flowers, and ornamental plants."@en ;

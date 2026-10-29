@@ -18,20 +18,47 @@
   },
   "@graph": [
     {
+      "@id": "com:field_peas",
+      "@type": "skos:Concept",
+      "foaf:isPrimaryTopicOf": {
+        "@id": "com:field_peas.html"
+      },
+      "skos:inScheme": {
+        "@id": "lus:commodities"
+      },
+      "skos:notation": "field peas"
+    },
+    {
       "@id": "com:field_peas.html",
       "@type": "foaf:Document",
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "com:field_peas.ttl"
-        },
-        {
           "@id": "com:field_peas.jsonld"
         },
         {
           "@id": "com:field_peas.rdf"
+        },
+        {
+          "@id": "com:field_peas.ttl"
         }
       ]
+    },
+    {
+      "@id": "com:field_peas.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:field_peas"
+      }
+    },
+    {
+      "@id": "com:field_peas.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:field_peas"
+      }
     },
     {
       "@id": "com:field_peas.ttl",
@@ -57,33 +84,6 @@
         "@language": "en",
         "@value": "NZLUM commodities"
       }
-    },
-    {
-      "@id": "com:field_peas.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:field_peas"
-      }
-    },
-    {
-      "@id": "com:field_peas.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:field_peas"
-      }
-    },
-    {
-      "@id": "com:field_peas",
-      "@type": "skos:Concept",
-      "foaf:isPrimaryTopicOf": {
-        "@id": "com:field_peas.html"
-      },
-      "skos:inScheme": {
-        "@id": "lus:commodities"
-      },
-      "skos:notation": "field peas"
     }
   ]
 }

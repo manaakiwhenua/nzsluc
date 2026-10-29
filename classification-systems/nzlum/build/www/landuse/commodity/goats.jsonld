@@ -18,30 +18,6 @@
       }
     },
     {
-      "@id": "com:goats.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:goats.ttl"
-        },
-        {
-          "@id": "com:goats.jsonld"
-        },
-        {
-          "@id": "com:goats.rdf"
-        }
-      ]
-    },
-    {
-      "@id": "com:goats.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "com:goats"
-      }
-    },
-    {
       "@id": "com:goats",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -57,10 +33,35 @@
       }
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
+      "@id": "com:goats.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:goats.jsonld"
+        },
+        {
+          "@id": "com:goats.rdf"
+        },
+        {
+          "@id": "com:goats.ttl"
+        }
+      ]
+    },
+    {
+      "@id": "com:goats.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "com:goats"
+      }
+    },
+    {
+      "@id": "com:goats.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:goats"
       }
     },
     {
@@ -72,11 +73,10 @@
       }
     },
     {
-      "@id": "com:goats.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:goats"
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

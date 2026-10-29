@@ -8,28 +8,14 @@
   },
   "@graph": [
     {
-      "@id": "com:watermelons.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:watermelons"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
-    },
-    {
-      "@id": "com:watermelons.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:watermelons.ttl"
-        },
-        {
-          "@id": "com:watermelons.jsonld"
-        },
-        {
-          "@id": "com:watermelons.rdf"
-        }
-      ]
     },
     {
       "@id": "com:watermelons",
@@ -43,16 +29,25 @@
       "skos:notation": "watermelons"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:watermelons.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:watermelons.jsonld"
+        },
+        {
+          "@id": "com:watermelons.rdf"
+        },
+        {
+          "@id": "com:watermelons.ttl"
+        }
+      ]
     },
     {
-      "@id": "com:watermelons.ttl",
+      "@id": "com:watermelons.jsonld",
       "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
+      "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:watermelons"
       }
@@ -66,13 +61,18 @@
       }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:watermelons.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:watermelons"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

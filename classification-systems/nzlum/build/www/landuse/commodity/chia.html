@@ -18,22 +18,6 @@
   },
   "@graph": [
     {
-      "@id": "com:chia.html",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:chia.ttl"
-        },
-        {
-          "@id": "com:chia.jsonld"
-        },
-        {
-          "@id": "com:chia.rdf"
-        }
-      ]
-    },
-    {
       "@id": "com:chia",
       "@type": "skos:Concept",
       "foaf:isPrimaryTopicOf": {
@@ -45,28 +29,27 @@
       "skos:notation": "chia"
     },
     {
+      "@id": "com:chia.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:chia.jsonld"
+        },
+        {
+          "@id": "com:chia.rdf"
+        },
+        {
+          "@id": "com:chia.ttl"
+        }
+      ]
+    },
+    {
       "@id": "com:chia.jsonld",
       "@type": "foaf:Document",
       "dcterms:format": "application/ld+json",
       "foaf:primaryTopic": {
         "@id": "com:chia"
-      }
-    },
-    {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
-    },
-    {
-      "@id": "com:oilseeds",
-      "skos:member": {
-        "@id": "com:chia"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Oilseeds"
       }
     },
     {
@@ -83,6 +66,23 @@
       "dcterms:format": "text/turtle",
       "foaf:primaryTopic": {
         "@id": "com:chia"
+      }
+    },
+    {
+      "@id": "com:oilseeds",
+      "skos:member": {
+        "@id": "com:chia"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Oilseeds"
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "NZLUM commodities"
       }
     }
   ]

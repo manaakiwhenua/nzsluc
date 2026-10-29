@@ -30,8 +30,7 @@ luc:habitat_or_species_management a skos:Concept ;
     dcterms:source "IUCN (2008) Protected Areas Management Categories, Category IV: Habitat/Species Management Area."@en ;
     skos:broader luc:nature_cons ;
     skos:definition "Protected area managed mainly for conservation through management intervention. An area of land or sea subject to active intervention for management purposes to ensure the maintenance of habitats or to meet the requirements of specific species. This may include areas on private land."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "1.1.5" ;
     skos:prefLabel "Habitat or species management area"@en ;
     foaf:isPrimaryTopicOf luc:habitat_or_species_management.html ;

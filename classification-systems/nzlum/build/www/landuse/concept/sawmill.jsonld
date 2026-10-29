@@ -8,27 +8,11 @@
   },
   "@graph": [
     {
-      "@id": "luc:sawmill.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "luc:sawmill"
-      }
-    },
-    {
-      "@id": "luc:sawmill.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
-        "@id": "luc:sawmill"
-      }
-    },
-    {
-      "@id": "luc:sawmill.jsonld",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/ld+json",
-      "foaf:primaryTopic": {
-        "@id": "luc:sawmill"
+      "@id": "luc:manufacturing_industrial",
+      "skos:notation": "3.4.0",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Manufacturing and industrial"
       }
     },
     {
@@ -44,14 +28,9 @@
         "@language": "en",
         "@value": "An area with special improvements for the processing (milling and curing) of raw timber, wood products, and by-products."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.4.4",
       "skos:prefLabel": {
         "@language": "en",
@@ -64,22 +43,38 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:sawmill.ttl"
-        },
-        {
           "@id": "luc:sawmill.jsonld"
         },
         {
           "@id": "luc:sawmill.rdf"
+        },
+        {
+          "@id": "luc:sawmill.ttl"
         }
       ]
     },
     {
-      "@id": "luc:manufacturing_industrial",
-      "skos:notation": "3.4.0",
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Manufacturing and industrial"
+      "@id": "luc:sawmill.jsonld",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/ld+json",
+      "foaf:primaryTopic": {
+        "@id": "luc:sawmill"
+      }
+    },
+    {
+      "@id": "luc:sawmill.rdf",
+      "@type": "foaf:Document",
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "luc:sawmill"
+      }
+    },
+    {
+      "@id": "luc:sawmill.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
+        "@id": "luc:sawmill"
       }
     }
   ]

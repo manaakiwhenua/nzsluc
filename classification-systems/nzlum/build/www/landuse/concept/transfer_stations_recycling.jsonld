@@ -20,14 +20,9 @@
         "@language": "en",
         "@value": "Facilities where solid waste is collected, sorted, processed, and prepared for recycling or transfer to landfills or other disposal sites."
       },
-      "skos:inScheme": [
-        {
-          "@id": "lus:nzlum0.4.0"
-        },
-        {
-          "@id": "lus:nzlum0.3.0"
-        }
-      ],
+      "skos:inScheme": {
+        "@id": "lus:nzlum0.4.0"
+      },
       "skos:notation": "3.8.2",
       "skos:prefLabel": {
         "@language": "en",
@@ -40,13 +35,13 @@
       "dcterms:format": "text/html",
       "dcterms:hasFormat": [
         {
-          "@id": "luc:transfer_stations_recycling.ttl"
-        },
-        {
           "@id": "luc:transfer_stations_recycling.jsonld"
         },
         {
           "@id": "luc:transfer_stations_recycling.rdf"
+        },
+        {
+          "@id": "luc:transfer_stations_recycling.ttl"
         }
       ]
     },

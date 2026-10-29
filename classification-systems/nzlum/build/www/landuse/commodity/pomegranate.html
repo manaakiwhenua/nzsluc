@@ -18,19 +18,13 @@
   },
   "@graph": [
     {
-      "@id": "com:pomegranate.ttl",
-      "@type": "foaf:Document",
-      "dcterms:format": "text/turtle",
-      "foaf:primaryTopic": {
+      "@id": "com:fruit",
+      "skos:member": {
         "@id": "com:pomegranate"
-      }
-    },
-    {
-      "@id": "com:pomegranate.rdf",
-      "@type": "foaf:Document",
-      "dcterms:format": "application/rdf+xml",
-      "foaf:primaryTopic": {
-        "@id": "com:pomegranate"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fruit"
       }
     },
     {
@@ -45,11 +39,20 @@
       "skos:notation": "pomegranate"
     },
     {
-      "@id": "lus:commodities",
-      "dcterms:title": {
-        "@language": "en",
-        "@value": "NZLUM commodities"
-      }
+      "@id": "com:pomegranate.html",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/html",
+      "dcterms:hasFormat": [
+        {
+          "@id": "com:pomegranate.jsonld"
+        },
+        {
+          "@id": "com:pomegranate.rdf"
+        },
+        {
+          "@id": "com:pomegranate.ttl"
+        }
+      ]
     },
     {
       "@id": "com:pomegranate.jsonld",
@@ -60,29 +63,26 @@
       }
     },
     {
-      "@id": "com:pomegranate.html",
+      "@id": "com:pomegranate.rdf",
       "@type": "foaf:Document",
-      "dcterms:format": "text/html",
-      "dcterms:hasFormat": [
-        {
-          "@id": "com:pomegranate.ttl"
-        },
-        {
-          "@id": "com:pomegranate.jsonld"
-        },
-        {
-          "@id": "com:pomegranate.rdf"
-        }
-      ]
+      "dcterms:format": "application/rdf+xml",
+      "foaf:primaryTopic": {
+        "@id": "com:pomegranate"
+      }
     },
     {
-      "@id": "com:fruit",
-      "skos:member": {
+      "@id": "com:pomegranate.ttl",
+      "@type": "foaf:Document",
+      "dcterms:format": "text/turtle",
+      "foaf:primaryTopic": {
         "@id": "com:pomegranate"
-      },
-      "skos:prefLabel": {
+      }
+    },
+    {
+      "@id": "lus:commodities",
+      "dcterms:title": {
         "@language": "en",
-        "@value": "Fruit"
+        "@value": "NZLUM commodities"
       }
     }
   ]

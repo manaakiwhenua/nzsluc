@@ -28,8 +28,7 @@ luc:utilities skos:notation "3.5.0" ;
 luc:solar_electricity_generation a skos:Concept ;
     skos:broader luc:utilities ;
     skos:definition "Facilities that harness sunlight using photovoltaic cells or solar thermal systems to generate electricity."@en ;
-    skos:inScheme lus:nzlum0.3.0,
-        lus:nzlum0.4.0 ;
+    skos:inScheme lus:nzlum0.4.0 ;
     skos:notation "3.5.4" ;
     skos:prefLabel "Solar electricity generation"@en ;
     foaf:isPrimaryTopicOf luc:solar_electricity_generation.html .
